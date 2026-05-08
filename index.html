@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WGIS - World Geometry Information System</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="search-panel">
+      <header class="app-header">
+        <div class="eyebrow">WGIS</div>
+        <h1>World Geometry Information System</h1>
+        <p>과거 지명, 사건, 유물과 유적을 검색하면 현재의 지역명과 위치를 확인합니다.</p>
+      </header>
+
+      <section class="search-section" aria-label="검색">
+        <div class="search-box">
+          <input id="searchInput" type="search" placeholder="예: 서라벌, 장안, 콘스탄티노폴리스, 임진왜란" autocomplete="off" />
+          <button id="clearSearchBtn" type="button" title="검색어 지우기">×</button>
+        </div>
+        <div class="filter-row" id="typeFilters"></div>
+        <div class="filter-row compact" id="regionFilters"></div>
+      </section>
+
+      <section class="summary-strip" aria-label="검색 요약">
+        <div>
+          <span class="metric" id="resultCount">0</span>
+          <span class="metric-label">검색 결과</span>
+        </div>
+        <div>
+          <span class="metric" id="visibleCountries">0</span>
+          <span class="metric-label">현재 국가</span>
+        </div>
+      </section>
+
+      <section class="results-section" aria-label="검색 결과">
+        <div id="resultsList" class="results-list"></div>
+      </section>
+    </aside>
+
+    <main class="map-panel">
+      <div id="map"></div>
+      <section class="detail-drawer" id="detailDrawer" aria-live="polite">
+        <div class="empty-detail">
+          <span class="empty-title">검색하거나 결과를 선택하세요</span>
+          <span class="empty-copy">현재 지명, 좌표, 과거 명칭과 맥락이 여기에 표시됩니다.</span>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
