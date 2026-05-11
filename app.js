@@ -8,6 +8,7 @@ let activeRegion = 'all';
 let currentPage = 1;
 let pageSize = 10;
 let mapResultsActive = false;
+let lastTooltipClick = { id: null, time: 0 };
 
 const MOBILE_MEDIA_QUERY = '(max-width: 820px)';
 
@@ -223,7 +224,7 @@ function setupPagination() {
     currentPage = 1;
     selectedId = null;
     renderDetail(null);
-    update();
+    update({ fitMap: mapResultsActive });
   });
 
   prevButton.addEventListener('click', () => {
@@ -231,7 +232,7 @@ function setupPagination() {
     currentPage -= 1;
     selectedId = null;
     renderDetail(null);
-    update();
+    update({ fitMap: mapResultsActive });
   });
 
   nextButton.addEventListener('click', () => {
@@ -239,7 +240,7 @@ function setupPagination() {
     currentPage += 1;
     selectedId = null;
     renderDetail(null);
-    update();
+    update({ fitMap: mapResultsActive });
   });
 }
 
@@ -248,7 +249,7 @@ function executeSearch() {
   selectedId = null;
   mapResultsActive = true;
   renderDetail(null);
-  update();
+  update({ fitMap: true });
   setMobileSheetExpanded(true);
 }
 
@@ -303,7 +304,7 @@ function setupMobileSheet() {
   syncLayout();
 }
 
-function update() {
+function update({ fitMap = false } = {}) {
   updateFilterButtons();
   filteredEntries = getFilteredEntries();
   clampCurrentPage();
@@ -314,7 +315,7 @@ function update() {
   renderSummary();
   renderPagination();
   renderResults();
-  renderMarkers();
+  renderMarkers({ fitMap });
 }
 
 function updateFilterButtons() {
@@ -410,7 +411,7 @@ function renderResults() {
   });
 }
 
-function renderMarkers() {
+function renderMarkers({ fitMap = false } = {}) {
   markers.forEach(marker => marker.remove());
   markers = [];
 
@@ -435,16 +436,34 @@ function renderMarkers() {
     if (tooltip) {
       tooltip.on('click', event => {
         if (event.originalEvent) L.DomEvent.stopPropagation(event.originalEvent);
+        registerTooltipClick(entry.id);
         toggleEntryDetail(entry.id);
       });
     }
 
     marker.on('click', event => {
       if (event.originalEvent) L.DomEvent.stopPropagation(event.originalEvent);
+      if (shouldIgnoreMarkerClick(entry.id)) return;
       toggleEntryDetail(entry.id);
     });
+
+    marker.bindPopup(createMapPopupContent(entry), {
+      autoPan: true,
+      autoPanPadding: [22, 22],
+      className: 'map-info-popup',
+      closeButton: false,
+      maxWidth: 320,
+      offset: [0, -30]
+    });
+
+    if (entry.id === selectedId) {
+      marker.openPopup();
+    }
+
     markers.push(marker);
   });
+
+  if (!fitMap) return;
 
   if (markerEntries.length > 1) {
     const bounds = L.latLngBounds(markerEntries.map(e => [e.coordinates.lat, e.coordinates.lng]));
@@ -457,6 +476,17 @@ function renderMarkers() {
   }
 }
 
+function registerTooltipClick(id) {
+  lastTooltipClick = {
+    id,
+    time: performance.now()
+  };
+}
+
+function shouldIgnoreMarkerClick(id) {
+  return lastTooltipClick.id === id && performance.now() - lastTooltipClick.time < 350;
+}
+
 function getMarkerEntries() {
   const pageEntries = mapResultsActive ? getPageEntries() : [];
   if (!selectedId) return pageEntries;
@@ -467,6 +497,25 @@ function getMarkerEntries() {
   }
 
   return [...pageEntries, selectedEntry];
+}
+
+function createMapPopupContent(entry) {
+  return `
+    <article class="map-popup-card">
+      <div class="detail-kicker">
+        <span class="type-badge ${TYPE_CLASSES[entry.type]}">${TYPE_LABELS[entry.type]}</span>
+        <span class="result-meta">${escapeHtml(entry.yearLabel)}</span>
+      </div>
+      <h3>${escapeHtml(entry.title)}</h3>
+      <dl>
+        <dt>현재 지명</dt>
+        <dd>${escapeHtml(entry.modernName)}</dd>
+        <dt>지역</dt>
+        <dd>${escapeHtml(entry.country)} · ${escapeHtml(entry.worldRegion)}</dd>
+      </dl>
+      <p>${escapeHtml(entry.summary)}</p>
+    </article>
+  `;
 }
 
 function createMarkerIcon(entry) {
@@ -489,16 +538,18 @@ function createMarkerIcon(entry) {
   });
 }
 
-function selectEntry(id) {
+function selectEntry(id, { focusMap = true } = {}) {
   const entry = entries.find(item => item.id === id);
   if (!entry) return;
 
   selectedId = id;
   renderResults();
   renderDetail(entry);
+  if (focusMap) {
+    map.setView([entry.coordinates.lat, entry.coordinates.lng], 9, { animate: true });
+  }
   renderMarkers();
   setMobileSheetExpanded(true);
-  map.setView([entry.coordinates.lat, entry.coordinates.lng], 9, { animate: true });
 }
 
 function toggleEntryDetail(id) {
@@ -507,7 +558,7 @@ function toggleEntryDetail(id) {
     return;
   }
 
-  selectEntry(id);
+  selectEntry(id, { focusMap: false });
 }
 
 function clearSelectedEntry() {
