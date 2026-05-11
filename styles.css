@@ -314,8 +314,16 @@ input {
   font-weight: 800;
   line-height: 1.2;
   padding: 4px 7px;
-  pointer-events: none;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: border-color 0.16s ease, box-shadow 0.16s ease, transform 0.16s ease;
   white-space: nowrap;
+}
+
+.leaflet-tooltip.map-point-label:hover {
+  border-color: rgba(31, 56, 40, 0.72);
+  box-shadow: 0 3px 12px rgba(18, 16, 12, 0.28);
+  transform: translateY(-1px);
 }
 
 .leaflet-tooltip-top.map-point-label::before {
@@ -463,7 +471,7 @@ input {
     right: 0;
     bottom: 0;
     left: 0;
-    height: min(72dvh, 640px);
+    height: min(50dvh, 520px);
     border-radius: 12px 12px 0 0;
   }
 
@@ -543,7 +551,7 @@ input {
   .mobile-detail-section {
     display: block;
     flex: 0 0 auto;
-    max-height: 34dvh;
+    max-height: 24dvh;
     overflow-y: auto;
     border-top: 1px solid #d5ccb8;
     border-bottom: 1px solid #d5ccb8;

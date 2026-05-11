@@ -330,11 +330,22 @@ function renderMarkers() {
       offset: [0, -32],
       opacity: 0.96,
       permanent: true,
-      interactive: false,
+      interactive: true,
       className: `map-point-label ${entry.id === selectedId ? 'selected' : ''}`
     });
 
-    marker.on('click', () => selectEntry(entry.id));
+    const tooltip = marker.getTooltip();
+    if (tooltip) {
+      tooltip.on('click', event => {
+        if (event.originalEvent) L.DomEvent.stopPropagation(event.originalEvent);
+        toggleEntryDetail(entry.id);
+      });
+    }
+
+    marker.on('click', event => {
+      if (event.originalEvent) L.DomEvent.stopPropagation(event.originalEvent);
+      toggleEntryDetail(entry.id);
+    });
     markers.push(marker);
   });
 
@@ -379,6 +390,23 @@ function selectEntry(id) {
   renderMarkers();
   setMobileSheetExpanded(true);
   map.setView([entry.coordinates.lat, entry.coordinates.lng], 9, { animate: true });
+}
+
+function toggleEntryDetail(id) {
+  if (selectedId === id) {
+    clearSelectedEntry();
+    return;
+  }
+
+  selectEntry(id);
+}
+
+function clearSelectedEntry() {
+  selectedId = null;
+  renderResults();
+  renderDetail(null);
+  renderMarkers();
+  setMobileSheetExpanded(false);
 }
 
 function renderDetail(entry) {
