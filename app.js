@@ -8,6 +8,7 @@ let activeRegion = 'all';
 let currentPage = 1;
 let pageSize = 10;
 let mapResultsActive = false;
+let focusedMapEntryId = null;
 let lastTooltipClick = { id: null, time: 0 };
 
 const MOBILE_MEDIA_QUERY = '(max-width: 820px)';
@@ -147,6 +148,7 @@ function setupFilters() {
       activeType = button.dataset.type;
       currentPage = 1;
       mapResultsActive = false;
+      focusedMapEntryId = null;
       selectedId = null;
       renderDetail(null);
       update();
@@ -169,6 +171,7 @@ function renderRegionFilters() {
       activeRegion = button.dataset.region;
       currentPage = 1;
       mapResultsActive = false;
+      focusedMapEntryId = null;
       selectedId = null;
       renderDetail(null);
       update();
@@ -189,6 +192,7 @@ function setupSearch() {
     selectedId = null;
     currentPage = 1;
     mapResultsActive = false;
+    focusedMapEntryId = null;
     renderDetail(null);
     setMobileSheetExpanded(true);
     update();
@@ -208,6 +212,7 @@ function setupSearch() {
     selectedId = null;
     currentPage = 1;
     mapResultsActive = false;
+    focusedMapEntryId = null;
     renderDetail(null);
     update();
     input.focus();
@@ -223,6 +228,7 @@ function setupPagination() {
     pageSize = Number(pageSizeSelect.value);
     currentPage = 1;
     selectedId = null;
+    focusedMapEntryId = null;
     renderDetail(null);
     update({ fitMap: mapResultsActive });
   });
@@ -231,6 +237,7 @@ function setupPagination() {
     if (currentPage <= 1) return;
     currentPage -= 1;
     selectedId = null;
+    focusedMapEntryId = null;
     renderDetail(null);
     update({ fitMap: mapResultsActive });
   });
@@ -239,6 +246,7 @@ function setupPagination() {
     if (currentPage >= getTotalPages()) return;
     currentPage += 1;
     selectedId = null;
+    focusedMapEntryId = null;
     renderDetail(null);
     update({ fitMap: mapResultsActive });
   });
@@ -247,6 +255,7 @@ function setupPagination() {
 function executeSearch() {
   currentPage = 1;
   selectedId = null;
+  focusedMapEntryId = null;
   mapResultsActive = true;
   renderDetail(null);
   update({ fitMap: true });
@@ -489,14 +498,15 @@ function shouldIgnoreMarkerClick(id) {
 
 function getMarkerEntries() {
   const pageEntries = mapResultsActive ? getPageEntries() : [];
-  if (!selectedId) return pageEntries;
+  const extraEntryId = selectedId || focusedMapEntryId;
+  if (!extraEntryId) return pageEntries;
 
-  const selectedEntry = entries.find(entry => entry.id === selectedId);
-  if (!selectedEntry || pageEntries.some(entry => entry.id === selectedId)) {
+  const extraEntry = entries.find(entry => entry.id === extraEntryId);
+  if (!extraEntry || pageEntries.some(entry => entry.id === extraEntryId)) {
     return pageEntries;
   }
 
-  return [...pageEntries, selectedEntry];
+  return [...pageEntries, extraEntry];
 }
 
 function createMapPopupContent(entry) {
@@ -543,6 +553,7 @@ function selectEntry(id, { focusMap = true } = {}) {
   if (!entry) return;
 
   selectedId = id;
+  focusedMapEntryId = id;
   renderResults();
   renderDetail(entry);
   if (focusMap) {
