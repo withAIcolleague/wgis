@@ -11,7 +11,8 @@ body {
 }
 
 button,
-input {
+input,
+select {
   font: inherit;
 }
 
@@ -79,7 +80,7 @@ input {
 
 .search-box {
   display: grid;
-  grid-template-columns: 1fr 34px;
+  grid-template-columns: 1fr 58px 34px;
   gap: 6px;
   margin-bottom: 12px;
 }
@@ -109,6 +110,21 @@ input {
   cursor: pointer;
   font-size: 20px;
   line-height: 1;
+}
+
+#searchButton {
+  height: 42px;
+  border: 1px solid #365a42;
+  border-radius: 4px;
+  background: #365a42;
+  color: #fff8e8;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+#searchButton:hover {
+  background: #274832;
 }
 
 #clearSearchBtn:hover {
@@ -181,6 +197,65 @@ input {
   font-size: 11px;
   color: #706653;
   font-weight: 700;
+}
+
+.pagination-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 14px;
+  border-bottom: 1px solid #d5ccb8;
+  background: #fbf7ed;
+}
+
+.page-size-control {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #5b523f;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+#pageSizeSelect {
+  height: 30px;
+  border: 1px solid #b7ad98;
+  border-radius: 4px;
+  background: #fffdf6;
+  color: #2f372d;
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.page-status {
+  color: #706653;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.page-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.page-actions button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #b7ad98;
+  border-radius: 4px;
+  background: #f1ead9;
+  color: #3b3428;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.page-actions button:disabled {
+  cursor: default;
+  opacity: 0.42;
 }
 
 .results-section {
@@ -535,12 +610,21 @@ input {
   .search-panel:not(.mobile-sheet-expanded) .filter-row,
   .search-panel:not(.mobile-sheet-expanded) .summary-strip,
   .search-panel:not(.mobile-sheet-expanded) .mobile-detail-section,
+  .search-panel:not(.mobile-sheet-expanded) .pagination-bar,
   .search-panel:not(.mobile-sheet-expanded) .results-section {
     display: none;
   }
 
   .search-panel.mobile-sheet-expanded .summary-strip {
     flex: 0 0 auto;
+  }
+
+  .search-panel.mobile-sheet-expanded .pagination-bar {
+    flex: 0 0 auto;
+  }
+
+  .pagination-bar {
+    padding: 9px 12px;
   }
 
   .search-panel.mobile-sheet-expanded .results-section {

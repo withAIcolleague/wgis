@@ -5,6 +5,9 @@ let markers = [];
 let selectedId = null;
 let activeType = 'all';
 let activeRegion = 'all';
+let currentPage = 1;
+let pageSize = 10;
+let mapResultsActive = false;
 
 const MOBILE_MEDIA_QUERY = '(max-width: 820px)';
 
@@ -141,6 +144,10 @@ function setupFilters() {
   typeContainer.querySelectorAll('button').forEach(button => {
     button.addEventListener('click', () => {
       activeType = button.dataset.type;
+      currentPage = 1;
+      mapResultsActive = false;
+      selectedId = null;
+      renderDetail(null);
       update();
     });
   });
@@ -159,6 +166,10 @@ function renderRegionFilters() {
   regionContainer.querySelectorAll('button').forEach(button => {
     button.addEventListener('click', () => {
       activeRegion = button.dataset.region;
+      currentPage = 1;
+      mapResultsActive = false;
+      selectedId = null;
+      renderDetail(null);
       update();
     });
   });
@@ -166,6 +177,7 @@ function renderRegionFilters() {
 
 function setupSearch() {
   const input = document.getElementById('searchInput');
+  const searchButton = document.getElementById('searchButton');
   const clearButton = document.getElementById('clearSearchBtn');
 
   input.addEventListener('focus', () => {
@@ -174,22 +186,70 @@ function setupSearch() {
 
   input.addEventListener('input', () => {
     selectedId = null;
+    currentPage = 1;
+    mapResultsActive = false;
+    renderDetail(null);
     setMobileSheetExpanded(true);
     update();
   });
 
   input.addEventListener('keydown', event => {
-    if (event.key === 'Enter' && filteredEntries.length > 0) {
-      selectEntry(filteredEntries[0].id);
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      executeSearch();
     }
   });
+
+  searchButton.addEventListener('click', executeSearch);
 
   clearButton.addEventListener('click', () => {
     input.value = '';
     selectedId = null;
+    currentPage = 1;
+    mapResultsActive = false;
+    renderDetail(null);
     update();
     input.focus();
   });
+}
+
+function setupPagination() {
+  const pageSizeSelect = document.getElementById('pageSizeSelect');
+  const prevButton = document.getElementById('prevPageBtn');
+  const nextButton = document.getElementById('nextPageBtn');
+
+  pageSizeSelect.addEventListener('change', () => {
+    pageSize = Number(pageSizeSelect.value);
+    currentPage = 1;
+    selectedId = null;
+    renderDetail(null);
+    update();
+  });
+
+  prevButton.addEventListener('click', () => {
+    if (currentPage <= 1) return;
+    currentPage -= 1;
+    selectedId = null;
+    renderDetail(null);
+    update();
+  });
+
+  nextButton.addEventListener('click', () => {
+    if (currentPage >= getTotalPages()) return;
+    currentPage += 1;
+    selectedId = null;
+    renderDetail(null);
+    update();
+  });
+}
+
+function executeSearch() {
+  currentPage = 1;
+  selectedId = null;
+  mapResultsActive = true;
+  renderDetail(null);
+  update();
+  setMobileSheetExpanded(true);
 }
 
 function isMobileLayout() {
@@ -246,13 +306,15 @@ function setupMobileSheet() {
 function update() {
   updateFilterButtons();
   filteredEntries = getFilteredEntries();
-  renderSummary();
-  renderResults();
-  renderMarkers();
+  clampCurrentPage();
   if (selectedId && !filteredEntries.some(e => e.id === selectedId)) {
     selectedId = null;
     renderDetail(null);
   }
+  renderSummary();
+  renderPagination();
+  renderResults();
+  renderMarkers();
 }
 
 function updateFilterButtons() {
@@ -285,6 +347,39 @@ function renderSummary() {
     new Set(filteredEntries.map(entry => entry.country)).size.toLocaleString();
 }
 
+function getTotalPages() {
+  return Math.max(1, Math.ceil(filteredEntries.length / pageSize));
+}
+
+function clampCurrentPage() {
+  currentPage = Math.min(Math.max(currentPage, 1), getTotalPages());
+}
+
+function getPageEntries() {
+  const start = (currentPage - 1) * pageSize;
+  return filteredEntries.slice(start, start + pageSize);
+}
+
+function renderPagination() {
+  const pageSizeSelect = document.getElementById('pageSizeSelect');
+  const pageStatus = document.getElementById('pageStatus');
+  const prevButton = document.getElementById('prevPageBtn');
+  const nextButton = document.getElementById('nextPageBtn');
+
+  pageSizeSelect.value = String(pageSize);
+  prevButton.disabled = currentPage <= 1 || filteredEntries.length === 0;
+  nextButton.disabled = currentPage >= getTotalPages() || filteredEntries.length === 0;
+
+  if (filteredEntries.length === 0) {
+    pageStatus.textContent = '0 / 0';
+    return;
+  }
+
+  const start = (currentPage - 1) * pageSize + 1;
+  const end = Math.min(currentPage * pageSize, filteredEntries.length);
+  pageStatus.textContent = `${start}-${end} / ${filteredEntries.length.toLocaleString()}`;
+}
+
 function renderResults() {
   const list = document.getElementById('resultsList');
   if (filteredEntries.length === 0) {
@@ -296,7 +391,7 @@ function renderResults() {
     return;
   }
 
-  list.innerHTML = filteredEntries.map(entry => `
+  list.innerHTML = getPageEntries().map(entry => `
     <button class="result-card ${entry.id === selectedId ? 'active' : ''}" data-id="${escapeHtml(entry.id)}">
       <div class="result-topline">
         <span class="result-title">${escapeHtml(entry.title)}</span>
@@ -319,7 +414,9 @@ function renderMarkers() {
   markers.forEach(marker => marker.remove());
   markers = [];
 
-  filteredEntries.forEach(entry => {
+  const markerEntries = getMarkerEntries();
+
+  markerEntries.forEach(entry => {
     const marker = L.marker([entry.coordinates.lat, entry.coordinates.lng], {
       icon: createMarkerIcon(entry),
       zIndexOffset: entry.id === selectedId ? 1000 : 0
@@ -349,15 +446,27 @@ function renderMarkers() {
     markers.push(marker);
   });
 
-  if (filteredEntries.length > 1 && filteredEntries.length <= 60) {
-    const bounds = L.latLngBounds(filteredEntries.map(e => [e.coordinates.lat, e.coordinates.lng]));
+  if (markerEntries.length > 1) {
+    const bounds = L.latLngBounds(markerEntries.map(e => [e.coordinates.lat, e.coordinates.lng]));
     map.fitBounds(bounds.pad(0.18), { animate: false });
-  } else if (filteredEntries.length === 1) {
-    const entry = filteredEntries[0];
+  } else if (markerEntries.length === 1) {
+    const entry = markerEntries[0];
     map.setView([entry.coordinates.lat, entry.coordinates.lng], 8, { animate: false });
   } else if (!selectedId) {
     map.setView(DEFAULT_VIEW.center, DEFAULT_VIEW.zoom, { animate: false });
   }
+}
+
+function getMarkerEntries() {
+  const pageEntries = mapResultsActive ? getPageEntries() : [];
+  if (!selectedId) return pageEntries;
+
+  const selectedEntry = entries.find(entry => entry.id === selectedId);
+  if (!selectedEntry || pageEntries.some(entry => entry.id === selectedId)) {
+    return pageEntries;
+  }
+
+  return [...pageEntries, selectedEntry];
 }
 
 function createMarkerIcon(entry) {
@@ -486,6 +595,7 @@ function escapeHtml(value) {
 async function init() {
   initMap();
   setupSearch();
+  setupPagination();
   setupMobileSheet();
   try {
     await loadEntries();
