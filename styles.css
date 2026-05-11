@@ -275,12 +275,13 @@ input {
 }
 
 .map-point-icon {
-  opacity: 0.5;
+  opacity: 0.74;
   transition: opacity 0.16s ease, transform 0.16s ease;
 }
 
-.map-point-icon:hover {
-  opacity: 0.5;
+.map-point-icon:hover,
+.map-point-icon.selected {
+  opacity: 1;
   transform: translateY(-1px);
 }
 
@@ -294,11 +295,36 @@ input {
     drop-shadow(0 2px 3px rgba(18, 16, 12, 0.25));
 }
 
+.leaflet-tooltip.map-point-label {
+  border: 1px solid rgba(45, 58, 43, 0.32);
+  border-radius: 4px;
+  background: rgba(255, 250, 239, 0.96);
+  box-shadow: 0 2px 8px rgba(18, 16, 12, 0.22);
+  color: #18201b;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.2;
+  padding: 4px 7px;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.leaflet-tooltip-top.map-point-label::before {
+  border-top-color: rgba(255, 250, 239, 0.96);
+}
+
+.leaflet-tooltip.map-point-label.selected {
+  border-color: rgba(31, 56, 40, 0.78);
+  background: rgba(255, 248, 232, 0.98);
+  box-shadow: 0 3px 12px rgba(18, 16, 12, 0.28);
+  color: #14251a;
+}
+
 .detail-drawer {
   position: absolute;
   right: 18px;
   bottom: 18px;
-  z-index: 500;
+  z-index: 700;
   width: min(480px, calc(100% - 36px));
   max-height: min(48vh, 410px);
   overflow-y: auto;

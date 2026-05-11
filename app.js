@@ -74,6 +74,8 @@ function initMap() {
     'https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}',
     {
       maxZoom: 19,
+      keepBuffer: 4,
+      updateWhenZooming: false,
       attribution: 'Labels &copy; Esri'
     }
   );
@@ -261,13 +263,17 @@ function renderMarkers() {
 
   filteredEntries.forEach(entry => {
     const marker = L.marker([entry.coordinates.lat, entry.coordinates.lng], {
-      icon: createMarkerIcon(entry)
+      icon: createMarkerIcon(entry),
+      zIndexOffset: entry.id === selectedId ? 1000 : 0
     }).addTo(map);
 
     marker.bindTooltip(entry.title, {
       direction: 'top',
       offset: [0, -32],
-      opacity: 0.92
+      opacity: 0.96,
+      permanent: true,
+      interactive: false,
+      className: `map-point-label ${entry.id === selectedId ? 'selected' : ''}`
     });
 
     marker.on('click', () => selectEntry(entry.id));
@@ -289,7 +295,7 @@ function createMarkerIcon(entry) {
   const color = TYPE_COLORS[entry.type] || '#365a42';
   const glyph = MARKER_GLYPHS[entry.type] || MARKER_GLYPHS.place;
   return L.divIcon({
-    className: 'map-point-icon',
+    className: `map-point-icon ${entry.id === selectedId ? 'selected' : ''}`,
     html: `
       <svg class="map-point-svg" width="24" height="36" viewBox="0 0 24 36" aria-hidden="true">
         <g fill="none" stroke="${color}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -312,14 +318,8 @@ function selectEntry(id) {
   selectedId = id;
   renderResults();
   renderDetail(entry);
+  renderMarkers();
   map.setView([entry.coordinates.lat, entry.coordinates.lng], 9, { animate: true });
-
-  const activeMarker = markers.find(marker => {
-    const latLng = marker.getLatLng();
-    return Math.abs(latLng.lat - entry.coordinates.lat) < 0.0001 &&
-      Math.abs(latLng.lng - entry.coordinates.lng) < 0.0001;
-  });
-  if (activeMarker) activeMarker.openTooltip();
 }
 
 function renderDetail(entry) {
