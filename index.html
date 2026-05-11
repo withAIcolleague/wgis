@@ -10,6 +10,11 @@
 <body>
   <div class="app-shell">
     <aside class="search-panel">
+      <button id="mobileSheetToggle" class="mobile-sheet-handle" type="button" aria-expanded="false" aria-controls="resultsList">
+        <span class="sheet-grip" aria-hidden="true"></span>
+        <span class="sheet-label">검색 및 결과</span>
+      </button>
+
       <header class="app-header">
         <div class="eyebrow">WGIS</div>
         <h1>World Geometry Information System</h1>
@@ -35,6 +40,8 @@
           <span class="metric-label">현재 국가</span>
         </div>
       </section>
+
+      <section class="mobile-detail-section" id="mobileDetail" aria-live="polite" hidden></section>
 
       <section class="results-section" aria-label="검색 결과">
         <div id="resultsList" class="results-list"></div>

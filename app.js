@@ -6,6 +6,8 @@ let selectedId = null;
 let activeType = 'all';
 let activeRegion = 'all';
 
+const MOBILE_MEDIA_QUERY = '(max-width: 820px)';
+
 const TYPE_LABELS = {
   all: '전체',
   place: '과거 지명',
@@ -166,8 +168,13 @@ function setupSearch() {
   const input = document.getElementById('searchInput');
   const clearButton = document.getElementById('clearSearchBtn');
 
+  input.addEventListener('focus', () => {
+    setMobileSheetExpanded(true);
+  });
+
   input.addEventListener('input', () => {
     selectedId = null;
+    setMobileSheetExpanded(true);
     update();
   });
 
@@ -183,6 +190,57 @@ function setupSearch() {
     update();
     input.focus();
   });
+}
+
+function isMobileLayout() {
+  return window.matchMedia(MOBILE_MEDIA_QUERY).matches;
+}
+
+function setMobileSheetExpanded(expanded) {
+  const panel = document.querySelector('.search-panel');
+  const toggle = document.getElementById('mobileSheetToggle');
+  if (!panel || !toggle) return;
+
+  if (!isMobileLayout()) {
+    panel.classList.remove('mobile-sheet-expanded');
+    toggle.setAttribute('aria-expanded', 'false');
+    return;
+  }
+
+  panel.classList.toggle('mobile-sheet-expanded', expanded);
+  toggle.setAttribute('aria-expanded', String(expanded));
+
+  const label = toggle.querySelector('.sheet-label');
+  if (label) {
+    label.textContent = expanded ? '지도 크게 보기' : '검색 및 결과';
+  }
+
+  window.setTimeout(() => {
+    map?.invalidateSize();
+  }, 240);
+}
+
+function setupMobileSheet() {
+  const toggle = document.getElementById('mobileSheetToggle');
+  const panel = document.querySelector('.search-panel');
+  if (!toggle || !panel) return;
+
+  toggle.addEventListener('click', () => {
+    setMobileSheetExpanded(!panel.classList.contains('mobile-sheet-expanded'));
+  });
+
+  const media = window.matchMedia(MOBILE_MEDIA_QUERY);
+  const syncLayout = () => {
+    setMobileSheetExpanded(media.matches && Boolean(selectedId));
+  };
+
+  if (media.addEventListener) {
+    media.addEventListener('change', syncLayout);
+  } else {
+    media.addListener(syncLayout);
+  }
+
+  syncLayout();
 }
 
 function update() {
@@ -319,6 +377,7 @@ function selectEntry(id) {
   renderResults();
   renderDetail(entry);
   renderMarkers();
+  setMobileSheetExpanded(true);
   map.setView([entry.coordinates.lat, entry.coordinates.lng], 9, { animate: true });
 }
 
@@ -331,6 +390,7 @@ function renderDetail(entry) {
         <span class="empty-copy">현재 지명, 좌표, 과거 명칭과 맥락이 여기에 표시됩니다.</span>
       </div>
     `;
+    syncMobileDetail(null);
     return;
   }
 
@@ -365,6 +425,16 @@ function renderDetail(entry) {
       </div>
     </article>
   `;
+  syncMobileDetail(entry);
+}
+
+function syncMobileDetail(entry) {
+  const mobileDetail = document.getElementById('mobileDetail');
+  const drawer = document.getElementById('detailDrawer');
+  if (!mobileDetail || !drawer) return;
+
+  mobileDetail.hidden = !entry;
+  mobileDetail.innerHTML = entry ? drawer.innerHTML : '';
 }
 
 function formatConfidence(value) {
@@ -388,6 +458,7 @@ function escapeHtml(value) {
 async function init() {
   initMap();
   setupSearch();
+  setupMobileSheet();
   try {
     await loadEntries();
     setupFilters();
