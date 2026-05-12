@@ -29,6 +29,13 @@ World Geometry Information System.
 - `confidence`: `high`, `medium`, `approximate`
 - `sourceNote`: 위치 대응 기준
 
+`data/continents-countries.json`은 5대륙 모델에 따른 국가 분류 DB입니다.
+
+- 대륙: 아시아, 유럽, 아프리카, 아메리카, 오세아니아
+- 범위: UN 회원국 193개국 + UN 총회 옵서버 2개국
+- 제외: 남극, 속령, 해외 영토, 준주
+- 기준: UN M49 대륙권역, ISO 3166 국가 코드, UN 회원국/옵서버 목록
+
 ## 실행
 
 이 프로젝트 폴더에서:
