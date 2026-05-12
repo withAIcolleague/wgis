@@ -28,6 +28,8 @@ World Geometry Information System.
 - `summary`: 짧은 설명
 - `confidence`: `high`, `medium`, `approximate`
 - `sourceNote`: 위치 대응 기준
+- `sources`: 선택 항목. 출처 제목과 URL 목록
+- `curationBatch`: 선택 항목. 집중 수집 단위 ID
 
 `data/continents-countries.json`은 5대륙 모델에 따른 국가 분류 DB입니다.
 
@@ -35,6 +37,9 @@ World Geometry Information System.
 - 범위: UN 회원국 193개국 + UN 총회 옵서버 2개국
 - 제외: 남극, 속령, 해외 영토, 준주
 - 기준: UN M49 대륙권역, ISO 3166 국가 코드, UN 회원국/옵서버 목록
+
+`data/curation-batches.json`은 DB를 한 번에 대량으로 섞어 넣지 않기 위한 수집 단위 기록입니다.
+각 배치는 하나의 국가, 문화권, 또는 연구 주제에 집중해서 `data/entries.json`에 추가합니다.
 
 ## 실행
 

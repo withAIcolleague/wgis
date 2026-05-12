@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "policy": {
+    "modeKo": "집중 배치 수집",
+    "descriptionKo": "모든 문화권과 국가를 한 번에 채우지 않고, 하나의 국가·문화권·연구 주제에 집중해 검증된 항목을 추가한 뒤 다음 배치로 이동한다.",
+    "entryTargetFile": "data/entries.json"
+  },
+  "batches": [
+    {
+      "id": "africa-ethiopia-human-origins-v1",
+      "status": "completed",
+      "completedAt": "2026-05-12",
+      "continentId": "africa",
+      "countryIso2": "ET",
+      "countryKo": "에티오피아",
+      "worldRegion": "아프리카사",
+      "focusKo": "동아프리카 인류 기원",
+      "scopeKo": "에티오피아의 아와시·고나·오모 권역에서 확인된 초기 인류 화석, 석기, 관련 유적",
+      "entryIds": [
+        "ardi-aramis",
+        "lucy-hadar",
+        "selam-dikika",
+        "dikika-cutmarked-bones",
+        "gona-oldowan-tools",
+        "ledi-geraru-ld-350-1",
+        "herto-homo-sapiens-idaltu",
+        "omo-kibish-omo-i"
+      ],
+      "sourceBasis": [
+        "Smithsonian Human Origins fossil records",
+        "UNESCO Lower Valley of the Awash and Omo pages",
+        "Nature and Science peer-reviewed publication metadata"
+      ]
+    }
+  ]
+}
