@@ -510,6 +510,8 @@ function getMarkerEntries() {
 }
 
 function createMapPopupContent(entry) {
+  const googleUrl = getGoogleSearchUrl(entry);
+
   return `
     <article class="map-popup-card">
       <div class="detail-kicker">
@@ -524,6 +526,9 @@ function createMapPopupContent(entry) {
         <dd>${escapeHtml(entry.country)} · ${escapeHtml(entry.worldRegion)}</dd>
       </dl>
       <p>${escapeHtml(entry.summary)}</p>
+      <div class="external-link-row">
+        <a class="external-link" href="${escapeHtml(googleUrl)}" target="_blank" rel="noopener noreferrer">Google에서 검색</a>
+      </div>
     </article>
   `;
 }
@@ -593,6 +598,8 @@ function renderDetail(entry) {
     return;
   }
 
+  const googleUrl = getGoogleSearchUrl(entry);
+
   drawer.innerHTML = `
     <article class="detail-content">
       <div class="detail-kicker">
@@ -622,6 +629,9 @@ function renderDetail(entry) {
         위치 신뢰도: ${formatConfidence(entry.confidence)}<br />
         ${escapeHtml(entry.sourceNote || '')}
       </div>
+      <div class="external-link-row">
+        <a class="external-link" href="${escapeHtml(googleUrl)}" target="_blank" rel="noopener noreferrer">Google에서 검색</a>
+      </div>
     </article>
   `;
   syncMobileDetail(entry);
@@ -643,6 +653,23 @@ function formatConfidence(value) {
     approximate: '추정'
   };
   return labels[value] || value || '미기재';
+}
+
+function getGoogleSearchUrl(entry) {
+  const latinAliases = (entry.aliases || [])
+    .filter(alias => /[A-Za-z]/.test(alias))
+    .slice(0, 3);
+  const query = [
+    entry.title,
+    entry.historicalName,
+    ...latinAliases,
+    entry.country,
+    'history'
+  ]
+    .filter(Boolean)
+    .join(' ');
+
+  return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
 }
 
 function escapeHtml(value) {

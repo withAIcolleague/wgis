@@ -469,6 +469,33 @@ select {
   line-height: 1.52;
 }
 
+.external-link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.external-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 6px 10px;
+  border: 1px solid #b9aa8a;
+  border-radius: 6px;
+  background: #fff8e8;
+  color: #2e5138;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.external-link:hover,
+.external-link:focus-visible {
+  border-color: #365a42;
+  color: #172017;
+}
+
 .detail-drawer {
   position: absolute;
   right: 18px;
