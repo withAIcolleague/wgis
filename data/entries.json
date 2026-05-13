@@ -184,12 +184,17 @@
     "aliases": ["Babylon", "Babel", "바벨", "Hilla"],
     "summary": "메소포타미아의 대표 도시로 함무라비, 네부카드네자르 2세 등과 연결된다. 현재 이라크 힐라 인근 유적지로 남아 있다.",
     "confidence": "high",
-    "sourceNote": "바빌론 고고유적 기준."
+    "sourceNote": "바빌론 고고유적 기준.",
+    "curationBatch": "asia-iraq-mesopotamia-early-cities-v1",
+    "sources": [
+      { "title": "World History Encyclopedia: Babylon", "url": "https://www.worldhistory.org/babylon/" },
+      { "title": "UNESCO: Babylon", "url": "https://whc.unesco.org/en/list/278/" }
+    ]
   },
   {
     "id": "ur",
     "title": "우르",
-    "type": "artifact",
+    "type": "place",
     "historicalName": "우르",
     "modernName": "텔 엘 무카이야르",
     "modernAdmin": "디카르주 나시리야 인근",
@@ -201,7 +206,12 @@
     "aliases": ["Ur", "Tell el-Muqayyar", "우르 지구라트", "Sumer"],
     "summary": "수메르 도시국가 우르의 유적으로 지구라트와 왕묘로 알려져 있다. 현재 이라크 남부 나시리야 인근에 위치한다.",
     "confidence": "high",
-    "sourceNote": "우르 지구라트 유적 기준."
+    "sourceNote": "우르 지구라트 유적 기준.",
+    "curationBatch": "asia-iraq-mesopotamia-early-cities-v1",
+    "sources": [
+      { "title": "World History Encyclopedia: Ur", "url": "https://www.worldhistory.org/ur/" },
+      { "title": "UNESCO: The Ahwar of Southern Iraq", "url": "https://whc.unesco.org/en/list/1481" }
+    ]
   },
   {
     "id": "persepolis",
@@ -580,6 +590,182 @@
     "sources": [
       { "title": "Nature: Age of the oldest known Homo sapiens from eastern Africa", "url": "https://www.nature.com/articles/s41586-021-04275-8" },
       { "title": "UNESCO: Lower Valley of the Omo", "url": "https://whc.unesco.org/en/list/17/" }
+    ]
+  },
+  {
+    "id": "eridu",
+    "title": "에리두",
+    "type": "place",
+    "historicalName": "에리두",
+    "modernName": "텔 아부 샤흐라인",
+    "modernAdmin": "디카르주 나시리야 남서쪽",
+    "country": "이라크",
+    "worldRegion": "중동사",
+    "period": "수메르·초기 메소포타미아",
+    "yearLabel": "기원전 5400년경 이후",
+    "coordinates": { "lat": 30.8158, "lng": 45.9961 },
+    "aliases": ["Eridu", "Tell Abu Shahrain", "Abu Shahrein", "Enki", "Ea"],
+    "summary": "에리두는 수메르 전승에서 왕권이 처음 내려온 도시로 여겨진 남부 메소포타미아의 초기 도시다. 엔키의 성소와 오래된 정착층 때문에 도시 형성과 종교 중심지의 관계를 보여주는 핵심 장소로 다룬다.",
+    "confidence": "high",
+    "sourceNote": "텔 아부 샤흐라인의 에리두 고고유적 좌표를 사용한다.",
+    "curationBatch": "asia-iraq-mesopotamia-early-cities-v1",
+    "sources": [
+      { "title": "World History Encyclopedia: Eridu", "url": "https://www.worldhistory.org/eridu/" },
+      { "title": "UNESCO: The Ahwar of Southern Iraq", "url": "https://whc.unesco.org/en/list/1481" }
+    ]
+  },
+  {
+    "id": "uruk",
+    "title": "우루크",
+    "type": "place",
+    "historicalName": "우루크",
+    "modernName": "와르카",
+    "modernAdmin": "무탄나주 와르카 일대",
+    "country": "이라크",
+    "worldRegion": "중동사",
+    "period": "수메르·우루크기",
+    "yearLabel": "기원전 5000/4500년경 이후",
+    "coordinates": { "lat": 31.3222, "lng": 45.6378 },
+    "aliases": ["Uruk", "Warka", "Erech", "Gilgamesh", "Inanna"],
+    "summary": "우루크는 우루크기의 중심 도시로, 초기 도시화와 행정, 문자 발달, 길가메시 전승을 이해하는 기준점이다. 남부 메소포타미아 도시들이 촌락에서 거대 도시 중심지로 바뀌는 흐름을 보여준다.",
+    "confidence": "high",
+    "sourceNote": "와르카의 우루크 고고유적 좌표를 사용한다.",
+    "curationBatch": "asia-iraq-mesopotamia-early-cities-v1",
+    "sources": [
+      { "title": "World History Encyclopedia: Uruk", "url": "https://www.worldhistory.org/uruk/" },
+      { "title": "UNESCO: The Ahwar of Southern Iraq", "url": "https://whc.unesco.org/en/list/1481" }
+    ]
+  },
+  {
+    "id": "nippur",
+    "title": "니푸르",
+    "type": "place",
+    "historicalName": "니푸르",
+    "modernName": "누파르",
+    "modernAdmin": "카디시야주 디와니야 북동쪽",
+    "country": "이라크",
+    "worldRegion": "중동사",
+    "period": "수메르·고대 메소포타미아",
+    "yearLabel": "기원전 5천년기 이후",
+    "coordinates": { "lat": 32.1263, "lng": 45.2351 },
+    "aliases": ["Nippur", "Nuffar", "Enlil", "Ekur", "Sumer"],
+    "summary": "니푸르는 엔릴 숭배와 에쿠르 신전으로 유명한 메소포타미아의 종교 중심지다. 정치 수도라기보다 왕권의 정당성과 성스러운 권위를 승인받는 장소로 기능했다는 점이 중요하다.",
+    "confidence": "high",
+    "sourceNote": "누파르의 니푸르 유적 권역 좌표를 사용한다.",
+    "curationBatch": "asia-iraq-mesopotamia-early-cities-v1",
+    "sources": [
+      { "title": "World History Encyclopedia: 12 Great Cities of Ancient Mesopotamia", "url": "https://www.worldhistory.org/article/2900/12-great-cities-of-ancient-mesopotamia/" },
+      { "title": "Britannica: Nippur", "url": "https://www.britannica.com/place/Nippur" }
+    ]
+  },
+  {
+    "id": "kish",
+    "title": "키시",
+    "type": "place",
+    "historicalName": "키시",
+    "modernName": "텔 알우하이미르",
+    "modernAdmin": "바빌주 바빌론 동쪽",
+    "country": "이라크",
+    "worldRegion": "중동사",
+    "period": "수메르·초기 왕조 시대",
+    "yearLabel": "기원전 6500-4000년경 정착, 기원전 5천년기 도시화",
+    "coordinates": { "lat": 32.5480, "lng": 44.6500 },
+    "aliases": ["Kish", "Tell al-Uhaymir", "King of Kish", "Sumerian King List"],
+    "summary": "키시는 수메르 왕명록에서 대홍수 이후 왕권이 내려온 도시로 언급되는 핵심 도시다. '키시의 왕'이라는 칭호는 남부 메소포타미아 전체에 대한 권위를 상징하는 표현으로 쓰였다.",
+    "confidence": "approximate",
+    "sourceNote": "텔 알우하이미르로 알려진 키시 유적 권역의 근사 좌표를 사용한다.",
+    "curationBatch": "asia-iraq-mesopotamia-early-cities-v1",
+    "sources": [
+      { "title": "World History Encyclopedia: 12 Great Cities of Ancient Mesopotamia", "url": "https://www.worldhistory.org/article/2900/12-great-cities-of-ancient-mesopotamia/" },
+      { "title": "Britannica: Kish", "url": "https://www.britannica.com/place/Kish" }
+    ]
+  },
+  {
+    "id": "lagash",
+    "title": "라가시",
+    "type": "place",
+    "historicalName": "라가시",
+    "modernName": "알히바 / 텔로 권역",
+    "modernAdmin": "디카르주 샤트라 인근",
+    "country": "이라크",
+    "worldRegion": "중동사",
+    "period": "수메르·초기 왕조 시대",
+    "yearLabel": "기원전 2900-2700년경 이후",
+    "coordinates": { "lat": 31.4110, "lng": 46.4090 },
+    "aliases": ["Lagash", "Al-Hiba", "Telloh", "Girsu", "Gudea"],
+    "summary": "라가시는 수메르 도시국가의 경쟁과 관개, 신전 경제를 보여주는 중요한 권역이다. 구데아의 건축 활동과 많은 설형문자 기록 때문에 기원전 3천년기 수메르 사회를 이해하는 자료가 풍부하다.",
+    "confidence": "approximate",
+    "sourceNote": "라가시 권역은 알히바와 기르수/텔로 등 복수 유적이 얽혀 있어 알히바 권역의 근사 좌표를 사용한다.",
+    "curationBatch": "asia-iraq-mesopotamia-early-cities-v1",
+    "sources": [
+      { "title": "World History Encyclopedia: 12 Great Cities of Ancient Mesopotamia", "url": "https://www.worldhistory.org/article/2900/12-great-cities-of-ancient-mesopotamia/" },
+      { "title": "Britannica: Lagash", "url": "https://www.britannica.com/place/Lagash" }
+    ]
+  },
+  {
+    "id": "akkad",
+    "title": "아카드",
+    "type": "place",
+    "historicalName": "아카드 / 아가데",
+    "modernName": "위치 미상",
+    "modernAdmin": "이라크 중부 유프라테스 서안 추정",
+    "country": "이라크",
+    "worldRegion": "중동사",
+    "period": "아카드 제국",
+    "yearLabel": "기원전 2350/2334년경 이후",
+    "coordinates": { "lat": 33.1000, "lng": 44.1000 },
+    "aliases": ["Akkad", "Agade", "Akkadian Empire", "Sargon of Akkad", "Sargon the Great"],
+    "summary": "아카드는 사르곤이 세운 아카드 제국의 중심 도시로 전해지지만, 정확한 위치는 아직 확인되지 않았다. WGIS에서는 도시 위치를 확정하지 않고, 초기 제국 형성과 메소포타미아 통합을 설명하는 논쟁적 장소로 표시한다.",
+    "confidence": "approximate",
+    "sourceNote": "아카드의 정확한 위치는 미확인이다. 지도 표시는 키시·시파르·바빌론 사이로 추정되는 이라크 중부 권역의 임시 근사 좌표다.",
+    "curationBatch": "asia-iraq-mesopotamia-early-cities-v1",
+    "sources": [
+      { "title": "World History Encyclopedia: Akkad", "url": "https://www.worldhistory.org/akkad/" },
+      { "title": "World History Encyclopedia: 12 Great Cities of Ancient Mesopotamia", "url": "https://www.worldhistory.org/article/2900/12-great-cities-of-ancient-mesopotamia/" }
+    ]
+  },
+  {
+    "id": "ashur",
+    "title": "아슈르",
+    "type": "place",
+    "historicalName": "아슈르 / 아수르",
+    "modernName": "칼아트 셰르카트",
+    "modernAdmin": "살라딘주 알시르카트 지구",
+    "country": "이라크",
+    "worldRegion": "중동사",
+    "period": "아시리아",
+    "yearLabel": "기원전 3천년기 이후",
+    "coordinates": { "lat": 35.4567, "lng": 43.2611 },
+    "aliases": ["Ashur", "Assur", "Qal'at Sherqat", "Assyria", "Aššur"],
+    "summary": "아슈르는 티그리스강변의 고대 도시로, 초기에는 교역 거점이었고 이후 아시리아의 첫 수도이자 종교 중심지가 되었다. 아시리아 왕권과 도시 국가, 제국 수도의 변화를 함께 보여준다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 세계유산 아슈르(칼아트 셰르카트)의 좌표를 사용한다.",
+    "curationBatch": "asia-iraq-mesopotamia-early-cities-v1",
+    "sources": [
+      { "title": "World History Encyclopedia: Ashur", "url": "https://www.worldhistory.org/ashur/" },
+      { "title": "UNESCO: Ashur (Qal'at Sherqat)", "url": "https://whc.unesco.org/en/list/1130/" }
+    ]
+  },
+  {
+    "id": "nineveh",
+    "title": "니네베",
+    "type": "place",
+    "historicalName": "니네베",
+    "modernName": "모술 동쪽 니네베 유적",
+    "modernAdmin": "니네베주 모술",
+    "country": "이라크",
+    "worldRegion": "중동사",
+    "period": "아시리아",
+    "yearLabel": "기원전 6000년경 정착, 기원전 1천년기 전성",
+    "coordinates": { "lat": 36.3594, "lng": 43.1529 },
+    "aliases": ["Nineveh", "Ninua", "Mosul", "Ashurbanipal", "Sennacherib"],
+    "summary": "니네베는 모술 인근의 오래된 도시 유적으로, 신아시리아 제국기에는 센나케립의 수도이자 아슈르바니팔 도서관의 도시로 알려졌다. 초기 정착부터 제국 수도까지 이어지는 북부 메소포타미아의 장기 도시사를 보여준다.",
+    "confidence": "high",
+    "sourceNote": "모술 동쪽 니네베 유적 권역 좌표를 사용한다.",
+    "curationBatch": "asia-iraq-mesopotamia-early-cities-v1",
+    "sources": [
+      { "title": "World History Encyclopedia: Nineveh", "url": "https://www.worldhistory.org/nineveh/" },
+      { "title": "World History Encyclopedia: 12 Great Cities of Ancient Mesopotamia", "url": "https://www.worldhistory.org/article/2900/12-great-cities-of-ancient-mesopotamia/" }
     ]
   }
 ]

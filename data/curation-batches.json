@@ -33,6 +33,36 @@
         "UNESCO Lower Valley of the Awash and Omo pages",
         "Nature and Science peer-reviewed publication metadata"
       ]
+    },
+    {
+      "id": "asia-iraq-mesopotamia-early-cities-v1",
+      "status": "completed",
+      "completedAt": "2026-05-13",
+      "continentId": "asia",
+      "countryIso2": "IQ",
+      "countryKo": "이라크",
+      "worldRegion": "중동사",
+      "focusKo": "고대 메소포타미아 초기 도시",
+      "scopeKo": "이라크 중심 고대 메소포타미아의 초기 도시, 도시국가, 제국 수도를 대표하는 핵심 위치",
+      "sourceFile": "data/records/asia/iraq/mesopotamia-early-cities.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "eridu",
+        "uruk",
+        "nippur",
+        "kish",
+        "lagash",
+        "akkad",
+        "babylon",
+        "ur",
+        "ashur",
+        "nineveh"
+      ],
+      "sourceBasis": [
+        "World History Encyclopedia reference articles",
+        "UNESCO World Heritage pages for Ahwar, Babylon, and Ashur",
+        "Britannica place summaries for Nippur, Kish, and Lagash"
+      ]
     }
   ]
 }

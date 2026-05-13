@@ -11,10 +11,10 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 32
-- Completed curation batches: 1
-- Latest completed batch: `africa-ethiopia-human-origins-v1`
-- Latest completed data milestone before this state file: `af2c4b7 Add data taxonomy and source records`
+- Current entry count: 40
+- Completed curation batches: 2
+- Latest completed batch: `asia-iraq-mesopotamia-early-cities-v1`
+- Latest completed infrastructure milestone: `a28681f Add data validation script`
 - Data validation script: `scripts/validate-data.js`
 
 ## Completed
@@ -46,6 +46,22 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Data validation script
   - File: `scripts/validate-data.js`
   - Checks: JSON parsing, duplicate IDs, coordinates, taxonomy references, batch links, source record links, and source-record/app-index field consistency
+
+- Ancient Mesopotamia early cities batch
+  - Batch ID: `asia-iraq-mesopotamia-early-cities-v1`
+  - Source file: `data/records/asia/iraq/mesopotamia-early-cities.json`
+  - Entries added: 8 new entries plus 2 existing entries linked to the batch
+  - Entry IDs:
+    - `eridu`
+    - `uruk`
+    - `nippur`
+    - `kish`
+    - `lagash`
+    - `akkad`
+    - `babylon`
+    - `ur`
+    - `ashur`
+    - `nineveh`
 
 ## Current Policy
 
@@ -84,17 +100,17 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Ancient Mesopotamia: early cities and city-states
-   - Possible source file: `data/records/asia/iraq/mesopotamia-early-cities.json`
-   - Likely entries: Uruk, Ur, Eridu, Nippur, Lagash, Kish, Akkad, Babylon, Nineveh, Ashur
-
-2. Ancient Egypt: core sites and monuments
+1. Ancient Egypt: core sites and monuments
    - Possible source file: `data/records/africa/egypt/ancient-egypt-core-sites.json`
    - Likely entries: Memphis, Giza, Saqqara, Thebes, Karnak, Luxor, Valley of the Kings, Amarna, Abu Simbel, Alexandria
 
-3. Indus Civilization: major urban sites
+2. Indus Civilization: major urban sites
    - Possible source file: `data/records/asia/south-asia/indus-civilization.json`
    - Likely entries: Harappa, Mohenjo-daro, Dholavira, Lothal, Kalibangan, Rakhigarhi, Ganweriwala, Mehrgarh
+
+3. Ancient Greece: early poleis and Panhellenic sanctuaries
+   - Possible source file: `data/records/europe/greece/ancient-greece-core-sites.json`
+   - Likely entries: Athens, Sparta, Corinth, Thebes, Delphi, Olympia, Knossos, Mycenae, Troy, Miletus
 
 ## Resume Checklist
 
