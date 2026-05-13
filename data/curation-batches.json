@@ -63,6 +63,37 @@
         "UNESCO World Heritage pages for Ahwar, Babylon, and Ashur",
         "Britannica place summaries for Nippur, Kish, and Lagash"
       ]
+    },
+    {
+      "id": "africa-egypt-ancient-core-sites-v1",
+      "status": "completed",
+      "completedAt": "2026-05-13",
+      "continentId": "africa",
+      "countryIso2": "EG",
+      "countryKo": "이집트",
+      "worldRegion": "이집트사",
+      "focusKo": "고대 이집트 핵심 유적",
+      "scopeKo": "고대 이집트의 수도, 왕실 묘역, 신전, 헬레니즘 항구 도시를 대표하는 핵심 위치",
+      "sourceFile": "data/records/africa/egypt/ancient-egypt-core-sites.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "memphis-egypt",
+        "giza-plateau",
+        "saqqara",
+        "thebes-egypt",
+        "karnak",
+        "luxor-temple",
+        "valley-of-the-kings",
+        "amarna",
+        "abu-simbel",
+        "alexandria-egypt"
+      ],
+      "sourceBasis": [
+        "World History Encyclopedia reference articles",
+        "UNESCO World Heritage pages for Memphis, Thebes, and Nubian monuments",
+        "Egypt Ministry of Tourism and Antiquities monument pages",
+        "Britannica place summaries where official site pages were not available"
+      ]
     }
   ]
 }

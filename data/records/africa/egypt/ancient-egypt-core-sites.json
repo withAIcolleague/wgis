@@ -1,0 +1,319 @@
+{
+  "schemaVersion": 1,
+  "id": "africa-egypt-ancient-core-sites",
+  "titleKo": "고대 이집트 핵심 유적",
+  "curationBatch": "africa-egypt-ancient-core-sites-v1",
+  "taxonomyFile": "data/taxonomy.json",
+  "appIndexFile": "data/entries.json",
+  "scope": {
+    "continentId": "africa",
+    "modernCountryIso2": "EG",
+    "modernCountryKo": "이집트",
+    "historicalRegionKo": "나일 계곡과 델타",
+    "cultureAreaKo": "고대 이집트",
+    "periodBand": "ancient",
+    "topicKo": "수도, 신전, 왕실 묘역, 헬레니즘 항구 도시"
+  },
+  "records": [
+    {
+      "id": "memphis-egypt",
+      "title": "멤피스",
+      "type": "place",
+      "historicalName": "멤피스 / 멘네페르",
+      "modernName": "미트 라히나 일대",
+      "modernAdmin": "기자주 바드라신 인근",
+      "country": "이집트",
+      "worldRegion": "이집트사",
+      "period": "고왕국·고대 이집트",
+      "yearLabel": "기원전 3100년경 이후",
+      "date": { "startYear": -3100, "endYear": 640, "precision": "approximate" },
+      "spatial": {
+        "continentId": "africa",
+        "modernCountryIso2": "EG",
+        "historicalRegionKo": "나일 계곡과 델타",
+        "cultureAreaKo": "고대 이집트"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 29.8555, "lng": 31.2611 },
+      "aliases": ["Memphis", "Men-nefer", "Hut-ka-Ptah", "Ineb-hedj", "Mit Rahina"],
+      "summary": "멤피스는 나일 계곡과 델타가 만나는 지점의 고대 수도로, 고왕국 행정과 프타 숭배의 중심지였다. 주변 기자·사카라·다슈르 피라미드 권역과 함께 고대 이집트 국가 형성의 공간적 기준점으로 다룬다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 멤피스 구성요소 좌표와 미트 라히나 유적 권역을 기준으로 한다.",
+      "curationBatch": "africa-egypt-ancient-core-sites-v1",
+      "sources": [
+        { "title": "World History Encyclopedia: Memphis (Ancient Egypt)", "url": "https://www.worldhistory.org/Memphis_%28Ancient_Egypt%29/" },
+        { "title": "UNESCO: Memphis and its Necropolis", "url": "https://whc.unesco.org/en/list/86/" }
+      ]
+    },
+    {
+      "id": "giza-plateau",
+      "title": "기자 피라미드 지구",
+      "type": "place",
+      "historicalName": "기자 네크로폴리스",
+      "modernName": "기자 피라미드 지구",
+      "modernAdmin": "기자주 기자",
+      "country": "이집트",
+      "worldRegion": "이집트사",
+      "period": "고왕국 제4왕조",
+      "yearLabel": "기원전 26-25세기",
+      "date": { "startYear": -2600, "endYear": -2500, "precision": "range" },
+      "spatial": {
+        "continentId": "africa",
+        "modernCountryIso2": "EG",
+        "historicalRegionKo": "나일 계곡과 델타",
+        "cultureAreaKo": "고대 이집트"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 29.9760, "lng": 31.1304 },
+      "aliases": ["Giza", "Giza Plateau", "Pyramids of Giza", "Great Sphinx", "Khufu"],
+      "summary": "기자 피라미드 지구는 쿠푸, 카프레, 멘카우레의 피라미드와 대스핑크스로 대표되는 고왕국 왕실 묘역이다. 멤피스 권역의 정치력과 조직력, 왕권 이념이 거대 석조 경관으로 표현된 장소다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO의 기자-다슈르 피라미드 지대 구성요소 좌표를 사용한다.",
+      "curationBatch": "africa-egypt-ancient-core-sites-v1",
+      "sources": [
+        { "title": "World History Encyclopedia: Giza", "url": "https://www.worldhistory.org/giza/" },
+        { "title": "UNESCO: Memphis and its Necropolis", "url": "https://whc.unesco.org/en/list/86/" }
+      ]
+    },
+    {
+      "id": "saqqara",
+      "title": "사카라",
+      "type": "place",
+      "historicalName": "사카라 네크로폴리스",
+      "modernName": "사카라",
+      "modernAdmin": "기자주 사카라",
+      "country": "이집트",
+      "worldRegion": "이집트사",
+      "period": "초기 왕조·고왕국",
+      "yearLabel": "기원전 27세기 이후",
+      "date": { "startYear": -2700, "endYear": 800, "precision": "range" },
+      "spatial": {
+        "continentId": "africa",
+        "modernCountryIso2": "EG",
+        "historicalRegionKo": "나일 계곡과 델타",
+        "cultureAreaKo": "고대 이집트"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 29.8713, "lng": 31.2165 },
+      "aliases": ["Saqqara", "Sakkara", "Step Pyramid", "Djoser", "Imhotep"],
+      "summary": "사카라는 멤피스의 주요 묘역이며, 조세르의 계단 피라미드와 여러 왕·귀족 무덤이 집중된 유적권이다. 마스타바에서 피라미드로 이어지는 이집트 왕실 장례 건축의 변화를 지도에서 확인할 수 있는 핵심 장소다.",
+      "confidence": "high",
+      "sourceNote": "조세르 계단 피라미드가 있는 사카라 중심 유적 좌표를 사용한다.",
+      "curationBatch": "africa-egypt-ancient-core-sites-v1",
+      "sources": [
+        { "title": "Egypt Ministry of Tourism and Antiquities: Saqqara", "url": "https://egymonuments.gov.eg/archaeological-sites/saqqara/" },
+        { "title": "UNESCO: Memphis and its Necropolis", "url": "https://whc.unesco.org/en/list/86/" }
+      ]
+    },
+    {
+      "id": "thebes-egypt",
+      "title": "테베",
+      "type": "place",
+      "historicalName": "와세트 / 테베",
+      "modernName": "룩소르 일대",
+      "modernAdmin": "룩소르주 룩소르",
+      "country": "이집트",
+      "worldRegion": "이집트사",
+      "period": "중왕국·신왕국",
+      "yearLabel": "기원전 16-11세기 전성",
+      "date": { "startYear": -2055, "endYear": -1069, "precision": "approximate" },
+      "spatial": {
+        "continentId": "africa",
+        "modernCountryIso2": "EG",
+        "historicalRegionKo": "나일 계곡과 델타",
+        "cultureAreaKo": "고대 이집트"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 25.7200, "lng": 32.6200 },
+      "aliases": ["Thebes", "Waset", "No-Amon", "Diospolis Magna", "Luxor"],
+      "summary": "테베는 중왕국과 신왕국의 왕권, 아문 숭배, 왕실 장례 경관이 결합된 상이집트의 중심 도시였다. 동쪽의 카르나크·룩소르 신전과 서쪽의 왕가의 계곡을 함께 보는 기준 도시로 기록한다.",
+      "confidence": "approximate",
+      "sourceNote": "고대 테베는 나일 양안의 넓은 권역이므로 룩소르-테베 중심권의 근사 좌표를 사용한다.",
+      "curationBatch": "africa-egypt-ancient-core-sites-v1",
+      "sources": [
+        { "title": "World History Encyclopedia: Thebes (Egypt)", "url": "https://www.worldhistory.org/Thebes_%28Egypt%29/" },
+        { "title": "UNESCO: Ancient Thebes with its Necropolis", "url": "https://whc.unesco.org/en/list/87" }
+      ]
+    },
+    {
+      "id": "karnak",
+      "title": "카르나크",
+      "type": "place",
+      "historicalName": "이페트수트 / 카르나크",
+      "modernName": "카르나크 신전 복합체",
+      "modernAdmin": "룩소르주 룩소르",
+      "country": "이집트",
+      "worldRegion": "이집트사",
+      "period": "중왕국·신왕국·프톨레마이오스",
+      "yearLabel": "기원전 20세기-기원후 4세기",
+      "date": { "startYear": -1971, "endYear": 336, "precision": "range" },
+      "spatial": {
+        "continentId": "africa",
+        "modernCountryIso2": "EG",
+        "historicalRegionKo": "나일 계곡과 델타",
+        "cultureAreaKo": "고대 이집트"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 25.7189, "lng": 32.6573 },
+      "aliases": ["Karnak", "Temple of Amun", "Ipet-sut", "Amun-Ra", "Thebes"],
+      "summary": "카르나크는 테베의 아문 신앙과 왕권 의례가 집중된 거대한 신전 복합체다. 여러 왕조가 증축한 탑문, 주랑, 성소가 누적되어 신왕국 이집트의 종교 권력과 국가 의례를 보여준다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 고대 테베 구성요소인 카르나크 신전 좌표를 사용한다.",
+      "curationBatch": "africa-egypt-ancient-core-sites-v1",
+      "sources": [
+        { "title": "World History Encyclopedia: Karnak", "url": "https://www.worldhistory.org/Karnak/" },
+        { "title": "UNESCO: Ancient Thebes with its Necropolis Maps", "url": "https://whc.unesco.org/en/list/87/maps/" }
+      ]
+    },
+    {
+      "id": "luxor-temple",
+      "title": "룩소르 신전",
+      "type": "place",
+      "historicalName": "이페트레시트",
+      "modernName": "룩소르 신전",
+      "modernAdmin": "룩소르주 룩소르",
+      "country": "이집트",
+      "worldRegion": "이집트사",
+      "period": "신왕국·로마 시대",
+      "yearLabel": "기원전 15세기 이후",
+      "date": { "startYear": -1400, "endYear": 305, "precision": "approximate" },
+      "spatial": {
+        "continentId": "africa",
+        "modernCountryIso2": "EG",
+        "historicalRegionKo": "나일 계곡과 델타",
+        "cultureAreaKo": "고대 이집트"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 25.6999, "lng": 32.6390 },
+      "aliases": ["Luxor Temple", "Ipet-resyt", "Opet Festival", "Amenhotep III", "Ramesses II"],
+      "summary": "룩소르 신전은 고대 테베 남쪽의 주요 신전으로, 카르나크와 스핑크스 길로 연결되어 오페트 축제의 핵심 무대가 되었다. 아문 신앙과 왕권 재생 의례를 도시 공간 속에서 이해하게 해준다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 고대 테베 구성요소인 룩소르 신전 좌표를 사용한다.",
+      "curationBatch": "africa-egypt-ancient-core-sites-v1",
+      "sources": [
+        { "title": "Egypt Ministry of Tourism and Antiquities: Luxor Temple", "url": "https://egymonuments.gov.eg/en/monuments/luxor-temple/" },
+        { "title": "UNESCO: Ancient Thebes with its Necropolis Maps", "url": "https://whc.unesco.org/en/list/87/maps/" }
+      ]
+    },
+    {
+      "id": "valley-of-the-kings",
+      "title": "왕가의 계곡",
+      "type": "place",
+      "historicalName": "왕가의 계곡",
+      "modernName": "와디 엘물루크",
+      "modernAdmin": "룩소르주 테베 서안",
+      "country": "이집트",
+      "worldRegion": "이집트사",
+      "period": "신왕국",
+      "yearLabel": "기원전 16-11세기",
+      "date": { "startYear": -1539, "endYear": -1075, "precision": "range" },
+      "spatial": {
+        "continentId": "africa",
+        "modernCountryIso2": "EG",
+        "historicalRegionKo": "나일 계곡과 델타",
+        "cultureAreaKo": "고대 이집트"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 25.7402, "lng": 32.6014 },
+      "aliases": ["Valley of the Kings", "Wadi el-Muluk", "Biban el-Muluk", "Tutankhamun", "Theban Necropolis"],
+      "summary": "왕가의 계곡은 신왕국 파라오들의 암굴 무덤이 집중된 테베 서안의 장례 권역이다. 피라미드식 왕릉에서 은폐된 계곡 무덤으로 바뀐 장례 전략과 투탕카멘 무덤 발견의 맥락을 보여준다.",
+      "confidence": "high",
+      "sourceNote": "왕가의 계곡 유적 중심 좌표를 사용하며, UNESCO 고대 테베 서안 네크로폴리스 권역에 속한다.",
+      "curationBatch": "africa-egypt-ancient-core-sites-v1",
+      "sources": [
+        { "title": "Britannica: Valley of the Kings", "url": "https://www.britannica.com/place/Valley-of-the-Kings" },
+        { "title": "UNESCO: Ancient Thebes with its Necropolis", "url": "https://whc.unesco.org/en/list/87" }
+      ]
+    },
+    {
+      "id": "amarna",
+      "title": "아마르나",
+      "type": "place",
+      "historicalName": "아케타텐",
+      "modernName": "텔 엘아마르나",
+      "modernAdmin": "미니아주 데이르 마와스 인근",
+      "country": "이집트",
+      "worldRegion": "이집트사",
+      "period": "아마르나 시대",
+      "yearLabel": "기원전 1346-1320년경",
+      "date": { "startYear": -1346, "endYear": -1320, "precision": "approximate" },
+      "spatial": {
+        "continentId": "africa",
+        "modernCountryIso2": "EG",
+        "historicalRegionKo": "나일 계곡과 델타",
+        "cultureAreaKo": "고대 이집트"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 27.6464, "lng": 30.8969 },
+      "aliases": ["Amarna", "Akhetaten", "Tell el-Amarna", "Akhenaten", "Aten"],
+      "summary": "아마르나는 아케나텐이 아텐 신앙을 중심으로 새로 세운 단명한 수도 아케타텐의 유적이다. 짧은 점유 기간과 이후 폐기 덕분에 신왕국 도시 계획, 종교 개혁, 아마르나 미술을 한 장소에서 읽을 수 있다.",
+      "confidence": "approximate",
+      "sourceNote": "텔 엘아마르나 고고유적 권역의 근사 좌표를 사용한다.",
+      "curationBatch": "africa-egypt-ancient-core-sites-v1",
+      "sources": [
+        { "title": "World History Encyclopedia: Amarna", "url": "https://www.worldhistory.org/Amarna/" },
+        { "title": "The Amarna Project: About Amarna", "url": "https://www.amarnaproject.com/contact.shtml" }
+      ]
+    },
+    {
+      "id": "abu-simbel",
+      "title": "아부심벨",
+      "type": "place",
+      "historicalName": "아부심벨 신전",
+      "modernName": "아부심벨",
+      "modernAdmin": "아스완주 아부심벨",
+      "country": "이집트",
+      "worldRegion": "이집트사",
+      "period": "신왕국 제19왕조",
+      "yearLabel": "기원전 13세기",
+      "date": { "startYear": -1264, "endYear": -1224, "precision": "range" },
+      "spatial": {
+        "continentId": "africa",
+        "modernCountryIso2": "EG",
+        "historicalRegionKo": "나일 계곡과 델타",
+        "cultureAreaKo": "고대 이집트"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 22.3372, "lng": 31.6258 },
+      "aliases": ["Abu Simbel", "Ramesses II", "Nefertari", "Nubian Monuments", "Lake Nasser"],
+      "summary": "아부심벨은 람세스 2세가 누비아 경계권에 조성한 암굴 신전 복합체다. 신왕국 왕권 선전, 누비아 지배, 그리고 20세기 UNESCO 국제 구제 사업을 함께 보여주는 대표 유적이다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 누비아 유산 구성요소인 아부심벨 좌표를 사용한다.",
+      "curationBatch": "africa-egypt-ancient-core-sites-v1",
+      "sources": [
+        { "title": "World History Encyclopedia: Abu Simbel", "url": "https://www.worldhistory.org/Abu_Simbel/" },
+        { "title": "UNESCO: Nubian Monuments from Abu Simbel to Philae", "url": "https://whc.unesco.org/en/list/88/" }
+      ]
+    },
+    {
+      "id": "alexandria-egypt",
+      "title": "알렉산드리아",
+      "type": "place",
+      "historicalName": "알렉산드리아",
+      "modernName": "알렉산드리아",
+      "modernAdmin": "알렉산드리아주 알렉산드리아",
+      "country": "이집트",
+      "worldRegion": "이집트사",
+      "period": "프톨레마이오스·헬레니즘",
+      "yearLabel": "기원전 331년 건설 이후",
+      "date": { "startYear": -331, "endYear": 642, "precision": "range" },
+      "spatial": {
+        "continentId": "africa",
+        "modernCountryIso2": "EG",
+        "historicalRegionKo": "나일 계곡과 델타",
+        "cultureAreaKo": "고대 이집트"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 31.2001, "lng": 29.9187 },
+      "aliases": ["Alexandria", "Rhakotis", "Pharos", "Library of Alexandria", "Ptolemaic Egypt"],
+      "summary": "알렉산드리아는 알렉산드로스가 세운 지중해 항구 도시로, 프톨레마이오스 왕조의 수도이자 도서관과 파로스 등대로 상징되는 헬레니즘 지식·교역 중심지였다. 고대 이집트가 지중해 세계와 결합되는 전환점을 보여준다.",
+      "confidence": "approximate",
+      "sourceNote": "현대 알렉산드리아 항구 도시 중심부의 근사 좌표를 사용한다.",
+      "curationBatch": "africa-egypt-ancient-core-sites-v1",
+      "sources": [
+        { "title": "World History Encyclopedia: Alexandria, Egypt", "url": "https://www.worldhistory.org/alexandria/" },
+        { "title": "Britannica: Alexandria", "url": "https://www.britannica.com/place/Alexandria-Egypt" }
+      ]
+    }
+  ]
+}

@@ -11,9 +11,9 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 40
-- Completed curation batches: 2
-- Latest completed batch: `asia-iraq-mesopotamia-early-cities-v1`
+- Current entry count: 50
+- Completed curation batches: 3
+- Latest completed batch: `africa-egypt-ancient-core-sites-v1`
 - Latest completed infrastructure milestone: `a28681f Add data validation script`
 - Data validation script: `scripts/validate-data.js`
 
@@ -63,6 +63,22 @@ The long-term target is 3,000+ entries, but the project should progress one focu
     - `ashur`
     - `nineveh`
 
+- Ancient Egypt core sites batch
+  - Batch ID: `africa-egypt-ancient-core-sites-v1`
+  - Source file: `data/records/africa/egypt/ancient-egypt-core-sites.json`
+  - Entries added: 10
+  - Entry IDs:
+    - `memphis-egypt`
+    - `giza-plateau`
+    - `saqqara`
+    - `thebes-egypt`
+    - `karnak`
+    - `luxor-temple`
+    - `valley-of-the-kings`
+    - `amarna`
+    - `abu-simbel`
+    - `alexandria-egypt`
+
 ## Current Policy
 
 - Work on DB only unless the user explicitly asks for UI changes.
@@ -100,17 +116,17 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Ancient Egypt: core sites and monuments
-   - Possible source file: `data/records/africa/egypt/ancient-egypt-core-sites.json`
-   - Likely entries: Memphis, Giza, Saqqara, Thebes, Karnak, Luxor, Valley of the Kings, Amarna, Abu Simbel, Alexandria
-
-2. Indus Civilization: major urban sites
+1. Indus Civilization: major urban sites
    - Possible source file: `data/records/asia/south-asia/indus-civilization.json`
    - Likely entries: Harappa, Mohenjo-daro, Dholavira, Lothal, Kalibangan, Rakhigarhi, Ganweriwala, Mehrgarh
 
-3. Ancient Greece: early poleis and Panhellenic sanctuaries
+2. Ancient Greece: early poleis and Panhellenic sanctuaries
    - Possible source file: `data/records/europe/greece/ancient-greece-core-sites.json`
    - Likely entries: Athens, Sparta, Corinth, Thebes, Delphi, Olympia, Knossos, Mycenae, Troy, Miletus
+
+3. Ancient Persia: Achaemenid imperial centers
+   - Possible source file: `data/records/asia/iran/achaemenid-persia-core-sites.json`
+   - Likely entries: Pasargadae, Persepolis, Susa, Ecbatana, Behistun, Naqsh-e Rustam, Sardis, Babylon
 
 ## Resume Checklist
 
