@@ -11,9 +11,9 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 57
-- Completed curation batches: 4
-- Latest completed batch: `asia-south-asia-indus-civilization-v1`
+- Current entry count: 66
+- Completed curation batches: 5
+- Latest completed batch: `europe-greece-ancient-core-sites-v1`
 - Latest completed infrastructure milestone: `a28681f Add data validation script`
 - Data validation script: `scripts/validate-data.js`
 
@@ -93,6 +93,22 @@ The long-term target is 3,000+ entries, but the project should progress one focu
     - `mehrgarh`
     - `ganweriwala`
 
+- Ancient Greece core sites batch
+  - Batch ID: `europe-greece-ancient-core-sites-v1`
+  - Source file: `data/records/europe/greece/ancient-greece-core-sites.json`
+  - Entries added: 9 new entries plus 1 existing entry upgraded and linked to the batch
+  - Entry IDs:
+    - `athens-acropolis`
+    - `sparta-laconia`
+    - `ancient-corinth`
+    - `thebes-boeotia`
+    - `delphi`
+    - `olympia`
+    - `knossos`
+    - `mycenae`
+    - `troy-hisarlik`
+    - `miletus`
+
 ## Current Policy
 
 - Work on DB only unless the user explicitly asks for UI changes.
@@ -130,17 +146,17 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Ancient Greece: early poleis and Panhellenic sanctuaries
-   - Possible source file: `data/records/europe/greece/ancient-greece-core-sites.json`
-   - Likely entries: Athens, Sparta, Corinth, Thebes, Delphi, Olympia, Knossos, Mycenae, Troy, Miletus
-
-2. Ancient Persia: Achaemenid imperial centers
+1. Ancient Persia: Achaemenid imperial centers
    - Possible source file: `data/records/asia/iran/achaemenid-persia-core-sites.json`
    - Likely entries: Pasargadae, Persepolis, Susa, Ecbatana, Behistun, Naqsh-e Rustam, Sardis, Babylon
 
-3. Early China: Yellow River and Bronze Age core sites
+2. Early China: Yellow River and Bronze Age core sites
    - Possible source file: `data/records/asia/china/early-china-core-sites.json`
    - Likely entries: Erlitou, Yanshi, Zhengzhou Shang City, Anyang/Yinxu, Sanxingdui, Liangzhu, Taosi, Banpo
+
+3. Roman Republic and Empire: core political and imperial sites
+   - Possible source file: `data/records/europe/italy/roman-core-sites.json`
+   - Likely entries: Rome Forum, Palatine Hill, Pompeii, Ostia Antica, Ravenna, Carthage, Hadrian's Wall, Trier
 
 ## Resume Checklist
 

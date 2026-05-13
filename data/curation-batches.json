@@ -123,6 +123,37 @@
         "Haryana Tourism and District Hisar official pages for Rakhigarhi",
         "Britannica and Harappa.com reference pages for Kalibangan and Ganweriwala"
       ]
+    },
+    {
+      "id": "europe-greece-ancient-core-sites-v1",
+      "status": "completed",
+      "completedAt": "2026-05-13",
+      "continentId": "europe",
+      "countryIso2": "GR-TR",
+      "countryKo": "그리스·튀르키예",
+      "worldRegion": "그리스사",
+      "focusKo": "고대 그리스 핵심 도시와 범그리스 성소",
+      "scopeKo": "그리스 본토, 크레타, 서아나톨리아에 걸친 폴리스, 성소, 미노아·미케네·트로아스 핵심 유적",
+      "sourceFile": "data/records/europe/greece/ancient-greece-core-sites.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "athens-acropolis",
+        "sparta-laconia",
+        "ancient-corinth",
+        "thebes-boeotia",
+        "delphi",
+        "olympia",
+        "knossos",
+        "mycenae",
+        "troy-hisarlik",
+        "miletus"
+      ],
+      "sourceBasis": [
+        "World History Encyclopedia reference articles for Athens, Sparta, Corinth, Thebes, Delphi, Olympia, Knossos, Mycenae, and Troy",
+        "UNESCO World Heritage pages for Acropolis, Delphi, Olympia, Minoan Palatial Centres, Mycenae and Tiryns, and Troy",
+        "Greek Ministry of Culture page for Ancient Corinth",
+        "Britannica reference pages for Sparta, Thebes, and Miletus"
+      ]
     }
   ]
 }
