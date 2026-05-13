@@ -47,6 +47,9 @@ World Geometry Information System.
 `data/records/` 아래 파일은 원천 DB입니다.
 예를 들어 `data/records/africa/ethiopia/human-origins.json`은 에티오피아 인류 기원 배치의 원천 레코드이고, `data/entries.json`은 앱이 읽기 위한 통합 표시용 파일입니다.
 
+`data/PROJECT_STATE.md`는 긴 프로젝트를 여러 context에 걸쳐 이어가기 위한 상태 문서입니다.
+새 세션을 시작할 때 이 파일을 먼저 읽고, 배치 완료 후에는 진행 상태와 다음 후보를 갱신합니다.
+
 ## 실행
 
 이 프로젝트 폴더에서:
