@@ -50,6 +50,12 @@ World Geometry Information System.
 `data/PROJECT_STATE.md`는 긴 프로젝트를 여러 context에 걸쳐 이어가기 위한 상태 문서입니다.
 새 세션을 시작할 때 이 파일을 먼저 읽고, 배치 완료 후에는 진행 상태와 다음 후보를 갱신합니다.
 
+데이터 검증은 아래 명령으로 실행합니다.
+
+```bash
+node scripts/validate-data.js
+```
+
 ## 실행
 
 이 프로젝트 폴더에서:

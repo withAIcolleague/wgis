@@ -15,6 +15,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Completed curation batches: 1
 - Latest completed batch: `africa-ethiopia-human-origins-v1`
 - Latest completed data milestone before this state file: `af2c4b7 Add data taxonomy and source records`
+- Data validation script: `scripts/validate-data.js`
 
 ## Completed
 
@@ -41,6 +42,10 @@ The long-term target is 3,000+ entries, but the project should progress one focu
     - `ledi-geraru-ld-350-1`
     - `herto-homo-sapiens-idaltu`
     - `omo-kibish-omo-i`
+
+- Data validation script
+  - File: `scripts/validate-data.js`
+  - Checks: JSON parsing, duplicate IDs, coordinates, taxonomy references, batch links, source record links, and source-record/app-index field consistency
 
 ## Current Policy
 
@@ -107,19 +112,11 @@ At the start of a new session:
 7. Add app-compatible entries to `data/entries.json`.
 8. Add or update the batch in `data/curation-batches.json`.
 9. Update this file.
-10. Validate JSON, duplicate IDs, batch links, taxonomy references, and coordinates.
+10. Run `node scripts/validate-data.js`.
 11. Commit and push to `origin/main`.
 
 ## Validation Commands
 
 ```bash
-node -e "const fs=require('fs'); for (const f of ['data/entries.json','data/curation-batches.json','data/taxonomy.json','data/continents-countries.json']) JSON.parse(fs.readFileSync(f,'utf8')); console.log('json ok')"
-```
-
-```bash
-node -e "const fs=require('fs'); const entries=JSON.parse(fs.readFileSync('data/entries.json','utf8')); const ids=entries.map(e=>e.id); const dup=ids.filter((id,i)=>ids.indexOf(id)!==i); console.log(dup.length ? dup.join(',') : 'duplicate ids: none')"
-```
-
-```bash
-node -e "const fs=require('fs'); const entries=JSON.parse(fs.readFileSync('data/entries.json','utf8')); const bad=entries.filter(e=>!e.coordinates || typeof e.coordinates.lat!=='number' || typeof e.coordinates.lng!=='number'); console.log(bad.length ? bad.map(e=>e.id).join(',') : 'bad coordinates: none')"
+node scripts/validate-data.js
 ```
