@@ -317,6 +317,10 @@ select {
   background: #365a42;
 }
 
+.type-site {
+  background: #6f6a2d;
+}
+
 .type-event {
   background: #8b3f32;
 }

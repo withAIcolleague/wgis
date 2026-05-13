@@ -94,6 +94,35 @@
         "Egypt Ministry of Tourism and Antiquities monument pages",
         "Britannica place summaries where official site pages were not available"
       ]
+    },
+    {
+      "id": "asia-south-asia-indus-civilization-v1",
+      "status": "completed",
+      "completedAt": "2026-05-13",
+      "continentId": "asia",
+      "countryIso2": "PK-IN",
+      "countryKo": "파키스탄·인도",
+      "worldRegion": "인도사",
+      "focusKo": "인더스 문명 주요 도시 유적",
+      "scopeKo": "파키스탄과 인도에 걸친 인더스-사라스바티 권역의 대표 도시, 항구, 선행 농경 정착지",
+      "sourceFile": "data/records/asia/south-asia/indus-civilization.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "harappa",
+        "mohenjo-daro",
+        "dholavira",
+        "lothal",
+        "kalibangan",
+        "rakhigarhi",
+        "mehrgarh",
+        "ganweriwala"
+      ],
+      "sourceBasis": [
+        "World History Encyclopedia Indus Valley Civilization and Harappa references",
+        "UNESCO World Heritage and Tentative List pages for Harappa, Mohenjo-daro, Dholavira, Lothal, and Mehrgarh",
+        "Haryana Tourism and District Hisar official pages for Rakhigarhi",
+        "Britannica and Harappa.com reference pages for Kalibangan and Ganweriwala"
+      ]
     }
   ]
 }

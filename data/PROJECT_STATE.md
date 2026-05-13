@@ -11,9 +11,9 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 50
-- Completed curation batches: 3
-- Latest completed batch: `africa-egypt-ancient-core-sites-v1`
+- Current entry count: 57
+- Completed curation batches: 4
+- Latest completed batch: `asia-south-asia-indus-civilization-v1`
 - Latest completed infrastructure milestone: `a28681f Add data validation script`
 - Data validation script: `scripts/validate-data.js`
 
@@ -79,6 +79,20 @@ The long-term target is 3,000+ entries, but the project should progress one focu
     - `abu-simbel`
     - `alexandria-egypt`
 
+- Indus Civilization major urban sites batch
+  - Batch ID: `asia-south-asia-indus-civilization-v1`
+  - Source file: `data/records/asia/south-asia/indus-civilization.json`
+  - Entries added: 7 new entries plus 1 existing entry upgraded and linked to the batch
+  - Entry IDs:
+    - `harappa`
+    - `mohenjo-daro`
+    - `dholavira`
+    - `lothal`
+    - `kalibangan`
+    - `rakhigarhi`
+    - `mehrgarh`
+    - `ganweriwala`
+
 ## Current Policy
 
 - Work on DB only unless the user explicitly asks for UI changes.
@@ -116,17 +130,17 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Indus Civilization: major urban sites
-   - Possible source file: `data/records/asia/south-asia/indus-civilization.json`
-   - Likely entries: Harappa, Mohenjo-daro, Dholavira, Lothal, Kalibangan, Rakhigarhi, Ganweriwala, Mehrgarh
-
-2. Ancient Greece: early poleis and Panhellenic sanctuaries
+1. Ancient Greece: early poleis and Panhellenic sanctuaries
    - Possible source file: `data/records/europe/greece/ancient-greece-core-sites.json`
    - Likely entries: Athens, Sparta, Corinth, Thebes, Delphi, Olympia, Knossos, Mycenae, Troy, Miletus
 
-3. Ancient Persia: Achaemenid imperial centers
+2. Ancient Persia: Achaemenid imperial centers
    - Possible source file: `data/records/asia/iran/achaemenid-persia-core-sites.json`
    - Likely entries: Pasargadae, Persepolis, Susa, Ecbatana, Behistun, Naqsh-e Rustam, Sardis, Babylon
+
+3. Early China: Yellow River and Bronze Age core sites
+   - Possible source file: `data/records/asia/china/early-china-core-sites.json`
+   - Likely entries: Erlitou, Yanshi, Zhengzhou Shang City, Anyang/Yinxu, Sanxingdui, Liangzhu, Taosi, Banpo
 
 ## Resume Checklist
 

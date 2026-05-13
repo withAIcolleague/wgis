@@ -16,18 +16,21 @@ const MOBILE_MEDIA_QUERY = '(max-width: 820px)';
 const TYPE_LABELS = {
   all: '전체',
   place: '과거 지명',
+  site: '유적',
   event: '사건',
   artifact: '유물·유적'
 };
 
 const TYPE_CLASSES = {
   place: 'type-place',
+  site: 'type-site',
   event: 'type-event',
   artifact: 'type-artifact'
 };
 
 const TYPE_COLORS = {
   place: '#365a42',
+  site: '#6f6a2d',
   event: '#8b3f32',
   artifact: '#67508d'
 };
@@ -36,6 +39,14 @@ const MARKER_GLYPHS = {
   place: `
     <path d="M8 4.5v13" />
     <path d="M8 5h8.5l-1.9 3 1.9 3H8" />
+  `,
+  site: `
+    <path d="M7 21h10" />
+    <path d="M8.5 21V10" />
+    <path d="M15.5 21V10" />
+    <path d="M6 10h12" />
+    <path d="M8 7h8" />
+    <path d="M10 4h4" />
   `,
   event: `
     <path d="M13.2 2.5 7.2 14h4.1l-1 7.5 6.5-12.6h-4.2l.6-6.4Z" />
@@ -137,7 +148,7 @@ function buildSearchIndex(entry) {
 
 function setupFilters() {
   const typeContainer = document.getElementById('typeFilters');
-  const typeKeys = ['all', 'place', 'event', 'artifact'];
+  const typeKeys = ['all', 'place', 'site', 'event', 'artifact'];
   typeContainer.innerHTML = typeKeys.map(type => `
     <button class="filter-btn ${type === activeType ? 'active' : ''}" data-type="${type}">
       ${TYPE_LABELS[type]}

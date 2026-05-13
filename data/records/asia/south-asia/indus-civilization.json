@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "id": "asia-south-asia-indus-civilization",
+  "titleKo": "인더스 문명 주요 도시 유적",
+  "curationBatch": "asia-south-asia-indus-civilization-v1",
+  "taxonomyFile": "data/taxonomy.json",
+  "appIndexFile": "data/entries.json",
+  "scope": {
+    "continentId": "asia",
+    "modernCountryIso2": "PK-IN",
+    "modernCountryKo": "파키스탄·인도",
+    "historicalRegionKo": "인더스-사라스바티 권역",
+    "cultureAreaKo": "인더스 문명 / 하라파 문화",
+    "periodBand": "prehistory-ancient",
+    "topicKo": "주요 도시, 항구, 선행 정착지"
+  },
+  "records": [
+    {
+      "id": "harappa",
+      "title": "하라파",
+      "type": "site",
+      "historicalName": "하라파",
+      "modernName": "하라파 유적",
+      "modernAdmin": "펀자브주 사히왈 지구 하라파",
+      "country": "파키스탄",
+      "worldRegion": "인도사",
+      "period": "인더스 문명 / 하라파 문화",
+      "yearLabel": "기원전 3300-1300년경",
+      "date": { "startYear": -3300, "endYear": -1300, "precision": "range" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "PK",
+        "historicalRegionKo": "상류 인더스·라비강 권역",
+        "cultureAreaKo": "인더스 문명 / 하라파 문화"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 30.1000, "lng": 72.1333 },
+      "aliases": ["Harappa", "Harappan Civilization", "Ravi phase", "Indus Valley Civilization", "하라파 문명"],
+      "summary": "하라파는 인더스 문명의 이름을 낳은 대표 도시 유적으로, 라비강 옛 물길 남쪽의 여러 둔덕과 묘지군으로 이루어진다. 성숙기 하라파의 도시 계획, 벽돌 건축, 공예 생산, 장거리 교역을 이해하는 기준점이 되는 장소다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 잠정목록의 하라파 좌표와 유적 범위를 기준으로 표시했다.",
+      "curationBatch": "asia-south-asia-indus-civilization-v1",
+      "sources": [
+        { "title": "World History Encyclopedia: Harappa Architecture and Town Planning", "url": "https://www.worldhistory.org/article/695/harappa-an-overview-of-harappan-architecture--town/" },
+        { "title": "UNESCO Tentative List: Archaeological Site of Harappa", "url": "https://whc.unesco.org/en/tentativelists/1878/" }
+      ]
+    },
+    {
+      "id": "mohenjo-daro",
+      "title": "모헨조다로",
+      "type": "site",
+      "historicalName": "모헨조다로",
+      "modernName": "모헨조다로 고고유적",
+      "modernAdmin": "신드주 라르카나 지구",
+      "country": "파키스탄",
+      "worldRegion": "인도사",
+      "period": "인더스 문명 성숙기",
+      "yearLabel": "기원전 2600-1900년경",
+      "date": { "startYear": -2600, "endYear": -1900, "precision": "range" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "PK",
+        "historicalRegionKo": "하류 인더스 권역",
+        "cultureAreaKo": "인더스 문명 / 하라파 문화"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 27.3292, "lng": 68.1389 },
+      "aliases": ["Mohenjo-daro", "Mohenjodaro", "Moenjodaro", "Great Bath", "Indus Valley Civilization"],
+      "summary": "모헨조다로는 하류 인더스의 대규모 도시 유적으로, 높은 성채 구역과 하부 도시의 엄격한 배치가 초기 도시 계획을 보여준다. 대욕장, 배수 체계, 표준화된 벽돌 건축은 인더스 문명의 도시적 성격을 이해하는 핵심 자료다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 세계유산 지도 좌표를 기준으로 표시했다.",
+      "curationBatch": "asia-south-asia-indus-civilization-v1",
+      "sources": [
+        { "title": "UNESCO: Archaeological Ruins at Moenjodaro", "url": "https://whc.unesco.org/en/list/138/" },
+        { "title": "UNESCO: Archaeological Ruins at Moenjodaro Maps", "url": "https://whc.unesco.org/en/list/0138/maps/" }
+      ]
+    },
+    {
+      "id": "dholavira",
+      "title": "돌라비라",
+      "type": "site",
+      "historicalName": "돌라비라",
+      "modernName": "돌라비라 하라파 도시 유적",
+      "modernAdmin": "구자라트주 카치 지구 카디르 섬",
+      "country": "인도",
+      "worldRegion": "인도사",
+      "period": "인더스 문명 / 하라파 문화",
+      "yearLabel": "기원전 3000-1500년경",
+      "date": { "startYear": -3000, "endYear": -1500, "precision": "range" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "IN",
+        "historicalRegionKo": "카치·란 권역",
+        "cultureAreaKo": "인더스 문명 / 하라파 문화"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 23.8884, "lng": 70.2133 },
+      "aliases": ["Dholavira", "Khadir Island", "Kachchh", "Harappan city", "water management"],
+      "summary": "돌라비라는 카치의 건조한 섬 환경에 자리한 인더스 문명 남부 거점이다. 성채, 중간 도시, 하부 도시, 저수 시설과 배수 구조가 잘 남아 있어, 물 관리와 도시 구획을 결합한 하라파 도시의 지역적 변형을 보여준다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 세계유산 지도 좌표를 기준으로 표시했다.",
+      "curationBatch": "asia-south-asia-indus-civilization-v1",
+      "sources": [
+        { "title": "UNESCO: Dholavira, a Harappan City", "url": "https://whc.unesco.org/en/list/1645/" },
+        { "title": "UNESCO: Dholavira Maps", "url": "https://whc.unesco.org/en/list/1645/maps/" }
+      ]
+    },
+    {
+      "id": "lothal",
+      "title": "로탈",
+      "type": "site",
+      "historicalName": "로탈",
+      "modernName": "로탈 항구도시 유적",
+      "modernAdmin": "구자라트주 아메다바드 지구 도르카 탈루카",
+      "country": "인도",
+      "worldRegion": "인도사",
+      "period": "인더스 문명 성숙기",
+      "yearLabel": "기원전 2400-1900년경",
+      "date": { "startYear": -2400, "endYear": -1900, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "IN",
+        "historicalRegionKo": "캄베이만·사바르마티 권역",
+        "cultureAreaKo": "인더스 문명 / 하라파 문화"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 22.5214, "lng": 72.2494 },
+      "aliases": ["Lothal", "Harappan port-town", "Gulf of Khambhat", "dockyard", "bead making"],
+      "summary": "로탈은 캄베이만 내륙 수로와 연결된 하라파계 항구도시 유적으로, 상부 도시와 하부 도시, 배수 시설, 공예 생산 구역이 확인된다. 인더스 문명의 해상 교역과 구자라트 지역 네트워크를 보여주는 핵심 지점이다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 잠정목록의 로탈 좌표를 기준으로 표시했다.",
+      "curationBatch": "asia-south-asia-indus-civilization-v1",
+      "sources": [
+        { "title": "UNESCO Tentative List: Archaeological remains of a Harappa Port-Town, Lothal", "url": "https://whc.unesco.org/en/tentativelists/5918/" },
+        { "title": "World History Encyclopedia: Indus Valley Civilization", "url": "https://www.worldhistory.org/Indus_Valley_Civilization/" }
+      ]
+    },
+    {
+      "id": "kalibangan",
+      "title": "칼리방간",
+      "type": "site",
+      "historicalName": "칼리방간",
+      "modernName": "칼리방간 유적",
+      "modernAdmin": "라자스탄주 하누망가르 지구 필리방안 인근",
+      "country": "인도",
+      "worldRegion": "인도사",
+      "period": "선하라파-성숙기 하라파",
+      "yearLabel": "기원전 3500-1750년경",
+      "date": { "startYear": -3500, "endYear": -1750, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "IN",
+        "historicalRegionKo": "가가르-하크라 권역",
+        "cultureAreaKo": "인더스 문명 / 하라파 문화"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "context" },
+      "coordinates": { "lat": 29.4700, "lng": 74.1300 },
+      "aliases": ["Kalibangan", "Kali Banga", "Ghaggar-Hakra", "fire altars", "ploughed field"],
+      "summary": "칼리방간은 선하라파 단계와 성숙기 하라파 단계가 이어지는 라자스탄의 주요 유적이다. 성채와 묘지, 격자형 도시 흔적, 제의 시설로 해석되는 구조가 확인되어 인더스 문명의 지역적 전개와 농경 기반을 이해하는 데 중요하다.",
+      "confidence": "approximate",
+      "sourceNote": "칼리방간 유적 중심부의 공개 좌표를 근사값으로 사용했다.",
+      "curationBatch": "asia-south-asia-indus-civilization-v1",
+      "sources": [
+        { "title": "Britannica: Kalibangan", "url": "https://www.britannica.com/place/Kalibangan" },
+        { "title": "World History Encyclopedia: Indus Valley Civilization", "url": "https://www.worldhistory.org/Indus_Valley_Civilization/" }
+      ]
+    },
+    {
+      "id": "rakhigarhi",
+      "title": "라키가르히",
+      "type": "site",
+      "historicalName": "라키가르히",
+      "modernName": "라키가르히 유적",
+      "modernAdmin": "하리아나주 히사르 지구 라키가르히·라키샤푸르",
+      "country": "인도",
+      "worldRegion": "인도사",
+      "period": "인더스 문명 성숙기",
+      "yearLabel": "기원전 2600-1800년경",
+      "date": { "startYear": -2600, "endYear": -1800, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "IN",
+        "historicalRegionKo": "사라스바티-드리슈드바티 건천 권역",
+        "cultureAreaKo": "인더스 문명 / 하라파 문화"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 29.2980, "lng": 76.1142 },
+      "aliases": ["Rakhigarhi", "Rakhi Garhi", "Rakhikhas", "Rakhishahpur", "Harappan township"],
+      "summary": "라키가르히는 인도 하리아나의 대형 하라파 도시 유적으로, 여러 둔덕이 이어진 광범위한 정착지다. 주거 구역, 배수 시설, 곡물 저장, 공예품, 인장 자료가 확인되어 인더스 문명의 동부 확산과 대도시 네트워크를 보여준다.",
+      "confidence": "approximate",
+      "sourceNote": "라키가르히 중심 유적권의 근사 좌표를 사용했다.",
+      "curationBatch": "asia-south-asia-indus-civilization-v1",
+      "sources": [
+        { "title": "Haryana Tourism: Ancient Site of Rakhigarhi", "url": "https://haryanatourism.gov.in/places_of_interest/ancient-site-of-rakhigarhi/" },
+        { "title": "District Hisar: Culture and Heritage", "url": "https://hisar.gov.in/culture-heritage/" }
+      ]
+    },
+    {
+      "id": "mehrgarh",
+      "title": "메르가르",
+      "type": "site",
+      "historicalName": "메르가르",
+      "modernName": "메르가르 고고유적",
+      "modernAdmin": "발루치스탄주 카치 평원 볼란 고개 인근",
+      "country": "파키스탄",
+      "worldRegion": "인도사",
+      "period": "신석기-금석병용기 남아시아",
+      "yearLabel": "기원전 7000-2600년경",
+      "date": { "startYear": -7000, "endYear": -2600, "precision": "range" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "PK",
+        "historicalRegionKo": "카치 평원·볼란 고개 권역",
+        "cultureAreaKo": "인더스 문명 선행 농경 정착"
+      },
+      "classification": { "periodBand": "prehistory", "selectionTier": "context" },
+      "coordinates": { "lat": 29.2125, "lng": 67.6708 },
+      "aliases": ["Mehrgarh", "Bolan Pass", "Kachi Plain", "Neolithic South Asia", "Pre-Harappan"],
+      "summary": "메르가르는 볼란 고개 입구의 이른 농경 정착지로, 인더스 문명 성립 이전 남아시아의 농업, 목축, 토기, 매장 관습을 추적하게 해준다. 하라파 도시 문명으로 이어지는 장기적인 지역 변화의 출발점으로 중요하다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 잠정목록의 메르가르 좌표를 기준으로 표시했다.",
+      "curationBatch": "asia-south-asia-indus-civilization-v1",
+      "sources": [
+        { "title": "UNESCO Tentative List: Archaeological Site of Mehrgarh", "url": "https://whc.unesco.org/en/tentativelists/1876/" },
+        { "title": "World History Encyclopedia: Indus Valley Civilization", "url": "https://www.worldhistory.org/Indus_Valley_Civilization/" }
+      ]
+    },
+    {
+      "id": "ganweriwala",
+      "title": "간웨리왈라",
+      "type": "site",
+      "historicalName": "간웨리왈라",
+      "modernName": "간웨리왈라 유적",
+      "modernAdmin": "펀자브주 바하왈푸르 지구 촐리스탄 사막",
+      "country": "파키스탄",
+      "worldRegion": "인도사",
+      "period": "인더스 문명 성숙기",
+      "yearLabel": "기원전 2600-1900년경",
+      "date": { "startYear": -2600, "endYear": -1900, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "PK",
+        "historicalRegionKo": "가가르-하크라 건천·촐리스탄 권역",
+        "cultureAreaKo": "인더스 문명 / 하라파 문화"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "context" },
+      "coordinates": { "lat": 28.5989, "lng": 71.1500 },
+      "aliases": ["Ganweriwala", "Ganeriwala", "Cholistan", "Hakra", "Ghaggar-Hakra"],
+      "summary": "간웨리왈라는 촐리스탄 사막의 하크라 옛 물길 가까이에 있는 대형 인더스 문명 유적이다. 아직 충분히 발굴되지 않았지만 하라파와 모헨조다로 사이의 거점으로 추정되어, 인더스 도시망의 빈 공간을 설명하는 중요한 후보지다.",
+      "confidence": "approximate",
+      "sourceNote": "간웨리왈라는 미발굴 성격이 강해 공개된 유적 근사 좌표로 표시했다.",
+      "curationBatch": "asia-south-asia-indus-civilization-v1",
+      "sources": [
+        { "title": "Harappa.com: A Brief Introduction to the Ancient Indus Civilization", "url": "https://www.harappa.com/har/ancient-indus-sites.html" },
+        { "title": "World History Encyclopedia: Indus Valley Civilization", "url": "https://www.worldhistory.org/Indus_Valley_Civilization/" }
+      ]
+    }
+  ]
+}
