@@ -16,6 +16,8 @@
       "worldRegion": "아프리카사",
       "focusKo": "동아프리카 인류 기원",
       "scopeKo": "에티오피아의 아와시·고나·오모 권역에서 확인된 초기 인류 화석, 석기, 관련 유적",
+      "sourceFile": "data/records/africa/ethiopia/human-origins.json",
+      "appIndexFile": "data/entries.json",
       "entryIds": [
         "ardi-aramis",
         "lucy-hadar",

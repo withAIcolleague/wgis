@@ -41,6 +41,12 @@ World Geometry Information System.
 `data/curation-batches.json`은 DB를 한 번에 대량으로 섞어 넣지 않기 위한 수집 단위 기록입니다.
 각 배치는 하나의 국가, 문화권, 또는 연구 주제에 집중해서 `data/entries.json`에 추가합니다.
 
+`data/taxonomy.json`은 공간, 시간, 문화권, 유형 축을 분리한 분류 기준입니다.
+현대 국가와 대륙은 지도 검색용 색인으로 두고, 원천 데이터의 주 분류는 역사 지역, 문화권, 시대, 주제 배치로 관리합니다.
+
+`data/records/` 아래 파일은 원천 DB입니다.
+예를 들어 `data/records/africa/ethiopia/human-origins.json`은 에티오피아 인류 기원 배치의 원천 레코드이고, `data/entries.json`은 앱이 읽기 위한 통합 표시용 파일입니다.
+
 ## 실행
 
 이 프로젝트 폴더에서:

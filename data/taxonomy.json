@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "titleKo": "WGIS 데이터 분류 체계",
+  "purposeKo": "대륙·현대 국가만으로는 역사 데이터의 밀도 증가를 감당하기 어렵기 때문에, 공간·시간·문화권·유형 축을 분리해 관리한다.",
+  "principles": [
+    {
+      "id": "source-records-first",
+      "labelKo": "원천 레코드 우선",
+      "descriptionKo": "새 데이터는 data/records 아래의 국가·문화권·주제별 파일에 먼저 추가하고, data/entries.json은 앱 표시용 통합본으로 유지한다."
+    },
+    {
+      "id": "modern-country-as-index",
+      "labelKo": "현대 국가는 색인",
+      "descriptionKo": "현대 국가와 대륙은 지도·검색을 위한 공간 색인으로 사용하고, 역사적 해석의 주 분류는 역사 지역·문화권·시대 축에 둔다."
+    },
+    {
+      "id": "density-aware-time",
+      "labelKo": "시간 밀도 반영",
+      "descriptionKo": "현재에 가까울수록 자료량이 급증하므로 시대 폭을 좁히고, 국가·도시·전쟁·운동·기술 같은 주제 배치를 더 세분화한다."
+    },
+    {
+      "id": "batch-curation",
+      "labelKo": "집중 배치 수집",
+      "descriptionKo": "한 번에 여러 문화권을 섞지 않고, 하나의 국가·문화권·주제 배치를 검증한 뒤 다음 배치로 이동한다."
+    }
+  ],
+  "recordShape": {
+    "requiredLegacyFields": [
+      "id",
+      "title",
+      "type",
+      "historicalName",
+      "modernName",
+      "modernAdmin",
+      "country",
+      "worldRegion",
+      "period",
+      "yearLabel",
+      "coordinates",
+      "summary",
+      "confidence",
+      "sourceNote"
+    ],
+    "recommendedExtendedFields": [
+      "date",
+      "spatial",
+      "classification",
+      "sources",
+      "curationBatch"
+    ]
+  },
+  "entryTypes": [
+    { "id": "place", "labelKo": "과거 지명·도시", "descriptionKo": "역사적 도시, 수도, 지명, 거점" },
+    { "id": "site", "labelKo": "유적·발굴지", "descriptionKo": "고고학 유적, 발굴 구역, 보존 유산 구역" },
+    { "id": "artifact", "labelKo": "유물·화석·문서", "descriptionKo": "이동 가능한 유물, 화석, 기록물, 석기군" },
+    { "id": "event", "labelKo": "사건", "descriptionKo": "전투, 발견, 혁명, 조약, 재난, 발굴 사건" },
+    { "id": "polity", "labelKo": "국가·정치체", "descriptionKo": "왕국, 제국, 도시국가, 부족연맹, 근현대 국가" },
+    { "id": "route", "labelKo": "경로·네트워크", "descriptionKo": "교역로, 이주로, 해상로, 원정 경로" },
+    { "id": "culture", "labelKo": "문화권·고고학 문화", "descriptionKo": "문명권, 문화 복합체, 고고학 문화" }
+  ],
+  "periodBands": [
+    {
+      "id": "prehistory",
+      "labelKo": "선사",
+      "startYear": -3300000,
+      "endYear": -3000,
+      "defaultBatchScaleKo": "문화권·연구 권역·기술 단계",
+      "densityRuleKo": "자료 밀도가 낮고 연대 오차가 크므로 큰 시간 폭과 연구 권역 중심으로 관리한다."
+    },
+    {
+      "id": "ancient",
+      "labelKo": "고대",
+      "startYear": -3000,
+      "endYear": 500,
+      "defaultBatchScaleKo": "문명권·왕국·도시권",
+      "densityRuleKo": "문명권과 정치체를 중심으로 하되, 핵심 도시·유물·사건을 별도 항목화한다."
+    },
+    {
+      "id": "medieval",
+      "labelKo": "중세",
+      "startYear": 500,
+      "endYear": 1500,
+      "defaultBatchScaleKo": "왕국·제국·교역권·종교권",
+      "densityRuleKo": "국가 경계보다 왕조, 교역망, 종교·문화권 기준을 우선한다."
+    },
+    {
+      "id": "early-modern",
+      "labelKo": "근세",
+      "startYear": 1500,
+      "endYear": 1800,
+      "defaultBatchScaleKo": "제국·국가·해양 교역망·전쟁",
+      "densityRuleKo": "국가 단위와 주제 단위를 병행하고, 식민지·제국 네트워크는 별도 배치로 분리한다."
+    },
+    {
+      "id": "modern",
+      "labelKo": "근대",
+      "startYear": 1800,
+      "endYear": 1945,
+      "defaultBatchScaleKo": "국가·전쟁·혁명·산업화·제국주의",
+      "densityRuleKo": "자료량이 크게 증가하므로 대표 사건과 공간성이 뚜렷한 항목만 선별한다."
+    },
+    {
+      "id": "contemporary",
+      "labelKo": "현대",
+      "startYear": 1945,
+      "endYear": null,
+      "defaultBatchScaleKo": "국가·도시·분쟁·국제기구·기술 인프라",
+      "densityRuleKo": "모든 사건을 수집하지 않고 WGIS의 지도 기반 이해에 필요한 장소성 높은 항목만 엄격히 선별한다."
+    }
+  ],
+  "datePrecision": [
+    { "id": "exact", "labelKo": "정확" },
+    { "id": "year", "labelKo": "연도 단위" },
+    { "id": "range", "labelKo": "범위" },
+    { "id": "minimum", "labelKo": "최소 연대" },
+    { "id": "century", "labelKo": "세기 단위" },
+    { "id": "approximate", "labelKo": "근사" },
+    { "id": "disputed", "labelKo": "논쟁 있음" }
+  ],
+  "confidence": [
+    { "id": "high", "labelKo": "높음", "descriptionKo": "좌표와 역사적 대응 관계가 비교적 명확하다." },
+    { "id": "medium", "labelKo": "중간", "descriptionKo": "권역은 명확하지만 정확한 위치나 해석에 논쟁이 있다." },
+    { "id": "approximate", "labelKo": "근사", "descriptionKo": "지도 표시는 연구 권역이나 현대 도시 중심점 수준이다." }
+  ],
+  "selectionTiers": [
+    { "id": "core", "labelKo": "핵심", "descriptionKo": "해당 문화권·국가·주제를 이해하는 데 반드시 필요한 항목" },
+    { "id": "context", "labelKo": "맥락", "descriptionKo": "핵심 항목의 배경 이해를 돕는 항목" },
+    { "id": "extended", "labelKo": "확장", "descriptionKo": "후속 배치에서 보강할 수 있는 세부 항목" }
+  ]
+}

@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "id": "africa-ethiopia-human-origins",
+  "titleKo": "에티오피아 동아프리카 인류 기원",
+  "curationBatch": "africa-ethiopia-human-origins-v1",
+  "taxonomyFile": "data/taxonomy.json",
+  "appIndexFile": "data/entries.json",
+  "scope": {
+    "continentId": "africa",
+    "modernCountryIso2": "ET",
+    "modernCountryKo": "에티오피아",
+    "historicalRegionKo": "동아프리카",
+    "cultureAreaKo": "동아프리카 인류 기원",
+    "periodBand": "prehistory",
+    "topicKo": "초기 인류 화석, 석기, 관련 유적"
+  },
+  "records": [
+    {
+      "id": "ardi-aramis",
+      "title": "아르디",
+      "type": "artifact",
+      "historicalName": "ARA-VP-6/500",
+      "modernName": "아라미스",
+      "modernAdmin": "아파르주 미들 아와시 일대",
+      "country": "에티오피아",
+      "worldRegion": "아프리카사",
+      "period": "동아프리카 인류 기원",
+      "yearLabel": "약 440만 년 전",
+      "date": {
+        "startYear": -4400000,
+        "endYear": -4400000,
+        "precision": "approximate"
+      },
+      "spatial": {
+        "continentId": "africa",
+        "modernCountryIso2": "ET",
+        "historicalRegionKo": "동아프리카",
+        "cultureAreaKo": "동아프리카 인류 기원"
+      },
+      "classification": {
+        "periodBand": "prehistory",
+        "selectionTier": "core"
+      },
+      "coordinates": { "lat": 10.5833, "lng": 40.5167 },
+      "aliases": ["Ardi", "ARA-VP-6/500", "Ardipithecus ramidus", "Aramis", "Middle Awash"],
+      "summary": "아르디는 아라미스의 미들 아와시 권역에서 확인된 아르디피테쿠스 라미두스 부분 골격이다. 숲 환경과 나무 생활, 초기 직립 보행 논의를 함께 보여주는 핵심 초기 인류 화석으로 다룬다.",
+      "confidence": "approximate",
+      "sourceNote": "공개 지도 표시는 아라미스·미들 아와시 권역 중심 좌표를 사용한다.",
+      "curationBatch": "africa-ethiopia-human-origins-v1",
+      "sources": [
+        { "title": "Smithsonian Human Origins: ARA-VP-6/500", "url": "https://humanorigins.si.edu/evidence/human-fossils/fossils/ara-vp-6500" },
+        { "title": "Smithsonian Human Origins: Ardipithecus ramidus", "url": "https://humanorigins.si.edu/evidence/human-fossils/species/ardipithecus-ramidus" }
+      ]
+    },
+    {
+      "id": "lucy-hadar",
+      "title": "루시",
+      "type": "artifact",
+      "historicalName": "AL 288-1",
+      "modernName": "하다르",
+      "modernAdmin": "아파르주 하다르 일대",
+      "country": "에티오피아",
+      "worldRegion": "아프리카사",
+      "period": "동아프리카 인류 기원",
+      "yearLabel": "약 320만 년 전",
+      "date": {
+        "startYear": -3200000,
+        "endYear": -3200000,
+        "precision": "approximate"
+      },
+      "spatial": {
+        "continentId": "africa",
+        "modernCountryIso2": "ET",
+        "historicalRegionKo": "동아프리카",
+        "cultureAreaKo": "동아프리카 인류 기원"
+      },
+      "classification": {
+        "periodBand": "prehistory",
+        "selectionTier": "core"
+      },
+      "coordinates": { "lat": 11.1667, "lng": 40.6333 },
+      "aliases": ["Lucy", "Dinkinesh", "AL 288-1", "Australopithecus afarensis", "Hadar"],
+      "summary": "루시는 하다르에서 발견된 오스트랄로피테쿠스 아파렌시스 부분 골격이다. 나무타기 특징과 함께 두 발 보행의 해부학적 단서를 보여주어, 인류 진화 지도에서 가장 대표적인 기준점으로 쓰인다.",
+      "confidence": "approximate",
+      "sourceNote": "정확한 발굴점이 아니라 하다르 연구지 권역 좌표를 사용한다.",
+      "curationBatch": "africa-ethiopia-human-origins-v1",
+      "sources": [
+        { "title": "Smithsonian Human Origins: AL 288-1", "url": "https://humanorigins.si.edu/evidence/human-fossils/fossils/al-288-1" },
+        { "title": "UNESCO: Lower Valley of the Awash", "url": "https://whc.unesco.org/en/list/10" }
+      ]
+    },
+    {
+      "id": "selam-dikika",
+      "title": "셀람",
+      "type": "artifact",
+      "historicalName": "DIK-1-1",
+      "modernName": "디키카",
+      "modernAdmin": "아파르주 디키카 일대",
+      "country": "에티오피아",
+      "worldRegion": "아프리카사",
+      "period": "동아프리카 인류 기원",
+      "yearLabel": "약 330만 년 전",
+      "date": {
+        "startYear": -3300000,
+        "endYear": -3300000,
+        "precision": "approximate"
+      },
+      "spatial": {
+        "continentId": "africa",
+        "modernCountryIso2": "ET",
+        "historicalRegionKo": "동아프리카",
+        "cultureAreaKo": "동아프리카 인류 기원"
+      },
+      "classification": {
+        "periodBand": "prehistory",
+        "selectionTier": "core"
+      },
+      "coordinates": { "lat": 11.0833, "lng": 40.5833 },
+      "aliases": ["Selam", "Dikika Child", "DIK-1-1", "Lucy's baby", "Australopithecus afarensis"],
+      "summary": "셀람은 디키카에서 확인된 어린 오스트랄로피테쿠스 아파렌시스 화석이다. 루시보다 조금 더 오래된 같은 종의 유아 골격으로, 초기 인류의 성장과 이동 방식을 비교하는 데 중요하다.",
+      "confidence": "approximate",
+      "sourceNote": "디키카 연구지 권역 좌표를 사용한다.",
+      "curationBatch": "africa-ethiopia-human-origins-v1",
+      "sources": [
+        { "title": "Smithsonian Human Origins: DIK-1-1", "url": "https://humanorigins.si.edu/evidence/human-fossils/fossils/dik-1-1" },
+        { "title": "Nature: A juvenile early hominin skeleton from Dikika", "url": "https://www.nature.com/articles/nature05047" }
+      ]
+    },
+    {
+      "id": "dikika-cutmarked-bones",
+      "title": "디키카 절흔 동물뼈",
+      "type": "artifact",
+      "historicalName": "DIK-55 절흔 동물뼈",
+      "modernName": "디키카",
+      "modernAdmin": "아파르주 디키카 일대",
+      "country": "에티오피아",
+      "worldRegion": "아프리카사",
+      "period": "동아프리카 인류 기원",
+      "yearLabel": "약 339만 년 전 이전",
+      "date": {
+        "endYear": -3390000,
+        "precision": "minimum"
+      },
+      "spatial": {
+        "continentId": "africa",
+        "modernCountryIso2": "ET",
+        "historicalRegionKo": "동아프리카",
+        "cultureAreaKo": "동아프리카 인류 기원"
+      },
+      "classification": {
+        "periodBand": "prehistory",
+        "selectionTier": "context"
+      },
+      "coordinates": { "lat": 11.0833, "lng": 40.5833 },
+      "aliases": ["Dikika cut marks", "DIK-55", "stone-tool-assisted consumption", "Sidi Hakoma Member"],
+      "summary": "디키카의 절흔 동물뼈는 초기 호미닌의 석기 사용과 동물 조직 이용 가능성을 논의하게 만든 자료다. 해석에는 논쟁이 있으므로, 확정된 문화 단계가 아니라 제안된 행동 증거로 기록한다.",
+      "confidence": "medium",
+      "sourceNote": "논문상 디키카 연구지 권역을 지도 표시 기준으로 삼고, 해석 논쟁 가능성을 요약에 명시한다.",
+      "curationBatch": "africa-ethiopia-human-origins-v1",
+      "sources": [
+        { "title": "Nature: Stone-tool-assisted consumption at Dikika", "url": "https://www.nature.com/articles/nature09248" }
+      ]
+    },
+    {
+      "id": "gona-oldowan-tools",
+      "title": "고나 올도완 석기",
+      "type": "artifact",
+      "historicalName": "고나 올도완 석기군",
+      "modernName": "고나",
+      "modernAdmin": "아파르주 고나 연구 권역",
+      "country": "에티오피아",
+      "worldRegion": "아프리카사",
+      "period": "동아프리카 인류 기원",
+      "yearLabel": "약 260만-250만 년 전",
+      "date": {
+        "startYear": -2600000,
+        "endYear": -2500000,
+        "precision": "range"
+      },
+      "spatial": {
+        "continentId": "africa",
+        "modernCountryIso2": "ET",
+        "historicalRegionKo": "동아프리카",
+        "cultureAreaKo": "동아프리카 인류 기원"
+      },
+      "classification": {
+        "periodBand": "prehistory",
+        "selectionTier": "core"
+      },
+      "coordinates": { "lat": 11.1000, "lng": 40.6500 },
+      "aliases": ["Gona", "Oldowan", "Oldowan tools", "East Gona", "early stone tools"],
+      "summary": "고나는 초기 올도완 석기 연구의 대표 권역이다. 약 260만-250만 년 전 석기군은 초기 인류의 제작 기술과 동물 자원 이용을 이해하는 기준 자료로 쓰인다.",
+      "confidence": "approximate",
+      "sourceNote": "고나 연구 권역의 공개 지리 범위를 기준으로 한 근사 좌표다.",
+      "curationBatch": "africa-ethiopia-human-origins-v1",
+      "sources": [
+        { "title": "Nature: 2.5-million-year-old stone tools from Gona", "url": "https://www.nature.com/articles/385333a0" },
+        { "title": "Stone Age Institute: Gona, Afar, Ethiopia", "url": "https://stoneageinstitute.org/gona.html" }
+      ]
+    },
+    {
+      "id": "ledi-geraru-ld-350-1",
+      "title": "레디-게라루 LD 350-1",
+      "type": "artifact",
+      "historicalName": "LD 350-1",
+      "modernName": "레디-게라루",
+      "modernAdmin": "아파르주 레디-게라루 연구 권역",
+      "country": "에티오피아",
+      "worldRegion": "아프리카사",
+      "period": "동아프리카 인류 기원",
+      "yearLabel": "약 280만-275만 년 전",
+      "date": {
+        "startYear": -2800000,
+        "endYear": -2750000,
+        "precision": "range"
+      },
+      "spatial": {
+        "continentId": "africa",
+        "modernCountryIso2": "ET",
+        "historicalRegionKo": "동아프리카",
+        "cultureAreaKo": "동아프리카 인류 기원"
+      },
+      "classification": {
+        "periodBand": "prehistory",
+        "selectionTier": "core"
+      },
+      "coordinates": { "lat": 11.3000, "lng": 40.5000 },
+      "aliases": ["Ledi-Geraru", "LD 350-1", "early Homo", "Afar", "Homo mandible"],
+      "summary": "LD 350-1은 레디-게라루에서 보고된 초기 호모 속 하악 화석이다. 오스트랄로피테쿠스와 이후 호모의 특징을 잇는 자료로, 호모 속의 초기 출현 시점과 장소를 검토하는 데 쓰인다.",
+      "confidence": "approximate",
+      "sourceNote": "레디-게라루 연구 권역의 근사 좌표를 사용한다.",
+      "curationBatch": "africa-ethiopia-human-origins-v1",
+      "sources": [
+        { "title": "Penn State Pure: Early Homo at 2.8 Ma from Ledi-Geraru", "url": "https://pure.psu.edu/en/publications/early-homo-at-28-ma-from-ledi-geraru-afar-ethiopia/" },
+        { "title": "Science DOI", "url": "https://doi.org/10.1126/science.aaa1343" }
+      ]
+    },
+    {
+      "id": "herto-homo-sapiens-idaltu",
+      "title": "헤르토 호모 사피엔스 이달투",
+      "type": "artifact",
+      "historicalName": "Homo sapiens idaltu",
+      "modernName": "헤르토 / 부리층",
+      "modernAdmin": "아파르주 미들 아와시 헤르토 일대",
+      "country": "에티오피아",
+      "worldRegion": "아프리카사",
+      "period": "동아프리카 인류 기원",
+      "yearLabel": "약 16만-15.4만 년 전",
+      "date": {
+        "startYear": -160000,
+        "endYear": -154000,
+        "precision": "range"
+      },
+      "spatial": {
+        "continentId": "africa",
+        "modernCountryIso2": "ET",
+        "historicalRegionKo": "동아프리카",
+        "cultureAreaKo": "동아프리카 인류 기원"
+      },
+      "classification": {
+        "periodBand": "prehistory",
+        "selectionTier": "core"
+      },
+      "coordinates": { "lat": 10.2500, "lng": 40.5500 },
+      "aliases": ["Herto", "Bouri Formation", "Homo sapiens idaltu", "Middle Awash", "early Homo sapiens"],
+      "summary": "헤르토의 호모 사피엔스 화석은 미들 아와시 부리층에서 보고된 중기 플라이스토세 인류 자료다. 해부학적 현생 인류의 출현과 아프리카 기원 논의에서 중요한 위치를 차지한다.",
+      "confidence": "approximate",
+      "sourceNote": "헤르토·부리층 연구 권역을 지도 표시 기준으로 삼는다.",
+      "curationBatch": "africa-ethiopia-human-origins-v1",
+      "sources": [
+        { "title": "Nature: Pleistocene Homo sapiens from Middle Awash", "url": "https://www.nature.com/articles/nature01669" },
+        { "title": "Nature: Stratigraphic, chronological and behavioural contexts", "url": "https://www.nature.com/articles/nature01670" }
+      ]
+    },
+    {
+      "id": "omo-kibish-omo-i",
+      "title": "오모 I",
+      "type": "artifact",
+      "historicalName": "Omo I",
+      "modernName": "오모 키비시",
+      "modernAdmin": "남서부 에티오피아 오모강 하류",
+      "country": "에티오피아",
+      "worldRegion": "아프리카사",
+      "period": "동아프리카 인류 기원",
+      "yearLabel": "최소 약 23.3만 년 전",
+      "date": {
+        "endYear": -233000,
+        "precision": "minimum"
+      },
+      "spatial": {
+        "continentId": "africa",
+        "modernCountryIso2": "ET",
+        "historicalRegionKo": "동아프리카",
+        "cultureAreaKo": "동아프리카 인류 기원"
+      },
+      "classification": {
+        "periodBand": "prehistory",
+        "selectionTier": "core"
+      },
+      "coordinates": { "lat": 4.8000, "lng": 35.9700 },
+      "aliases": ["Omo I", "Omo Kibish", "Kibish Formation", "oldest Homo sapiens eastern Africa", "Lower Valley of the Omo"],
+      "summary": "오모 I은 오모 키비시 지층에서 나온 초기 호모 사피엔스 화석이다. 2022년 재연대 연구에서 동아프리카의 가장 오래된 현생 인류 화석군을 최소 약 23.3만 년 전으로 보는 근거가 제시되었다.",
+      "confidence": "approximate",
+      "sourceNote": "오모 키비시·오모강 하류 권역의 근사 좌표를 사용한다.",
+      "curationBatch": "africa-ethiopia-human-origins-v1",
+      "sources": [
+        { "title": "Nature: Age of the oldest known Homo sapiens from eastern Africa", "url": "https://www.nature.com/articles/s41586-021-04275-8" },
+        { "title": "UNESCO: Lower Valley of the Omo", "url": "https://whc.unesco.org/en/list/17/" }
+      ]
+    }
+  ]
+}
