@@ -11,9 +11,9 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 66
-- Completed curation batches: 5
-- Latest completed batch: `europe-greece-ancient-core-sites-v1`
+- Current entry count: 73
+- Completed curation batches: 6
+- Latest completed batch: `asia-iran-achaemenid-persia-core-sites-v1`
 - Latest completed infrastructure milestone: `a28681f Add data validation script`
 - Data validation script: `scripts/validate-data.js`
 
@@ -109,6 +109,21 @@ The long-term target is 3,000+ entries, but the project should progress one focu
     - `troy-hisarlik`
     - `miletus`
 
+- Achaemenid Persia core imperial sites batch
+  - Batch ID: `asia-iran-achaemenid-persia-core-sites-v1`
+  - Source file: `data/records/asia/iran/achaemenid-persia-core-sites.json`
+  - Entries added: 7 new entries plus 1 existing entry upgraded and linked to the batch
+  - Entry IDs:
+    - `pasargadae`
+    - `persepolis`
+    - `susa`
+    - `ecbatana-hegmataneh`
+    - `behistun`
+    - `naqsh-e-rostam`
+    - `sardis`
+    - `daskyleion`
+  - Note: `babylon` remains in the Mesopotamia batch to avoid duplicate source-record ownership until multi-batch links are modeled explicitly.
+
 ## Current Policy
 
 - Work on DB only unless the user explicitly asks for UI changes.
@@ -146,17 +161,17 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Ancient Persia: Achaemenid imperial centers
-   - Possible source file: `data/records/asia/iran/achaemenid-persia-core-sites.json`
-   - Likely entries: Pasargadae, Persepolis, Susa, Ecbatana, Behistun, Naqsh-e Rustam, Sardis, Babylon
-
-2. Early China: Yellow River and Bronze Age core sites
+1. Early China: Yellow River and Bronze Age core sites
    - Possible source file: `data/records/asia/china/early-china-core-sites.json`
    - Likely entries: Erlitou, Yanshi, Zhengzhou Shang City, Anyang/Yinxu, Sanxingdui, Liangzhu, Taosi, Banpo
 
-3. Roman Republic and Empire: core political and imperial sites
+2. Roman Republic and Empire: core political and imperial sites
    - Possible source file: `data/records/europe/italy/roman-core-sites.json`
    - Likely entries: Rome Forum, Palatine Hill, Pompeii, Ostia Antica, Ravenna, Carthage, Hadrian's Wall, Trier
+
+3. South Asia after the Indus: Magadha and Maurya core sites
+   - Possible source file: `data/records/asia/india/magadha-maurya-core-sites.json`
+   - Likely entries: Rajgir, Pataliputra, Bodh Gaya, Sarnath, Sanchi, Taxila, Dhauli, Barabar Caves
 
 ## Resume Checklist
 

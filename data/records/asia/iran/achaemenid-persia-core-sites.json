@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "id": "asia-iran-achaemenid-persia-core-sites",
+  "titleKo": "아케메네스 페르시아 핵심 제국 거점",
+  "curationBatch": "asia-iran-achaemenid-persia-core-sites-v1",
+  "taxonomyFile": "data/taxonomy.json",
+  "appIndexFile": "data/entries.json",
+  "scope": {
+    "continentId": "asia",
+    "modernCountryIso2": "IR-TR",
+    "modernCountryKo": "이란·튀르키예",
+    "historicalRegionKo": "페르시스·엘람·메디아·아나톨리아",
+    "cultureAreaKo": "아케메네스 페르시아 제국",
+    "periodBand": "ancient",
+    "topicKo": "왕실 수도, 행정 중심지, 왕도, 비문, 왕릉, 서방 사트라피"
+  },
+  "records": [
+    {
+      "id": "pasargadae",
+      "title": "파사르가다에",
+      "type": "site",
+      "historicalName": "파사르가다에",
+      "modernName": "파사르가다에 유적",
+      "modernAdmin": "파르스주 파사르가드 인근",
+      "country": "이란",
+      "worldRegion": "페르시아사",
+      "period": "아케메네스 페르시아 초기",
+      "yearLabel": "기원전 6세기, 키루스 2세 창건",
+      "date": { "startYear": -550, "endYear": -330, "precision": "range" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "IR",
+        "historicalRegionKo": "파르스 / 페르시스",
+        "cultureAreaKo": "아케메네스 페르시아"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 30.1939, "lng": 53.1676 },
+      "aliases": ["Pasargadae", "Pasargad", "Cyrus the Great", "Tomb of Cyrus", "Four Gardens"],
+      "summary": "파사르가다에는 키루스 2세가 세운 아케메네스 왕조의 첫 왕실 수도로, 키루스의 무덤과 궁전, 정원 배치가 남아 있다. 이후 페르시아 왕실 건축과 사방정원 개념의 출발점으로 볼 수 있는 장소다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 파사르가다에 세계유산 좌표와 유적 범위를 기준으로 표시했다.",
+      "curationBatch": "asia-iran-achaemenid-persia-core-sites-v1",
+      "sources": [
+        { "title": "UNESCO: Pasargadae", "url": "https://whc.unesco.org/en/list/1106/" },
+        { "title": "World History Encyclopedia: Pasargadae", "url": "https://www.worldhistory.org/Pasargadae/" }
+      ]
+    },
+    {
+      "id": "persepolis",
+      "title": "페르세폴리스",
+      "type": "site",
+      "historicalName": "파르사 / 페르세폴리스",
+      "modernName": "페르세폴리스 유적",
+      "modernAdmin": "파르스주 마르브다슈트 인근",
+      "country": "이란",
+      "worldRegion": "페르시아사",
+      "period": "아케메네스 페르시아",
+      "yearLabel": "기원전 518-330년경",
+      "date": { "startYear": -518, "endYear": -330, "precision": "range" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "IR",
+        "historicalRegionKo": "파르스 / 페르시스",
+        "cultureAreaKo": "아케메네스 페르시아"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 29.9355, "lng": 52.8916 },
+      "aliases": ["Persepolis", "Parsa", "Takht-e Jamshid", "Darius I", "Achaemenid"],
+      "summary": "페르세폴리스는 다리우스 1세가 조성한 아케메네스 제국의 의례적 왕실 중심지다. 거대한 단상 위의 아파다나, 백주전, 조공 행렬 부조는 여러 민족을 통합한 제국 질서를 시각적으로 보여준다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 페르세폴리스 세계유산 좌표를 기준으로 표시했다.",
+      "curationBatch": "asia-iran-achaemenid-persia-core-sites-v1",
+      "sources": [
+        { "title": "UNESCO: Persepolis", "url": "https://whc.unesco.org/en/list/114/" },
+        { "title": "World History Encyclopedia: Persepolis", "url": "https://www.worldhistory.org/persepolis/" }
+      ]
+    },
+    {
+      "id": "susa",
+      "title": "수사",
+      "type": "place",
+      "historicalName": "수사 / 슈샨",
+      "modernName": "슈시 고고유적",
+      "modernAdmin": "후제스탄주 슈시",
+      "country": "이란",
+      "worldRegion": "페르시아사",
+      "period": "엘람·아케메네스·파르티아",
+      "yearLabel": "기원전 5천년기 이후, 아케메네스 왕실 수도",
+      "date": { "startYear": -4395, "endYear": 1300, "precision": "range" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "IR",
+        "historicalRegionKo": "엘람 / 후제스탄",
+        "cultureAreaKo": "엘람·아케메네스 페르시아"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 32.1894, "lng": 48.2578 },
+      "aliases": ["Susa", "Shush", "Shushan", "Susan", "Achaemenid palace"],
+      "summary": "수사는 엘람 시대부터 이어진 장기 도시 유적이자 아케메네스 제국의 주요 행정·왕실 거점이었다. 다리우스 1세의 궁전과 여러 문화층은 페르시아 제국이 기존 엘람 도시 전통을 활용해 광역 통치를 운영한 방식을 보여준다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 수사 세계유산 좌표와 슈시 유적권을 기준으로 표시했다.",
+      "curationBatch": "asia-iran-achaemenid-persia-core-sites-v1",
+      "sources": [
+        { "title": "UNESCO: Susa", "url": "https://whc.unesco.org/en/list/1455/" },
+        { "title": "World History Encyclopedia: Susa", "url": "https://www.worldhistory.org/susa/" }
+      ]
+    },
+    {
+      "id": "ecbatana-hegmataneh",
+      "title": "엑바타나",
+      "type": "place",
+      "historicalName": "엑바타나 / 헤그마타네",
+      "modernName": "헤그마타네 유적",
+      "modernAdmin": "하마단주 하마단",
+      "country": "이란",
+      "worldRegion": "페르시아사",
+      "period": "메디아·아케메네스 페르시아",
+      "yearLabel": "기원전 7세기 이후, 아케메네스 여름 수도",
+      "date": { "startYear": -700, "endYear": 650, "precision": "range" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "IR",
+        "historicalRegionKo": "메디아 / 하마단",
+        "cultureAreaKo": "메디아·아케메네스 페르시아"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 34.7992, "lng": 48.5127 },
+      "aliases": ["Ecbatana", "Hegmataneh", "Hagmatana", "Hamadan", "Median capital"],
+      "summary": "엑바타나는 메디아의 중심지로 전해지며, 이후 아케메네스·파르티아·사산 왕조의 여름 수도와 정부 거점으로 기능했다. 하마단의 헤그마타네 유적은 이란 고원 북서부 권력 중심의 장기 지속성을 보여주는 장소다.",
+      "confidence": "approximate",
+      "sourceNote": "현대 하마단의 헤그마타네 유적권 근사 좌표를 사용했다.",
+      "curationBatch": "asia-iran-achaemenid-persia-core-sites-v1",
+      "sources": [
+        { "title": "UNESCO: Hegmataneh", "url": "https://whc.unesco.org/en/list/1716/" },
+        { "title": "Britannica: Ecbatana", "url": "https://www.britannica.com/place/Ecbatana" }
+      ]
+    },
+    {
+      "id": "behistun",
+      "title": "베히스툰",
+      "type": "site",
+      "historicalName": "베히스툰 / 비소툰",
+      "modernName": "비소툰 유적",
+      "modernAdmin": "케르만샤주 비소툰",
+      "country": "이란",
+      "worldRegion": "페르시아사",
+      "period": "아케메네스 페르시아",
+      "yearLabel": "기원전 521-520년경 다리우스 비문",
+      "date": { "startYear": -521, "endYear": -520, "precision": "range" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "IR",
+        "historicalRegionKo": "자그로스 / 메소포타미아 연결로",
+        "cultureAreaKo": "아케메네스 페르시아"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 34.3884, "lng": 47.4360 },
+      "aliases": ["Behistun", "Bisotun", "Bisitun", "Darius I", "Old Persian cuneiform"],
+      "summary": "베히스툰은 다리우스 1세가 왕위 장악과 반란 진압을 새긴 부조·삼언어 비문이 있는 절벽 유적이다. 고대 페르시아 왕권 선전의 핵심 자료이자, 설형문자 해독사에서도 로제타석에 비견되는 의미를 가진다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 비소툰 세계유산 좌표를 기준으로 표시했다.",
+      "curationBatch": "asia-iran-achaemenid-persia-core-sites-v1",
+      "sources": [
+        { "title": "UNESCO: Bisotun", "url": "https://whc.unesco.org/en/list/1222/" },
+        { "title": "World History Encyclopedia: Behistun Inscription", "url": "https://www.worldhistory.org/Behistun_Inscription/" }
+      ]
+    },
+    {
+      "id": "naqsh-e-rostam",
+      "title": "나크셰 로스탐",
+      "type": "site",
+      "historicalName": "나크셰 로스탐",
+      "modernName": "나크셰 로스탐 왕릉군",
+      "modernAdmin": "파르스주 마르브다슈트 인근",
+      "country": "이란",
+      "worldRegion": "페르시아사",
+      "period": "아케메네스 페르시아·사산 왕조",
+      "yearLabel": "기원전 6-4세기 왕릉",
+      "date": { "startYear": -522, "endYear": -330, "precision": "range" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "IR",
+        "historicalRegionKo": "파르스 / 페르시스",
+        "cultureAreaKo": "아케메네스 페르시아"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 29.9883, "lng": 52.8747 },
+      "aliases": ["Naqsh-e Rostam", "Naqsh-i Rustam", "Darius Tomb", "Achaemenid royal tombs", "Ka'ba-ye Zartosht"],
+      "summary": "나크셰 로스탐은 페르세폴리스 북서쪽 절벽에 조성된 아케메네스 왕릉군으로, 다리우스 1세의 무덤과 후대 왕릉들이 십자형 암벽 파사드로 남아 있다. 왕, 아후라 마즈다, 제국의 여러 민족을 결합한 왕권 이미지가 압축된 장소다.",
+      "confidence": "high",
+      "sourceNote": "나크셰 로스탐 왕릉군 중심 좌표를 사용했다.",
+      "curationBatch": "asia-iran-achaemenid-persia-core-sites-v1",
+      "sources": [
+        { "title": "Encyclopaedia Iranica: Naqsh-e Rostam", "url": "https://www.iranicaonline.org/articles/naqs-e-rostam/" },
+        { "title": "Encyclopaedia Iranica: Achaemenid Dynasty", "url": "https://www.iranicaonline.org/articles/achaemenid-dynasty/" }
+      ]
+    },
+    {
+      "id": "sardis",
+      "title": "사르디스",
+      "type": "place",
+      "historicalName": "사르디스",
+      "modernName": "사르디스 유적",
+      "modernAdmin": "마니사주 살리흘리 사르트",
+      "country": "튀르키예",
+      "worldRegion": "페르시아사",
+      "period": "리디아·아케메네스 서아나톨리아",
+      "yearLabel": "기원전 7세기 이후, 기원전 546년 페르시아 편입",
+      "date": { "startYear": -700, "endYear": 1402, "precision": "range" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "TR",
+        "historicalRegionKo": "리디아 / 서아나톨리아",
+        "cultureAreaKo": "리디아·아케메네스 서방 사트라피"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 38.4881, "lng": 28.0400 },
+      "aliases": ["Sardis", "Sardes", "Lydia", "Croesus", "Persian Royal Road"],
+      "summary": "사르디스는 리디아 왕국의 수도였고, 키루스 2세에게 함락된 뒤 아케메네스 제국 서방 통치의 핵심 거점이 되었다. 수사에서 이어지는 페르시아 왕도의 서쪽 종점으로서 제국의 통신·군사·재정 네트워크를 이해하는 데 중요하다.",
+      "confidence": "high",
+      "sourceNote": "사르디스 고고유적 중심 좌표를 사용했다.",
+      "curationBatch": "asia-iran-achaemenid-persia-core-sites-v1",
+      "sources": [
+        { "title": "World History Encyclopedia: Sardis", "url": "https://www.worldhistory.org/sardis/" },
+        { "title": "Britannica: Sardis", "url": "https://www.britannica.com/place/Sardis" }
+      ]
+    },
+    {
+      "id": "daskyleion",
+      "title": "다스킬레이온",
+      "type": "place",
+      "historicalName": "다스킬레이온 / 다스킬리움",
+      "modernName": "히사르테페 다스킬레이온 유적",
+      "modernAdmin": "발리케시르주 반드르마 에르길리 인근",
+      "country": "튀르키예",
+      "worldRegion": "페르시아사",
+      "period": "아케메네스 헬레스폰토스 프리기아 사트라피",
+      "yearLabel": "기원전 6-4세기 페르시아 사트라피 중심",
+      "date": { "startYear": -546, "endYear": -334, "precision": "range" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "TR",
+        "historicalRegionKo": "헬레스폰토스 프리기아 / 미시아",
+        "cultureAreaKo": "아케메네스 서아나톨리아 사트라피"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "context" },
+      "coordinates": { "lat": 40.1321, "lng": 28.0508 },
+      "aliases": ["Daskyleion", "Dascylium", "Hisartepe", "Hellespontine Phrygia", "Persian satrapy"],
+      "summary": "다스킬레이온은 마니아스 호수 근처의 서아나톨리아 사트라피 중심지로, 아케메네스 제국이 해협과 북서 아나톨리아를 관리하던 행정 거점이었다. 페르시아식 궁정 문화와 현지 프리기아·리디아·그리스 요소가 섞인 변방 제국 문화를 보여준다.",
+      "confidence": "approximate",
+      "sourceNote": "히사르테페 다스킬레이온 유적의 공개 좌표를 근사값으로 사용했다.",
+      "curationBatch": "asia-iran-achaemenid-persia-core-sites-v1",
+      "sources": [
+        { "title": "Encyclopaedia Iranica: Dascylium", "url": "https://www.iranicaonline.org/articles/dascylium" },
+        { "title": "Turkish Archaeological News: Daskyleion", "url": "https://turkisharchaeonews.net/site/daskyleion" }
+      ]
+    }
+  ]
+}

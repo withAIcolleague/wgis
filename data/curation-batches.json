@@ -154,6 +154,35 @@
         "Greek Ministry of Culture page for Ancient Corinth",
         "Britannica reference pages for Sparta, Thebes, and Miletus"
       ]
+    },
+    {
+      "id": "asia-iran-achaemenid-persia-core-sites-v1",
+      "status": "completed",
+      "completedAt": "2026-05-13",
+      "continentId": "asia",
+      "countryIso2": "IR-TR",
+      "countryKo": "이란·튀르키예",
+      "worldRegion": "페르시아사",
+      "focusKo": "아케메네스 페르시아 핵심 제국 거점",
+      "scopeKo": "이란 고원과 서아나톨리아에 걸친 왕실 수도, 행정 중심지, 왕도, 비문, 왕릉, 사트라피 중심",
+      "sourceFile": "data/records/asia/iran/achaemenid-persia-core-sites.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "pasargadae",
+        "persepolis",
+        "susa",
+        "ecbatana-hegmataneh",
+        "behistun",
+        "naqsh-e-rostam",
+        "sardis",
+        "daskyleion"
+      ],
+      "sourceBasis": [
+        "UNESCO World Heritage pages for Pasargadae, Persepolis, Susa, Bisotun, and Hegmataneh",
+        "World History Encyclopedia reference articles for Pasargadae, Persepolis, Susa, Behistun, and Sardis",
+        "Encyclopaedia Iranica entries for Naqsh-e Rostam, Achaemenid Dynasty, and Dascylium",
+        "Britannica reference pages for Ecbatana and Sardis"
+      ]
     }
   ]
 }
