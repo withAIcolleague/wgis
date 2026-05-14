@@ -288,18 +288,24 @@
     "id": "tenochtitlan",
     "title": "테노치티틀란",
     "type": "place",
-    "historicalName": "테노치티틀란",
-    "modernName": "멕시코시티",
-    "modernAdmin": "멕시코시티 역사도심",
+    "historicalName": "멕시코-테노치티틀란",
+    "modernName": "템플로 마요르·멕시코시티 역사도심",
+    "modernAdmin": "멕시코시티 쿠아우테목구 역사도심",
     "country": "멕시코",
-    "worldRegion": "아메리카사",
-    "period": "아스테카",
+    "worldRegion": "메소아메리카",
+    "period": "메시카 / 아스테카",
     "yearLabel": "1325년경-1521년",
-    "coordinates": { "lat": 19.4326, "lng": -99.1332 },
-    "aliases": ["Tenochtitlan", "Aztec", "Mexico City", "Templo Mayor", "아스테카"],
-    "summary": "아스테카 제국의 수도로 텍스코코 호수의 섬 위에 건설되었다. 현재 멕시코시티 역사도심과 겹친다.",
+    "coordinates": { "lat": 19.4349, "lng": -99.1314 },
+    "aliases": ["Tenochtitlan", "Tenochtitlán", "Mexico-Tenochtitlan", "Aztec", "Mexica", "Templo Mayor", "Mexico City"],
+    "summary": "테노치티틀란은 텍스코코 호수의 섬과 제방 위에 세워진 메시카 수도로, 삼각동맹과 아스테카 제국의 정치·종교 중심지였다. 오늘날 템플로 마요르와 멕시코시티 역사도심은 정복 이전 수도의 핵심 의례 공간과 식민 도시가 겹쳐진 장소다.",
     "confidence": "high",
-    "sourceNote": "템플로 마요르-소칼로 권역 기준."
+    "sourceNote": "INAH 템플로 마요르 유적과 멕시코시티 역사도심의 중심 좌표를 기준으로 표시했다.",
+    "curationBatch": "americas-mesoamerica-core-sites-v1",
+    "sources": [
+      { "title": "INAH: Zona Arqueológica Templo Mayor", "url": "https://www.inah.gob.mx/zonas/zona-arqueologica-templo-mayor" },
+      { "title": "World History Encyclopedia: Tenochtitlan", "url": "https://www.worldhistory.org/Tenochtitlan/" },
+      { "title": "UNESCO: Historic Centre of Mexico City and Xochimilco", "url": "https://whc.unesco.org/en/list/412" }
+    ]
   },
   {
     "id": "machu-picchu",
@@ -1984,6 +1990,160 @@
     "sources": [
       { "title": "Bihar Tourism: Barabar Caves", "url": "https://tourism.bihar.gov.in/en/destinations/jehanabad/barabar-caves" },
       { "title": "Barabar Cave Tourism: Location", "url": "https://barabarcavetourism.bihar.gov.in/location" }
+    ]
+  },
+  {
+    "id": "san-lorenzo-tenochtitlan",
+    "title": "산로렌소 테노치티틀란",
+    "type": "place",
+    "historicalName": "산로렌소 테노치티틀란",
+    "modernName": "산로렌소 고고유적",
+    "modernAdmin": "베라크루스주 텍시스테펙 일대",
+    "country": "멕시코",
+    "worldRegion": "메소아메리카",
+    "period": "올멕 전기 형성기",
+    "yearLabel": "기원전 1200-900년 전성기",
+    "coordinates": { "lat": 17.7520, "lng": -94.7610 },
+    "aliases": ["San Lorenzo Tenochtitlan", "San Lorenzo", "Olmec", "Veracruz", "Colossal heads"],
+    "summary": "산로렌소는 올멕 문명의 가장 이른 대규모 중심지로, 멕시코만 저지대의 강과 범람원을 활용해 교역과 권력 집중을 이룬 도시권이다. 거대한 현무암 두상, 인공 대지, 배수 시설은 이후 메소아메리카 도시와 의례 중심지의 원형을 이해하는 데 중요하다.",
+    "confidence": "approximate",
+    "sourceNote": "산로렌소 테노치티틀란 유적군은 넓게 분산되어 있어 공개 고고유적권 중심부의 근사 좌표로 표시했다.",
+    "curationBatch": "americas-mesoamerica-core-sites-v1",
+    "sources": [
+      { "title": "INAH Mediateca: San Lorenzo Tenochtitlan", "url": "https://mediateca.inah.gob.mx/islandora_74/islandora/object/sitioprehispanico%3A2111" },
+      { "title": "World History Encyclopedia: Olmec Civilization", "url": "https://www.worldhistory.org/Olmec_Civilization/" }
+    ]
+  },
+  {
+    "id": "la-venta",
+    "title": "라벤타",
+    "type": "place",
+    "historicalName": "라벤타",
+    "modernName": "라벤타 고고유적",
+    "modernAdmin": "타바스코주 우이망기요, 비야 라벤타",
+    "country": "멕시코",
+    "worldRegion": "메소아메리카",
+    "period": "올멕 중기 형성기",
+    "yearLabel": "기원전 1200-400년",
+    "coordinates": { "lat": 18.1036, "lng": -94.0400 },
+    "aliases": ["La Venta", "Olmec", "Tabasco", "Complex A", "Great Pyramid"],
+    "summary": "라벤타는 산로렌소 이후 올멕 세계의 대표 중심지로 성장한 계획 도시이자 의례 중심지다. 남북 축을 따라 배치된 플랫폼, 흙으로 만든 대형 피라미드, 거석 조각과 옥 공물은 올멕 권력과 장거리 교역망을 보여준다.",
+    "confidence": "high",
+    "sourceNote": "INAH 라벤타 고고유적 주소와 유적권을 기준으로 표시했다.",
+    "curationBatch": "americas-mesoamerica-core-sites-v1",
+    "sources": [
+      { "title": "INAH Lugares: La Venta", "url": "https://lugares.inah.gob.mx/en/node/4311" },
+      { "title": "World History Encyclopedia: Olmec Civilization", "url": "https://www.worldhistory.org/Olmec_Civilization/" }
+    ]
+  },
+  {
+    "id": "el-mirador",
+    "title": "엘미라도르",
+    "type": "place",
+    "historicalName": "엘미라도르",
+    "modernName": "엘미라도르 마야 유적",
+    "modernAdmin": "페텐주 산안드레스, 미라도르 분지",
+    "country": "과테말라",
+    "worldRegion": "메소아메리카",
+    "period": "마야 전고전기",
+    "yearLabel": "기원전 6세기-기원후 2세기 전후",
+    "coordinates": { "lat": 17.7550, "lng": -89.9200 },
+    "aliases": ["El Mirador", "Mirador Basin", "La Danta", "Preclassic Maya", "Peten"],
+    "summary": "엘미라도르는 미라도르 분지의 전고전기 마야 대도시로, 거대한 피라미드 복합체와 사크베 도로망을 통해 초기 마야 도시화의 규모를 보여준다. 티칼과 칼라크물 이전 단계의 저지대 마야 정치·의례 경관을 이해하는 핵심 지점이다.",
+    "confidence": "approximate",
+    "sourceNote": "밀림 속 넓은 유적군이므로 엘미라도르 중심 의례구역의 공개 근사 좌표를 사용했다.",
+    "curationBatch": "americas-mesoamerica-core-sites-v1",
+    "sources": [
+      { "title": "NASA Earth Observatory: Mirador Basin, Guatemala", "url": "https://www.earthobservatory.nasa.gov/images/7447/mirador-basin-guatemala" },
+      { "title": "Mirador Basin Project", "url": "https://miradorbasin.com/" }
+    ]
+  },
+  {
+    "id": "tikal",
+    "title": "티칼",
+    "type": "place",
+    "historicalName": "무탈 / 티칼",
+    "modernName": "티칼 국립공원",
+    "modernAdmin": "페텐주 플로레스 북부",
+    "country": "과테말라",
+    "worldRegion": "메소아메리카",
+    "period": "마야 전고전기-고전기",
+    "yearLabel": "기원전 600년-기원후 900년",
+    "coordinates": { "lat": 17.2220, "lng": -89.6237 },
+    "aliases": ["Tikal", "Yax Mutal", "Mutal", "Maya", "Peten"],
+    "summary": "티칼은 고전기 마야 세계를 대표하는 도시국가로, 거대한 사원 피라미드와 왕조 비문, 넓은 도시 경관을 남겼다. 칼라크물과의 경쟁, 테오티우아칸과의 접촉, 페텐 숲 생태계 안의 도시 운영을 함께 보여주는 핵심 유적이다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 티칼 국립공원 세계유산 좌표와 중심 유적권을 기준으로 표시했다.",
+    "curationBatch": "americas-mesoamerica-core-sites-v1",
+    "sources": [
+      { "title": "UNESCO: Tikal National Park", "url": "https://whc.unesco.org/en/list/64" },
+      { "title": "World History Encyclopedia: Tikal", "url": "https://www.worldhistory.org/Tikal/" }
+    ]
+  },
+  {
+    "id": "calakmul",
+    "title": "칼라크물",
+    "type": "place",
+    "historicalName": "칸 왕조 중심지 / 칼라크물",
+    "modernName": "칼라크물 고대 마야 도시",
+    "modernAdmin": "캄페체주 칼라크물 생물권보전지역",
+    "country": "멕시코",
+    "worldRegion": "메소아메리카",
+    "period": "마야 전고전기-고전기",
+    "yearLabel": "기원전 5세기-기원후 1000년 전후",
+    "coordinates": { "lat": 18.1056, "lng": -89.8113 },
+    "aliases": ["Calakmul", "Kaan dynasty", "Snake Kingdom", "Campeche", "Maya"],
+    "summary": "칼라크물은 열대림 깊숙한 곳에 자리한 고전기 마야의 대도시이자 칸 왕조의 중심지로, 티칼과 함께 저지대 마야 정치사의 양대 축으로 평가된다. 왕릉, 비문, 사크베, 저수 시설은 도시와 숲 환경이 결합된 마야 경관을 보여준다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 칼라크물 세계유산 좌표와 유적 중심부를 기준으로 표시했다.",
+    "curationBatch": "americas-mesoamerica-core-sites-v1",
+    "sources": [
+      { "title": "UNESCO: Ancient Maya City and Protected Tropical Forests of Calakmul, Campeche", "url": "https://whc.unesco.org/en/list/1061/" },
+      { "title": "Britannica: Maya", "url": "https://www.britannica.com/topic/Maya-people" }
+    ]
+  },
+  {
+    "id": "chichen-itza",
+    "title": "치첸이트사",
+    "type": "place",
+    "historicalName": "치첸이트사",
+    "modernName": "치첸이트사 고고유적",
+    "modernAdmin": "유카탄주 티눔",
+    "country": "멕시코",
+    "worldRegion": "메소아메리카",
+    "period": "마야 고전기-포스트클래식",
+    "yearLabel": "6-12세기",
+    "coordinates": { "lat": 20.6843, "lng": -88.5678 },
+    "aliases": ["Chichen Itza", "Chichen-Itza", "Kukulcan", "El Castillo", "Yucatan"],
+    "summary": "치첸이트사는 유카탄 북부의 대표 마야 도시로, 세노테 수자원과 연결된 도시 경관, 엘카스티요, 전사의 신전, 구기장, 천문 관측 구조를 갖춘 복합 유적이다. 후기에는 중앙 멕시코 계통 요소가 결합되어 마야-톨텍 양식 논의를 이해하는 기준점이 된다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 치첸이트사 세계유산 좌표와 중심 유적권을 기준으로 표시했다.",
+    "curationBatch": "americas-mesoamerica-core-sites-v1",
+    "sources": [
+      { "title": "UNESCO: Pre-Hispanic City of Chichen-Itza", "url": "https://whc.unesco.org/en/list/483" },
+      { "title": "World History Encyclopedia: Chichen Itza", "url": "https://www.worldhistory.org/Chichen_Itza/" }
+    ]
+  },
+  {
+    "id": "teotihuacan",
+    "title": "테오티우아칸",
+    "type": "place",
+    "historicalName": "테오티우아칸",
+    "modernName": "테오티우아칸 고고유적",
+    "modernAdmin": "멕시코주 테오티우아칸·산마르틴데라스피라미데스",
+    "country": "멕시코",
+    "worldRegion": "메소아메리카",
+    "period": "중앙 멕시코 고전기",
+    "yearLabel": "1-7세기",
+    "coordinates": { "lat": 19.6925, "lng": -98.8438 },
+    "aliases": ["Teotihuacan", "Teotihuacán", "Pyramid of the Sun", "Avenue of the Dead", "Temple of the Feathered Serpent"],
+    "summary": "테오티우아칸은 멕시코 분지의 대규모 계획도시로, 죽은 자의 길을 축으로 태양의 피라미드, 달의 피라미드, 깃털 달린 뱀 신전이 배치되어 있다. 고전기 메소아메리카 전역에 영향을 준 도시화, 벽화, 종교, 교역 네트워크의 중심이다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 테오티우아칸 세계유산 좌표와 중심 유적권을 기준으로 표시했다.",
+    "curationBatch": "americas-mesoamerica-core-sites-v1",
+    "sources": [
+      { "title": "UNESCO: Pre-Hispanic City of Teotihuacan", "url": "https://whc.unesco.org/en/list/414/" },
+      { "title": "World History Encyclopedia: Teotihuacan", "url": "https://www.worldhistory.org/Teotihuacan/" }
     ]
   }
 ]

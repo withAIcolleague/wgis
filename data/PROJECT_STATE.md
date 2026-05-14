@@ -11,9 +11,9 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 94
-- Completed curation batches: 9
-- Latest completed batch: `asia-south-asia-magadha-maurya-core-sites-v1`
+- Current entry count: 101
+- Completed curation batches: 10
+- Latest completed batch: `americas-mesoamerica-core-sites-v1`
 - Latest completed infrastructure milestone: `a28681f Add data validation script`
 - Data validation script: `scripts/validate-data.js`
 
@@ -166,6 +166,20 @@ The long-term target is 3,000+ entries, but the project should progress one focu
     - `dhauli`
     - `barabar-caves`
 
+- Mesoamerica core sites batch
+  - Batch ID: `americas-mesoamerica-core-sites-v1`
+  - Source file: `data/records/americas/mesoamerica/mesoamerica-core-sites.json`
+  - Entries added: 7 new entries plus 1 existing entry upgraded and linked to the batch
+  - Entry IDs:
+    - `san-lorenzo-tenochtitlan`
+    - `la-venta`
+    - `el-mirador`
+    - `tikal`
+    - `calakmul`
+    - `chichen-itza`
+    - `teotihuacan`
+    - `tenochtitlan`
+
 ## Current Policy
 
 - Work on DB only unless the user explicitly asks for UI changes.
@@ -203,15 +217,11 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Mesoamerica: Olmec, Maya, and Mexica core sites
-   - Possible source file: `data/records/americas/mesoamerica/mesoamerica-core-sites.json`
-   - Likely entries: San Lorenzo, La Venta, El Mirador, Tikal, Calakmul, Chichen Itza, Teotihuacan, Tenochtitlan
-
-2. West African early states and trade networks
+1. West African early states and trade networks
    - Possible source file: `data/records/africa/west-africa/west-africa-early-states.json`
    - Likely entries: Jenne-Jeno, Timbuktu, Gao, Koumbi Saleh, Aoudaghost, Ife, Benin City, Igbo-Ukwu
 
-3. Andean early states and Inca core sites
+2. Andean early states and Inca core sites
    - Possible source file: `data/records/americas/andes/andean-core-sites.json`
    - Likely entries: Caral, Chavin de Huantar, Moche Huacas, Chan Chan, Tiwanaku, Cusco, Machu Picchu, Sacsayhuaman
 

@@ -270,6 +270,35 @@
         "Britannica references for Rajagriha, Patna, Sanchi, and the Mauryan Empire",
         "Bihar and Odisha tourism pages for Rajgir, Barabar Caves, and Dhauli"
       ]
+    },
+    {
+      "id": "americas-mesoamerica-core-sites-v1",
+      "status": "completed",
+      "completedAt": "2026-05-15",
+      "continentId": "americas",
+      "countryIso2": "MX-GT",
+      "countryKo": "멕시코·과테말라",
+      "worldRegion": "메소아메리카",
+      "focusKo": "올멕·마야·테오티우아칸·메시카 핵심 유적과 도시",
+      "scopeKo": "멕시코만 올멕 초기 중심지, 페텐·유카탄 마야 도시국가, 중앙 멕시코 고전기 대도시, 후기 메시카 수도",
+      "sourceFile": "data/records/americas/mesoamerica/mesoamerica-core-sites.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "san-lorenzo-tenochtitlan",
+        "la-venta",
+        "el-mirador",
+        "tikal",
+        "calakmul",
+        "chichen-itza",
+        "teotihuacan",
+        "tenochtitlan"
+      ],
+      "sourceBasis": [
+        "INAH references for San Lorenzo Tenochtitlan, La Venta, and Templo Mayor",
+        "UNESCO World Heritage pages for Tikal, Calakmul, Chichen-Itza, Teotihuacan, and Mexico City",
+        "World History Encyclopedia references for Olmec Civilization, Tikal, Chichen Itza, Teotihuacan, and Tenochtitlan",
+        "NASA Earth Observatory and Mirador Basin Project references for El Mirador and the Mirador Basin"
+      ]
     }
   ]
 }
