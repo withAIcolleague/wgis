@@ -11,9 +11,9 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 81
-- Completed curation batches: 7
-- Latest completed batch: `asia-china-early-china-core-sites-v1`
+- Current entry count: 87
+- Completed curation batches: 8
+- Latest completed batch: `europe-roman-empire-core-sites-v1`
 - Latest completed infrastructure milestone: `a28681f Add data validation script`
 - Data validation script: `scripts/validate-data.js`
 
@@ -138,6 +138,20 @@ The long-term target is 3,000+ entries, but the project should progress one focu
     - `yinxu-anyang`
     - `sanxingdui`
 
+- Roman Republic and Empire core sites batch
+  - Batch ID: `europe-roman-empire-core-sites-v1`
+  - Source file: `data/records/europe/roman-empire/roman-core-sites.json`
+  - Entries added: 6 new entries plus 2 existing entries upgraded and linked to the batch
+  - Entry IDs:
+    - `roman-forum`
+    - `palatine-hill`
+    - `pompeii`
+    - `ostia-antica`
+    - `ravenna`
+    - `carthage`
+    - `hadrians-wall`
+    - `trier-roman-monuments`
+
 ## Current Policy
 
 - Work on DB only unless the user explicitly asks for UI changes.
@@ -175,17 +189,17 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Roman Republic and Empire: core political and imperial sites
-   - Possible source file: `data/records/europe/italy/roman-core-sites.json`
-   - Likely entries: Rome Forum, Palatine Hill, Pompeii, Ostia Antica, Ravenna, Carthage, Hadrian's Wall, Trier
-
-2. South Asia after the Indus: Magadha and Maurya core sites
+1. South Asia after the Indus: Magadha and Maurya core sites
    - Possible source file: `data/records/asia/india/magadha-maurya-core-sites.json`
    - Likely entries: Rajgir, Pataliputra, Bodh Gaya, Sarnath, Sanchi, Taxila, Dhauli, Barabar Caves
 
-3. Mesoamerica: Olmec, Maya, and Mexica core sites
+2. Mesoamerica: Olmec, Maya, and Mexica core sites
    - Possible source file: `data/records/americas/mesoamerica/mesoamerica-core-sites.json`
    - Likely entries: San Lorenzo, La Venta, El Mirador, Tikal, Calakmul, Chichen Itza, Teotihuacan, Tenochtitlan
+
+3. West African early states and trade networks
+   - Possible source file: `data/records/africa/west-africa/west-africa-early-states.json`
+   - Likely entries: Jenne-Jeno, Timbuktu, Gao, Koumbi Saleh, Aoudaghost, Ife, Benin City, Igbo-Ukwu
 
 ## Resume Checklist
 

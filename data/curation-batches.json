@@ -212,6 +212,35 @@
         "World History Encyclopedia references for Banpo and Longshan culture",
         "Britannica and peer-reviewed or museum-facing references for Banpo and Sanxingdui"
       ]
+    },
+    {
+      "id": "europe-roman-empire-core-sites-v1",
+      "status": "completed",
+      "completedAt": "2026-05-14",
+      "continentId": "europe",
+      "countryIso2": "IT-TN-GB-DE",
+      "countryKo": "이탈리아·튀니지·영국·독일",
+      "worldRegion": "로마사",
+      "focusKo": "로마 공화정·제국 핵심 거점",
+      "scopeKo": "로마 수도권, 이탈리아 항구·도시 생활 유적, 후기 서로마 수도, 북아프리카 도시, 브리타니아 변경, 서방 속주 황제 거주도시",
+      "sourceFile": "data/records/europe/roman-empire/roman-core-sites.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "roman-forum",
+        "palatine-hill",
+        "pompeii",
+        "ostia-antica",
+        "ravenna",
+        "carthage",
+        "hadrians-wall",
+        "trier-roman-monuments"
+      ],
+      "sourceBasis": [
+        "World History Encyclopedia references for Roman Forum, Pompeii, Ostia, Carthage, and Hadrian's Wall",
+        "UNESCO World Heritage pages for Historic Centre of Rome, Pompeii, Ravenna, Carthage, Frontiers of the Roman Empire, and Trier",
+        "Official Italian archaeological park pages for Palatine Hill and Ostia Antica",
+        "Britannica reference pages for Palatine Hill, Roman Empire, and Trier"
+      ]
     }
   ]
 }

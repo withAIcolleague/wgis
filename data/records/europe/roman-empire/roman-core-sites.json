@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "id": "europe-roman-empire-core-sites",
+  "titleKo": "로마 공화정·제국 핵심 거점",
+  "curationBatch": "europe-roman-empire-core-sites-v1",
+  "taxonomyFile": "data/taxonomy.json",
+  "appIndexFile": "data/entries.json",
+  "scope": {
+    "continentId": "europe",
+    "modernCountryIso2": "IT-TN-GB-DE",
+    "modernCountryKo": "이탈리아·튀니지·영국·독일",
+    "historicalRegionKo": "로마·캄파니아·아프리카 프로콘술라리스·브리타니아·갈리아 벨기카",
+    "cultureAreaKo": "로마 공화정·로마 제국",
+    "periodBand": "ancient",
+    "topicKo": "수도 중심, 황실 권력 공간, 항구, 도시 생활, 속주 중심, 변경 방어선"
+  },
+  "records": [
+    {
+      "id": "roman-forum",
+      "title": "로마 포룸",
+      "type": "place",
+      "historicalName": "포룸 로마눔",
+      "modernName": "로마 포룸 유적",
+      "modernAdmin": "라치오주 로마",
+      "country": "이탈리아",
+      "worldRegion": "로마사",
+      "period": "로마 공화정·제국",
+      "yearLabel": "기원전 7세기 이후",
+      "date": { "startYear": -700, "endYear": 608, "precision": "range" },
+      "spatial": {
+        "continentId": "europe",
+        "modernCountryIso2": "IT",
+        "historicalRegionKo": "라티움 / 로마",
+        "cultureAreaKo": "로마 공화정·제국"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 41.8925, "lng": 12.4853 },
+      "aliases": ["Roman Forum", "Forum Romanum", "Forum", "Curia Julia", "Rostra"],
+      "summary": "로마 포룸은 공화정과 제국 로마의 정치, 사법, 종교, 상업 활동이 집중된 중심 광장이었다. 원로원 의사당, 연단, 개선문, 신전이 밀집한 이 공간은 도시 로마가 지중해 세계의 권력 중심으로 변해 가는 과정을 가장 압축적으로 보여준다.",
+      "confidence": "high",
+      "sourceNote": "로마 포룸 중심 유적 좌표와 UNESCO 로마 역사 중심지 범위를 기준으로 표시했다.",
+      "curationBatch": "europe-roman-empire-core-sites-v1",
+      "sources": [
+        { "title": "World History Encyclopedia: Roman Forum", "url": "https://www.worldhistory.org/Roman_Forum/" },
+        { "title": "UNESCO: Historic Centre of Rome", "url": "https://whc.unesco.org/en/list/91/" }
+      ]
+    },
+    {
+      "id": "palatine-hill",
+      "title": "팔라티노 언덕",
+      "type": "site",
+      "historicalName": "팔라티움 / 팔라티노",
+      "modernName": "팔라티노 언덕 유적",
+      "modernAdmin": "라치오주 로마",
+      "country": "이탈리아",
+      "worldRegion": "로마사",
+      "period": "로마 왕정·공화정·제국",
+      "yearLabel": "기원전 1천년기 취락, 제정기 황궁",
+      "date": { "startYear": -1000, "endYear": 500, "precision": "range" },
+      "spatial": {
+        "continentId": "europe",
+        "modernCountryIso2": "IT",
+        "historicalRegionKo": "라티움 / 로마",
+        "cultureAreaKo": "로마 공화정·제국"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 41.8897, "lng": 12.4888 },
+      "aliases": ["Palatine Hill", "Palatium", "Palatino", "Domus Augustana", "House of Augustus"],
+      "summary": "팔라티노 언덕은 로마 건국 전승과 초기 취락의 기억이 결합된 장소이자, 아우구스투스 이후 황궁이 집중된 제국 권력의 언덕이다. 포룸을 내려다보는 지형 때문에 왕정 신화, 귀족 주거, 황제의 거처가 겹쳐진 로마 권력 공간으로 기록한다.",
+      "confidence": "high",
+      "sourceNote": "팔라티노 언덕 중심부 좌표와 로마 포룸-팔라티노 고고공원 범위를 기준으로 표시했다.",
+      "curationBatch": "europe-roman-empire-core-sites-v1",
+      "sources": [
+        { "title": "Parco archeologico del Colosseo: The Palatine", "url": "https://colosseo.it/en/area/the-palatine/" },
+        { "title": "Britannica: Palatine Hill", "url": "https://www.britannica.com/place/Palatine-Hill" }
+      ]
+    },
+    {
+      "id": "pompeii",
+      "title": "폼페이",
+      "type": "site",
+      "historicalName": "폼페이",
+      "modernName": "폼페이 고고유적",
+      "modernAdmin": "캄파니아주 나폴리 광역시 폼페이",
+      "country": "이탈리아",
+      "worldRegion": "로마사",
+      "period": "로마 공화정 말기·제국 초기",
+      "yearLabel": "79년 베수비오 화산 폭발",
+      "date": { "startYear": -200, "endYear": 79, "precision": "range" },
+      "spatial": {
+        "continentId": "europe",
+        "modernCountryIso2": "IT",
+        "historicalRegionKo": "캄파니아 / 베수비오 권역",
+        "cultureAreaKo": "로마 이탈리아"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 40.7484, "lng": 14.4849 },
+      "aliases": ["Pompeii", "Pompei", "Vesuvius", "Bay of Naples", "AD 79"],
+      "summary": "폼페이는 79년 베수비오 화산 폭발로 매몰되어 로마 도시의 거리, 주택, 상점, 목욕장, 벽화가 비정상적으로 잘 보존된 유적이다. 제국 수도가 아닌 지방 도시의 일상과 도시 인프라를 입체적으로 보여주는 대표 사례다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 폼페이·헤르쿨라네움·토레 안눈치아타 세계유산 중 폼페이 유적 좌표를 기준으로 표시했다.",
+      "curationBatch": "europe-roman-empire-core-sites-v1",
+      "sources": [
+        { "title": "UNESCO: Archaeological Areas of Pompei, Herculaneum and Torre Annunziata", "url": "https://whc.unesco.org/en/list/829/" },
+        { "title": "World History Encyclopedia: Pompeii", "url": "https://www.worldhistory.org/pompeii/" }
+      ]
+    },
+    {
+      "id": "ostia-antica",
+      "title": "오스티아 안티카",
+      "type": "place",
+      "historicalName": "오스티아",
+      "modernName": "오스티아 안티카 고고유적",
+      "modernAdmin": "라치오주 로마 광역시 오스티아 안티카",
+      "country": "이탈리아",
+      "worldRegion": "로마사",
+      "period": "로마 공화정·제국",
+      "yearLabel": "기원전 4세기 식민도시, 제국기 항구도시",
+      "date": { "startYear": -400, "endYear": 500, "precision": "range" },
+      "spatial": {
+        "continentId": "europe",
+        "modernCountryIso2": "IT",
+        "historicalRegionKo": "티베르 하구 / 로마 항구권",
+        "cultureAreaKo": "로마 이탈리아"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 41.7559, "lng": 12.2900 },
+      "aliases": ["Ostia", "Ostia Antica", "Port of Rome", "Tiber", "Horrea"],
+      "summary": "오스티아 안티카는 티베르 하구의 로마 항구도시로, 곡물 공급, 해상 교역, 창고, 조합 회관, 다층 주거와 목욕장이 집중된 곳이다. 수도 로마가 지중해 물류망에 의존해 작동한 방식을 도시 유적 차원에서 보여준다.",
+      "confidence": "high",
+      "sourceNote": "오스티아 안티카 고고공원 중심 좌표를 기준으로 표시했다.",
+      "curationBatch": "europe-roman-empire-core-sites-v1",
+      "sources": [
+        { "title": "World History Encyclopedia: Ostia", "url": "https://www.worldhistory.org/Ostia/" },
+        { "title": "Archaeological Park of Ostia Antica", "url": "https://ostiaantica.cultura.gov.it/en/info/archaeological-area-of-ostia-antica-visitor-information/" }
+      ]
+    },
+    {
+      "id": "ravenna",
+      "title": "라벤나",
+      "type": "place",
+      "historicalName": "라벤나",
+      "modernName": "라벤나 초기 기독교 기념물군",
+      "modernAdmin": "에밀리아로마냐주 라벤나",
+      "country": "이탈리아",
+      "worldRegion": "로마사",
+      "period": "서로마 제국 말기·동고트·비잔틴",
+      "yearLabel": "402년 서로마 수도 이전 이후, 5-6세기 기념물",
+      "date": { "startYear": 402, "endYear": 600, "precision": "range" },
+      "spatial": {
+        "continentId": "europe",
+        "modernCountryIso2": "IT",
+        "historicalRegionKo": "아드리아해 북부 / 이탈리아",
+        "cultureAreaKo": "후기 로마·초기 비잔틴"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 44.4200, "lng": 12.1969 },
+      "aliases": ["Ravenna", "Western Roman Empire", "Galla Placidia", "San Vitale", "Byzantine Italy"],
+      "summary": "라벤나는 402년 이후 서로마 황실의 수도가 되었고, 뒤이어 동고트 왕국과 비잔틴 이탈리아의 중심으로 기능했다. 모자이크가 보존된 초기 기독교 기념물군은 고전 로마, 기독교, 비잔틴 미술이 교차하는 후기 고대 권력 도시를 보여준다.",
+      "confidence": "approximate",
+      "sourceNote": "UNESCO 라벤나 초기 기독교 기념물군이 도시 안 여러 지점에 분산되어 있어 라벤나 중심부 근사 좌표로 표시했다.",
+      "curationBatch": "europe-roman-empire-core-sites-v1",
+      "sources": [
+        { "title": "UNESCO: Early Christian Monuments of Ravenna", "url": "https://whc.unesco.org/en/list/788" },
+        { "title": "Britannica: Roman Empire", "url": "https://www.britannica.com/place/Roman-Empire" }
+      ]
+    },
+    {
+      "id": "carthage",
+      "title": "카르타고",
+      "type": "place",
+      "historicalName": "카르타고 / 카르타고 노바 아프리카",
+      "modernName": "카르타고 고고유적",
+      "modernAdmin": "튀니스주 카르타고",
+      "country": "튀니지",
+      "worldRegion": "로마사",
+      "period": "페니키아·포에니·로마 아프리카",
+      "yearLabel": "기원전 9세기경 창건, 기원전 146년 파괴, 기원전 1세기 로마 재건",
+      "date": { "startYear": -814, "endYear": 698, "precision": "approximate" },
+      "spatial": {
+        "continentId": "africa",
+        "modernCountryIso2": "TN",
+        "historicalRegionKo": "북아프리카 / 아프리카 프로콘술라리스",
+        "cultureAreaKo": "포에니·로마 지중해"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 36.8528, "lng": 10.3233 },
+      "aliases": ["Carthage", "Qart Hadasht", "Punic", "Hannibal", "Roman Carthage"],
+      "summary": "카르타고는 페니키아계 해상 도시국가로 성장해 로마와 포에니 전쟁을 치른 뒤, 로마에 의해 파괴되고 다시 로마령 아프리카의 대도시로 재건되었다. 하나의 장소 안에서 지중해 상업, 군사 경쟁, 식민 도시 재편이 겹쳐진다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 카르타고 고고유적 좌표와 튀니스 인근 유적권을 기준으로 표시했다.",
+      "curationBatch": "europe-roman-empire-core-sites-v1",
+      "sources": [
+        { "title": "UNESCO: Archaeological Site of Carthage", "url": "https://whc.unesco.org/en/list/37" },
+        { "title": "World History Encyclopedia: Carthage", "url": "https://www.worldhistory.org/carthage/" }
+      ]
+    },
+    {
+      "id": "hadrians-wall",
+      "title": "하드리아누스 방벽",
+      "type": "site",
+      "historicalName": "발룸 아엘리움 / 하드리아누스 방벽",
+      "modernName": "하드리아누스 방벽",
+      "modernAdmin": "잉글랜드 북부 노섬벌랜드·컴브리아 일대",
+      "country": "영국",
+      "worldRegion": "로마사",
+      "period": "로마 브리타니아",
+      "yearLabel": "122년 착공",
+      "date": { "startYear": 122, "endYear": 410, "precision": "range" },
+      "spatial": {
+        "continentId": "europe",
+        "modernCountryIso2": "GB",
+        "historicalRegionKo": "브리타니아 북부 변경",
+        "cultureAreaKo": "로마 제국 변경 방어선"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 55.0130, "lng": -2.3310 },
+      "aliases": ["Hadrian's Wall", "Vallum Aelium", "Housesteads", "Roman Britain", "Frontiers of the Roman Empire"],
+      "summary": "하드리아누스 방벽은 브리타니아 북부를 가로지르는 로마 제국의 변경 방어선으로, 성벽, 요새, 망루, 도로가 연결된 군사 경관이다. 제국의 경계가 단순한 선이 아니라 감시, 통행, 과세, 지역 통제의 복합 시스템이었음을 보여준다.",
+      "confidence": "approximate",
+      "sourceNote": "방벽은 선형 유산이므로 중심부의 하우스스테즈 로마 요새 근처 좌표로 대표 표시했다.",
+      "curationBatch": "europe-roman-empire-core-sites-v1",
+      "sources": [
+        { "title": "UNESCO: Frontiers of the Roman Empire", "url": "https://whc.unesco.org/en/list/430/" },
+        { "title": "World History Encyclopedia: Hadrian's Wall", "url": "https://www.worldhistory.org/Hadrians_Wall/" }
+      ]
+    },
+    {
+      "id": "trier-roman-monuments",
+      "title": "트리어 로마 유적",
+      "type": "place",
+      "historicalName": "아우구스타 트레베로룸",
+      "modernName": "트리어 로마 기념물군",
+      "modernAdmin": "라인란트팔츠주 트리어",
+      "country": "독일",
+      "worldRegion": "로마사",
+      "period": "로마 갈리아·서방 제국",
+      "yearLabel": "기원전 16년경 창건, 3-4세기 황제 거주도시",
+      "date": { "startYear": -16, "endYear": 500, "precision": "range" },
+      "spatial": {
+        "continentId": "europe",
+        "modernCountryIso2": "DE",
+        "historicalRegionKo": "모젤강 유역 / 갈리아 벨기카",
+        "cultureAreaKo": "로마 서방 속주"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 49.7596, "lng": 6.6442 },
+      "aliases": ["Trier", "Augusta Treverorum", "Porta Nigra", "Imperial Baths", "Constantine Basilica"],
+      "summary": "트리어는 아우구스투스 시대에 세워진 모젤강 유역의 로마 도시로, 3-4세기에는 서방 제국의 황제 거주지 중 하나가 되었다. 포르타 니그라, 황제 목욕장, 콘스탄티누스 바실리카는 로마 도시·군사·기독교 전환의 층위를 함께 보여준다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 트리어 로마 기념물군 중 포르타 니그라와 도심 유산권 좌표를 대표값으로 사용했다.",
+      "curationBatch": "europe-roman-empire-core-sites-v1",
+      "sources": [
+        { "title": "UNESCO: Roman Monuments, Cathedral of St Peter and Church of Our Lady in Trier", "url": "https://whc.unesco.org/en/list/367/" },
+        { "title": "Britannica: Trier", "url": "https://www.britannica.com/place/Trier-Germany" }
+      ]
+    }
+  ]
+}
