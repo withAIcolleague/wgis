@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "id": "asia-south-asia-magadha-maurya-core-sites",
+  "titleKo": "마가다·마우리아 핵심 거점",
+  "curationBatch": "asia-south-asia-magadha-maurya-core-sites-v1",
+  "taxonomyFile": "data/taxonomy.json",
+  "appIndexFile": "data/entries.json",
+  "scope": {
+    "continentId": "asia",
+    "modernCountryIso2": "IN-PK",
+    "modernCountryKo": "인도·파키스탄",
+    "historicalRegionKo": "마가다·갠지스 평원·간다라·칼링가",
+    "cultureAreaKo": "초기 역사시대 남아시아 / 마가다·마우리아 세계",
+    "periodBand": "ancient",
+    "topicKo": "마가다 수도, 마우리아 제국 중심, 불교 성지, 아소카 유적, 장거리 학문·교역 거점"
+  },
+  "records": [
+    {
+      "id": "rajgir-rajagriha",
+      "title": "라지기르",
+      "type": "place",
+      "historicalName": "라자그리하 / 라지기르",
+      "modernName": "라지기르",
+      "modernAdmin": "비하르주 날란다 지구 라지기르",
+      "country": "인도",
+      "worldRegion": "인도사",
+      "period": "마가다 왕국 / 초기 불교·자이나교",
+      "yearLabel": "기원전 6-5세기 마가다 초기 수도",
+      "date": { "startYear": -600, "endYear": -400, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "IN",
+        "historicalRegionKo": "마가다 / 남비하르",
+        "cultureAreaKo": "초기 역사시대 갠지스 평원"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 25.0263, "lng": 85.4210 },
+      "aliases": ["Rajgir", "Rajagriha", "Rajagaha", "Magadha", "Bimbisara"],
+      "summary": "라지기르는 고대 라자그리하로, 빔비사라와 아자타샤트루 시기 마가다 왕국의 초기 수도였다. 산지로 둘러싸인 계곡 도시와 성벽, 불교·자이나교 전승이 겹쳐져 갠지스 평원의 초기 국가 형성과 종교 운동을 함께 보여준다.",
+      "confidence": "approximate",
+      "sourceNote": "고대 라자그리하가 현대 라지기르 계곡권에 넓게 분포하므로 라지기르 중심부 근사 좌표로 표시했다.",
+      "curationBatch": "asia-south-asia-magadha-maurya-core-sites-v1",
+      "sources": [
+        { "title": "Britannica: Rajagriha", "url": "https://www.britannica.com/place/Rajagriha" },
+        { "title": "Bihar State Tourism Development Corporation: Rajgir", "url": "https://bstdc.bihar.gov.in/rajgir.htm" }
+      ]
+    },
+    {
+      "id": "pataliputra",
+      "title": "파탈리푸트라",
+      "type": "place",
+      "historicalName": "파탈리푸트라 / 팔리보트라",
+      "modernName": "파트나·쿰라하르 유적",
+      "modernAdmin": "비하르주 파트나",
+      "country": "인도",
+      "worldRegion": "인도사",
+      "period": "마가다·난다·마우리아·굽타",
+      "yearLabel": "기원전 5세기 이후, 마우리아 제국 수도",
+      "date": { "startYear": -490, "endYear": 550, "precision": "range" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "IN",
+        "historicalRegionKo": "마가다 / 갠지스-손강 합류권",
+        "cultureAreaKo": "마가다·마우리아·굽타"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 25.6020, "lng": 85.1788 },
+      "aliases": ["Pataliputra", "Palibothra", "Patna", "Kumhrar", "Mauryan capital"],
+      "summary": "파탈리푸트라는 마가다의 수도로 성장해 난다, 마우리아, 굽타 제국의 핵심 정치 중심지가 되었다. 쿰라하르의 목조 궁전·기둥 홀 유구와 문헌 속 메가스테네스의 기록은 갠지스 평원 제국 수도의 규모와 행정력을 이해하게 해준다.",
+      "confidence": "approximate",
+      "sourceNote": "현대 파트나의 쿰라하르 유적권 좌표를 기준으로 표시했다.",
+      "curationBatch": "asia-south-asia-magadha-maurya-core-sites-v1",
+      "sources": [
+        { "title": "Britannica: Patna", "url": "https://www.britannica.com/place/Patna" },
+        { "title": "World History Encyclopedia: Mauryan Empire", "url": "https://www.worldhistory.org/Mauryan_Empire/" }
+      ]
+    },
+    {
+      "id": "bodh-gaya",
+      "title": "보드가야",
+      "type": "site",
+      "historicalName": "우루벨라 / 보드가야",
+      "modernName": "마하보디 사원 단지",
+      "modernAdmin": "비하르주 가야 지구 보드가야",
+      "country": "인도",
+      "worldRegion": "인도사",
+      "period": "초기 불교·마우리아 이후",
+      "yearLabel": "기원전 6-5세기 붓다 깨달음 전승, 기원전 3세기 아소카 후원",
+      "date": { "startYear": -500, "endYear": 1200, "precision": "range" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "IN",
+        "historicalRegionKo": "마가다 / 비하르 남부",
+        "cultureAreaKo": "불교 성지·마우리아 후원"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 24.6951, "lng": 84.9913 },
+      "aliases": ["Bodh Gaya", "Mahabodhi Temple", "Uruvela", "Bodhi Tree", "Buddha enlightenment"],
+      "summary": "보드가야는 붓다가 보리수 아래에서 깨달음을 얻었다고 전해지는 불교의 핵심 성지다. 마하보디 사원 단지와 금강좌, 보리수 전승은 마우리아 이후 왕실 후원과 순례 네트워크가 어떻게 성지를 장기적으로 유지했는지 보여준다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 마하보디 사원 단지 세계유산 좌표를 기준으로 표시했다.",
+      "curationBatch": "asia-south-asia-magadha-maurya-core-sites-v1",
+      "sources": [
+        { "title": "UNESCO: Mahabodhi Temple Complex at Bodh Gaya", "url": "https://whc.unesco.org/en/list/1056/" },
+        { "title": "UNESCO: Mahabodhi Temple Complex", "url": "https://www.unesco.org/en/articles/mahabodhi-temple-complex?hub=392" }
+      ]
+    },
+    {
+      "id": "sarnath",
+      "title": "사르나트",
+      "type": "site",
+      "historicalName": "이시파타나 / 므리가다바",
+      "modernName": "사르나트 불교 유적",
+      "modernAdmin": "우타르프라데시주 바라나시 사르나트",
+      "country": "인도",
+      "worldRegion": "인도사",
+      "period": "초기 불교·마우리아",
+      "yearLabel": "기원전 6-5세기 첫 설법 전승, 기원전 3세기 아소카 기념물",
+      "date": { "startYear": -500, "endYear": 1200, "precision": "range" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "IN",
+        "historicalRegionKo": "바라나시 / 중부 갠지스 평원",
+        "cultureAreaKo": "불교 성지·마우리아 후원"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 25.3811, "lng": 83.0214 },
+      "aliases": ["Sarnath", "Isipatana", "Mrigadava", "Dhamek Stupa", "Ashokan pillar"],
+      "summary": "사르나트는 붓다가 첫 설법을 했다고 전해지는 장소이며, 아소카 석주와 스투파, 승원 유적이 집중된 불교 성지다. 보드가야와 함께 초기 불교의 기억이 마우리아 제국의 기념물 정책 속에서 어떻게 공간화되었는지를 보여준다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 잠정목록의 사르나트 유적 설명과 다메크 스투파 권역 좌표를 기준으로 표시했다.",
+      "curationBatch": "asia-south-asia-magadha-maurya-core-sites-v1",
+      "sources": [
+        { "title": "UNESCO Tentative List: Ancient Buddhist Site, Sarnath", "url": "https://whc.unesco.org/en/tentativelists/1096/" },
+        { "title": "UNESCO India Tentative List", "url": "https://whc.unesco.org/en/statesparties/in/" }
+      ]
+    },
+    {
+      "id": "sanchi",
+      "title": "산치",
+      "type": "site",
+      "historicalName": "산치 / 체티야기리",
+      "modernName": "산치 불교 기념물군",
+      "modernAdmin": "마디아프라데시주 라이센 지구 산치",
+      "country": "인도",
+      "worldRegion": "인도사",
+      "period": "마우리아·슝가·사타바하나·굽타",
+      "yearLabel": "기원전 3세기 아소카 스투파 이후",
+      "date": { "startYear": -300, "endYear": 1200, "precision": "range" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "IN",
+        "historicalRegionKo": "말와 / 비디샤 인근",
+        "cultureAreaKo": "불교 기념물·마우리아 후원"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 23.4793, "lng": 77.7390 },
+      "aliases": ["Sanchi", "Great Stupa", "Buddhist Monuments at Sanchi", "Ashoka", "Vidisha"],
+      "summary": "산치는 아소카 시기 기원을 가진 대스투파를 중심으로 여러 시기의 스투파, 사원, 승원, 석문이 남아 있는 불교 기념물군이다. 마우리아의 후원이 지역적 불교 미술과 순례 공간으로 확장되는 과정을 장기적으로 보여준다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 산치 불교 기념물군 세계유산 좌표를 기준으로 표시했다.",
+      "curationBatch": "asia-south-asia-magadha-maurya-core-sites-v1",
+      "sources": [
+        { "title": "UNESCO: Buddhist Monuments at Sanchi", "url": "https://whc.unesco.org/en/list/524/" },
+        { "title": "Britannica: Sanchi", "url": "https://www.britannica.com/place/Sanchi-historical-site-India" }
+      ]
+    },
+    {
+      "id": "taxila",
+      "title": "탁실라",
+      "type": "place",
+      "historicalName": "탁실라 / 탁샤실라",
+      "modernName": "탁실라 고고유적",
+      "modernAdmin": "펀자브주 라왈핀디 지구 탁실라",
+      "country": "파키스탄",
+      "worldRegion": "인도사",
+      "period": "간다라·아케메네스·마우리아·인도-그리스·쿠샨",
+      "yearLabel": "기원전 5세기-기원후 2세기 학문·불교 중심",
+      "date": { "startYear": -500, "endYear": 200, "precision": "range" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "PK",
+        "historicalRegionKo": "간다라 / 인더스 상류",
+        "cultureAreaKo": "간다라·마우리아·불교 네트워크"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 33.7463, "lng": 72.8397 },
+      "aliases": ["Taxila", "Takshashila", "Gandhara", "Sirkap", "Sirsukh"],
+      "summary": "탁실라는 간다라의 학문·교역·불교 중심지로, 페르시아, 그리스, 중앙아시아, 인도 문화가 반복적으로 교차한 도시권이다. 마우리아 제국의 서북부 통치와 불교 네트워크를 이해하는 데 중요한 접경 거점이다.",
+      "confidence": "approximate",
+      "sourceNote": "UNESCO 탁실라 세계유산은 여러 유적으로 구성되므로 탁실라 계곡 중심부의 근사 좌표로 표시했다.",
+      "curationBatch": "asia-south-asia-magadha-maurya-core-sites-v1",
+      "sources": [
+        { "title": "UNESCO: Taxila", "url": "https://whc.unesco.org/en/list/139/" },
+        { "title": "World History Encyclopedia: Taxila", "url": "https://www.worldhistory.org/taxila/" }
+      ]
+    },
+    {
+      "id": "dhauli",
+      "title": "다울리",
+      "type": "site",
+      "historicalName": "다울리 / 칼링가 전쟁 기억지",
+      "modernName": "다울리 아소카 암각 칙령",
+      "modernAdmin": "오디샤주 부바네스와르 다울리",
+      "country": "인도",
+      "worldRegion": "인도사",
+      "period": "마우리아 / 아소카",
+      "yearLabel": "기원전 260년경 칼링가 전쟁 이후",
+      "date": { "startYear": -260, "endYear": -230, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "IN",
+        "historicalRegionKo": "칼링가 / 오디샤",
+        "cultureAreaKo": "마우리아 제국·아소카 칙령"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 20.1922, "lng": 85.8395 },
+      "aliases": ["Dhauli", "Dhauligiri", "Ashokan Rock Edicts", "Kalinga War", "Daya River"],
+      "summary": "다울리는 칼링가 전쟁의 기억과 아소카의 암각 칙령이 결합된 장소다. 다야강 근처의 바위 칙령과 코끼리 부조는 정복 이후 아소카가 폭력, 통치, 법의 이념을 어떻게 새롭게 표현했는지 보여주는 핵심 지점이다.",
+      "confidence": "approximate",
+      "sourceNote": "다울리 언덕과 아소카 암각 칙령 유적권의 공개 좌표를 근사값으로 사용했다.",
+      "curationBatch": "asia-south-asia-magadha-maurya-core-sites-v1",
+      "sources": [
+        { "title": "World History Encyclopedia: The Edicts of Ashoka the Great", "url": "https://www.worldhistory.org/Edicts_of_Ashoka/" },
+        { "title": "Odisha Tourism: Dhauligiri", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/buddhist-sites/dhauligiri.html" }
+      ]
+    },
+    {
+      "id": "barabar-caves",
+      "title": "바라바르 석굴",
+      "type": "site",
+      "historicalName": "바라바르 석굴",
+      "modernName": "바라바르 언덕 석굴",
+      "modernAdmin": "비하르주 제하나바드 지구 마흐둠푸르",
+      "country": "인도",
+      "worldRegion": "인도사",
+      "period": "마우리아 / 아소카·다사라타",
+      "yearLabel": "기원전 3세기",
+      "date": { "startYear": -260, "endYear": -220, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "IN",
+        "historicalRegionKo": "마가다 / 비하르 남부",
+        "cultureAreaKo": "마우리아 석굴 건축·아지비카"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 25.0073, "lng": 85.0560 },
+      "aliases": ["Barabar Caves", "Barabar Hill Caves", "Lomas Rishi", "Sudama Cave", "Ajivika"],
+      "summary": "바라바르 석굴은 마우리아 시대에 조성된 인도에서 가장 이른 암반 절개 석굴군으로, 아소카와 다사라타의 명문과 거울처럼 연마된 내부 표면이 특징이다. 이후 인도 석굴 건축 전통의 출발점으로 볼 수 있는 실험적 왕실 후원 건축이다.",
+      "confidence": "high",
+      "sourceNote": "비하르 관광의 바라바르 석굴 좌표 범위 중 대표 중심값을 사용했다.",
+      "curationBatch": "asia-south-asia-magadha-maurya-core-sites-v1",
+      "sources": [
+        { "title": "Bihar Tourism: Barabar Caves", "url": "https://tourism.bihar.gov.in/en/destinations/jehanabad/barabar-caves" },
+        { "title": "Barabar Cave Tourism: Location", "url": "https://barabarcavetourism.bihar.gov.in/location" }
+      ]
+    }
+  ]
+}

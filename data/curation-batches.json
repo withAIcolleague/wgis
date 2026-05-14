@@ -241,6 +241,35 @@
         "Official Italian archaeological park pages for Palatine Hill and Ostia Antica",
         "Britannica reference pages for Palatine Hill, Roman Empire, and Trier"
       ]
+    },
+    {
+      "id": "asia-south-asia-magadha-maurya-core-sites-v1",
+      "status": "completed",
+      "completedAt": "2026-05-15",
+      "continentId": "asia",
+      "countryIso2": "IN-PK",
+      "countryKo": "인도·파키스탄",
+      "worldRegion": "인도사",
+      "focusKo": "마가다·마우리아 핵심 거점",
+      "scopeKo": "마가다 초기 수도, 마우리아 제국 수도, 불교 성지, 아소카 칙령지, 간다라 학문·교역 거점, 마우리아 석굴 건축",
+      "sourceFile": "data/records/asia/south-asia/magadha-maurya-core-sites.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "rajgir-rajagriha",
+        "pataliputra",
+        "bodh-gaya",
+        "sarnath",
+        "sanchi",
+        "taxila",
+        "dhauli",
+        "barabar-caves"
+      ],
+      "sourceBasis": [
+        "UNESCO World Heritage and Tentative List pages for Bodh Gaya, Sarnath, Sanchi, and Taxila",
+        "World History Encyclopedia references for the Mauryan Empire, Taxila, Ashoka's edicts, and related Buddhist sites",
+        "Britannica references for Rajagriha, Patna, Sanchi, and the Mauryan Empire",
+        "Bihar and Odisha tourism pages for Rajgir, Barabar Caves, and Dhauli"
+      ]
     }
   ]
 }

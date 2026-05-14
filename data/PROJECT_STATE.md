@@ -1,6 +1,6 @@
 # WGIS Data Project State
 
-Last updated: 2026-05-14
+Last updated: 2026-05-15
 
 ## Current Goal
 
@@ -11,9 +11,9 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 87
-- Completed curation batches: 8
-- Latest completed batch: `europe-roman-empire-core-sites-v1`
+- Current entry count: 94
+- Completed curation batches: 9
+- Latest completed batch: `asia-south-asia-magadha-maurya-core-sites-v1`
 - Latest completed infrastructure milestone: `a28681f Add data validation script`
 - Data validation script: `scripts/validate-data.js`
 
@@ -152,6 +152,20 @@ The long-term target is 3,000+ entries, but the project should progress one focu
     - `hadrians-wall`
     - `trier-roman-monuments`
 
+- Magadha and Maurya core sites batch
+  - Batch ID: `asia-south-asia-magadha-maurya-core-sites-v1`
+  - Source file: `data/records/asia/south-asia/magadha-maurya-core-sites.json`
+  - Entries added: 7 new entries plus 1 existing entry upgraded and linked to the batch
+  - Entry IDs:
+    - `rajgir-rajagriha`
+    - `pataliputra`
+    - `bodh-gaya`
+    - `sarnath`
+    - `sanchi`
+    - `taxila`
+    - `dhauli`
+    - `barabar-caves`
+
 ## Current Policy
 
 - Work on DB only unless the user explicitly asks for UI changes.
@@ -189,17 +203,17 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. South Asia after the Indus: Magadha and Maurya core sites
-   - Possible source file: `data/records/asia/india/magadha-maurya-core-sites.json`
-   - Likely entries: Rajgir, Pataliputra, Bodh Gaya, Sarnath, Sanchi, Taxila, Dhauli, Barabar Caves
-
-2. Mesoamerica: Olmec, Maya, and Mexica core sites
+1. Mesoamerica: Olmec, Maya, and Mexica core sites
    - Possible source file: `data/records/americas/mesoamerica/mesoamerica-core-sites.json`
    - Likely entries: San Lorenzo, La Venta, El Mirador, Tikal, Calakmul, Chichen Itza, Teotihuacan, Tenochtitlan
 
-3. West African early states and trade networks
+2. West African early states and trade networks
    - Possible source file: `data/records/africa/west-africa/west-africa-early-states.json`
    - Likely entries: Jenne-Jeno, Timbuktu, Gao, Koumbi Saleh, Aoudaghost, Ife, Benin City, Igbo-Ukwu
+
+3. Andean early states and Inca core sites
+   - Possible source file: `data/records/americas/andes/andean-core-sites.json`
+   - Likely entries: Caral, Chavin de Huantar, Moche Huacas, Chan Chan, Tiwanaku, Cusco, Machu Picchu, Sacsayhuaman
 
 ## Resume Checklist
 
