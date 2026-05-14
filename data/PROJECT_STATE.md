@@ -1,6 +1,6 @@
 # WGIS Data Project State
 
-Last updated: 2026-05-13
+Last updated: 2026-05-14
 
 ## Current Goal
 
@@ -11,9 +11,9 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 73
-- Completed curation batches: 6
-- Latest completed batch: `asia-iran-achaemenid-persia-core-sites-v1`
+- Current entry count: 81
+- Completed curation batches: 7
+- Latest completed batch: `asia-china-early-china-core-sites-v1`
 - Latest completed infrastructure milestone: `a28681f Add data validation script`
 - Data validation script: `scripts/validate-data.js`
 
@@ -124,6 +124,20 @@ The long-term target is 3,000+ entries, but the project should progress one focu
     - `daskyleion`
   - Note: `babylon` remains in the Mesopotamia batch to avoid duplicate source-record ownership until multi-batch links are modeled explicitly.
 
+- Early China Yellow River and Bronze Age core sites batch
+  - Batch ID: `asia-china-early-china-core-sites-v1`
+  - Source file: `data/records/asia/china/early-china-core-sites.json`
+  - Entries added: 8
+  - Entry IDs:
+    - `banpo`
+    - `liangzhu-city`
+    - `taosi`
+    - `erlitou`
+    - `yanshi-shang-city`
+    - `zhengzhou-shang-city`
+    - `yinxu-anyang`
+    - `sanxingdui`
+
 ## Current Policy
 
 - Work on DB only unless the user explicitly asks for UI changes.
@@ -161,17 +175,17 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Early China: Yellow River and Bronze Age core sites
-   - Possible source file: `data/records/asia/china/early-china-core-sites.json`
-   - Likely entries: Erlitou, Yanshi, Zhengzhou Shang City, Anyang/Yinxu, Sanxingdui, Liangzhu, Taosi, Banpo
-
-2. Roman Republic and Empire: core political and imperial sites
+1. Roman Republic and Empire: core political and imperial sites
    - Possible source file: `data/records/europe/italy/roman-core-sites.json`
    - Likely entries: Rome Forum, Palatine Hill, Pompeii, Ostia Antica, Ravenna, Carthage, Hadrian's Wall, Trier
 
-3. South Asia after the Indus: Magadha and Maurya core sites
+2. South Asia after the Indus: Magadha and Maurya core sites
    - Possible source file: `data/records/asia/india/magadha-maurya-core-sites.json`
    - Likely entries: Rajgir, Pataliputra, Bodh Gaya, Sarnath, Sanchi, Taxila, Dhauli, Barabar Caves
+
+3. Mesoamerica: Olmec, Maya, and Mexica core sites
+   - Possible source file: `data/records/americas/mesoamerica/mesoamerica-core-sites.json`
+   - Likely entries: San Lorenzo, La Venta, El Mirador, Tikal, Calakmul, Chichen Itza, Teotihuacan, Tenochtitlan
 
 ## Resume Checklist
 

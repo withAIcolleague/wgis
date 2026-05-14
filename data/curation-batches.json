@@ -183,6 +183,35 @@
         "Encyclopaedia Iranica entries for Naqsh-e Rostam, Achaemenid Dynasty, and Dascylium",
         "Britannica reference pages for Ecbatana and Sardis"
       ]
+    },
+    {
+      "id": "asia-china-early-china-core-sites-v1",
+      "status": "completed",
+      "completedAt": "2026-05-14",
+      "continentId": "asia",
+      "countryIso2": "CN",
+      "countryKo": "중국",
+      "worldRegion": "중국사",
+      "focusKo": "초기 중국 황허·청동기 핵심 유적",
+      "scopeKo": "중국 신석기 취락, 황허 중류 초기 국가 형성, 상 왕조 도시, 장강 하류와 쓰촨 분지의 동시기 문명 거점",
+      "sourceFile": "data/records/asia/china/early-china-core-sites.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "banpo",
+        "liangzhu-city",
+        "taosi",
+        "erlitou",
+        "yanshi-shang-city",
+        "zhengzhou-shang-city",
+        "yinxu-anyang",
+        "sanxingdui"
+      ],
+      "sourceBasis": [
+        "UNESCO World Heritage pages for Yin Xu and Liangzhu, and UNESCO Tentative List page for Sanxingdui",
+        "Henan Government and ChinaCulture.org pages for Erlitou, Yanshi Shang City, Zhengzhou Shang City, Yinxu, and Taosi",
+        "World History Encyclopedia references for Banpo and Longshan culture",
+        "Britannica and peer-reviewed or museum-facing references for Banpo and Sanxingdui"
+      ]
     }
   ]
 }

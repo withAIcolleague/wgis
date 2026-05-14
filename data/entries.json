@@ -1508,5 +1508,181 @@
       { "title": "Encyclopaedia Iranica: Dascylium", "url": "https://www.iranicaonline.org/articles/dascylium" },
       { "title": "Turkish Archaeological News: Daskyleion", "url": "https://turkisharchaeonews.net/site/daskyleion" }
     ]
+  },
+  {
+    "id": "banpo",
+    "title": "반포",
+    "type": "site",
+    "historicalName": "반포 취락",
+    "modernName": "시안 반포 유적",
+    "modernAdmin": "산시성 시안시 바차오구",
+    "country": "중국",
+    "worldRegion": "중국사",
+    "period": "양사오 문화 / 신석기",
+    "yearLabel": "기원전 4800-3750년경",
+    "coordinates": { "lat": 34.2745, "lng": 109.0481 },
+    "aliases": ["Banpo", "Banpo Village", "Banpo site", "Yangshao Culture", "Pan Po"],
+    "summary": "반포는 시안 동쪽의 양사오 문화 대표 취락으로, 주거지, 해자, 묘지, 토기 가마가 함께 확인된 신석기 마을 유적이다. 황허 유역 농경 취락의 공간 구성과 채도 토기, 초기 공동체 생활을 이해하는 기준점이 된다.",
+    "confidence": "high",
+    "sourceNote": "반포박물관 일대 공개 좌표와 시안 동부 유적 위치를 기준으로 표시했다.",
+    "curationBatch": "asia-china-early-china-core-sites-v1",
+    "sources": [
+      { "title": "World History Encyclopedia: Banpo Village", "url": "https://www.worldhistory.org/Banpo_Village/" },
+      { "title": "Britannica: Banpo site", "url": "https://www.britannica.com/place/Banpo-site" }
+    ]
+  },
+  {
+    "id": "liangzhu-city",
+    "title": "량주 고성",
+    "type": "site",
+    "historicalName": "량주 고성",
+    "modernName": "량주 고성 유적",
+    "modernAdmin": "저장성 항저우시 위항구 핑야오·량주 일대",
+    "country": "중국",
+    "worldRegion": "중국사",
+    "period": "량주 문화 / 후기 신석기",
+    "yearLabel": "기원전 3300-2300년경",
+    "coordinates": { "lat": 30.3955, "lng": 119.9908 },
+    "aliases": ["Liangzhu", "Liangzhu City", "Archaeological Ruins of Liangzhu City", "jade cong", "Mojiaoshan"],
+    "summary": "량주 고성은 장강 하류의 벼농사 기반 지역 국가를 보여주는 후기 신석기 도시 유적이다. 성곽, 대형 제방과 수리 시설, 모자오산 중심 건축, 옥기와 위계화된 묘지는 황허 중심 서술만으로는 설명하기 어려운 중국 문명 기원의 다원성을 보여준다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 량주 고성 세계유산 지도 중 성지 구역 좌표를 기준으로 표시했다.",
+    "curationBatch": "asia-china-early-china-core-sites-v1",
+    "sources": [
+      { "title": "UNESCO: Archaeological Ruins of Liangzhu City", "url": "https://whc.unesco.org/en/list/1592/" },
+      { "title": "UNESCO: Liangzhu City Maps", "url": "https://whc.unesco.org/en/list/1592/maps/" }
+    ]
+  },
+  {
+    "id": "taosi",
+    "title": "타오쓰",
+    "type": "site",
+    "historicalName": "타오쓰",
+    "modernName": "타오쓰 유적",
+    "modernAdmin": "산시성 린펀시 샹펀현 타오쓰촌 일대",
+    "country": "중국",
+    "worldRegion": "중국사",
+    "period": "룽산 문화 후기 / 초기 국가 형성",
+    "yearLabel": "기원전 2500-1900년경",
+    "coordinates": { "lat": 35.8906, "lng": 111.4972 },
+    "aliases": ["Taosi", "Longshan Culture", "Xiangfen", "early state formation", "Yao"],
+    "summary": "타오쓰는 산시 남부 펀허 유역의 대형 룽산 문화 유적으로, 성곽, 대형 건물지, 묘지 위계, 천문 관측 시설로 해석되는 구조가 보고되었다. 황허 중류에서 신석기 말기 정치 중심이 어떻게 형성되었는지 보여주는 핵심 장소다.",
+    "confidence": "approximate",
+    "sourceNote": "샹펀현 북동쪽 타오쓰 유적 공개 좌표를 근사값으로 사용했다.",
+    "curationBatch": "asia-china-early-china-core-sites-v1",
+    "sources": [
+      { "title": "World History Encyclopedia: Longshan Culture", "url": "https://www.worldhistory.org/Longshan_Culture/" },
+      { "title": "ChinaCulture.org: Taosi Site", "url": "https://en.chinaculture.org/library/2008-02/15/content_33629.htm" }
+    ]
+  },
+  {
+    "id": "erlitou",
+    "title": "얼리터우",
+    "type": "site",
+    "historicalName": "얼리터우",
+    "modernName": "얼리터우 유적",
+    "modernAdmin": "허난성 뤄양시 옌스구 자이진 일대",
+    "country": "중국",
+    "worldRegion": "중국사",
+    "period": "얼리터우 문화 / 초기 청동기",
+    "yearLabel": "기원전 1900-1500년경",
+    "coordinates": { "lat": 34.6920, "lng": 112.6960 },
+    "aliases": ["Erlitou", "Erlitou Culture", "Xia Capital", "Yiluo Basin", "early Bronze Age China"],
+    "summary": "얼리터우는 이뤄 분지의 대형 초기 청동기 중심지로, 궁전 건축, 도로망, 공방, 의례용 청동기의 초기 전개가 확인된다. 하 왕조와 직접 연결할지는 논쟁적이지만, 중원에서 도시와 왕권적 질서가 형성되는 과정을 보여주는 핵심 유적이다.",
+    "confidence": "approximate",
+    "sourceNote": "얼리터우 유적박물관과 유적권 일대 공개 좌표를 근사값으로 사용했다.",
+    "curationBatch": "asia-china-early-china-core-sites-v1",
+    "sources": [
+      { "title": "Henan Government: Erlitou Site Museum", "url": "https://english.henan.gov.cn/2022/10-24/2628200.html" },
+      { "title": "Govt.chinadaily.com.cn: Erlitou Site Museum of the Xia Capital", "url": "https://govt.chinadaily.com.cn/s/202502/17/WS67b2e63e498eec7e1f72f7f1/erlitou-site-museum-of-the-xia-capital.html" }
+    ]
+  },
+  {
+    "id": "yanshi-shang-city",
+    "title": "옌스 상성",
+    "type": "site",
+    "historicalName": "옌스 상성 / 시샹거우 상성",
+    "modernName": "옌스 상 왕조 도성 유적",
+    "modernAdmin": "허난성 뤄양시 옌스구 시샹거우 일대",
+    "country": "중국",
+    "worldRegion": "중국사",
+    "period": "초기 상 왕조 / 얼리강 문화",
+    "yearLabel": "기원전 1600년경 이후",
+    "coordinates": { "lat": 34.7192, "lng": 112.7642 },
+    "aliases": ["Yanshi Shang City", "Shixianggou", "Western Bo", "Erligang Culture", "early Shang capital"],
+    "summary": "옌스 상성은 얼리터우에서 북동쪽으로 가까운 곳에 조성된 초기 상 왕조의 성곽 도시 유적이다. 대성, 소성, 궁성으로 나뉜 구조와 궁전 구역은 하·상 전환기의 정치 중심 이동과 초기 도성 계획을 이해하는 데 중요하다.",
+    "confidence": "approximate",
+    "sourceNote": "시샹거우 상성 유적 공개 좌표와 유적 설명을 기준으로 근사 표시했다.",
+    "curationBatch": "asia-china-early-china-core-sites-v1",
+    "sources": [
+      { "title": "Henan Government: Yanshi Shang Dynasty Capital Ruins", "url": "https://english.henan.gov.cn/2023/04-30/2735278.html" },
+      { "title": "ChinaCulture.org: Site of Shang City in Shixianggou", "url": "https://en.chinaculture.org/library/2008-02/15/content_33609.htm" }
+    ]
+  },
+  {
+    "id": "zhengzhou-shang-city",
+    "title": "정저우 상성",
+    "type": "site",
+    "historicalName": "정저우 상성 / 얼리강",
+    "modernName": "정저우 상 왕조 도성 유적",
+    "modernAdmin": "허난성 정저우시 관청후이족구 일대",
+    "country": "중국",
+    "worldRegion": "중국사",
+    "period": "초기 상 왕조 / 얼리강 문화",
+    "yearLabel": "기원전 1630-1400년경",
+    "coordinates": { "lat": 34.7522, "lng": 113.6903 },
+    "aliases": ["Zhengzhou Shang City", "Erligang", "Ao", "Early Shang", "Zhengzhou商城"],
+    "summary": "정저우 상성은 현대 정저우 도심 아래에 남아 있는 초기 상 왕조의 거대 성곽 도시 유적이다. 내성, 궁전 구역, 작업장과 외곽 도시 흔적은 상 왕조가 중원에서 도시 규모와 청동기 생산 체계를 확장한 과정을 보여준다.",
+    "confidence": "approximate",
+    "sourceNote": "현대 도시 아래에 분산된 유적이므로 정저우 상성 중심부 공개 좌표를 근사값으로 사용했다.",
+    "curationBatch": "asia-china-early-china-core-sites-v1",
+    "sources": [
+      { "title": "Henan Government: Shang Dynasty City Ruins in Zhengzhou", "url": "https://english.henan.gov.cn/2022/12-31/2665239.html" },
+      { "title": "Frontiers: Ancient Landscape Changes and Zhengzhou Shang City", "url": "https://www.frontiersin.org/articles/10.3389/feart.2021.656193/full" }
+    ]
+  },
+  {
+    "id": "yinxu-anyang",
+    "title": "인허",
+    "type": "site",
+    "historicalName": "인허 / 은허",
+    "modernName": "안양 인허 유적",
+    "modernAdmin": "허난성 안양시 인두구 샤오툰촌 일대",
+    "country": "중국",
+    "worldRegion": "중국사",
+    "period": "상 왕조 후기",
+    "yearLabel": "기원전 1300-1046년경",
+    "coordinates": { "lat": 36.1267, "lng": 114.3139 },
+    "aliases": ["Yinxu", "Yin Xu", "Anyang", "oracle bones", "Shang Dynasty"],
+    "summary": "인허는 상 왕조 후기 수도 은의 유적으로, 갑골문과 왕실 묘역, 궁전·종묘 구역, 청동기 공방이 확인된다. 중국에서 체계적으로 해독 가능한 문자 기록과 왕조사, 청동기 의례 체계를 연결해 주는 결정적 장소다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 인허 세계유산 좌표와 안양 샤오툰 유적권을 기준으로 표시했다.",
+    "curationBatch": "asia-china-early-china-core-sites-v1",
+    "sources": [
+      { "title": "UNESCO: Yin Xu", "url": "https://whc.unesco.org/en/list/1114/" },
+      { "title": "Henan Government: Yinxu National Archaeological Site Park", "url": "https://english.henan.gov.cn/2022/01-24/2387540.html" }
+    ]
+  },
+  {
+    "id": "sanxingdui",
+    "title": "싼싱두이",
+    "type": "site",
+    "historicalName": "싼싱두이",
+    "modernName": "싼싱두이 유적",
+    "modernAdmin": "쓰촨성 더양시 광한시",
+    "country": "중국",
+    "worldRegion": "중국사",
+    "period": "고대 촉 / 청동기",
+    "yearLabel": "기원전 1800-1000년경",
+    "coordinates": { "lat": 30.9939, "lng": 104.1994 },
+    "aliases": ["Sanxingdui", "Ancient Shu", "Guanghan", "bronze masks", "Chengdu Plain"],
+    "summary": "싼싱두이는 청두 평원의 고대 촉 문화 중심 유적으로, 거대한 청동 가면과 인물상, 금박, 옥기, 제의 구덩이가 출토되었다. 황허 중원만이 아니라 장강 상류와 쓰촨 분지도 초기 중국 문명 형성에 독자적 역할을 했음을 보여준다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 잠정목록의 싼싱두이 좌표를 기준으로 표시했다.",
+    "curationBatch": "asia-china-early-china-core-sites-v1",
+    "sources": [
+      { "title": "UNESCO Tentative List: Archaeological Sites of the Ancient Shu State", "url": "https://whc.unesco.org/en/tentativelists/5816/" },
+      { "title": "NPJ Heritage Science: Sanxingdui site", "url": "https://www.nature.com/articles/s40494-023-01105-0" }
+    ]
   }
 ]
