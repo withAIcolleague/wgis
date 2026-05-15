@@ -440,18 +440,23 @@
     "id": "timbuktu",
     "title": "팀북투",
     "type": "place",
-    "historicalName": "팀북투",
-    "modernName": "팀북투",
+    "historicalName": "팀북투 / 톰북투",
+    "modernName": "팀북투 역사도시",
     "modernAdmin": "통북투주 팀북투",
     "country": "말리",
-    "worldRegion": "아프리카사",
-    "period": "말리·송가이",
-    "yearLabel": "중세 사하라 교역",
+    "worldRegion": "서아프리카",
+    "period": "말리·송가이 / 사하라 횡단 교역",
+    "yearLabel": "15-16세기 전성기",
     "coordinates": { "lat": 16.7666, "lng": -3.0026 },
-    "aliases": ["Timbuktu", "Tombouctou", "Mali Empire", "Songhai", "사하라 교역"],
-    "summary": "사하라 횡단 교역과 이슬람 학문의 중심지로 성장한 도시다. 현재 말리 북부의 팀북투와 대응된다.",
+    "aliases": ["Timbuktu", "Tombouctou", "Timbuctoo", "Mali Empire", "Songhai", "Sankore"],
+    "summary": "팀북투는 사하라 사막 남쪽 관문에 자리한 교역·학문 도시로, 말리와 송가이 세계에서 금, 소금, 필사본, 이슬람 교육이 만나는 중심지였다. 징가레베르, 산코레, 시디 야히아 모스크와 묘역은 15-16세기 서아프리카 이슬람 지식권의 전성기를 보여준다.",
     "confidence": "high",
-    "sourceNote": "현재 팀북투 도심 기준."
+    "sourceNote": "UNESCO 팀북투 세계유산과 현대 역사도시 중심 좌표를 기준으로 표시했다.",
+    "curationBatch": "africa-west-africa-early-states-v1",
+    "sources": [
+      { "title": "UNESCO: Timbuktu", "url": "https://whc.unesco.org/en/list/119/" },
+      { "title": "World History Encyclopedia: Mali Empire", "url": "https://www.worldhistory.org/Mali_Empire/" }
+    ]
   },
   {
     "id": "ardi-aramis",
@@ -2144,6 +2149,163 @@
     "sources": [
       { "title": "UNESCO: Pre-Hispanic City of Teotihuacan", "url": "https://whc.unesco.org/en/list/414/" },
       { "title": "World History Encyclopedia: Teotihuacan", "url": "https://www.worldhistory.org/Teotihuacan/" }
+    ]
+  },
+  {
+    "id": "jenne-jeno",
+    "title": "젠네-제노",
+    "type": "place",
+    "historicalName": "젠네-제노 / 옛 젠네",
+    "modernName": "젠네-제노 고고유적",
+    "modernAdmin": "모프티주 젠네 남동부",
+    "country": "말리",
+    "worldRegion": "서아프리카",
+    "period": "중부 니제르 초기 도시화",
+    "yearLabel": "기원전 250년경-14세기",
+    "coordinates": { "lat": 13.8880, "lng": -4.5430 },
+    "aliases": ["Jenne-Jeno", "Djenne-Djeno", "Djenné-Djeno", "Old Jenne", "Middle Niger"],
+    "summary": "젠네-제노는 니제르 내륙 삼각주의 초기 도시화와 장거리 교역을 보여주는 대표 유적이다. 기원전 후반부터 성장해 철기, 쌀 재배, 테라코타, 지역 교역망을 결합했으며, 사하라 횡단 교역 이전에도 서아프리카 내부 도시 네트워크가 자생적으로 발달했음을 보여준다.",
+    "confidence": "approximate",
+    "sourceNote": "현대 젠네 남동쪽의 젠네-제노 유적권 근사 좌표를 사용했다.",
+    "curationBatch": "africa-west-africa-early-states-v1",
+    "sources": [
+      { "title": "The Metropolitan Museum of Art: Inland Niger Delta", "url": "https://www.metmuseum.org/essays/inland-niger-delta" },
+      { "title": "Britannica: Djenné", "url": "https://www.britannica.com/place/Djenne" }
+    ]
+  },
+  {
+    "id": "gao",
+    "title": "가오",
+    "type": "place",
+    "historicalName": "가오",
+    "modernName": "가오 역사도시·아스키아 무덤",
+    "modernAdmin": "가오주 가오",
+    "country": "말리",
+    "worldRegion": "서아프리카",
+    "period": "송가이 제국",
+    "yearLabel": "15-16세기 송가이 수도",
+    "coordinates": { "lat": 16.2895, "lng": -0.0447 },
+    "aliases": ["Gao", "Songhai", "Tomb of Askia", "Askia Muhammad", "Kawkaw"],
+    "summary": "가오는 니제르 강 중류의 교역 거점이자 송가이 제국의 수도로 성장한 도시다. 아스키아 무덤은 아스키아 무함마드가 권력을 확립하고 이슬람을 제국 통치의 핵심 축으로 삼았던 시기를 보여주며, 사헬 흙건축 전통과 제국의 교역 기반을 함께 드러낸다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 아스키아 무덤 세계유산과 가오 도심 역사권 좌표를 기준으로 표시했다.",
+    "curationBatch": "africa-west-africa-early-states-v1",
+    "sources": [
+      { "title": "UNESCO: Tomb of Askia", "url": "https://whc.unesco.org/en/list/1139/" },
+      { "title": "World History Encyclopedia: Songhai Empire", "url": "https://www.worldhistory.org/Songhai_Empire/" }
+    ]
+  },
+  {
+    "id": "koumbi-saleh",
+    "title": "쿰비 살레",
+    "type": "place",
+    "historicalName": "쿰비 살레 / 쿰비",
+    "modernName": "쿰비 살레 고고유적",
+    "modernAdmin": "호드에슈샤르기주 남동부",
+    "country": "모리타니",
+    "worldRegion": "서아프리카",
+    "period": "가나 제국 / 와가두",
+    "yearLabel": "4-13세기",
+    "coordinates": { "lat": 15.7667, "lng": -8.0167 },
+    "aliases": ["Koumbi Saleh", "Kumbi Saleh", "Kumbi", "Ghana Empire", "Wagadu"],
+    "summary": "쿰비 살레는 가나 제국의 수도로 가장 널리 비정되는 고고유적으로, 사하라 남연에서 금·소금 교역을 통제한 권력 중심지였다. 왕의 구역과 무슬림 상인 구역이라는 중세 기록, 모스크와 대규모 취락 흔적은 사헬 제국의 정치와 교역 구조를 이해하는 기준점이다.",
+    "confidence": "approximate",
+    "sourceNote": "UNESCO 잠정목록의 쿰비 살레 유적 설명과 공개 유적권 근사 좌표를 사용했다.",
+    "curationBatch": "africa-west-africa-early-states-v1",
+    "sources": [
+      { "title": "UNESCO Tentative List: Site archéologique de Kumbi Saleh", "url": "https://whc.unesco.org/en/tentativelists/1546/" },
+      { "title": "World History Encyclopedia: Ghana Empire", "url": "https://www.worldhistory.org/Ghana_Empire/" },
+      { "title": "Britannica: Kumbi", "url": "https://www.britannica.com/place/Kumbi" }
+    ]
+  },
+  {
+    "id": "aoudaghost",
+    "title": "아우다곳",
+    "type": "place",
+    "historicalName": "아우다곳 / 테그다우스트",
+    "modernName": "테그다우스트 고고유적",
+    "modernAdmin": "호드엘가르비주 탐샤켓 동부 권역",
+    "country": "모리타니",
+    "worldRegion": "서아프리카",
+    "period": "가나 제국·알모라비드 교역 거점",
+    "yearLabel": "8-13세기",
+    "coordinates": { "lat": 17.4235, "lng": -10.4060 },
+    "aliases": ["Aoudaghost", "Awdaghost", "Audaghost", "Tegdaoust", "Ghana Empire", "Almoravids"],
+    "summary": "아우다곳은 마그레브와 서수단을 잇는 사하라 횡단 교역로의 핵심 중계 도시였다. 금, 철, 구리, 소금, 저울과 같은 교역·금속공예 자료가 보고되며, 가나 제국의 영향권과 알모라비드 세력 확장의 접점을 보여주는 장소다.",
+    "confidence": "approximate",
+    "sourceNote": "UNESCO 테그다우스트 잠정목록은 거리 중심 설명을 제공하므로, 지도 표시는 공개 유적권 근사 좌표를 사용했다.",
+    "curationBatch": "africa-west-africa-early-states-v1",
+    "sources": [
+      { "title": "UNESCO Tentative List: Site archéologique de Tegdaoust", "url": "https://whc.unesco.org/en/tentativelists/1547/" },
+      { "title": "Britannica: Audaghost", "url": "https://www.britannica.com/place/Audaghost" }
+    ]
+  },
+  {
+    "id": "ife",
+    "title": "이페",
+    "type": "place",
+    "historicalName": "일레 이페",
+    "modernName": "일레 이페",
+    "modernAdmin": "오순주 이페",
+    "country": "나이지리아",
+    "worldRegion": "서아프리카",
+    "period": "요루바 도시국가",
+    "yearLabel": "11-15세기 전성기",
+    "coordinates": { "lat": 7.4905, "lng": 4.5521 },
+    "aliases": ["Ife", "Ile-Ife", "Ilé-Ifẹ̀", "Yoruba", "Ooni of Ife"],
+    "summary": "이페는 요루바 세계의 종교적·왕권적 중심지로, 자연주의적인 테라코타와 금속 두상, 포장도로와 궁정 전통을 통해 서아프리카 삼림대 도시 문화의 높은 수준을 보여준다. 베닌 왕국의 왕권·예술 전통과도 연결되어 남부 나이지리아 정치문화의 핵심 기점으로 평가된다.",
+    "confidence": "high",
+    "sourceNote": "현대 일레 이페 도심과 왕궁·역사권 중심부 좌표를 기준으로 표시했다.",
+    "curationBatch": "africa-west-africa-early-states-v1",
+    "sources": [
+      { "title": "Britannica: Ile-Ife", "url": "https://www.britannica.com/place/Ile-Ife" },
+      { "title": "The Metropolitan Museum of Art: Ife Terracottas", "url": "https://www.metmuseum.org/toah/hd/ifet/hd_ifet.htm" },
+      { "title": "World History Encyclopedia: Ife", "url": "https://www.worldhistory.org/Ife/" }
+    ]
+  },
+  {
+    "id": "benin-city",
+    "title": "베닌시티",
+    "type": "place",
+    "historicalName": "에도 / 베닌",
+    "modernName": "베닌시티",
+    "modernAdmin": "에도주 베닌시티",
+    "country": "나이지리아",
+    "worldRegion": "서아프리카",
+    "period": "베닌 왕국 / 에도",
+    "yearLabel": "13-19세기",
+    "coordinates": { "lat": 6.3382, "lng": 5.6258 },
+    "aliases": ["Benin City", "Kingdom of Benin", "Edo", "Oba of Benin", "Benin Bronzes", "Walls of Benin"],
+    "summary": "베닌시티는 에도인이 세운 베닌 왕국의 수도로, 오바 궁정, 길드 조직, 토루·해자 체계, 놋쇠 부조와 상아 예술로 유명하다. 15세기 이후 대서양 교역과도 연결되었고, 1897년 영국 원정으로 왕국의 독립적 정치 질서가 크게 파괴되었다.",
+    "confidence": "high",
+    "sourceNote": "현대 베닌시티 도심과 오바 궁정 역사권을 대표하는 도시 좌표를 사용했다.",
+    "curationBatch": "africa-west-africa-early-states-v1",
+    "sources": [
+      { "title": "World History Encyclopedia: Kingdom of Benin", "url": "https://www.worldhistory.org/Kingdom_of_Benin/" },
+      { "title": "Britannica: Benin historical kingdom", "url": "https://www.britannica.com/place/Benin-historical-kingdom-West-Africa" }
+    ]
+  },
+  {
+    "id": "igbo-ukwu",
+    "title": "이그보-우쿠",
+    "type": "site",
+    "historicalName": "이그보-우쿠",
+    "modernName": "이그보-우쿠 고고유적",
+    "modernAdmin": "아남브라주 아구아타 지방정부구역",
+    "country": "나이지리아",
+    "worldRegion": "서아프리카",
+    "period": "이그보 초기 금속문화",
+    "yearLabel": "9세기",
+    "coordinates": { "lat": 6.0120, "lng": 7.0180 },
+    "aliases": ["Igbo-Ukwu", "Igbo Ukwu", "Igbo Isaiah", "Igbo Richard", "Igbo Jonah", "Nri"],
+    "summary": "이그보-우쿠는 9세기 전후의 정교한 청동·구리 공예와 유리·카넬리언 구슬, 의례용 매장 유구로 알려진 고고유적이다. 사헬 제국 수도와 직접 같은 정치권은 아니지만, 금속공예와 장거리 물자 이동을 통해 서아프리카 내부 교류망의 폭을 보여준다.",
+    "confidence": "approximate",
+    "sourceNote": "세 발굴 구역이 마을 안에 분산되어 있어 현대 이그보-우쿠 중심부의 공개 좌표를 근사값으로 사용했다.",
+    "curationBatch": "africa-west-africa-early-states-v1",
+    "sources": [
+      { "title": "The Metropolitan Museum of Art: Igbo-Ukwu", "url": "https://www.metmuseum.org/toah/hd/igbo/hd_igbo.htm" },
+      { "title": "Britannica: Igbo Ukwu", "url": "https://www.britannica.com/place/Igbo-Ukwu" },
+      { "title": "University of Cambridge: Igbo-Ukwu cultural landscape project", "url": "https://www.arch.cam.ac.uk/research/projects/current-projects/social-settlement-dynamics-and-environmental-processes-pre" }
     ]
   }
 ]

@@ -299,6 +299,35 @@
         "World History Encyclopedia references for Olmec Civilization, Tikal, Chichen Itza, Teotihuacan, and Tenochtitlan",
         "NASA Earth Observatory and Mirador Basin Project references for El Mirador and the Mirador Basin"
       ]
+    },
+    {
+      "id": "africa-west-africa-early-states-v1",
+      "status": "completed",
+      "completedAt": "2026-05-15",
+      "continentId": "africa",
+      "countryIso2": "ML-MR-NG",
+      "countryKo": "말리·모리타니·나이지리아",
+      "worldRegion": "서아프리카",
+      "focusKo": "서아프리카 초기 국가와 교역망 핵심 거점",
+      "scopeKo": "니제르 내륙 삼각주 초기 도시화, 사하라 횡단 금·소금 교역, 가나·말리·송가이 권력 중심, 요루바·에도·이그보 도시와 금속공예 거점",
+      "sourceFile": "data/records/africa/west-africa/west-africa-early-states.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "jenne-jeno",
+        "timbuktu",
+        "gao",
+        "koumbi-saleh",
+        "aoudaghost",
+        "ife",
+        "benin-city",
+        "igbo-ukwu"
+      ],
+      "sourceBasis": [
+        "UNESCO World Heritage pages for Timbuktu and Tomb of Askia",
+        "UNESCO Tentative List pages for Kumbi Saleh and Tegdaoust",
+        "Metropolitan Museum of Art references for Jenne-Jeno, Ife, and Igbo-Ukwu",
+        "World History Encyclopedia and Britannica references for Ghana Empire, Mali Empire, Songhai Empire, Ife, Benin Kingdom, and Igbo-Ukwu"
+      ]
     }
   ]
 }

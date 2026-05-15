@@ -11,9 +11,9 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 101
-- Completed curation batches: 10
-- Latest completed batch: `americas-mesoamerica-core-sites-v1`
+- Current entry count: 108
+- Completed curation batches: 11
+- Latest completed batch: `africa-west-africa-early-states-v1`
 - Latest completed infrastructure milestone: `a28681f Add data validation script`
 - Data validation script: `scripts/validate-data.js`
 
@@ -180,6 +180,20 @@ The long-term target is 3,000+ entries, but the project should progress one focu
     - `teotihuacan`
     - `tenochtitlan`
 
+- West African early states and trade networks batch
+  - Batch ID: `africa-west-africa-early-states-v1`
+  - Source file: `data/records/africa/west-africa/west-africa-early-states.json`
+  - Entries added: 7 new entries plus 1 existing entry upgraded and linked to the batch
+  - Entry IDs:
+    - `jenne-jeno`
+    - `timbuktu`
+    - `gao`
+    - `koumbi-saleh`
+    - `aoudaghost`
+    - `ife`
+    - `benin-city`
+    - `igbo-ukwu`
+
 ## Current Policy
 
 - Work on DB only unless the user explicitly asks for UI changes.
@@ -217,13 +231,13 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. West African early states and trade networks
-   - Possible source file: `data/records/africa/west-africa/west-africa-early-states.json`
-   - Likely entries: Jenne-Jeno, Timbuktu, Gao, Koumbi Saleh, Aoudaghost, Ife, Benin City, Igbo-Ukwu
-
-2. Andean early states and Inca core sites
+1. Andean early states and Inca core sites
    - Possible source file: `data/records/americas/andes/andean-core-sites.json`
    - Likely entries: Caral, Chavin de Huantar, Moche Huacas, Chan Chan, Tiwanaku, Cusco, Machu Picchu, Sacsayhuaman
+
+2. Southeast Asian early states and temple networks
+   - Possible source file: `data/records/asia/southeast-asia/early-states-temple-networks.json`
+   - Likely entries: Oc Eo, My Son, Angkor, Borobudur, Prambanan, Pagan, Sukhothai, Ayutthaya
 
 ## Resume Checklist
 
