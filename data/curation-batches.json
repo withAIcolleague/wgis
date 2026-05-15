@@ -588,6 +588,35 @@
         "Metropolitan Museum of Art and Encyclopaedia Iranica references for Nishapur",
         "World History Encyclopedia reference for medieval Damascus context"
       ]
+    },
+    {
+      "id": "indian-ocean-trade-ports-entrepots-v1",
+      "status": "completed",
+      "completedAt": "2026-05-15",
+      "continentId": "asia",
+      "countryIso2": "YE-IR-IQ-IN-MY-CN",
+      "countryKo": "예멘·이란·이라크·인도·말레이시아·중국",
+      "worldRegion": "인도양 교역권",
+      "focusKo": "인도양 교역항과 중계항 핵심 거점",
+      "scopeKo": "향신료, 말, 진주, 도자, 비단, 금속, 순례·상인 디아스포라, 항구도시와 중계무역",
+      "sourceFile": "data/records/indian-ocean/trade-ports-entrepots.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "aden",
+        "hormuz",
+        "basra",
+        "siraf",
+        "calicut",
+        "muziris",
+        "malacca",
+        "quanzhou"
+      ],
+      "sourceBasis": [
+        "UNESCO World Heritage and Tentative List pages for Aden, Siraf, Malacca, and Quanzhou",
+        "Britannica references for Aden, Hormuz, Basra, Kozhikode, Melaka, Quanzhou, and related trade geography",
+        "Encyclopaedia Iranica references for Hormuz and Siraf",
+        "Kerala Tourism and KIIDC references for the Muziris Heritage Project"
+      ]
     }
   ]
 }

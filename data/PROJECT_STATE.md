@@ -11,9 +11,9 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 178
-- Completed curation batches: 20
-- Latest completed batch: `islamic-caliphate-knowledge-cities-v1`
+- Current entry count: 186
+- Completed curation batches: 21
+- Latest completed batch: `indian-ocean-trade-ports-entrepots-v1`
 - Latest completed infrastructure milestone: `a28681f Add data validation script`
 - Data validation script: `scripts/validate-data.js`
 
@@ -320,6 +320,20 @@ The long-term target is 3,000+ entries, but the project should progress one focu
     - `nishapur`
     - `fez`
 
+- Indian Ocean trade ports and entrepots batch
+  - Batch ID: `indian-ocean-trade-ports-entrepots-v1`
+  - Source file: `data/records/indian-ocean/trade-ports-entrepots.json`
+  - Entries added: 8
+  - Entry IDs:
+    - `aden`
+    - `hormuz`
+    - `basra`
+    - `siraf`
+    - `calicut`
+    - `muziris`
+    - `malacca`
+    - `quanzhou`
+
 ## Current Policy
 
 - Work on DB only unless the user explicitly asks for UI changes.
@@ -357,13 +371,13 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Indian Ocean trade ports and entrepots
-   - Possible source file: `data/records/indian-ocean/trade-ports-entrepots.json`
-   - Likely entries: Aden, Hormuz, Basra, Siraf, Calicut, Muziris, Malacca, Quanzhou
-
-2. European Renaissance and early modern science cities
+1. European Renaissance and early modern science cities
    - Possible source file: `data/records/europe/early-modern/renaissance-science-cities.json`
    - Likely entries: Florence, Padua, Bologna, Pisa, Rome, Leiden, Paris, London
+
+2. East Asian medieval capitals and knowledge cities
+   - Possible source file: `data/records/asia/east-asia/medieval-capitals-knowledge-cities.json`
+   - Likely entries: Chang'an, Luoyang, Kaifeng, Nanjing, Heian-kyo, Nara, Gyeongju, Gaegyeong
 
 ## Resume Checklist
 

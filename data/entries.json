@@ -3889,5 +3889,185 @@
       { "title": "UNESCO: Medina of Fez", "url": "https://whc.unesco.org/en/list/170/" },
       { "title": "Britannica: Fez", "url": "https://www.britannica.com/place/Fez-Morocco" }
     ]
+  },
+  {
+    "id": "aden",
+    "title": "아덴",
+    "type": "place",
+    "historicalName": "아덴",
+    "modernName": "아덴 역사도시",
+    "modernAdmin": "아덴주 아덴 크레이터",
+    "country": "예멘",
+    "worldRegion": "아라비아해",
+    "period": "남아라비아·이슬람 인도양 교역항",
+    "yearLabel": "고대 이후, 10-16세기 인도양 중계항",
+    "coordinates": { "lat": 12.7797, "lng": 45.0367 },
+    "aliases": ["Aden", "Crater Aden", "Gulf of Aden", "Bab el-Mandeb", "Tawila Cisterns"],
+    "summary": "아덴은 홍해 입구와 인도양을 잇는 밥엘만데브 근처의 천연 항구로, 남아라비아 향료 교역과 중세 인도양 상업망에서 핵심 중계지였다. 화산 분화구 안 도시, 저수 시설, 방어 시설과 상업 주거지는 물 부족 환경에서 항구도시가 유지된 방식을 보여준다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 아덴 역사도시 잠정목록과 크레이터 지구 중심 좌표를 기준으로 표시했다.",
+    "curationBatch": "indian-ocean-trade-ports-entrepots-v1",
+    "sources": [
+      { "title": "UNESCO Tentative List: The Historic City of Aden", "url": "https://whc.unesco.org/en/tentativelists/6858/" },
+      { "title": "Britannica: Aden", "url": "https://www.britannica.com/place/Aden" }
+    ]
+  },
+  {
+    "id": "hormuz",
+    "title": "호르무즈",
+    "type": "place",
+    "historicalName": "호르무즈 / 오르무즈",
+    "modernName": "호르무즈섬",
+    "modernAdmin": "호르모즈간주 호르무즈섬",
+    "country": "이란",
+    "worldRegion": "페르시아만",
+    "period": "호르무즈 왕국·페르시아만 교역항",
+    "yearLabel": "13-17세기 전성기",
+    "coordinates": { "lat": 27.0950, "lng": 56.4528 },
+    "aliases": ["Hormuz", "Ormuz", "Hormuz Island", "Kingdom of Hormuz", "Strait of Hormuz"],
+    "summary": "호르무즈는 페르시아만 입구를 통제한 항구도시로, 이란 내륙·아라비아·인도양 상인들이 만나는 중계지였다. 진주, 말, 직물, 향신료, 금속 교역이 집중되었고, 포르투갈과 사파비 세력의 충돌 속에서 해협 통제권의 전략성이 분명하게 드러났다.",
+    "confidence": "medium",
+    "sourceNote": "Britannica와 Encyclopaedia Iranica의 호르무즈 설명을 바탕으로 현 호르무즈섬 구도시 권역을 근사 표시했다.",
+    "curationBatch": "indian-ocean-trade-ports-entrepots-v1",
+    "sources": [
+      { "title": "Britannica: Hormuz", "url": "https://www.britannica.com/place/Hormuz" },
+      { "title": "Encyclopaedia Iranica: Hormuz I. Pre-Islamic Period", "url": "https://www.iranicaonline.org/articles/hormuz-i/" },
+      { "title": "Britannica: Strait of Hormuz", "url": "https://www.britannica.com/place/Strait-of-Hormuz" }
+    ]
+  },
+  {
+    "id": "basra",
+    "title": "바스라",
+    "type": "place",
+    "historicalName": "알바스라",
+    "modernName": "바스라",
+    "modernAdmin": "바스라주 바스라",
+    "country": "이라크",
+    "worldRegion": "페르시아만",
+    "period": "초기 이슬람·아바스 시대 항구도시",
+    "yearLabel": "636년 건설 이후, 8-10세기 교역·학문 중심",
+    "coordinates": { "lat": 30.5085, "lng": 47.7804 },
+    "aliases": ["Basra", "Al-Basrah", "Shatt al-Arab", "Persian Gulf", "Abbasid Iraq"],
+    "summary": "바스라는 이슬람 정복 이후 이라크 남부에 세워진 군영·항구도시로, 티그리스-유프라테스 수계와 페르시아만을 연결했다. 인도양 상품이 바그다드와 메소포타미아 내륙으로 이동하는 관문이었고, 문법학·신학·문학 전통의 중심지이기도 했다.",
+    "confidence": "high",
+    "sourceNote": "Britannica 바스라 설명과 현대 바스라 도심 좌표를 기준으로 표시했다.",
+    "curationBatch": "indian-ocean-trade-ports-entrepots-v1",
+    "sources": [
+      { "title": "Britannica: Basra", "url": "https://www.britannica.com/place/Basra" },
+      { "title": "Britannica: Iraq - Trade", "url": "https://www.britannica.com/place/Iraq/Trade" }
+    ]
+  },
+  {
+    "id": "siraf",
+    "title": "시라프",
+    "type": "site",
+    "historicalName": "시라프 / 타헤리",
+    "modernName": "시라프 역사항",
+    "modernAdmin": "부셰르주 캉간군 반다르 시라프",
+    "country": "이란",
+    "worldRegion": "페르시아만",
+    "period": "사산·초기 이슬람 페르시아만 항구",
+    "yearLabel": "7-10세기 전성기",
+    "coordinates": { "lat": 27.6652, "lng": 52.3420 },
+    "aliases": ["Siraf", "Sīrāf", "Taheri", "Bandar Siraf", "Persian Gulf port"],
+    "summary": "시라프는 사산 말기부터 초기 이슬람 시대까지 페르시아만 북안의 대표 항구였으며, 중국 도자와 동남아·인도양 상품이 이란 내륙으로 들어오는 중계지였다. 해안 절벽과 항구 유적, 주거지와 묘지는 바스라·호르무즈 이전 페르시아만 해상 교역의 중심축을 보여준다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 시라프 역사항 잠정목록과 반다르 시라프 중심 좌표를 기준으로 표시했다.",
+    "curationBatch": "indian-ocean-trade-ports-entrepots-v1",
+    "sources": [
+      { "title": "UNESCO Tentative List: The Historical Port of Siraf", "url": "https://whc.unesco.org/en/tentativelists/5195/" },
+      { "title": "Encyclopaedia Iranica: Siraf", "url": "https://www.iranicaonline.org/articles/siraf" }
+    ]
+  },
+  {
+    "id": "calicut",
+    "title": "캘리컷",
+    "type": "place",
+    "historicalName": "캘리컷 / 코지코드",
+    "modernName": "코지코드",
+    "modernAdmin": "케랄라주 코지코드",
+    "country": "인도",
+    "worldRegion": "말라바르 해안",
+    "period": "자모린 왕국·말라바르 향신료 항구",
+    "yearLabel": "12-16세기 말라바르 교역 중심",
+    "coordinates": { "lat": 11.2588, "lng": 75.7804 },
+    "aliases": ["Calicut", "Kozhikode", "Zamorin", "Malabar Coast", "Vasco da Gama"],
+    "summary": "캘리컷, 오늘날 코지코드는 말라바르 해안의 향신료 항구로, 아랍·페르시아·중국 상인과 이후 포르투갈 항해자들이 만난 중계지였다. 후추와 면직물, 해상 상인 공동체는 인도양 서부와 동부를 잇는 말라바르 해안의 경제적 위상을 잘 보여준다.",
+    "confidence": "high",
+    "sourceNote": "Britannica 코지코드 설명과 옛 항구도시 중심 좌표를 기준으로 표시했다.",
+    "curationBatch": "indian-ocean-trade-ports-entrepots-v1",
+    "sources": [
+      { "title": "Britannica: Kozhikode", "url": "https://www.britannica.com/place/Kozhikode" },
+      { "title": "Britannica: India - Politics and the economy", "url": "https://www.britannica.com/place/India/Politics-and-the-economy" }
+    ]
+  },
+  {
+    "id": "muziris",
+    "title": "무지리스",
+    "type": "site",
+    "historicalName": "무지리스 / 무치리",
+    "modernName": "무지리스 문화유산 권역",
+    "modernAdmin": "케랄라주 코둥갈루르·파타남 일대",
+    "country": "인도",
+    "worldRegion": "말라바르 해안",
+    "period": "고대 인도양·로마 교역항",
+    "yearLabel": "기원전 1세기-기원후 5세기경",
+    "coordinates": { "lat": 10.1622, "lng": 76.2121 },
+    "aliases": ["Muziris", "Muchiri", "Pattanam", "Kodungallur", "Periyar River"],
+    "summary": "무지리스는 고대 말라바르 해안의 전설적 항구로, 로마 제국·홍해·아라비아·남인도를 잇는 후추와 향신료 교역의 대표 지점이다. 정확한 항구 위치는 논쟁이 있지만, 코둥갈루르·파타남 일대의 유적과 문화유산 프로젝트는 고대 인도양 교역의 물질 흔적을 보여준다.",
+    "confidence": "medium",
+    "sourceNote": "Kerala Muziris Heritage Project와 파타남·코둥갈루르 권역을 기준으로 근사 표시했다.",
+    "curationBatch": "indian-ocean-trade-ports-entrepots-v1",
+    "sources": [
+      { "title": "Kerala Tourism: Muziris Heritage Project", "url": "https://www.keralatourism.org/muziris/muziris-project" },
+      { "title": "KIIDC: The Muziris Heritage Project", "url": "https://kiidc.kerala.gov.in/the-muziris-heritage-project/" },
+      { "title": "Britannica: Kochi", "url": "https://www.britannica.com/place/Kochi-India" }
+    ]
+  },
+  {
+    "id": "malacca",
+    "title": "말라카",
+    "type": "place",
+    "historicalName": "말라카 / 멜라카",
+    "modernName": "말라카 역사도시",
+    "modernAdmin": "말라카주 말라카시",
+    "country": "말레이시아",
+    "worldRegion": "말라카 해협",
+    "period": "말라카 술탄국·해협 교역항",
+    "yearLabel": "15-16세기 해협 중계항",
+    "coordinates": { "lat": 2.1896, "lng": 102.2501 },
+    "aliases": ["Malacca", "Melaka", "Malacca Sultanate", "Straits of Malacca", "Historic Cities of the Straits of Malacca"],
+    "summary": "말라카는 인도양과 남중국해를 잇는 해협의 전략 항구로, 15세기 말라카 술탄국 아래 다언어 상인과 이슬람 법·외교가 결합한 국제 중계항이 되었다. 이후 포르투갈·네덜란드·영국의 지배가 겹치며 해협 교역의 장기 변화를 보여주는 도시가 되었다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 말라카·조지타운 세계유산 중 말라카 역사도시 중심 좌표를 기준으로 표시했다.",
+    "curationBatch": "indian-ocean-trade-ports-entrepots-v1",
+    "sources": [
+      { "title": "UNESCO: Melaka and George Town, Historic Cities of the Straits of Malacca", "url": "https://whc.unesco.org/en/list/1223/" },
+      { "title": "UNESCO Malaysia: Malacca and George Town", "url": "https://www.unesco.org.my/unesco-recognition/culture/cultural-world-heritage-sites/malacca-and-george-town" },
+      { "title": "Britannica: Melaka", "url": "https://www.britannica.com/place/Melaka-Malaysia" }
+    ]
+  },
+  {
+    "id": "quanzhou",
+    "title": "취안저우",
+    "type": "place",
+    "historicalName": "자이툰 / 취안저우",
+    "modernName": "취안저우: 송·원 중국의 세계 해양상업 중심",
+    "modernAdmin": "푸젠성 취안저우시",
+    "country": "중국",
+    "worldRegion": "남중국해",
+    "period": "송·원 해상 실크로드",
+    "yearLabel": "10-14세기 전성기",
+    "coordinates": { "lat": 24.8741, "lng": 118.6757 },
+    "aliases": ["Quanzhou", "Zaiton", "Zayton", "Song-Yuan China", "Maritime Silk Road"],
+    "summary": "취안저우는 송·원대 중국의 대표 해상 무역항으로, 남중국해와 동남아·인도양을 연결한 세계적 중계항이었다. 해양무역사무소, 항구·교량, 이슬람·힌두·불교·도교 유적은 생산·운송·시장·종교 공동체가 결합한 해상 실크로드 도시 구조를 보여준다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 취안저우 세계유산 설명과 구도심·항구 네트워크 중심 좌표를 기준으로 표시했다.",
+    "curationBatch": "indian-ocean-trade-ports-entrepots-v1",
+    "sources": [
+      { "title": "UNESCO: Quanzhou - Emporium of the World in Song-Yuan China", "url": "https://whc.unesco.org/en/list/1561/" },
+      { "title": "UNESCO Silk Roads Programme: Quanzhou Emporium of the World", "url": "https://en.unesco.org/silkroad/content/quanzhou-emporium-world-inscribed-unesco-world-heritage-list" },
+      { "title": "Britannica: Quanzhou", "url": "https://www.britannica.com/place/Quanzhou" }
+    ]
   }
 ]
