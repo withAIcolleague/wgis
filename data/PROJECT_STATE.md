@@ -11,9 +11,9 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 162
-- Completed curation batches: 18
-- Latest completed batch: `oceania-pacific-lapita-settlement-core-sites-v1`
+- Current entry count: 170
+- Completed curation batches: 19
+- Latest completed batch: `europe-medieval-trade-urban-networks-v1`
 - Latest completed infrastructure milestone: `a28681f Add data validation script`
 - Data validation script: `scripts/validate-data.js`
 
@@ -292,6 +292,20 @@ The long-term target is 3,000+ entries, but the project should progress one focu
     - `rapa-nui`
     - `taputapuatea`
 
+- European medieval trade and urban networks batch
+  - Batch ID: `europe-medieval-trade-urban-networks-v1`
+  - Source file: `data/records/europe/medieval/medieval-trade-urban-networks.json`
+  - Entries added: 8
+  - Entry IDs:
+    - `venice`
+    - `genoa`
+    - `bruges`
+    - `lubeck`
+    - `novgorod`
+    - `visby`
+    - `bergen-bryggen`
+    - `dubrovnik`
+
 ## Current Policy
 
 - Work on DB only unless the user explicitly asks for UI changes.
@@ -329,13 +343,13 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. European medieval trade and urban networks
-   - Possible source file: `data/records/europe/medieval/medieval-trade-urban-networks.json`
-   - Likely entries: Venice, Genoa, Bruges, Lübeck, Novgorod, Visby, Bergen Bryggen, Dubrovnik
-
-2. Southwest Asian Islamic caliphate and knowledge cities
+1. Southwest Asian Islamic caliphate and knowledge cities
    - Possible source file: `data/records/asia/southwest-asia/islamic-caliphate-knowledge-cities.json`
-   - Likely entries: Baghdad, Damascus, Cairo, Cordoba, Kairouan, Samarra, Nishapur, Bukhara
+   - Likely entries: Baghdad, Damascus, Cairo, Cordoba, Kairouan, Samarra, Nishapur, Fez
+
+2. Indian Ocean trade ports and entrepots
+   - Possible source file: `data/records/indian-ocean/trade-ports-entrepots.json`
+   - Likely entries: Aden, Hormuz, Basra, Siraf, Calicut, Muziris, Malacca, Quanzhou
 
 ## Resume Checklist
 

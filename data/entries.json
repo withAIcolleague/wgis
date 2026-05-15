@@ -3530,5 +3530,183 @@
       { "title": "UNESCO: Taputapuatea", "url": "https://whc.unesco.org/en/list/1529/" },
       { "title": "Britannica: Raiatea", "url": "https://www.britannica.com/place/Raiatea" }
     ]
+  },
+  {
+    "id": "venice",
+    "title": "베네치아",
+    "type": "place",
+    "historicalName": "베네치아",
+    "modernName": "베네치아와 그 석호",
+    "modernAdmin": "베네토주 베네치아",
+    "country": "이탈리아",
+    "worldRegion": "지중해",
+    "period": "베네치아 공화국",
+    "yearLabel": "9-15세기 해상공화국 전성기",
+    "coordinates": { "lat": 45.4408, "lng": 12.3155 },
+    "aliases": ["Venice", "Venezia", "Republic of Venice", "Serenissima", "Venetian Lagoon"],
+    "summary": "베네치아는 석호 위의 도시국가로 성장해 비잔티움, 레반트, 아드리아해, 북이탈리아를 잇는 중세 지중해 교역망의 핵심 항구가 되었다. 산마르코 광장, 대운하, 조선소와 상인 거주지는 해상공화국의 상업·군사·외교 구조를 보여준다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 베네치아와 그 석호 세계유산 좌표와 도시 중심부를 기준으로 표시했다.",
+    "curationBatch": "europe-medieval-trade-urban-networks-v1",
+    "sources": [
+      { "title": "UNESCO: Venice and its Lagoon", "url": "https://whc.unesco.org/en/list/394/" },
+      { "title": "Britannica: Venice", "url": "https://www.britannica.com/place/Venice" }
+    ]
+  },
+  {
+    "id": "genoa",
+    "title": "제노바",
+    "type": "place",
+    "historicalName": "제노바",
+    "modernName": "제노바 역사중심지와 스트라데 누오베",
+    "modernAdmin": "리구리아주 제노바",
+    "country": "이탈리아",
+    "worldRegion": "지중해",
+    "period": "제노바 공화국",
+    "yearLabel": "11-15세기 해상공화국 전성기",
+    "coordinates": { "lat": 44.4071, "lng": 8.9340 },
+    "aliases": ["Genoa", "Genova", "Republic of Genoa", "Palazzi dei Rolli", "Liguria"],
+    "summary": "제노바는 서지중해와 흑해, 레반트 교역을 연결한 해상공화국으로, 은행·선박·식민 거점 네트워크를 통해 베네치아와 경쟁했다. 현 UNESCO 등재 경관은 근세 귀족 궁전 중심이지만, 그 배경에는 중세 제노바 상인공화국의 부와 항구 기능이 놓여 있다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 제노바 스트라데 누오베 세계유산과 역사 항구 도시 중심 좌표를 기준으로 표시했다.",
+    "curationBatch": "europe-medieval-trade-urban-networks-v1",
+    "sources": [
+      { "title": "UNESCO: Genoa - Le Strade Nuove and the system of the Palazzi dei Rolli", "url": "https://whc.unesco.org/en/list/1211/" },
+      { "title": "Britannica: Genoa", "url": "https://www.britannica.com/place/Genoa-Italy" }
+    ]
+  },
+  {
+    "id": "bruges",
+    "title": "브뤼헤",
+    "type": "place",
+    "historicalName": "브뤼헤 / 브루게",
+    "modernName": "브뤼헤 역사중심지",
+    "modernAdmin": "플랑드르 베스트플란데런주 브뤼헤",
+    "country": "벨기에",
+    "worldRegion": "북해",
+    "period": "플랑드르 도시·북해 교역권",
+    "yearLabel": "12-15세기 상업 전성기",
+    "coordinates": { "lat": 51.2093, "lng": 3.2247 },
+    "aliases": ["Bruges", "Brugge", "Flanders", "Bourse", "Hanseatic trade"],
+    "summary": "브뤼헤는 플랑드르 직물 생산과 북해·발트·지중해 상인의 중계 교역이 결합한 중세 상업 도시였다. 운하, 시장광장, 길드 건물과 금융 거래 관행은 북서유럽 도시경제와 국제 상업 네트워크가 어떻게 발전했는지 보여준다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 브뤼헤 역사중심지 세계유산 좌표와 시장광장 중심부를 기준으로 표시했다.",
+    "curationBatch": "europe-medieval-trade-urban-networks-v1",
+    "sources": [
+      { "title": "UNESCO: Historic Centre of Brugge", "url": "https://whc.unesco.org/en/list/996/" },
+      { "title": "Britannica: Brugge", "url": "https://www.britannica.com/place/Brugge" }
+    ]
+  },
+  {
+    "id": "lubeck",
+    "title": "뤼베크",
+    "type": "place",
+    "historicalName": "뤼베크",
+    "modernName": "한자동맹 도시 뤼베크",
+    "modernAdmin": "슐레스비히홀슈타인주 뤼베크",
+    "country": "독일",
+    "worldRegion": "발트해",
+    "period": "한자동맹",
+    "yearLabel": "12-16세기 한자동맹 중심",
+    "coordinates": { "lat": 53.8655, "lng": 10.6866 },
+    "aliases": ["Lubeck", "Lübeck", "Hanseatic City of Lübeck", "Hansa", "Queen of the Hanse"],
+    "summary": "뤼베크는 발트해와 북해를 연결한 한자동맹의 대표 도시로, 소금·곡물·목재·모피·청어 교역을 조정하는 상업·법률 중심지였다. 고딕 벽돌 건축, 항구, 상인 주택과 교회는 북유럽 중세 도시 모델의 확산을 보여준다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 한자동맹 도시 뤼베크 세계유산 좌표와 구도심 섬을 기준으로 표시했다.",
+    "curationBatch": "europe-medieval-trade-urban-networks-v1",
+    "sources": [
+      { "title": "UNESCO: Hanseatic City of Lübeck", "url": "https://whc.unesco.org/en/list/272/" },
+      { "title": "Britannica: Lübeck", "url": "https://www.britannica.com/place/Lubeck" },
+      { "title": "Britannica: Hanseatic League", "url": "https://www.britannica.com/topic/Hanseatic-League" }
+    ]
+  },
+  {
+    "id": "novgorod",
+    "title": "노브고로드",
+    "type": "place",
+    "historicalName": "벨리키 노브고로드",
+    "modernName": "노브고로드와 주변 역사기념물",
+    "modernAdmin": "노브고로드주 벨리키 노브고로드",
+    "country": "러시아",
+    "worldRegion": "동유럽",
+    "period": "노브고로드 공화국",
+    "yearLabel": "9-15세기",
+    "coordinates": { "lat": 58.5213, "lng": 31.2755 },
+    "aliases": ["Novgorod", "Veliky Novgorod", "Novgorod Republic", "Volkhov River", "Hanseatic Kontor"],
+    "summary": "노브고로드는 발트해와 볼가·드네프르 수계, 비잔티움·북유럽을 잇는 동유럽 교역 중심지였다. 크렘린, 성 소피아 대성당, 야로슬라프 궁정과 상업 지구는 루스 도시공화국과 한자 상인의 동방 교역 접점을 보여준다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 노브고로드 역사기념물 세계유산 좌표와 크렘린·볼호프 강변 중심부를 기준으로 표시했다.",
+    "curationBatch": "europe-medieval-trade-urban-networks-v1",
+    "sources": [
+      { "title": "UNESCO: Historic Monuments of Novgorod and Surroundings", "url": "https://whc.unesco.org/en/list/604/" },
+      { "title": "Britannica: Veliky Novgorod", "url": "https://www.britannica.com/place/Veliky-Novgorod" }
+    ]
+  },
+  {
+    "id": "visby",
+    "title": "비스뷔",
+    "type": "place",
+    "historicalName": "비스뷔",
+    "modernName": "한자동맹 도시 비스뷔",
+    "modernAdmin": "고틀란드주 비스뷔",
+    "country": "스웨덴",
+    "worldRegion": "발트해",
+    "period": "한자동맹·고틀란드 교역도시",
+    "yearLabel": "12-14세기 전성기",
+    "coordinates": { "lat": 57.6348, "lng": 18.2948 },
+    "aliases": ["Visby", "Hanseatic Town of Visby", "Gotland", "Baltic trade", "City wall of Visby"],
+    "summary": "비스뷔는 발트해 중앙의 고틀란드섬 항구로, 러시아·스칸디나비아·독일 상인 교역망의 중계지였다. 성벽, 창고, 교회 폐허와 거리 구조는 한자동맹 이전과 이후 발트해 상업 도시의 모습을 잘 보존한다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 한자동맹 도시 비스뷔 세계유산 좌표와 성벽 안 구도심을 기준으로 표시했다.",
+    "curationBatch": "europe-medieval-trade-urban-networks-v1",
+    "sources": [
+      { "title": "UNESCO: Hanseatic Town of Visby", "url": "https://whc.unesco.org/en/list/731/" },
+      { "title": "Britannica: Visby", "url": "https://www.britannica.com/place/Visby" }
+    ]
+  },
+  {
+    "id": "bergen-bryggen",
+    "title": "베르겐 브뤼겐",
+    "type": "site",
+    "historicalName": "브뤼겐 / 튀스케브뤼겐",
+    "modernName": "브뤼겐",
+    "modernAdmin": "베스틀란주 베르겐",
+    "country": "노르웨이",
+    "worldRegion": "북해",
+    "period": "한자동맹 노르웨이 교역소",
+    "yearLabel": "14-16세기 한자 교역소",
+    "coordinates": { "lat": 60.3971, "lng": 5.3245 },
+    "aliases": ["Bryggen", "Bergen", "Tyskebryggen", "Hanseatic Wharf", "Norwegian stockfish trade"],
+    "summary": "베르겐 브뤼겐은 한자동맹 상인들이 노르웨이 대구와 곡물·직물 교환을 관리하던 항구 창고 지구다. 목조 창고, 좁은 통로, 상인 거주·작업 공간은 북대서양 자원과 유럽 도시시장을 연결한 한자 교역소의 물리적 구조를 보여준다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 브뤼겐 세계유산 좌표와 베르겐 항구 창고 지구를 기준으로 표시했다.",
+    "curationBatch": "europe-medieval-trade-urban-networks-v1",
+    "sources": [
+      { "title": "UNESCO: Bryggen", "url": "https://whc.unesco.org/en/list/59/" },
+      { "title": "Visit Bergen: Bryggen in Bergen", "url": "https://en.visitbergen.com/things-to-do/bryggen-in-bergen-p878553" },
+      { "title": "Britannica: Bergen", "url": "https://www.britannica.com/place/Bergen-Norway" }
+    ]
+  },
+  {
+    "id": "dubrovnik",
+    "title": "두브로브니크",
+    "type": "place",
+    "historicalName": "라구사 / 두브로브니크",
+    "modernName": "두브로브니크 구시가지",
+    "modernAdmin": "두브로브니크네레트바주 두브로브니크",
+    "country": "크로아티아",
+    "worldRegion": "아드리아해",
+    "period": "라구사 공화국",
+    "yearLabel": "13-16세기 해상공화국 전성기",
+    "coordinates": { "lat": 42.6410, "lng": 18.1106 },
+    "aliases": ["Dubrovnik", "Ragusa", "Republic of Ragusa", "Adriatic", "Dalmatia"],
+    "summary": "두브로브니크, 옛 라구사는 아드리아해 동쪽 해안의 해상공화국으로, 발칸 내륙과 지중해 교역을 연결했다. 성벽, 항구, 프란체스코 수도원, 스폰자 궁전과 도시 법제는 베네치아와 오스만 사이에서 독자적 외교·상업 질서를 유지한 도시국가의 흔적이다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 두브로브니크 구시가지 세계유산 좌표와 성벽 안 역사도시를 기준으로 표시했다.",
+    "curationBatch": "europe-medieval-trade-urban-networks-v1",
+    "sources": [
+      { "title": "UNESCO: Old City of Dubrovnik", "url": "https://whc.unesco.org/en/list/95/" },
+      { "title": "Britannica: Dubrovnik", "url": "https://www.britannica.com/place/Dubrovnik" }
+    ]
   }
 ]

@@ -531,6 +531,34 @@
         "Metropolitan Museum of Art and Britannica references for Lapita culture",
         "Academic and museum references for Teouma, Mulifanua, and Talepakemalai"
       ]
+    },
+    {
+      "id": "europe-medieval-trade-urban-networks-v1",
+      "status": "completed",
+      "completedAt": "2026-05-15",
+      "continentId": "europe",
+      "countryIso2": "IT-BE-DE-RU-SE-NO-HR",
+      "countryKo": "이탈리아·벨기에·독일·러시아·스웨덴·노르웨이·크로아티아",
+      "worldRegion": "유럽 중세 교역권",
+      "focusKo": "유럽 중세 교역·도시 네트워크 핵심 거점",
+      "scopeKo": "중세 유럽 도시화, 해상 교역, 한자동맹, 상업 공화국, 항구·길드·창고 지구",
+      "sourceFile": "data/records/europe/medieval/medieval-trade-urban-networks.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "venice",
+        "genoa",
+        "bruges",
+        "lubeck",
+        "novgorod",
+        "visby",
+        "bergen-bryggen",
+        "dubrovnik"
+      ],
+      "sourceBasis": [
+        "UNESCO World Heritage pages for Venice, Genoa, Bruges, Lübeck, Novgorod, Visby, Bryggen, and Dubrovnik",
+        "Britannica references for Venice, Genoa, Bruges, Lübeck, Hanseatic League, Novgorod, Visby, Bergen, and Dubrovnik",
+        "Visit Bergen reference for Bryggen's Hanseatic wharf context"
+      ]
     }
   ]
 }
