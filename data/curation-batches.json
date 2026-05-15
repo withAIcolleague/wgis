@@ -559,6 +559,35 @@
         "Britannica references for Venice, Genoa, Bruges, Lübeck, Hanseatic League, Novgorod, Visby, Bergen, and Dubrovnik",
         "Visit Bergen reference for Bryggen's Hanseatic wharf context"
       ]
+    },
+    {
+      "id": "islamic-caliphate-knowledge-cities-v1",
+      "status": "completed",
+      "completedAt": "2026-05-15",
+      "continentId": "asia-africa-europe",
+      "countryIso2": "IQ-SY-EG-ES-TN-IR-MA",
+      "countryKo": "이라크·시리아·이집트·스페인·튀니지·이란·모로코",
+      "worldRegion": "이슬람권",
+      "focusKo": "이슬람 칼리프국과 지식도시 네트워크 핵심 거점",
+      "scopeKo": "칼리프국 수도, 번역운동, 마드라사와 모스크, 법학·신학·과학, 도시 장인·상업 네트워크",
+      "sourceFile": "data/records/asia/southwest-asia/islamic-caliphate-knowledge-cities.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "baghdad",
+        "damascus",
+        "cairo-islamic",
+        "cordoba",
+        "kairouan",
+        "samarra",
+        "nishapur",
+        "fez"
+      ],
+      "sourceBasis": [
+        "UNESCO World Heritage pages for Damascus, Historic Cairo, Cordoba, Kairouan, Samarra, and Fez",
+        "Britannica references for Baghdad, Bayt al-Hikmah, Damascus, Cairo, Cordoba, Kairouan, Samarra, and Fez",
+        "Metropolitan Museum of Art and Encyclopaedia Iranica references for Nishapur",
+        "World History Encyclopedia reference for medieval Damascus context"
+      ]
     }
   ]
 }

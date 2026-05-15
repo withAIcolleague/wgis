@@ -3708,5 +3708,186 @@
       { "title": "UNESCO: Old City of Dubrovnik", "url": "https://whc.unesco.org/en/list/95/" },
       { "title": "Britannica: Dubrovnik", "url": "https://www.britannica.com/place/Dubrovnik" }
     ]
+  },
+  {
+    "id": "baghdad",
+    "title": "바그다드",
+    "type": "place",
+    "historicalName": "마디나트 알살람 / 바그다드",
+    "modernName": "바그다드",
+    "modernAdmin": "바그다드주 바그다드",
+    "country": "이라크",
+    "worldRegion": "서남아시아",
+    "period": "아바스 칼리프국",
+    "yearLabel": "762-1258년, 8-10세기 지식 중심",
+    "coordinates": { "lat": 33.3152, "lng": 44.3661 },
+    "aliases": ["Baghdad", "Madinat al-Salam", "Round City of Baghdad", "Abbasid Caliphate", "House of Wisdom"],
+    "summary": "바그다드는 762년 아바스 칼리프 알만수르가 세운 수도로, 티그리스 강가에서 행정·상업·학문 네트워크가 결합한 중세 이슬람권 최대 도시 중 하나였다. 번역운동과 바이트 알히크마 전통은 그리스·페르시아·인도 지식이 아랍어 학문 체계로 재구성된 과정을 보여준다.",
+    "confidence": "medium",
+    "sourceNote": "아바스 원형도시의 정확한 유구는 현 도시 아래에 있어, 현대 바그다드 중심 좌표로 근사 표시했다.",
+    "curationBatch": "islamic-caliphate-knowledge-cities-v1",
+    "sources": [
+      { "title": "Britannica: Baghdad", "url": "https://www.britannica.com/place/Baghdad" },
+      { "title": "Britannica: Bayt al-Hikmah", "url": "https://www.britannica.com/place/Bayt-al-Hikmah" },
+      { "title": "Britannica: Iraq - The Abbasid Caliphate", "url": "https://www.britannica.com/place/Iraq/The-Abbasid-Caliphate" }
+    ]
+  },
+  {
+    "id": "damascus",
+    "title": "다마스쿠스",
+    "type": "place",
+    "historicalName": "디마슈크 / 다마스쿠스",
+    "modernName": "다마스쿠스 고도",
+    "modernAdmin": "다마스쿠스주 다마스쿠스",
+    "country": "시리아",
+    "worldRegion": "레반트",
+    "period": "우마이야 칼리프국",
+    "yearLabel": "661-750년 우마이야 수도, 중세 수공업·순례 중심",
+    "coordinates": { "lat": 33.5110, "lng": 36.3060 },
+    "aliases": ["Damascus", "Dimashq", "Umayyad Mosque", "Umayyad Caliphate", "Darb al-Hajj al-Shami"],
+    "summary": "다마스쿠스는 우마이야 칼리프국의 수도로, 초기 이슬람 제국의 행정·군사 중심이자 메카 순례길의 출발 거점이었다. 우마이야 대모스크와 구도심 장인 지구는 로마·비잔틴 도시층 위에 이슬람 도시문화가 중첩된 모습을 보여준다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 다마스쿠스 고도 세계유산과 우마이야 대모스크 중심 구역을 기준으로 표시했다.",
+    "curationBatch": "islamic-caliphate-knowledge-cities-v1",
+    "sources": [
+      { "title": "UNESCO: Ancient City of Damascus", "url": "https://whc.unesco.org/en/list/20/" },
+      { "title": "Britannica: Damascus", "url": "https://www.britannica.com/place/Damascus" },
+      { "title": "World History Encyclopedia: The Siege of Damascus, 1148 CE", "url": "https://www.worldhistory.org/article/1260/" }
+    ]
+  },
+  {
+    "id": "cairo-islamic",
+    "title": "이슬람 카이로",
+    "type": "place",
+    "historicalName": "알카히라 / 푸스타트",
+    "modernName": "역사 카이로",
+    "modernAdmin": "카이로주 카이로",
+    "country": "이집트",
+    "worldRegion": "북아프리카",
+    "period": "파티마·아이유브·맘루크 시대",
+    "yearLabel": "969년 이후, 10-16세기 이슬람 도시 경관",
+    "coordinates": { "lat": 30.0478, "lng": 31.2625 },
+    "aliases": ["Historic Cairo", "Islamic Cairo", "al-Qahira", "Fustat", "al-Azhar"],
+    "summary": "이슬람 카이로는 파티마 왕조의 신도시 알카히라와 더 오래된 푸스타트 권역이 결합한 나일 하류의 거대 도시다. 알 아즈하르, 성채, 맘루크 모스크와 수크는 법학·신학 교육, 장인 생산, 순례·상업 네트워크가 결합한 중세 이슬람 도시의 밀도를 보여준다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 역사 카이로 세계유산과 알무이즈 거리·알아즈하르 권역을 기준으로 표시했다.",
+    "curationBatch": "islamic-caliphate-knowledge-cities-v1",
+    "sources": [
+      { "title": "UNESCO: Historic Cairo", "url": "https://whc.unesco.org/en/list/89/" },
+      { "title": "UNESCO: Urban Regeneration for Historic Cairo", "url": "https://whc.unesco.org/en/historic-cairo-project/" },
+      { "title": "Britannica: Cairo", "url": "https://www.britannica.com/place/Cairo" }
+    ]
+  },
+  {
+    "id": "cordoba",
+    "title": "코르도바",
+    "type": "place",
+    "historicalName": "쿠르투바 / 코르도바",
+    "modernName": "코르도바 역사중심지",
+    "modernAdmin": "안달루시아 코르도바",
+    "country": "스페인",
+    "worldRegion": "이베리아",
+    "period": "코르도바 칼리프국",
+    "yearLabel": "929-1031년 칼리프국 중심, 8-13세기 안달루스 도시",
+    "coordinates": { "lat": 37.8790, "lng": -4.7794 },
+    "aliases": ["Cordoba", "Córdoba", "Qurtuba", "Caliphate of Cordoba", "Great Mosque of Cordoba"],
+    "summary": "코르도바는 알안달루스 우마이야 왕조와 10세기 코르도바 칼리프국의 수도로, 지중해 서부의 학문·행정·공예 중심지였다. 대모스크, 과달키비르 강변, 도서관과 번역·의학·철학 전통은 이베리아에서 이슬람권 지식이 라틴 기독교권과 접촉한 중요한 표지다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 코르도바 역사중심지와 대모스크-성당 중심 좌표를 기준으로 표시했다.",
+    "curationBatch": "islamic-caliphate-knowledge-cities-v1",
+    "sources": [
+      { "title": "UNESCO: Historic Centre of Cordoba", "url": "https://whc.unesco.org/en/list/313/" },
+      { "title": "UNESCO Urban Heritage Atlas: Historic Centre of Cordoba", "url": "https://whc.unesco.org/en/urban-heritage-atlas/cordoba" },
+      { "title": "Britannica: Córdoba", "url": "https://www.britannica.com/place/Cordoba-Spain" }
+    ]
+  },
+  {
+    "id": "kairouan",
+    "title": "카이루안",
+    "type": "place",
+    "historicalName": "알카이라완 / 카이루안",
+    "modernName": "카이루안",
+    "modernAdmin": "카이루안주 카이루안",
+    "country": "튀니지",
+    "worldRegion": "마그레브",
+    "period": "아글라브 왕조·이프리키야",
+    "yearLabel": "670년 건설, 9세기 아글라브 전성기",
+    "coordinates": { "lat": 35.6814, "lng": 10.1040 },
+    "aliases": ["Kairouan", "Qayrawan", "al-Qayrawan", "Great Mosque of Kairouan", "Aghlabids"],
+    "summary": "카이루안은 670년 세워진 마그레브의 가장 이른 아랍-무슬림 군사·도시 기지 중 하나로, 이프리키야 통치와 이슬람 학문의 중심지가 되었다. 대모스크, 성벽, 수조와 메디나는 북아프리카 이슬람 도시 형성과 말리키 법학 전통을 이해하는 핵심 공간이다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 카이루안 세계유산과 대모스크 중심 구역을 기준으로 표시했다.",
+    "curationBatch": "islamic-caliphate-knowledge-cities-v1",
+    "sources": [
+      { "title": "UNESCO: Kairouan", "url": "https://whc.unesco.org/en/list/499/" },
+      { "title": "Britannica: Kairouan", "url": "https://www.britannica.com/place/Al-Qayrawan" }
+    ]
+  },
+  {
+    "id": "samarra",
+    "title": "사마라",
+    "type": "site",
+    "historicalName": "사마라",
+    "modernName": "사마라 고고도시",
+    "modernAdmin": "살라딘주 사마라",
+    "country": "이라크",
+    "worldRegion": "서남아시아",
+    "period": "아바스 칼리프국",
+    "yearLabel": "836-892년 아바스 수도",
+    "coordinates": { "lat": 34.1948, "lng": 43.8749 },
+    "aliases": ["Samarra", "Samarra Archaeological City", "Great Mosque of Samarra", "Malwiya", "Abbasid capital"],
+    "summary": "사마라는 9세기 아바스 칼리프국의 임시 수도로 조성된 거대한 계획도시 유적이다. 대모스크와 말위야 나선 미나렛, 궁전, 군영과 경마장 흔적은 바그다드 이후 아바스 궁정과 튀르크 군사 엘리트가 만든 도시 규모와 권력 공간을 보여준다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 사마라 고고도시 세계유산과 대모스크·말위야 권역을 기준으로 표시했다.",
+    "curationBatch": "islamic-caliphate-knowledge-cities-v1",
+    "sources": [
+      { "title": "UNESCO: Samarra Archaeological City", "url": "https://whc.unesco.org/en/list/276/" },
+      { "title": "Britannica: Samarra", "url": "https://www.britannica.com/place/Samarra" }
+    ]
+  },
+  {
+    "id": "nishapur",
+    "title": "니샤푸르",
+    "type": "place",
+    "historicalName": "니샤푸르 / 네이샤부르",
+    "modernName": "네이샤부르와 샤디야흐 유적",
+    "modernAdmin": "호라산에라자비주 네이샤부르",
+    "country": "이란",
+    "worldRegion": "호라산",
+    "period": "타히르·사만·셀주크 호라산 도시",
+    "yearLabel": "8-12세기 이슬람 호라산 중심",
+    "coordinates": { "lat": 36.2141, "lng": 58.7958 },
+    "aliases": ["Nishapur", "Neyshabur", "Nishabur", "Shadiyakh", "Khorasan"],
+    "summary": "니샤푸르는 호라산의 주요 오아시스 도시로, 타히르·사만·셀주크 시대 행정과 학문, 도자 생산의 중심지였다. 메트로폴리탄 미술관의 발굴 자료와 니샤푸르 도자기는 9-11세기 이슬람 동부 도시의 생활, 시장, 종교 실천과 장인 기술을 구체적으로 보여준다.",
+    "confidence": "medium",
+    "sourceNote": "현대 네이샤부르와 샤디야흐 유적권 좌표를 기준으로 근사 표시했다.",
+    "curationBatch": "islamic-caliphate-knowledge-cities-v1",
+    "sources": [
+      { "title": "The Metropolitan Museum of Art: The Nishapur Excavations", "url": "https://www.metmuseum.org/en/about-the-met/collection-areas/islamic-art/nishapur-excavations" },
+      { "title": "The Metropolitan Museum of Art: The Metropolitan Museum's Excavations at Nishapur", "url": "https://www.metmuseum.org/toah/hd/nish/hd_nish.htm" },
+      { "title": "Encyclopaedia Iranica: Nishapur - Excavations by the Metropolitan Museum of Art", "url": "https://www.iranicaonline.org/articles/nishapur-07-met-excavations/" }
+    ]
+  },
+  {
+    "id": "fez",
+    "title": "페스",
+    "type": "place",
+    "historicalName": "파스 / 페스",
+    "modernName": "페스 메디나",
+    "modernAdmin": "페스메크네스 지방 페스",
+    "country": "모로코",
+    "worldRegion": "마그레브",
+    "period": "이드리스·마린 왕조",
+    "yearLabel": "9세기 이후, 13-14세기 마린 왕조 학문 중심",
+    "coordinates": { "lat": 34.0648, "lng": -4.9730 },
+    "aliases": ["Fez", "Fes", "Fas", "Medina of Fez", "al-Qarawiyyin"],
+    "summary": "페스는 이드리스 왕조 이후 모로코의 정치·종교·수공업 중심지로 성장한 메디나 도시다. 알카라위인 모스크·대학 전통, 마드라사, 수크와 염색·가죽 공방은 마그레브에서 학문과 장인경제가 결합한 중세 이슬람 도시의 장기 지속성을 보여준다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 페스 메디나 세계유산과 페스 엘발리 중심 좌표를 기준으로 표시했다.",
+    "curationBatch": "islamic-caliphate-knowledge-cities-v1",
+    "sources": [
+      { "title": "UNESCO: Medina of Fez", "url": "https://whc.unesco.org/en/list/170/" },
+      { "title": "Britannica: Fez", "url": "https://www.britannica.com/place/Fez-Morocco" }
+    ]
   }
 ]

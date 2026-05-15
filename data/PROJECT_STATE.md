@@ -11,9 +11,9 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 170
-- Completed curation batches: 19
-- Latest completed batch: `europe-medieval-trade-urban-networks-v1`
+- Current entry count: 178
+- Completed curation batches: 20
+- Latest completed batch: `islamic-caliphate-knowledge-cities-v1`
 - Latest completed infrastructure milestone: `a28681f Add data validation script`
 - Data validation script: `scripts/validate-data.js`
 
@@ -306,6 +306,20 @@ The long-term target is 3,000+ entries, but the project should progress one focu
     - `bergen-bryggen`
     - `dubrovnik`
 
+- Islamic caliphate and knowledge cities batch
+  - Batch ID: `islamic-caliphate-knowledge-cities-v1`
+  - Source file: `data/records/asia/southwest-asia/islamic-caliphate-knowledge-cities.json`
+  - Entries added: 8
+  - Entry IDs:
+    - `baghdad`
+    - `damascus`
+    - `cairo-islamic`
+    - `cordoba`
+    - `kairouan`
+    - `samarra`
+    - `nishapur`
+    - `fez`
+
 ## Current Policy
 
 - Work on DB only unless the user explicitly asks for UI changes.
@@ -343,13 +357,13 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Southwest Asian Islamic caliphate and knowledge cities
-   - Possible source file: `data/records/asia/southwest-asia/islamic-caliphate-knowledge-cities.json`
-   - Likely entries: Baghdad, Damascus, Cairo, Cordoba, Kairouan, Samarra, Nishapur, Fez
-
-2. Indian Ocean trade ports and entrepots
+1. Indian Ocean trade ports and entrepots
    - Possible source file: `data/records/indian-ocean/trade-ports-entrepots.json`
    - Likely entries: Aden, Hormuz, Basra, Siraf, Calicut, Muziris, Malacca, Quanzhou
+
+2. European Renaissance and early modern science cities
+   - Possible source file: `data/records/europe/early-modern/renaissance-science-cities.json`
+   - Likely entries: Florence, Padua, Bologna, Pisa, Rome, Leiden, Paris, London
 
 ## Resume Checklist
 
