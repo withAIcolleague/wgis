@@ -386,6 +386,35 @@
         "World History Encyclopedia references for Champa, Angkor Wat, Borobudur, Prambanan, Sukhothai, and Ayutthaya",
         "Britannica references for Funan, Bagan, Sukhothai, and Ayutthaya"
       ]
+    },
+    {
+      "id": "americas-mesoamerica-maya-postclassic-networks-v1",
+      "status": "completed",
+      "completedAt": "2026-05-15",
+      "continentId": "americas",
+      "countryIso2": "MX-HN",
+      "countryKo": "멕시코·온두라스",
+      "worldRegion": "메소아메리카",
+      "focusKo": "마야 저지대와 포스트클래식 네트워크 핵심 도시",
+      "scopeKo": "고전기 마야 왕조 도시, 우수마신타 강권, 푸크 양식 도시, 포스트클래식 유카탄 정치·해상 교역 거점",
+      "sourceFile": "data/records/americas/mesoamerica/maya-postclassic-networks.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "palenque",
+        "copan",
+        "uxmal",
+        "mayapan",
+        "coba",
+        "bonampak",
+        "yaxchilan",
+        "tulum"
+      ],
+      "sourceBasis": [
+        "UNESCO World Heritage pages for Palenque, Copan, and Uxmal",
+        "INAH archaeological zone pages for Mayapan, Coba, Bonampak, Yaxchilan, and Tulum",
+        "World History Encyclopedia references for Palenque, Copan, Uxmal, Maya Civilization, Yaxchilan, and Tulum",
+        "Britannica references for Palenque, Uxmal, Mayapan, Coba, and Bonampak"
+      ]
     }
   ]
 }

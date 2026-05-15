@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 1,
+  "id": "americas-mesoamerica-maya-postclassic-networks",
+  "titleKo": "마야 저지대와 포스트클래식 네트워크 핵심 도시",
+  "curationBatch": "americas-mesoamerica-maya-postclassic-networks-v1",
+  "taxonomyFile": "data/taxonomy.json",
+  "appIndexFile": "data/entries.json",
+  "scope": {
+    "continentId": "americas",
+    "modernCountryIso2": "MX-HN",
+    "modernCountryKo": "멕시코·온두라스",
+    "historicalRegionKo": "마야 저지대와 유카탄",
+    "cultureAreaKo": "고전기 마야 도시국가와 포스트클래식 유카탄 네트워크",
+    "periodBand": "ancient-medieval",
+    "topicKo": "고전기 마야 왕조 도시, 우수마신타 강권, 푸크 양식 도시, 포스트클래식 유카탄 정치·해상 교역 거점"
+  },
+  "records": [
+    {
+      "id": "palenque",
+      "title": "팔렌케",
+      "type": "place",
+      "historicalName": "라캄하 / 팔렌케",
+      "modernName": "팔렌케 고대도시와 국립공원",
+      "modernAdmin": "치아파스주 팔렌케",
+      "country": "멕시코",
+      "worldRegion": "메소아메리카",
+      "period": "마야 고전기",
+      "yearLabel": "5-8세기, 600-700년경 전성기",
+      "date": { "startYear": 400, "endYear": 800, "precision": "approximate" },
+      "spatial": {
+        "continentId": "americas",
+        "modernCountryIso2": "MX",
+        "historicalRegionKo": "치아파스 북부·우수마신타 유역",
+        "cultureAreaKo": "마야"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 17.4849, "lng": -92.0468 },
+      "aliases": ["Palenque", "Lakamha", "B'aakal", "Temple of the Inscriptions", "Maya"],
+      "summary": "팔렌케는 우수마신타 유역의 고전기 마야 도시국가로, 비문 신전, 궁전, 왕조 기록과 조각 부조가 뛰어난 유적이다. 파칼 왕과 후계자들의 비문은 마야 왕권, 전쟁, 의례, 계보를 역사적으로 복원하게 해주는 핵심 자료다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 팔렌케 세계유산과 국립공원 중심 유적권 좌표를 기준으로 표시했다.",
+      "curationBatch": "americas-mesoamerica-maya-postclassic-networks-v1",
+      "sources": [
+        { "title": "UNESCO: Pre-Hispanic City and National Park of Palenque", "url": "https://whc.unesco.org/en/list/411/" },
+        { "title": "World History Encyclopedia: Palenque", "url": "https://www.worldhistory.org/Palenque/" },
+        { "title": "Britannica: Palenque", "url": "https://www.britannica.com/place/Palenque-ancient-city-Mexico" }
+      ]
+    },
+    {
+      "id": "copan",
+      "title": "코판",
+      "type": "place",
+      "historicalName": "코판",
+      "modernName": "코판 마야 유적",
+      "modernAdmin": "코판주 코판 루이나스 인근",
+      "country": "온두라스",
+      "worldRegion": "메소아메리카",
+      "period": "마야 고전기",
+      "yearLabel": "5-9세기",
+      "date": { "startYear": 426, "endYear": 900, "precision": "approximate" },
+      "spatial": {
+        "continentId": "americas",
+        "modernCountryIso2": "HN",
+        "historicalRegionKo": "마야 남동부 저지대",
+        "cultureAreaKo": "마야"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 14.8383, "lng": -89.1404 },
+      "aliases": ["Copan", "Copán", "Maya Site of Copan", "Hieroglyphic Stairway", "K'inich Yax K'uk' Mo'"],
+      "summary": "코판은 마야 세계 남동부의 주요 왕조 중심지로, 석비, 제단, 계단 비문과 조각이 탁월하게 보존되어 있다. 긴 상형문자 계단은 고전기 마야 정치사와 왕조 기억을 해석하는 핵심 자료이며, 테오티우아칸 영향과 지역 왕권의 결합도 보여준다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 코판 마야 유적 세계유산 좌표와 중심 유적권을 기준으로 표시했다.",
+      "curationBatch": "americas-mesoamerica-maya-postclassic-networks-v1",
+      "sources": [
+        { "title": "UNESCO: Maya Site of Copan", "url": "https://whc.unesco.org/en/list/129/" },
+        { "title": "World History Encyclopedia: Copan", "url": "https://www.worldhistory.org/Copan/" }
+      ]
+    },
+    {
+      "id": "uxmal",
+      "title": "우슈말",
+      "type": "place",
+      "historicalName": "우슈말",
+      "modernName": "우슈말 선스페인 도시",
+      "modernAdmin": "유카탄주 산타엘레나",
+      "country": "멕시코",
+      "worldRegion": "메소아메리카",
+      "period": "마야 고전기 후기 / 푸크 양식",
+      "yearLabel": "7-10세기",
+      "date": { "startYear": 600, "endYear": 1000, "precision": "approximate" },
+      "spatial": {
+        "continentId": "americas",
+        "modernCountryIso2": "MX",
+        "historicalRegionKo": "유카탄 푸크 지역",
+        "cultureAreaKo": "마야·푸크"
+      },
+      "classification": { "periodBand": "medieval", "selectionTier": "core" },
+      "coordinates": { "lat": 20.3599, "lng": -89.7709 },
+      "aliases": ["Uxmal", "Puuc", "Pyramid of the Magician", "Nunnery Quadrangle", "Yucatan"],
+      "summary": "우슈말은 유카탄 푸크 지역의 대표 마야 도시로, 마법사의 피라미드, 총독궁, 수녀원 사각형 건축군이 정교한 석조 모자이크 장식과 도시 계획을 보여준다. 치첸이트사와 다른 북부 유카탄 도시들과 함께 후기 고전기 마야 권력과 교역망을 이해하게 한다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 우슈말 세계유산 좌표와 중심 유적권을 기준으로 표시했다.",
+      "curationBatch": "americas-mesoamerica-maya-postclassic-networks-v1",
+      "sources": [
+        { "title": "UNESCO: Pre-Hispanic Town of Uxmal", "url": "https://whc.unesco.org/en/list/791/" },
+        { "title": "World History Encyclopedia: Uxmal", "url": "https://www.worldhistory.org/Uxmal/" },
+        { "title": "Britannica: Uxmal", "url": "https://www.britannica.com/place/Uxmal" }
+      ]
+    },
+    {
+      "id": "mayapan",
+      "title": "마야판",
+      "type": "place",
+      "historicalName": "마야판",
+      "modernName": "마야판 고고유적",
+      "modernAdmin": "유카탄주 테코·마야판 권역",
+      "country": "멕시코",
+      "worldRegion": "메소아메리카",
+      "period": "마야 포스트클래식",
+      "yearLabel": "13-15세기",
+      "date": { "startYear": 1200, "endYear": 1450, "precision": "approximate" },
+      "spatial": {
+        "continentId": "americas",
+        "modernCountryIso2": "MX",
+        "historicalRegionKo": "유카탄 북부",
+        "cultureAreaKo": "마야·포스트클래식 유카탄"
+      },
+      "classification": { "periodBand": "medieval", "selectionTier": "core" },
+      "coordinates": { "lat": 20.6293, "lng": -89.4590 },
+      "aliases": ["Mayapan", "Mayapán", "League of Mayapan", "Cocom", "Yucatan"],
+      "summary": "마야판은 치첸이트사 이후 북부 유카탄의 포스트클래식 정치 중심지로, 성벽 도시 안에 신전, 주거구, 의례 구조가 밀집해 있다. 마야판 동맹과 코콤 계열 권력은 스페인 도래 전 유카탄 마야 정치 질서를 이해하는 중요한 고리다.",
+      "confidence": "high",
+      "sourceNote": "INAH 마야판 고고유적과 공개 유적권 좌표를 기준으로 표시했다.",
+      "curationBatch": "americas-mesoamerica-maya-postclassic-networks-v1",
+      "sources": [
+        { "title": "INAH: Zona Arqueológica de Mayapán", "url": "https://www.inah.gob.mx/zonas/zona-arqueologica-de-mayapan" },
+        { "title": "Britannica: Mayapan", "url": "https://www.britannica.com/place/Mayapan" },
+        { "title": "World History Encyclopedia: Maya Civilization", "url": "https://www.worldhistory.org/Maya_Civilization/" }
+      ]
+    },
+    {
+      "id": "coba",
+      "title": "코바",
+      "type": "place",
+      "historicalName": "코바",
+      "modernName": "코바 고고유적",
+      "modernAdmin": "킨타나로오주 툴룸시 코바",
+      "country": "멕시코",
+      "worldRegion": "메소아메리카",
+      "period": "마야 고전기-포스트클래식",
+      "yearLabel": "6-15세기",
+      "date": { "startYear": 500, "endYear": 1500, "precision": "approximate" },
+      "spatial": {
+        "continentId": "americas",
+        "modernCountryIso2": "MX",
+        "historicalRegionKo": "킨타나로오 내륙 호수권",
+        "cultureAreaKo": "마야·동부 유카탄"
+      },
+      "classification": { "periodBand": "medieval", "selectionTier": "core" },
+      "coordinates": { "lat": 20.4917, "lng": -87.7322 },
+      "aliases": ["Coba", "Cobá", "Nohoch Mul", "sacbe", "Quintana Roo"],
+      "summary": "코바는 호수와 사크베 도로망을 바탕으로 동부 유카탄 내륙을 연결한 마야 도시다. 노호치 물 피라미드, 석비, 넓은 포장도로망은 카리브 해안, 내륙 도시, 남부 마야권 사이의 이동과 정치적 영향권을 보여준다.",
+      "confidence": "high",
+      "sourceNote": "INAH 코바 고고유적과 관광 진입 중심 유적권 좌표를 기준으로 표시했다.",
+      "curationBatch": "americas-mesoamerica-maya-postclassic-networks-v1",
+      "sources": [
+        { "title": "INAH: Zona Arqueológica de Cobá", "url": "https://inah.gob.mx/zonas/515-zona-arqueologica-de-coba" },
+        { "title": "Britannica: Cobá", "url": "https://www.britannica.com/place/Coba" }
+      ]
+    },
+    {
+      "id": "bonampak",
+      "title": "보남팍",
+      "type": "place",
+      "historicalName": "아케 / 보남팍",
+      "modernName": "보남팍 고고유적",
+      "modernAdmin": "치아파스주 오코싱고 라칸하-찬사야브 권역",
+      "country": "멕시코",
+      "worldRegion": "메소아메리카",
+      "period": "마야 고전기 후기",
+      "yearLabel": "6-9세기, 8세기 벽화",
+      "date": { "startYear": 500, "endYear": 900, "precision": "approximate" },
+      "spatial": {
+        "continentId": "americas",
+        "modernCountryIso2": "MX",
+        "historicalRegionKo": "치아파스 라칸돈 정글",
+        "cultureAreaKo": "마야·우수마신타 권역"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 16.7040, "lng": -91.0660 },
+      "aliases": ["Bonampak", "Ake", "Usiij Witz", "Temple of the Murals", "Yaxchilan"],
+      "summary": "보남팍은 야슈칠란과 정치적으로 연결된 고전기 마야 도시로, 생생한 궁정·전쟁·의례 벽화로 유명하다. 벽화는 마야 지배층의 복식, 음악, 포로 처리, 왕위 계승 의식을 시각적으로 보여주어 문헌과 비문을 보완하는 핵심 자료다.",
+      "confidence": "high",
+      "sourceNote": "INAH 보남팍 고고유적과 라칸돈 정글 내 중심 유적권 좌표를 기준으로 표시했다.",
+      "curationBatch": "americas-mesoamerica-maya-postclassic-networks-v1",
+      "sources": [
+        { "title": "INAH: Zona Arqueológica de Bonampak", "url": "https://www.inah.gob.mx/zonas/zona-arqueologica-de-bonampak" },
+        { "title": "Britannica: Bonampak", "url": "https://www.britannica.com/place/Bonampak" }
+      ]
+    },
+    {
+      "id": "yaxchilan",
+      "title": "야슈칠란",
+      "type": "place",
+      "historicalName": "야슈칠란",
+      "modernName": "야슈칠란 고고유적",
+      "modernAdmin": "치아파스주 오코싱고 우수마신타강변",
+      "country": "멕시코",
+      "worldRegion": "메소아메리카",
+      "period": "마야 고전기 후기",
+      "yearLabel": "4-9세기",
+      "date": { "startYear": 300, "endYear": 900, "precision": "approximate" },
+      "spatial": {
+        "continentId": "americas",
+        "modernCountryIso2": "MX",
+        "historicalRegionKo": "우수마신타강 중류",
+        "cultureAreaKo": "마야·우수마신타 권역"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 16.8989, "lng": -90.9672 },
+      "aliases": ["Yaxchilan", "Yaxchilán", "Usumacinta", "Shield Jaguar", "Bird Jaguar"],
+      "summary": "야슈칠란은 우수마신타강변의 고전기 마야 강국으로, 팔렌케, 피에드라스 네그라스, 보남팍과 얽힌 경쟁과 동맹의 중심에 있었다. 문설주 부조와 비문은 방패재규어, 새재규어 등 왕조의 의례와 전쟁, 여성 엘리트의 역할을 자세히 보여준다.",
+      "confidence": "high",
+      "sourceNote": "INAH 야슈칠란 고고유적과 우수마신타강변 중심 유적권 좌표를 기준으로 표시했다.",
+      "curationBatch": "americas-mesoamerica-maya-postclassic-networks-v1",
+      "sources": [
+        { "title": "INAH: Zona Arqueológica de Yaxchilán", "url": "https://www.inah.gob.mx/zonas/zona-arqueologica-de-yaxchilan" },
+        { "title": "World History Encyclopedia: Yaxchilan", "url": "https://www.worldhistory.org/Yaxchilan/" }
+      ]
+    },
+    {
+      "id": "tulum",
+      "title": "툴룸",
+      "type": "place",
+      "historicalName": "툴룸 / 사마",
+      "modernName": "툴룸 고고유적",
+      "modernAdmin": "킨타나로오주 툴룸",
+      "country": "멕시코",
+      "worldRegion": "메소아메리카",
+      "period": "마야 포스트클래식",
+      "yearLabel": "13-16세기",
+      "date": { "startYear": 1200, "endYear": 1550, "precision": "approximate" },
+      "spatial": {
+        "continentId": "americas",
+        "modernCountryIso2": "MX",
+        "historicalRegionKo": "유카탄 동해안",
+        "cultureAreaKo": "마야·카리브 해상 교역권"
+      },
+      "classification": { "periodBand": "medieval", "selectionTier": "core" },
+      "coordinates": { "lat": 20.2147, "lng": -87.4290 },
+      "aliases": ["Tulum", "Zama", "East Coast Maya", "Quintana Roo", "Caribbean trade"],
+      "summary": "툴룸은 카리브 해 절벽 위에 자리한 포스트클래식 마야 항구·의례 도시다. 성벽, 엘 카스티요, 해안 접근로와 벽화는 유카탄 동해안의 해상 교역, 순례, 스페인 접촉 직전까지 이어진 마야 도시 생활을 보여준다.",
+      "confidence": "high",
+      "sourceNote": "INAH 툴룸 고고유적과 카리브 해안 절벽 위 중심 유적권 좌표를 기준으로 표시했다.",
+      "curationBatch": "americas-mesoamerica-maya-postclassic-networks-v1",
+      "sources": [
+        { "title": "INAH: Zona Arqueológica de Tulum", "url": "https://www.inah.gob.mx/zonas/99-zona-arqueologica-de-tulum" },
+        { "title": "World History Encyclopedia: Tulum", "url": "https://www.worldhistory.org/Tulum/" }
+      ]
+    }
+  ]
+}

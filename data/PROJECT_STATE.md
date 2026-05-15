@@ -11,9 +11,9 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 122
-- Completed curation batches: 13
-- Latest completed batch: `asia-southeast-asia-early-states-temple-networks-v1`
+- Current entry count: 130
+- Completed curation batches: 14
+- Latest completed batch: `americas-mesoamerica-maya-postclassic-networks-v1`
 - Latest completed infrastructure milestone: `a28681f Add data validation script`
 - Data validation script: `scripts/validate-data.js`
 
@@ -222,6 +222,20 @@ The long-term target is 3,000+ entries, but the project should progress one focu
     - `sukhothai`
     - `ayutthaya`
 
+- Maya lowland and Postclassic networks batch
+  - Batch ID: `americas-mesoamerica-maya-postclassic-networks-v1`
+  - Source file: `data/records/americas/mesoamerica/maya-postclassic-networks.json`
+  - Entries added: 8
+  - Entry IDs:
+    - `palenque`
+    - `copan`
+    - `uxmal`
+    - `mayapan`
+    - `coba`
+    - `bonampak`
+    - `yaxchilan`
+    - `tulum`
+
 ## Current Policy
 
 - Work on DB only unless the user explicitly asks for UI changes.
@@ -259,13 +273,13 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Mesoamerican second batch: Maya lowland and Postclassic networks
-   - Possible source file: `data/records/americas/mesoamerica/maya-postclassic-networks.json`
-   - Likely entries: Palenque, Copan, Uxmal, Mayapan, Coba, Bonampak, Yaxchilan, Tulum
-
-2. East African Swahili coast trade cities
+1. East African Swahili coast trade cities
    - Possible source file: `data/records/africa/east-africa/swahili-coast-trade-cities.json`
    - Likely entries: Kilwa Kisiwani, Songo Mnara, Mombasa, Gedi, Lamu, Zanzibar Stone Town, Sofala, Great Zimbabwe
+
+2. Central Asian Silk Road and oasis cities
+   - Possible source file: `data/records/asia/central-asia/silk-road-oasis-cities.json`
+   - Likely entries: Samarkand, Bukhara, Merv, Khiva, Otrar, Kashgar, Turfan, Dunhuang
 
 ## Resume Checklist
 
