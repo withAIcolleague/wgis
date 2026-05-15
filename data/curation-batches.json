@@ -328,6 +328,35 @@
         "Metropolitan Museum of Art references for Jenne-Jeno, Ife, and Igbo-Ukwu",
         "World History Encyclopedia and Britannica references for Ghana Empire, Mali Empire, Songhai Empire, Ife, Benin Kingdom, and Igbo-Ukwu"
       ]
+    },
+    {
+      "id": "americas-andes-core-sites-v1",
+      "status": "completed",
+      "completedAt": "2026-05-15",
+      "continentId": "americas",
+      "countryIso2": "PE-BO",
+      "countryKo": "페루·볼리비아",
+      "worldRegion": "안데스",
+      "focusKo": "안데스 초기 국가와 잉카 핵심 거점",
+      "scopeKo": "노르테 치코 초기 도시, 차빈 의례 중심지, 모체·치무 북부 해안 국가, 티와나쿠 고원 국가, 잉카 수도와 왕실·의례 거점",
+      "sourceFile": "data/records/americas/andes/andean-core-sites.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "caral",
+        "chavin-de-huantar",
+        "moche-huacas",
+        "chan-chan",
+        "tiwanaku",
+        "cusco",
+        "machu-picchu",
+        "sacsayhuaman"
+      ],
+      "sourceBasis": [
+        "UNESCO World Heritage pages for Caral-Supe, Chavin, Chan Chan, Tiwanaku, Cuzco, and Machu Picchu",
+        "World History Encyclopedia references for Caral, Chavin, Moche, Tiwanaku, Machu Picchu, and Sacsayhuaman",
+        "Britannica references for Moche, Chan Chan, Cuzco, and Sacsayhuaman",
+        "Huacas de Moche project reference for the Moche ceremonial complex"
+      ]
     }
   ]
 }

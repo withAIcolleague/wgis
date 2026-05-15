@@ -11,9 +11,9 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 108
-- Completed curation batches: 11
-- Latest completed batch: `africa-west-africa-early-states-v1`
+- Current entry count: 115
+- Completed curation batches: 12
+- Latest completed batch: `americas-andes-core-sites-v1`
 - Latest completed infrastructure milestone: `a28681f Add data validation script`
 - Data validation script: `scripts/validate-data.js`
 
@@ -194,6 +194,20 @@ The long-term target is 3,000+ entries, but the project should progress one focu
     - `benin-city`
     - `igbo-ukwu`
 
+- Andean early states and Inca core sites batch
+  - Batch ID: `americas-andes-core-sites-v1`
+  - Source file: `data/records/americas/andes/andean-core-sites.json`
+  - Entries added: 7 new entries plus 1 existing entry upgraded and linked to the batch
+  - Entry IDs:
+    - `caral`
+    - `chavin-de-huantar`
+    - `moche-huacas`
+    - `chan-chan`
+    - `tiwanaku`
+    - `cusco`
+    - `machu-picchu`
+    - `sacsayhuaman`
+
 ## Current Policy
 
 - Work on DB only unless the user explicitly asks for UI changes.
@@ -231,13 +245,13 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Andean early states and Inca core sites
-   - Possible source file: `data/records/americas/andes/andean-core-sites.json`
-   - Likely entries: Caral, Chavin de Huantar, Moche Huacas, Chan Chan, Tiwanaku, Cusco, Machu Picchu, Sacsayhuaman
-
-2. Southeast Asian early states and temple networks
+1. Southeast Asian early states and temple networks
    - Possible source file: `data/records/asia/southeast-asia/early-states-temple-networks.json`
    - Likely entries: Oc Eo, My Son, Angkor, Borobudur, Prambanan, Pagan, Sukhothai, Ayutthaya
+
+2. Mesoamerican second batch: Maya lowland and Postclassic networks
+   - Possible source file: `data/records/americas/mesoamerica/maya-postclassic-networks.json`
+   - Likely entries: Palenque, Copan, Uxmal, Mayapan, Coba, Bonampak, Yaxchilan, Tulum
 
 ## Resume Checklist
 

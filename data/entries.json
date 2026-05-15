@@ -310,19 +310,24 @@
   {
     "id": "machu-picchu",
     "title": "마추픽추",
-    "type": "artifact",
+    "type": "place",
     "historicalName": "마추픽추",
-    "modernName": "마추픽추 유적",
-    "modernAdmin": "쿠스코주 우루밤바",
+    "modernName": "마추픽추 역사보호구역",
+    "modernAdmin": "쿠스코주 우루밤바현 마추픽추 지구",
     "country": "페루",
-    "worldRegion": "아메리카사",
-    "period": "잉카",
+    "worldRegion": "안데스",
+    "period": "잉카 제국",
     "yearLabel": "15세기",
     "coordinates": { "lat": -13.1631, "lng": -72.5450 },
-    "aliases": ["Machu Picchu", "Inca", "잉카", "쿠스코"],
-    "summary": "안데스 산악 지대에 조성된 잉카 유적으로, 현재 페루 쿠스코주에 위치한다.",
+    "aliases": ["Machu Picchu", "Inca", "Inka", "Urubamba", "Lost City of the Incas"],
+    "summary": "마추픽추는 우루밤바 계곡 위 산악 능선에 조성된 잉카 왕실·의례 복합체로, 계단식 경작지, 석조 주거·의례 공간, 산악 경관이 결합되어 있다. 쿠스코 중심의 잉카 권력이 고산 지형과 수자원을 어떻게 통합했는지 보여주는 대표 유적이다.",
     "confidence": "high",
-    "sourceNote": "마추픽추 고고유적 기준."
+    "sourceNote": "UNESCO 마추픽추 역사보호구역 세계유산 좌표와 중심 유적권을 기준으로 표시했다.",
+    "curationBatch": "americas-andes-core-sites-v1",
+    "sources": [
+      { "title": "UNESCO: Historic Sanctuary of Machu Picchu", "url": "https://whc.unesco.org/en/list/274/" },
+      { "title": "World History Encyclopedia: Machu Picchu", "url": "https://www.worldhistory.org/Machu_Picchu/" }
+    ]
   },
   {
     "id": "carthage",
@@ -2306,6 +2311,162 @@
       { "title": "The Metropolitan Museum of Art: Igbo-Ukwu", "url": "https://www.metmuseum.org/toah/hd/igbo/hd_igbo.htm" },
       { "title": "Britannica: Igbo Ukwu", "url": "https://www.britannica.com/place/Igbo-Ukwu" },
       { "title": "University of Cambridge: Igbo-Ukwu cultural landscape project", "url": "https://www.arch.cam.ac.uk/research/projects/current-projects/social-settlement-dynamics-and-environmental-processes-pre" }
+    ]
+  },
+  {
+    "id": "caral",
+    "title": "카라알",
+    "type": "place",
+    "historicalName": "카라알 / 카라알-수페",
+    "modernName": "카라알-수페 성스러운 도시",
+    "modernAdmin": "리마주 바랑카현 수페 계곡",
+    "country": "페루",
+    "worldRegion": "안데스",
+    "period": "노르테 치코 / 카라알 문명",
+    "yearLabel": "기원전 3000-1800년경",
+    "coordinates": { "lat": -10.8930, "lng": -77.5200 },
+    "aliases": ["Caral", "Caral-Supe", "Sacred City of Caral-Supe", "Norte Chico", "Supe Valley"],
+    "summary": "카라알은 아메리카 대륙에서 가장 이른 도시·기념건축 전통을 보여주는 수페 계곡의 중심지다. 피라미드형 단, 원형 광장, 주거구, 의례 공간이 결합되어 농업·어업·교역을 바탕으로 한 중앙 안데스 초기 복합사회 형성을 이해하는 기준점이 된다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 카라알-수페 세계유산 좌표와 중심 유적권을 기준으로 표시했다.",
+    "curationBatch": "americas-andes-core-sites-v1",
+    "sources": [
+      { "title": "UNESCO: Sacred City of Caral-Supe", "url": "https://whc.unesco.org/en/list/1269/" },
+      { "title": "World History Encyclopedia: Caral Civilization", "url": "https://www.worldhistory.org/Caral_Civilization/" }
+    ]
+  },
+  {
+    "id": "chavin-de-huantar",
+    "title": "차빈 데 우안타르",
+    "type": "place",
+    "historicalName": "차빈 데 우안타르",
+    "modernName": "차빈 고고유적",
+    "modernAdmin": "앙카시주 우아리현 차빈 데 우안타르",
+    "country": "페루",
+    "worldRegion": "안데스",
+    "period": "차빈 문화",
+    "yearLabel": "기원전 1500-300년경",
+    "coordinates": { "lat": -9.5931, "lng": -77.1772 },
+    "aliases": ["Chavin de Huantar", "Chavín de Huántar", "Chavin", "Lanzon", "Andean Formative"],
+    "summary": "차빈 데 우안타르는 안데스 형성기 의례 네트워크의 대표 중심지로, 지하 회랑, 란손 석상, 광장과 신전 구조가 결합된 복합 유적이다. 해안과 고원을 잇는 상징체계와 순례·권위 형성 과정을 보여주며 이후 안데스 종교 미술에 큰 영향을 주었다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 차빈 고고유적 세계유산 좌표를 기준으로 표시했다.",
+    "curationBatch": "americas-andes-core-sites-v1",
+    "sources": [
+      { "title": "UNESCO: Chavin (Archaeological Site)", "url": "https://whc.unesco.org/en/list/330/" },
+      { "title": "World History Encyclopedia: Chavin Civilization", "url": "https://www.worldhistory.org/Chavin_Civilization/" }
+    ]
+  },
+  {
+    "id": "moche-huacas",
+    "title": "모체 우아카스",
+    "type": "place",
+    "historicalName": "우아카 델 솔·우아카 데 라 루나",
+    "modernName": "모체 우아카스 고고복합체",
+    "modernAdmin": "라리베르타드주 트루히요 남부 모체 계곡",
+    "country": "페루",
+    "worldRegion": "안데스",
+    "period": "모체 문화",
+    "yearLabel": "1-8세기",
+    "coordinates": { "lat": -8.1369, "lng": -78.9936 },
+    "aliases": ["Huacas de Moche", "Huaca del Sol", "Huaca de la Luna", "Moche", "Mochica"],
+    "summary": "모체 우아카스는 우아카 델 솔과 우아카 데 라 루나를 중심으로 한 북부 페루 해안의 모체 권력·의례 중심지다. 거대한 흙벽돌 단, 채색 부조, 제의와 희생 장면은 국가 형성 이전 또는 초기 국가 단계의 권위와 전문 공예, 수리 농업 기반을 이해하게 한다.",
+    "confidence": "high",
+    "sourceNote": "우아카 데 라 루나와 우아카 델 솔 사이의 모체 고고복합체 중심 좌표를 사용했다.",
+    "curationBatch": "americas-andes-core-sites-v1",
+    "sources": [
+      { "title": "World History Encyclopedia: Moche Civilization", "url": "https://www.worldhistory.org/Moche_Civilization/" },
+      { "title": "Huacas de Moche", "url": "https://huacasdemoche.pe/?articuloid=42&idiomaid=5&menuid=5&submenuid=24" },
+      { "title": "Britannica: Moche", "url": "https://www.britannica.com/topic/Moche" }
+    ]
+  },
+  {
+    "id": "chan-chan",
+    "title": "찬찬",
+    "type": "place",
+    "historicalName": "찬찬",
+    "modernName": "찬찬 고고지대",
+    "modernAdmin": "라리베르타드주 트루히요 서부",
+    "country": "페루",
+    "worldRegion": "안데스",
+    "period": "치무 왕국",
+    "yearLabel": "9-15세기",
+    "coordinates": { "lat": -8.1110, "lng": -79.0754 },
+    "aliases": ["Chan Chan", "Chimor", "Chimu", "Chimú", "Trujillo"],
+    "summary": "찬찬은 치무 왕국의 수도이자 아메리카 최대급 흙건축 도시로, 성벽으로 둘러싸인 궁정 복합체와 저장·의례·행정 공간이 배열되어 있다. 사막 해안에서 관개와 해양 자원을 결합한 북부 안데스 국가 운영의 규모를 보여준다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 찬찬 고고지대 세계유산 좌표와 중심 유적권을 기준으로 표시했다.",
+    "curationBatch": "americas-andes-core-sites-v1",
+    "sources": [
+      { "title": "UNESCO: Chan Chan Archaeological Zone", "url": "https://whc.unesco.org/en/list/366/" },
+      { "title": "Britannica: Chan Chan", "url": "https://www.britannica.com/place/Chan-Chan" }
+    ]
+  },
+  {
+    "id": "tiwanaku",
+    "title": "티와나쿠",
+    "type": "place",
+    "historicalName": "티와나쿠",
+    "modernName": "티와나쿠 고고유적",
+    "modernAdmin": "라파스주 잉가비현 티와나쿠",
+    "country": "볼리비아",
+    "worldRegion": "안데스",
+    "period": "티와나쿠 문화",
+    "yearLabel": "5-12세기",
+    "coordinates": { "lat": -16.5547, "lng": -68.6733 },
+    "aliases": ["Tiwanaku", "Tiahuanaco", "Tiahuanacu", "Lake Titicaca", "Gateway of the Sun"],
+    "summary": "티와나쿠는 티티카카 호수 남쪽 고원의 정치·종교 중심지로, 칼라사사야, 아카파나, 태양의 문 같은 기념 구조와 광역 상징체계를 남겼다. 고원 농업, 라마 교역, 의례 네트워크를 통해 잉카 이전 안데스 고원 국가의 확장 방식을 보여준다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 티와나쿠 세계유산 좌표와 중심 유적권을 기준으로 표시했다.",
+    "curationBatch": "americas-andes-core-sites-v1",
+    "sources": [
+      { "title": "UNESCO: Tiwanaku", "url": "https://whc.unesco.org/en/list/567/" },
+      { "title": "World History Encyclopedia: Tiwanaku", "url": "https://www.worldhistory.org/Tiwanaku/" }
+    ]
+  },
+  {
+    "id": "cusco",
+    "title": "쿠스코",
+    "type": "place",
+    "historicalName": "쿠스코 / 코스코",
+    "modernName": "쿠스코 역사도시",
+    "modernAdmin": "쿠스코주 쿠스코",
+    "country": "페루",
+    "worldRegion": "안데스",
+    "period": "잉카 제국 / 타완틴수유",
+    "yearLabel": "13-16세기, 15세기 제국 수도",
+    "coordinates": { "lat": -13.5167, "lng": -71.9789 },
+    "aliases": ["Cusco", "Cuzco", "Qosqo", "Inca", "Tawantinsuyu", "Coricancha"],
+    "summary": "쿠스코는 잉카 제국 타완틴수유의 수도로, 왕궁, 코리칸차, 세케 의례 체계, 정교한 석축 도시 구조를 통해 안데스 제국 통치의 중심을 형성했다. 스페인 식민 도시가 잉카 기반 위에 겹쳐져 있어 정복 전후의 도시 층위가 함께 남아 있다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 쿠스코 도시 세계유산과 역사도심 중심 좌표를 기준으로 표시했다.",
+    "curationBatch": "americas-andes-core-sites-v1",
+    "sources": [
+      { "title": "UNESCO: City of Cuzco", "url": "https://whc.unesco.org/en/list/273/" },
+      { "title": "Britannica: Cuzco", "url": "https://www.britannica.com/place/Cuzco" }
+    ]
+  },
+  {
+    "id": "sacsayhuaman",
+    "title": "삭사이와만",
+    "type": "site",
+    "historicalName": "삭사이와만 / 삭사이우아만",
+    "modernName": "삭사이와만 고고공원",
+    "modernAdmin": "쿠스코주 쿠스코 북부",
+    "country": "페루",
+    "worldRegion": "안데스",
+    "period": "잉카 제국",
+    "yearLabel": "15-16세기",
+    "coordinates": { "lat": -13.5089, "lng": -71.9817 },
+    "aliases": ["Sacsayhuaman", "Saqsaywaman", "Saksaywaman", "Cusco", "Inca fortress"],
+    "summary": "삭사이와만은 쿠스코 북쪽 능선에 자리한 잉카의 거석 석축 복합체로, 방어·의례·왕권 상징 기능이 결합된 장소다. 정교하게 맞물린 거대한 석재와 쿠스코 도시 경관과의 관계는 잉카 건축 조직력과 수도 의례 질서를 이해하는 핵심 자료다.",
+    "confidence": "high",
+    "sourceNote": "삭사이와만 고고공원 중심부 좌표를 사용했으며, 쿠스코 세계유산권과 함께 해석한다.",
+    "curationBatch": "americas-andes-core-sites-v1",
+    "sources": [
+      { "title": "World History Encyclopedia: Sacsayhuaman", "url": "https://www.worldhistory.org/Sacsayhuaman/" },
+      { "title": "Britannica: Sacsayhuaman", "url": "https://www.britannica.com/place/Sacsayhuaman" },
+      { "title": "UNESCO: City of Cuzco", "url": "https://whc.unesco.org/en/list/273/" }
     ]
   }
 ]
