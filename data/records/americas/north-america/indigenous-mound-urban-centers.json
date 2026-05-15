@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 1,
+  "id": "americas-north-america-indigenous-mound-urban-centers",
+  "titleKo": "북미 원주민 mound와 도시 중심지 핵심 거점",
+  "curationBatch": "americas-north-america-indigenous-mound-urban-centers-v1",
+  "taxonomyFile": "data/taxonomy.json",
+  "appIndexFile": "data/entries.json",
+  "scope": {
+    "continentId": "americas",
+    "modernCountryIso2": "US",
+    "modernCountryKo": "미국",
+    "historicalRegionKo": "미시시피 강 유역, 남동부, 오하이오 계곡, 남서부 푸에블로권",
+    "cultureAreaKo": "고대기 후기·미시시피 문화·푸에블로 조상 문화·포트 에인션트권",
+    "periodBand": "prehistory-medieval",
+    "topicKo": "토목 mound, 의례 중심지, 광장형 도시, 절벽 주거, 장거리 교역, 조상 푸에블로와 미시시피 문화권"
+  },
+  "records": [
+    {
+      "id": "cahokia-mounds",
+      "title": "카호키아 마운즈",
+      "type": "site",
+      "historicalName": "카호키아",
+      "modernName": "카호키아 마운즈 주립사적지",
+      "modernAdmin": "일리노이주 콜린스빌 인근",
+      "country": "미국",
+      "worldRegion": "북아메리카",
+      "period": "미시시피 문화",
+      "yearLabel": "1050-1350년경 전성기",
+      "date": { "startYear": 900, "endYear": 1400, "precision": "approximate" },
+      "spatial": {
+        "continentId": "americas",
+        "modernCountryIso2": "US",
+        "historicalRegionKo": "미시시피 강 중류·아메리칸 보텀",
+        "cultureAreaKo": "미시시피 문화"
+      },
+      "classification": { "periodBand": "medieval", "selectionTier": "core" },
+      "coordinates": { "lat": 38.6551, "lng": -90.0618 },
+      "aliases": ["Cahokia", "Cahokia Mounds", "Monks Mound", "Mississippian culture", "American Bottom"],
+      "summary": "카호키아는 미시시피 강 동쪽 저지대에 형성된 북미 최대급 선콜럼버스 도시 중심지로, 몽크스 마운드와 광장, 목책, 수십 기의 mound가 복합적으로 배치되었다. 11-13세기 농업, 의례, 정치권력이 결합한 대규모 도시화와 광역 교역망을 보여준다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 카호키아 세계유산 좌표와 몽크스 마운드 중심 권역을 기준으로 표시했다.",
+      "curationBatch": "americas-north-america-indigenous-mound-urban-centers-v1",
+      "sources": [
+        { "title": "UNESCO: Cahokia Mounds State Historic Site", "url": "https://whc.unesco.org/en/list/198/" },
+        { "title": "World History Encyclopedia: Cahokia", "url": "https://www.worldhistory.org/Cahokia/" }
+      ]
+    },
+    {
+      "id": "chaco-canyon",
+      "title": "차코 캐니언",
+      "type": "site",
+      "historicalName": "차코 캐니언",
+      "modernName": "차코 문화 국립역사공원",
+      "modernAdmin": "뉴멕시코주 샌후안 카운티",
+      "country": "미국",
+      "worldRegion": "북아메리카",
+      "period": "조상 푸에블로 문화",
+      "yearLabel": "850-1250년경",
+      "date": { "startYear": 850, "endYear": 1250, "precision": "approximate" },
+      "spatial": {
+        "continentId": "americas",
+        "modernCountryIso2": "US",
+        "historicalRegionKo": "포 코너스·샌후안 분지",
+        "cultureAreaKo": "조상 푸에블로 문화"
+      },
+      "classification": { "periodBand": "medieval", "selectionTier": "core" },
+      "coordinates": { "lat": 36.0591, "lng": -107.9618 },
+      "aliases": ["Chaco Canyon", "Chaco Culture", "Pueblo Bonito", "Ancestral Pueblo", "Four Corners"],
+      "summary": "차코 캐니언은 포 코너스 지역의 조상 푸에블로 문화 중심지로, 푸에블로 보니토 같은 대형 건축, 도로망, 천문 정렬, 의례 공간이 집중되어 있다. 건조한 협곡 환경에서 의례·교역·정치적 네트워크가 어떻게 장거리로 조직되었는지 보여주는 핵심 유적이다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 차코 문화 세계유산과 NPS 차코 문화 국립역사공원 좌표를 기준으로 표시했다.",
+      "curationBatch": "americas-north-america-indigenous-mound-urban-centers-v1",
+      "sources": [
+        { "title": "UNESCO: Chaco Culture", "url": "https://whc.unesco.org/en/list/353/" },
+        { "title": "National Park Service: Chaco Culture World Heritage Site", "url": "https://www.nps.gov/articles/000/chaco-culture-world-heritage-site.htm" }
+      ]
+    },
+    {
+      "id": "mesa-verde",
+      "title": "메사 베르데",
+      "type": "site",
+      "historicalName": "메사 베르데",
+      "modernName": "메사 베르데 국립공원",
+      "modernAdmin": "콜로라도주 몬테주마 카운티",
+      "country": "미국",
+      "worldRegion": "북아메리카",
+      "period": "조상 푸에블로 문화",
+      "yearLabel": "6-13세기, 12-13세기 절벽 주거 전성기",
+      "date": { "startYear": 550, "endYear": 1300, "precision": "approximate" },
+      "spatial": {
+        "continentId": "americas",
+        "modernCountryIso2": "US",
+        "historicalRegionKo": "콜로라도 고원·포 코너스",
+        "cultureAreaKo": "조상 푸에블로 문화"
+      },
+      "classification": { "periodBand": "medieval", "selectionTier": "core" },
+      "coordinates": { "lat": 37.2309, "lng": -108.4618 },
+      "aliases": ["Mesa Verde", "Cliff Palace", "Ancestral Pueblo", "Mesa Verde National Park", "Four Corners"],
+      "summary": "메사 베르데는 조상 푸에블로 사람들이 메사 위와 절벽 아래에 남긴 주거·의례 복합 유적으로, 클리프 팰리스 같은 절벽 주거가 특히 잘 알려져 있다. 농경, 물 관리, 방어와 공동체 조직이 고원 환경 속에서 어떻게 변화했는지를 보여준다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 메사 베르데 국립공원 세계유산 좌표와 클리프 팰리스 권역을 기준으로 표시했다.",
+      "curationBatch": "americas-north-america-indigenous-mound-urban-centers-v1",
+      "sources": [
+        { "title": "UNESCO: Mesa Verde National Park", "url": "https://whc.unesco.org/en/list/27/" },
+        { "title": "National Park Service: Mesa Verde National Park", "url": "https://www.nps.gov/meve/index.htm" }
+      ]
+    },
+    {
+      "id": "poverty-point",
+      "title": "포버티 포인트",
+      "type": "site",
+      "historicalName": "포버티 포인트",
+      "modernName": "포버티 포인트 기념 토목 유적",
+      "modernAdmin": "루이지애나주 웨스트캐럴 패리시 엡스 인근",
+      "country": "미국",
+      "worldRegion": "북아메리카",
+      "period": "고대기 후기 포버티 포인트 문화",
+      "yearLabel": "기원전 1700-1100년경",
+      "date": { "startYear": -1700, "endYear": -1100, "precision": "approximate" },
+      "spatial": {
+        "continentId": "americas",
+        "modernCountryIso2": "US",
+        "historicalRegionKo": "미시시피 하류 계곡",
+        "cultureAreaKo": "포버티 포인트 문화"
+      },
+      "classification": { "periodBand": "prehistory", "selectionTier": "core" },
+      "coordinates": { "lat": 32.6367, "lng": -91.4115 },
+      "aliases": ["Poverty Point", "Monumental Earthworks of Poverty Point", "Lower Mississippi Valley", "Late Archaic"],
+      "summary": "포버티 포인트는 미시시피 하류의 고대기 후기 토목 복합 유적으로, 반원형 능선, mound, 광장이 계획적으로 조성되었다. 농경 도시가 본격화되기 전에도 대규모 노동 조직과 장거리 교환망이 존재했음을 보여주는 북미 선사 핵심 유적이다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 포버티 포인트 세계유산 좌표와 루이지애나 주립사적지 설명을 기준으로 표시했다.",
+      "curationBatch": "americas-north-america-indigenous-mound-urban-centers-v1",
+      "sources": [
+        { "title": "UNESCO: Monumental Earthworks of Poverty Point", "url": "https://whc.unesco.org/en/list/1435/" },
+        { "title": "National Park Service: Poverty Point National Monument", "url": "https://www.nps.gov/popo/index.htm" }
+      ]
+    },
+    {
+      "id": "serpent-mound",
+      "title": "서펀트 마운드",
+      "type": "site",
+      "historicalName": "그레이트 서펀트 마운드",
+      "modernName": "서펀트 마운드 주립기념지",
+      "modernAdmin": "오하이오주 애덤스 카운티 피블스 인근",
+      "country": "미국",
+      "worldRegion": "북아메리카",
+      "period": "포트 에인션트 또는 오하이오 계곡 mound 전통",
+      "yearLabel": "1120년경 추정, 편년 논쟁 있음",
+      "date": { "startYear": 1000, "endYear": 1200, "precision": "approximate" },
+      "spatial": {
+        "continentId": "americas",
+        "modernCountryIso2": "US",
+        "historicalRegionKo": "오하이오 계곡",
+        "cultureAreaKo": "오하이오 계곡 effigy mound 전통"
+      },
+      "classification": { "periodBand": "medieval", "selectionTier": "core" },
+      "coordinates": { "lat": 39.0250, "lng": -83.4308 },
+      "aliases": ["Serpent Mound", "Great Serpent Mound", "Fort Ancient", "Effigy mound", "Ohio Valley"],
+      "summary": "서펀트 마운드는 능선을 따라 뱀 형상으로 조성된 대형 effigy mound로, 북미 동부의 상징적 토목 의례 경관이다. 조성 주체와 편년에는 논쟁이 있지만, 오하이오 계곡 원주민 공동체가 지형과 천문·의례 상징을 결합해 만든 공간으로 중요하다.",
+      "confidence": "medium",
+      "sourceNote": "Ohio History Connection 관리 페이지와 UNESCO tentative list의 1120년경 편년 설명을 기준으로 표시했다.",
+      "curationBatch": "americas-north-america-indigenous-mound-urban-centers-v1",
+      "sources": [
+        { "title": "Ohio History Connection: Serpent Mound", "url": "https://www.ohiohistory.org/visit/browse-historical-sites/serpent-mound/" },
+        { "title": "UNESCO Tentative List: Serpent Mound", "url": "https://whc.unesco.org/en/tentativelists/5248/" },
+        { "title": "World History Encyclopedia: Serpent Mound", "url": "https://www.worldhistory.org/Serpent_Mound/" }
+      ]
+    },
+    {
+      "id": "etowah-mounds",
+      "title": "에토와 마운즈",
+      "type": "site",
+      "historicalName": "에토와",
+      "modernName": "에토와 인디언 마운즈 주립사적지",
+      "modernAdmin": "조지아주 바토 카운티 카터스빌 인근",
+      "country": "미국",
+      "worldRegion": "북아메리카",
+      "period": "남부 애팔래치아 미시시피 문화",
+      "yearLabel": "1000-1550년경",
+      "date": { "startYear": 1000, "endYear": 1550, "precision": "approximate" },
+      "spatial": {
+        "continentId": "americas",
+        "modernCountryIso2": "US",
+        "historicalRegionKo": "조지아 북서부 에토와 강 유역",
+        "cultureAreaKo": "남부 애팔래치아 미시시피 문화"
+      },
+      "classification": { "periodBand": "medieval", "selectionTier": "core" },
+      "coordinates": { "lat": 34.1264, "lng": -84.8089 },
+      "aliases": ["Etowah Mounds", "Etowah Indian Mounds", "South Appalachian Mississippian", "Cartersville", "Etowah River"],
+      "summary": "에토와 마운즈는 에토와 강가의 미시시피 문화권 중심지로, 평정 mound, 광장, 방어 도랑, 주거 구역과 의례 유물이 확인된다. 동남부 정치 중심지 사이의 경쟁과 교류, 동판·패각·석재 등 장거리 교역품의 이동을 이해하는 데 중요하다.",
+      "confidence": "high",
+      "sourceNote": "Georgia State Parks 공식 사적지와 New Georgia Encyclopedia 설명, 현 사적지 좌표를 기준으로 표시했다.",
+      "curationBatch": "americas-north-america-indigenous-mound-urban-centers-v1",
+      "sources": [
+        { "title": "Georgia State Parks: Etowah Indian Mounds", "url": "https://gastateparks.org/EtowahIndianMounds" },
+        { "title": "New Georgia Encyclopedia: Etowah Mounds", "url": "https://www.georgiaencyclopedia.org/articles/history-archaeology/etowah-mounds/" },
+        { "title": "World History Encyclopedia: Etowah Mounds", "url": "https://www.worldhistory.org/Etowah_Mounds/" }
+      ]
+    },
+    {
+      "id": "spiro-mounds",
+      "title": "스피로 마운즈",
+      "type": "site",
+      "historicalName": "스피로",
+      "modernName": "스피로 마운즈 고고학 센터",
+      "modernAdmin": "오클라호마주 르플로어 카운티 스피로 인근",
+      "country": "미국",
+      "worldRegion": "북아메리카",
+      "period": "카도계 미시시피 문화",
+      "yearLabel": "800-1450년경, 900-1300년 전성기",
+      "date": { "startYear": 800, "endYear": 1450, "precision": "approximate" },
+      "spatial": {
+        "continentId": "americas",
+        "modernCountryIso2": "US",
+        "historicalRegionKo": "아칸소 강 유역",
+        "cultureAreaKo": "카도계·미시시피 문화"
+      },
+      "classification": { "periodBand": "medieval", "selectionTier": "core" },
+      "coordinates": { "lat": 35.3070, "lng": -94.5687 },
+      "aliases": ["Spiro Mounds", "Spiro", "Craig Mound", "Caddoan Mississippian", "Arkansas River"],
+      "summary": "스피로 마운즈는 아칸소 강가의 카도계 미시시피 문화 중심지로, 12개 mound와 엘리트 거주지, 의례 유물이 알려져 있다. 조개·동판·석재·상징물의 분포는 걸프 해안에서 오대호와 대서양 연안까지 이어진 광역 교역·의례 네트워크를 보여준다.",
+      "confidence": "high",
+      "sourceNote": "Oklahoma Historical Society의 스피로 마운즈 고고학 센터 설명과 현 사적지 좌표를 기준으로 표시했다.",
+      "curationBatch": "americas-north-america-indigenous-mound-urban-centers-v1",
+      "sources": [
+        { "title": "Oklahoma Historical Society: Spiro Mounds Archaeological Center", "url": "https://www.okhistory.org/sites/spiromounds" },
+        { "title": "World History Encyclopedia: Ten Great Native American Mound Sites", "url": "https://www.worldhistory.org/article/1746/" }
+      ]
+    },
+    {
+      "id": "moundville",
+      "title": "마운드빌",
+      "type": "site",
+      "historicalName": "마운드빌",
+      "modernName": "마운드빌 고고학 공원",
+      "modernAdmin": "앨라배마주 헤일 카운티 마운드빌 인근",
+      "country": "미국",
+      "worldRegion": "북아메리카",
+      "period": "미시시피 문화",
+      "yearLabel": "1000-1450년경",
+      "date": { "startYear": 1000, "endYear": 1450, "precision": "approximate" },
+      "spatial": {
+        "continentId": "americas",
+        "modernCountryIso2": "US",
+        "historicalRegionKo": "블랙 워리어 강 유역",
+        "cultureAreaKo": "미시시피 문화"
+      },
+      "classification": { "periodBand": "medieval", "selectionTier": "core" },
+      "coordinates": { "lat": 33.0044, "lng": -87.6314 },
+      "aliases": ["Moundville", "Moundville Archaeological Park", "Black Warrior River", "Mississippian culture"],
+      "summary": "마운드빌은 블랙 워리어 강 절벽 위의 미시시피 문화권 대형 중심지로, 중앙 광장을 둘러싼 26기 이상의 mound와 목책, 주거·의례 공간이 확인된다. 카호키아 다음급 규모와 복합성을 지닌 남동부 정치·종교 중심지로 평가된다.",
+      "confidence": "high",
+      "sourceNote": "University of Alabama Museums의 고대 유적 설명과 마운드빌 고고학 공원 좌표를 기준으로 표시했다.",
+      "curationBatch": "americas-north-america-indigenous-mound-urban-centers-v1",
+      "sources": [
+        { "title": "University of Alabama Museums: Moundville Ancient Site", "url": "https://moundville.museums.ua.edu/ancient-site/" },
+        { "title": "Encyclopedia of Alabama: Moundville Archaeological Park", "url": "https://encyclopediaofalabama.org/article/moundville-archaeological-park/" },
+        { "title": "World History Encyclopedia: Moundville", "url": "https://www.worldhistory.org/moundville/" }
+      ]
+    }
+  ]
+}

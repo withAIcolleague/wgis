@@ -473,6 +473,35 @@
         "World History Encyclopedia references for Timur and the Silk Road",
         "Britannica references for Samarkand, Bukhara, Merv, Khiva, Kashgar, and Dunhuang"
       ]
+    },
+    {
+      "id": "americas-north-america-indigenous-mound-urban-centers-v1",
+      "status": "completed",
+      "completedAt": "2026-05-15",
+      "continentId": "americas",
+      "countryIso2": "US",
+      "countryKo": "미국",
+      "worldRegion": "북아메리카",
+      "focusKo": "북미 원주민 mound와 도시 중심지 핵심 거점",
+      "scopeKo": "토목 mound, 의례 중심지, 광장형 도시, 절벽 주거, 장거리 교역, 조상 푸에블로와 미시시피 문화권",
+      "sourceFile": "data/records/americas/north-america/indigenous-mound-urban-centers.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "cahokia-mounds",
+        "chaco-canyon",
+        "mesa-verde",
+        "poverty-point",
+        "serpent-mound",
+        "etowah-mounds",
+        "spiro-mounds",
+        "moundville"
+      ],
+      "sourceBasis": [
+        "UNESCO World Heritage pages for Cahokia Mounds, Chaco Culture, Mesa Verde, and Poverty Point",
+        "Ohio History Connection and UNESCO Tentative List references for Serpent Mound",
+        "Georgia State Parks, New Georgia Encyclopedia, Oklahoma Historical Society, and University of Alabama Museums official references",
+        "World History Encyclopedia references for Cahokia, Serpent Mound, Etowah Mounds, Moundville, and Native American mound sites"
+      ]
     }
   ]
 }

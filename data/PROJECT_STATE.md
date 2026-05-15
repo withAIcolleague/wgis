@@ -11,9 +11,9 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 146
-- Completed curation batches: 16
-- Latest completed batch: `asia-central-asia-silk-road-oasis-cities-v1`
+- Current entry count: 154
+- Completed curation batches: 17
+- Latest completed batch: `americas-north-america-indigenous-mound-urban-centers-v1`
 - Latest completed infrastructure milestone: `a28681f Add data validation script`
 - Data validation script: `scripts/validate-data.js`
 
@@ -264,6 +264,20 @@ The long-term target is 3,000+ entries, but the project should progress one focu
     - `turfan-gaochang`
     - `dunhuang-mogao-caves`
 
+- North American Indigenous mound and urban centers batch
+  - Batch ID: `americas-north-america-indigenous-mound-urban-centers-v1`
+  - Source file: `data/records/americas/north-america/indigenous-mound-urban-centers.json`
+  - Entries added: 8
+  - Entry IDs:
+    - `cahokia-mounds`
+    - `chaco-canyon`
+    - `mesa-verde`
+    - `poverty-point`
+    - `serpent-mound`
+    - `etowah-mounds`
+    - `spiro-mounds`
+    - `moundville`
+
 ## Current Policy
 
 - Work on DB only unless the user explicitly asks for UI changes.
@@ -301,13 +315,13 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. North American Indigenous mound and urban centers
-   - Possible source file: `data/records/americas/north-america/indigenous-mound-urban-centers.json`
-   - Likely entries: Cahokia, Chaco Canyon, Mesa Verde, Poverty Point, Serpent Mound, Etowah, Spiro, Moundville
-
-2. Oceania Lapita and Pacific settlement core sites
+1. Oceania Lapita and Pacific settlement core sites
    - Possible source file: `data/records/oceania/pacific/lapita-pacific-settlement-core-sites.json`
    - Likely entries: Lapita sites of New Caledonia, Vanuatu, Tonga, Samoa, Teouma, Talepakemalai, Nan Madol, Rapa Nui
+
+2. European medieval trade and urban networks
+   - Possible source file: `data/records/europe/medieval/medieval-trade-urban-networks.json`
+   - Likely entries: Venice, Genoa, Bruges, Lübeck, Novgorod, Visby, Bergen Bryggen, Dubrovnik
 
 ## Resume Checklist
 
