@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 1,
+  "id": "asia-southeast-asia-early-states-temple-networks",
+  "titleKo": "동남아 초기 국가와 사원 네트워크 핵심 거점",
+  "curationBatch": "asia-southeast-asia-early-states-temple-networks-v1",
+  "taxonomyFile": "data/taxonomy.json",
+  "appIndexFile": "data/entries.json",
+  "scope": {
+    "continentId": "asia",
+    "modernCountryIso2": "VN-KH-ID-MM-TH",
+    "modernCountryKo": "베트남·캄보디아·인도네시아·미얀마·태국",
+    "historicalRegionKo": "동남아시아",
+    "cultureAreaKo": "푸난·참파·크메르·자바·버마·타이 문화권",
+    "periodBand": "ancient-medieval-early-modern",
+    "topicKo": "해상 교역 거점, 힌두·불교 사원 네트워크, 크메르·자바·버마·타이 초기 국가와 수도"
+  },
+  "records": [
+    {
+      "id": "oc-eo",
+      "title": "옥에오",
+      "type": "place",
+      "historicalName": "옥에오 / 바테",
+      "modernName": "옥에오-바테 고고유적",
+      "modernAdmin": "안장성 토아이선현 옥에오·바테산 권역",
+      "country": "베트남",
+      "worldRegion": "동남아시아",
+      "period": "푸난 / 초기 해상 교역",
+      "yearLabel": "1-7세기",
+      "date": { "startYear": 100, "endYear": 700, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "VN",
+        "historicalRegionKo": "메콩 델타",
+        "cultureAreaKo": "푸난·옥에오 문화권"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 10.2546, "lng": 105.1514 },
+      "aliases": ["Oc Eo", "Óc Eo", "Ba The", "Funan", "Mekong Delta"],
+      "summary": "옥에오는 메콩 델타의 초기 도시·항만 네트워크를 보여주는 푸난 관련 고고유적이다. 운하, 생산지, 묘역, 인도양·남중국해 교역품은 동남아가 중국, 인도, 페르시아만, 지중해를 잇는 해상 교역망에 일찍 편입되었음을 보여준다.",
+      "confidence": "approximate",
+      "sourceNote": "UNESCO 잠정목록의 옥에오-바테 유적 설명과 바테산·옥에오 권역 공개 좌표를 기준으로 표시했다.",
+      "curationBatch": "asia-southeast-asia-early-states-temple-networks-v1",
+      "sources": [
+        { "title": "UNESCO Tentative List: Oc Eo - Ba The archaeological site", "url": "https://whc.unesco.org/en/tentativelists/6572/" },
+        { "title": "Britannica: Funan", "url": "https://www.britannica.com/place/Funan" }
+      ]
+    },
+    {
+      "id": "my-son",
+      "title": "미선",
+      "type": "site",
+      "historicalName": "미선",
+      "modernName": "미선 성역",
+      "modernAdmin": "꽝남성 주이쑤옌현",
+      "country": "베트남",
+      "worldRegion": "동남아시아",
+      "period": "참파 왕국",
+      "yearLabel": "4-13세기",
+      "date": { "startYear": 300, "endYear": 1300, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "VN",
+        "historicalRegionKo": "베트남 중부 해안",
+        "cultureAreaKo": "참파·힌두 사원 문화권"
+      },
+      "classification": { "periodBand": "medieval", "selectionTier": "core" },
+      "coordinates": { "lat": 15.7650, "lng": 108.1220 },
+      "aliases": ["My Son", "Mỹ Sơn", "Mi Son", "Champa", "Cham"],
+      "summary": "미선은 참파 왕국의 종교·정치 중심지였던 힌두 사원군으로, 벽돌 탑사원과 시바 숭배 전통을 통해 인도양 문화 요소가 베트남 중부 해안 국가와 결합된 모습을 보여준다. 4세기부터 13세기까지 이어진 참파 왕권의 장기적 성역이다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 미선 성역 세계유산 좌표와 중심 유적권을 기준으로 표시했다.",
+      "curationBatch": "asia-southeast-asia-early-states-temple-networks-v1",
+      "sources": [
+        { "title": "UNESCO: My Son Sanctuary", "url": "https://whc.unesco.org/en/list/949/" },
+        { "title": "World History Encyclopedia: Champa Civilization", "url": "https://www.worldhistory.org/Champa_Civilization/" }
+      ]
+    },
+    {
+      "id": "angkor",
+      "title": "앙코르",
+      "type": "place",
+      "historicalName": "야소다라푸라 / 앙코르",
+      "modernName": "앙코르 고고공원",
+      "modernAdmin": "시엠레아프주 시엠레아프 북부",
+      "country": "캄보디아",
+      "worldRegion": "동남아시아",
+      "period": "크메르 제국",
+      "yearLabel": "9-15세기",
+      "date": { "startYear": 800, "endYear": 1431, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "KH",
+        "historicalRegionKo": "톤레사프 북부 평원",
+        "cultureAreaKo": "크메르·힌두-불교 도시권"
+      },
+      "classification": { "periodBand": "medieval", "selectionTier": "core" },
+      "coordinates": { "lat": 13.4125, "lng": 103.8667 },
+      "aliases": ["Angkor", "Angkor Wat", "Angkor Thom", "Khmer Empire", "Yasodharapura"],
+      "summary": "앙코르는 크메르 제국의 수도권이자 사원·수리 시설·도로망이 결합된 거대한 도시 경관이다. 앙코르와트, 앙코르톰, 바라이와 운하 체계는 왕권, 힌두·불교 의례, 농업 수자원 관리가 하나의 제국적 공간으로 조직된 방식을 보여준다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 앙코르 세계유산과 앙코르와트·앙코르톰 권역 중심 좌표를 기준으로 표시했다.",
+      "curationBatch": "asia-southeast-asia-early-states-temple-networks-v1",
+      "sources": [
+        { "title": "UNESCO: Angkor", "url": "https://whc.unesco.org/en/list/668/" },
+        { "title": "World History Encyclopedia: Angkor Wat", "url": "https://www.worldhistory.org/Angkor_Wat/" }
+      ]
+    },
+    {
+      "id": "borobudur",
+      "title": "보로부두르",
+      "type": "site",
+      "historicalName": "보로부두르",
+      "modernName": "보로부두르 사원군",
+      "modernAdmin": "중부자와주 마글랑현",
+      "country": "인도네시아",
+      "worldRegion": "동남아시아",
+      "period": "샤일렌드라 왕조 / 고전 자바",
+      "yearLabel": "8-9세기",
+      "date": { "startYear": 750, "endYear": 850, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "ID",
+        "historicalRegionKo": "중부 자바 케두 평원",
+        "cultureAreaKo": "자바 불교 사원 문화권"
+      },
+      "classification": { "periodBand": "medieval", "selectionTier": "core" },
+      "coordinates": { "lat": -7.6079, "lng": 110.2038 },
+      "aliases": ["Borobudur", "Candi Borobudur", "Sailendra", "Central Java", "Mendut", "Pawon"],
+      "summary": "보로부두르는 중부 자바의 거대한 불교 만다라형 기념물로, 계단식 기단, 원형 테라스, 스투파, 방대한 부조가 우주론과 순례 동선을 결합한다. 샤일렌드라 왕조기의 종교 후원과 자바 내 불교·힌두 정치문화의 경쟁과 공존을 보여준다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 보로부두르 사원군 세계유산 좌표와 주 사원 중심 좌표를 기준으로 표시했다.",
+      "curationBatch": "asia-southeast-asia-early-states-temple-networks-v1",
+      "sources": [
+        { "title": "UNESCO: Borobudur Temple Compounds", "url": "https://whc.unesco.org/en/list/592/" },
+        { "title": "World History Encyclopedia: Borobudur", "url": "https://www.worldhistory.org/Borobudur/" }
+      ]
+    },
+    {
+      "id": "prambanan",
+      "title": "프람바난",
+      "type": "site",
+      "historicalName": "로로 종그랑 / 프람바난",
+      "modernName": "프람바난 사원군",
+      "modernAdmin": "욕야카르타 특별주·중부자와주 경계",
+      "country": "인도네시아",
+      "worldRegion": "동남아시아",
+      "period": "고전 자바 / 마타람 왕국",
+      "yearLabel": "9-10세기",
+      "date": { "startYear": 850, "endYear": 1000, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "ID",
+        "historicalRegionKo": "중부 자바 프람바난 평원",
+        "cultureAreaKo": "자바 힌두·불교 사원 문화권"
+      },
+      "classification": { "periodBand": "medieval", "selectionTier": "core" },
+      "coordinates": { "lat": -7.7520, "lng": 110.4915 },
+      "aliases": ["Prambanan", "Loro Jonggrang", "Candi Prambanan", "Sanjaya", "Ramayana"],
+      "summary": "프람바난은 자바 고전기의 대표 힌두 사원군으로, 시바·비슈누·브라흐마 신전과 라마야나 부조, 주변 불교 사원군이 함께 분포한다. 보로부두르와 더불어 중부 자바에서 힌두·불교 왕권과 건축 기술이 교차한 핵심 장소다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 프람바난 사원군 세계유산 좌표와 로로 종그랑 중심 유적권을 기준으로 표시했다.",
+      "curationBatch": "asia-southeast-asia-early-states-temple-networks-v1",
+      "sources": [
+        { "title": "UNESCO: Prambanan Temple Compounds", "url": "https://whc.unesco.org/en/list/642/" },
+        { "title": "World History Encyclopedia: Prambanan", "url": "https://www.worldhistory.org/Prambanan/" }
+      ]
+    },
+    {
+      "id": "bagan",
+      "title": "바간",
+      "type": "place",
+      "historicalName": "파간 / 바간",
+      "modernName": "바간 고고지대",
+      "modernAdmin": "만달레이주 냐웅우현",
+      "country": "미얀마",
+      "worldRegion": "동남아시아",
+      "period": "파간 왕국",
+      "yearLabel": "11-13세기",
+      "date": { "startYear": 1000, "endYear": 1300, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "MM",
+        "historicalRegionKo": "이라와디강 중류 평원",
+        "cultureAreaKo": "버마·상좌부 불교 왕국"
+      },
+      "classification": { "periodBand": "medieval", "selectionTier": "core" },
+      "coordinates": { "lat": 21.1717, "lng": 94.8585 },
+      "aliases": ["Bagan", "Pagan", "Pagan Kingdom", "Ayeyarwady", "Ananda Temple"],
+      "summary": "바간은 이라와디강 중류의 파간 왕국 수도권으로, 수천 기의 사원, 스투파, 수도원과 벽화가 밀집한 불교 성지 경관이다. 11-13세기 버마 왕권이 상좌부 불교 후원과 평원 농업·교역을 통해 지역 제국을 형성한 과정을 보여준다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 바간 세계유산과 중심 사원군 권역 좌표를 기준으로 표시했다.",
+      "curationBatch": "asia-southeast-asia-early-states-temple-networks-v1",
+      "sources": [
+        { "title": "UNESCO: Bagan", "url": "https://whc.unesco.org/en/list/1588/" },
+        { "title": "Britannica: Bagan", "url": "https://www.britannica.com/place/Bagan" }
+      ]
+    },
+    {
+      "id": "sukhothai",
+      "title": "수코타이",
+      "type": "place",
+      "historicalName": "수코타이",
+      "modernName": "수코타이 역사도시",
+      "modernAdmin": "수코타이주 무앙수코타이현",
+      "country": "태국",
+      "worldRegion": "동남아시아",
+      "period": "수코타이 왕국",
+      "yearLabel": "13-15세기",
+      "date": { "startYear": 1238, "endYear": 1438, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "TH",
+        "historicalRegionKo": "태국 중북부 욤강 유역",
+        "cultureAreaKo": "타이·상좌부 불교 도시권"
+      },
+      "classification": { "periodBand": "medieval", "selectionTier": "core" },
+      "coordinates": { "lat": 17.0190, "lng": 99.7030 },
+      "aliases": ["Sukhothai", "Sukhothai Historical Park", "Si Satchanalai", "Kamphaeng Phet", "Ramkhamhaeng"],
+      "summary": "수코타이는 초기 타이 왕국의 수도로, 불교 사원, 성벽 도시, 저수지, 비문 전통을 통해 타이 정치문화와 상좌부 불교 미술의 초기 형성을 보여준다. 시 삿차날라이와 깜팽펫까지 이어지는 연속 유산은 수코타이 문화권의 도시 네트워크를 이해하게 한다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 수코타이 역사도시 세계유산 중 수코타이 역사공원 중심 좌표를 사용했다.",
+      "curationBatch": "asia-southeast-asia-early-states-temple-networks-v1",
+      "sources": [
+        { "title": "UNESCO: Historic Town of Sukhothai and Associated Historic Towns", "url": "https://whc.unesco.org/en/list/574/" },
+        { "title": "World History Encyclopedia: Sukhothai", "url": "https://www.worldhistory.org/Sukhothai/" },
+        { "title": "Britannica: Sukhothai", "url": "https://www.britannica.com/place/Sukhothai" }
+      ]
+    },
+    {
+      "id": "ayutthaya",
+      "title": "아유타야",
+      "type": "place",
+      "historicalName": "아유타야",
+      "modernName": "아유타야 역사도시",
+      "modernAdmin": "프라나콘시아유타야주 아유타야",
+      "country": "태국",
+      "worldRegion": "동남아시아",
+      "period": "아유타야 왕국",
+      "yearLabel": "1350-1767년",
+      "date": { "startYear": 1350, "endYear": 1767, "precision": "range" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "TH",
+        "historicalRegionKo": "차오프라야강 하류",
+        "cultureAreaKo": "시암·상좌부 불교·해상 교역권"
+      },
+      "classification": { "periodBand": "early-modern", "selectionTier": "core" },
+      "coordinates": { "lat": 14.3556, "lng": 100.5586 },
+      "aliases": ["Ayutthaya", "Ayudhya", "Siam", "Phra Nakhon Si Ayutthaya", "Ayutthaya Kingdom"],
+      "summary": "아유타야는 수코타이 이후 시암의 두 번째 수도로, 차오프라야강 하류의 섬 도시에서 동서 교역과 외교를 연결한 국제적 왕도였다. 거대한 프랑, 불교 수도원, 운하·도로 체계와 1767년 파괴 이후의 폐허는 동남아 초기 근세 도시의 규모와 취약성을 함께 보여준다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 아유타야 역사도시 세계유산과 역사공원 중심 좌표를 기준으로 표시했다.",
+      "curationBatch": "asia-southeast-asia-early-states-temple-networks-v1",
+      "sources": [
+        { "title": "UNESCO: Historic City of Ayutthaya", "url": "https://whc.unesco.org/en/list/576/" },
+        { "title": "World History Encyclopedia: Ayutthaya: Venice of the East", "url": "https://www.worldhistory.org/article/1548/ayutthaya-venice-of-the-east/" },
+        { "title": "Britannica: Ayutthaya", "url": "https://www.britannica.com/place/Ayutthaya-Thailand" }
+      ]
+    }
+  ]
+}

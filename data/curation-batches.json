@@ -357,6 +357,35 @@
         "Britannica references for Moche, Chan Chan, Cuzco, and Sacsayhuaman",
         "Huacas de Moche project reference for the Moche ceremonial complex"
       ]
+    },
+    {
+      "id": "asia-southeast-asia-early-states-temple-networks-v1",
+      "status": "completed",
+      "completedAt": "2026-05-15",
+      "continentId": "asia",
+      "countryIso2": "VN-KH-ID-MM-TH",
+      "countryKo": "베트남·캄보디아·인도네시아·미얀마·태국",
+      "worldRegion": "동남아시아",
+      "focusKo": "동남아 초기 국가와 사원 네트워크 핵심 거점",
+      "scopeKo": "메콩 델타 초기 해상 교역, 참파·크메르·자바·버마·타이 왕국의 힌두·불교 사원 네트워크와 수도권",
+      "sourceFile": "data/records/asia/southeast-asia/early-states-temple-networks.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "oc-eo",
+        "my-son",
+        "angkor",
+        "borobudur",
+        "prambanan",
+        "bagan",
+        "sukhothai",
+        "ayutthaya"
+      ],
+      "sourceBasis": [
+        "UNESCO World Heritage pages for My Son, Angkor, Borobudur, Prambanan, Bagan, Sukhothai, and Ayutthaya",
+        "UNESCO Tentative List page for Oc Eo - Ba The archaeological site",
+        "World History Encyclopedia references for Champa, Angkor Wat, Borobudur, Prambanan, Sukhothai, and Ayutthaya",
+        "Britannica references for Funan, Bagan, Sukhothai, and Ayutthaya"
+      ]
     }
   ]
 }

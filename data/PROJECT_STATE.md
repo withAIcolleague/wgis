@@ -11,9 +11,9 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 115
-- Completed curation batches: 12
-- Latest completed batch: `americas-andes-core-sites-v1`
+- Current entry count: 122
+- Completed curation batches: 13
+- Latest completed batch: `asia-southeast-asia-early-states-temple-networks-v1`
 - Latest completed infrastructure milestone: `a28681f Add data validation script`
 - Data validation script: `scripts/validate-data.js`
 
@@ -208,6 +208,20 @@ The long-term target is 3,000+ entries, but the project should progress one focu
     - `machu-picchu`
     - `sacsayhuaman`
 
+- Southeast Asian early states and temple networks batch
+  - Batch ID: `asia-southeast-asia-early-states-temple-networks-v1`
+  - Source file: `data/records/asia/southeast-asia/early-states-temple-networks.json`
+  - Entries added: 7 new entries plus 1 existing entry upgraded and linked to the batch
+  - Entry IDs:
+    - `oc-eo`
+    - `my-son`
+    - `angkor`
+    - `borobudur`
+    - `prambanan`
+    - `bagan`
+    - `sukhothai`
+    - `ayutthaya`
+
 ## Current Policy
 
 - Work on DB only unless the user explicitly asks for UI changes.
@@ -245,13 +259,13 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Southeast Asian early states and temple networks
-   - Possible source file: `data/records/asia/southeast-asia/early-states-temple-networks.json`
-   - Likely entries: Oc Eo, My Son, Angkor, Borobudur, Prambanan, Pagan, Sukhothai, Ayutthaya
-
-2. Mesoamerican second batch: Maya lowland and Postclassic networks
+1. Mesoamerican second batch: Maya lowland and Postclassic networks
    - Possible source file: `data/records/americas/mesoamerica/maya-postclassic-networks.json`
    - Likely entries: Palenque, Copan, Uxmal, Mayapan, Coba, Bonampak, Yaxchilan, Tulum
+
+2. East African Swahili coast trade cities
+   - Possible source file: `data/records/africa/east-africa/swahili-coast-trade-cities.json`
+   - Likely entries: Kilwa Kisiwani, Songo Mnara, Mombasa, Gedi, Lamu, Zanzibar Stone Town, Sofala, Great Zimbabwe
 
 ## Resume Checklist
 
