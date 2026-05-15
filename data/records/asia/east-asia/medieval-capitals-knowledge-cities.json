@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "id": "asia-east-asia-medieval-capitals-knowledge-cities",
+  "titleKo": "동아시아 중세 수도와 지식도시 핵심 거점",
+  "curationBatch": "asia-east-asia-medieval-capitals-knowledge-cities-v1",
+  "taxonomyFile": "data/taxonomy.json",
+  "appIndexFile": "data/entries.json",
+  "scope": {
+    "continentId": "asia",
+    "modernCountryIso2": "CN-JP-KR-KP",
+    "modernCountryKo": "중국·일본·대한민국·북한",
+    "historicalRegionKo": "중국 중원·강남, 일본 야마토·교토 분지, 한반도 신라·고려 수도권",
+    "cultureAreaKo": "동아시아 왕조 수도·불교·유교 관학·출판·도성 계획 네트워크",
+    "periodBand": "medieval",
+    "topicKo": "왕조 수도, 도성 계획, 관학과 과거제, 불교 사원·석굴, 목판·인쇄, 외교와 조공 교류"
+  },
+  "records": [
+    {
+      "id": "changan-xian",
+      "title": "장안",
+      "type": "place",
+      "historicalName": "장안",
+      "modernName": "시안",
+      "modernAdmin": "산시성 시안시",
+      "country": "중국",
+      "worldRegion": "동아시아",
+      "period": "한·수·당 수도",
+      "yearLabel": "전한·수·당 수도, 7-9세기 당 장안 전성기",
+      "date": { "startYear": -202, "endYear": 907, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "CN",
+        "historicalRegionKo": "관중 평원·위수 유역",
+        "cultureAreaKo": "중국 제국 수도·실크로드 동단"
+      },
+      "classification": { "periodBand": "medieval", "selectionTier": "core" },
+      "coordinates": { "lat": 34.3416, "lng": 108.9398 },
+      "aliases": ["長安", "Chang'an", "Changan", "Xi'an", "Daming Palace"],
+      "summary": "장안은 한·수·당 제국의 대표 수도로, 관중 평원에서 중앙아시아와 중국 내륙을 연결한 실크로드 동쪽 출발점이었다. 격자형 도성, 궁성, 사원, 시장과 외국인 거주지는 당대 동아시아 국제도시의 규모와 불교·상업·관료제 네트워크를 보여준다.",
+      "confidence": "high",
+      "sourceNote": "현재 시안 도심과 당 장안 도성권을 기준으로 표시했다.",
+      "curationBatch": "asia-east-asia-medieval-capitals-knowledge-cities-v1",
+      "sources": [
+        { "title": "UNESCO: Silk Roads - the Routes Network of Chang'an-Tianshan Corridor", "url": "https://whc.unesco.org/en/list/1442/" },
+        { "title": "UNESCO Silk Roads Programme: Xi'an", "url": "https://en.unesco.org/silkroad/content/xian" },
+        { "title": "Britannica: Xi'an", "url": "https://www.britannica.com/place/Xian-China" }
+      ]
+    },
+    {
+      "id": "luoyang",
+      "title": "뤄양",
+      "type": "place",
+      "historicalName": "낙양 / 뤄양",
+      "modernName": "뤄양",
+      "modernAdmin": "허난성 뤄양시",
+      "country": "중국",
+      "worldRegion": "동아시아",
+      "period": "동주·후한·북위·수당 동도",
+      "yearLabel": "여러 왕조 수도, 5-8세기 불교·수당 동도 중심",
+      "date": { "startYear": -770, "endYear": 907, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "CN",
+        "historicalRegionKo": "허난 중부·이허와 뤄허 유역",
+        "cultureAreaKo": "중국 고도·불교 석굴·중원 학문권"
+      },
+      "classification": { "periodBand": "medieval", "selectionTier": "core" },
+      "coordinates": { "lat": 34.6197, "lng": 112.4540 },
+      "aliases": ["Luoyang", "洛阳", "洛陽", "Loyang", "Longmen Grottoes"],
+      "summary": "뤄양은 동주 이후 여러 왕조의 수도였고, 후한·북위·수당 시기에는 장안과 함께 중원 정치와 불교 문화의 중심지였다. 남쪽의 룽먼석굴은 북위가 수도를 뤄양으로 옮긴 뒤 조성된 대규모 불교 조각 경관으로, 왕조 후원과 국제 불교 양식의 변화를 보여준다.",
+      "confidence": "high",
+      "sourceNote": "현대 뤄양 도심 좌표를 기준으로 표시하고, 주요 문화유산은 남쪽 룽먼석굴 권역과 연결했다.",
+      "curationBatch": "asia-east-asia-medieval-capitals-knowledge-cities-v1",
+      "sources": [
+        { "title": "UNESCO: Longmen Grottoes", "url": "https://whc.unesco.org/en/list/1003/" },
+        { "title": "Britannica: Luoyang", "url": "https://www.britannica.com/place/Luoyang" },
+        { "title": "UNESCO: Silk Roads - the Routes Network of Chang'an-Tianshan Corridor", "url": "https://whc.unesco.org/en/list/1442/" }
+      ]
+    },
+    {
+      "id": "kaifeng",
+      "title": "카이펑",
+      "type": "place",
+      "historicalName": "변량 / 변경 / 카이펑",
+      "modernName": "카이펑",
+      "modernAdmin": "허난성 카이펑시",
+      "country": "중국",
+      "worldRegion": "동아시아",
+      "period": "북송 수도",
+      "yearLabel": "960-1127년 북송 수도",
+      "date": { "startYear": 960, "endYear": 1127, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "CN",
+        "historicalRegionKo": "황허 남안·화북 평원",
+        "cultureAreaKo": "북송 도시상업·인쇄·관료제 문화권"
+      },
+      "classification": { "periodBand": "medieval", "selectionTier": "core" },
+      "coordinates": { "lat": 34.7973, "lng": 114.3076 },
+      "aliases": ["Kaifeng", "Bianjing", "Bianliang", "Northern Song capital", "Qingming Shanghe Tu"],
+      "summary": "카이펑은 북송의 수도 변경으로, 운하와 황허 수계를 통해 곡물과 물자가 집중된 동아시아 최대 상업 도시 중 하나였다. 궁성, 시장, 인쇄·서적 유통, 도시 소비문화와 관료제는 중세 중국의 지식과 경제가 수도 공간에서 결합한 모습을 보여준다.",
+      "confidence": "high",
+      "sourceNote": "현대 카이펑 도심 좌표를 기준으로 표시했다.",
+      "curationBatch": "asia-east-asia-medieval-capitals-knowledge-cities-v1",
+      "sources": [
+        { "title": "Britannica: Kaifeng", "url": "https://www.britannica.com/place/Kaifeng" },
+        { "title": "Britannica: Song dynasty", "url": "https://www.britannica.com/topic/Song-dynasty" }
+      ]
+    },
+    {
+      "id": "nanjing",
+      "title": "난징",
+      "type": "place",
+      "historicalName": "건업 / 건강 / 응천부 / 난징",
+      "modernName": "난징",
+      "modernAdmin": "장쑤성 난징시",
+      "country": "중국",
+      "worldRegion": "동아시아",
+      "period": "육조·남당·명 초기 수도",
+      "yearLabel": "3-6세기 남조 수도, 1368-1420년 명 수도",
+      "date": { "startYear": 229, "endYear": 1420, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "CN",
+        "historicalRegionKo": "양쯔강 하류·강남",
+        "cultureAreaKo": "강남 수도·불교·명 초기 관료제 문화권"
+      },
+      "classification": { "periodBand": "medieval", "selectionTier": "core" },
+      "coordinates": { "lat": 32.0603, "lng": 118.7969 },
+      "aliases": ["Nanjing", "Nanking", "Jiankang", "Yingtianfu", "Ming Xiaoling"],
+      "summary": "난징은 육조의 건강과 명 초기 응천부를 거치며 강남 정치·문학·불교·관료제의 중심지였다. 명 태조 주원장의 샤오링 능과 거대한 성벽은 14세기 말 중국 제국 수도 계획과 장례·권력 상징이 결합한 공간을 보여준다.",
+      "confidence": "high",
+      "sourceNote": "현대 난징 도심 좌표를 기준으로 표시하고, 명 샤오링 능 세계유산 권역을 주요 참조점으로 삼았다.",
+      "curationBatch": "asia-east-asia-medieval-capitals-knowledge-cities-v1",
+      "sources": [
+        { "title": "Britannica: Nanjing", "url": "https://www.britannica.com/place/Nanjing-China" },
+        { "title": "UNESCO: Imperial Tombs of the Ming and Qing Dynasties", "url": "https://whc.unesco.org/en/list/1004/" },
+        { "title": "China.org.cn: Nanjing - Ancient Dynastic Capital", "url": "https://www.china.org.cn/english/chuangye/41803.htm" }
+      ]
+    },
+    {
+      "id": "heian-kyo",
+      "title": "헤이안쿄",
+      "type": "place",
+      "historicalName": "헤이안쿄",
+      "modernName": "교토",
+      "modernAdmin": "교토부 교토시",
+      "country": "일본",
+      "worldRegion": "동아시아",
+      "period": "헤이안 시대·교토 조정",
+      "yearLabel": "794년 천도, 794-1185년 헤이안 시대 중심",
+      "date": { "startYear": 794, "endYear": 1185, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "JP",
+        "historicalRegionKo": "야마시로 분지·가모 강 유역",
+        "cultureAreaKo": "일본 궁정문화·불교·정원·문학 전통"
+      },
+      "classification": { "periodBand": "medieval", "selectionTier": "core" },
+      "coordinates": { "lat": 35.0116, "lng": 135.7681 },
+      "aliases": ["平安京", "Heian-kyo", "Kyoto", "Heian capital", "Ancient Kyoto"],
+      "summary": "헤이안쿄는 794년 일본 조정이 세운 계획 수도로, 중국식 도성 모델을 받아들이면서도 일본 궁정문화와 불교, 정원, 문학 전통을 장기적으로 형성했다. 교토·우지·오쓰의 사원과 정원 유산은 8-17세기 일본 건축과 조경의 발전을 보여준다.",
+      "confidence": "high",
+      "sourceNote": "현재 교토 도심과 헤이안쿄 중심 권역 좌표를 기준으로 표시했다.",
+      "curationBatch": "asia-east-asia-medieval-capitals-knowledge-cities-v1",
+      "sources": [
+        { "title": "UNESCO: Historic Monuments of Ancient Kyoto", "url": "https://whc.unesco.org/en/list/688/" },
+        { "title": "Japan National Tourism Organization: Historic Monuments of Ancient Kyoto", "url": "https://www.japan.travel/en/world-heritage/historic-monuments-of-ancient-kyoto/" },
+        { "title": "Britannica: Kyoto", "url": "https://www.britannica.com/place/Kyoto-Japan" }
+      ]
+    },
+    {
+      "id": "nara",
+      "title": "나라",
+      "type": "place",
+      "historicalName": "헤이조쿄 / 나라",
+      "modernName": "나라",
+      "modernAdmin": "나라현 나라시",
+      "country": "일본",
+      "worldRegion": "동아시아",
+      "period": "나라 시대",
+      "yearLabel": "710-784년 일본 수도",
+      "date": { "startYear": 710, "endYear": 784, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "JP",
+        "historicalRegionKo": "야마토 분지",
+        "cultureAreaKo": "일본 고대국가·불교·동아시아 교류권"
+      },
+      "classification": { "periodBand": "medieval", "selectionTier": "core" },
+      "coordinates": { "lat": 34.6851, "lng": 135.8048 },
+      "aliases": ["Nara", "Heijo-kyo", "Heijō-kyō", "Todai-ji", "Shosoin"],
+      "summary": "나라는 헤이조쿄로 조성된 일본의 8세기 수도로, 율령국가와 대규모 불교 사원, 동아시아 외교·불교 교류가 결합한 도시였다. 도다이지, 고후쿠지, 가스가타이샤, 쇼소인 보물은 실크로드 동쪽 끝에서 물품과 양식, 지식이 이동한 흔적을 보여준다.",
+      "confidence": "high",
+      "sourceNote": "나라 도심과 헤이조궁 권역을 기준으로 표시했다.",
+      "curationBatch": "asia-east-asia-medieval-capitals-knowledge-cities-v1",
+      "sources": [
+        { "title": "UNESCO: Historic Monuments of Ancient Nara", "url": "https://whc.unesco.org/en/list/870/" },
+        { "title": "UNESCO Silk Roads Programme: Nara", "url": "https://en.unesco.org/silkroad/content/nara" },
+        { "title": "Britannica: Nara", "url": "https://www.britannica.com/place/Nara-Japan" }
+      ]
+    },
+    {
+      "id": "silla-seorabeol",
+      "title": "서라벌",
+      "type": "place",
+      "historicalName": "서라벌 / 금성",
+      "modernName": "경주시",
+      "modernAdmin": "경상북도 경주시",
+      "country": "대한민국",
+      "worldRegion": "동아시아",
+      "period": "신라·통일신라",
+      "yearLabel": "신라 수도, 7-9세기 통일신라 전성기",
+      "date": { "startYear": -57, "endYear": 935, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "KR",
+        "historicalRegionKo": "경주 분지·형산강 유역",
+        "cultureAreaKo": "신라 왕경·불교·동아시아 교류권"
+      },
+      "classification": { "periodBand": "medieval", "selectionTier": "core" },
+      "coordinates": { "lat": 35.8562, "lng": 129.2247 },
+      "aliases": ["금성", "사로국", "신라 수도", "Gyeongju", "Silla capital"],
+      "summary": "서라벌, 오늘날 경주는 신라와 통일신라의 수도로, 왕경 계획, 고분군, 궁성, 불교 사원과 천문 관측 전통이 집중된 도시였다. 경주 역사유적지구는 1천 년 신라사의 정치·종교·장례·과학 지식이 한 공간에 축적된 동아시아 수도 경관이다.",
+      "confidence": "high",
+      "sourceNote": "경주 도심권과 UNESCO 경주 역사유적지구를 기준으로 표시했다.",
+      "curationBatch": "asia-east-asia-medieval-capitals-knowledge-cities-v1",
+      "sources": [
+        { "title": "UNESCO: Gyeongju Historic Areas", "url": "https://whc.unesco.org/en/list/976/" },
+        { "title": "Korea Tourism Organization: Gyeongju Historic Area", "url": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=104335" },
+        { "title": "Britannica: Silla", "url": "https://www.britannica.com/place/Silla" }
+      ]
+    },
+    {
+      "id": "goryeo-gaegyeong",
+      "title": "개경",
+      "type": "place",
+      "historicalName": "개경 / 송악",
+      "modernName": "개성시",
+      "modernAdmin": "개성특별시",
+      "country": "북한",
+      "worldRegion": "동아시아",
+      "period": "고려",
+      "yearLabel": "918-1392년 고려 수도",
+      "date": { "startYear": 918, "endYear": 1392, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "KP",
+        "historicalRegionKo": "송악산 남쪽 분지·예성강 권역",
+        "cultureAreaKo": "고려 왕경·불교에서 성리학으로의 전환"
+      },
+      "classification": { "periodBand": "medieval", "selectionTier": "core" },
+      "coordinates": { "lat": 37.9706, "lng": 126.5544 },
+      "aliases": ["송악", "개성", "Gaegyeong", "Kaesong", "Goryeo capital"],
+      "summary": "개경은 고려 왕조의 수도로, 만월대 궁성, 성균관, 첨성대, 성곽과 왕릉이 산지 분지 지형 안에 배치되었다. 고려의 불교 왕권과 관료 교육, 이후 성리학 전환의 흔적이 함께 남아 한반도 중세 수도의 정치·지식 구조를 보여준다.",
+      "confidence": "high",
+      "sourceNote": "현재 개성 도심과 UNESCO 개성역사유적지구를 기준으로 표시했다.",
+      "curationBatch": "asia-east-asia-medieval-capitals-knowledge-cities-v1",
+      "sources": [
+        { "title": "UNESCO: Historic Monuments and Sites in Kaesong", "url": "https://whc.unesco.org/en/list/1278/" },
+        { "title": "Britannica: Kaesong", "url": "https://www.britannica.com/place/Kaesong" }
+      ]
+    }
+  ]
+}

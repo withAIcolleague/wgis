@@ -646,6 +646,35 @@
         "Britannica references for Galileo, Paris Observatory, Academy of Sciences, Royal Society, and University of Bologna",
         "Museo Galileo and Treccani references for Florence and Accademia del Cimento"
       ]
+    },
+    {
+      "id": "asia-east-asia-medieval-capitals-knowledge-cities-v1",
+      "status": "completed",
+      "completedAt": "2026-05-15",
+      "continentId": "asia",
+      "countryIso2": "CN-JP-KR-KP",
+      "countryKo": "중국·일본·대한민국·북한",
+      "worldRegion": "동아시아",
+      "focusKo": "동아시아 중세 수도와 지식도시 핵심 거점",
+      "scopeKo": "왕조 수도, 도성 계획, 관학과 과거제, 불교 사원·석굴, 목판·인쇄, 외교와 조공 교류",
+      "sourceFile": "data/records/asia/east-asia/medieval-capitals-knowledge-cities.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "changan-xian",
+        "luoyang",
+        "kaifeng",
+        "nanjing",
+        "heian-kyo",
+        "nara",
+        "silla-seorabeol",
+        "goryeo-gaegyeong"
+      ],
+      "sourceBasis": [
+        "UNESCO World Heritage pages for Chang'an-Tianshan Corridor, Longmen Grottoes, Ancient Kyoto, Ancient Nara, Gyeongju, and Kaesong",
+        "UNESCO Silk Roads Programme references for Xi'an and Nara",
+        "Britannica references for Xi'an, Luoyang, Kaifeng, Nanjing, Kyoto, Nara, Silla, and Kaesong",
+        "Korea Tourism Organization reference for Gyeongju Historic Area"
+      ]
     }
   ]
 }

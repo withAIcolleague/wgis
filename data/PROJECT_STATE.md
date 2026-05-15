@@ -11,9 +11,9 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 194
-- Completed curation batches: 22
-- Latest completed batch: `europe-renaissance-science-cities-v1`
+- Current entry count: 198
+- Completed curation batches: 23
+- Latest completed batch: `asia-east-asia-medieval-capitals-knowledge-cities-v1`
 - Latest completed infrastructure milestone: `a28681f Add data validation script`
 - Data validation script: `scripts/validate-data.js`
 
@@ -348,6 +348,20 @@ The long-term target is 3,000+ entries, but the project should progress one focu
     - `paris-science`
     - `london-royal-society`
 
+- East Asian medieval capitals and knowledge cities batch
+  - Batch ID: `asia-east-asia-medieval-capitals-knowledge-cities-v1`
+  - Source file: `data/records/asia/east-asia/medieval-capitals-knowledge-cities.json`
+  - Entries added: 4 new entries plus 4 existing entries upgraded and linked to the batch
+  - Entry IDs:
+    - `changan-xian`
+    - `luoyang`
+    - `kaifeng`
+    - `nanjing`
+    - `heian-kyo`
+    - `nara`
+    - `silla-seorabeol`
+    - `goryeo-gaegyeong`
+
 ## Current Policy
 
 - Work on DB only unless the user explicitly asks for UI changes.
@@ -385,13 +399,13 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. East Asian medieval capitals and knowledge cities
-   - Possible source file: `data/records/asia/east-asia/medieval-capitals-knowledge-cities.json`
-   - Likely entries: Chang'an, Luoyang, Kaifeng, Nanjing, Heian-kyo, Nara, Gyeongju, Gaegyeong
-
-2. Atlantic exploration and colonial port cities
+1. Atlantic exploration and colonial port cities
    - Possible source file: `data/records/atlantic/early-modern/exploration-colonial-port-cities.json`
    - Likely entries: Lisbon, Seville, Cadiz, Porto, Amsterdam, Bristol, Havana, Cartagena de Indias
+
+2. Early modern gunpowder empire capitals
+   - Possible source file: `data/records/eurasia/early-modern/gunpowder-empire-capitals.json`
+   - Likely entries: Istanbul, Isfahan, Agra, Delhi, Fatehpur Sikri, Lahore, Topkapi Palace, Red Fort
 
 ## Resume Checklist
 
