@@ -415,6 +415,35 @@
         "World History Encyclopedia references for Palenque, Copan, Uxmal, Maya Civilization, Yaxchilan, and Tulum",
         "Britannica references for Palenque, Uxmal, Mayapan, Coba, and Bonampak"
       ]
+    },
+    {
+      "id": "africa-east-africa-swahili-coast-trade-cities-v1",
+      "status": "completed",
+      "completedAt": "2026-05-15",
+      "continentId": "africa",
+      "countryIso2": "TZ-KE-MZ-ZW",
+      "countryKo": "탄자니아·케냐·모잠비크·짐바브웨",
+      "worldRegion": "스와힐리 해안",
+      "focusKo": "동아프리카 스와힐리 해안 교역 도시와 내륙 연결망",
+      "scopeKo": "중세 인도양 해상 교역, 이슬람화, 산호석 도시, 금·상아·도자 교역, 내륙 왕국과 항구 연결",
+      "sourceFile": "data/records/africa/east-africa/swahili-coast-trade-cities.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "kilwa-kisiwani",
+        "songo-mnara",
+        "fort-jesus-mombasa",
+        "gedi",
+        "lamu-old-town",
+        "zanzibar-stone-town",
+        "sofala",
+        "great-zimbabwe"
+      ],
+      "sourceBasis": [
+        "UNESCO World Heritage pages for Kilwa Kisiwani and Songo Mnara, Fort Jesus, Gedi, Lamu, Stone Town, and Great Zimbabwe",
+        "National Museums of Kenya references for Gede/Gedi",
+        "World History Encyclopedia references for Kilwa, Swahili Coast, and Great Zimbabwe",
+        "Britannica references for Kilwa and Sofala"
+      ]
     }
   ]
 }

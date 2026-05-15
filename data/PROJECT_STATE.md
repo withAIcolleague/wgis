@@ -11,9 +11,9 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 130
-- Completed curation batches: 14
-- Latest completed batch: `americas-mesoamerica-maya-postclassic-networks-v1`
+- Current entry count: 138
+- Completed curation batches: 15
+- Latest completed batch: `africa-east-africa-swahili-coast-trade-cities-v1`
 - Latest completed infrastructure milestone: `a28681f Add data validation script`
 - Data validation script: `scripts/validate-data.js`
 
@@ -236,6 +236,20 @@ The long-term target is 3,000+ entries, but the project should progress one focu
     - `yaxchilan`
     - `tulum`
 
+- East African Swahili coast trade cities batch
+  - Batch ID: `africa-east-africa-swahili-coast-trade-cities-v1`
+  - Source file: `data/records/africa/east-africa/swahili-coast-trade-cities.json`
+  - Entries added: 8
+  - Entry IDs:
+    - `kilwa-kisiwani`
+    - `songo-mnara`
+    - `fort-jesus-mombasa`
+    - `gedi`
+    - `lamu-old-town`
+    - `zanzibar-stone-town`
+    - `sofala`
+    - `great-zimbabwe`
+
 ## Current Policy
 
 - Work on DB only unless the user explicitly asks for UI changes.
@@ -273,13 +287,13 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. East African Swahili coast trade cities
-   - Possible source file: `data/records/africa/east-africa/swahili-coast-trade-cities.json`
-   - Likely entries: Kilwa Kisiwani, Songo Mnara, Mombasa, Gedi, Lamu, Zanzibar Stone Town, Sofala, Great Zimbabwe
-
-2. Central Asian Silk Road and oasis cities
+1. Central Asian Silk Road and oasis cities
    - Possible source file: `data/records/asia/central-asia/silk-road-oasis-cities.json`
    - Likely entries: Samarkand, Bukhara, Merv, Khiva, Otrar, Kashgar, Turfan, Dunhuang
+
+2. North American Indigenous mound and urban centers
+   - Possible source file: `data/records/americas/north-america/indigenous-mound-urban-centers.json`
+   - Likely entries: Cahokia, Chaco Canyon, Mesa Verde, Poverty Point, Serpent Mound, Etowah, Spiro, Moundville
 
 ## Resume Checklist
 

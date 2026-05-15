@@ -2808,5 +2808,186 @@
       { "title": "INAH: Zona Arqueológica de Tulum", "url": "https://www.inah.gob.mx/zonas/99-zona-arqueologica-de-tulum" },
       { "title": "World History Encyclopedia: Tulum", "url": "https://www.worldhistory.org/Tulum/" }
     ]
+  },
+  {
+    "id": "kilwa-kisiwani",
+    "title": "킬와 키시와니",
+    "type": "site",
+    "historicalName": "킬와 / 킬와 키시와니",
+    "modernName": "킬와 키시와니 유적",
+    "modernAdmin": "린디주 킬와 구",
+    "country": "탄자니아",
+    "worldRegion": "스와힐리 해안",
+    "period": "스와힐리 도시국가",
+    "yearLabel": "9-19세기, 13-15세기 전성기",
+    "coordinates": { "lat": -8.9580, "lng": 39.5230 },
+    "aliases": ["Kilwa Kisiwani", "Kilwa", "Quiloa", "Husuni Kubwa", "Great Mosque of Kilwa"],
+    "summary": "킬와 키시와니는 스와힐리 해안 남부의 대표 도시국가로, 금·상아·도자·향료가 오간 인도양 교역망의 핵심 항구였다. 대모스크와 후수니 쿠브와 궁전 유적은 산호석 건축, 이슬람 도시문화, 대짐바브웨와 소팔라를 잇는 금 교역의 규모를 보여준다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 킬와 키시와니 구성요소 좌표와 세계유산 설명을 기준으로 표시했다.",
+    "curationBatch": "africa-east-africa-swahili-coast-trade-cities-v1",
+    "sources": [
+      { "title": "UNESCO: Ruins of Kilwa Kisiwani and Ruins of Songo Mnara", "url": "https://whc.unesco.org/en/list/144/" },
+      { "title": "UNESCO Periodic Reporting: Ruins of Kilwa Kisiwani and Songo Mnara", "url": "https://whc.unesco.org/document/216197" },
+      { "title": "World History Encyclopedia: Kilwa", "url": "https://www.worldhistory.org/Kilwa/" },
+      { "title": "Britannica: Kilwa", "url": "https://www.britannica.com/place/Kilwa" }
+    ]
+  },
+  {
+    "id": "songo-mnara",
+    "title": "송고 음나라",
+    "type": "site",
+    "historicalName": "송고 음나라",
+    "modernName": "송고 음나라 유적",
+    "modernAdmin": "린디주 킬와 구 송고 음나라 섬",
+    "country": "탄자니아",
+    "worldRegion": "스와힐리 해안",
+    "period": "스와힐리 도시국가",
+    "yearLabel": "14-16세기",
+    "coordinates": { "lat": -9.0490, "lng": 39.5670 },
+    "aliases": ["Songo Mnara", "Songo Mnara Island", "Swahili ruins", "Kilwa archipelago"],
+    "summary": "송고 음나라는 킬와 키시와니와 함께 세계유산으로 등재된 섬 유적으로, 모스크 다섯 곳, 궁전 복합체, 산호석 주거지가 남아 있다. 킬와 권역 안에서 해상 교역, 이슬람 공동체, 도시 주거 구조가 어떻게 결합했는지 보여주는 보존 상태가 좋은 스와힐리 유적이다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 구성요소 좌표와 세계유산 설명을 기준으로 표시했다.",
+    "curationBatch": "africa-east-africa-swahili-coast-trade-cities-v1",
+    "sources": [
+      { "title": "UNESCO: Ruins of Kilwa Kisiwani and Ruins of Songo Mnara", "url": "https://whc.unesco.org/en/list/144/" },
+      { "title": "UNESCO Periodic Reporting: Ruins of Kilwa Kisiwani and Songo Mnara", "url": "https://whc.unesco.org/document/216197" },
+      { "title": "UNESCO Silk Roads Programme: Kilwa Kisiwani and Songo Mnara", "url": "https://en.unesco.org/silkroad/silk-road-themes/underwater-heritage/kilwa-kisiwani-and-songo-mnara" }
+    ]
+  },
+  {
+    "id": "fort-jesus-mombasa",
+    "title": "몸바사 포트 지저스",
+    "type": "site",
+    "historicalName": "포트 지저스 / 몸바사",
+    "modernName": "몸바사 포트 지저스",
+    "modernAdmin": "몸바사 카운티 몸바사 올드타운",
+    "country": "케냐",
+    "worldRegion": "스와힐리 해안",
+    "period": "포르투갈령 인도양 요새와 스와힐리 항구",
+    "yearLabel": "1593-1596년 건설, 16-19세기 점유",
+    "coordinates": { "lat": -4.0628, "lng": 39.6794 },
+    "aliases": ["Fort Jesus", "Mombasa", "Mombasa Old Town", "Portuguese fort", "Indian Ocean trade"],
+    "summary": "포트 지저스는 몸바사 항구 입구를 통제하기 위해 포르투갈이 세운 요새로, 이후 아랍·스와힐리·영국 세력 사이에서 여러 차례 주인이 바뀌었다. 군사 시설이지만 몸바사 올드타운과 함께 인도양 교역, 식민 경쟁, 스와힐리 해안의 전략적 위치를 읽게 해준다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 포트 지저스 세계유산 좌표와 설명을 기준으로 표시했다.",
+    "curationBatch": "africa-east-africa-swahili-coast-trade-cities-v1",
+    "sources": [
+      { "title": "UNESCO: Fort Jesus, Mombasa", "url": "https://whc.unesco.org/en/list/1295/" },
+      { "title": "World History Encyclopedia: Swahili Coast", "url": "https://www.worldhistory.org/Swahili_Coast/" }
+    ]
+  },
+  {
+    "id": "gedi",
+    "title": "게디",
+    "type": "site",
+    "historicalName": "게디 / 게데",
+    "modernName": "게디 역사도시와 고고유적",
+    "modernAdmin": "킬리피 카운티 와타무 인근",
+    "country": "케냐",
+    "worldRegion": "스와힐리 해안",
+    "period": "스와힐리 도시국가",
+    "yearLabel": "10-17세기",
+    "coordinates": { "lat": -3.3103, "lng": 40.0173 },
+    "aliases": ["Gedi", "Gede", "Gede Ruins", "Historic Town and Archaeological Site of Gedi", "Watamu"],
+    "summary": "게디는 해안림 속에 남은 스와힐리 도시 유적으로, 성벽, 모스크, 궁전, 주거지, 물 관리 시설이 확인된다. 해안에서 약간 물러난 입지는 인도양 교역망에 연결된 부유한 도시가 주변 생태와 방어, 수자원을 어떻게 활용했는지 보여준다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 게디 세계유산 좌표와 국립박물관 설명을 기준으로 표시했다.",
+    "curationBatch": "africa-east-africa-swahili-coast-trade-cities-v1",
+    "sources": [
+      { "title": "UNESCO: The Historic Town and Archaeological Site of Gedi", "url": "https://whc.unesco.org/en/list/1720/" },
+      { "title": "National Museums of Kenya: Gede Museum", "url": "https://museums.or.ke/gede-museum/" },
+      { "title": "National Museums of Kenya: The Historic Town and Archaeological Site of Gedi", "url": "https://museums.or.ke/the-historic-town-and-archeological-site-of-gedi/" }
+    ]
+  },
+  {
+    "id": "lamu-old-town",
+    "title": "라무 올드타운",
+    "type": "place",
+    "historicalName": "라무",
+    "modernName": "라무 올드타운",
+    "modernAdmin": "라무 카운티 라무섬",
+    "country": "케냐",
+    "worldRegion": "스와힐리 해안",
+    "period": "스와힐리 해안 도시",
+    "yearLabel": "14세기 이후, 19세기 종교·학문 중심",
+    "coordinates": { "lat": -2.2844, "lng": 40.8525 },
+    "aliases": ["Lamu", "Lamu Old Town", "Lamu Island", "Swahili settlement", "Maulidi"],
+    "summary": "라무 올드타운은 700년 이상 지속적으로 거주된 스와힐리 도시로, 산호석과 맹그로브 목재 건축, 좁은 골목, 안뜰형 주택과 목조문이 특징이다. 버려진 유적이 아니라 살아 있는 항구도시라는 점에서 스와힐리 건축과 이슬람 학문·축제 전통을 함께 보여준다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 라무 올드타운 세계유산 좌표를 기준으로 표시했다.",
+    "curationBatch": "africa-east-africa-swahili-coast-trade-cities-v1",
+    "sources": [
+      { "title": "UNESCO: Lamu Old Town", "url": "https://whc.unesco.org/en/list/1055/" },
+      { "title": "World History Encyclopedia: Swahili Coast", "url": "https://www.worldhistory.org/Swahili_Coast/" }
+    ]
+  },
+  {
+    "id": "zanzibar-stone-town",
+    "title": "잔지바르 스톤타운",
+    "type": "place",
+    "historicalName": "잔지바르 스톤타운",
+    "modernName": "잔지바르 스톤타운",
+    "modernAdmin": "잔지바르 도시서부주 잔지바르시",
+    "country": "탄자니아",
+    "worldRegion": "스와힐리 해안",
+    "period": "잔지바르 술탄국과 인도양 교역",
+    "yearLabel": "18-19세기 도시 경관",
+    "coordinates": { "lat": -6.1631, "lng": 39.1892 },
+    "aliases": ["Stone Town of Zanzibar", "Zanzibar", "Unguja", "Old Fort", "House of Wonders"],
+    "summary": "잔지바르 스톤타운은 동아프리카 스와힐리 교역 도시의 대표적 근세 경관으로, 아프리카·아랍·인도·유럽 요소가 산호석 건축과 도시 조직 안에서 결합했다. 향신료, 노예, 상아 교역과 노예무역 폐지 운동의 기억이 같은 도시 공간에 겹쳐 있다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 잔지바르 스톤타운 세계유산 좌표를 기준으로 표시했다.",
+    "curationBatch": "africa-east-africa-swahili-coast-trade-cities-v1",
+    "sources": [
+      { "title": "UNESCO: Stone Town of Zanzibar", "url": "https://whc.unesco.org/en/list/173/" },
+      { "title": "World History Encyclopedia: Swahili Coast", "url": "https://www.worldhistory.org/Swahili_Coast/" }
+    ]
+  },
+  {
+    "id": "sofala",
+    "title": "소팔라",
+    "type": "place",
+    "historicalName": "소팔라",
+    "modernName": "노바 소팔라 인근",
+    "modernAdmin": "소팔라주 부지 강 하구권",
+    "country": "모잠비크",
+    "worldRegion": "스와힐리 해안",
+    "period": "킬와 술탄국 남부 교역 거점",
+    "yearLabel": "10-16세기",
+    "coordinates": { "lat": -20.1588, "lng": 34.7202 },
+    "aliases": ["Sofala", "Nova Sofala", "Kilwa outpost", "gold trade", "Mozambique Channel"],
+    "summary": "소팔라는 모잠비크 해협의 옛 항구로, 킬와의 남부 거점이자 짐바브웨 고원 금이 인도양으로 나가는 통로였다. 항구가 토사로 막히고 베이라가 성장하면서 중요성은 줄었지만, 스와힐리 해안과 내륙 금 생산지를 연결한 남단 노드로 핵심적이다.",
+    "confidence": "medium",
+    "sourceNote": "Britannica의 소팔라 설명과 현대 노바 소팔라 일대 좌표를 기준으로 근사 표시했다.",
+    "curationBatch": "africa-east-africa-swahili-coast-trade-cities-v1",
+    "sources": [
+      { "title": "Britannica: Sofala", "url": "https://www.britannica.com/place/Sofala" },
+      { "title": "World History Encyclopedia: Kilwa", "url": "https://www.worldhistory.org/Kilwa/" },
+      { "title": "World History Encyclopedia: Great Zimbabwe", "url": "https://www.worldhistory.org/Great_Zimbabwe/" }
+    ]
+  },
+  {
+    "id": "great-zimbabwe",
+    "title": "그레이트 짐바브웨",
+    "type": "site",
+    "historicalName": "그레이트 짐바브웨",
+    "modernName": "그레이트 짐바브웨 국립기념물",
+    "modernAdmin": "마스빙고주 마스빙고 인근",
+    "country": "짐바브웨",
+    "worldRegion": "짐바브웨 고원",
+    "period": "쇼나 석조 도시와 짐바브웨 왕국",
+    "yearLabel": "11-15세기",
+    "coordinates": { "lat": -20.2712, "lng": 30.9333 },
+    "aliases": ["Great Zimbabwe", "Great Enclosure", "Shona", "Zimbabwe Kingdom", "Masvingo"],
+    "summary": "그레이트 짐바브웨는 쇼나계 사회가 세운 대규모 석조 도시로, 언덕 유적, 대석벽, 계곡 유적으로 구성된다. 해안 도시 자체는 아니지만 금·구리·상아와 수입 도자·유리구슬의 이동을 통해 킬와와 소팔라를 포함한 스와힐리 해안 교역망과 연결되었다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 그레이트 짐바브웨 세계유산 좌표와 WHE 교역 설명을 기준으로 표시했다.",
+    "curationBatch": "africa-east-africa-swahili-coast-trade-cities-v1",
+    "sources": [
+      { "title": "UNESCO: Great Zimbabwe National Monument", "url": "https://whc.unesco.org/en/list/364/" },
+      { "title": "World History Encyclopedia: Great Zimbabwe", "url": "https://www.worldhistory.org/Great_Zimbabwe/" }
+    ]
   }
 ]
