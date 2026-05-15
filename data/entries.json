@@ -4368,5 +4368,184 @@
       { "title": "UNESCO Silk Roads Programme: Nara", "url": "https://en.unesco.org/silkroad/content/nara" },
       { "title": "Britannica: Nara", "url": "https://www.britannica.com/place/Nara-Japan" }
     ]
+  },
+  {
+    "id": "lisbon",
+    "title": "리스본",
+    "type": "place",
+    "historicalName": "리스보아 / 리스본",
+    "modernName": "리스본 벨렝 지구",
+    "modernAdmin": "리스본주 리스본",
+    "country": "포르투갈",
+    "worldRegion": "이베리아 대서양",
+    "period": "포르투갈 대항해시대",
+    "yearLabel": "15-16세기 해양 팽창 중심",
+    "coordinates": { "lat": 38.6916, "lng": -9.216 },
+    "aliases": ["Lisbon", "Lisboa", "Belém", "Tower of Belém", "Jerónimos Monastery"],
+    "summary": "리스본은 포르투갈 대항해시대의 출항·상업·왕실 후원 중심지로, 아프리카 해안과 인도양 항로를 연결한 유럽 측 관문이었다. 벨렝 탑과 제로니무스 수도원은 바스쿠 다 가마 항해 이후 형성된 해양제국의 권위와 항구 경관을 압축적으로 보여준다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 벨렝 탑·제로니무스 수도원 세계유산 좌표와 리스본 항 입구를 기준으로 표시했다.",
+    "curationBatch": "atlantic-early-modern-exploration-colonial-port-cities-v1",
+    "sources": [
+      { "title": "UNESCO: Monastery of the Hieronymites and Tower of Belém in Lisbon", "url": "https://whc.unesco.org/en/list/263/" },
+      { "title": "Britannica: Lisbon", "url": "https://www.britannica.com/place/Lisbon" }
+    ]
+  },
+  {
+    "id": "seville",
+    "title": "세비야",
+    "type": "place",
+    "historicalName": "세비야 / 이슈빌리야",
+    "modernName": "세비야 대성당·알카사르·인디아스 고문서관",
+    "modernAdmin": "안달루시아 세비야",
+    "country": "스페인",
+    "worldRegion": "이베리아 대서양",
+    "period": "스페인 제국 신대륙 교역 중심",
+    "yearLabel": "1503-1717년 인디아스 무역 관리 중심",
+    "coordinates": { "lat": 37.3839, "lng": -5.9915 },
+    "aliases": ["Seville", "Sevilla", "Archivo de Indias", "Casa de Contratación", "Alcázar of Seville"],
+    "summary": "세비야는 1503년 Casa de Contratación 설치 이후 스페인령 아메리카 교역과 항해 허가, 지도·기록 관리의 중심지가 되었다. 대성당, 알카사르, 인디아스 고문서관은 이슬람 도시층과 기독교 왕권, 신대륙 식민 행정이 한 도심에 중첩된 장소다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 세비야 대성당·알카사르·인디아스 고문서관 세계유산 좌표를 기준으로 표시했다.",
+    "curationBatch": "atlantic-early-modern-exploration-colonial-port-cities-v1",
+    "sources": [
+      { "title": "UNESCO: Cathedral, Alcázar and Archivo de Indias in Seville", "url": "https://whc.unesco.org/en/list/383/" },
+      { "title": "Archivo General de Indias: El Archivo General de Indias y la UNESCO", "url": "https://www.cultura.gob.es/cultura/areas/archivos/mc/archivos/agi/unesco.html" },
+      { "title": "Britannica: Seville", "url": "https://www.britannica.com/place/Seville" }
+    ]
+  },
+  {
+    "id": "cadiz",
+    "title": "카디스",
+    "type": "place",
+    "historicalName": "가디르 / 카디스",
+    "modernName": "카디스",
+    "modernAdmin": "안달루시아 카디스",
+    "country": "스페인",
+    "worldRegion": "이베리아 대서양",
+    "period": "스페인 대서양 교역항",
+    "yearLabel": "1717년 이후 인디아스 무역 중심",
+    "coordinates": { "lat": 36.5297, "lng": -6.2923 },
+    "aliases": ["Cadiz", "Cádiz", "Gadir", "Casa de Contratación", "Bay of Cádiz"],
+    "summary": "카디스는 대서양으로 직접 열린 안달루시아 항구로, 18세기 Casa de Contratación과 인디아스 무역 기능이 세비야에서 옮겨오며 스페인 제국 교역의 핵심 항구가 되었다. 만과 요새, 상인 주택 경관은 대서양 항로가 하천 항구에서 외해 항구로 이동한 변화를 보여준다.",
+    "confidence": "high",
+    "sourceNote": "카디스 구도심과 항구 권역 좌표를 기준으로 표시했다.",
+    "curationBatch": "atlantic-early-modern-exploration-colonial-port-cities-v1",
+    "sources": [
+      { "title": "Britannica: Cádiz", "url": "https://www.britannica.com/place/Cadiz-Spain" },
+      { "title": "Autoridad Portuaria Bahía de Cádiz: History", "url": "https://www.puertocadiz.com/en/the-port/history/" }
+    ]
+  },
+  {
+    "id": "porto",
+    "title": "포르투",
+    "type": "place",
+    "historicalName": "포르투 / 오포르투",
+    "modernName": "포르투 역사중심지",
+    "modernAdmin": "포르투현 포르투",
+    "country": "포르투갈",
+    "worldRegion": "이베리아 대서양",
+    "period": "포르투갈 대서양 항구와 와인 교역",
+    "yearLabel": "15-18세기 대서양 항구·도루 와인 교역",
+    "coordinates": { "lat": 41.1496, "lng": -8.6109 },
+    "aliases": ["Porto", "Oporto", "Douro", "Ribeira", "Port wine"],
+    "summary": "포르투는 도루 강 하구의 항구도시로, 포르투갈 북부 내륙의 포도주와 농산물이 대서양 상업망으로 나가는 관문이었다. 리베이라 지구, 다리, 강변 창고와 빌라노바드가이아 와인 저장고는 근세 대서양 소비시장과 지역 생산지가 결합한 도시 경관을 보여준다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 포르투 역사중심지와 도루 강변 리베이라 권역을 기준으로 표시했다.",
+    "curationBatch": "atlantic-early-modern-exploration-colonial-port-cities-v1",
+    "sources": [
+      { "title": "UNESCO: Historic Centre of Oporto, Luiz I Bridge and Monastery of Serra do Pilar", "url": "https://whc.unesco.org/en/list/755/" },
+      { "title": "Britannica: Porto", "url": "https://www.britannica.com/place/Porto-Portugal" }
+    ]
+  },
+  {
+    "id": "amsterdam",
+    "title": "암스테르담",
+    "type": "place",
+    "historicalName": "암스테르담",
+    "modernName": "암스테르담 17세기 운하 지구",
+    "modernAdmin": "노르트홀란트주 암스테르담",
+    "country": "네덜란드",
+    "worldRegion": "북해",
+    "period": "네덜란드 공화국·황금기",
+    "yearLabel": "17세기 세계경제 중심",
+    "coordinates": { "lat": 52.3676, "lng": 4.9041 },
+    "aliases": ["Amsterdam", "Canal Ring", "Grachtengordel", "Dutch Golden Age", "VOC"],
+    "summary": "암스테르담은 17세기 네덜란드 공화국의 상업·금융·출판 중심지로, 대서양·발트해·인도양 교역망을 연결했다. 운하 지구는 항구와 창고, 상인 주택, 금융 시장이 결합한 계획 도시 확장으로, 근세 세계경제의 도시 인프라를 보여준다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 암스테르담 17세기 운하 지구와 도심 항구권 좌표를 기준으로 표시했다.",
+    "curationBatch": "atlantic-early-modern-exploration-colonial-port-cities-v1",
+    "sources": [
+      { "title": "UNESCO: Seventeenth-Century Canal Ring Area of Amsterdam inside the Singelgracht", "url": "https://whc.unesco.org/en/list/1349" },
+      { "title": "Britannica: Amsterdam", "url": "https://www.britannica.com/place/Amsterdam" }
+    ]
+  },
+  {
+    "id": "bristol",
+    "title": "브리스톨",
+    "type": "place",
+    "historicalName": "브리스톨",
+    "modernName": "브리스톨 항구도시",
+    "modernAdmin": "잉글랜드 브리스톨",
+    "country": "영국",
+    "worldRegion": "북대서양",
+    "period": "잉글랜드 대서양 탐험·상업항",
+    "yearLabel": "1497년 존 캐벗 항해, 17-18세기 대서양 교역",
+    "coordinates": { "lat": 51.4545, "lng": -2.5879 },
+    "aliases": ["Bristol", "John Cabot", "Matthew of Bristol", "Cabot voyages", "Atlantic slave trade"],
+    "summary": "브리스톨은 1497년 존 캐벗의 북대서양 항해가 출발한 항구로, 잉글랜드의 대서양 탐험과 뒤이은 식민 상업의 초기 거점이었다. 17-18세기에는 설탕·담배·노예무역과 연결된 항구가 되었으며, 탐험과 상업, 식민 폭력이 같은 도시경제 안에서 결합한 사례다.",
+    "confidence": "high",
+    "sourceNote": "브리스톨 항구와 구도심 권역 좌표를 기준으로 표시했다.",
+    "curationBatch": "atlantic-early-modern-exploration-colonial-port-cities-v1",
+    "sources": [
+      { "title": "University of Bristol: Cabot and Bristol's Age of Discovery", "url": "https://www.bristol.ac.uk/history/research/cabot/cabot-and-bristols-age-of-discovery/" },
+      { "title": "Bristol Museums Collections: The Origins", "url": "https://collections.bristolmuseums.org.uk/stories/transatlantic-traffic-enslaved-africans/origins/" },
+      { "title": "Britannica: Bristol", "url": "https://www.britannica.com/place/Bristol-England" }
+    ]
+  },
+  {
+    "id": "havana",
+    "title": "아바나",
+    "type": "place",
+    "historicalName": "산크리스토발 데 라 아바나",
+    "modernName": "아바나 구시가지와 요새 체계",
+    "modernAdmin": "라아바나주 아바나",
+    "country": "쿠바",
+    "worldRegion": "카리브해",
+    "period": "스페인령 서인도 선단 체제",
+    "yearLabel": "1519년 건설, 16-18세기 카리브해 최대 항구",
+    "coordinates": { "lat": 23.1353, "lng": -82.3589 },
+    "aliases": ["Havana", "La Habana", "Old Havana", "San Cristóbal de La Habana", "Spanish treasure fleet"],
+    "summary": "아바나는 스페인령 서인도 선단 체제의 집결 항구로, 16세기 후반 카리브해 최대 항구가 되었고 18세기에는 신대륙의 대표 조선소를 갖추었다. 구시가지와 요새 체계는 은·설탕·군사 방어가 결합한 식민 항구도시의 구조를 보여준다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 아바나 구시가지와 요새 체계 세계유산 좌표를 기준으로 표시했다.",
+    "curationBatch": "atlantic-early-modern-exploration-colonial-port-cities-v1",
+    "sources": [
+      { "title": "UNESCO: Old Havana and its Fortification System", "url": "https://whc.unesco.org/en/list/204/" },
+      { "title": "UNESCO: Havana, where everyone pitches in", "url": "https://www.unesco.org/en/articles/havana-where-everyone-pitches" },
+      { "title": "Britannica: Havana", "url": "https://www.britannica.com/place/Havana" }
+    ]
+  },
+  {
+    "id": "cartagena-de-indias",
+    "title": "카르타헤나 데 인디아스",
+    "type": "place",
+    "historicalName": "카르타헤나 데 인디아스",
+    "modernName": "카르타헤나 항구·요새·기념물군",
+    "modernAdmin": "볼리바르주 카르타헤나",
+    "country": "콜롬비아",
+    "worldRegion": "카리브해",
+    "period": "스페인령 카리브해 요새 항구",
+    "yearLabel": "1533년 건설, 16-18세기 서인도 항로 핵심",
+    "coordinates": { "lat": 10.4236, "lng": -75.5253 },
+    "aliases": ["Cartagena", "Cartagena de Indias", "Port of Cartagena", "San Felipe de Barajas", "Spanish Main"],
+    "summary": "카르타헤나 데 인디아스는 스페인령 카리브해의 요새 항구로, 아바나·산후안과 함께 서인도 항로의 핵심 연결점이었다. 항구, 성벽, 산펠리페 요새와 구도심은 대서양 은무역, 방어 체계, 노예무역과 식민 행정이 결합한 도시 경관을 보여준다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 카르타헤나 항구·요새·기념물군 세계유산 좌표를 기준으로 표시했다.",
+    "curationBatch": "atlantic-early-modern-exploration-colonial-port-cities-v1",
+    "sources": [
+      { "title": "UNESCO: Port, Fortresses and Group of Monuments, Cartagena", "url": "https://whc.unesco.org/en/list/285" },
+      { "title": "Britannica: Cartagena", "url": "https://www.britannica.com/place/Cartagena-Colombia" }
+    ]
   }
 ]

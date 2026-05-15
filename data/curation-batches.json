@@ -675,6 +675,35 @@
         "Britannica references for Xi'an, Luoyang, Kaifeng, Nanjing, Kyoto, Nara, Silla, and Kaesong",
         "Korea Tourism Organization reference for Gyeongju Historic Area"
       ]
+    },
+    {
+      "id": "atlantic-early-modern-exploration-colonial-port-cities-v1",
+      "status": "completed",
+      "completedAt": "2026-05-15",
+      "continentId": "europe-americas",
+      "countryIso2": "PT-ES-NL-GB-CU-CO",
+      "countryKo": "포르투갈·스페인·네덜란드·영국·쿠바·콜롬비아",
+      "worldRegion": "대서양 교역권",
+      "focusKo": "대서양 탐험과 식민 교역항 핵심 거점",
+      "scopeKo": "탐험 항해, 신대륙 교역, Casa de Contratación, 조선소와 선단 체제, 식민 요새도시, 대서양 상업",
+      "sourceFile": "data/records/atlantic/early-modern/exploration-colonial-port-cities.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "lisbon",
+        "seville",
+        "cadiz",
+        "porto",
+        "amsterdam",
+        "bristol",
+        "havana",
+        "cartagena-de-indias"
+      ],
+      "sourceBasis": [
+        "UNESCO World Heritage pages for Lisbon, Seville, Porto, Amsterdam, Havana, and Cartagena de Indias",
+        "Britannica references for Lisbon, Seville, Cadiz, Porto, Amsterdam, Bristol, Havana, and Cartagena",
+        "Archivo General de Indias reference for Seville and Spanish colonial administration",
+        "Port of Cadiz, University of Bristol, and Bristol Museums references for Atlantic port history"
+      ]
     }
   ]
 }

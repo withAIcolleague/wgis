@@ -11,9 +11,9 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 198
-- Completed curation batches: 23
-- Latest completed batch: `asia-east-asia-medieval-capitals-knowledge-cities-v1`
+- Current entry count: 206
+- Completed curation batches: 24
+- Latest completed batch: `atlantic-early-modern-exploration-colonial-port-cities-v1`
 - Latest completed infrastructure milestone: `a28681f Add data validation script`
 - Data validation script: `scripts/validate-data.js`
 
@@ -362,6 +362,20 @@ The long-term target is 3,000+ entries, but the project should progress one focu
     - `silla-seorabeol`
     - `goryeo-gaegyeong`
 
+- Atlantic exploration and colonial port cities batch
+  - Batch ID: `atlantic-early-modern-exploration-colonial-port-cities-v1`
+  - Source file: `data/records/atlantic/early-modern/exploration-colonial-port-cities.json`
+  - Entries added: 8
+  - Entry IDs:
+    - `lisbon`
+    - `seville`
+    - `cadiz`
+    - `porto`
+    - `amsterdam`
+    - `bristol`
+    - `havana`
+    - `cartagena-de-indias`
+
 ## Current Policy
 
 - Work on DB only unless the user explicitly asks for UI changes.
@@ -399,13 +413,13 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Atlantic exploration and colonial port cities
-   - Possible source file: `data/records/atlantic/early-modern/exploration-colonial-port-cities.json`
-   - Likely entries: Lisbon, Seville, Cadiz, Porto, Amsterdam, Bristol, Havana, Cartagena de Indias
-
-2. Early modern gunpowder empire capitals
+1. Early modern gunpowder empire capitals
    - Possible source file: `data/records/eurasia/early-modern/gunpowder-empire-capitals.json`
    - Likely entries: Istanbul, Isfahan, Agra, Delhi, Fatehpur Sikri, Lahore, Topkapi Palace, Red Fort
+
+2. East Asian early modern ports and treaty-era cities
+   - Possible source file: `data/records/asia/east-asia/early-modern-ports-treaty-cities.json`
+   - Likely entries: Nagasaki, Dejima, Guangzhou, Macau, Shanghai, Yokohama, Busan, Incheon
 
 ## Resume Checklist
 
