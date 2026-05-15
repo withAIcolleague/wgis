@@ -3349,5 +3349,186 @@
       { "title": "Encyclopedia of Alabama: Moundville Archaeological Park", "url": "https://encyclopediaofalabama.org/article/moundville-archaeological-park/" },
       { "title": "World History Encyclopedia: Moundville", "url": "https://www.worldhistory.org/moundville/" }
     ]
+  },
+  {
+    "id": "foue-peninsula-lapita",
+    "title": "푸에 반도 Lapita",
+    "type": "site",
+    "historicalName": "Lapita / Xapeta'a",
+    "modernName": "푸에 반도 Lapita 유적 WKO013A",
+    "modernAdmin": "뉴칼레도니아 북부주 코네 푸에 반도",
+    "country": "프랑스령 뉴칼레도니아",
+    "worldRegion": "멜라네시아",
+    "period": "Lapita 문화",
+    "yearLabel": "기원전 1300-800년경",
+    "coordinates": { "lat": -21.0470, "lng": 164.7902 },
+    "aliases": ["Lapita", "Xapeta'a", "Foué Peninsula", "Koné", "WKO013A"],
+    "summary": "푸에 반도의 Lapita 유적은 Lapita 문화와 dentate-stamped 토기 이름의 기원이 된 표지 유적이다. 뉴칼레도니아 서해안의 해안 사주와 옛 해변 환경은 남서태평양으로 확산한 초기 원양 항해 집단의 정착, 토기 제작, 해양 자원 이용을 이해하는 기준점이다.",
+    "confidence": "high",
+    "sourceNote": "Lapita database의 WKO013A 좌표와 뉴칼레도니아 박물관의 Lapita 명칭 설명을 기준으로 표시했다.",
+    "curationBatch": "oceania-pacific-lapita-settlement-core-sites-v1",
+    "sources": [
+      { "title": "Lapita Database: Lapita (13A)", "url": "https://lapita.ihp.sinica.edu.tw/info.php?id=10" },
+      { "title": "Service du Musee de la Nouvelle-Caledonie: Archeologie des origines - le lapita caledonien", "url": "https://museenouvellecaledonie.gouv.nc/expositions/les-expositions-temporaires/archeologie-des-origines-le-lapita-caledonien" },
+      { "title": "Metropolitan Museum of Art: Lapita Pottery", "url": "https://www.metmuseum.org/toah/hd/lapi/hd_lapi.htm" }
+    ]
+  },
+  {
+    "id": "teouma",
+    "title": "테오우마",
+    "type": "site",
+    "historicalName": "테오우마",
+    "modernName": "테오우마 Lapita 묘지 유적",
+    "modernAdmin": "셰파주 에파테섬 남부",
+    "country": "바누아투",
+    "worldRegion": "멜라네시아",
+    "period": "Lapita 문화",
+    "yearLabel": "기원전 10-9세기, 약 3000년 전",
+    "coordinates": { "lat": -17.8089, "lng": 168.3834 },
+    "aliases": ["Teouma", "Efate", "Lapita cemetery", "Vanuatu", "Remote Oceania"],
+    "summary": "테오우마는 에파테섬 남부의 Lapita 묘지와 패총 복합 유적으로, 원격 오세아니아 초기 정착민의 매장 관습, 식생활, 이동 경로를 직접 보여주는 핵심 자료다. 온전한 토기와 대규모 인골 자료가 함께 확인되어 태평양 초기 항해 집단 연구의 기준 유적으로 쓰인다.",
+    "confidence": "high",
+    "sourceNote": "Lapita database의 Teouma 좌표와 ANU·PMC 공개 연구 설명을 기준으로 표시했다.",
+    "curationBatch": "oceania-pacific-lapita-settlement-core-sites-v1",
+    "sources": [
+      { "title": "Lapita Database: Teouma", "url": "https://lapita.ihp.sinica.edu.tw/info.php?id=8" },
+      { "title": "ANU Research: The Teouma Lapita Site, South Efate, Vanuatu", "url": "https://researchportalplus.anu.edu.au/en/publications/the-teouma-lapita-site-south-efate-vanuatu-a-summary-of-three-fie/" },
+      { "title": "PMC: Lapita Diet in Remote Oceania - Teouma", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3944017/" }
+    ]
+  },
+  {
+    "id": "talepakemalai",
+    "title": "탈레파케말라이",
+    "type": "site",
+    "historicalName": "탈레파케말라이 / ECA",
+    "modernName": "탈레파케말라이 Lapita 유적",
+    "modernAdmin": "뉴아일랜드주 무사우 제도 엘로아우아섬",
+    "country": "파푸아뉴기니",
+    "worldRegion": "비스마르크 제도",
+    "period": "초기 Lapita 문화",
+    "yearLabel": "기원전 1500-800년경",
+    "coordinates": { "lat": -1.5715, "lng": 149.6303 },
+    "aliases": ["Talepakemalai", "ECA", "Mussau Islands", "Eloaua", "Lapita stilt houses"],
+    "summary": "탈레파케말라이는 무사우 제도의 초기 Lapita 대형 취락으로, 수상가옥 흔적, 토기, 흑요석, 조개·동물 자료가 풍부하게 확인되었다. 비스마르크 제도에서 원격 오세아니아로 이어진 항해 확산의 출발권역과 교환망을 보여주는 가장 중요한 초기 Lapita 유적 중 하나다.",
+    "confidence": "high",
+    "sourceNote": "Lapita database의 ECA 좌표와 UCLA Cotsen Institute의 Talepakemalai 출판 설명을 기준으로 표시했다.",
+    "curationBatch": "oceania-pacific-lapita-settlement-core-sites-v1",
+    "sources": [
+      { "title": "Lapita Database: Talepakemalai (ECA)", "url": "https://lapita.ihp.sinica.edu.tw/info.php?id=7" },
+      { "title": "UCLA Cotsen Institute: Talepakemalai", "url": "https://ioa.ucla.edu/talepakemalai" },
+      { "title": "tDAR: The Mussau Islands Lapita Exchange Network", "url": "https://core.tdar.org/document/395137/the-mussau-islands-lapita-exchange-network-a-review-of-three-decades-of-analysis" }
+    ]
+  },
+  {
+    "id": "nukuleka-lapita",
+    "title": "누쿨레카 Lapita",
+    "type": "site",
+    "historicalName": "누쿨레카",
+    "modernName": "누쿨레카 Lapita 유적",
+    "modernAdmin": "통가타푸섬 동부 누쿨레카",
+    "country": "통가",
+    "worldRegion": "서폴리네시아",
+    "period": "Lapita 문화와 초기 조상 폴리네시아",
+    "yearLabel": "기원전 900-800년경",
+    "coordinates": { "lat": -21.1350, "lng": -175.0330 },
+    "aliases": ["Nukuleka", "Tongatapu", "Lapita Tonga", "Ancestral Polynesia", "Tonga Lapita"],
+    "summary": "누쿨레카는 통가타푸 동부의 Lapita 취락으로, 통가와 서폴리네시아 초기 정착을 이해하는 핵심 지점이다. 장식 토기와 해안 취락 자료는 피지·통가·사모아로 이어진 원격 오세아니아 동쪽 확산과 조상 폴리네시아 문화 형성의 초기 단계를 보여준다.",
+    "confidence": "medium",
+    "sourceNote": "UNESCO 통가 Lapita 잠정목록과 통가 관광청 문화유산 자료를 기준으로 누쿨레카 일대를 근사 표시했다.",
+    "curationBatch": "oceania-pacific-lapita-settlement-core-sites-v1",
+    "sources": [
+      { "title": "UNESCO Tentative List: Lapita Pottery Archaeological Sites", "url": "https://whc.unesco.org/en/tentativelists/5168/" },
+      { "title": "Tonga Tourism: Tongatapu Heritage Sites", "url": "https://www.tongatourism.travel/wp-content/uploads/2022/09/Tongatapu-Heritage-Sites.pdf" },
+      { "title": "Britannica: Lapita culture", "url": "https://www.britannica.com/topic/Lapita-culture" }
+    ]
+  },
+  {
+    "id": "mulifanua-lapita",
+    "title": "물리파누아 Lapita",
+    "type": "site",
+    "historicalName": "물리파누아",
+    "modernName": "물리파누아 페리 선착장 Lapita 유적",
+    "modernAdmin": "우폴루섬 서부 아아나 구 물리파누아",
+    "country": "사모아",
+    "worldRegion": "서폴리네시아",
+    "period": "Lapita 문화와 초기 사모아 정착",
+    "yearLabel": "기원전 1000-800년경",
+    "coordinates": { "lat": -13.8305, "lng": -172.0369 },
+    "aliases": ["Mulifanua", "Mulifanua Lapita", "Upolu", "Samoa Lapita", "Ferry Berth site"],
+    "summary": "물리파누아는 사모아에서 장식 Lapita 토기가 확인된 대표 수중·해안 유적으로, 서폴리네시아 동쪽 끝 정착 연대를 잡는 데 중요하다. 페리 선착장 공사 과정에서 드러난 토기와 석기 자료는 통가-사모아권 초기 항해·정착 네트워크를 지도 위에 연결해 준다.",
+    "confidence": "medium",
+    "sourceNote": "Mulifanua 방사성탄소 연대 논문과 Met·Britannica의 Lapita 확산 설명을 기준으로 물리파누아 항 일대를 근사 표시했다.",
+    "curationBatch": "oceania-pacific-lapita-settlement-core-sites-v1",
+    "sources": [
+      { "title": "Radiocarbon Determinations from the Mulifanua Lapita Site, Upolu, Western Samoa", "url": "https://sadil.ws/bitstream/handle/123456789/1087/Petchey2001-mulifanua14C.pdf?sequence=1" },
+      { "title": "Metropolitan Museum of Art: Lapita Pottery", "url": "https://www.metmuseum.org/toah/hd/lapi/hd_lapi.htm" },
+      { "title": "Britannica: Lapita culture", "url": "https://www.britannica.com/topic/Lapita-culture" }
+    ]
+  },
+  {
+    "id": "nan-madol",
+    "title": "난 마돌",
+    "type": "site",
+    "historicalName": "난 마돌",
+    "modernName": "난 마돌: 동부 미크로네시아 의례 중심지",
+    "modernAdmin": "폰페이주 마돌레님 지구",
+    "country": "미크로네시아",
+    "worldRegion": "미크로네시아",
+    "period": "사우델레우르 왕조",
+    "yearLabel": "1200-1500년경",
+    "coordinates": { "lat": 6.8444, "lng": 158.3290 },
+    "aliases": ["Nan Madol", "Pohnpei", "Saudeleur", "Eastern Micronesia", "Madolenihmw"],
+    "summary": "난 마돌은 폰페이 동남 해안의 산호초 위에 현무암과 산호석으로 만든 100개 이상의 인공 섬과 수로, 궁전·사원·무덤 유적으로 이루어진 의례 중심지다. 사우델레우르 왕조의 권력, 노동 동원, 석조 건축 기술을 보여주는 미크로네시아 대표 복합 유적이다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 난 마돌 세계유산 좌표와 설명을 기준으로 표시했다.",
+    "curationBatch": "oceania-pacific-lapita-settlement-core-sites-v1",
+    "sources": [
+      { "title": "UNESCO: Nan Madol - Ceremonial Centre of Eastern Micronesia", "url": "https://whc.unesco.org/en/list/1503/" },
+      { "title": "UNESCO Periodic Reporting: Nan Madol", "url": "https://whc.unesco.org/document/217975" }
+    ]
+  },
+  {
+    "id": "rapa-nui",
+    "title": "라파누이",
+    "type": "site",
+    "historicalName": "라파누이 / 테 피토 오 테 헤누아",
+    "modernName": "라파누이 국립공원",
+    "modernAdmin": "발파라이소주 이스터섬",
+    "country": "칠레령 라파누이",
+    "worldRegion": "동폴리네시아",
+    "period": "라파누이 문화",
+    "yearLabel": "10-16세기 moai·ahu 경관",
+    "coordinates": { "lat": -27.1127, "lng": -109.3497 },
+    "aliases": ["Rapa Nui", "Easter Island", "Moai", "Ahu", "Rano Raraku"],
+    "summary": "라파누이는 동폴리네시아에서 가장 고립된 거주 섬 중 하나로, moai 석상과 ahu 의례 플랫폼이 독특한 문화 경관을 이룬다. 항해 정착 이후 섬 사회가 조상 숭배, 채석·운반 기술, 의례 경관을 어떻게 발전시켰는지 보여주는 대표 사례다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 라파누이 국립공원 세계유산 설명과 라노 라라쿠·ahu 경관 중심 좌표를 기준으로 표시했다.",
+    "curationBatch": "oceania-pacific-lapita-settlement-core-sites-v1",
+    "sources": [
+      { "title": "UNESCO: Rapa Nui National Park", "url": "https://whc.unesco.org/en/list/715/" },
+      { "title": "Britannica: Easter Island", "url": "https://www.britannica.com/place/Easter-Island" }
+    ]
+  },
+  {
+    "id": "taputapuatea",
+    "title": "타푸타푸아테아",
+    "type": "site",
+    "historicalName": "타푸타푸아테아",
+    "modernName": "타푸타푸아테아 marae 복합체",
+    "modernAdmin": "프랑스령 폴리네시아 라이아테아섬 오포아",
+    "country": "프랑스령 폴리네시아",
+    "worldRegion": "중앙폴리네시아",
+    "period": "폴리네시아 의례·항해 네트워크",
+    "yearLabel": "17-18세기 지역 의례 중심",
+    "coordinates": { "lat": -16.8392, "lng": -151.3573 },
+    "aliases": ["Taputapuatea", "Taputapuātea", "Raiatea", "Marae Taputapuatea", "Oro"],
+    "summary": "타푸타푸아테아는 라이아테아섬 오포아에 있는 marae 복합체로, 오로 신 숭배와 타마토아 계열 추장권, 중앙폴리네시아 항해·의례 네트워크가 만나는 중심지였다. 석조 제단과 바다로 열린 경관은 섬들 사이의 계보, 동맹, 항해 기억을 공간화한다.",
+    "confidence": "high",
+    "sourceNote": "UNESCO 타푸타푸아테아 세계유산 좌표와 marae 복합체 설명을 기준으로 표시했다.",
+    "curationBatch": "oceania-pacific-lapita-settlement-core-sites-v1",
+    "sources": [
+      { "title": "UNESCO: Taputapuatea", "url": "https://whc.unesco.org/en/list/1529/" },
+      { "title": "Britannica: Raiatea", "url": "https://www.britannica.com/place/Raiatea" }
+    ]
   }
 ]

@@ -11,9 +11,9 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 154
-- Completed curation batches: 17
-- Latest completed batch: `americas-north-america-indigenous-mound-urban-centers-v1`
+- Current entry count: 162
+- Completed curation batches: 18
+- Latest completed batch: `oceania-pacific-lapita-settlement-core-sites-v1`
 - Latest completed infrastructure milestone: `a28681f Add data validation script`
 - Data validation script: `scripts/validate-data.js`
 
@@ -278,6 +278,20 @@ The long-term target is 3,000+ entries, but the project should progress one focu
     - `spiro-mounds`
     - `moundville`
 
+- Oceania Lapita and Pacific settlement core sites batch
+  - Batch ID: `oceania-pacific-lapita-settlement-core-sites-v1`
+  - Source file: `data/records/oceania/pacific/lapita-pacific-settlement-core-sites.json`
+  - Entries added: 8
+  - Entry IDs:
+    - `foue-peninsula-lapita`
+    - `teouma`
+    - `talepakemalai`
+    - `nukuleka-lapita`
+    - `mulifanua-lapita`
+    - `nan-madol`
+    - `rapa-nui`
+    - `taputapuatea`
+
 ## Current Policy
 
 - Work on DB only unless the user explicitly asks for UI changes.
@@ -315,13 +329,13 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Oceania Lapita and Pacific settlement core sites
-   - Possible source file: `data/records/oceania/pacific/lapita-pacific-settlement-core-sites.json`
-   - Likely entries: Lapita sites of New Caledonia, Vanuatu, Tonga, Samoa, Teouma, Talepakemalai, Nan Madol, Rapa Nui
-
-2. European medieval trade and urban networks
+1. European medieval trade and urban networks
    - Possible source file: `data/records/europe/medieval/medieval-trade-urban-networks.json`
    - Likely entries: Venice, Genoa, Bruges, Lübeck, Novgorod, Visby, Bergen Bryggen, Dubrovnik
+
+2. Southwest Asian Islamic caliphate and knowledge cities
+   - Possible source file: `data/records/asia/southwest-asia/islamic-caliphate-knowledge-cities.json`
+   - Likely entries: Baghdad, Damascus, Cairo, Cordoba, Kairouan, Samarra, Nishapur, Bukhara
 
 ## Resume Checklist
 

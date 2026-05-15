@@ -502,6 +502,35 @@
         "Georgia State Parks, New Georgia Encyclopedia, Oklahoma Historical Society, and University of Alabama Museums official references",
         "World History Encyclopedia references for Cahokia, Serpent Mound, Etowah Mounds, Moundville, and Native American mound sites"
       ]
+    },
+    {
+      "id": "oceania-pacific-lapita-settlement-core-sites-v1",
+      "status": "completed",
+      "completedAt": "2026-05-15",
+      "continentId": "oceania",
+      "countryIso2": "FR-VU-PG-TO-WS-FM-CL",
+      "countryKo": "프랑스령 뉴칼레도니아·바누아투·파푸아뉴기니·통가·사모아·미크로네시아·칠레령 라파누이",
+      "worldRegion": "오세아니아·태평양",
+      "focusKo": "Lapita와 태평양 정착·의례 경관 핵심 거점",
+      "scopeKo": "원양 항해, Lapita 토기, 원격 오세아니아 초기 정착, 석조 의례 경관, 섬 권력 중심",
+      "sourceFile": "data/records/oceania/pacific/lapita-pacific-settlement-core-sites.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "foue-peninsula-lapita",
+        "teouma",
+        "talepakemalai",
+        "nukuleka-lapita",
+        "mulifanua-lapita",
+        "nan-madol",
+        "rapa-nui",
+        "taputapuatea"
+      ],
+      "sourceBasis": [
+        "Lapita Database references for Foué Peninsula, Teouma, and Talepakemalai",
+        "UNESCO World Heritage and Tentative List pages for Tonga Lapita, Nan Madol, Rapa Nui, and Taputapuatea",
+        "Metropolitan Museum of Art and Britannica references for Lapita culture",
+        "Academic and museum references for Teouma, Mulifanua, and Talepakemalai"
+      ]
     }
   ]
 }
