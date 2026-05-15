@@ -617,6 +617,35 @@
         "Encyclopaedia Iranica references for Hormuz and Siraf",
         "Kerala Tourism and KIIDC references for the Muziris Heritage Project"
       ]
+    },
+    {
+      "id": "europe-renaissance-science-cities-v1",
+      "status": "completed",
+      "completedAt": "2026-05-15",
+      "continentId": "europe",
+      "countryIso2": "IT-NL-FR-GB",
+      "countryKo": "이탈리아·네덜란드·프랑스·영국",
+      "worldRegion": "유럽 르네상스·근세 과학권",
+      "focusKo": "유럽 르네상스와 근세 과학도시 핵심 거점",
+      "scopeKo": "르네상스 예술과 수학, 해부학과 의학, 식물학, 천문 관측, 학회와 출판, 국가 후원 과학",
+      "sourceFile": "data/records/europe/early-modern/renaissance-science-cities.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "florence",
+        "padua",
+        "bologna",
+        "pisa",
+        "rome-renaissance",
+        "leiden",
+        "paris-science",
+        "london-royal-society"
+      ],
+      "sourceBasis": [
+        "UNESCO World Heritage pages for Florence, Padua Botanical Garden, Bologna Porticoes, Pisa, and Maritime Greenwich",
+        "University and institutional references for Padua, Pisa, Bologna, Leiden Observatory, Paris Observatory, Royal Society, Gresham College, and Accademia dei Lincei",
+        "Britannica references for Galileo, Paris Observatory, Academy of Sciences, Royal Society, and University of Bologna",
+        "Museo Galileo and Treccani references for Florence and Accademia del Cimento"
+      ]
     }
   ]
 }

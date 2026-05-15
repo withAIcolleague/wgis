@@ -11,9 +11,9 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 186
-- Completed curation batches: 21
-- Latest completed batch: `indian-ocean-trade-ports-entrepots-v1`
+- Current entry count: 194
+- Completed curation batches: 22
+- Latest completed batch: `europe-renaissance-science-cities-v1`
 - Latest completed infrastructure milestone: `a28681f Add data validation script`
 - Data validation script: `scripts/validate-data.js`
 
@@ -334,6 +334,20 @@ The long-term target is 3,000+ entries, but the project should progress one focu
     - `malacca`
     - `quanzhou`
 
+- European Renaissance and early modern science cities batch
+  - Batch ID: `europe-renaissance-science-cities-v1`
+  - Source file: `data/records/europe/early-modern/renaissance-science-cities.json`
+  - Entries added: 8
+  - Entry IDs:
+    - `florence`
+    - `padua`
+    - `bologna`
+    - `pisa`
+    - `rome-renaissance`
+    - `leiden`
+    - `paris-science`
+    - `london-royal-society`
+
 ## Current Policy
 
 - Work on DB only unless the user explicitly asks for UI changes.
@@ -371,13 +385,13 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. European Renaissance and early modern science cities
-   - Possible source file: `data/records/europe/early-modern/renaissance-science-cities.json`
-   - Likely entries: Florence, Padua, Bologna, Pisa, Rome, Leiden, Paris, London
-
-2. East Asian medieval capitals and knowledge cities
+1. East Asian medieval capitals and knowledge cities
    - Possible source file: `data/records/asia/east-asia/medieval-capitals-knowledge-cities.json`
    - Likely entries: Chang'an, Luoyang, Kaifeng, Nanjing, Heian-kyo, Nara, Gyeongju, Gaegyeong
+
+2. Atlantic exploration and colonial port cities
+   - Possible source file: `data/records/atlantic/early-modern/exploration-colonial-port-cities.json`
+   - Likely entries: Lisbon, Seville, Cadiz, Porto, Amsterdam, Bristol, Havana, Cartagena de Indias
 
 ## Resume Checklist
 

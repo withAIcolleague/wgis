@@ -1,0 +1,268 @@
+{
+  "schemaVersion": 1,
+  "id": "europe-renaissance-science-cities",
+  "titleKo": "유럽 르네상스와 근세 과학도시 핵심 거점",
+  "curationBatch": "europe-renaissance-science-cities-v1",
+  "taxonomyFile": "data/taxonomy.json",
+  "appIndexFile": "data/entries.json",
+  "scope": {
+    "continentId": "europe",
+    "modernCountryIso2": "IT-NL-FR-GB",
+    "modernCountryKo": "이탈리아·네덜란드·프랑스·영국",
+    "historicalRegionKo": "이탈리아 도시국가, 네덜란드 공화국, 프랑스 왕국, 잉글랜드 왕국",
+    "cultureAreaKo": "르네상스 인문주의·대학·식물원·과학 아카데미·관측소 네트워크",
+    "periodBand": "early-modern",
+    "topicKo": "르네상스 예술과 수학, 해부학과 의학, 식물학, 천문 관측, 학회와 출판, 국가 후원 과학"
+  },
+  "records": [
+    {
+      "id": "florence",
+      "title": "피렌체",
+      "type": "place",
+      "historicalName": "피렌체 / 플로렌티아",
+      "modernName": "피렌체 역사중심지",
+      "modernAdmin": "토스카나주 피렌체",
+      "country": "이탈리아",
+      "worldRegion": "이탈리아",
+      "period": "르네상스 피렌체·메디치 후원 과학",
+      "yearLabel": "14-17세기, 1657-1667년 Accademia del Cimento",
+      "date": { "startYear": 1300, "endYear": 1700, "precision": "approximate" },
+      "spatial": {
+        "continentId": "europe",
+        "modernCountryIso2": "IT",
+        "historicalRegionKo": "토스카나·아르노 강 유역",
+        "cultureAreaKo": "이탈리아 르네상스·갈릴레이 학파"
+      },
+      "classification": { "periodBand": "early-modern", "selectionTier": "core" },
+      "coordinates": { "lat": 43.7696, "lng": 11.2558 },
+      "aliases": ["Florence", "Firenze", "Medici", "Accademia del Cimento", "Museo Galileo"],
+      "summary": "피렌체는 르네상스 예술과 수학, 원근법, 공학, 메디치 후원이 결합한 도시였고, 17세기에는 갈릴레이의 후계자들이 실험 중심의 Accademia del Cimento를 운영한 과학 거점이었다. 두오모, 우피치, 팔라초 베키오와 오늘날의 갈릴레오 박물관은 예술과 자연철학이 같은 도시 후원망 안에서 발전한 과정을 보여준다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 피렌체 역사중심지와 갈릴레오 박물관 인근을 포함한 구도심 중심 좌표를 기준으로 표시했다.",
+      "curationBatch": "europe-renaissance-science-cities-v1",
+      "sources": [
+        { "title": "UNESCO: Historic Centre of Florence", "url": "https://whc.unesco.org/en/list/174/" },
+        { "title": "Museo Galileo: The Age of Galileo", "url": "https://www2.museogalileo.it/en/library-and-research-institute/projects/temporary-exhibitions/343-the-age-of-galileo-the-golden-century-of-tuscan-science-en.html" },
+        { "title": "Treccani: Accademia del Cimento", "url": "https://www.treccani.it/enciclopedia/accademia-del-cimento/" }
+      ]
+    },
+    {
+      "id": "padua",
+      "title": "파도바",
+      "type": "site",
+      "historicalName": "파도바 / 파타비움",
+      "modernName": "파도바 식물원",
+      "modernAdmin": "베네토주 파도바",
+      "country": "이탈리아",
+      "worldRegion": "이탈리아",
+      "period": "파도바 대학·근세 식물학과 의학",
+      "yearLabel": "1545년 식물원 설립, 1592-1610년 갈릴레이 재직",
+      "date": { "startYear": 1545, "endYear": 1700, "precision": "approximate" },
+      "spatial": {
+        "continentId": "europe",
+        "modernCountryIso2": "IT",
+        "historicalRegionKo": "베네토·포 평원",
+        "cultureAreaKo": "대학 식물학·의학·갈릴레이 천문학"
+      },
+      "classification": { "periodBand": "early-modern", "selectionTier": "core" },
+      "coordinates": { "lat": 45.3994, "lng": 11.8806 },
+      "aliases": ["Padua", "Padova", "Orto Botanico", "University of Padua", "Galileo"],
+      "summary": "파도바 식물원은 1545년 파도바 대학 의학 교육을 위해 조성된 세계 최초급 대학 식물원이며, 원래 위치와 기능을 유지한 과학 유산이다. 파도바 대학은 해부학, 의학, 자연철학의 중심지였고 갈릴레이가 수학 교수로 활동하며 망원경 관측 이전의 역학·천문 연구를 수행한 곳이기도 하다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 파도바 식물원 세계유산 좌표를 기준으로 표시했다.",
+      "curationBatch": "europe-renaissance-science-cities-v1",
+      "sources": [
+        { "title": "UNESCO: Botanical Garden (Orto Botanico), Padua", "url": "https://whc.unesco.org/en/list/824/" },
+        { "title": "University of Padua Heritage: The Botanical Garden", "url": "https://heritage.unipd.it/en/ortobotanico/" },
+        { "title": "Britannica: Galileo", "url": "https://www.britannica.com/biography/Galileo-Galilei" }
+      ]
+    },
+    {
+      "id": "bologna",
+      "title": "볼로냐",
+      "type": "place",
+      "historicalName": "볼로냐",
+      "modernName": "볼로냐 대학과 포르티코 도시",
+      "modernAdmin": "에밀리아로마냐주 볼로냐",
+      "country": "이탈리아",
+      "worldRegion": "이탈리아",
+      "period": "중세 대학·르네상스 해부학 전통",
+      "yearLabel": "1088년 대학 전통, 14-17세기 의학·해부학",
+      "date": { "startYear": 1088, "endYear": 1700, "precision": "approximate" },
+      "spatial": {
+        "continentId": "europe",
+        "modernCountryIso2": "IT",
+        "historicalRegionKo": "에밀리아로마냐·포 평원",
+        "cultureAreaKo": "유럽 대학·법학·의학·해부학 전통"
+      },
+      "classification": { "periodBand": "medieval", "selectionTier": "core" },
+      "coordinates": { "lat": 44.4949, "lng": 11.3426 },
+      "aliases": ["Bologna", "University of Bologna", "Alma Mater Studiorum", "Archiginnasio", "Porticoes of Bologna"],
+      "summary": "볼로냐는 유럽 대학 제도의 대표적 기원지로, 법학과 의학, 해부학 교육이 도시의 학문 정체성을 형성했다. 장거리 학생 공동체와 도시 포르티코, 아르키진나시오 같은 대학 공간은 르네상스와 근세 과학이 전문 교육기관과 도시 인프라를 통해 축적된 방식을 보여준다.",
+      "confidence": "high",
+      "sourceNote": "볼로냐 대학·구도심 권역과 UNESCO 포르티코 도시 경관을 기준으로 표시했다.",
+      "curationBatch": "europe-renaissance-science-cities-v1",
+      "sources": [
+        { "title": "University of Bologna: Our History", "url": "https://www.unibo.it/en/university/who-we-are/our-history/our-history" },
+        { "title": "UNESCO: The Porticoes of Bologna", "url": "https://whc.unesco.org/en/list/1650" },
+        { "title": "Britannica: University of Bologna", "url": "https://www.britannica.com/topic/University-of-Bologna" }
+      ]
+    },
+    {
+      "id": "pisa",
+      "title": "피사",
+      "type": "site",
+      "historicalName": "피사",
+      "modernName": "피사 식물원과 두오모 광장",
+      "modernAdmin": "토스카나주 피사",
+      "country": "이탈리아",
+      "worldRegion": "이탈리아",
+      "period": "피사 대학·갈릴레이와 근대 물리학 전통",
+      "yearLabel": "1343년 대학, 1543년 식물원, 1564년 갈릴레이 출생",
+      "date": { "startYear": 1343, "endYear": 1700, "precision": "approximate" },
+      "spatial": {
+        "continentId": "europe",
+        "modernCountryIso2": "IT",
+        "historicalRegionKo": "토스카나·아르노 강 하류",
+        "cultureAreaKo": "갈릴레이 물리학·대학 식물학"
+      },
+      "classification": { "periodBand": "early-modern", "selectionTier": "core" },
+      "coordinates": { "lat": 43.7209, "lng": 10.3966 },
+      "aliases": ["Pisa", "University of Pisa", "Orto Botanico di Pisa", "Galileo Galilei", "Leaning Tower of Pisa"],
+      "summary": "피사는 갈릴레이의 출생지이자 대학 교육과 초기 역학 전통이 연결된 도시이며, 1543년 조성된 피사 식물원은 세계에서 가장 오래된 대학 식물원 중 하나다. 두오모 광장과 사탑은 중세 도시의 상징이지만, 근세에는 식물학·의학·수학 교육과 갈릴레이 전통이 겹친 과학사적 장소로도 읽힌다.",
+      "confidence": "high",
+      "sourceNote": "피사 식물원과 두오모 광장 사이의 대학·구도심 권역 좌표를 기준으로 표시했다.",
+      "curationBatch": "europe-renaissance-science-cities-v1",
+      "sources": [
+        { "title": "University of Pisa Botanical Garden and Museum: History", "url": "https://www.ortomuseobot.sma.unipi.it/en/history/" },
+        { "title": "UNESCO: Piazza del Duomo, Pisa", "url": "https://whc.unesco.org/en/list/395/" },
+        { "title": "Britannica: Galileo", "url": "https://www.britannica.com/biography/Galileo-Galilei" }
+      ]
+    },
+    {
+      "id": "rome-renaissance",
+      "title": "로마 린체이 아카데미",
+      "type": "place",
+      "historicalName": "아카데미아 데이 린체이",
+      "modernName": "아카데미아 나치오날레 데이 린체이",
+      "modernAdmin": "라치오주 로마 트라스테베레",
+      "country": "이탈리아",
+      "worldRegion": "이탈리아",
+      "period": "근세 로마 과학 아카데미",
+      "yearLabel": "1603년 창립, 1611년 갈릴레이 회원",
+      "date": { "startYear": 1603, "endYear": 1651, "precision": "approximate" },
+      "spatial": {
+        "continentId": "europe",
+        "modernCountryIso2": "IT",
+        "historicalRegionKo": "로마 교황령",
+        "cultureAreaKo": "근세 과학 아카데미·갈릴레이 네트워크"
+      },
+      "classification": { "periodBand": "early-modern", "selectionTier": "core" },
+      "coordinates": { "lat": 41.8930, "lng": 12.4663 },
+      "aliases": ["Rome", "Accademia dei Lincei", "Lincean Academy", "Federico Cesi", "Galileo"],
+      "summary": "로마의 Accademia dei Lincei는 1603년 페데리코 체시가 창립한 근세 과학 아카데미로, 관찰과 자연사 연구를 강조했고 갈릴레이가 회원으로 참여했다. 교황령 로마의 후원과 검열 사이에서 천문학, 현미경, 식물학, 출판 네트워크가 어떻게 발전했는지 보여주는 핵심 지점이다.",
+      "confidence": "high",
+      "sourceNote": "현재 린체이 아카데미가 자리한 팔라초 코르시니 권역 좌표를 기준으로 표시했다.",
+      "curationBatch": "europe-renaissance-science-cities-v1",
+      "sources": [
+        { "title": "Accademia dei Lincei: History", "url": "https://www.lincei.it/en/storia" },
+        { "title": "Pontifical Academy of Sciences: History", "url": "https://www.pas.va/en/about/history.html" },
+        { "title": "Britannica: Galileo", "url": "https://www.britannica.com/biography/Galileo-Galilei" }
+      ]
+    },
+    {
+      "id": "leiden",
+      "title": "레이던",
+      "type": "site",
+      "historicalName": "레이던",
+      "modernName": "레이던 구 천문대",
+      "modernAdmin": "자위트홀란트주 레이던",
+      "country": "네덜란드",
+      "worldRegion": "네덜란드",
+      "period": "네덜란드 공화국 대학과 천문학",
+      "yearLabel": "1575년 대학, 1633년 천문대",
+      "date": { "startYear": 1575, "endYear": 1700, "precision": "approximate" },
+      "spatial": {
+        "continentId": "europe",
+        "modernCountryIso2": "NL",
+        "historicalRegionKo": "네덜란드 공화국·홀란트",
+        "cultureAreaKo": "네덜란드 황금기 대학·천문학·식물학"
+      },
+      "classification": { "periodBand": "early-modern", "selectionTier": "core" },
+      "coordinates": { "lat": 52.1547, "lng": 4.4836 },
+      "aliases": ["Leiden", "Leiden University", "Leiden Observatory", "Old Observatory", "Hortus Botanicus Leiden"],
+      "summary": "레이던은 네덜란드 공화국의 대표 대학도시로, 1575년 대학 설립 이후 식물원, 해부학 극장, 인쇄·지도 제작, 천문학 연구가 결합했다. 1633년 설치된 레이던 천문대는 대학 천문 관측의 장기 전통을 보여주며, 네덜란드 해상 팽창과 과학 지식의 연결을 이해하게 한다.",
+      "confidence": "high",
+      "sourceNote": "레이던 구 천문대와 대학 식물원 인근 좌표를 기준으로 표시했다.",
+      "curationBatch": "europe-renaissance-science-cities-v1",
+      "sources": [
+        { "title": "Leiden University: Leiden Observatory", "url": "https://www.universiteitleiden.nl/en/science/astronomy" },
+        { "title": "Leiden University: Old Observatory History", "url": "https://www.universiteitleiden.nl/old-observatory/the-observatory/history" },
+        { "title": "Leiden University: Old Observatory", "url": "https://www.universiteitleiden.nl/old-observatory" }
+      ]
+    },
+    {
+      "id": "paris-science",
+      "title": "파리 천문대와 과학아카데미",
+      "type": "place",
+      "historicalName": "파리 왕립 과학아카데미와 파리 천문대",
+      "modernName": "파리 천문대",
+      "modernAdmin": "일드프랑스 파리 14구",
+      "country": "프랑스",
+      "worldRegion": "프랑스",
+      "period": "프랑스 왕립 과학아카데미·파리 천문대",
+      "yearLabel": "1666년 과학아카데미, 1667년 천문대",
+      "date": { "startYear": 1666, "endYear": 1800, "precision": "approximate" },
+      "spatial": {
+        "continentId": "europe",
+        "modernCountryIso2": "FR",
+        "historicalRegionKo": "일드프랑스·파리",
+        "cultureAreaKo": "국가 후원 과학·천문학·지도 제작"
+      },
+      "classification": { "periodBand": "early-modern", "selectionTier": "core" },
+      "coordinates": { "lat": 48.8363, "lng": 2.3365 },
+      "aliases": ["Paris Observatory", "Observatoire de Paris", "Academy of Sciences", "Académie des sciences", "Paris Meridian"],
+      "summary": "파리는 루이 14세와 콜베르가 후원한 왕립 과학아카데미와 1667년 파리 천문대를 통해 국가 주도 과학의 중심지가 되었다. 천문 관측, 자오선 측량, 지도 제작과 해상 항해 개선은 근세 국가 행정과 과학 제도가 결합한 대표 사례다.",
+      "confidence": "high",
+      "sourceNote": "파리 천문대 본관 좌표를 기준으로 표시했다.",
+      "curationBatch": "europe-renaissance-science-cities-v1",
+      "sources": [
+        { "title": "Paris Observatory: History of the Paris site", "url": "https://observatoiredeparis.psl.eu/-histoire-du-site-de-paris-.html" },
+        { "title": "Britannica: Paris Observatory", "url": "https://www.britannica.com/topic/Paris-Observatory" },
+        { "title": "Britannica: Academy of Sciences", "url": "https://www.britannica.com/topic/Academy-of-Sciences-French-organization" }
+      ]
+    },
+    {
+      "id": "london-royal-society",
+      "title": "런던 왕립학회",
+      "type": "place",
+      "historicalName": "그레셤 칼리지와 왕립학회",
+      "modernName": "왕립학회·그리니치 과학 경관",
+      "modernAdmin": "잉글랜드 런던",
+      "country": "영국",
+      "worldRegion": "영국",
+      "period": "왕립학회와 근대 실험철학",
+      "yearLabel": "1660년 왕립학회 창립, 1675년 그리니치 천문대",
+      "date": { "startYear": 1660, "endYear": 1800, "precision": "approximate" },
+      "spatial": {
+        "continentId": "europe",
+        "modernCountryIso2": "GB",
+        "historicalRegionKo": "런던·템스 강 유역",
+        "cultureAreaKo": "근세 실험철학·항해 천문학·학술 출판"
+      },
+      "classification": { "periodBand": "early-modern", "selectionTier": "core" },
+      "coordinates": { "lat": 51.5150, "lng": -0.0850 },
+      "aliases": ["London", "Royal Society", "Gresham College", "Christopher Wren", "Maritime Greenwich"],
+      "summary": "런던은 1660년 그레셤 칼리지에서 왕립학회가 시작된 뒤 실험철학, 공개 강연, 학술 출판과 자연철학 네트워크의 중심이 되었다. 그리니치 왕립천문대는 항해와 시간 측정, 천문 관측을 국가 해상력과 연결했으며, 런던의 상업·제국 네트워크와 과학 제도를 결합했다.",
+      "confidence": "medium",
+      "sourceNote": "왕립학회 창립 장소로 알려진 그레셤 칼리지 원도심 권역을 근사 표시했다.",
+      "curationBatch": "europe-renaissance-science-cities-v1",
+      "sources": [
+        { "title": "Royal Society: History of the Royal Society", "url": "https://royalsociety.org/about-us/who-we-are/history/" },
+        { "title": "Gresham College: Our History", "url": "https://www.gresham.ac.uk/about-us/our-history" },
+        { "title": "UNESCO: Maritime Greenwich", "url": "https://whc.unesco.org/en/list/795" },
+        { "title": "Britannica: Royal Society", "url": "https://www.britannica.com/topic/Royal-Society" }
+      ]
+    }
+  ]
+}
