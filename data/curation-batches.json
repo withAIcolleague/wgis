@@ -444,6 +444,35 @@
         "World History Encyclopedia references for Kilwa, Swahili Coast, and Great Zimbabwe",
         "Britannica references for Kilwa and Sofala"
       ]
+    },
+    {
+      "id": "asia-central-asia-silk-road-oasis-cities-v1",
+      "status": "completed",
+      "completedAt": "2026-05-15",
+      "continentId": "asia",
+      "countryIso2": "UZ-TM-KZ-CN",
+      "countryKo": "우즈베키스탄·투르크메니스탄·카자흐스탄·중국",
+      "worldRegion": "중앙아시아·타림 분지",
+      "focusKo": "중앙아시아 실크로드 오아시스 도시 핵심 거점",
+      "scopeKo": "실크로드 교역, 오아시스 도시, 이슬람 학문 중심지, 불교 석굴, 초원·사막 경유 네트워크",
+      "sourceFile": "data/records/asia/central-asia/silk-road-oasis-cities.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "samarkand",
+        "bukhara",
+        "merv",
+        "khiva-itchan-kala",
+        "otrar",
+        "kashgar",
+        "turfan-gaochang",
+        "dunhuang-mogao-caves"
+      ],
+      "sourceBasis": [
+        "UNESCO World Heritage pages for Samarkand, Bukhara, Ancient Merv, Itchan Kala, Chang'an-Tianshan Corridor, and Mogao Caves",
+        "UNESCO Silk Roads Programme references for Kazakhstan, Dunhuang, and general Silk Roads context",
+        "World History Encyclopedia references for Timur and the Silk Road",
+        "Britannica references for Samarkand, Bukhara, Merv, Khiva, Kashgar, and Dunhuang"
+      ]
     }
   ]
 }
