@@ -733,6 +733,35 @@
         "Britannica references for Istanbul, Topkapi Palace Museum, Isfahan, Agra Fort, Fatehpur Sikri, Red Fort, and Lahore Fort",
         "World History Encyclopedia references for Ottoman Empire and Topkapi Palace context"
       ]
+    },
+    {
+      "id": "asia-east-asia-early-modern-ports-treaty-cities-v1",
+      "status": "completed",
+      "completedAt": "2026-05-18",
+      "continentId": "asia",
+      "countryIso2": "JP-CN-KR",
+      "countryKo": "일본·중국·대한민국",
+      "worldRegion": "동아시아 해양교역권",
+      "focusKo": "동아시아 근세 교역항과 조약항 도시",
+      "scopeKo": "나가사키·데지마·광저우·마카오의 제한무역 체제와 상하이·요코하마·부산·인천의 조약항/개항장 전환",
+      "sourceFile": "data/records/asia/east-asia/early-modern-ports-treaty-cities.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "nagasaki-port",
+        "dejima",
+        "guangzhou-thirteen-factories",
+        "macau-historic-centre",
+        "shanghai-treaty-port",
+        "yokohama-port",
+        "busan-open-port",
+        "incheon-open-port"
+      ],
+      "sourceBasis": [
+        "Official port, city, customs, and heritage pages for Nagasaki, Dejima, Yokohama, Busan, Incheon, and Macao",
+        "UNESCO World Heritage reference for the Historic Centre of Macao",
+        "Britannica references for Nagasaki, Guangzhou, the Canton System, Macau, Shanghai, treaty ports, and Yokohama",
+        "World History Encyclopedia reference for Portuguese Nagasaki context"
+      ]
     }
   ]
 }

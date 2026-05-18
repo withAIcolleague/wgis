@@ -11,9 +11,9 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 214
-- Completed curation batches: 25
-- Latest completed batch: `eurasia-early-modern-gunpowder-empire-capitals-v1`
+- Current entry count: 222
+- Completed curation batches: 26
+- Latest completed batch: `asia-east-asia-early-modern-ports-treaty-cities-v1`
 - Latest completed infrastructure milestone: `a28681f Add data validation script`
 - Data validation script: `scripts/validate-data.js`
 
@@ -390,6 +390,20 @@ The long-term target is 3,000+ entries, but the project should progress one focu
     - `red-fort-delhi`
     - `lahore-fort-shalimar`
 
+- East Asian early modern ports and treaty-era cities batch
+  - Batch ID: `asia-east-asia-early-modern-ports-treaty-cities-v1`
+  - Source file: `data/records/asia/east-asia/early-modern-ports-treaty-cities.json`
+  - Entries added: 8
+  - Entry IDs:
+    - `nagasaki-port`
+    - `dejima`
+    - `guangzhou-thirteen-factories`
+    - `macau-historic-centre`
+    - `shanghai-treaty-port`
+    - `yokohama-port`
+    - `busan-open-port`
+    - `incheon-open-port`
+
 ## Current Policy
 
 - Work on DB only unless the user explicitly asks for UI changes.
@@ -427,13 +441,13 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. East Asian early modern ports and treaty-era cities
-   - Possible source file: `data/records/asia/east-asia/early-modern-ports-treaty-cities.json`
-   - Likely entries: Nagasaki, Dejima, Guangzhou, Macau, Shanghai, Yokohama, Busan, Incheon
-
-2. Early modern Southeast Asian maritime sultanates and port cities
+1. Early modern Southeast Asian maritime sultanates and port cities
    - Possible source file: `data/records/asia/southeast-asia/early-modern-maritime-sultanates-port-cities.json`
    - Likely entries: Aceh, Johor, Brunei, Makassar, Ternate, Tidore, Manila, Batavia
+
+2. Modern imperial chokepoints and canal-port cities
+   - Possible source file: `data/records/global/modern/imperial-chokepoints-canal-port-cities.json`
+   - Likely entries: Suez, Port Said, Aden, Singapore, Hong Kong, Colombo, Cape Town, Panama Canal
 
 ## Resume Checklist
 

@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "id": "asia-east-asia-early-modern-ports-treaty-cities",
+  "titleKo": "동아시아 근세 교역항과 조약항 도시",
+  "curationBatch": "asia-east-asia-early-modern-ports-treaty-cities-v1",
+  "taxonomyFile": "data/taxonomy.json",
+  "appIndexFile": "data/entries.json",
+  "scope": {
+    "continentId": "asia",
+    "modernCountryIso2": "JP-CN-KR",
+    "modernCountryKo": "일본·중국·대한민국",
+    "historicalRegionKo": "동중국해, 남중국해, 일본 열도, 한반도 남서 해안",
+    "cultureAreaKo": "해금·사행·조공무역, 네덜란드·포르투갈 중계무역, 조약항과 개항장",
+    "periodBand": "early-modern-modern",
+    "topicKo": "근세 해상 교역, 제한무역 체제, 아편전쟁 이후 조약항, 동아시아 개항과 도시 변화"
+  },
+  "records": [
+    {
+      "id": "nagasaki-port",
+      "title": "나가사키 항",
+      "type": "place",
+      "historicalName": "나가사키",
+      "modernName": "나가사키 항",
+      "modernAdmin": "나가사키현 나가사키시",
+      "country": "일본",
+      "worldRegion": "동중국해·규슈",
+      "period": "일본 근세 대외교역항",
+      "yearLabel": "1571년 개항, 16-19세기 대외교역 중심",
+      "date": { "startYear": 1571, "endYear": 1859, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "JP",
+        "historicalRegionKo": "규슈 서해안·나가사키 만",
+        "cultureAreaKo": "일본 남만무역·중국무역·네덜란드 무역"
+      },
+      "classification": { "periodBand": "early-modern", "selectionTier": "core" },
+      "coordinates": { "lat": 32.7503, "lng": 129.8777 },
+      "aliases": ["Nagasaki", "Nagasaki Port", "Portuguese Nagasaki", "Nanban trade", "Edo foreign trade"],
+      "summary": "나가사키 항은 1571년 포르투갈 선박이 들어오며 일본과 유럽, 중국을 연결하는 대표 해상 교역항으로 성장했다. 에도 막부의 대외 통제가 강화된 뒤에도 중국 상인과 네덜란드 상관을 통해 제한된 국제 교역이 유지되어, 일본의 폐쇄와 교류가 동시에 작동한 항구 도시를 보여준다.",
+      "confidence": "high",
+      "sourceNote": "나가사키 항과 도심 항만권을 기준으로 표시했다.",
+      "curationBatch": "asia-east-asia-early-modern-ports-treaty-cities-v1",
+      "sources": [
+        { "title": "Nagasaki Customs: History", "url": "https://www.customs.go.jp/nagasaki/english/history.htm" },
+        { "title": "World History Encyclopedia: Portuguese Nagasaki", "url": "https://www.worldhistory.org/Portuguese_Nagasaki/" },
+        { "title": "Britannica: Nagasaki", "url": "https://www.britannica.com/place/Nagasaki-Japan" }
+      ]
+    },
+    {
+      "id": "dejima",
+      "title": "데지마",
+      "type": "place",
+      "historicalName": "데지마 / 출도",
+      "modernName": "데지마 복원지",
+      "modernAdmin": "나가사키현 나가사키시",
+      "country": "일본",
+      "worldRegion": "동중국해·규슈",
+      "period": "에도 막부 네덜란드 상관",
+      "yearLabel": "1636년 조성, 1641-1859년 네덜란드 상관",
+      "date": { "startYear": 1636, "endYear": 1859, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "JP",
+        "historicalRegionKo": "나가사키 항 내 인공섬",
+        "cultureAreaKo": "에도 막부 제한무역·난학·네덜란드 동인도회사 네트워크"
+      },
+      "classification": { "periodBand": "early-modern", "selectionTier": "core" },
+      "coordinates": { "lat": 32.7447, "lng": 129.8736 },
+      "aliases": ["Dejima", "Deshima", "Dutch Trading Post", "VOC Japan", "Rangaku"],
+      "summary": "데지마는 에도 막부가 외국 상인의 거주와 교역을 통제하기 위해 나가사키 항 안에 조성한 인공섬이었다. 1641년 이후 네덜란드 상관이 이곳에 집중되면서 서양 지식, 의학, 지도, 과학기술이 제한된 통로를 통해 일본에 들어오는 접점이 되었다.",
+      "confidence": "high",
+      "sourceNote": "현대 나가사키 데지마 복원지 좌표를 기준으로 표시했다.",
+      "curationBatch": "asia-east-asia-early-modern-ports-treaty-cities-v1",
+      "sources": [
+        { "title": "Nagasaki Dejima: History", "url": "https://nagasakidejima.jp/en/history/" },
+        { "title": "MLIT Japan: Dejima", "url": "https://www.mlit.go.jp/tagengo-db/en/R2-00456.html" },
+        { "title": "Britannica: Sakoku", "url": "https://www.britannica.com/event/sakoku" }
+      ]
+    },
+    {
+      "id": "guangzhou-thirteen-factories",
+      "title": "광저우 십삼행",
+      "type": "place",
+      "historicalName": "광저우 / 캔턴 / 십삼행",
+      "modernName": "광저우 십삼행 권역",
+      "modernAdmin": "광둥성 광저우시 리완구",
+      "country": "중국",
+      "worldRegion": "남중국해·주강 삼각주",
+      "period": "청대 광저우 체제",
+      "yearLabel": "1757-1842년 광저우 체제 대외무역 중심",
+      "date": { "startYear": 1757, "endYear": 1842, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "CN",
+        "historicalRegionKo": "주강 하구·광저우 서관",
+        "cultureAreaKo": "청대 대외무역 통제·공행상인·차와 은 교역"
+      },
+      "classification": { "periodBand": "early-modern", "selectionTier": "core" },
+      "coordinates": { "lat": 23.1136, "lng": 113.2520 },
+      "aliases": ["Guangzhou", "Canton", "Thirteen Factories", "Canton System", "Cohong"],
+      "summary": "광저우 십삼행은 청 조정이 유럽 상인과의 무역을 광저우로 제한한 시기에 외국 상관과 공행 상인이 집중된 대외무역 구역이었다. 차, 도자기, 비단, 은이 오가던 이 항구 권역은 조공질서와 상업 자본, 서구 해상세력이 충돌한 아편전쟁 이전 동아시아 무역 구조를 보여준다.",
+      "confidence": "medium",
+      "sourceNote": "옛 십삼행 상관이 있던 광저우 리완구 주강변 권역을 근사 표시했다.",
+      "curationBatch": "asia-east-asia-early-modern-ports-treaty-cities-v1",
+      "sources": [
+        { "title": "Britannica: Canton system", "url": "https://www.britannica.com/event/Canton-system" },
+        { "title": "Britannica: Guangzhou - History", "url": "https://www.britannica.com/place/Guangzhou/History" },
+        { "title": "Google Arts & Culture: What are the Thirteen Hongs in Canton?", "url": "https://artsandculture.google.com/story/what-are-the-thirteen-hongs-in-canton-guangzhou-museum/RAWhY5CdS7LZDQ?hl=en" }
+      ]
+    },
+    {
+      "id": "macau-historic-centre",
+      "title": "마카오 역사 지구",
+      "type": "place",
+      "historicalName": "마카오 / 아마카오",
+      "modernName": "마카오 역사 지구",
+      "modernAdmin": "마카오 특별행정구",
+      "country": "중국",
+      "worldRegion": "남중국해·주강 삼각주",
+      "period": "포르투갈-중국 중계무역항",
+      "yearLabel": "1557년 포르투갈 정착, 16-18세기 중계무역",
+      "date": { "startYear": 1557, "endYear": 1842, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "CN",
+        "historicalRegionKo": "주강 하구 서안·마카오 반도",
+        "cultureAreaKo": "포르투갈 아시아 교역망·중국 해상무역·가톨릭 선교"
+      },
+      "classification": { "periodBand": "early-modern", "selectionTier": "core" },
+      "coordinates": { "lat": 22.1987, "lng": 113.5439 },
+      "aliases": ["Macau", "Macao", "Historic Centre of Macao", "Portuguese Macau", "A-Ma"],
+      "summary": "마카오는 16세기 중반 포르투갈 상인이 정착한 뒤 중국 연안과 일본, 동남아시아, 인도양을 잇는 중계무역항이 되었다. 성 바울 성당 유적, 세나도 광장, 요새, 중국식 사원과 서구식 거리망은 동아시아 해상교역과 가톨릭 선교, 중국 행정질서가 한 도시 안에 공존한 흔적이다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO 마카오 역사 지구의 세나도 광장·성 바울 성당 유적 권역을 기준으로 표시했다.",
+      "curationBatch": "asia-east-asia-early-modern-ports-treaty-cities-v1",
+      "sources": [
+        { "title": "UNESCO: Historic Centre of Macao", "url": "https://whc.unesco.org/en/list/1110" },
+        { "title": "Macao World Heritage: Historic Centre of Macao", "url": "https://www.wh.gov.mo/en/site/detail/1" },
+        { "title": "Britannica: Macau", "url": "https://www.britannica.com/place/Macau-administrative-region-China" }
+      ]
+    },
+    {
+      "id": "shanghai-treaty-port",
+      "title": "상하이 조약항",
+      "type": "place",
+      "historicalName": "상하이 / 상해",
+      "modernName": "와이탄·옛 조계지 권역",
+      "modernAdmin": "상하이시 황푸구",
+      "country": "중국",
+      "worldRegion": "장강 하구",
+      "period": "난징조약 이후 조약항",
+      "yearLabel": "1843년 개항, 19-20세기 조계도시",
+      "date": { "startYear": 1843, "endYear": 1943, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "CN",
+        "historicalRegionKo": "황푸강·장강 하구",
+        "cultureAreaKo": "조약항·외국 조계·근대 금융과 해관"
+      },
+      "classification": { "periodBand": "modern", "selectionTier": "core" },
+      "coordinates": { "lat": 31.2342, "lng": 121.4903 },
+      "aliases": ["Shanghai", "The Bund", "Treaty port", "International Settlement", "French Concession"],
+      "summary": "상하이는 난징조약 뒤 1843년 외국 무역에 개방되며 장강 하구의 조약항 도시로 급성장했다. 와이탄, 옛 공동조계와 프랑스 조계, 해관과 은행 건물은 청 말의 항구 개방, 외국 치외법권, 금융·해운 네트워크가 도시 공간을 재편한 과정을 보여준다.",
+      "confidence": "high",
+      "sourceNote": "와이탄과 옛 공동조계 중심 권역을 기준으로 표시했다.",
+      "curationBatch": "asia-east-asia-early-modern-ports-treaty-cities-v1",
+      "sources": [
+        { "title": "Britannica: Shanghai - History", "url": "https://www.britannica.com/place/Shanghai/History" },
+        { "title": "Britannica: Treaty port", "url": "https://www.britannica.com/topic/treaty-port" },
+        { "title": "U.S. National Archives: Background on Shanghai", "url": "https://www.archives.gov/research/foreign-policy/shanghai-visas/background.html" }
+      ]
+    },
+    {
+      "id": "yokohama-port",
+      "title": "요코하마 항",
+      "type": "place",
+      "historicalName": "요코하마",
+      "modernName": "요코하마 항",
+      "modernAdmin": "가나가와현 요코하마시",
+      "country": "일본",
+      "worldRegion": "도쿄만",
+      "period": "일본 개항장",
+      "yearLabel": "1859년 개항, 메이지기 국제무역항",
+      "date": { "startYear": 1859, "endYear": 1899, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "JP",
+        "historicalRegionKo": "도쿄만 서안·가나가와",
+        "cultureAreaKo": "막말 개항·외국인 거류지·메이지 무역항"
+      },
+      "classification": { "periodBand": "modern", "selectionTier": "core" },
+      "coordinates": { "lat": 35.4437, "lng": 139.6380 },
+      "aliases": ["Yokohama", "Port of Yokohama", "Kanagawa Treaty Port", "Yamate", "Kannai"],
+      "summary": "요코하마 항은 1859년 개항 뒤 에도에서 가까운 국제무역항으로 빠르게 성장했다. 외국인 거류지, 세관, 부두, 창고, 철도 연결은 막말 개항이 메이지 일본의 대외무역과 도시 인프라를 어떻게 바꾸었는지 보여준다.",
+      "confidence": "high",
+      "sourceNote": "요코하마 항 오산바시·간나이 개항장 권역을 기준으로 표시했다.",
+      "curationBatch": "asia-east-asia-early-modern-ports-treaty-cities-v1",
+      "sources": [
+        { "title": "Port of Yokohama: History", "url": "https://www.city.yokohama.lg.jp/lang/overseas/port/about_us/history/h1.html" },
+        { "title": "Yokohama Customs: History", "url": "https://www.customs.go.jp/yokohama/english/e-history.htm" },
+        { "title": "Britannica: Yokohama", "url": "https://www.britannica.com/place/Yokohama" }
+      ]
+    },
+    {
+      "id": "busan-open-port",
+      "title": "부산 개항장",
+      "type": "place",
+      "historicalName": "부산포 / 초량왜관 / 부산 개항장",
+      "modernName": "부산항·중구 개항장 권역",
+      "modernAdmin": "부산광역시 중구",
+      "country": "대한민국",
+      "worldRegion": "대한해협",
+      "period": "조선 후기 개항장",
+      "yearLabel": "1876년 개항, 조일수호조규 이후 개항장",
+      "date": { "startYear": 1876, "endYear": 1910, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "KR",
+        "historicalRegionKo": "한반도 동남해안·대한해협",
+        "cultureAreaKo": "조선 개항장·일본 전관거류지·근대 항만"
+      },
+      "classification": { "periodBand": "modern", "selectionTier": "core" },
+      "coordinates": { "lat": 35.1028, "lng": 129.0364 },
+      "aliases": ["Busan", "Pusan", "Busan Port", "Choryang Waegwan", "Treaty of Ganghwa"],
+      "summary": "부산은 조선시대부터 왜관을 통해 일본과 제한 교류가 이루어지던 항구였고, 1876년 강화도조약 뒤 첫 개항장이 되었다. 초량 왜관의 유산, 일본인 거류지, 근대 항만 시설은 조선의 기존 외교무역 질서가 근대 조약 체제로 전환되는 현장을 보여준다.",
+      "confidence": "high",
+      "sourceNote": "부산 중구 옛 개항장·부산항 북항 권역을 기준으로 표시했다.",
+      "curationBatch": "asia-east-asia-early-modern-ports-treaty-cities-v1",
+      "sources": [
+        { "title": "Busan Metropolitan City: Historical Overview", "url": "https://www.busan.go.kr/eng/historical-overview" },
+        { "title": "Busan Metropolitan City: History of Busan", "url": "https://www.busan.go.kr/eng/history-of-busan" },
+        { "title": "Busan Port Authority: Busan Port History", "url": "https://www.busanpa.com/eng/Contents.do?mCode=MN0025" }
+      ]
+    },
+    {
+      "id": "incheon-open-port",
+      "title": "인천 개항장",
+      "type": "place",
+      "historicalName": "제물포 / 인천 개항장",
+      "modernName": "인천 개항장 문화지구",
+      "modernAdmin": "인천광역시 중구",
+      "country": "대한민국",
+      "worldRegion": "경기만·황해",
+      "period": "조선 후기 개항장",
+      "yearLabel": "1883년 개항, 한성 관문 항구",
+      "date": { "startYear": 1883, "endYear": 1910, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "KR",
+        "historicalRegionKo": "경기만·한강 하구 서해안",
+        "cultureAreaKo": "조선 개항장·각국 조계·근대 항만도시"
+      },
+      "classification": { "periodBand": "modern", "selectionTier": "core" },
+      "coordinates": { "lat": 37.4747, "lng": 126.6218 },
+      "aliases": ["Incheon", "Jemulpo", "Chemulpo", "Incheon Open Port", "Open Port Area"],
+      "summary": "인천은 1883년 제물포항 개항 뒤 한성과 외국 공사관, 상인, 선박을 연결하는 서해 관문이 되었다. 각국 조계, 청·일 조계지, 세관, 창고, 철도와 항만 시설은 조선 말 수도권이 조약항 체제 속에서 세계경제와 직접 연결된 과정을 보여준다.",
+      "confidence": "high",
+      "sourceNote": "인천 중구 개항장 문화지구와 옛 제물포항 권역을 기준으로 표시했다.",
+      "curationBatch": "asia-east-asia-early-modern-ports-treaty-cities-v1",
+      "sources": [
+        { "title": "Incheon Metropolitan City: Incheon Open Port", "url": "https://www.incheon.go.kr/en/EN010701/2127755" },
+        { "title": "Incheon Port Authority: History", "url": "https://www.icpa.or.kr/eng/contents.do?key=1625" },
+        { "title": "Incheon Regional Office of Oceans and Fisheries: History", "url": "https://incheon.mof.go.kr/en/page.do?menuIdx=1815" }
+      ]
+    }
+  ]
+}
