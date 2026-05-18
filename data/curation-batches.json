@@ -704,6 +704,35 @@
         "Archivo General de Indias reference for Seville and Spanish colonial administration",
         "Port of Cadiz, University of Bristol, and Bristol Museums references for Atlantic port history"
       ]
+    },
+    {
+      "id": "eurasia-early-modern-gunpowder-empire-capitals-v1",
+      "status": "completed",
+      "completedAt": "2026-05-18",
+      "continentId": "eurasia",
+      "countryIso2": "TR-IR-IN-PK",
+      "countryKo": "튀르키예·이란·인도·파키스탄",
+      "worldRegion": "유라시아 이슬람 제국권",
+      "focusKo": "근세 화약제국 수도와 궁성 복합체",
+      "scopeKo": "오스만·사파비·무굴 수도, 궁성, 요새, 광장, 정원, 제국 의례와 행정",
+      "sourceFile": "data/records/eurasia/early-modern/gunpowder-empire-capitals.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "ottoman-istanbul",
+        "topkapi-palace",
+        "safavid-isfahan",
+        "naqsh-e-jahan-square",
+        "agra-fort",
+        "fatehpur-sikri",
+        "red-fort-delhi",
+        "lahore-fort-shalimar"
+      ],
+      "sourceBasis": [
+        "UNESCO World Heritage pages for Historic Areas of Istanbul, Meidan Emam Esfahan, Agra Fort, Fatehpur Sikri, Red Fort, and Lahore",
+        "UNESCO Silk Roads Programme references for Topkapi Palace, Isfahan, and Fatehpur Sikri",
+        "Britannica references for Istanbul, Topkapi Palace Museum, Isfahan, Agra Fort, Fatehpur Sikri, Red Fort, and Lahore Fort",
+        "World History Encyclopedia references for Ottoman Empire and Topkapi Palace context"
+      ]
     }
   ]
 }

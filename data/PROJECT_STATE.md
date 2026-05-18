@@ -1,6 +1,6 @@
 # WGIS Data Project State
 
-Last updated: 2026-05-15
+Last updated: 2026-05-18
 
 ## Current Goal
 
@@ -11,9 +11,9 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 206
-- Completed curation batches: 24
-- Latest completed batch: `atlantic-early-modern-exploration-colonial-port-cities-v1`
+- Current entry count: 214
+- Completed curation batches: 25
+- Latest completed batch: `eurasia-early-modern-gunpowder-empire-capitals-v1`
 - Latest completed infrastructure milestone: `a28681f Add data validation script`
 - Data validation script: `scripts/validate-data.js`
 
@@ -376,6 +376,20 @@ The long-term target is 3,000+ entries, but the project should progress one focu
     - `havana`
     - `cartagena-de-indias`
 
+- Early modern gunpowder empire capitals batch
+  - Batch ID: `eurasia-early-modern-gunpowder-empire-capitals-v1`
+  - Source file: `data/records/eurasia/early-modern/gunpowder-empire-capitals.json`
+  - Entries added: 8
+  - Entry IDs:
+    - `ottoman-istanbul`
+    - `topkapi-palace`
+    - `safavid-isfahan`
+    - `naqsh-e-jahan-square`
+    - `agra-fort`
+    - `fatehpur-sikri`
+    - `red-fort-delhi`
+    - `lahore-fort-shalimar`
+
 ## Current Policy
 
 - Work on DB only unless the user explicitly asks for UI changes.
@@ -413,13 +427,13 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Early modern gunpowder empire capitals
-   - Possible source file: `data/records/eurasia/early-modern/gunpowder-empire-capitals.json`
-   - Likely entries: Istanbul, Isfahan, Agra, Delhi, Fatehpur Sikri, Lahore, Topkapi Palace, Red Fort
-
-2. East Asian early modern ports and treaty-era cities
+1. East Asian early modern ports and treaty-era cities
    - Possible source file: `data/records/asia/east-asia/early-modern-ports-treaty-cities.json`
    - Likely entries: Nagasaki, Dejima, Guangzhou, Macau, Shanghai, Yokohama, Busan, Incheon
+
+2. Early modern Southeast Asian maritime sultanates and port cities
+   - Possible source file: `data/records/asia/southeast-asia/early-modern-maritime-sultanates-port-cities.json`
+   - Likely entries: Aceh, Johor, Brunei, Makassar, Ternate, Tidore, Manila, Batavia
 
 ## Resume Checklist
 
