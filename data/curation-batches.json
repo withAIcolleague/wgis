@@ -762,6 +762,35 @@
         "Britannica references for Nagasaki, Guangzhou, the Canton System, Macau, Shanghai, treaty ports, and Yokohama",
         "World History Encyclopedia reference for Portuguese Nagasaki context"
       ]
+    },
+    {
+      "id": "asia-southeast-asia-early-modern-maritime-sultanates-port-cities-v1",
+      "status": "completed",
+      "completedAt": "2026-05-18",
+      "continentId": "asia",
+      "countryIso2": "ID-MY-BN-PH",
+      "countryKo": "인도네시아·말레이시아·브루나이·필리핀",
+      "worldRegion": "동남아시아 해양교역권",
+      "focusKo": "동남아 근세 해상 술탄국과 식민 항구도시",
+      "scopeKo": "말라카 이후 해상 술탄국, 향신료 무역, 이슬람 상업 네트워크, 마닐라 갤리언, VOC 항구도시",
+      "sourceFile": "data/records/asia/southeast-asia/early-modern-maritime-sultanates-port-cities.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "aceh-banda-aceh",
+        "johor-lama",
+        "brunei-kota-batu",
+        "makassar-gowa-tallo",
+        "ternate-sultanate",
+        "tidore-sultanate",
+        "intramuros-manila",
+        "batavia-jakarta"
+      ],
+      "sourceBasis": [
+        "Britannica references for Aceh, Banda Aceh, Johor, Brunei, Gowa, Ternate, Tidore, Moluccas, Manila galleon, Jakarta, and the Dutch East India Company",
+        "Official and heritage references from Department of Museums Malaysia, Johor royal history portal, Makassar city government, Intramuros Administration, UNESCO tentative lists, and Brunei Tourism",
+        "Atlas of Mutual Heritage references for Banda Aceh and Makassar",
+        "World History Encyclopedia reference for Spice Islands context"
+      ]
     }
   ]
 }

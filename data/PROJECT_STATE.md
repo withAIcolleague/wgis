@@ -11,9 +11,9 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 222
-- Completed curation batches: 26
-- Latest completed batch: `asia-east-asia-early-modern-ports-treaty-cities-v1`
+- Current entry count: 230
+- Completed curation batches: 27
+- Latest completed batch: `asia-southeast-asia-early-modern-maritime-sultanates-port-cities-v1`
 - Latest completed infrastructure milestone: `a28681f Add data validation script`
 - Data validation script: `scripts/validate-data.js`
 
@@ -404,6 +404,20 @@ The long-term target is 3,000+ entries, but the project should progress one focu
     - `busan-open-port`
     - `incheon-open-port`
 
+- Early modern Southeast Asian maritime sultanates and port cities batch
+  - Batch ID: `asia-southeast-asia-early-modern-maritime-sultanates-port-cities-v1`
+  - Source file: `data/records/asia/southeast-asia/early-modern-maritime-sultanates-port-cities.json`
+  - Entries added: 8
+  - Entry IDs:
+    - `aceh-banda-aceh`
+    - `johor-lama`
+    - `brunei-kota-batu`
+    - `makassar-gowa-tallo`
+    - `ternate-sultanate`
+    - `tidore-sultanate`
+    - `intramuros-manila`
+    - `batavia-jakarta`
+
 ## Current Policy
 
 - Work on DB only unless the user explicitly asks for UI changes.
@@ -441,13 +455,13 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Early modern Southeast Asian maritime sultanates and port cities
-   - Possible source file: `data/records/asia/southeast-asia/early-modern-maritime-sultanates-port-cities.json`
-   - Likely entries: Aceh, Johor, Brunei, Makassar, Ternate, Tidore, Manila, Batavia
-
-2. Modern imperial chokepoints and canal-port cities
+1. Modern imperial chokepoints and canal-port cities
    - Possible source file: `data/records/global/modern/imperial-chokepoints-canal-port-cities.json`
-   - Likely entries: Suez, Port Said, Aden, Singapore, Hong Kong, Colombo, Cape Town, Panama Canal
+   - Likely entries: Suez, Port Said, Singapore, Hong Kong, Colombo, Cape Town, Panama Canal, Gibraltar
+
+2. Atlantic revolutions and independence capitals
+   - Possible source file: `data/records/atlantic/modern/revolutions-independence-capitals.json`
+   - Likely entries: Boston, Philadelphia, Paris, Cap-Haitien, Caracas, Bogota, Buenos Aires, Mexico City
 
 ## Resume Checklist
 

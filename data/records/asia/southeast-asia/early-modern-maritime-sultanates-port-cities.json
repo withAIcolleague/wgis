@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "id": "asia-southeast-asia-early-modern-maritime-sultanates-port-cities",
+  "titleKo": "동남아 근세 해상 술탄국과 식민 항구도시",
+  "curationBatch": "asia-southeast-asia-early-modern-maritime-sultanates-port-cities-v1",
+  "taxonomyFile": "data/taxonomy.json",
+  "appIndexFile": "data/entries.json",
+  "scope": {
+    "continentId": "asia",
+    "modernCountryIso2": "ID-MY-BN-PH",
+    "modernCountryKo": "인도네시아·말레이시아·브루나이·필리핀",
+    "historicalRegionKo": "말라카 해협, 보르네오 북안, 술라웨시, 말루쿠, 루손, 자바 북안",
+    "cultureAreaKo": "해상 술탄국, 향신료 무역, 이슬람 상업 네트워크, 포르투갈·스페인·VOC 식민 항구",
+    "periodBand": "early-modern",
+    "topicKo": "말라카 이후 교역 재편, 항구 술탄국, 향신료 섬, 마닐라 갤리언, VOC 거점도시"
+  },
+  "records": [
+    {
+      "id": "aceh-banda-aceh",
+      "title": "아체 술탄국",
+      "type": "place",
+      "historicalName": "아체 다루살람 / 쿠타라자",
+      "modernName": "반다아체",
+      "modernAdmin": "아체주 반다아체",
+      "country": "인도네시아",
+      "worldRegion": "말라카 해협·수마트라",
+      "period": "아체 술탄국 전성기",
+      "yearLabel": "16-17세기 북수마트라 해상 술탄국",
+      "date": { "startYear": 1500, "endYear": 1700, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "ID",
+        "historicalRegionKo": "수마트라 북단·안다만해 입구",
+        "cultureAreaKo": "아체 술탄국·후추무역·인도양 이슬람 네트워크"
+      },
+      "classification": { "periodBand": "early-modern", "selectionTier": "core" },
+      "coordinates": { "lat": 5.5483, "lng": 95.3238 },
+      "aliases": ["Aceh", "Acheh", "Banda Aceh", "Kutaraja", "Sultanate of Aceh"],
+      "summary": "아체는 말라카가 포르투갈에 점령된 뒤 북수마트라에서 성장한 해상 술탄국으로, 후추 무역과 이슬람 학문, 오스만·인도양 교역망과 연결되었다. 반다아체는 이 술탄국의 수도권으로 말라카 해협 서쪽 입구를 통제하며 포르투갈, 조호르, VOC와 경쟁한 항구 정치의 중심지였다.",
+      "confidence": "high",
+      "sourceNote": "반다아체 도심과 아체강 하구 항만권을 기준으로 표시했다.",
+      "curationBatch": "asia-southeast-asia-early-modern-maritime-sultanates-port-cities-v1",
+      "sources": [
+        { "title": "Britannica: Banda Aceh", "url": "https://www.britannica.com/place/Banda-Aceh" },
+        { "title": "Britannica: Aceh", "url": "https://www.britannica.com/place/Aceh" },
+        { "title": "Atlas of Mutual Heritage: Banda Aceh", "url": "https://www.atlasofmutualheritage.nl/en/page/6237/banda-aceh" }
+      ]
+    },
+    {
+      "id": "johor-lama",
+      "title": "조호르 라마",
+      "type": "place",
+      "historicalName": "코타 조호르 라마 / 조호르 라마",
+      "modernName": "코타 조호르 라마 역사 단지",
+      "modernAdmin": "조호르주 코타팅기군",
+      "country": "말레이시아",
+      "worldRegion": "말라카 해협·말레이반도",
+      "period": "조호르 술탄국 초기 수도",
+      "yearLabel": "1528년 이후 조호르 술탄국 왕도",
+      "date": { "startYear": 1528, "endYear": 1700, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "MY",
+        "historicalRegionKo": "조호르강 하류·말레이반도 남단",
+        "cultureAreaKo": "말라카 계승 술탄국·강 하구 항구·포르투갈-아체-VOC 경쟁"
+      },
+      "classification": { "periodBand": "early-modern", "selectionTier": "core" },
+      "coordinates": { "lat": 1.5890, "lng": 104.0167 },
+      "aliases": ["Johor Lama", "Kota Johor Lama", "Johor Sultanate", "Kota Tinggi", "Old Johor"],
+      "summary": "조호르 라마는 말라카 술탄국 멸망 뒤 그 계승 세력이 조호르강 유역에 세운 술탄국의 핵심 거점이었다. 강 하구와 내륙을 잇는 위치는 말라카 해협 교역을 다시 장악하려는 말레이 왕권, 포르투갈 말라카, 아체, VOC 사이의 경쟁을 압축적으로 보여준다.",
+      "confidence": "high",
+      "sourceNote": "코타 조호르 라마 역사 단지와 조호르강 좌안 권역을 기준으로 표시했다.",
+      "curationBatch": "asia-southeast-asia-early-modern-maritime-sultanates-port-cities-v1",
+      "sources": [
+        { "title": "Department of Museums Malaysia: Kota Johor Lama Historical Complex", "url": "https://www.jmm.gov.my/en/kota-johor-lama-historical-complex" },
+        { "title": "Johor Coronation Portal: History of the Johor Sultanate", "url": "https://kemahkotaan.johor.gov.my/pengenalan/sejarah-kesultanan-johor/?lang=en" },
+        { "title": "Britannica: Johor", "url": "https://www.britannica.com/place/Johor" }
+      ]
+    },
+    {
+      "id": "brunei-kota-batu",
+      "title": "브루나이 코타 바투",
+      "type": "place",
+      "historicalName": "코타 바투 / 브루나이 수도권",
+      "modernName": "코타 바투·브루나이강 역사 권역",
+      "modernAdmin": "브루나이무아라구 반다르스리브가완",
+      "country": "브루나이",
+      "worldRegion": "보르네오 북안",
+      "period": "브루나이 술탄국 해상 전성기",
+      "yearLabel": "15-16세기 브루나이 술탄국 해상 중심",
+      "date": { "startYear": 1400, "endYear": 1600, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "BN",
+        "historicalRegionKo": "브루나이강 하구·브루나이만",
+        "cultureAreaKo": "보르네오 술탄국·남중국해 교역·수상도시"
+      },
+      "classification": { "periodBand": "early-modern", "selectionTier": "core" },
+      "coordinates": { "lat": 4.8895, "lng": 114.9500 },
+      "aliases": ["Brunei", "Kota Batu", "Brunei Sultanate", "Kampong Ayer", "Brunei River"],
+      "summary": "코타 바투와 브루나이강 권역은 15-16세기 브루나이 술탄국의 해상 교역과 왕권을 보여주는 핵심 장소다. 브루나이는 보르네오 북안과 술루해, 남중국해 교역로를 연결했고, 수상 취락과 강 하구 항만은 술탄국의 정치 중심과 국제 상업이 강 수계 위에 조직된 모습을 보여준다.",
+      "confidence": "medium",
+      "sourceNote": "코타 바투와 브루나이 다루살람 해양박물관 주변 역사 권역을 근사 표시했다.",
+      "curationBatch": "asia-southeast-asia-early-modern-maritime-sultanates-port-cities-v1",
+      "sources": [
+        { "title": "Britannica: Brunei - History", "url": "https://www.britannica.com/place/Brunei/History" },
+        { "title": "Britannica: Borneo - History", "url": "https://www.britannica.com/place/Borneo-island-Pacific-Ocean/History" },
+        { "title": "Brunei Tourism: Brunei Heritage River Trail", "url": "https://www.bruneitourism.com/wp-content/uploads/2025/02/Brunei-Heritage-River-Trail.pdf" }
+      ]
+    },
+    {
+      "id": "makassar-gowa-tallo",
+      "title": "마카사르 고와-탈로",
+      "type": "place",
+      "historicalName": "솜바 오푸 / 고와-탈로 / 마카사르",
+      "modernName": "솜바 오푸 유적과 마카사르 항구권",
+      "modernAdmin": "남술라웨시주 고와·마카사르",
+      "country": "인도네시아",
+      "worldRegion": "술라웨시·말루쿠 항로",
+      "period": "고와-탈로 술탄국 해상 전성기",
+      "yearLabel": "16-17세기 동인도 해상 중계항",
+      "date": { "startYear": 1550, "endYear": 1669, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "ID",
+        "historicalRegionKo": "술라웨시 남서 해안·제네베랑강 하구",
+        "cultureAreaKo": "마카사르 자유항·고와-탈로 술탄국·향신료 중계무역"
+      },
+      "classification": { "periodBand": "early-modern", "selectionTier": "core" },
+      "coordinates": { "lat": -5.1919, "lng": 119.4162 },
+      "aliases": ["Makassar", "Gowa-Tallo", "Somba Opu", "Fort Rotterdam", "Sultan Hasanuddin"],
+      "summary": "마카사르는 16-17세기 술라웨시 남서 해안에서 고와-탈로 술탄국의 항구 도시로 성장했고, 말루쿠 향신료와 인도양·남중국해 상인을 연결한 자유항이었다. 솜바 오푸와 우중 판당 요새권은 VOC가 향신료 독점을 추진하기 전, 동인도 해상무역이 여러 토착 항구 권력에 의해 운영되던 구조를 보여준다.",
+      "confidence": "high",
+      "sourceNote": "솜바 오푸 요새 유적을 중심으로 표시하고, 마카사르 항구와 포트 로테르담 권역을 함께 설명했다.",
+      "curationBatch": "asia-southeast-asia-early-modern-maritime-sultanates-port-cities-v1",
+      "sources": [
+        { "title": "Makassar City Government: Sejarah Kota Makassar", "url": "https://makassarkota.go.id/sejarah-kota-makassar/" },
+        { "title": "Britannica: Gowa", "url": "https://www.britannica.com/place/Gowa" },
+        { "title": "Atlas of Mutual Heritage: Makassar", "url": "https://www.atlasofmutualheritage.nl/page/4114/makassar" }
+      ]
+    },
+    {
+      "id": "ternate-sultanate",
+      "title": "테르나테 술탄국",
+      "type": "place",
+      "historicalName": "테르나테",
+      "modernName": "테르나테 섬",
+      "modernAdmin": "북말루쿠주 테르나테시",
+      "country": "인도네시아",
+      "worldRegion": "말루쿠 향신료 제도",
+      "period": "테르나테 술탄국과 향신료 무역",
+      "yearLabel": "15-17세기 정향 무역 중심",
+      "date": { "startYear": 1450, "endYear": 1700, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "ID",
+        "historicalRegionKo": "할마헤라 서안·테르나테 화산섬",
+        "cultureAreaKo": "말루쿠 정향 술탄국·포르투갈-VOC 경쟁"
+      },
+      "classification": { "periodBand": "early-modern", "selectionTier": "core" },
+      "coordinates": { "lat": 0.7893, "lng": 127.3780 },
+      "aliases": ["Ternate", "Sultanate of Ternate", "Spice Islands", "Clove trade", "Babullah"],
+      "summary": "테르나테는 말루쿠 정향 생산지와 해상 항로를 둘러싼 대표 술탄국이었다. 포르투갈, 스페인, 네덜란드가 차례로 개입한 16-17세기 향신료 전쟁 속에서 테르나테는 토착 왕권과 유럽 요새, 무역 독점 경쟁이 직접 충돌한 핵심 섬 도시였다.",
+      "confidence": "high",
+      "sourceNote": "테르나테 왕궁·도심과 옛 유럽 요새권을 포괄하는 섬 서안 권역을 기준으로 표시했다.",
+      "curationBatch": "asia-southeast-asia-early-modern-maritime-sultanates-port-cities-v1",
+      "sources": [
+        { "title": "Britannica: Ternate Island", "url": "https://www.britannica.com/place/Ternate-Island" },
+        { "title": "Britannica: Moluccas", "url": "https://www.britannica.com/place/Moluccas" },
+        { "title": "World History Encyclopedia: European Discovery & Conquest of the Spice Islands", "url": "https://www.worldhistory.org/article/1872/european-discovery--conquest-of-the-spice-islands/" }
+      ]
+    },
+    {
+      "id": "tidore-sultanate",
+      "title": "티도레 술탄국",
+      "type": "place",
+      "historicalName": "티도레",
+      "modernName": "티도레 섬",
+      "modernAdmin": "북말루쿠주 티도레 군도시",
+      "country": "인도네시아",
+      "worldRegion": "말루쿠 향신료 제도",
+      "period": "티도레 술탄국과 향신료 무역",
+      "yearLabel": "15-17세기 테르나테와 경쟁한 정향 술탄국",
+      "date": { "startYear": 1450, "endYear": 1700, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "ID",
+        "historicalRegionKo": "할마헤라 서안·티도레 화산섬",
+        "cultureAreaKo": "말루쿠 정향 술탄국·스페인-네덜란드 경쟁"
+      },
+      "classification": { "periodBand": "early-modern", "selectionTier": "core" },
+      "coordinates": { "lat": 0.6845, "lng": 127.4057 },
+      "aliases": ["Tidore", "Sultanate of Tidore", "Spice Islands", "Clove trade", "Soasio"],
+      "summary": "티도레는 테르나테와 함께 말루쿠 정향 무역을 둘러싼 주요 술탄국이었다. 테르나테와의 경쟁, 스페인과 네덜란드의 개입, 파푸아 방면 해상 관계는 향신료 생산 섬들이 단순한 상품 산지가 아니라 광역 해상정치의 중심이었다는 점을 보여준다.",
+      "confidence": "high",
+      "sourceNote": "티도레 왕궁이 있는 소아시오 권역을 기준으로 표시했다.",
+      "curationBatch": "asia-southeast-asia-early-modern-maritime-sultanates-port-cities-v1",
+      "sources": [
+        { "title": "Britannica: Tidore Island", "url": "https://www.britannica.com/place/Tidore-Island" },
+        { "title": "Britannica: Moluccas", "url": "https://www.britannica.com/place/Moluccas" },
+        { "title": "World History Encyclopedia: European Discovery & Conquest of the Spice Islands", "url": "https://www.worldhistory.org/article/1872/european-discovery--conquest-of-the-spice-islands/" }
+      ]
+    },
+    {
+      "id": "intramuros-manila",
+      "title": "마닐라 인트라무로스",
+      "type": "place",
+      "historicalName": "마이닐라 / 인트라무로스",
+      "modernName": "인트라무로스",
+      "modernAdmin": "마닐라시",
+      "country": "필리핀",
+      "worldRegion": "루손·마닐라만",
+      "period": "스페인령 필리핀 수도",
+      "yearLabel": "1571년 건설, 1571-1815년 마닐라 갤리언 중심",
+      "date": { "startYear": 1571, "endYear": 1815, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "PH",
+        "historicalRegionKo": "파시그강 하구·마닐라만",
+        "cultureAreaKo": "스페인령 동인도·마닐라-아카풀코 갤리언·중국 상인 네트워크"
+      },
+      "classification": { "periodBand": "early-modern", "selectionTier": "core" },
+      "coordinates": { "lat": 14.5896, "lng": 120.9747 },
+      "aliases": ["Manila", "Intramuros", "Walled City of Manila", "Manila Galleon", "Spanish East Indies"],
+      "summary": "인트라무로스는 1571년 스페인이 마닐라에 세운 성벽 도시로, 필리핀 식민 행정과 태평양 갤리언 무역의 중심이었다. 마닐라는 중국 상인의 상품, 멕시코 은, 스페인 제국의 행정이 만나는 항구가 되었고, 동남아와 아메리카를 연결한 세계 교역의 동쪽 거점으로 기능했다.",
+      "confidence": "high",
+      "sourceNote": "마닐라 인트라무로스 성벽 도시 중심 권역을 기준으로 표시했다.",
+      "curationBatch": "asia-southeast-asia-early-modern-maritime-sultanates-port-cities-v1",
+      "sources": [
+        { "title": "Intramuros Administration: Intramuros", "url": "https://intramuros.gov.ph/2015/01/04/intramuros/" },
+        { "title": "UNESCO Tentative List: Colonial Urban Plan and Fortifications of the Walled City of Manila", "url": "https://whc.unesco.org/en/tentativelists/6715/" },
+        { "title": "Britannica: Manila galleon", "url": "https://www.britannica.com/technology/Manila-galleon" }
+      ]
+    },
+    {
+      "id": "batavia-jakarta",
+      "title": "바타비아",
+      "type": "place",
+      "historicalName": "자야카르타 / 바타비아",
+      "modernName": "자카르타 구시가지",
+      "modernAdmin": "자카르타 특별수도권 서자카르타·북자카르타",
+      "country": "인도네시아",
+      "worldRegion": "자바 북안·순다 해협",
+      "period": "VOC 아시아 본부",
+      "yearLabel": "1619년 건설, 17-18세기 VOC 아시아 본부",
+      "date": { "startYear": 1619, "endYear": 1799, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "ID",
+        "historicalRegionKo": "칠리웅강 하구·자바해",
+        "cultureAreaKo": "VOC 항구도시·네덜란드 동인도 회사·향신료 무역 통제"
+      },
+      "classification": { "periodBand": "early-modern", "selectionTier": "core" },
+      "coordinates": { "lat": -6.1352, "lng": 106.8133 },
+      "aliases": ["Batavia", "Jakarta", "Old Batavia", "Kota Tua Jakarta", "VOC headquarters"],
+      "summary": "바타비아는 1619년 VOC가 자야카르타를 장악한 뒤 세운 네덜란드 동인도 회사의 아시아 본부였다. 성채, 운하, 창고, 시청, 중국인 거주지와 항구는 향신료 무역 독점과 회사 통치가 자바 북안의 도시 구조를 어떻게 재편했는지 보여준다.",
+      "confidence": "high",
+      "sourceNote": "자카르타 구시가지 파타힐라 광장과 옛 바타비아 중심부를 기준으로 표시했다.",
+      "curationBatch": "asia-southeast-asia-early-modern-maritime-sultanates-port-cities-v1",
+      "sources": [
+        { "title": "UNESCO Tentative List: The Old Town of Jakarta", "url": "https://whc.unesco.org/en/tentativelists/6010" },
+        { "title": "Britannica: Jakarta - History", "url": "https://www.britannica.com/place/Jakarta/History" },
+        { "title": "Britannica: Dutch East India Company", "url": "https://www.britannica.com/topic/Dutch-East-India-Company" }
+      ]
+    }
+  ]
+}
