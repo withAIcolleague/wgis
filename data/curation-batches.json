@@ -791,6 +791,34 @@
         "Atlas of Mutual Heritage references for Banda Aceh and Makassar",
         "World History Encyclopedia reference for Spice Islands context"
       ]
+    },
+    {
+      "id": "legacy-core-seed-v1",
+      "status": "completed",
+      "completedAt": "2026-05-20",
+      "continentId": "global",
+      "countryIso2": "KR-JP-TR-BE-US",
+      "countryKo": "대한민국·일본·튀르키예·벨기에·미국",
+      "worldRegion": "초기 seed 정규화",
+      "focusKo": "초기 앱 seed 항목의 source record와 출처 보강",
+      "scopeKo": "WGIS 초기 수동 입력 항목 8개를 정식 source record, curation batch, 출처 URL로 연결",
+      "sourceFile": "data/records/global/legacy/core-seed-entries.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "baekje-hanseong",
+        "joseon-hanyang",
+        "imjin-war-busan",
+        "edo-tokyo",
+        "constantinople",
+        "waterloo",
+        "gettysburg",
+        "boston-tea-party"
+      ],
+      "sourceBasis": [
+        "Official city, museum, heritage, National Park Service, and battlefield pages",
+        "UNESCO World Heritage reference for Historic Areas of Istanbul",
+        "Britannica references for selected places and events"
+      ]
     }
   ]
 }

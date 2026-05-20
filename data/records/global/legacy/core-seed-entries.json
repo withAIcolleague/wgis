@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "id": "legacy-core-seed-entries",
+  "titleKo": "초기 핵심 seed 항목 정규화",
+  "curationBatch": "legacy-core-seed-v1",
+  "taxonomyFile": "data/taxonomy.json",
+  "appIndexFile": "data/entries.json",
+  "scope": {
+    "continentId": "global",
+    "modernCountryIso2": "KR-JP-TR-BE-US",
+    "modernCountryKo": "대한민국·일본·튀르키예·벨기에·미국",
+    "historicalRegionKo": "한국사·일본사·비잔티움/오스만사·유럽사·미국사",
+    "cultureAreaKo": "WGIS 초기 seed로 수록된 대표 수도, 전장, 혁명 사건",
+    "periodBand": "mixed",
+    "topicKo": "초기 앱 seed 항목의 source record, 출처, batch 연결 정규화"
+  },
+  "records": [
+    {
+      "id": "baekje-hanseong",
+      "title": "백제 한성",
+      "type": "place",
+      "historicalName": "한성 / 위례성",
+      "modernName": "서울 송파구 일대",
+      "modernAdmin": "서울특별시 송파구",
+      "country": "대한민국",
+      "worldRegion": "한국사",
+      "period": "백제",
+      "yearLabel": "기원전 18년-475년",
+      "date": { "startYear": -18, "endYear": 475, "precision": "range" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "KR",
+        "historicalRegionKo": "한강 유역·한성백제 왕도권",
+        "cultureAreaKo": "삼국시대 백제 초기 왕도"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 37.5155, "lng": 127.1153 },
+      "aliases": ["위례성", "몽촌토성", "풍납토성", "Hanseong Baekje", "Wiryeseong"],
+      "summary": "백제 초기의 중심지로 한강 유역에 자리했다. 현재는 풍납토성, 몽촌토성 등 서울 송파구 일대 유적으로 추적된다.",
+      "confidence": "medium",
+      "sourceNote": "정확한 왕성 위치는 학설 차이가 있어 풍납토성-몽촌토성권으로 표시.",
+      "curationBatch": "legacy-core-seed-v1",
+      "sources": [
+        { "title": "Seoul Metropolitan Government: History of Seoul", "url": "https://english.seoul.go.kr/seoul-views/meaning-of-seoul/1-history/" },
+        { "title": "Seoul Baekje Museum: Related Remains", "url": "https://baekjemuseum.seoul.go.kr/contents.jsp?mpid=SEM0303000000" },
+        { "title": "Korea Heritage Portal: Mongchontoseong Earthen Fortification", "url": "https://www.heritage.go.kr/heri/cul/culSelectDetail.do?ccbaCpno=1331102970000&pageNo=1_1_2_0" }
+      ]
+    },
+    {
+      "id": "joseon-hanyang",
+      "title": "한양",
+      "type": "place",
+      "historicalName": "한양 / 한성부",
+      "modernName": "서울특별시",
+      "modernAdmin": "서울특별시 종로구·중구 일대",
+      "country": "대한민국",
+      "worldRegion": "한국사",
+      "period": "조선",
+      "yearLabel": "1394년 천도 이후",
+      "date": { "startYear": 1394, "endYear": 1910, "precision": "range" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "KR",
+        "historicalRegionKo": "한양도성·서울 도심",
+        "cultureAreaKo": "조선 왕조 수도·유교 관료제 도시"
+      },
+      "classification": { "periodBand": "early-modern", "selectionTier": "core" },
+      "coordinates": { "lat": 37.5759, "lng": 126.9768 },
+      "aliases": ["한성", "한성부", "경성", "Seoul", "Hanyang", "Hanseong"],
+      "summary": "조선의 수도이자 대한제국기와 일제강점기에도 정치·행정 중심지였다. 현재 서울 도심부와 대응된다.",
+      "confidence": "high",
+      "sourceNote": "경복궁-육조거리 권역 기준.",
+      "curationBatch": "legacy-core-seed-v1",
+      "sources": [
+        { "title": "Seoul Museum of History: Hanyang, the Joseon Capital", "url": "https://museum.seoul.go.kr/eng/exhibition/permanent/permExhibit/permExhibit1.jsp" },
+        { "title": "Seoul City Wall: Capital Fortifications of Hanyang", "url": "https://seoulcitywall.seoul.go.kr/en/content/173.do" },
+        { "title": "Seoul Metropolitan Government: History of Seoul", "url": "https://english.seoul.go.kr/seoul-views/meaning-of-seoul/1-history/" }
+      ]
+    },
+    {
+      "id": "imjin-war-busan",
+      "title": "임진왜란 부산진 전투",
+      "type": "event",
+      "historicalName": "부산진",
+      "modernName": "부산광역시 동구",
+      "modernAdmin": "부산광역시 동구 좌천동 일대",
+      "country": "대한민국",
+      "worldRegion": "한국사",
+      "period": "조선",
+      "yearLabel": "1592년",
+      "date": { "startYear": 1592, "endYear": 1592, "precision": "year" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "KR",
+        "historicalRegionKo": "부산진·동래 방어선",
+        "cultureAreaKo": "임진왜란 초기 전장"
+      },
+      "classification": { "periodBand": "early-modern", "selectionTier": "core" },
+      "coordinates": { "lat": 35.1295, "lng": 129.0472 },
+      "aliases": ["부산진성", "임진왜란 발발", "Busanjin", "Japanese invasions of Korea"],
+      "summary": "1592년 일본군이 부산진을 공격하며 임진왜란이 본격화되었다. 현재 부산 동구 일대의 부산진성 흔적과 연결된다.",
+      "confidence": "medium",
+      "sourceNote": "부산진성 권역 기준.",
+      "curationBatch": "legacy-core-seed-v1",
+      "sources": [
+        { "title": "Britannica: Siege of Busanjin", "url": "https://www.britannica.com/event/Siege-of-Busanjin" },
+        { "title": "HeritageWiki: Jeonggongdan Altar", "url": "https://dh.aks.ac.kr/~heritage/wiki/index.php/%EC%A0%95%EA%B3%B5%EB%8B%A8" },
+        { "title": "HeritageWiki: Busanjinseong Fortress West Gate and Cornerstones", "url": "https://dh.aks.ac.kr/~heritage/wiki/index.php/%EB%B6%80%EC%82%B0%EC%A7%84%EC%84%B1_%EC%84%9C%EB%AC%B8_%EB%B0%8F_%EC%84%B1%EA%B3%BD%EC%9A%B0%EC%A3%BC%EC%84%9D" }
+      ]
+    },
+    {
+      "id": "edo-tokyo",
+      "title": "에도",
+      "type": "place",
+      "historicalName": "에도",
+      "modernName": "도쿄",
+      "modernAdmin": "도쿄도 지요다구 일대",
+      "country": "일본",
+      "worldRegion": "일본사",
+      "period": "에도 시대",
+      "yearLabel": "도쿠가와 막부 중심지",
+      "date": { "startYear": 1603, "endYear": 1868, "precision": "range" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "JP",
+        "historicalRegionKo": "간토 평야·에도성 권역",
+        "cultureAreaKo": "도쿠가와 막부 정치 중심지"
+      },
+      "classification": { "periodBand": "early-modern", "selectionTier": "core" },
+      "coordinates": { "lat": 35.6852, "lng": 139.7528 },
+      "aliases": ["江戸", "Edo", "Tokyo", "도쿄", "에도성"],
+      "summary": "도쿠가와 막부의 정치 중심지였으며 메이지 유신 이후 도쿄로 개칭되어 일본의 수도권 중심이 되었다.",
+      "confidence": "high",
+      "sourceNote": "에도성·황거 권역 기준.",
+      "curationBatch": "legacy-core-seed-v1",
+      "sources": [
+        { "title": "Go Tokyo: Edo History & Culture", "url": "https://www.gotokyo.org/en/see-and-do/history/index.html" },
+        { "title": "Tokyo Metropolitan Government: Journey Through Edo's Legacy", "url": "https://edolegacytravel.metro.tokyo.lg.jp/about/" },
+        { "title": "Britannica: Tokugawa period", "url": "https://www.britannica.com/event/Tokugawa-period" }
+      ]
+    },
+    {
+      "id": "constantinople",
+      "title": "콘스탄티노폴리스",
+      "type": "place",
+      "historicalName": "비잔티움 / 콘스탄티노폴리스",
+      "modernName": "이스탄불",
+      "modernAdmin": "이스탄불주 파티흐 일대",
+      "country": "튀르키예",
+      "worldRegion": "유럽사",
+      "period": "로마·비잔티움·오스만",
+      "yearLabel": "330년-1453년",
+      "date": { "startYear": 330, "endYear": 1453, "precision": "range" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "TR",
+        "historicalRegionKo": "보스포루스 해협·역사 반도",
+        "cultureAreaKo": "동로마·비잔티움·오스만 수도권"
+      },
+      "classification": { "periodBand": "medieval", "selectionTier": "core" },
+      "coordinates": { "lat": 41.0082, "lng": 28.9784 },
+      "aliases": ["Byzantium", "Constantinople", "Istanbul", "비잔티움", "이스탄불"],
+      "summary": "로마 제국 동방의 수도이자 비잔티움 제국의 중심지였다. 1453년 오스만 제국이 점령한 뒤 이스탄불로 이어진다.",
+      "confidence": "high",
+      "sourceNote": "역사도심 술탄아흐메트-파티흐 권역 기준.",
+      "curationBatch": "legacy-core-seed-v1",
+      "sources": [
+        { "title": "UNESCO: Historic Areas of Istanbul", "url": "https://whc.unesco.org/en/list/356" },
+        { "title": "Britannica: Istanbul - Constantinople", "url": "https://www.britannica.com/place/Istanbul/Constantinople" },
+        { "title": "Britannica: Istanbul", "url": "https://www.britannica.com/place/Istanbul" }
+      ]
+    },
+    {
+      "id": "waterloo",
+      "title": "워털루 전투",
+      "type": "event",
+      "historicalName": "워털루",
+      "modernName": "워털루",
+      "modernAdmin": "왈롱 브라반트주 워털루 인근",
+      "country": "벨기에",
+      "worldRegion": "유럽사",
+      "period": "나폴레옹 전쟁",
+      "yearLabel": "1815년",
+      "date": { "startYear": 1815, "endYear": 1815, "precision": "year" },
+      "spatial": {
+        "continentId": "europe",
+        "modernCountryIso2": "BE",
+        "historicalRegionKo": "브뤼셀 남쪽 워털루 전장",
+        "cultureAreaKo": "나폴레옹 전쟁 최종 국면"
+      },
+      "classification": { "periodBand": "modern", "selectionTier": "core" },
+      "coordinates": { "lat": 50.6806, "lng": 4.4127 },
+      "aliases": ["Battle of Waterloo", "Napoleon", "나폴레옹", "워털루"],
+      "summary": "나폴레옹 전쟁의 결정적 전투로 프랑스 제국의 최종 패배와 유럽 질서 재편으로 이어졌다.",
+      "confidence": "high",
+      "sourceNote": "워털루 전장 기념지 권역 기준.",
+      "curationBatch": "legacy-core-seed-v1",
+      "sources": [
+        { "title": "Waterloo 1815: Official Battlefield Domain", "url": "https://www.waterloo1815.be/en/" },
+        { "title": "Britannica: Waterloo Battlefield", "url": "https://www.britannica.com/place/Waterloo-Battlefield" }
+      ]
+    },
+    {
+      "id": "gettysburg",
+      "title": "게티즈버그 전투",
+      "type": "event",
+      "historicalName": "게티즈버그",
+      "modernName": "게티즈버그",
+      "modernAdmin": "펜실베이니아주 게티즈버그",
+      "country": "미국",
+      "worldRegion": "미국사",
+      "period": "미국 남북전쟁",
+      "yearLabel": "1863년",
+      "date": { "startYear": 1863, "endYear": 1863, "precision": "year" },
+      "spatial": {
+        "continentId": "americas",
+        "modernCountryIso2": "US",
+        "historicalRegionKo": "펜실베이니아 게티즈버그 전장",
+        "cultureAreaKo": "미국 남북전쟁 전환점"
+      },
+      "classification": { "periodBand": "modern", "selectionTier": "core" },
+      "coordinates": { "lat": 39.8309, "lng": -77.2311 },
+      "aliases": ["Battle of Gettysburg", "Civil War", "게티즈버그 연설", "Lincoln"],
+      "summary": "미국 남북전쟁의 전환점으로 평가되는 전투이며 링컨의 게티즈버그 연설과도 연결된다.",
+      "confidence": "high",
+      "sourceNote": "게티즈버그 국립군사공원 기준.",
+      "curationBatch": "legacy-core-seed-v1",
+      "sources": [
+        { "title": "National Park Service: Gettysburg National Military Park", "url": "https://www.nps.gov/gett/" },
+        { "title": "Britannica: Battle of Gettysburg", "url": "https://www.britannica.com/event/Battle-of-Gettysburg" }
+      ]
+    },
+    {
+      "id": "boston-tea-party",
+      "title": "보스턴 차 사건",
+      "type": "event",
+      "historicalName": "보스턴 항",
+      "modernName": "보스턴",
+      "modernAdmin": "매사추세츠주 보스턴",
+      "country": "미국",
+      "worldRegion": "미국사",
+      "period": "미국 독립혁명",
+      "yearLabel": "1773년",
+      "date": { "startYear": 1773, "endYear": 1773, "precision": "year" },
+      "spatial": {
+        "continentId": "americas",
+        "modernCountryIso2": "US",
+        "historicalRegionKo": "보스턴 항·식민지 매사추세츠",
+        "cultureAreaKo": "미국 독립혁명 전야의 항의 사건"
+      },
+      "classification": { "periodBand": "early-modern", "selectionTier": "core" },
+      "coordinates": { "lat": 42.3550, "lng": -71.0506 },
+      "aliases": ["Boston Tea Party", "American Revolution", "보스턴", "미국 독립"],
+      "summary": "영국의 과세 정책에 항의해 식민지 주민들이 동인도회사 차 상자를 바다에 던진 사건이다.",
+      "confidence": "medium",
+      "sourceNote": "보스턴 항구 역사 권역 기준.",
+      "curationBatch": "legacy-core-seed-v1",
+      "sources": [
+        { "title": "National Park Service: Boston Tea Party at 250", "url": "https://www.nps.gov/articles/000/boston-tea-party-250.htm" },
+        { "title": "National Park Service: Boston Tea Party Timeline", "url": "https://home.nps.gov/articles/000/boston-tea-party-in-real-time.htm" },
+        { "title": "Britannica: Boston Tea Party", "url": "https://www.britannica.com/event/Boston-Tea-Party" }
+      ]
+    }
+  ]
+}

@@ -586,7 +586,7 @@ function renderMarkers({ fitMap = false } = {}) {
       autoPan: true,
       autoPanPadding: [22, 22],
       className: 'map-info-popup',
-      closeButton: false,
+      closeButton: true,
       maxWidth: 320,
       offset: [0, -30]
     });
@@ -728,6 +728,7 @@ function renderDetail(entry) {
 
   drawer.innerHTML = `
     <article class="detail-content">
+      <button class="detail-close-btn" type="button" data-detail-close aria-label="상세 정보 닫기">×</button>
       <div class="detail-kicker">
         <span class="type-badge ${TYPE_CLASSES[entry.type]}">${TYPE_LABELS[entry.type]}</span>
         <span class="result-meta">${escapeHtml(entry.worldRegion)}</span>
@@ -772,6 +773,20 @@ function syncMobileDetail(entry) {
   mobileDetail.innerHTML = entry ? drawer.innerHTML : '';
 }
 
+function setupDetailActions() {
+  const detailTargets = [
+    document.getElementById('detailDrawer'),
+    document.getElementById('mobileDetail')
+  ].filter(Boolean);
+
+  detailTargets.forEach(target => {
+    target.addEventListener('click', event => {
+      if (!event.target.closest('[data-detail-close]')) return;
+      clearSelectedEntry();
+    });
+  });
+}
+
 function formatConfidence(value) {
   const labels = {
     high: '높음',
@@ -813,6 +828,7 @@ async function init() {
   setupPagination();
   setupFilterPanel();
   setupMobileSheet();
+  setupDetailActions();
   try {
     await loadEntries();
     setupFilters();

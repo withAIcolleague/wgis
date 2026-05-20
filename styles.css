@@ -577,9 +577,28 @@ select {
   border: 1px solid #b7ad98;
 }
 
+.map-info-popup .leaflet-popup-close-button {
+  top: 8px;
+  right: 8px;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #c6b89d;
+  border-radius: 4px;
+  background: rgba(255, 248, 232, 0.96);
+  color: #463d2d;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.map-info-popup .leaflet-popup-close-button:hover,
+.map-info-popup .leaflet-popup-close-button:focus-visible {
+  background: #efe4cc;
+  color: #172017;
+}
+
 .map-popup-card {
   width: 280px;
-  padding: 13px;
+  padding: 13px 38px 13px 13px;
 }
 
 .map-popup-card h3 {
@@ -675,7 +694,30 @@ select {
 }
 
 .detail-content {
+  position: relative;
   padding: 18px;
+}
+
+.detail-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #c6b89d;
+  border-radius: 4px;
+  background: #fff8e8;
+  color: #463d2d;
+  cursor: pointer;
+  font-size: 21px;
+  line-height: 1;
+}
+
+.detail-close-btn:hover,
+.detail-close-btn:focus-visible {
+  border-color: #365a42;
+  background: #efe4cc;
+  color: #172017;
 }
 
 .detail-kicker {
@@ -684,6 +726,11 @@ select {
   justify-content: space-between;
   gap: 10px;
   margin-bottom: 10px;
+}
+
+.detail-content > .detail-kicker,
+.map-popup-card > .detail-kicker {
+  padding-right: 34px;
 }
 
 .detail-title {
@@ -778,7 +825,7 @@ select {
     height: 100dvh;
     max-height: 100dvh;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
     overscroll-behavior: contain;
     -webkit-overflow-scrolling: touch;
     border-radius: 0;
@@ -876,9 +923,11 @@ select {
   }
 
   .search-panel.mobile-sheet-expanded .results-section {
-    flex: 0 0 auto;
+    flex: 1 1 auto;
     min-height: 180px;
-    overflow: visible;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
   }
 
   .mobile-detail-section {
@@ -892,7 +941,7 @@ select {
   }
 
   .mobile-detail-section .detail-content {
-    padding: 14px;
+    padding: 14px 52px 14px 14px;
   }
 
   .mobile-detail-section .detail-title {

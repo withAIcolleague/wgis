@@ -56,6 +56,18 @@ World Geometry Information System.
 node scripts/validate-data.js
 ```
 
+또는 npm 스크립트로 실행할 수 있습니다.
+
+```bash
+npm run validate
+```
+
+Windows PowerShell 실행 정책으로 `npm.ps1`이 막히는 환경에서는 아래처럼 실행합니다.
+
+```bash
+npm.cmd run validate
+```
+
 ## 실행
 
 이 프로젝트 폴더에서:

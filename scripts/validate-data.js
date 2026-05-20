@@ -88,10 +88,17 @@ function validateCoordinates(entry, label) {
   }
 }
 
-function validateSources(item, label) {
-  if (!item.sources) return;
+function validateSources(item, label, { required = false } = {}) {
+  if (!item.sources) {
+    if (required) errors.push(`${label}: sources are required`);
+    return;
+  }
   if (!Array.isArray(item.sources)) {
     errors.push(`${label}: sources must be an array`);
+    return;
+  }
+  if (required && item.sources.length === 0) {
+    errors.push(`${label}: sources must include at least one source`);
     return;
   }
 
@@ -193,14 +200,16 @@ function main() {
       if (!(field in entry)) errors.push(`${label}: missing required field "${field}"`);
     }
     validateCoordinates(entry, label);
-    validateSources(entry, label);
+    validateSources(entry, label, { required: true });
     if (!taxonomy.entryTypes.has(entry.type)) {
       errors.push(`${label}: unknown type "${entry.type}"`);
     }
     if (!taxonomy.confidences.has(entry.confidence)) {
       errors.push(`${label}: unknown confidence "${entry.confidence}"`);
     }
-    if (entry.curationBatch && !batchById.has(entry.curationBatch)) {
+    if (!entry.curationBatch) {
+      errors.push(`${label}: curationBatch is required`);
+    } else if (!batchById.has(entry.curationBatch)) {
       errors.push(`${label}: unknown curationBatch "${entry.curationBatch}"`);
     }
   }
@@ -242,9 +251,12 @@ function main() {
       }
 
       validateCoordinates(record, label);
-      validateSources(record, label);
+      validateSources(record, label, { required: true });
       validateDate(record, taxonomy, label);
       validateTaxonomyRefs(record, taxonomy, label);
+      if (!record.curationBatch) {
+        errors.push(`${label}: curationBatch is required`);
+      }
 
       const appEntry = entryById.get(record.id);
       if (!appEntry) {

@@ -12,12 +12,13 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 - App display index: `data/entries.json`
 - Current entry count: 230
-- Completed curation batches: 27
-- Latest completed batch: `asia-southeast-asia-early-modern-maritime-sultanates-port-cities-v1`
-- Latest completed infrastructure milestone: `a28681f Add data validation script`
+- Completed curation batches: 28
+- Latest completed batch: `legacy-core-seed-v1`
+- Latest completed infrastructure milestone: pre-stage-2 stabilization
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
+- Data quality floor: every app entry must have `curationBatch` and at least one valid `sources` URL
 
 ## Completed
 
@@ -52,7 +53,26 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 - Data validation script
   - File: `scripts/validate-data.js`
-  - Checks: JSON parsing, duplicate IDs, coordinates, taxonomy references, batch links, source record links, and source-record/app-index field consistency
+  - Checks: JSON parsing, duplicate IDs, coordinates, taxonomy references, required sources, required curation batches, source record links, and source-record/app-index field consistency
+
+- Pre-stage-2 stabilization
+  - Files: `package.json`, `.github/workflows/validate.yml`, `vercel.json`, `app.js`, `styles.css`
+  - Scope: npm validation script, GitHub Actions data validation, Vercel security headers, mobile result-list scrolling, map/detail popup close controls
+
+- Legacy core seed normalization batch
+  - Batch ID: `legacy-core-seed-v1`
+  - Source file: `data/records/global/legacy/core-seed-entries.json`
+  - Entries added: 0
+  - Entries normalized: 8
+  - Entry IDs:
+    - `baekje-hanseong`
+    - `joseon-hanyang`
+    - `imjin-war-busan`
+    - `edo-tokyo`
+    - `constantinople`
+    - `waterloo`
+    - `gettysburg`
+    - `boston-tea-party`
 
 - Ancient Mesopotamia early cities batch
   - Batch ID: `asia-iraq-mesopotamia-early-cities-v1`
@@ -436,6 +456,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Keep source records under `data/records/{continent}/{country-or-region}/{topic}.json`.
 - Update `data/curation-batches.json` for every completed batch.
 - Update this `data/PROJECT_STATE.md` after every meaningful data milestone.
+- Every `data/entries.json` item must have `curationBatch` and at least one valid source URL.
 - Commit and push after each verified batch or structural data change.
 
 ## Classification Policy

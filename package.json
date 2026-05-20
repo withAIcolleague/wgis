@@ -1,0 +1,10 @@
+{
+  "name": "wgis",
+  "version": "0.1.0",
+  "private": true,
+  "description": "World Geometry Information System static map app and curated world-history location database.",
+  "scripts": {
+    "validate": "node scripts/validate-data.js",
+    "start": "python -m http.server 8000"
+  }
+}

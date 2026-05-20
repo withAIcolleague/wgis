@@ -139,7 +139,7 @@ data/records/global/modern/imperial-chokepoints-canal-port-cities.json
 - `confidence`: `high`, `medium`, `approximate` 중 하나.
 - `sourceNote`: 좌표 선택 기준과 불확실성을 짧게 설명한다.
 - `curationBatch`: source file의 `curationBatch`와 정확히 일치해야 한다.
-- `sources`: 2-4개 정도의 신뢰 가능한 URL을 권장한다.
+- `sources`: 최소 1개 이상 필수다. 2-4개 정도의 신뢰 가능한 URL을 권장한다.
 
 확장 필드:
 
@@ -183,6 +183,7 @@ data/records/global/modern/imperial-chokepoints-canal-port-cities.json
 - 기존 항목 ID를 batch에 포함하면 source record와 `entries.json` 값이 정확히 일치해야 한다.
 - 하나의 ID가 여러 source record 파일에 중복 소유되면 검증 실패한다.
 - 현재 구조에서는 한 항목을 여러 batch가 동시에 소유하지 않는다.
+- 모든 `entries.json` 항목은 `curationBatch`와 1개 이상의 `sources`를 가져야 한다.
 
 ## `data/curation-batches.json` 배치 양식
 
@@ -250,6 +251,7 @@ node scripts/validate-data.js
 - source record의 `curationBatch`가 batch 파일에 있는지.
 - batch의 `sourceFile`, `entryIds`가 source record와 맞는지.
 - source record와 `entries.json`의 필수 표시 필드, `aliases`, `sources`, `curationBatch`가 정확히 같은지.
+- 모든 앱 항목과 source record에 `curationBatch`와 1개 이상의 `sources`가 있는지.
 
 ## PROJECT_STATE 갱신 양식
 
