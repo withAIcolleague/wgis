@@ -28,10 +28,14 @@ function countOccurrences(text, pattern) {
 
 function main() {
   const html = readText('index.html');
+  const stage2Html = readText('stage2-preview.html');
+  const stage2App = readText('stage2-preview.js');
+  const stage2Css = readText('stage2-preview.css');
   const app = readText('app.js');
   const css = readText('styles.css');
   const entries = readJson('data/entries.json');
   const batches = readJson('data/curation-batches.json');
+  const stage2Preview = readJson('data/stage2/atlantic-revolutions-preview.json');
 
   check('entries.json is an array', Array.isArray(entries));
   check('first-stage entry floor', entries.length >= 240, `${entries.length} entries found`);
@@ -77,6 +81,7 @@ function main() {
   check('Leaflet assets referenced', includesAll(html, ['leaflet.css', 'leaflet.js']));
   check('local assets referenced', includesAll(html, ['styles.css', 'app.js']));
   check('filter panel starts hidden', html.includes('id="filterPanel"') && html.includes('hidden'));
+  check('stage 2 preview is linked from main app', html.includes('stage2-preview.html'));
 
   check('entries are fetched from app data', app.includes("fetch('data/entries.json')"));
   check('search button executes map search', app.includes("searchButton.addEventListener('click', executeSearch)"));
@@ -120,6 +125,28 @@ function main() {
     '.search-panel.mobile-sheet-expanded .filter-panel',
     'position: fixed'
   ]));
+
+  check('stage 2 preview page references assets', includesAll(stage2Html, [
+    'stage2-preview.css',
+    'stage2-preview.js',
+    'stage2Map',
+    'contextFilters',
+    'entryList',
+    'detailPanel'
+  ]));
+  check('stage 2 preview fetches preview data', stage2App.includes("fetch('data/stage2/atlantic-revolutions-preview.json')"));
+  check('stage 2 preview renders Leaflet markers', includesAll(stage2App, ['L.map', 'L.marker', 'bindTooltip']));
+  check('stage 2 preview has responsive mobile rules', includesAll(stage2Css, ['@media (max-width: 820px)', '.entry-list']));
+  check('stage 2 preview data status is preview-only', stage2Preview.status === 'preview-only');
+  check('stage 2 preview has contexts', Array.isArray(stage2Preview.contexts) && stage2Preview.contexts.length >= 5);
+  check('stage 2 preview has sample entries', Array.isArray(stage2Preview.entries) && stage2Preview.entries.length >= 8);
+
+  for (const previewEntry of stage2Preview.entries || []) {
+    check(`stage 2 preview entry exists in main data (${previewEntry.entryId})`, entryIds.has(previewEntry.entryId));
+    check(`stage 2 preview entry has multiple context links (${previewEntry.entryId})`, Array.isArray(previewEntry.stage2?.contextIds) && previewEntry.stage2.contextIds.length >= 2);
+    check(`stage 2 preview entry has UI filters (${previewEntry.entryId})`, Boolean(previewEntry.stage2?.uiFilters));
+    check(`stage 2 preview entry has source confidence (${previewEntry.entryId})`, Boolean(previewEntry.stage2?.sourceConfidence?.tier));
+  }
 
   if (errors.length) {
     for (const error of errors) {

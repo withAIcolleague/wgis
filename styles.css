@@ -77,6 +77,20 @@ select {
   text-overflow: ellipsis;
 }
 
+.stage2-preview-entry {
+  display: inline-flex;
+  margin-top: 8px;
+  color: #d7c872;
+  font-size: 11px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.stage2-preview-entry:hover,
+.stage2-preview-entry:focus-visible {
+  text-decoration: underline;
+}
+
 .search-section {
   position: relative;
   padding: 10px 18px 9px;

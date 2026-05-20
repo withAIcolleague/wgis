@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-atlantic-revolutions-preview",
+  "titleKo": "2단계 미리보기: 대서양 혁명과 독립운동",
+  "descriptionKo": "기존 지도 표시용 데이터는 유지하면서, 한 항목이 여러 역사 맥락과 UI 필터에 동시에 연결되는 방식을 보여주는 샘플입니다.",
+  "modelComparison": {
+    "currentKo": [
+      "한 항목은 하나의 curationBatch를 중심으로 관리됩니다.",
+      "검색과 지도 표시를 위해 필요한 제목, 국가, 좌표, 요약이 중심입니다.",
+      "지역 필터와 역사 연구용 분류가 섞이기 쉽습니다."
+    ],
+    "stage2Ko": [
+      "한 항목이 여러 역사 맥락에 동시에 연결됩니다.",
+      "사용자에게 보이는 필터와 연구용 세부 분류를 분리합니다.",
+      "출처 신뢰도와 검증 상태를 항목별로 따로 볼 수 있습니다."
+    ]
+  },
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": ["근대"]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": ["북대서양", "카리브해", "라틴아메리카"]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": ["혁명", "독립운동", "전투", "공화국 형성", "제국 해체"]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지도 유형",
+      "options": ["장소", "사건"]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "atlantic-revolutions",
+      "labelKo": "대서양 혁명권",
+      "parentId": null,
+      "periodKo": "1760-1830년대",
+      "summaryKo": "미국, 프랑스, 카리브해, 라틴아메리카 독립운동을 하나의 연결된 혁명권으로 묶습니다."
+    },
+    {
+      "id": "american-revolution",
+      "labelKo": "미국 독립혁명",
+      "parentId": "atlantic-revolutions",
+      "periodKo": "1765-1783년",
+      "summaryKo": "영국령 북아메리카 식민지에서 독립국가와 공화주의 제도가 형성된 흐름입니다."
+    },
+    {
+      "id": "french-revolution",
+      "labelKo": "프랑스 혁명",
+      "parentId": "atlantic-revolutions",
+      "periodKo": "1789-1799년",
+      "summaryKo": "절대왕정과 신분제 질서가 무너지고 시민권과 국민주권 담론이 확산된 흐름입니다."
+    },
+    {
+      "id": "haitian-revolution",
+      "labelKo": "아이티 혁명",
+      "parentId": "atlantic-revolutions",
+      "periodKo": "1791-1804년",
+      "summaryKo": "노예제 식민지에서 독립국가가 탄생한 대서양 혁명권의 핵심 흐름입니다."
+    },
+    {
+      "id": "spanish-american-independence",
+      "labelKo": "스페인령 아메리카 독립운동",
+      "parentId": "atlantic-revolutions",
+      "periodKo": "1808-1826년",
+      "summaryKo": "스페인 제국의 위기와 지역 엘리트, 민중 정치가 결합한 라틴아메리카 독립운동입니다."
+    },
+    {
+      "id": "mexican-independence",
+      "labelKo": "멕시코 독립과 공화국 형성",
+      "parentId": "atlantic-revolutions",
+      "periodKo": "1810-1824년",
+      "summaryKo": "누에바에스파냐의 독립전쟁과 멕시코 국가 형성 과정을 묶는 맥락입니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "philadelphia-independence-hall",
+      "titleKo": "필라델피아 독립기념관",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "미국",
+      "coordinates": { "lat": 39.9489, "lng": -75.15 },
+      "yearLabelKo": "1776년 독립선언, 1787년 헌법 제정",
+      "summaryKo": "지도에서는 한 지점이지만, 2단계에서는 독립선언, 공화주의 제도, 헌법 제정이라는 여러 연구 맥락으로 동시에 연결됩니다.",
+      "stage2": {
+        "primaryContextId": "american-revolution",
+        "contextIds": ["atlantic-revolutions", "american-revolution"],
+        "periodPathKo": ["근대", "혁명과 독립", "미국 독립혁명"],
+        "topicTagsKo": ["독립선언", "헌법", "공화주의", "식민지 독립"],
+        "uiFilters": {
+          "era": "근대",
+          "region": "북대서양",
+          "theme": ["혁명", "독립운동", "공화국 형성"],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "국립공원관리청과 백과사전 출처가 함께 있는 고신뢰 항목입니다."
+        }
+      }
+    },
+    {
+      "entryId": "yorktown-battlefield",
+      "titleKo": "요크타운 전장",
+      "displayTypeKo": "사건",
+      "modernCountryKo": "미국",
+      "coordinates": { "lat": 37.2388, "lng": -76.5097 },
+      "yearLabelKo": "1781년 영국군 항복",
+      "summaryKo": "1단계에서는 전투 지점이지만, 2단계에서는 전쟁 종결, 프랑스-미국 동맹, 대서양 해상전이라는 맥락이 같이 붙습니다.",
+      "stage2": {
+        "primaryContextId": "american-revolution",
+        "contextIds": ["atlantic-revolutions", "american-revolution"],
+        "periodPathKo": ["근대", "혁명과 독립", "미국 독립전쟁"],
+        "topicTagsKo": ["전투", "동맹", "제국 전쟁", "독립전쟁"],
+        "uiFilters": {
+          "era": "근대",
+          "region": "북대서양",
+          "theme": ["혁명", "독립운동", "전투"],
+          "displayType": "사건"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "보존 전장과 사건 설명 출처가 연결된 고신뢰 항목입니다."
+        }
+      }
+    },
+    {
+      "entryId": "paris-bastille",
+      "titleKo": "파리 바스티유",
+      "displayTypeKo": "사건",
+      "modernCountryKo": "프랑스",
+      "coordinates": { "lat": 48.853, "lng": 2.3699 },
+      "yearLabelKo": "1789년 바스티유 습격",
+      "summaryKo": "프랑스 혁명의 상징 지점으로, 도시 민중 봉기와 대서양 혁명권의 정치 언어 확산을 같이 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "french-revolution",
+        "contextIds": ["atlantic-revolutions", "french-revolution"],
+        "periodPathKo": ["근대", "혁명과 독립", "프랑스 혁명"],
+        "topicTagsKo": ["민중 봉기", "절대왕정 붕괴", "시민권", "국민주권"],
+        "uiFilters": {
+          "era": "근대",
+          "region": "북대서양",
+          "theme": ["혁명", "제국 해체"],
+          "displayType": "사건"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "현대 지점과 사건 맥락을 모두 확인할 수 있는 항목입니다."
+        }
+      }
+    },
+    {
+      "entryId": "cap-haitien-cap-francais",
+      "titleKo": "카프아이시앵",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "아이티",
+      "coordinates": { "lat": 19.7599, "lng": -72.2008 },
+      "yearLabelKo": "1791-1804년 아이티 혁명기",
+      "summaryKo": "카리브해 식민지 항구도시를 노예제, 플랜테이션 경제, 독립국가 탄생이라는 세부 맥락으로 나눠 볼 수 있습니다.",
+      "stage2": {
+        "primaryContextId": "haitian-revolution",
+        "contextIds": ["atlantic-revolutions", "haitian-revolution"],
+        "periodPathKo": ["근대", "혁명과 독립", "아이티 혁명"],
+        "topicTagsKo": ["노예제 폐지", "식민지 항구", "카리브해", "독립국가"],
+        "uiFilters": {
+          "era": "근대",
+          "region": "카리브해",
+          "theme": ["혁명", "독립운동", "제국 해체"],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "UNESCO와 백과사전 출처가 같이 있는 고신뢰 항목입니다."
+        }
+      }
+    },
+    {
+      "entryId": "caracas-bolivar-independence",
+      "titleKo": "카라카스",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "베네수엘라",
+      "coordinates": { "lat": 10.5061, "lng": -66.9146 },
+      "yearLabelKo": "1810-1811년 독립운동",
+      "summaryKo": "볼리바르의 출생지이자 베네수엘라 독립운동의 중심지로, 라틴아메리카 독립 네트워크에 연결됩니다.",
+      "stage2": {
+        "primaryContextId": "spanish-american-independence",
+        "contextIds": ["atlantic-revolutions", "spanish-american-independence"],
+        "periodPathKo": ["근대", "혁명과 독립", "스페인령 아메리카 독립운동"],
+        "topicTagsKo": ["볼리바르", "그란콜롬비아", "식민지 독립", "라틴아메리카"],
+        "uiFilters": {
+          "era": "근대",
+          "region": "라틴아메리카",
+          "theme": ["독립운동", "제국 해체"],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "인물과 도시 맥락이 강하므로 이후 현장 좌표 검증을 더 보강할 수 있습니다."
+        }
+      }
+    },
+    {
+      "entryId": "bogota-casa-del-florero",
+      "titleKo": "보고타 독립박물관",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "콜롬비아",
+      "coordinates": { "lat": 4.5981, "lng": -74.0758 },
+      "yearLabelKo": "1810년 보고타 봉기",
+      "summaryKo": "한 박물관 지점을 누에바그라나다 독립운동, 도시 광장 정치, 볼리바르 혁명권으로 나눠 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "spanish-american-independence",
+        "contextIds": ["atlantic-revolutions", "spanish-american-independence"],
+        "periodPathKo": ["근대", "혁명과 독립", "누에바그라나다 독립운동"],
+        "topicTagsKo": ["도시 봉기", "독립박물관", "광장 정치", "그란콜롬비아"],
+        "uiFilters": {
+          "era": "근대",
+          "region": "라틴아메리카",
+          "theme": ["혁명", "독립운동"],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "박물관 공식 출처와 역사 개관 출처가 함께 있는 항목입니다."
+        }
+      }
+    },
+    {
+      "entryId": "buenos-aires-cabildo",
+      "titleKo": "부에노스아이레스 카빌도",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "아르헨티나",
+      "coordinates": { "lat": -34.6081, "lng": -58.3732 },
+      "yearLabelKo": "1810년 5월 혁명",
+      "summaryKo": "리오데라플라타 독립운동을 도시 의회, 광장, 항구 네트워크와 연결해서 볼 수 있습니다.",
+      "stage2": {
+        "primaryContextId": "spanish-american-independence",
+        "contextIds": ["atlantic-revolutions", "spanish-american-independence"],
+        "periodPathKo": ["근대", "혁명과 독립", "리오데라플라타 독립운동"],
+        "topicTagsKo": ["5월 혁명", "도시 의회", "항구도시", "공화국 형성"],
+        "uiFilters": {
+          "era": "근대",
+          "region": "라틴아메리카",
+          "theme": ["혁명", "독립운동", "공화국 형성"],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "관광청과 박물관 공식 출처가 있어 지점 확인이 안정적입니다."
+        }
+      }
+    },
+    {
+      "entryId": "mexico-city-national-palace-independence",
+      "titleKo": "멕시코시티 국립궁전",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "멕시코",
+      "coordinates": { "lat": 19.4328, "lng": -99.1313 },
+      "yearLabelKo": "1821년 독립, 1824년 연방 수도",
+      "summaryKo": "식민지 수도에서 독립국가의 정치 중심으로 바뀌는 과정을 독립전쟁과 국가 형성 맥락으로 분리합니다.",
+      "stage2": {
+        "primaryContextId": "mexican-independence",
+        "contextIds": ["atlantic-revolutions", "mexican-independence", "spanish-american-independence"],
+        "periodPathKo": ["근대", "혁명과 독립", "멕시코 독립과 공화국 형성"],
+        "topicTagsKo": ["독립전쟁", "수도", "국가 형성", "누에바에스파냐"],
+        "uiFilters": {
+          "era": "근대",
+          "region": "라틴아메리카",
+          "theme": ["독립운동", "공화국 형성", "제국 해체"],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "시 정부와 국가기록원 출처가 있는 고신뢰 항목입니다."
+        }
+      }
+    }
+  ]
+}

@@ -14,7 +14,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Current entry count: 246
 - Completed curation batches: 30
 - Latest completed batch: `atlantic-modern-revolutions-independence-capitals-v1`
-- Latest completed infrastructure milestone: first-stage functional smoke review
+- Latest completed infrastructure milestone: stage-2 visual preview
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
@@ -64,6 +64,12 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - Files: `scripts/smoke-check.js`, `docs/first-stage-functional-review.md`, `package.json`
   - Commands: `npm run smoke`, `npm run check`
   - Scope: data count floor, representative entries, search controls, filter panel, pagination, marker label click wiring, popup/detail close controls, Google links, desktop/mobile scroll contracts
+
+- Stage-2 visual preview
+  - Files: `stage2-preview.html`, `stage2-preview.css`, `stage2-preview.js`, `data/stage2/atlantic-revolutions-preview.json`, `docs/stage2-preview.md`
+  - URL path: `/stage2-preview.html`
+  - Scope: visual comparison between current map data and proposed Stage 2 context model, using the Atlantic revolutions sample entries
+  - Model demonstrated: multi-context links, detailed period path, user-facing filters, research tags, and source-confidence status
 
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`
@@ -520,11 +526,11 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Stage-2 data model planning
-   - Scope: multi-batch entry links, denser period taxonomy, source confidence tiers, and separate UI-facing filter groups
+1. Review Stage-2 visual preview
+   - Scope: confirm whether `/stage2-preview.html` makes multi-context links, UI filters, research tags, and source confidence easy to understand
 
-2. Stage-2 pilot batch
-   - Scope: choose one dense historical region and test the upgraded model without disrupting `data/entries.json`
+2. Stage-2 schema formalization
+   - Scope: promote the preview-only fields into a stable JSON schema and validation script without disrupting `data/entries.json`
 
 ## Resume Checklist
 
