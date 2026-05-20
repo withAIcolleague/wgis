@@ -135,6 +135,7 @@ select {
 .filter-row {
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
   gap: 6px;
 }
 
@@ -145,6 +146,29 @@ select {
 .filter-row.compact .filter-btn {
   font-size: 11px;
   padding: 5px 8px;
+}
+
+.filter-row.compact {
+  max-height: clamp(132px, 22vh, 220px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding-right: 4px;
+  scrollbar-color: #9d9077 #f6f0df;
+  scrollbar-width: thin;
+}
+
+.filter-row.compact::-webkit-scrollbar {
+  width: 8px;
+}
+
+.filter-row.compact::-webkit-scrollbar-track {
+  background: #f6f0df;
+  border-radius: 999px;
+}
+
+.filter-row.compact::-webkit-scrollbar-thumb {
+  background: #9d9077;
+  border-radius: 999px;
 }
 
 .filter-btn {
@@ -260,8 +284,8 @@ select {
 }
 
 .results-section {
-  flex: 1 1 0;
-  min-height: 0;
+  flex: 1 1 160px;
+  min-height: 120px;
   overflow-y: auto;
   overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
@@ -722,7 +746,7 @@ select {
 
   .search-panel.mobile-sheet-expanded .results-section {
     flex: 0 0 auto;
-    min-height: 0;
+    min-height: 180px;
     overflow: visible;
   }
 
