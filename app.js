@@ -10,6 +10,7 @@ let pageSize = 10;
 let mapResultsActive = false;
 let focusedMapEntryId = null;
 let lastTooltipClick = { id: null, time: 0 };
+let filterPanelOpen = false;
 
 const MOBILE_MEDIA_QUERY = '(max-width: 820px)';
 
@@ -239,6 +240,57 @@ function renderRegionFilters() {
   });
 }
 
+function setupFilterPanel() {
+  const openButton = document.getElementById('filterPanelBtn');
+  const closeButton = document.getElementById('filterPanelCloseBtn');
+  const panel = document.getElementById('filterPanel');
+  if (!openButton || !closeButton || !panel) return;
+
+  openButton.addEventListener('click', event => {
+    event.stopPropagation();
+    setFilterPanelOpen(!filterPanelOpen);
+  });
+
+  closeButton.addEventListener('click', () => {
+    setFilterPanelOpen(false);
+  });
+
+  panel.addEventListener('click', event => {
+    event.stopPropagation();
+  });
+
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') setFilterPanelOpen(false);
+  });
+
+  document.addEventListener('click', event => {
+    if (!filterPanelOpen) return;
+    if (panel.contains(event.target) || openButton.contains(event.target)) return;
+    setFilterPanelOpen(false);
+  });
+
+  setFilterPanelOpen(false);
+}
+
+function setFilterPanelOpen(open) {
+  const openButton = document.getElementById('filterPanelBtn');
+  const panel = document.getElementById('filterPanel');
+  if (!openButton || !panel) return;
+
+  filterPanelOpen = open;
+  panel.hidden = !open;
+  openButton.setAttribute('aria-expanded', String(open));
+}
+
+function updateActiveFilterSummary() {
+  const summary = document.getElementById('activeFilterSummary');
+  if (!summary) return;
+
+  const typeLabel = TYPE_LABELS[activeType] || '전체';
+  const regionLabel = REGION_FILTER_BY_ID[activeRegion]?.label || '전 세계';
+  summary.textContent = `${typeLabel} · ${regionLabel}`;
+}
+
 function entryMatchesRegionFilter(entry, filterId) {
   if (filterId === 'all') return true;
 
@@ -349,6 +401,10 @@ function setMobileSheetExpanded(expanded) {
   panel.classList.toggle('mobile-sheet-expanded', expanded);
   toggle.setAttribute('aria-expanded', String(expanded));
 
+  if (!expanded) {
+    setFilterPanelOpen(false);
+  }
+
   const label = toggle.querySelector('.sheet-label');
   if (label) {
     label.textContent = expanded ? '지도 크게 보기' : '검색 및 결과';
@@ -403,6 +459,7 @@ function updateFilterButtons() {
   document.querySelectorAll('#regionFilters .filter-btn').forEach(button => {
     button.classList.toggle('active', button.dataset.region === activeRegion);
   });
+  updateActiveFilterSummary();
 }
 
 function getFilteredEntries() {
@@ -754,6 +811,7 @@ async function init() {
   initMap();
   setupSearch();
   setupPagination();
+  setupFilterPanel();
   setupMobileSheet();
   try {
     await loadEntries();

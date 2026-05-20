@@ -27,8 +27,27 @@
           <button id="searchButton" type="button">검색</button>
           <button id="clearSearchBtn" type="button" title="검색어 지우기">×</button>
         </div>
-        <div class="filter-row" id="typeFilters"></div>
-        <div class="filter-row compact" id="regionFilters"></div>
+        <div class="filter-toolbar">
+          <button id="filterPanelBtn" class="filter-panel-btn" type="button" aria-expanded="false" aria-controls="filterPanel">
+            필터
+          </button>
+          <span id="activeFilterSummary" class="active-filter-summary">전체 · 전 세계</span>
+        </div>
+
+        <div id="filterPanel" class="filter-panel" hidden>
+          <div class="filter-panel-header">
+            <strong>검색 필터</strong>
+            <button id="filterPanelCloseBtn" class="filter-panel-close" type="button" aria-label="필터 닫기">×</button>
+          </div>
+          <div class="filter-panel-group">
+            <span class="filter-panel-label">유형</span>
+            <div class="filter-row" id="typeFilters"></div>
+          </div>
+          <div class="filter-panel-group">
+            <span class="filter-panel-label">권역</span>
+            <div class="filter-row compact" id="regionFilters"></div>
+          </div>
+        </div>
       </section>
 
       <section class="summary-strip" aria-label="검색 요약">
