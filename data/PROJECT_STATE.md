@@ -11,9 +11,9 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 238
-- Completed curation batches: 29
-- Latest completed batch: `global-modern-imperial-chokepoints-canal-port-cities-v1`
+- Current entry count: 246
+- Completed curation batches: 30
+- Latest completed batch: `atlantic-modern-revolutions-independence-capitals-v1`
 - Latest completed infrastructure milestone: pre-stage-2 stabilization
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
@@ -87,6 +87,21 @@ The long-term target is 3,000+ entries, but the project should progress one focu
     - `cape-town-table-bay`
     - `panama-canal`
     - `gibraltar-port`
+
+- Atlantic revolutions and independence capitals batch
+  - Batch ID: `atlantic-modern-revolutions-independence-capitals-v1`
+  - Source file: `data/records/atlantic/modern/revolutions-independence-capitals.json`
+  - Entries added: 8
+  - Entry IDs:
+    - `philadelphia-independence-hall`
+    - `yorktown-battlefield`
+    - `paris-bastille`
+    - `cap-haitien-cap-francais`
+    - `caracas-bolivar-independence`
+    - `bogota-casa-del-florero`
+    - `buenos-aires-cabildo`
+    - `mexico-city-national-palace-independence`
+  - Note: `boston-tea-party` remains in the legacy core seed batch to avoid duplicate source-record ownership.
 
 - Ancient Mesopotamia early cities batch
   - Batch ID: `asia-iraq-mesopotamia-early-cities-v1`
@@ -498,12 +513,11 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Atlantic revolutions and independence capitals
-   - Possible source file: `data/records/atlantic/modern/revolutions-independence-capitals.json`
-   - Likely entries: Boston, Philadelphia, Paris, Cap-Haitien, Caracas, Bogota, Buenos Aires, Mexico City
-
-2. First-stage closure and functional review
+1. First-stage closure and functional review
    - Scope: PC/mobile search, filters, pagination, list scrolling, marker labels, small map popup, detail drawer, Google search links, deployment response, and data validation/CI status
+
+2. Stage-2 data model planning
+   - Scope: multi-batch entry links, denser period taxonomy, source confidence tiers, and separate UI-facing filter groups
 
 ## Resume Checklist
 

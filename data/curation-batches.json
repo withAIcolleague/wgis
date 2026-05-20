@@ -847,6 +847,34 @@
         "Britannica references for historical context and place summaries",
         "Museum and heritage references for Hong Kong and Gibraltar maritime history"
       ]
+    },
+    {
+      "id": "atlantic-modern-revolutions-independence-capitals-v1",
+      "status": "completed",
+      "completedAt": "2026-05-20",
+      "continentId": "global",
+      "countryIso2": "US-FR-HT-VE-CO-AR-MX",
+      "countryKo": "미국·프랑스·아이티·베네수엘라·콜롬비아·아르헨티나·멕시코",
+      "worldRegion": "대서양 혁명권",
+      "focusKo": "대서양 혁명과 독립운동 중심지",
+      "scopeKo": "미국·프랑스·아이티·라틴아메리카 독립운동의 도시, 광장, 전장, 혁명기 정치 공간",
+      "sourceFile": "data/records/atlantic/modern/revolutions-independence-capitals.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "philadelphia-independence-hall",
+        "yorktown-battlefield",
+        "paris-bastille",
+        "cap-haitien-cap-francais",
+        "caracas-bolivar-independence",
+        "bogota-casa-del-florero",
+        "buenos-aires-cabildo",
+        "mexico-city-national-palace-independence"
+      ],
+      "sourceBasis": [
+        "National Park Service, city, museum, archive, and UNESCO references for revolutionary sites",
+        "Britannica references for Atlantic Revolution and independence context",
+        "Official cultural and tourism references for Buenos Aires, Bogotá, Mexico City, and Caracas-related memory sites"
+      ]
     }
   ]
 }
