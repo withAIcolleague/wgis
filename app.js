@@ -35,6 +35,52 @@ const TYPE_COLORS = {
   artifact: '#67508d'
 };
 
+const REGION_FILTERS = [
+  { id: 'all', label: '전 세계' },
+  {
+    id: 'africa',
+    label: '아프리카',
+    countries: ['나이지리아', '말리', '모로코', '모리타니', '모잠비크', '에티오피아', '이집트', '짐바브웨', '케냐', '탄자니아', '튀니지']
+  },
+  {
+    id: 'europe',
+    label: '유럽',
+    countries: ['그리스', '네덜란드', '노르웨이', '독일', '러시아', '벨기에', '스웨덴', '스페인', '영국', '이탈리아', '크로아티아', '포르투갈', '프랑스']
+  },
+  {
+    id: 'west-central-asia',
+    label: '서·중앙아시아',
+    countries: ['시리아', '예멘', '우즈베키스탄', '이라크', '이란', '카자흐스탄', '투르크메니스탄', '튀르키예']
+  },
+  {
+    id: 'south-asia',
+    label: '남아시아',
+    countries: ['인도', '파키스탄']
+  },
+  {
+    id: 'east-asia',
+    label: '동아시아',
+    countries: ['대한민국', '북한', '일본', '중국']
+  },
+  {
+    id: 'southeast-asia',
+    label: '동남아',
+    countries: ['말레이시아', '미얀마', '베트남', '브루나이', '인도네시아', '캄보디아', '태국', '필리핀']
+  },
+  {
+    id: 'americas',
+    label: '아메리카',
+    countries: ['과테말라', '멕시코', '미국', '볼리비아', '온두라스', '콜롬비아', '쿠바', '페루']
+  },
+  {
+    id: 'oceania',
+    label: '오세아니아',
+    countries: ['미크로네시아', '바누아투', '사모아', '칠레령 라파누이', '통가', '파푸아뉴기니', '프랑스령 뉴칼레도니아', '프랑스령 폴리네시아']
+  }
+];
+
+const REGION_FILTER_BY_ID = Object.fromEntries(REGION_FILTERS.map(filter => [filter.id, filter]));
+
 const MARKER_GLYPHS = {
   place: `
     <path d="M8 4.5v13" />
@@ -171,10 +217,13 @@ function setupFilters() {
 
 function renderRegionFilters() {
   const regionContainer = document.getElementById('regionFilters');
-  const regions = ['all', ...Array.from(new Set(entries.map(e => e.worldRegion))).sort((a, b) => a.localeCompare(b, 'ko'))];
+  const regions = REGION_FILTERS.filter(filter =>
+    filter.id === 'all' || entries.some(entry => entryMatchesRegionFilter(entry, filter.id))
+  );
+
   regionContainer.innerHTML = regions.map(region => `
-    <button class="filter-btn ${region === activeRegion ? 'active' : ''}" data-region="${escapeHtml(region)}">
-      ${region === 'all' ? '전 세계' : escapeHtml(region)}
+    <button class="filter-btn ${region.id === activeRegion ? 'active' : ''}" data-region="${escapeHtml(region.id)}">
+      ${escapeHtml(region.label)}
     </button>
   `).join('');
   regionContainer.querySelectorAll('button').forEach(button => {
@@ -188,6 +237,15 @@ function renderRegionFilters() {
       update();
     });
   });
+}
+
+function entryMatchesRegionFilter(entry, filterId) {
+  if (filterId === 'all') return true;
+
+  const filter = REGION_FILTER_BY_ID[filterId];
+  if (!filter) return false;
+
+  return filter.countries.includes(entry.country);
 }
 
 function setupSearch() {
@@ -351,7 +409,7 @@ function getFilteredEntries() {
   const query = normalizeText(document.getElementById('searchInput').value);
   return entries
     .filter(entry => activeType === 'all' || entry.type === activeType)
-    .filter(entry => activeRegion === 'all' || entry.worldRegion === activeRegion)
+    .filter(entry => entryMatchesRegionFilter(entry, activeRegion))
     .filter(entry => !query || entry.searchIndex.includes(query))
     .sort((a, b) => {
       if (!query) return a.title.localeCompare(b.title, 'ko');
