@@ -42,7 +42,7 @@ select {
 }
 
 .app-header {
-  padding: 24px 24px 20px;
+  padding: 14px 20px 12px;
   background: #20251f;
   color: #f7f1df;
   border-bottom: 1px solid #4a4335;
@@ -51,7 +51,7 @@ select {
 .eyebrow {
   font-size: 11px;
   line-height: 1;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   color: #c7b46a;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -60,35 +60,35 @@ select {
 
 .app-header h1 {
   margin: 0;
-  font-size: 24px;
-  line-height: 1.25;
+  font-size: 21px;
+  line-height: 1.18;
   font-weight: 700;
   letter-spacing: 0;
 }
 
 .app-header p {
-  margin: 10px 0 0;
-  font-size: 13px;
-  line-height: 1.55;
+  margin: 7px 0 0;
+  font-size: 12px;
+  line-height: 1.45;
   color: #cec7b8;
 }
 
 .search-section {
-  padding: 18px 20px 14px;
+  padding: 12px 18px 10px;
   border-bottom: 1px solid #d5ccb8;
   background: #fbf7ed;
 }
 
 .search-box {
   display: grid;
-  grid-template-columns: 1fr 58px 34px;
-  gap: 6px;
-  margin-bottom: 12px;
+  grid-template-columns: 1fr 54px 32px;
+  gap: 5px;
+  margin-bottom: 8px;
 }
 
 #searchInput {
   width: 100%;
-  height: 42px;
+  height: 38px;
   padding: 0 12px;
   border: 1px solid #8a7f68;
   border-radius: 4px;
@@ -103,7 +103,7 @@ select {
 }
 
 #clearSearchBtn {
-  height: 42px;
+  height: 38px;
   border: 1px solid #8a7f68;
   border-radius: 4px;
   background: #eee7d6;
@@ -114,7 +114,7 @@ select {
 }
 
 #searchButton {
-  height: 42px;
+  height: 38px;
   border: 1px solid #365a42;
   border-radius: 4px;
   background: #365a42;
@@ -134,31 +134,36 @@ select {
 
 .filter-row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-content: flex-start;
-  gap: 6px;
+  gap: 5px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 2px;
+  scrollbar-width: thin;
 }
 
 .filter-row + .filter-row {
-  margin-top: 8px;
+  margin-top: 5px;
 }
 
 .filter-row.compact .filter-btn {
   font-size: 11px;
-  padding: 5px 8px;
+  padding: 4px 7px;
 }
 
 .filter-row.compact {
-  max-height: clamp(132px, 22vh, 220px);
-  overflow-y: auto;
-  overscroll-behavior: contain;
+  max-height: none;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-inline: contain;
   padding-right: 4px;
   scrollbar-color: #9d9077 #f6f0df;
   scrollbar-width: thin;
 }
 
 .filter-row.compact::-webkit-scrollbar {
-  width: 8px;
+  height: 6px;
 }
 
 .filter-row.compact::-webkit-scrollbar-track {
@@ -172,12 +177,13 @@ select {
 }
 
 .filter-btn {
+  flex: 0 0 auto;
   border: 1px solid #b7ad98;
   border-radius: 4px;
   background: #f6f0df;
   color: #3b3428;
-  padding: 6px 10px;
-  font-size: 12px;
+  padding: 5px 9px;
+  font-size: 11px;
   font-weight: 650;
   cursor: pointer;
 }
@@ -721,7 +727,7 @@ select {
   }
 
   .search-panel.mobile-sheet-expanded .search-box {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
   }
 
   .search-panel:not(.mobile-sheet-expanded) .filter-row,
