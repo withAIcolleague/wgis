@@ -37,6 +37,14 @@ Each Stage 2 file under `data/stage2/*.json` should include:
 
 `data/stage2/schema.json` is the schema reference and is not treated as a Stage 2 data batch.
 
+The visible preview page reads dataset options from:
+
+```text
+data/stage2/index.json
+```
+
+Every Stage 2 data file should be listed in that index so the preview page and validator stay aligned.
+
 ## Contexts
 
 `contexts` describe historical meaning, not just geography.
@@ -114,6 +122,8 @@ Allowed `tier` values:
 `npm run validate:stage2` checks:
 
 - Stage 2 JSON parses successfully
+- every Stage 2 data file is listed in `data/stage2/index.json`
+- every indexed dataset path points to an existing Stage 2 data file
 - required root, context, entry, and source-confidence fields exist
 - context IDs are unique
 - context parent IDs exist

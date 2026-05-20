@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-ethiopia-human-origins-preview",
+  "titleKo": "2단계 미리보기: 에티오피아 인류 기원",
+  "descriptionKo": "루시, 아르디, 오모 I처럼 사용자가 검색할 가능성이 높은 고인류 자료를 시간·진화 맥락·행동 증거·출처 신뢰도로 나누어 보는 샘플입니다.",
+  "modelComparison": {
+    "currentKo": [
+      "1단계에서는 각 화석·석기 지점이 지도 검색과 팝업 표시를 위해 관리됩니다.",
+      "지역은 현대 국가와 좌표 중심으로 정리됩니다.",
+      "시기, 종, 행동 증거, 출처 신뢰도는 요약문 안에 섞여 있습니다."
+    ],
+    "stage2Ko": [
+      "고인류 화석, 석기, 절흔 동물뼈를 서로 다른 증거 유형으로 나눕니다.",
+      "사용자는 간단한 필터로 보고, 연구용 데이터는 더 촘촘한 진화·행동 맥락을 가집니다.",
+      "정확한 발견점이 아닌 연구지구 좌표를 쓰는 항목은 sourceConfidence에서 분리해 표시합니다."
+    ]
+  },
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": ["선사"]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": ["동아프리카", "아파르", "오모 계곡"]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": ["고인류 화석", "직립보행", "석기", "행동 증거", "현생 인류"]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지도 유형",
+      "options": ["유물·유적"]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "east-african-human-origins",
+      "labelKo": "동아프리카 인류 기원",
+      "parentId": null,
+      "periodKo": "약 440만 년 전-15만 년 전",
+      "summaryKo": "에티오피아 아파르와 오모 계곡의 고인류 화석, 석기, 행동 증거를 하나의 큰 맥락으로 묶습니다."
+    },
+    {
+      "id": "afar-hominin-fossils",
+      "labelKo": "아파르 고인류 화석 지대",
+      "parentId": "east-african-human-origins",
+      "periodKo": "약 440만 년 전-275만 년 전",
+      "summaryKo": "아르디, 루시, 셀람, 레디-게라루처럼 아파르 지구에서 발견된 주요 고인류 자료를 묶습니다."
+    },
+    {
+      "id": "australopithecus-afarensis",
+      "labelKo": "오스트랄로피테쿠스 아파렌시스",
+      "parentId": "afar-hominin-fossils",
+      "periodKo": "약 330만 년 전-320만 년 전",
+      "summaryKo": "루시와 셀람을 중심으로 직립보행과 성장, 나무타기 적응을 함께 살피는 맥락입니다."
+    },
+    {
+      "id": "early-stone-tool-behavior",
+      "labelKo": "초기 석기와 행동 증거",
+      "parentId": "east-african-human-origins",
+      "periodKo": "약 339만 년 전-250만 년 전",
+      "summaryKo": "절흔 동물뼈와 올도완 석기를 통해 도구 사용과 동물자원 이용의 시작을 살핍니다."
+    },
+    {
+      "id": "early-homo-emergence",
+      "labelKo": "초기 호모 출현",
+      "parentId": "east-african-human-origins",
+      "periodKo": "약 280만 년 전",
+      "summaryKo": "레디-게라루 하악 화석처럼 호모 속의 초기 출현 시점과 장소를 검토하는 맥락입니다."
+    },
+    {
+      "id": "early-homo-sapiens-east-africa",
+      "labelKo": "동아프리카 초기 현생 인류",
+      "parentId": "east-african-human-origins",
+      "periodKo": "약 23.3만 년 전-15.4만 년 전",
+      "summaryKo": "오모 I와 헤르토 자료를 통해 현생 인류의 동아프리카 기원과 분산 전 단계를 봅니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "ardi-aramis",
+      "titleKo": "아르디",
+      "displayTypeKo": "유물·유적",
+      "modernCountryKo": "에티오피아",
+      "coordinates": { "lat": 10.5833, "lng": 40.5167 },
+      "yearLabelKo": "약 440만 년 전",
+      "summaryKo": "아르디는 매우 이른 시기의 고인류 화석으로, 숲 환경과 초기 직립보행 가능성을 함께 보여주는 핵심 자료입니다.",
+      "stage2": {
+        "primaryContextId": "afar-hominin-fossils",
+        "contextIds": ["east-african-human-origins", "afar-hominin-fossils"],
+        "periodPathKo": ["선사", "고인류 진화", "아파르 고인류 화석"],
+        "topicTagsKo": ["아르디피테쿠스", "초기 고인류", "직립보행", "아라미스", "미들 아와시"],
+        "uiFilters": {
+          "era": "선사",
+          "region": ["동아프리카", "아파르"],
+          "theme": ["고인류 화석", "직립보행"],
+          "displayType": "유물·유적"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "공개 지점은 연구지구 중심 좌표에 가깝기 때문에 발견점 정밀도는 approximate로 둡니다."
+        }
+      }
+    },
+    {
+      "entryId": "lucy-hadar",
+      "titleKo": "루시",
+      "displayTypeKo": "유물·유적",
+      "modernCountryKo": "에티오피아",
+      "coordinates": { "lat": 11.1667, "lng": 40.6333 },
+      "yearLabelKo": "약 320만 년 전",
+      "summaryKo": "루시는 하다르 지역에서 발견된 대표 고인류 화석으로, 사용자가 지도에서 발견 환경을 확인하기에 가장 좋은 핵심 항목입니다.",
+      "stage2": {
+        "primaryContextId": "australopithecus-afarensis",
+        "contextIds": ["east-african-human-origins", "afar-hominin-fossils", "australopithecus-afarensis"],
+        "periodPathKo": ["선사", "고인류 진화", "오스트랄로피테쿠스 아파렌시스"],
+        "topicTagsKo": ["루시", "하다르", "AL 288-1", "직립보행", "아파렌시스"],
+        "uiFilters": {
+          "era": "선사",
+          "region": ["동아프리카", "아파르"],
+          "theme": ["고인류 화석", "직립보행"],
+          "displayType": "유물·유적"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 2,
+          "referenceSources": 0,
+          "noteKo": "Smithsonian과 UNESCO 출처가 있지만 지도 좌표는 하다르 연구지구 중심 성격이므로 approximate로 유지합니다."
+        }
+      }
+    },
+    {
+      "entryId": "selam-dikika",
+      "titleKo": "셀람",
+      "displayTypeKo": "유물·유적",
+      "modernCountryKo": "에티오피아",
+      "coordinates": { "lat": 11.0833, "lng": 40.5833 },
+      "yearLabelKo": "약 330만 년 전",
+      "summaryKo": "셀람은 어린 아파렌시스 개체로, 루시와 비교해 성장과 이동 방식, 신체 발달을 설명하는 데 유용합니다.",
+      "stage2": {
+        "primaryContextId": "australopithecus-afarensis",
+        "contextIds": ["east-african-human-origins", "afar-hominin-fossils", "australopithecus-afarensis"],
+        "periodPathKo": ["선사", "고인류 진화", "오스트랄로피테쿠스 아파렌시스"],
+        "topicTagsKo": ["셀람", "디키카", "어린 개체", "성장", "아파렌시스"],
+        "uiFilters": {
+          "era": "선사",
+          "region": ["동아프리카", "아파르"],
+          "theme": ["고인류 화석", "직립보행"],
+          "displayType": "유물·유적"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "화석 설명 출처와 논문 출처가 있으나 지도 좌표는 디키카 연구지구 기준입니다."
+        }
+      }
+    },
+    {
+      "entryId": "dikika-cutmarked-bones",
+      "titleKo": "디키카 절흔 동물뼈",
+      "displayTypeKo": "유물·유적",
+      "modernCountryKo": "에티오피아",
+      "coordinates": { "lat": 11.0833, "lng": 40.5833 },
+      "yearLabelKo": "약 339만 년 전 이전",
+      "summaryKo": "디키카 절흔 동물뼈는 도구 사용과 동물자원 이용 가능성을 보여주는 논쟁적 행동 증거로 별도 맥락 관리가 필요합니다.",
+      "stage2": {
+        "primaryContextId": "early-stone-tool-behavior",
+        "contextIds": ["east-african-human-origins", "afar-hominin-fossils", "early-stone-tool-behavior"],
+        "periodPathKo": ["선사", "초기 행동 증거", "절흔 동물뼈"],
+        "topicTagsKo": ["디키카", "절흔", "동물자원 이용", "석기 사용 가능성", "논쟁적 증거"],
+        "uiFilters": {
+          "era": "선사",
+          "region": ["동아프리카", "아파르"],
+          "theme": ["행동 증거", "석기"],
+          "displayType": "유물·유적"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 0,
+          "referenceSources": 1,
+          "noteKo": "중요하지만 해석 논쟁이 있는 항목이므로 medium으로 두고 향후 반론 출처를 보강할 수 있습니다."
+        }
+      }
+    },
+    {
+      "entryId": "gona-oldowan-tools",
+      "titleKo": "고나 올도완 석기",
+      "displayTypeKo": "유물·유적",
+      "modernCountryKo": "에티오피아",
+      "coordinates": { "lat": 11.1, "lng": 40.65 },
+      "yearLabelKo": "약 260만-250만 년 전",
+      "summaryKo": "고나 올도완 석기는 초기 석기 제작과 자원 이용을 지도 위에서 설명할 수 있게 해주는 핵심 행동 증거입니다.",
+      "stage2": {
+        "primaryContextId": "early-stone-tool-behavior",
+        "contextIds": ["east-african-human-origins", "afar-hominin-fossils", "early-stone-tool-behavior"],
+        "periodPathKo": ["선사", "초기 행동 증거", "올도완 석기"],
+        "topicTagsKo": ["고나", "올도완", "석기 제작", "도구 사용", "초기 기술"],
+        "uiFilters": {
+          "era": "선사",
+          "region": ["동아프리카", "아파르"],
+          "theme": ["석기", "행동 증거"],
+          "displayType": "유물·유적"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "연구지구 좌표 기반이므로 지점 정밀도는 approximate이지만, 석기 맥락은 핵심 자료입니다."
+        }
+      }
+    },
+    {
+      "entryId": "ledi-geraru-ld-350-1",
+      "titleKo": "레디-게라루 LD 350-1",
+      "displayTypeKo": "유물·유적",
+      "modernCountryKo": "에티오피아",
+      "coordinates": { "lat": 11.3, "lng": 40.5 },
+      "yearLabelKo": "약 280만-275만 년 전",
+      "summaryKo": "LD 350-1은 초기 호모 속 출현 시점을 검토하는 데 중요한 하악 화석으로, 아파르 고인류 흐름의 다음 단계를 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "early-homo-emergence",
+        "contextIds": ["east-african-human-origins", "afar-hominin-fossils", "early-homo-emergence"],
+        "periodPathKo": ["선사", "고인류 진화", "초기 호모 출현"],
+        "topicTagsKo": ["레디-게라루", "LD 350-1", "초기 호모", "하악 화석", "아파르"],
+        "uiFilters": {
+          "era": "선사",
+          "region": ["동아프리카", "아파르"],
+          "theme": ["고인류 화석"],
+          "displayType": "유물·유적"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 0,
+          "referenceSources": 2,
+          "noteKo": "논문과 대학 저장소 출처가 있으나 공개 좌표는 연구지구 수준입니다."
+        }
+      }
+    },
+    {
+      "entryId": "herto-homo-sapiens-idaltu",
+      "titleKo": "헤르토 호모 사피엔스 이달투",
+      "displayTypeKo": "유물·유적",
+      "modernCountryKo": "에티오피아",
+      "coordinates": { "lat": 10.25, "lng": 40.55 },
+      "yearLabelKo": "약 16만-15.4만 년 전",
+      "summaryKo": "헤르토 자료는 현생 인류의 아프리카 기원과 미들 아와시 지역의 후기 고인류 흐름을 연결합니다.",
+      "stage2": {
+        "primaryContextId": "early-homo-sapiens-east-africa",
+        "contextIds": ["east-african-human-origins", "early-homo-sapiens-east-africa"],
+        "periodPathKo": ["선사", "현생 인류", "동아프리카 초기 호모 사피엔스"],
+        "topicTagsKo": ["헤르토", "호모 사피엔스 이달투", "미들 아와시", "현생 인류", "플라이스토세"],
+        "uiFilters": {
+          "era": "선사",
+          "region": ["동아프리카", "아파르"],
+          "theme": ["고인류 화석", "현생 인류"],
+          "displayType": "유물·유적"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 0,
+          "referenceSources": 2,
+          "noteKo": "주요 Nature 논문 출처가 있지만 좌표는 헤르토·부리 연구권역 기준입니다."
+        }
+      }
+    },
+    {
+      "entryId": "omo-kibish-omo-i",
+      "titleKo": "오모 I",
+      "displayTypeKo": "유물·유적",
+      "modernCountryKo": "에티오피아",
+      "coordinates": { "lat": 4.8, "lng": 35.97 },
+      "yearLabelKo": "최소 약 23.3만 년 전",
+      "summaryKo": "오모 I은 동아프리카 초기 현생 인류의 연대를 이해하는 핵심 항목으로, 아파르권 자료와 별도 지리 맥락을 가집니다.",
+      "stage2": {
+        "primaryContextId": "early-homo-sapiens-east-africa",
+        "contextIds": ["east-african-human-origins", "early-homo-sapiens-east-africa"],
+        "periodPathKo": ["선사", "현생 인류", "오모 키비시"],
+        "topicTagsKo": ["오모 I", "오모 키비시", "현생 인류", "오모 계곡", "연대 재측정"],
+        "uiFilters": {
+          "era": "선사",
+          "region": ["동아프리카", "오모 계곡"],
+          "theme": ["고인류 화석", "현생 인류"],
+          "displayType": "유물·유적"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO와 Nature 출처가 있지만 지도 좌표는 오모 키비시·오모 하류 권역의 근사값입니다."
+        }
+      }
+    }
+  ]
+}

@@ -31,6 +31,23 @@ The sample uses the existing Atlantic revolutions entries:
 - `buenos-aires-cabildo`
 - `mexico-city-national-palace-independence`
 
+The preview now also includes an Ethiopia human-origins pilot dataset:
+
+- `ardi-aramis`
+- `lucy-hadar`
+- `selam-dikika`
+- `dikika-cutmarked-bones`
+- `gona-oldowan-tools`
+- `ledi-geraru-ld-350-1`
+- `herto-homo-sapiens-idaltu`
+- `omo-kibish-omo-i`
+
+The dataset list is managed in:
+
+```text
+data/stage2/index.json
+```
+
 ## Model Idea
 
 Stage 1 stores enough information to search and place an item on the map.

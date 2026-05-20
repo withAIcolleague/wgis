@@ -14,7 +14,7 @@
         <a class="back-link" href="/">WGIS 지도로 돌아가기</a>
         <div class="eyebrow">Stage 2 Preview</div>
         <h1>2단계 데이터 모델 미리보기</h1>
-        <p>대서양 혁명 배치 8개 항목으로, 같은 장소가 여러 역사 맥락에 동시에 연결되는 모습을 확인합니다.</p>
+        <p>샘플 배치를 바꿔가며 같은 항목이 여러 역사 맥락과 사용자용 필터에 연결되는 모습을 확인합니다.</p>
       </header>
 
       <section class="compare-panel" aria-label="1단계와 2단계 비교">
@@ -29,9 +29,13 @@
       </section>
 
       <section class="control-panel" aria-label="2단계 미리보기 검색과 필터">
+        <label class="search-label" for="datasetSelect">
+          <span>2단계 샘플</span>
+          <select id="datasetSelect"></select>
+        </label>
         <label class="search-label" for="stage2Search">
           <span>검색</span>
-          <input id="stage2Search" type="search" placeholder="예: 바스티유, 아이티, 공화국, 전투" autocomplete="off" />
+          <input id="stage2Search" type="search" placeholder="예: 루시, 바스티유, 직립보행, 공화국" autocomplete="off" />
         </label>
         <div class="filter-block">
           <span class="filter-label">역사 맥락</span>

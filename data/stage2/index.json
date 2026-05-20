@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 2,
+  "id": "wgis-stage2-dataset-index",
+  "titleKo": "WGIS 2단계 데이터셋 목록",
+  "datasets": [
+    {
+      "id": "stage2-atlantic-revolutions-preview",
+      "titleKo": "대서양 혁명과 독립운동",
+      "path": "data/stage2/atlantic-revolutions-preview.json",
+      "status": "preview-only"
+    },
+    {
+      "id": "stage2-ethiopia-human-origins-preview",
+      "titleKo": "에티오피아 인류 기원",
+      "path": "data/stage2/ethiopia-human-origins-preview.json",
+      "status": "preview-only"
+    }
+  ]
+}

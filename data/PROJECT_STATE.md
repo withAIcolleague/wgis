@@ -14,7 +14,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Current entry count: 246
 - Completed curation batches: 30
 - Latest completed batch: `atlantic-modern-revolutions-independence-capitals-v1`
-- Latest completed infrastructure milestone: stage-2 schema validation
+- Latest completed infrastructure milestone: stage-2 human origins pilot
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
@@ -75,6 +75,12 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - Files: `data/stage2/schema.json`, `scripts/validate-stage2.js`, `docs/stage2-schema.md`, `package.json`
   - Commands: `npm run validate:stage2`, `npm run check`
   - Scope: required Stage 2 fields, context ID integrity, parent context references, entry links back to `data/entries.json`, UI filter option validation, coordinates, and source-confidence metadata
+
+- Stage-2 human origins pilot dataset
+  - Files: `data/stage2/index.json`, `data/stage2/ethiopia-human-origins-preview.json`, `stage2-preview.html`, `stage2-preview.js`, `stage2-preview.css`
+  - URL path: `/stage2-preview.html`
+  - Scope: add the Ethiopia human-origins batch as a second Stage 2 preview dataset alongside Atlantic revolutions
+  - Model stress test: prehistoric periods, approximate fossil coordinates, artifact-heavy display type, evolution contexts, behavior evidence, and early Homo sapiens contexts
 
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`
@@ -532,10 +538,10 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Next Batch Candidates
 
 1. Review Stage-2 visual preview
-   - Scope: confirm whether `/stage2-preview.html` makes multi-context links, UI filters, research tags, and source confidence easy to understand
+   - Scope: compare Atlantic revolutions and Ethiopia human origins in `/stage2-preview.html`, then confirm whether multi-context links, UI filters, research tags, and source confidence are easy to understand
 
-2. Stage-2 pilot batch
-   - Scope: create one additional Stage 2 file from an existing dense batch, likely human origins or Mesopotamia, and compare whether the schema works outside the Atlantic revolutions sample
+2. Stage-2 third pilot dataset
+   - Scope: create one more Stage 2 file from an ancient urban civilization batch, likely Mesopotamia or Egypt, to test city/site-heavy data
 
 ## Resume Checklist
 

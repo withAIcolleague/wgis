@@ -4,6 +4,7 @@ const path = require('path');
 const root = path.resolve(__dirname, '..');
 const stage2Dir = path.join(root, 'data', 'stage2');
 const errors = [];
+const STAGE2_META_FILES = new Set(['schema.json', 'index.json']);
 
 function toPosix(filePath) {
   return filePath.split(path.sep).join('/');
@@ -27,7 +28,7 @@ function collectStage2Files() {
   if (!fs.existsSync(stage2Dir)) return [];
 
   return fs.readdirSync(stage2Dir, { withFileTypes: true })
-    .filter(entry => entry.isFile() && entry.name.endsWith('.json') && entry.name !== 'schema.json')
+    .filter(entry => entry.isFile() && entry.name.endsWith('.json') && !STAGE2_META_FILES.has(entry.name))
     .map(entry => path.join(stage2Dir, entry.name))
     .sort((a, b) => rel(a).localeCompare(rel(b)));
 }
@@ -256,8 +257,60 @@ function validateStage2File(relativePath, data, schema, entryById) {
   }
 }
 
+function validateStage2Index(indexData, schema, stage2Files) {
+  const label = 'data/stage2/index.json';
+  if (!indexData) return;
+
+  if (indexData.schemaVersion !== 2) {
+    errors.push(`${label}: schemaVersion must be 2`);
+  }
+  requireString(indexData.id, `${label}.id`);
+  requireString(indexData.titleKo, `${label}.titleKo`);
+
+  if (!Array.isArray(indexData.datasets)) {
+    errors.push(`${label}: datasets must be an array`);
+    return;
+  }
+  if (!indexData.datasets.length) {
+    errors.push(`${label}: datasets must include at least one dataset`);
+  }
+
+  assertUnique(indexData.datasets, dataset => dataset.id, `${label}.datasets`);
+  assertUnique(indexData.datasets, dataset => dataset.path, `${label}.datasets`);
+
+  const fileSet = new Set(stage2Files.map(file => rel(file)));
+  const indexedPaths = new Set();
+
+  indexData.datasets.forEach((dataset, index) => {
+    const datasetLabel = `${label}.datasets[${index}]`;
+    requireString(dataset.id, `${datasetLabel}.id`);
+    requireString(dataset.titleKo, `${datasetLabel}.titleKo`);
+    requireString(dataset.path, `${datasetLabel}.path`);
+    if (!schema.allowedStatus.includes(dataset.status)) {
+      errors.push(`${datasetLabel}.status: unknown status "${dataset.status}"`);
+    }
+
+    if (dataset.path) {
+      indexedPaths.add(dataset.path);
+      if (!dataset.path.startsWith('data/stage2/') || !dataset.path.endsWith('.json')) {
+        errors.push(`${datasetLabel}.path: must point to a data/stage2 JSON file`);
+      }
+      if (!fileSet.has(dataset.path)) {
+        errors.push(`${datasetLabel}.path: file does not exist or is not a Stage 2 data file (${dataset.path})`);
+      }
+    }
+  });
+
+  for (const filePath of fileSet) {
+    if (!indexedPaths.has(filePath)) {
+      errors.push(`${label}: Stage 2 data file is missing from index (${filePath})`);
+    }
+  }
+}
+
 function main() {
   const schema = readJson('data/stage2/schema.json');
+  const stage2Index = readJson('data/stage2/index.json');
   const entries = readJson('data/entries.json');
   if (!schema || !entries) return finish();
 
@@ -271,6 +324,8 @@ function main() {
   if (!stage2Files.length) {
     errors.push('data/stage2: no stage 2 data files found');
   }
+
+  validateStage2Index(stage2Index, schema, stage2Files);
 
   for (const file of stage2Files) {
     const relativePath = rel(file);

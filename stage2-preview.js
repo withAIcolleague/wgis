@@ -1,5 +1,7 @@
 let stage2Data = null;
+let stage2Index = null;
 let stage2Map = null;
+let activeDatasetPath = null;
 let activeContextId = 'all';
 let activeEntryId = null;
 let markers = [];
@@ -11,12 +13,14 @@ const CONTEXT_ALL = {
 
 const TYPE_CLASS = {
   장소: 'type-place',
-  사건: 'type-event'
+  사건: 'type-event',
+  '유물·유적': 'type-artifact'
 };
 
 const TIER_LABEL = {
   high: '높음',
-  medium: '보강 필요'
+  medium: '보강 필요',
+  approximate: '근사'
 };
 
 function normalizeText(value) {
@@ -37,10 +41,13 @@ function escapeHtml(value) {
 }
 
 function getContext(id) {
+  if (!stage2Data) return null;
   return stage2Data.contexts.find(context => context.id === id);
 }
 
 function getFilteredEntries() {
+  if (!stage2Data) return [];
+
   const query = normalizeText(document.getElementById('stage2Search').value);
 
   return stage2Data.entries.filter(entry => {
@@ -92,18 +99,40 @@ function initMap() {
 }
 
 function createIcon(entry) {
-  const isEvent = entry.displayTypeKo === '사건';
+  const markerType = entry.displayTypeKo === '사건'
+    ? 'event'
+    : entry.displayTypeKo === '유물·유적'
+      ? 'artifact'
+      : '';
+  const glyph = markerType === 'event' ? '!' : markerType === 'artifact' ? '◆' : '•';
+
   return L.divIcon({
     className: '',
-    html: `<span class="stage2-marker ${isEvent ? 'event' : ''}">${isEvent ? '!' : '•'}</span>`,
+    html: `<span class="stage2-marker ${markerType}">${glyph}</span>`,
     iconSize: [24, 24],
     iconAnchor: [12, 12],
     popupAnchor: [0, -14]
   });
 }
 
+function renderDatasetSelect() {
+  const select = document.getElementById('datasetSelect');
+  if (!select || !stage2Index) return;
+
+  select.innerHTML = stage2Index.datasets.map(dataset => `
+    <option value="${escapeHtml(dataset.path)}">${escapeHtml(dataset.titleKo)}</option>
+  `).join('');
+
+  select.value = activeDatasetPath || stage2Index.datasets[0]?.path || '';
+}
+
 function renderContextFilters() {
   const container = document.getElementById('contextFilters');
+  if (!stage2Data) {
+    container.innerHTML = '';
+    return;
+  }
+
   const contexts = [CONTEXT_ALL, ...stage2Data.contexts];
 
   container.innerHTML = contexts.map(context => `
@@ -274,17 +303,38 @@ function update() {
 }
 
 async function init() {
-  const response = await fetch('data/stage2/atlantic-revolutions-preview.json');
-  if (!response.ok) throw new Error(`2단계 미리보기 데이터를 불러오지 못했습니다: ${response.status}`);
-  stage2Data = await response.json();
-
   initMap();
+
+  const indexResponse = await fetch('data/stage2/index.json');
+  if (!indexResponse.ok) throw new Error(`2단계 목록을 불러오지 못했습니다: ${indexResponse.status}`);
+  stage2Index = await indexResponse.json();
+  activeDatasetPath = stage2Index.datasets[0]?.path || null;
+  if (!activeDatasetPath) throw new Error('2단계 미리보기 데이터셋이 없습니다.');
+
+  renderDatasetSelect();
+
+  document.getElementById('datasetSelect').addEventListener('change', event => {
+    loadDataset(event.target.value);
+  });
 
   document.getElementById('stage2Search').addEventListener('input', () => {
     activeEntryId = null;
     update();
   });
 
+  await loadDataset(activeDatasetPath);
+}
+
+async function loadDataset(path) {
+  const response = await fetch(path);
+  if (!response.ok) throw new Error(`2단계 미리보기 데이터를 불러오지 못했습니다: ${response.status}`);
+
+  stage2Data = await response.json();
+  activeDatasetPath = path;
+  activeContextId = 'all';
+  activeEntryId = null;
+  document.getElementById('stage2Search').value = '';
+  renderDatasetSelect();
   update();
 }
 
