@@ -14,10 +14,11 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Current entry count: 246
 - Completed curation batches: 30
 - Latest completed batch: `atlantic-modern-revolutions-independence-capitals-v1`
-- Latest completed infrastructure milestone: pre-stage-2 stabilization
+- Latest completed infrastructure milestone: first-stage functional smoke review
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
+- Functional smoke-check script: `scripts/smoke-check.js`
 - Data quality floor: every app entry must have `curationBatch` and at least one valid `sources` URL
 
 ## Completed
@@ -58,6 +59,11 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Pre-stage-2 stabilization
   - Files: `package.json`, `.github/workflows/validate.yml`, `vercel.json`, `app.js`, `styles.css`
   - Scope: npm validation script, GitHub Actions data validation, Vercel security headers, mobile result-list scrolling, map/detail popup close controls
+
+- First-stage functional smoke review
+  - Files: `scripts/smoke-check.js`, `docs/first-stage-functional-review.md`, `package.json`
+  - Commands: `npm run smoke`, `npm run check`
+  - Scope: data count floor, representative entries, search controls, filter panel, pagination, marker label click wiring, popup/detail close controls, Google links, desktop/mobile scroll contracts
 
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`
@@ -487,6 +493,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Update this `data/PROJECT_STATE.md` after every meaningful data milestone.
 - Every `data/entries.json` item must have `curationBatch` and at least one valid source URL.
 - Commit and push after each verified batch or structural data change.
+- Run `npm run check` before pushing functional or data milestones.
 
 ## Classification Policy
 
@@ -513,11 +520,11 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. First-stage closure and functional review
-   - Scope: PC/mobile search, filters, pagination, list scrolling, marker labels, small map popup, detail drawer, Google search links, deployment response, and data validation/CI status
-
-2. Stage-2 data model planning
+1. Stage-2 data model planning
    - Scope: multi-batch entry links, denser period taxonomy, source confidence tiers, and separate UI-facing filter groups
+
+2. Stage-2 pilot batch
+   - Scope: choose one dense historical region and test the upgraded model without disrupting `data/entries.json`
 
 ## Resume Checklist
 
@@ -537,10 +544,13 @@ At the start of a new session:
 9. Add or update the batch in `data/curation-batches.json`.
 10. Update this file.
 11. Run `node scripts/validate-data.js`.
-12. Commit and push to `origin/main`.
+12. Run `npm run check`.
+13. Commit and push to `origin/main`.
 
 ## Validation Commands
 
 ```bash
 node scripts/validate-data.js
+npm run smoke
+npm run check
 ```

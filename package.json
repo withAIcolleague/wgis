@@ -5,6 +5,8 @@
   "description": "World Geometry Information System static map app and curated world-history location database.",
   "scripts": {
     "validate": "node scripts/validate-data.js",
+    "smoke": "node scripts/smoke-check.js",
+    "check": "npm run validate && npm run smoke",
     "start": "python -m http.server 8000"
   }
 }
