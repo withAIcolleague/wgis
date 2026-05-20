@@ -14,7 +14,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Current entry count: 246
 - Completed curation batches: 30
 - Latest completed batch: `atlantic-modern-revolutions-independence-capitals-v1`
-- Latest completed infrastructure milestone: stage-2 visual preview
+- Latest completed infrastructure milestone: stage-2 schema validation
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
@@ -70,6 +70,11 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - URL path: `/stage2-preview.html`
   - Scope: visual comparison between current map data and proposed Stage 2 context model, using the Atlantic revolutions sample entries
   - Model demonstrated: multi-context links, detailed period path, user-facing filters, research tags, and source-confidence status
+
+- Stage-2 schema validation
+  - Files: `data/stage2/schema.json`, `scripts/validate-stage2.js`, `docs/stage2-schema.md`, `package.json`
+  - Commands: `npm run validate:stage2`, `npm run check`
+  - Scope: required Stage 2 fields, context ID integrity, parent context references, entry links back to `data/entries.json`, UI filter option validation, coordinates, and source-confidence metadata
 
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`
@@ -529,8 +534,8 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 1. Review Stage-2 visual preview
    - Scope: confirm whether `/stage2-preview.html` makes multi-context links, UI filters, research tags, and source confidence easy to understand
 
-2. Stage-2 schema formalization
-   - Scope: promote the preview-only fields into a stable JSON schema and validation script without disrupting `data/entries.json`
+2. Stage-2 pilot batch
+   - Scope: create one additional Stage 2 file from an existing dense batch, likely human origins or Mesopotamia, and compare whether the schema works outside the Atlantic revolutions sample
 
 ## Resume Checklist
 
@@ -558,5 +563,6 @@ At the start of a new session:
 ```bash
 node scripts/validate-data.js
 npm run smoke
+npm run validate:stage2
 npm run check
 ```

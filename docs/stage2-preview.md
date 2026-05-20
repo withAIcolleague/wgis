@@ -48,8 +48,9 @@ Stage 2 adds separate layers:
 The preview is included in:
 
 ```bash
+npm run validate:stage2
 npm run smoke
 npm run check
 ```
 
-The smoke check confirms that every Stage 2 preview entry still exists in the main app data and that each preview entry has context links, UI filters, and source-confidence metadata.
+The Stage 2 validator checks the preview data against `data/stage2/schema.json`. The smoke check confirms that the preview page, assets, and critical UI wiring are present.

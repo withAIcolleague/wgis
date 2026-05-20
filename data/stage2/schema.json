@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 2,
+  "id": "wgis-stage2-context-schema",
+  "title": "WGIS Stage 2 Context Model",
+  "status": "draft",
+  "purposeKo": "지도 표시용 1단계 항목을 유지하면서, 역사 맥락·사용자용 필터·연구용 태그·출처 신뢰도를 분리해 관리하기 위한 2단계 데이터 규칙입니다.",
+  "allowedStatus": ["preview-only", "draft", "active"],
+  "allowedSourceConfidenceTiers": ["high", "medium", "approximate"],
+  "rootRequiredFields": [
+    "schemaVersion",
+    "status",
+    "id",
+    "titleKo",
+    "descriptionKo",
+    "uiFilterGroups",
+    "contexts",
+    "entries"
+  ],
+  "contextRequiredFields": [
+    "id",
+    "labelKo",
+    "parentId",
+    "periodKo",
+    "summaryKo"
+  ],
+  "entryRequiredFields": [
+    "entryId",
+    "titleKo",
+    "displayTypeKo",
+    "modernCountryKo",
+    "coordinates",
+    "yearLabelKo",
+    "summaryKo",
+    "stage2"
+  ],
+  "stage2RequiredFields": [
+    "primaryContextId",
+    "contextIds",
+    "periodPathKo",
+    "topicTagsKo",
+    "uiFilters",
+    "sourceConfidence"
+  ],
+  "sourceConfidenceRequiredFields": [
+    "tier",
+    "officialSources",
+    "referenceSources",
+    "noteKo"
+  ],
+  "fieldNotesKo": {
+    "contexts": "역사 연구 맥락입니다. 예: 대서양 혁명권, 미국 독립혁명, 아이티 혁명.",
+    "uiFilterGroups": "사용자에게 보여줄 단순 필터입니다. 연구용 태그보다 적고 이해하기 쉬워야 합니다.",
+    "periodPathKo": "큰 시대에서 세부 주제로 내려가는 경로입니다. 예: 근대 > 혁명과 독립 > 미국 독립혁명.",
+    "topicTagsKo": "연구·확장·추천에 쓰는 세부 태그입니다. UI 필터보다 촘촘해도 됩니다.",
+    "sourceConfidence": "출처의 성격과 좌표·사실 검증 상태를 표시합니다."
+  }
+}
