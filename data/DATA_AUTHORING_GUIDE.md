@@ -2,6 +2,22 @@
 
 이 문서는 WGIS DB를 생성하거나 확장하는 AI agent가 따라야 하는 기본 양식과 작업 절차를 정의한다. WGIS 데이터 작업은 항상 `source record first` 원칙을 따른다.
 
+## AI Agent 진입 파일
+
+이 가이드가 DB 작성 규칙의 기준 문서다. 각 에이전트별 파일은 이 문서로 연결하는 얇은 어댑터로만 유지한다.
+
+- `AGENTS.md`: Codex, OpenAI 계열, 범용 agent용 공통 진입점.
+- `CLAUDE.md`: Claude Code용 진입점.
+- `GEMINI.md`: Gemini CLI 및 Gemini 계열 agent용 진입점.
+- `.github/copilot-instructions.md`: GitHub Copilot 및 VS Code Copilot용 저장소 공통 지침.
+- `.github/instructions/wgis-data.instructions.md`: Copilot의 data 경로 전용 지침.
+- `.cursor/rules/wgis-data-authoring.mdc`: Cursor용 data 작성 rule.
+- `.windsurf/rules/wgis-data-authoring.md`: Windsurf Cascade용 workspace rule.
+- `.windsurfrules`: Windsurf 구버전 호환용 rule.
+- `.agent/rules/wgis-data-authoring.md`: 기타 오픈 소스 agent가 참조할 수 있는 범용 fallback.
+
+규칙이 충돌하면 `AGENTS.md`와 이 문서를 우선한다.
+
 ## 핵심 원칙
 
 - 한 번에 하나의 집중 배치만 작업한다.

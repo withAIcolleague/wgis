@@ -1,0 +1,16 @@
+---
+description: WGIS historical-location DB authoring rules for data records, batches, and project state.
+globs: data/**/*.json,data/**/*.md,scripts/validate-data.js
+alwaysApply: false
+---
+
+# WGIS Data Authoring
+
+The canonical guide is `data/DATA_AUTHORING_GUIDE.md`.
+
+- Read `data/PROJECT_STATE.md` before choosing a batch.
+- Keep data work batch-based and source-record-first.
+- Do not add isolated entries unless explicitly requested as an emergency fix.
+- Keep `data/records/**`, `data/entries.json`, `data/curation-batches.json`, and `data/PROJECT_STATE.md` synchronized.
+- Use independent Korean summaries and cite reliable URLs.
+- Run `node scripts/validate-data.js` before commit.

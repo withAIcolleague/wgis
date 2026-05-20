@@ -16,6 +16,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Latest completed batch: `asia-southeast-asia-early-modern-maritime-sultanates-port-cities-v1`
 - Latest completed infrastructure milestone: `a28681f Add data validation script`
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
+- Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
 
 ## Completed
@@ -32,7 +33,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 - Data authoring guide for AI agents
   - File: `data/DATA_AUTHORING_GUIDE.md`
-  - Agent entrypoint: `AGENTS.md`
+  - Agent entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.github/instructions/wgis-data.instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`, `.windsurfrules`, `.agent/rules/wgis-data-authoring.md`
   - Scope: batch planning, source record shape, app index reflection, curation batch metadata, source policy, validation checklist
 
 - Ethiopia human origins batch

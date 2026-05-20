@@ -1,0 +1,7 @@
+# WGIS Windsurf Rules
+
+Read `AGENTS.md` first. For DB work, use `data/DATA_AUTHORING_GUIDE.md` as the source of truth.
+
+- Keep data work batch-based and source-record-first.
+- Synchronize `data/records/**`, `data/entries.json`, `data/curation-batches.json`, and `data/PROJECT_STATE.md`.
+- Run `node scripts/validate-data.js` before committing data changes.
