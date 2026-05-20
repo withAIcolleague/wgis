@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "id": "global-modern-imperial-chokepoints-canal-port-cities",
+  "titleKo": "근대 제국주의 해상 관문·운하·항구도시",
+  "curationBatch": "global-modern-imperial-chokepoints-canal-port-cities-v1",
+  "taxonomyFile": "data/taxonomy.json",
+  "appIndexFile": "data/entries.json",
+  "scope": {
+    "continentId": "global",
+    "modernCountryIso2": "EG-SG-CN-LK-ZA-PA-GB",
+    "modernCountryKo": "이집트·싱가포르·중국·스리랑카·남아프리카공화국·파나마·영국",
+    "historicalRegionKo": "수에즈-홍해, 말라카 해협, 남중국해, 인도양, 희망봉, 파나마 지협, 지브롤터 해협",
+    "cultureAreaKo": "근대 제국주의 해상 교통망과 세계 무역 관문",
+    "periodBand": "modern",
+    "topicKo": "운하, 해협, 석탄·보급항, 식민 항구, 전략적 해상 관문"
+  },
+  "records": [
+    {
+      "id": "suez-canal",
+      "title": "수에즈 운하",
+      "type": "place",
+      "historicalName": "수에즈 운하",
+      "modernName": "수에즈 운하",
+      "modernAdmin": "이스마일리아주·포트사이드주·수에즈주",
+      "country": "이집트",
+      "worldRegion": "수에즈 지협·홍해 관문",
+      "period": "근대 제국주의 해상 교통망",
+      "yearLabel": "1869년 개통, 지중해-홍해 연결",
+      "date": { "startYear": 1859, "endYear": 1869, "precision": "range" },
+      "spatial": {
+        "continentId": "africa",
+        "modernCountryIso2": "EG",
+        "historicalRegionKo": "수에즈 지협",
+        "cultureAreaKo": "유럽-인도양 항로와 제국주의 운하 체계"
+      },
+      "classification": { "periodBand": "modern", "selectionTier": "core" },
+      "coordinates": { "lat": 30.5852, "lng": 32.2654 },
+      "aliases": ["Suez Canal", "Qanat as-Suways", "Canal de Suez", "Mediterranean Red Sea route"],
+      "summary": "수에즈 운하는 지중해와 홍해를 직접 연결해 유럽-인도양 항로를 크게 단축한 근대 세계 교통의 핵심 관문이다. 영국의 인도 방면 제국 운영, 1956년 수에즈 위기, 오늘날 해상 물류의 병목 문제를 한 지점에서 함께 이해하게 해준다.",
+      "confidence": "approximate",
+      "sourceNote": "운하 전체가 선형 지형이므로 이스마일리아 인근 중부 운하권을 대표점으로 표시했다.",
+      "curationBatch": "global-modern-imperial-chokepoints-canal-port-cities-v1",
+      "sources": [
+        { "title": "Suez Canal Authority: Canal History", "url": "https://www.suezcanal.gov.eg/English/About/SuezCanal/Pages/CanalHistory.aspx" },
+        { "title": "Suez Canal Authority: About Suez Canal", "url": "https://www.suezcanal.gov.eg/English/About/SuezCanal/Pages/AboutSuezCanal.aspx" },
+        { "title": "Britannica: Suez Canal", "url": "https://www.britannica.com/topic/Suez-Canal" }
+      ]
+    },
+    {
+      "id": "port-said",
+      "title": "포트사이드",
+      "type": "place",
+      "historicalName": "포트사이드",
+      "modernName": "포트사이드",
+      "modernAdmin": "포트사이드주",
+      "country": "이집트",
+      "worldRegion": "수에즈 운하 북단",
+      "period": "수에즈 운하 도시와 1956년 수에즈 위기",
+      "yearLabel": "1859년 운하 공사 거점, 1869년 개통 이후 관문항",
+      "date": { "startYear": 1859, "endYear": null, "precision": "minimum" },
+      "spatial": {
+        "continentId": "africa",
+        "modernCountryIso2": "EG",
+        "historicalRegionKo": "지중해 남동부·수에즈 운하 북단",
+        "cultureAreaKo": "운하도시·제국 해운 보급항"
+      },
+      "classification": { "periodBand": "modern", "selectionTier": "core" },
+      "coordinates": { "lat": 31.2653, "lng": 32.3019 },
+      "aliases": ["Port Said", "Būr Saʿīd", "Suez Canal northern entrance", "Port Fouad"],
+      "summary": "포트사이드는 수에즈 운하 북쪽 입구에 조성된 운하도시로, 지중해에서 홍해와 인도양으로 들어가는 선박의 관문이었다. 1956년 수에즈 위기 때 영국·프랑스군 상륙이 이루어진 장소이기도 해 운하 주권과 제국 쇠퇴의 의미를 함께 보여준다.",
+      "confidence": "high",
+      "sourceNote": "수에즈 운하 북단의 포트사이드 도심과 항만권을 기준으로 표시했다.",
+      "curationBatch": "global-modern-imperial-chokepoints-canal-port-cities-v1",
+      "sources": [
+        { "title": "Suez Canal Authority: Canal History", "url": "https://www.suezcanal.gov.eg/English/About/SuezCanal/Pages/CanalHistory.aspx" },
+        { "title": "Britannica: Suez Canal", "url": "https://www.britannica.com/topic/Suez-Canal" },
+        { "title": "Britannica: Suez Crisis", "url": "https://www.britannica.com/event/Suez-Crisis" }
+      ]
+    },
+    {
+      "id": "singapore-port",
+      "title": "싱가포르 항",
+      "type": "place",
+      "historicalName": "싱가포르 자유항",
+      "modernName": "싱가포르 항",
+      "modernAdmin": "싱가포르 중부·남부 항만권",
+      "country": "싱가포르",
+      "worldRegion": "말라카 해협·동남아시아",
+      "period": "영국 해협식민지와 세계 중계항",
+      "yearLabel": "1819년 영국 교역 거점, 1869년 수에즈 개통 이후 성장",
+      "date": { "startYear": 1819, "endYear": null, "precision": "minimum" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "SG",
+        "historicalRegionKo": "말라카 해협 남단",
+        "cultureAreaKo": "영국 해협식민지·동남아 중계무역항"
+      },
+      "classification": { "periodBand": "modern", "selectionTier": "core" },
+      "coordinates": { "lat": 1.2644, "lng": 103.8218 },
+      "aliases": ["Singapore", "Port of Singapore", "Straits Settlements", "Keppel Harbour", "free port"],
+      "summary": "싱가포르 항은 말라카 해협 남단의 위치를 바탕으로 영국의 자유항이자 동남아 중계무역 거점으로 성장했다. 수에즈 운하 개통과 증기선 항로 확대 이후 유럽-인도양-남중국해를 잇는 보급·환적 항구로 중요성이 커졌다.",
+      "confidence": "high",
+      "sourceNote": "역사적 항만 기능이 집중된 케펠 하버·남부 항만권을 기준으로 표시했다.",
+      "curationBatch": "global-modern-imperial-chokepoints-canal-port-cities-v1",
+      "sources": [
+        { "title": "Maritime and Port Authority of Singapore: About MPA", "url": "https://www.mpa.gov.sg/who-we-are/about-mpa" },
+        { "title": "Maritime and Port Authority of Singapore: MPA's Milestones", "url": "https://www.mpa.gov.sg/who-we-are/about-mpa/mpa%27s-milestones" },
+        { "title": "Britannica: Singapore", "url": "https://www.britannica.com/place/Singapore-capital" }
+      ]
+    },
+    {
+      "id": "hong-kong-victoria-harbour",
+      "title": "홍콩 빅토리아항",
+      "type": "place",
+      "historicalName": "빅토리아항 / 홍콩항",
+      "modernName": "빅토리아항",
+      "modernAdmin": "홍콩 특별행정구 중서구·야우침몽구",
+      "country": "중국",
+      "worldRegion": "남중국해·주강 삼각주",
+      "period": "영국령 홍콩과 중국 무역항",
+      "yearLabel": "1841년 영국 점령 이후 조약항·자유항 성장",
+      "date": { "startYear": 1841, "endYear": 1997, "precision": "range" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "CN",
+        "historicalRegionKo": "빅토리아항·주강 하구",
+        "cultureAreaKo": "영국령 홍콩·남중국해 중계무역항"
+      },
+      "classification": { "periodBand": "modern", "selectionTier": "core" },
+      "coordinates": { "lat": 22.2930, "lng": 114.1694 },
+      "aliases": ["Hong Kong", "Victoria Harbour", "Port of Hong Kong", "Fragrant Harbour", "British Hong Kong"],
+      "summary": "홍콩 빅토리아항은 깊고 보호된 항만 조건을 바탕으로 19세기 영국의 중국 무역과 해군 활동의 거점이 되었다. 주강 삼각주와 남중국해를 연결하는 위치는 홍콩이 식민 항구에서 국제 해운·금융 중심지로 성장한 핵심 배경이다.",
+      "confidence": "high",
+      "sourceNote": "홍콩섬과 구룡 사이의 빅토리아항 중앙부를 기준으로 표시했다.",
+      "curationBatch": "global-modern-imperial-chokepoints-canal-port-cities-v1",
+      "sources": [
+        { "title": "Hong Kong Maritime and Port Board: World-Class Hub Port", "url": "https://www.hkmpb.gov.hk/en/world-class-hub-port.html" },
+        { "title": "Hong Kong Maritime Museum: Permanent B Deck", "url": "https://www.hkmaritimemuseum.org/permanent-b-deck/details" },
+        { "title": "Britannica: Hong Kong", "url": "https://www.britannica.com/place/Hong-Kong" }
+      ]
+    },
+    {
+      "id": "colombo-port",
+      "title": "콜롬보 항",
+      "type": "place",
+      "historicalName": "콜롬보",
+      "modernName": "콜롬보 항",
+      "modernAdmin": "서부주 콜롬보",
+      "country": "스리랑카",
+      "worldRegion": "인도양·실론",
+      "period": "포르투갈·네덜란드·영국령 실론 항구",
+      "yearLabel": "16세기 이후 식민 해상 거점, 19-20세기 인도양 항만",
+      "date": { "startYear": 1505, "endYear": null, "precision": "minimum" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "LK",
+        "historicalRegionKo": "실론 서해안·인도양 항로",
+        "cultureAreaKo": "식민 실론·인도양 환적항"
+      },
+      "classification": { "periodBand": "modern", "selectionTier": "core" },
+      "coordinates": { "lat": 6.9497, "lng": 79.8435 },
+      "aliases": ["Colombo", "Port of Colombo", "Ceylon", "Sri Lanka Ports Authority", "Kolomtota"],
+      "summary": "콜롬보 항은 실론 서해안의 인도양 항로에 자리해 포르투갈, 네덜란드, 영국이 차례로 이용한 식민 해상 거점이었다. 수에즈 운하 이후 증기선 항로와 제국 네트워크 속에서 중간 보급·환적항의 성격이 강화되었다.",
+      "confidence": "high",
+      "sourceNote": "현대 콜롬보 항만과 구 식민 도심권을 기준으로 표시했다.",
+      "curationBatch": "global-modern-imperial-chokepoints-canal-port-cities-v1",
+      "sources": [
+        { "title": "Sri Lanka Ports Authority: Port of Colombo", "url": "https://www.slpa.lk/port-colombo/slpa/1000" },
+        { "title": "Britannica: Colombo", "url": "https://www.britannica.com/place/Colombo" }
+      ]
+    },
+    {
+      "id": "cape-town-table-bay",
+      "title": "케이프타운",
+      "type": "place",
+      "historicalName": "케이프타운 / 테이블베이",
+      "modernName": "케이프타운 항",
+      "modernAdmin": "웨스턴케이프주 케이프타운",
+      "country": "남아프리카공화국",
+      "worldRegion": "희망봉·남대서양-인도양 항로",
+      "period": "VOC 보급기지와 영국령 케이프 식민지",
+      "yearLabel": "1652년 VOC 보급기지, 19세기 영국 제국 항구",
+      "date": { "startYear": 1652, "endYear": null, "precision": "minimum" },
+      "spatial": {
+        "continentId": "africa",
+        "modernCountryIso2": "ZA",
+        "historicalRegionKo": "테이블베이·희망봉 항로",
+        "cultureAreaKo": "케이프 항로 보급항·식민 개척 거점"
+      },
+      "classification": { "periodBand": "modern", "selectionTier": "core" },
+      "coordinates": { "lat": -33.9189, "lng": 18.4254 },
+      "aliases": ["Cape Town", "Table Bay", "Cape of Good Hope route", "VOC refreshment station", "Kaapstad"],
+      "summary": "케이프타운은 테이블베이의 보급항에서 출발해 유럽과 인도양을 잇는 케이프 항로의 핵심 정박지가 되었다. 수에즈 운하 이전에는 장거리 항해의 중간 거점이었고, 이후에도 남대서양과 남인도양을 연결하는 전략적 항구로 남았다.",
+      "confidence": "high",
+      "sourceNote": "케이프타운 항과 테이블베이 도심권을 기준으로 표시했다.",
+      "curationBatch": "global-modern-imperial-chokepoints-canal-port-cities-v1",
+      "sources": [
+        { "title": "Transnet National Ports Authority: Port of Cape Town Overview", "url": "https://www.transnetnationalportsauthority.net/OurPorts/Cape%20Town/Pages/Overview.aspx" },
+        { "title": "Britannica: Cape Town", "url": "https://www.britannica.com/place/Cape-Town" },
+        { "title": "Britannica: Cape Town - History", "url": "https://www.britannica.com/place/Cape-Town/History" }
+      ]
+    },
+    {
+      "id": "panama-canal",
+      "title": "파나마 운하",
+      "type": "place",
+      "historicalName": "파나마 운하",
+      "modernName": "파나마 운하",
+      "modernAdmin": "파나마주·콜론주",
+      "country": "파나마",
+      "worldRegion": "파나마 지협·카리브해-태평양",
+      "period": "미국 Canal Zone과 태평양-대서양 연결",
+      "yearLabel": "1904-1914년 미국 주도 건설, 1914년 개통",
+      "date": { "startYear": 1904, "endYear": 1914, "precision": "range" },
+      "spatial": {
+        "continentId": "americas",
+        "modernCountryIso2": "PA",
+        "historicalRegionKo": "파나마 지협",
+        "cultureAreaKo": "미국 제국주의·대서양-태평양 운하 체계"
+      },
+      "classification": { "periodBand": "modern", "selectionTier": "core" },
+      "coordinates": { "lat": 9.0800, "lng": -79.6800 },
+      "aliases": ["Panama Canal", "Canal de Panama", "Canal Zone", "Gatun Lake", "Miraflores Locks"],
+      "summary": "파나마 운하는 대서양과 태평양을 연결해 아메리카 대륙 남단을 우회하던 항로를 크게 단축했다. 미국의 Canal Zone 지배, 20세기 해군·상업 전략, 1999년 파나마로의 관리권 이양을 이해하는 핵심 위치다.",
+      "confidence": "approximate",
+      "sourceNote": "운하 전체가 선형 지형이므로 가툰호-쿨레브라 컷 권역의 중간 대표점으로 표시했다.",
+      "curationBatch": "global-modern-imperial-chokepoints-canal-port-cities-v1",
+      "sources": [
+        { "title": "Panama Canal Authority: History of the Panama Canal", "url": "https://pancanal.com/en/history-of-the-panama-canal/" },
+        { "title": "Britannica: Panama Canal", "url": "https://www.britannica.com/topic/Panama-Canal" }
+      ]
+    },
+    {
+      "id": "gibraltar-port",
+      "title": "지브롤터",
+      "type": "place",
+      "historicalName": "지브롤터",
+      "modernName": "지브롤터 항",
+      "modernAdmin": "영국 해외영토 지브롤터",
+      "country": "영국",
+      "worldRegion": "지브롤터 해협·서지중해",
+      "period": "영국 해군기지와 지중해 관문",
+      "yearLabel": "1713년 영국령 확정, 1869년 수에즈 개통 후 전략성 증대",
+      "date": { "startYear": 1713, "endYear": null, "precision": "minimum" },
+      "spatial": {
+        "continentId": "europe",
+        "modernCountryIso2": "GB",
+        "historicalRegionKo": "지브롤터 해협",
+        "cultureAreaKo": "영국 해군기지·대서양-지중해 관문"
+      },
+      "classification": { "periodBand": "modern", "selectionTier": "core" },
+      "coordinates": { "lat": 36.1408, "lng": -5.3536 },
+      "aliases": ["Gibraltar", "The Rock", "Strait of Gibraltar", "Gateway to the Mediterranean", "British Gibraltar"],
+      "summary": "지브롤터는 대서양에서 지중해로 들어가는 좁은 해협을 감시하는 영국령 요충지로, 해군기지와 보급항의 성격이 강했다. 수에즈 운하 개통 이후 영국의 지중해-인도양 항로를 잇는 제국 해상망에서 전략적 가치가 더 커졌다.",
+      "confidence": "high",
+      "sourceNote": "지브롤터 항과 Rock 서쪽 항만권을 기준으로 표시했다.",
+      "curationBatch": "global-modern-imperial-chokepoints-canal-port-cities-v1",
+      "sources": [
+        { "title": "Gibraltar Port Authority: Port Information", "url": "https://www.gibraltarport.com/port-information" },
+        { "title": "Visit Gibraltar: History", "url": "https://www.visitgibraltar.gi/history" },
+        { "title": "Britannica: Gibraltar", "url": "https://www.britannica.com/place/Gibraltar" }
+      ]
+    }
+  ]
+}

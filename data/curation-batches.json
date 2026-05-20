@@ -819,6 +819,34 @@
         "UNESCO World Heritage reference for Historic Areas of Istanbul",
         "Britannica references for selected places and events"
       ]
+    },
+    {
+      "id": "global-modern-imperial-chokepoints-canal-port-cities-v1",
+      "status": "completed",
+      "completedAt": "2026-05-20",
+      "continentId": "global",
+      "countryIso2": "EG-SG-CN-LK-ZA-PA-GB",
+      "countryKo": "이집트·싱가포르·중국·스리랑카·남아프리카공화국·파나마·영국",
+      "worldRegion": "근대 제국주의 해상 교통망",
+      "focusKo": "근대 제국주의 해상 관문·운하·항구도시",
+      "scopeKo": "수에즈와 파나마 운하, 말라카·주강·인도양·희망봉·지브롤터 항로의 전략적 항구와 해상 관문",
+      "sourceFile": "data/records/global/modern/imperial-chokepoints-canal-port-cities.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "suez-canal",
+        "port-said",
+        "singapore-port",
+        "hong-kong-victoria-harbour",
+        "colombo-port",
+        "cape-town-table-bay",
+        "panama-canal",
+        "gibraltar-port"
+      ],
+      "sourceBasis": [
+        "Official canal, port, maritime authority, and government references for Suez, Singapore, Hong Kong, Colombo, Cape Town, Panama, and Gibraltar",
+        "Britannica references for historical context and place summaries",
+        "Museum and heritage references for Hong Kong and Gibraltar maritime history"
+      ]
     }
   ]
 }

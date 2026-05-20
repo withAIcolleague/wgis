@@ -11,9 +11,9 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 230
-- Completed curation batches: 28
-- Latest completed batch: `legacy-core-seed-v1`
+- Current entry count: 238
+- Completed curation batches: 29
+- Latest completed batch: `global-modern-imperial-chokepoints-canal-port-cities-v1`
 - Latest completed infrastructure milestone: pre-stage-2 stabilization
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
@@ -73,6 +73,20 @@ The long-term target is 3,000+ entries, but the project should progress one focu
     - `waterloo`
     - `gettysburg`
     - `boston-tea-party`
+
+- Modern imperial chokepoints and canal-port cities batch
+  - Batch ID: `global-modern-imperial-chokepoints-canal-port-cities-v1`
+  - Source file: `data/records/global/modern/imperial-chokepoints-canal-port-cities.json`
+  - Entries added: 8
+  - Entry IDs:
+    - `suez-canal`
+    - `port-said`
+    - `singapore-port`
+    - `hong-kong-victoria-harbour`
+    - `colombo-port`
+    - `cape-town-table-bay`
+    - `panama-canal`
+    - `gibraltar-port`
 
 - Ancient Mesopotamia early cities batch
   - Batch ID: `asia-iraq-mesopotamia-early-cities-v1`
@@ -484,13 +498,12 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Modern imperial chokepoints and canal-port cities
-   - Possible source file: `data/records/global/modern/imperial-chokepoints-canal-port-cities.json`
-   - Likely entries: Suez, Port Said, Singapore, Hong Kong, Colombo, Cape Town, Panama Canal, Gibraltar
-
-2. Atlantic revolutions and independence capitals
+1. Atlantic revolutions and independence capitals
    - Possible source file: `data/records/atlantic/modern/revolutions-independence-capitals.json`
    - Likely entries: Boston, Philadelphia, Paris, Cap-Haitien, Caracas, Bogota, Buenos Aires, Mexico City
+
+2. First-stage closure and functional review
+   - Scope: PC/mobile search, filters, pagination, list scrolling, marker labels, small map popup, detail drawer, Google search links, deployment response, and data validation/CI status
 
 ## Resume Checklist
 
