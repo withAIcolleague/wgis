@@ -1,6 +1,6 @@
 # WGIS Data Project State
 
-Last updated: 2026-05-18
+Last updated: 2026-05-20
 
 ## Current Goal
 
@@ -15,6 +15,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Completed curation batches: 27
 - Latest completed batch: `asia-southeast-asia-early-modern-maritime-sultanates-port-cities-v1`
 - Latest completed infrastructure milestone: `a28681f Add data validation script`
+- Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Data validation script: `scripts/validate-data.js`
 
 ## Completed
@@ -28,6 +29,11 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - File: `data/taxonomy.json`
   - Source records root: `data/records/`
   - App-compatible display index: `data/entries.json`
+
+- Data authoring guide for AI agents
+  - File: `data/DATA_AUTHORING_GUIDE.md`
+  - Agent entrypoint: `AGENTS.md`
+  - Scope: batch planning, source record shape, app index reflection, curation batch metadata, source policy, validation checklist
 
 - Ethiopia human origins batch
   - Batch ID: `africa-ethiopia-human-origins-v1`
@@ -421,6 +427,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Policy
 
 - Work on DB only unless the user explicitly asks for UI changes.
+- For DB work, read `data/DATA_AUTHORING_GUIDE.md` before creating or editing records.
 - Add data in focused curation batches.
 - One batch should cover one country, culture area, period, or research topic.
 - Preferred batch size: 8-15 entries.
@@ -468,19 +475,20 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 At the start of a new session:
 
 1. Read `data/PROJECT_STATE.md`.
-2. Check `git status -sb`.
-3. Parse and inspect:
+2. Read `data/DATA_AUTHORING_GUIDE.md`.
+3. Check `git status -sb`.
+4. Parse and inspect:
    - `data/entries.json`
    - `data/curation-batches.json`
    - `data/taxonomy.json`
-4. Pick exactly one next batch with the user or from `Next Batch Candidates`.
-5. Research candidates and sources for that batch.
-6. Create or update the source record file under `data/records/`.
-7. Add app-compatible entries to `data/entries.json`.
-8. Add or update the batch in `data/curation-batches.json`.
-9. Update this file.
-10. Run `node scripts/validate-data.js`.
-11. Commit and push to `origin/main`.
+5. Pick exactly one next batch with the user or from `Next Batch Candidates`.
+6. Research candidates and sources for that batch.
+7. Create or update the source record file under `data/records/`.
+8. Add app-compatible entries to `data/entries.json`.
+9. Add or update the batch in `data/curation-batches.json`.
+10. Update this file.
+11. Run `node scripts/validate-data.js`.
+12. Commit and push to `origin/main`.
 
 ## Validation Commands
 
