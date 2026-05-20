@@ -619,7 +619,7 @@ select {
     right: 10px;
     bottom: max(10px, env(safe-area-inset-bottom));
     left: 10px;
-    z-index: 650;
+    z-index: 1200;
     display: flex;
     max-height: calc(100dvh - 20px);
     overflow: hidden;
@@ -636,6 +636,10 @@ select {
     left: 0;
     height: 100dvh;
     max-height: 100dvh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
     border-radius: 0;
   }
 
@@ -717,10 +721,9 @@ select {
   }
 
   .search-panel.mobile-sheet-expanded .results-section {
-    flex: 1 1 auto;
+    flex: 0 0 auto;
     min-height: 0;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
+    overflow: visible;
   }
 
   .mobile-detail-section {
