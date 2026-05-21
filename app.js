@@ -166,6 +166,8 @@ function initMap() {
       collapsed: true
     }
   ).addTo(map);
+
+  setupMapLabelInteractions();
 }
 
 async function loadEntries() {
@@ -547,8 +549,7 @@ function renderResults() {
 }
 
 function renderMarkers({ fitMap = false } = {}) {
-  markers.forEach(marker => marker.remove());
-  markers = [];
+  clearMarkers();
 
   const markerEntries = getMarkerEntries();
 
@@ -569,11 +570,9 @@ function renderMarkers({ fitMap = false } = {}) {
 
     const tooltip = marker.getTooltip();
     if (tooltip) {
-      tooltip.on('click', event => {
-        if (event.originalEvent) L.DomEvent.stopPropagation(event.originalEvent);
-        registerTooltipClick(entry.id);
-        toggleEntryDetail(entry.id);
-      });
+      tooltip.on('click', event => handleTooltipClick(entry.id, event));
+      marker.on('tooltipopen', event => bindTooltipElementClick(event.tooltip, entry));
+      bindTooltipElementClick(tooltip, entry);
     }
 
     marker.on('click', event => {
@@ -609,6 +608,71 @@ function renderMarkers({ fitMap = false } = {}) {
   } else if (!selectedId) {
     map.setView(DEFAULT_VIEW.center, DEFAULT_VIEW.zoom, { animate: false });
   }
+}
+
+function clearMarkers() {
+  markers.forEach(marker => {
+    marker.closeTooltip();
+    marker.unbindTooltip();
+    marker.remove();
+  });
+  markers = [];
+
+  map.getContainer()
+    .querySelectorAll('.leaflet-tooltip.map-point-label')
+    .forEach(tooltip => tooltip.remove());
+}
+
+function bindTooltipElementClick(tooltip, entry) {
+  const element = tooltip?.getElement?.();
+  if (!element) return;
+
+  element.dataset.entryId = entry.id;
+  element.setAttribute('role', 'button');
+  element.setAttribute('tabindex', '0');
+  element.setAttribute('aria-label', `${entry.title} 정보 열기`);
+
+  if (element.__wgisClickBound === entry.id) return;
+  element.__wgisClickBound = entry.id;
+  element.dataset.wgisClickBound = 'true';
+
+  L.DomEvent.on(element, 'click', event => handleTooltipClick(entry.id, event));
+  L.DomEvent.on(element, 'dblclick', L.DomEvent.stopPropagation);
+  L.DomEvent.on(element, 'keydown', event => {
+    if (event.key !== 'Enter' && event.key !== ' ') return;
+    handleTooltipClick(entry.id, event);
+  });
+}
+
+function setupMapLabelInteractions() {
+  const container = map.getContainer();
+
+  container.addEventListener('click', event => {
+    const label = event.target.closest('.map-point-label[data-entry-id]');
+    if (!label) return;
+    handleTooltipClick(label.dataset.entryId, event);
+  });
+
+  container.addEventListener('keydown', event => {
+    if (event.key !== 'Enter' && event.key !== ' ') return;
+    const label = event.target.closest('.map-point-label[data-entry-id]');
+    if (!label) return;
+    handleTooltipClick(label.dataset.entryId, event);
+  });
+}
+
+function handleTooltipClick(id, event) {
+  const now = performance.now();
+  if (lastTooltipClick.id === id && now - lastTooltipClick.time < 120) return;
+
+  const originalEvent = event?.originalEvent || event;
+  if (originalEvent) {
+    L.DomEvent.stopPropagation(originalEvent);
+    L.DomEvent.preventDefault(originalEvent);
+  }
+
+  registerTooltipClick(id);
+  toggleEntryDetail(id);
 }
 
 function registerTooltipClick(id) {

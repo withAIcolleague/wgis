@@ -1,10 +1,10 @@
 # WGIS First-Stage Functional Review
 
-Last updated: 2026-05-20
+Last updated: 2026-05-21
 
 ## Scope
 
-This review closes the first-stage stabilization pass before moving into the next data-model stage.
+This review closes the first-stage stabilization pass before continuing the second-stage data-model expansion.
 
 Checked areas:
 
@@ -22,15 +22,17 @@ Checked areas:
 
 ## Current Result
 
-- Entries: 246
-- Curation batches: 30
-- First-stage progress: 98.4% of the 250-entry working target
+- Entries: 250
+- Curation batches: 31
+- First-stage progress: 100% of the 250-entry working target
 - Data validation: pass
+- Stage 2 preview validation: pass
 - Static UI smoke check: pass
+- Local browser functional check: pass
 - Public app response: `HTTP 200`
 - Public data response: `HTTP 200`
 
-The project is ready to move from first-stage data filling into second-stage data-model planning.
+The first-stage data target is complete. The project is ready to continue second-stage data-model expansion after the deployment is rechecked.
 
 ## Local Verification
 
@@ -44,16 +46,31 @@ This runs:
 
 ```bash
 npm run validate
+npm run validate:stage2
 npm run smoke
 ```
 
-`npm run validate` verifies data integrity. `npm run smoke` verifies that critical UI wiring and responsive layout contracts are still present.
+`npm run validate` verifies data integrity. `npm run validate:stage2` verifies the stage 2 preview datasets. `npm run smoke` verifies that critical UI wiring and responsive layout contracts are still present.
+
+## Browser Verification
+
+The 2026-05-21 local browser pass checked the main app with 250 first-stage records:
+
+- Desktop initial load shows 250 results, 69 current countries, and no map markers before an explicit map search.
+- Searching `Dendera` renders one result, one marker, and one permanent name label.
+- Clicking the name label opens the map popup and detail drawer; clicking it again closes both.
+- Popup/detail Google search links are rendered.
+- Page sizes `20`, `30`, and `50` keep marker and name-label counts aligned, so stale permanent labels do not accumulate.
+- The filter panel opens and closes.
+- Mobile expanded search/results sheet fills the viewport.
+- Mobile result list scrolls independently with `50` visible results.
+- Mobile filter panel is fixed separately from the result-list flow.
 
 ## Remaining Manual Check
 
-The smoke check does not replace a real browser interaction pass. Before a public milestone, manually verify:
+The automated checks do not replace a final human visual pass. Before a public milestone, manually verify:
 
-- On desktop, search for `루시`, `게티즈버그`, `요크타운`, and `수에즈 운하`.
+- On desktop, search for `Lucy`, `Gettysburg`, `Dendera`, and `Suez Canal`.
 - Confirm search results appear in the list after pressing the search button.
 - Confirm markers and name labels appear only for the active searched/page-visible result set.
 - Click a name label once and confirm the small popup and detail view open.
@@ -64,4 +81,4 @@ The smoke check does not replace a real browser interaction pass. Before a publi
 
 ## Known Constraint
 
-The current smoke check is intentionally dependency-free. It checks DOM hooks, JavaScript event wiring, CSS layout contracts, and representative data presence, but it does not execute Leaflet or render map tiles.
+The dependency-free smoke check verifies DOM hooks, JavaScript event wiring, CSS layout contracts, and representative data presence. It does not execute Leaflet or render map tiles, so browser verification remains necessary for marker and tooltip behavior.

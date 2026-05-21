@@ -98,8 +98,11 @@ function main() {
   check('search activates marker rendering', includesAll(app, ['mapResultsActive = true', 'update({ fitMap: true })']));
   check('marker source is gated by search or selected entry', includesAll(app, ['function getMarkerEntries()', 'mapResultsActive ? getPageEntries() : []']));
   check('marker labels are permanent', includesAll(app, ['marker.bindTooltip', 'permanent: true']));
+  check('main map clears stale marker labels', includesAll(app, ['function clearMarkers()', 'unbindTooltip()', '.leaflet-tooltip.map-point-label']));
   check('marker labels are interactive', includesAll(app, ['interactive: true', "tooltip.on('click'"]));
-  check('label click toggles detail', includesAll(app, ['registerTooltipClick(entry.id)', 'toggleEntryDetail(entry.id)']));
+  check('marker label DOM clicks are wired', includesAll(app, ['function bindTooltipElementClick', 'element.dataset.wgisClickBound', "L.DomEvent.on(element, 'click'"]));
+  check('marker label clicks are delegated from map container', includesAll(app, ['function setupMapLabelInteractions()', "closest('.map-point-label[data-entry-id]')", 'setupMapLabelInteractions();']));
+  check('label click toggles detail', includesAll(app, ['function handleTooltipClick', 'registerTooltipClick(id)', 'toggleEntryDetail(id)']));
   check('marker click toggles detail', includesAll(app, ['shouldIgnoreMarkerClick(entry.id)', 'toggleEntryDetail(entry.id)']));
   check('map popup close button enabled', includesAll(app, ['marker.bindPopup', 'closeButton: true']));
   check('detail close action wired', includesAll(app, ['data-detail-close', 'clearSelectedEntry();']));
