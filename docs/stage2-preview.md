@@ -1,6 +1,6 @@
 # WGIS Stage 2 Preview
 
-Last updated: 2026-05-20
+Last updated: 2026-05-21
 
 ## What This Adds
 
@@ -54,6 +54,23 @@ The third pilot dataset tests ancient city/site-heavy data through early Mesopot
 - `ur`
 - `ashur`
 - `nineveh`
+
+The fourth pilot dataset tests ancient Egyptian royal, temple, funerary, frontier, and Hellenistic contexts:
+
+- `memphis-egypt`
+- `giza-plateau`
+- `saqqara`
+- `thebes-egypt`
+- `karnak`
+- `luxor-temple`
+- `valley-of-the-kings`
+- `amarna`
+- `abu-simbel`
+- `alexandria-egypt`
+- `dendera-temple`
+- `edfu-temple`
+- `philae`
+- `kom-ombo-temple`
 
 The dataset list is managed in:
 

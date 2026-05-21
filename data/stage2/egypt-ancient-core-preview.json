@@ -1,0 +1,775 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-egypt-ancient-core-preview",
+  "titleKo": "2단계 미리보기: 고대 이집트 핵심 유적",
+  "descriptionKo": "멤피스와 기자, 테베와 왕가의 계곡, 누비아 경계 신전, 프톨레마이오스·로마 시대 신전, 알렉산드리아를 한 화면에서 비교하며 고대 이집트의 왕권·장례·신전·지중해 연결망을 분리해 보는 샘플입니다.",
+  "modelComparison": {
+    "currentKo": [
+      "1단계에서는 각 유적이 현재 지도 위의 하나의 장소로 표시됩니다.",
+      "사용자는 현재 지명, 좌표, 시대, 간단한 설명을 중심으로 위치를 확인합니다.",
+      "왕권, 장례 경관, 신전 네트워크, 헬레니즘 항구 같은 역사 맥락은 요약문 안에 압축되어 있습니다."
+    ],
+    "stage2Ko": [
+      "2단계에서는 같은 장소를 멤피스권, 테베권, 누비아 경계권, 후기 신전망처럼 여러 역사 맥락에 연결합니다.",
+      "사용자에게 보이는 필터는 지역·주제·시대 중심으로 단순화하고, 연구 태그에는 더 촘촘한 해석 키워드를 둡니다.",
+      "UNESCO·이집트 관광유물부·백과사전 등 기존 1차 출처 기반을 sourceConfidence로 요약합니다."
+    ]
+  },
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "고대"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "하이집트·멤피스권",
+        "중이집트",
+        "상이집트·테베권",
+        "누비아 경계권",
+        "지중해 항구권"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "수도",
+        "왕실 묘역",
+        "신전",
+        "왕권",
+        "종교 개혁",
+        "헬레니즘",
+        "누비아",
+        "후기 신전"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지도 유형",
+      "options": [
+        "장소"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "ancient-egypt-civilization",
+      "labelKo": "고대 이집트 문명",
+      "parentId": null,
+      "periodKo": "기원전 4천년기 말-기원후 7세기",
+      "summaryKo": "나일 강 유역에서 왕권, 신전, 장례 경관, 항구 도시가 긴 시간에 걸쳐 중첩된 역사 문명권입니다."
+    },
+    {
+      "id": "memphite-old-kingdom-necropolis",
+      "labelKo": "멤피스권과 고왕국 왕실 묘역",
+      "parentId": "ancient-egypt-civilization",
+      "periodKo": "기원전 31-25세기 중심",
+      "summaryKo": "멤피스, 사카라, 기자가 연결되는 하이집트 왕권 중심지로 초기 국가 형성, 피라미드 경관, 왕실 장례 건축을 함께 보여줍니다."
+    },
+    {
+      "id": "theban-ritual-capital",
+      "labelKo": "테베권의 의례 수도",
+      "parentId": "ancient-egypt-civilization",
+      "periodKo": "중왕국-신왕국 중심",
+      "summaryKo": "테베와 카르나크, 룩소르 신전이 연결되는 상이집트의 정치·종교 중심권으로 아문 숭배와 왕권 의례가 집중되었습니다."
+    },
+    {
+      "id": "new-kingdom-royal-landscape",
+      "labelKo": "신왕국 왕권과 장례 경관",
+      "parentId": "ancient-egypt-civilization",
+      "periodKo": "기원전 16-11세기",
+      "summaryKo": "테베 서안의 왕실 묘역과 남부 경계 신전이 신왕국 파라오의 장례 전략, 왕권 선전, 제국적 공간 감각을 보여줍니다."
+    },
+    {
+      "id": "amarna-reform-capital",
+      "labelKo": "아마르나 종교 개혁 수도",
+      "parentId": "ancient-egypt-civilization",
+      "periodKo": "기원전 14세기",
+      "summaryKo": "아케나텐이 아텐 신앙을 중심으로 새 수도를 조성한 짧지만 해석 밀도가 높은 도시 계획·종교 개혁 맥락입니다."
+    },
+    {
+      "id": "nubian-frontier-monuments",
+      "labelKo": "누비아 경계와 남부 신전",
+      "parentId": "ancient-egypt-civilization",
+      "periodKo": "신왕국-프톨레마이오스·로마 시대",
+      "summaryKo": "나일 남부와 누비아 경계권에서 왕권 선전, 지역 신앙, UNESCO 구제 사업이 겹쳐 보이는 유적 맥락입니다."
+    },
+    {
+      "id": "ptolemaic-roman-temple-network",
+      "labelKo": "프톨레마이오스·로마 시대 신전망",
+      "parentId": "ancient-egypt-civilization",
+      "periodKo": "기원전 4세기-기원후 6세기",
+      "summaryKo": "덴데라, 에드푸, 필레, 콤 옴보처럼 후기 이집트 신전 건축과 지역 제의가 지속된 나일 상류의 성소 네트워크입니다."
+    },
+    {
+      "id": "hellenistic-mediterranean-egypt",
+      "labelKo": "헬레니즘 지중해 이집트",
+      "parentId": "ancient-egypt-civilization",
+      "periodKo": "기원전 4세기 이후",
+      "summaryKo": "알렉산드리아를 중심으로 이집트가 지중해 항구, 왕조 수도, 지식 교류망과 결합한 전환기 맥락입니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "memphis-egypt",
+      "titleKo": "멤피스",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이집트",
+      "coordinates": {
+        "lat": 29.8555,
+        "lng": 31.2611
+      },
+      "yearLabelKo": "기원전 3100년경 이후",
+      "summaryKo": "나일 계곡과 델타가 만나는 지점의 고대 수도로, 초기 왕권과 프타 숭배, 주변 피라미드 묘역을 연결하는 기준점입니다.",
+      "stage2": {
+        "primaryContextId": "memphite-old-kingdom-necropolis",
+        "contextIds": [
+          "ancient-egypt-civilization",
+          "memphite-old-kingdom-necropolis"
+        ],
+        "periodPathKo": [
+          "고대",
+          "고대 이집트",
+          "멤피스권 초기 수도"
+        ],
+        "topicTagsKo": [
+          "멤피스",
+          "프타 숭배",
+          "초기 국가",
+          "고왕국",
+          "피라미드 권역"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "하이집트·멤피스권",
+          "theme": [
+            "수도",
+            "왕권"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 멤피스와 네크로폴리스 자료와 World History Encyclopedia 항목이 함께 있어 위치와 역사 맥락 신뢰도가 높습니다."
+        }
+      }
+    },
+    {
+      "entryId": "giza-plateau",
+      "titleKo": "기자 피라미드 지구",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이집트",
+      "coordinates": {
+        "lat": 29.976,
+        "lng": 31.1304
+      },
+      "yearLabelKo": "기원전 26-25세기",
+      "summaryKo": "쿠푸·카프레·멘카우레 피라미드와 대스핑크스가 있는 고왕국 왕실 묘역으로, 왕권 이념이 거대 석조 경관으로 표현된 장소입니다.",
+      "stage2": {
+        "primaryContextId": "memphite-old-kingdom-necropolis",
+        "contextIds": [
+          "ancient-egypt-civilization",
+          "memphite-old-kingdom-necropolis",
+          "new-kingdom-royal-landscape"
+        ],
+        "periodPathKo": [
+          "고대",
+          "고대 이집트",
+          "고왕국 피라미드 묘역"
+        ],
+        "topicTagsKo": [
+          "기자",
+          "피라미드",
+          "대스핑크스",
+          "쿠푸",
+          "왕실 묘역"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "하이집트·멤피스권",
+          "theme": [
+            "왕실 묘역",
+            "왕권"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 세계유산 경계와 World History Encyclopedia 항목이 모두 있는 대표 유적입니다."
+        }
+      }
+    },
+    {
+      "entryId": "saqqara",
+      "titleKo": "사카라",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이집트",
+      "coordinates": {
+        "lat": 29.8713,
+        "lng": 31.2165
+      },
+      "yearLabelKo": "기원전 27세기 이후",
+      "summaryKo": "멤피스의 주요 묘역이며 조세르의 계단 피라미드가 있는 유적권으로, 왕실 장례 건축의 변화를 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "memphite-old-kingdom-necropolis",
+        "contextIds": [
+          "ancient-egypt-civilization",
+          "memphite-old-kingdom-necropolis"
+        ],
+        "periodPathKo": [
+          "고대",
+          "고대 이집트",
+          "초기 피라미드와 묘역"
+        ],
+        "topicTagsKo": [
+          "사카라",
+          "조세르",
+          "계단 피라미드",
+          "마스타바",
+          "멤피스 묘역"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "하이집트·멤피스권",
+          "theme": [
+            "왕실 묘역",
+            "왕권"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 0,
+          "noteKo": "이집트 관광유물부와 UNESCO 자료가 함께 있는 공식 출처 중심 항목입니다."
+        }
+      }
+    },
+    {
+      "entryId": "thebes-egypt",
+      "titleKo": "테베",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이집트",
+      "coordinates": {
+        "lat": 25.72,
+        "lng": 32.62
+      },
+      "yearLabelKo": "기원전 16-11세기 전성",
+      "summaryKo": "중왕국과 신왕국의 왕권, 아문 숭배, 왕실 장례 경관이 결합된 상이집트 중심 도시입니다.",
+      "stage2": {
+        "primaryContextId": "theban-ritual-capital",
+        "contextIds": [
+          "ancient-egypt-civilization",
+          "theban-ritual-capital",
+          "new-kingdom-royal-landscape"
+        ],
+        "periodPathKo": [
+          "고대",
+          "고대 이집트",
+          "테베 의례 수도"
+        ],
+        "topicTagsKo": [
+          "테베",
+          "와세트",
+          "아문",
+          "신왕국",
+          "룩소르"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "상이집트·테베권",
+          "theme": [
+            "수도",
+            "신전",
+            "왕권"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "고대 도시권 전체를 다루므로 좌표는 룩소르·테베 중심권의 근사값으로 유지합니다."
+        }
+      }
+    },
+    {
+      "entryId": "karnak",
+      "titleKo": "카르나크",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이집트",
+      "coordinates": {
+        "lat": 25.7189,
+        "lng": 32.6573
+      },
+      "yearLabelKo": "기원전 20세기-기원후 4세기",
+      "summaryKo": "테베의 아문 신앙과 왕권 의례가 집중된 거대한 신전 복합체로, 여러 왕조의 증축 흔적이 누적되어 있습니다.",
+      "stage2": {
+        "primaryContextId": "theban-ritual-capital",
+        "contextIds": [
+          "ancient-egypt-civilization",
+          "theban-ritual-capital",
+          "new-kingdom-royal-landscape"
+        ],
+        "periodPathKo": [
+          "고대",
+          "고대 이집트",
+          "아문 신전 복합체"
+        ],
+        "topicTagsKo": [
+          "카르나크",
+          "아문",
+          "탑문",
+          "주랑",
+          "오페트 축제"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "상이집트·테베권",
+          "theme": [
+            "신전",
+            "왕권"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 고대 테베 자료와 World History Encyclopedia 항목이 함께 있는 고신뢰 항목입니다."
+        }
+      }
+    },
+    {
+      "entryId": "luxor-temple",
+      "titleKo": "룩소르 신전",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이집트",
+      "coordinates": {
+        "lat": 25.6999,
+        "lng": 32.639
+      },
+      "yearLabelKo": "기원전 15세기 이후",
+      "summaryKo": "카르나크와 스핑크스 길로 연결된 테베 남쪽의 주요 신전으로, 아문 신앙과 왕권 재생 의례를 이해하게 해줍니다.",
+      "stage2": {
+        "primaryContextId": "theban-ritual-capital",
+        "contextIds": [
+          "ancient-egypt-civilization",
+          "theban-ritual-capital",
+          "new-kingdom-royal-landscape"
+        ],
+        "periodPathKo": [
+          "고대",
+          "고대 이집트",
+          "오페트 의례 축"
+        ],
+        "topicTagsKo": [
+          "룩소르 신전",
+          "오페트 축제",
+          "스핑크스 길",
+          "아문",
+          "람세스 2세"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "상이집트·테베권",
+          "theme": [
+            "신전",
+            "왕권"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 0,
+          "noteKo": "이집트 관광유물부와 UNESCO 지도 자료가 함께 있는 공식 출처 중심 항목입니다."
+        }
+      }
+    },
+    {
+      "entryId": "valley-of-the-kings",
+      "titleKo": "왕가의 계곡",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이집트",
+      "coordinates": {
+        "lat": 25.7402,
+        "lng": 32.6014
+      },
+      "yearLabelKo": "기원전 16-11세기",
+      "summaryKo": "신왕국 파라오들의 암굴 무덤이 집중된 테베 서안 장례 권역으로, 왕릉 전략 변화와 투탕카멘 무덤 발견의 맥락을 담고 있습니다.",
+      "stage2": {
+        "primaryContextId": "new-kingdom-royal-landscape",
+        "contextIds": [
+          "ancient-egypt-civilization",
+          "theban-ritual-capital",
+          "new-kingdom-royal-landscape"
+        ],
+        "periodPathKo": [
+          "고대",
+          "고대 이집트",
+          "신왕국 왕실 묘역"
+        ],
+        "topicTagsKo": [
+          "왕가의 계곡",
+          "투탕카멘",
+          "암굴 무덤",
+          "테베 서안",
+          "신왕국"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "상이집트·테베권",
+          "theme": [
+            "왕실 묘역",
+            "왕권"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 고대 테베 자료와 Britannica 항목으로 위치와 장례 맥락을 교차 확인합니다."
+        }
+      }
+    },
+    {
+      "entryId": "amarna",
+      "titleKo": "아마르나",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이집트",
+      "coordinates": {
+        "lat": 27.6464,
+        "lng": 30.8969
+      },
+      "yearLabelKo": "기원전 1346-1320년경",
+      "summaryKo": "아케나텐이 아텐 신앙을 중심으로 조성한 단명한 수도로, 도시 계획과 종교 개혁, 아마르나 미술을 한 장소에서 읽을 수 있습니다.",
+      "stage2": {
+        "primaryContextId": "amarna-reform-capital",
+        "contextIds": [
+          "ancient-egypt-civilization",
+          "amarna-reform-capital"
+        ],
+        "periodPathKo": [
+          "고대",
+          "고대 이집트",
+          "아마르나 종교 개혁"
+        ],
+        "topicTagsKo": [
+          "아마르나",
+          "아케타텐",
+          "아케나텐",
+          "아텐",
+          "종교 개혁"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "중이집트",
+          "theme": [
+            "수도",
+            "종교 개혁"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 0,
+          "referenceSources": 2,
+          "noteKo": "World History Encyclopedia와 Amarna Project를 바탕으로 하되, 표시 좌표는 넓은 고고학 권역의 근사값입니다."
+        }
+      }
+    },
+    {
+      "entryId": "abu-simbel",
+      "titleKo": "아부심벨",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이집트",
+      "coordinates": {
+        "lat": 22.3372,
+        "lng": 31.6258
+      },
+      "yearLabelKo": "기원전 13세기",
+      "summaryKo": "람세스 2세가 누비아 경계권에 조성한 암굴 신전 복합체로, 신왕국 왕권 선전과 남부 경계 감각을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "nubian-frontier-monuments",
+        "contextIds": [
+          "ancient-egypt-civilization",
+          "new-kingdom-royal-landscape",
+          "nubian-frontier-monuments"
+        ],
+        "periodPathKo": [
+          "고대",
+          "고대 이집트",
+          "누비아 경계 신전"
+        ],
+        "topicTagsKo": [
+          "아부심벨",
+          "람세스 2세",
+          "누비아",
+          "암굴 신전",
+          "UNESCO 구제 사업"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "누비아 경계권",
+          "theme": [
+            "신전",
+            "왕권",
+            "누비아"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 누비아 유적 자료와 World History Encyclopedia 항목이 함께 있는 고신뢰 항목입니다."
+        }
+      }
+    },
+    {
+      "entryId": "alexandria-egypt",
+      "titleKo": "알렉산드리아",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이집트",
+      "coordinates": {
+        "lat": 31.2001,
+        "lng": 29.9187
+      },
+      "yearLabelKo": "기원전 331년 건설 이후",
+      "summaryKo": "알렉산드로스가 세운 지중해 항구 도시이자 프톨레마이오스 왕조 수도로, 도서관과 파로스 등대가 상징하는 지식·교역 중심지였습니다.",
+      "stage2": {
+        "primaryContextId": "hellenistic-mediterranean-egypt",
+        "contextIds": [
+          "ancient-egypt-civilization",
+          "hellenistic-mediterranean-egypt"
+        ],
+        "periodPathKo": [
+          "고대",
+          "헬레니즘",
+          "지중해 이집트 항구"
+        ],
+        "topicTagsKo": [
+          "알렉산드리아",
+          "프톨레마이오스",
+          "도서관",
+          "파로스",
+          "헬레니즘"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "지중해 항구권",
+          "theme": [
+            "수도",
+            "헬레니즘"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 0,
+          "referenceSources": 2,
+          "noteKo": "고대 도시층이 현대 도시에 중첩된 항목이므로 도심 근사 좌표로 관리합니다."
+        }
+      }
+    },
+    {
+      "entryId": "dendera-temple",
+      "titleKo": "덴데라 신전",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이집트",
+      "coordinates": {
+        "lat": 26.142,
+        "lng": 32.6702
+      },
+      "yearLabelKo": "프톨레마이오스 시대 건립, 로마 시대 완성",
+      "summaryKo": "하토르 숭배의 핵심 중심지로, 후기 이집트 신전 건축과 천문 도상, 지역 제의의 지속성을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "ptolemaic-roman-temple-network",
+        "contextIds": [
+          "ancient-egypt-civilization",
+          "ptolemaic-roman-temple-network"
+        ],
+        "periodPathKo": [
+          "고대",
+          "프톨레마이오스·로마 이집트",
+          "하토르 성소"
+        ],
+        "topicTagsKo": [
+          "덴데라",
+          "하토르",
+          "천문 도상",
+          "후기 신전",
+          "로마 시대"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "상이집트·테베권",
+          "theme": [
+            "신전",
+            "후기 신전"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "이집트 관광유물부 자료와 Britannica 항목이 함께 있는 후기 신전 항목입니다."
+        }
+      }
+    },
+    {
+      "entryId": "edfu-temple",
+      "titleKo": "에드푸 신전",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이집트",
+      "coordinates": {
+        "lat": 24.9778,
+        "lng": 32.8735
+      },
+      "yearLabelKo": "기원전 237-57년",
+      "summaryKo": "호루스에게 바쳐진 프톨레마이오스 시대 신전으로, 축선 배치와 제의 문헌을 통해 후기 이집트 신전 운영을 이해하게 해줍니다.",
+      "stage2": {
+        "primaryContextId": "ptolemaic-roman-temple-network",
+        "contextIds": [
+          "ancient-egypt-civilization",
+          "ptolemaic-roman-temple-network"
+        ],
+        "periodPathKo": [
+          "고대",
+          "프톨레마이오스 이집트",
+          "호루스 신전"
+        ],
+        "topicTagsKo": [
+          "에드푸",
+          "호루스",
+          "프톨레마이오스",
+          "제의 문헌",
+          "후기 신전"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "상이집트·테베권",
+          "theme": [
+            "신전",
+            "후기 신전"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "이집트 관광유물부 자료와 Britannica 항목으로 위치와 시기 정보를 확인합니다."
+        }
+      }
+    },
+    {
+      "entryId": "philae",
+      "titleKo": "필레",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이집트",
+      "coordinates": {
+        "lat": 24.025,
+        "lng": 32.8841
+      },
+      "yearLabelKo": "기원전 4세기-서기 6세기",
+      "summaryKo": "이시스 신앙의 대표 성소로, 고대 이집트 종교가 프톨레마이오스·로마 시대를 거쳐 비잔틴 시대까지 이어진 흐름을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "nubian-frontier-monuments",
+        "contextIds": [
+          "ancient-egypt-civilization",
+          "nubian-frontier-monuments",
+          "ptolemaic-roman-temple-network"
+        ],
+        "periodPathKo": [
+          "고대",
+          "프톨레마이오스·로마 이집트",
+          "이시스 성소"
+        ],
+        "topicTagsKo": [
+          "필레",
+          "이시스",
+          "누비아 유적",
+          "후기 신전",
+          "UNESCO 구제 사업"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "누비아 경계권",
+          "theme": [
+            "신전",
+            "후기 신전",
+            "누비아"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "이집트 관광유물부, UNESCO, Britannica 자료가 함께 있는 고신뢰 항목입니다."
+        }
+      }
+    },
+    {
+      "entryId": "kom-ombo-temple",
+      "titleKo": "콤 옴보 신전",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이집트",
+      "coordinates": {
+        "lat": 24.4524,
+        "lng": 32.9285
+      },
+      "yearLabelKo": "기원전 2세기-서기 2세기",
+      "summaryKo": "소베크와 하로에리스에게 바쳐진 이중 신전으로, 나일 교통축 위의 지역 제의와 후기 신전 운영을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "ptolemaic-roman-temple-network",
+        "contextIds": [
+          "ancient-egypt-civilization",
+          "nubian-frontier-monuments",
+          "ptolemaic-roman-temple-network"
+        ],
+        "periodPathKo": [
+          "고대",
+          "프톨레마이오스·로마 이집트",
+          "이중 신전"
+        ],
+        "topicTagsKo": [
+          "콤 옴보",
+          "소베크",
+          "하로에리스",
+          "이중 신전",
+          "후기 신전"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "누비아 경계권",
+          "theme": [
+            "신전",
+            "후기 신전"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "이집트 관광유물부 자료와 Britannica 항목으로 위치와 기능을 확인합니다."
+        }
+      }
+    }
+  ]
+}

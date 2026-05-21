@@ -14,7 +14,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Current entry count: 250
 - Completed curation batches: 31
 - Latest completed batch: `africa-egypt-late-temple-centers-v1`
-- Latest completed infrastructure milestone: stage-2 Mesopotamia early cities pilot
+- Latest completed infrastructure milestone: stage-2 Egypt ancient core pilot
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
@@ -87,6 +87,12 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - URL path: `/stage2-preview.html`
   - Scope: add an ancient urban civilization dataset as a third Stage 2 preview dataset
   - Model stress test: city/site-heavy data, sacred cities, city-states, imperial capitals, and approximate location handling for Akkad and some early city territories
+
+- Stage-2 Egypt ancient core pilot dataset
+  - Files: `data/stage2/index.json`, `data/stage2/egypt-ancient-core-preview.json`, `docs/stage2-preview.md`
+  - URL path: `/stage2-preview.html`
+  - Scope: add a fourth Stage 2 preview dataset using the existing ancient Egypt core and late temple entries
+  - Model stress test: royal capitals, pyramid and Theban funerary landscapes, temple complexes, Amarna reform, Nubian frontier monuments, Ptolemaic-Roman temple networks, and Hellenistic Mediterranean port contexts
 
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`
@@ -553,14 +559,14 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. First-stage 250-entry functional review
-   - Scope: run a focused user-flow check on search, filters, pagination, mobile dashboard scrolling, marker labels, popups, detail drawer, and Google search links now that the 250-entry target is reached
+1. Review Stage-2 visual preview
+   - Scope: compare Atlantic revolutions, Ethiopia human origins, Mesopotamia early cities, and ancient Egypt in `/stage2-preview.html`, then confirm whether multi-context links, UI filters, research tags, and source confidence are easy to understand
 
-2. Review Stage-2 visual preview
-   - Scope: compare Atlantic revolutions, Ethiopia human origins, and Mesopotamia early cities in `/stage2-preview.html`, then confirm whether multi-context links, UI filters, research tags, and source confidence are easy to understand
+2. Stage-2 fifth pilot dataset
+   - Scope: create one more Stage 2 file from another ancient civilization batch, likely Indus or early China, to compare against Mesopotamia and Egypt
 
-3. Stage-2 fourth pilot dataset
-   - Scope: create one more Stage 2 file from another ancient civilization batch, likely Egypt, Indus, or early China, to compare against Mesopotamia's city/site-heavy structure
+3. Stage-2 preview usability pass
+   - Scope: check whether four datasets remain easy to select, filter, and inspect on desktop and mobile before adding more preview datasets
 
 ## Resume Checklist
 
