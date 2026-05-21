@@ -1,0 +1,571 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-mesopotamia-early-cities-preview",
+  "titleKo": "2단계 미리보기: 메소포타미아 초기 도시",
+  "descriptionKo": "에리두, 우루크, 우르, 바빌론처럼 도시와 성소, 왕권, 제국 수도가 겹치는 고대 도시 데이터를 맥락·필터·출처 신뢰도로 분리해 보는 샘플입니다.",
+  "modelComparison": {
+    "currentKo": [
+      "1단계에서는 각 고대 도시는 지도에 표시되는 하나의 장소 항목입니다.",
+      "사용자는 도시 이름, 현대 국가, 좌표, 간단한 요약을 중심으로 확인합니다.",
+      "도시화, 성소, 도시국가, 제국 수도 같은 연구 맥락은 요약문 안에 함께 들어갑니다."
+    ],
+    "stage2Ko": [
+      "2단계에서는 같은 도시가 도시화, 성소, 왕권, 제국 네트워크 같은 여러 맥락에 동시에 연결됩니다.",
+      "사용자에게 보이는 지역 필터는 남부·중부·북부 메소포타미아 정도로 유지하고, 연구 태그는 더 촘촘하게 둡니다.",
+      "정확한 유적 좌표와 위치 추정 항목을 sourceConfidence에서 분리해 표시합니다."
+    ]
+  },
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "고대"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "남부 메소포타미아",
+        "중부 메소포타미아",
+        "북부 메소포타미아"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "도시화",
+        "도시국가",
+        "성소",
+        "왕권",
+        "제국",
+        "수도"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지도 유형",
+      "options": [
+        "장소"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "mesopotamian-urban-origins",
+      "labelKo": "메소포타미아 도시 문명",
+      "parentId": null,
+      "periodKo": "기원전 6천년기-기원전 1천년기",
+      "summaryKo": "티그리스·유프라테스 강 유역에서 초기 도시, 성소, 왕권, 행정 네트워크가 형성되는 큰 흐름을 묶습니다."
+    },
+    {
+      "id": "southern-sumerian-cities",
+      "labelKo": "남부 수메르 도시권",
+      "parentId": "mesopotamian-urban-origins",
+      "periodKo": "기원전 6천년기-기원전 3천년기",
+      "summaryKo": "에리두, 우루크, 우르, 라가시처럼 남부 메소포타미아의 초기 도시화와 도시국가 형성을 보여주는 맥락입니다."
+    },
+    {
+      "id": "temple-and-sacred-cities",
+      "labelKo": "성소와 종교 중심지",
+      "parentId": "mesopotamian-urban-origins",
+      "periodKo": "기원전 5천년기-기원전 1천년기",
+      "summaryKo": "신전, 성소, 종교 권위가 도시의 정치·경제 질서와 연결되는 항목을 묶습니다."
+    },
+    {
+      "id": "early-dynastic-city-states",
+      "labelKo": "초기 왕조 도시국가",
+      "parentId": "mesopotamian-urban-origins",
+      "periodKo": "기원전 3천년기",
+      "summaryKo": "키시, 라가시, 우르, 우루크처럼 도시국가 경쟁과 왕권 표현이 두드러지는 흐름입니다."
+    },
+    {
+      "id": "akkadian-imperial-network",
+      "labelKo": "아카드 제국 네트워크",
+      "parentId": "mesopotamian-urban-origins",
+      "periodKo": "기원전 24-22세기",
+      "summaryKo": "사르곤의 아카드 제국처럼 여러 도시권을 더 넓은 정치 네트워크로 묶는 흐름을 봅니다."
+    },
+    {
+      "id": "babylonian-assyrian-capitals",
+      "labelKo": "바빌로니아·아시리아 수도권",
+      "parentId": "mesopotamian-urban-origins",
+      "periodKo": "기원전 2천년기-기원전 1천년기",
+      "summaryKo": "바빌론, 아슈르, 니네베처럼 제국 수도와 종교 중심지가 결합한 후기 메소포타미아 도시를 묶습니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "eridu",
+      "titleKo": "에리두",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이라크",
+      "coordinates": {
+        "lat": 30.8158,
+        "lng": 45.9961
+      },
+      "yearLabelKo": "기원전 5400년경 이후",
+      "summaryKo": "에리두는 남부 메소포타미아의 매우 이른 도시·성소 후보로, 신전 축적과 정착층을 통해 도시 형성의 긴 시간을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "southern-sumerian-cities",
+        "contextIds": [
+          "mesopotamian-urban-origins",
+          "southern-sumerian-cities",
+          "temple-and-sacred-cities"
+        ],
+        "periodPathKo": [
+          "고대",
+          "메소포타미아",
+          "남부 수메르 초기 도시"
+        ],
+        "topicTagsKo": [
+          "수메르",
+          "엔키",
+          "초기 도시화",
+          "성소",
+          "남부 메소포타미아"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "남부 메소포타미아",
+          "theme": [
+            "도시화",
+            "성소"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 등재 권역과 World History Encyclopedia 항목을 함께 확인할 수 있어 좌표 신뢰도를 high로 둡니다."
+        }
+      }
+    },
+    {
+      "entryId": "uruk",
+      "titleKo": "우루크",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이라크",
+      "coordinates": {
+        "lat": 31.3222,
+        "lng": 45.6378
+      },
+      "yearLabelKo": "기원전 5000/4500년경 이후",
+      "summaryKo": "우루크는 대규모 도시화, 행정, 문자 발달과 연결되는 핵심 도시로 초기 도시 문명의 변화를 압축적으로 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "southern-sumerian-cities",
+        "contextIds": [
+          "mesopotamian-urban-origins",
+          "southern-sumerian-cities",
+          "early-dynastic-city-states"
+        ],
+        "periodPathKo": [
+          "고대",
+          "메소포타미아",
+          "우루크기와 도시화"
+        ],
+        "topicTagsKo": [
+          "우루크기",
+          "문자",
+          "길가메시",
+          "도시화",
+          "행정"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "남부 메소포타미아",
+          "theme": [
+            "도시화",
+            "도시국가"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "우루크 유적 좌표와 남부 이라크 UNESCO 권역, 참고 백과 항목이 교차 확인됩니다."
+        }
+      }
+    },
+    {
+      "entryId": "nippur",
+      "titleKo": "니푸르",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이라크",
+      "coordinates": {
+        "lat": 32.1263,
+        "lng": 45.2351
+      },
+      "yearLabelKo": "기원전 5천년기 이후",
+      "summaryKo": "니푸르는 엔릴 신앙과 에쿠르 성소로 유명한 종교 중심지로, 왕권 정당성과 도시 권위가 만나는 지점입니다.",
+      "stage2": {
+        "primaryContextId": "temple-and-sacred-cities",
+        "contextIds": [
+          "mesopotamian-urban-origins",
+          "temple-and-sacred-cities",
+          "early-dynastic-city-states"
+        ],
+        "periodPathKo": [
+          "고대",
+          "메소포타미아",
+          "성소와 왕권"
+        ],
+        "topicTagsKo": [
+          "엔릴",
+          "에쿠르",
+          "성소",
+          "종교 중심지",
+          "왕권 정당성"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "남부 메소포타미아",
+          "theme": [
+            "성소",
+            "왕권"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 0,
+          "referenceSources": 2,
+          "noteKo": "주요 참고 백과 출처가 서로 보완되며 유적 위치가 널리 확인되는 항목입니다."
+        }
+      }
+    },
+    {
+      "entryId": "kish",
+      "titleKo": "키시",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이라크",
+      "coordinates": {
+        "lat": 32.548,
+        "lng": 44.65
+      },
+      "yearLabelKo": "기원전 6500-4000년경 정착, 기원전 5천년기 도시화",
+      "summaryKo": "키시는 '키시의 왕'이라는 칭호와 수메르 왕명록에서 중요한 상징성을 지닌 도시로, 초기 왕권 연구에 유용합니다.",
+      "stage2": {
+        "primaryContextId": "early-dynastic-city-states",
+        "contextIds": [
+          "mesopotamian-urban-origins",
+          "early-dynastic-city-states"
+        ],
+        "periodPathKo": [
+          "고대",
+          "메소포타미아",
+          "초기 왕조 도시국가"
+        ],
+        "topicTagsKo": [
+          "키시의 왕",
+          "수메르 왕명록",
+          "초기 왕권",
+          "도시국가"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "중부 메소포타미아",
+          "theme": [
+            "왕권",
+            "도시국가"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 0,
+          "referenceSources": 2,
+          "noteKo": "고대 도시 권역과 근사 좌표를 쓰는 항목이므로 지도 표시는 approximate로 관리합니다."
+        }
+      }
+    },
+    {
+      "entryId": "lagash",
+      "titleKo": "라가시",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이라크",
+      "coordinates": {
+        "lat": 31.411,
+        "lng": 46.409
+      },
+      "yearLabelKo": "기원전 2900-2700년경 이후",
+      "summaryKo": "라가시는 기르수와 함께 수메르 도시국가의 행정, 경계 분쟁, 점토판 기록을 이해하는 데 중요한 권역입니다.",
+      "stage2": {
+        "primaryContextId": "early-dynastic-city-states",
+        "contextIds": [
+          "mesopotamian-urban-origins",
+          "southern-sumerian-cities",
+          "early-dynastic-city-states"
+        ],
+        "periodPathKo": [
+          "고대",
+          "메소포타미아",
+          "초기 왕조 도시국가"
+        ],
+        "topicTagsKo": [
+          "라가시",
+          "기르수",
+          "구데아",
+          "도시국가",
+          "점토판 기록"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "남부 메소포타미아",
+          "theme": [
+            "도시국가",
+            "왕권"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 0,
+          "referenceSources": 2,
+          "noteKo": "라가시 권역은 여러 유적과 연결되므로 현 단계에서는 대표 근사 좌표로 둡니다."
+        }
+      }
+    },
+    {
+      "entryId": "akkad",
+      "titleKo": "아카드",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이라크",
+      "coordinates": {
+        "lat": 33.1,
+        "lng": 44.1
+      },
+      "yearLabelKo": "기원전 2350/2334년경 이후",
+      "summaryKo": "아카드는 사르곤의 제국 중심지로 알려졌지만 정확한 위치가 확정되지 않아, 제국 형성 맥락과 위치 불확실성을 함께 표시해야 합니다.",
+      "stage2": {
+        "primaryContextId": "akkadian-imperial-network",
+        "contextIds": [
+          "mesopotamian-urban-origins",
+          "akkadian-imperial-network"
+        ],
+        "periodPathKo": [
+          "고대",
+          "메소포타미아",
+          "아카드 제국"
+        ],
+        "topicTagsKo": [
+          "아카드",
+          "사르곤",
+          "아카드 제국",
+          "위치 미상",
+          "초기 제국"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "중부 메소포타미아",
+          "theme": [
+            "제국",
+            "수도"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 0,
+          "referenceSources": 2,
+          "noteKo": "정확한 고고학적 위치가 확정되지 않은 도시이므로 위치 불확실성을 명시하고 approximate로 유지합니다."
+        }
+      }
+    },
+    {
+      "entryId": "babylon",
+      "titleKo": "바빌론",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이라크",
+      "coordinates": {
+        "lat": 32.5364,
+        "lng": 44.4208
+      },
+      "yearLabelKo": "신바빌로니아 등",
+      "summaryKo": "바빌론은 함무라비와 신바빌로니아 왕국, 제국 수도의 상징성이 결합된 메소포타미아 대표 도시입니다.",
+      "stage2": {
+        "primaryContextId": "babylonian-assyrian-capitals",
+        "contextIds": [
+          "mesopotamian-urban-origins",
+          "akkadian-imperial-network",
+          "babylonian-assyrian-capitals"
+        ],
+        "periodPathKo": [
+          "고대",
+          "메소포타미아",
+          "바빌로니아 수도"
+        ],
+        "topicTagsKo": [
+          "바빌론",
+          "함무라비",
+          "신바빌로니아",
+          "수도",
+          "유네스코"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "중부 메소포타미아",
+          "theme": [
+            "수도",
+            "제국"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 세계유산과 참고 백과 출처가 함께 있어 대표 유적 좌표 신뢰도가 높습니다."
+        }
+      }
+    },
+    {
+      "entryId": "ur",
+      "titleKo": "우르",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이라크",
+      "coordinates": {
+        "lat": 30.9621,
+        "lng": 46.1031
+      },
+      "yearLabelKo": "기원전 3천년기",
+      "summaryKo": "우르는 수메르 도시국가와 지구라트, 왕묘로 널리 알려진 도시로 남부 메소포타미아의 정치·종교 중심성을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "southern-sumerian-cities",
+        "contextIds": [
+          "mesopotamian-urban-origins",
+          "southern-sumerian-cities",
+          "temple-and-sacred-cities",
+          "early-dynastic-city-states"
+        ],
+        "periodPathKo": [
+          "고대",
+          "메소포타미아",
+          "수메르 도시국가"
+        ],
+        "topicTagsKo": [
+          "우르",
+          "지구라트",
+          "수메르",
+          "왕묘",
+          "남부 메소포타미아"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "남부 메소포타미아",
+          "theme": [
+            "도시국가",
+            "성소",
+            "왕권"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "우르 유적과 남부 이라크 UNESCO 권역을 함께 확인할 수 있어 high로 분류합니다."
+        }
+      }
+    },
+    {
+      "entryId": "ashur",
+      "titleKo": "아슈르",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이라크",
+      "coordinates": {
+        "lat": 35.4567,
+        "lng": 43.2611
+      },
+      "yearLabelKo": "기원전 3천년기 이후",
+      "summaryKo": "아슈르는 티그리스 강가의 아시리아 중심 도시로, 교역 거점·성소·수도 기능이 결합된 변화를 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "babylonian-assyrian-capitals",
+        "contextIds": [
+          "mesopotamian-urban-origins",
+          "temple-and-sacred-cities",
+          "babylonian-assyrian-capitals"
+        ],
+        "periodPathKo": [
+          "고대",
+          "메소포타미아",
+          "아시리아 수도권"
+        ],
+        "topicTagsKo": [
+          "아슈르",
+          "아시리아",
+          "티그리스",
+          "성소",
+          "수도"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "북부 메소포타미아",
+          "theme": [
+            "수도",
+            "성소",
+            "제국"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 세계유산 좌표와 참고 백과 출처가 연결된 고신뢰 항목입니다."
+        }
+      }
+    },
+    {
+      "entryId": "nineveh",
+      "titleKo": "니네베",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이라크",
+      "coordinates": {
+        "lat": 36.3594,
+        "lng": 43.1529
+      },
+      "yearLabelKo": "기원전 6000년경 정착, 기원전 1천년기 전성",
+      "summaryKo": "니네베는 모술 인근의 아시리아 수도로, 산헤립과 아슈르바니팔의 궁전·도서관을 통해 제국 말기의 도시성을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "babylonian-assyrian-capitals",
+        "contextIds": [
+          "mesopotamian-urban-origins",
+          "babylonian-assyrian-capitals"
+        ],
+        "periodPathKo": [
+          "고대",
+          "메소포타미아",
+          "아시리아 제국 수도"
+        ],
+        "topicTagsKo": [
+          "니네베",
+          "아시리아",
+          "아슈르바니팔",
+          "도서관",
+          "모술"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "북부 메소포타미아",
+          "theme": [
+            "수도",
+            "제국"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 0,
+          "referenceSources": 2,
+          "noteKo": "주요 참고 출처와 널리 알려진 유적 위치가 일치하므로 high로 두되 공식 출처 수는 분리해 기록합니다."
+        }
+      }
+    }
+  ]
+}

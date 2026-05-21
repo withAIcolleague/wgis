@@ -42,6 +42,19 @@ The preview now also includes an Ethiopia human-origins pilot dataset:
 - `herto-homo-sapiens-idaltu`
 - `omo-kibish-omo-i`
 
+The third pilot dataset tests ancient city/site-heavy data through early Mesopotamian cities:
+
+- `eridu`
+- `uruk`
+- `nippur`
+- `kish`
+- `lagash`
+- `akkad`
+- `babylon`
+- `ur`
+- `ashur`
+- `nineveh`
+
 The dataset list is managed in:
 
 ```text
@@ -70,4 +83,4 @@ npm run smoke
 npm run check
 ```
 
-The Stage 2 validator checks the preview data against `data/stage2/schema.json`. The smoke check confirms that the preview page, assets, and critical UI wiring are present.
+The Stage 2 validator checks the preview data against `data/stage2/schema.json`. The smoke check confirms that the preview page, assets, critical UI wiring, and every indexed Stage 2 dataset are present.

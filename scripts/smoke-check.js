@@ -36,8 +36,12 @@ function main() {
   const entries = readJson('data/entries.json');
   const batches = readJson('data/curation-batches.json');
   const stage2Index = readJson('data/stage2/index.json');
-  const stage2Preview = readJson('data/stage2/atlantic-revolutions-preview.json');
-  const stage2Pilot = readJson('data/stage2/ethiopia-human-origins-preview.json');
+  const stage2Datasets = Array.isArray(stage2Index.datasets)
+    ? stage2Index.datasets.map(dataset => ({
+      metadata: dataset,
+      data: readJson(dataset.path)
+    }))
+    : [];
 
   check('entries.json is an array', Array.isArray(entries));
   check('first-stage entry floor', entries.length >= 240, `${entries.length} entries found`);
@@ -141,16 +145,15 @@ function main() {
   check('stage 2 preview can load selected dataset path', stage2App.includes('loadDataset(event.target.value)'));
   check('stage 2 preview renders Leaflet markers', includesAll(stage2App, ['L.map', 'L.marker', 'bindTooltip']));
   check('stage 2 preview has responsive mobile rules', includesAll(stage2Css, ['@media (max-width: 820px)', '.entry-list']));
-  check('stage 2 index has multiple datasets', Array.isArray(stage2Index.datasets) && stage2Index.datasets.length >= 2);
-  check('stage 2 preview data status is preview-only', stage2Preview.status === 'preview-only');
-  check('stage 2 preview has contexts', Array.isArray(stage2Preview.contexts) && stage2Preview.contexts.length >= 5);
-  check('stage 2 preview has sample entries', Array.isArray(stage2Preview.entries) && stage2Preview.entries.length >= 8);
-  check('stage 2 pilot data status is preview-only', stage2Pilot.status === 'preview-only');
-  check('stage 2 pilot has contexts', Array.isArray(stage2Pilot.contexts) && stage2Pilot.contexts.length >= 5);
-  check('stage 2 pilot has sample entries', Array.isArray(stage2Pilot.entries) && stage2Pilot.entries.length >= 8);
+  check('stage 2 index has multiple datasets', stage2Datasets.length >= 3);
 
-  for (const dataset of [stage2Preview, stage2Pilot]) {
-    for (const previewEntry of dataset.entries || []) {
+  for (const { metadata, data } of stage2Datasets) {
+    const datasetLabel = metadata.id || metadata.path;
+    check(`stage 2 dataset status matches index (${datasetLabel})`, data.status === metadata.status);
+    check(`stage 2 dataset has contexts (${datasetLabel})`, Array.isArray(data.contexts) && data.contexts.length >= 5);
+    check(`stage 2 dataset has sample entries (${datasetLabel})`, Array.isArray(data.entries) && data.entries.length >= 8);
+
+    for (const previewEntry of data.entries || []) {
       check(`stage 2 preview entry exists in main data (${previewEntry.entryId})`, entryIds.has(previewEntry.entryId));
       check(`stage 2 preview entry has multiple context links (${previewEntry.entryId})`, Array.isArray(previewEntry.stage2?.contextIds) && previewEntry.stage2.contextIds.length >= 2);
       check(`stage 2 preview entry has UI filters (${previewEntry.entryId})`, Boolean(previewEntry.stage2?.uiFilters));

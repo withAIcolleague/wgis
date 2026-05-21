@@ -14,6 +14,12 @@
       "titleKo": "에티오피아 인류 기원",
       "path": "data/stage2/ethiopia-human-origins-preview.json",
       "status": "preview-only"
+    },
+    {
+      "id": "stage2-mesopotamia-early-cities-preview",
+      "titleKo": "메소포타미아 초기 도시",
+      "path": "data/stage2/mesopotamia-early-cities-preview.json",
+      "status": "preview-only"
     }
   ]
 }
