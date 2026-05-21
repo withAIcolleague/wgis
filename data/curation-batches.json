@@ -875,6 +875,30 @@
         "Britannica references for Atlantic Revolution and independence context",
         "Official cultural and tourism references for Buenos Aires, Bogotá, Mexico City, and Caracas-related memory sites"
       ]
+    },
+    {
+      "id": "africa-egypt-late-temple-centers-v1",
+      "status": "completed",
+      "completedAt": "2026-05-21",
+      "continentId": "africa",
+      "countryIso2": "EG",
+      "countryKo": "이집트",
+      "worldRegion": "이집트사",
+      "focusKo": "고대 이집트 후기 신전 중심지",
+      "scopeKo": "덴데라, 에드푸, 필레, 콤 옴보를 중심으로 프톨레마이오스·로마 시대 신전과 나일 계곡 제의 네트워크를 보강",
+      "sourceFile": "data/records/africa/egypt/late-temple-centers.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "dendera-temple",
+        "edfu-temple",
+        "philae",
+        "kom-ombo-temple"
+      ],
+      "sourceBasis": [
+        "Egypt Ministry of Tourism and Antiquities monument and archaeological-site pages",
+        "UNESCO World Heritage page for Nubian Monuments from Abu Simbel to Philae",
+        "Britannica reference pages for Dandarah, Idfu, Philae, and Kawm Umbu"
+      ]
     }
   ]
 }

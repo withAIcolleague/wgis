@@ -1,6 +1,6 @@
 # WGIS Data Project State
 
-Last updated: 2026-05-20
+Last updated: 2026-05-21
 
 ## Current Goal
 
@@ -11,9 +11,9 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 246
-- Completed curation batches: 30
-- Latest completed batch: `atlantic-modern-revolutions-independence-capitals-v1`
+- Current entry count: 250
+- Completed curation batches: 31
+- Latest completed batch: `africa-egypt-late-temple-centers-v1`
 - Latest completed infrastructure milestone: stage-2 Mesopotamia early cities pilot
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
@@ -163,6 +163,16 @@ The long-term target is 3,000+ entries, but the project should progress one focu
     - `amarna`
     - `abu-simbel`
     - `alexandria-egypt`
+
+- Ancient Egypt late temple centers batch
+  - Batch ID: `africa-egypt-late-temple-centers-v1`
+  - Source file: `data/records/africa/egypt/late-temple-centers.json`
+  - Entries added: 4
+  - Entry IDs:
+    - `dendera-temple`
+    - `edfu-temple`
+    - `philae`
+    - `kom-ombo-temple`
 
 - Indus Civilization major urban sites batch
   - Batch ID: `asia-south-asia-indus-civilization-v1`
@@ -543,10 +553,13 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Review Stage-2 visual preview
+1. First-stage 250-entry functional review
+   - Scope: run a focused user-flow check on search, filters, pagination, mobile dashboard scrolling, marker labels, popups, detail drawer, and Google search links now that the 250-entry target is reached
+
+2. Review Stage-2 visual preview
    - Scope: compare Atlantic revolutions, Ethiopia human origins, and Mesopotamia early cities in `/stage2-preview.html`, then confirm whether multi-context links, UI filters, research tags, and source confidence are easy to understand
 
-2. Stage-2 fourth pilot dataset
+3. Stage-2 fourth pilot dataset
    - Scope: create one more Stage 2 file from another ancient civilization batch, likely Egypt, Indus, or early China, to compare against Mesopotamia's city/site-heavy structure
 
 ## Resume Checklist

@@ -5512,5 +5512,94 @@
       { "title": "Archivo General de la Nación: Acta de Independencia", "url": "https://www.gob.mx/agn/prensa/el-acta-de-independencia-a-200-anos-de-vida-el-archivo-general-de-la-nacion-la-preserva-en-condiciones-optimas" },
       { "title": "Britannica: Mexico - Independence", "url": "https://www.britannica.com/place/Mexico/Independence" }
     ]
+  },
+  {
+    "id": "dendera-temple",
+    "title": "덴데라 신전",
+    "type": "place",
+    "historicalName": "이우네트 / 텐티라 / 덴데라",
+    "modernName": "덴데라 하토르 신전",
+    "modernAdmin": "케나주 덴데라",
+    "country": "이집트",
+    "worldRegion": "이집트사",
+    "period": "프톨레마이오스·로마 시대",
+    "yearLabel": "프톨레마이오스 시대 건립, 로마 시대 완성",
+    "coordinates": { "lat": 26.142, "lng": 32.6702 },
+    "aliases": ["Dendera", "Dandarah", "Temple of Hathor", "Hathor", "Tentyra"],
+    "summary": "덴데라 신전은 하토르 숭배의 핵심 중심지로, 프톨레마이오스·로마 시대 이집트 신전 건축과 천문 도상, 지역 제의의 지속성을 보여주는 대표 유적이다.",
+    "confidence": "high",
+    "sourceNote": "덴데라 하토르 신전 구역의 대표 좌표를 사용했다.",
+    "curationBatch": "africa-egypt-late-temple-centers-v1",
+    "sources": [
+      { "title": "Egypt Ministry of Tourism and Antiquities: Temple of Dendera", "url": "https://egymonuments.gov.eg/en/monuments/temple-of-dendera/" },
+      { "title": "Britannica: Dandarah", "url": "https://www.britannica.com/place/Dandarah" }
+    ]
+  },
+  {
+    "id": "edfu-temple",
+    "title": "에드푸 신전",
+    "type": "place",
+    "historicalName": "베헤데트 / 아폴로노폴리스 마그나 / 에드푸",
+    "modernName": "에드푸 호루스 신전",
+    "modernAdmin": "아스완주 에드푸",
+    "country": "이집트",
+    "worldRegion": "이집트사",
+    "period": "프톨레마이오스 시대",
+    "yearLabel": "기원전 237-57년",
+    "coordinates": { "lat": 24.9778, "lng": 32.8735 },
+    "aliases": ["Edfu", "Idfu", "Temple of Horus", "Horus of Behdet", "Apollonopolis Magna"],
+    "summary": "에드푸 신전은 호루스에게 바쳐진 매우 잘 보존된 프톨레마이오스 시대 신전으로, 후기 이집트 신전의 축선 배치와 제의 문헌을 이해하는 핵심 장소다.",
+    "confidence": "high",
+    "sourceNote": "에드푸 호루스 신전 본전 중심부의 대표 좌표를 사용했다.",
+    "curationBatch": "africa-egypt-late-temple-centers-v1",
+    "sources": [
+      { "title": "Egypt Ministry of Tourism and Antiquities: Edfu Temple", "url": "https://egymonuments.gov.eg/monuments/temple-of-edfu/" },
+      { "title": "Britannica: Idfu", "url": "https://www.britannica.com/place/Idfu" }
+    ]
+  },
+  {
+    "id": "philae",
+    "title": "필레",
+    "type": "place",
+    "historicalName": "필레 / 필락",
+    "modernName": "아길키아섬 필레 신전군",
+    "modernAdmin": "아스완주 아스완",
+    "country": "이집트",
+    "worldRegion": "이집트사",
+    "period": "프톨레마이오스·로마·비잔틴 시대",
+    "yearLabel": "기원전 4세기-서기 6세기",
+    "coordinates": { "lat": 24.025, "lng": 32.8841 },
+    "aliases": ["Philae", "Agilkia", "Temple of Isis", "Isis", "Nubian Monuments"],
+    "summary": "필레는 이시스 신앙의 대표 성소로, 고대 이집트 종교가 프톨레마이오스·로마 시대를 거쳐 비잔틴 시대까지 이어진 흐름과 UNESCO 누비아 유적 구제 사업을 함께 보여준다.",
+    "confidence": "high",
+    "sourceNote": "현재 이전·복원된 아길키아섬 필레 신전군의 대표 좌표를 사용했다.",
+    "curationBatch": "africa-egypt-late-temple-centers-v1",
+    "sources": [
+      { "title": "Egypt Ministry of Tourism and Antiquities: Philae", "url": "https://egymonuments.gov.eg/en/archaeological-sites/philae/" },
+      { "title": "UNESCO: Nubian Monuments from Abu Simbel to Philae", "url": "https://whc.unesco.org/en/list/88" },
+      { "title": "Britannica: Philae", "url": "https://www.britannica.com/place/Philae-island-Egypt" }
+    ]
+  },
+  {
+    "id": "kom-ombo-temple",
+    "title": "콤 옴보 신전",
+    "type": "place",
+    "historicalName": "옴보스 / 누브트 / 콤 옴보",
+    "modernName": "콤 옴보 신전",
+    "modernAdmin": "아스완주 콤 옴보",
+    "country": "이집트",
+    "worldRegion": "이집트사",
+    "period": "프톨레마이오스·로마 시대",
+    "yearLabel": "기원전 2세기-서기 2세기",
+    "coordinates": { "lat": 24.4524, "lng": 32.9285 },
+    "aliases": ["Kom Ombo", "Kawm Umbu", "Ombos", "Sobek", "Haroeris", "Horus the Elder"],
+    "summary": "콤 옴보 신전은 소베크와 하로에리스에게 바쳐진 이중 신전으로, 나일 교통축 위의 지역 제의와 프톨레마이오스·로마 시대 신전 운영을 보여주는 독특한 사례다.",
+    "confidence": "high",
+    "sourceNote": "콤 옴보 신전 구역의 대표 좌표를 사용했다.",
+    "curationBatch": "africa-egypt-late-temple-centers-v1",
+    "sources": [
+      { "title": "Egypt Ministry of Tourism and Antiquities: Kom Ombo Temple", "url": "https://egymonuments.gov.eg/monuments/kom-ombo-temple/" },
+      { "title": "Britannica: Kawm Umbu", "url": "https://www.britannica.com/place/Kawm-Umbu" }
+    ]
   }
 ]

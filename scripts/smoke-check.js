@@ -44,7 +44,7 @@ function main() {
     : [];
 
   check('entries.json is an array', Array.isArray(entries));
-  check('first-stage entry floor', entries.length >= 240, `${entries.length} entries found`);
+  check('first-stage entry floor', entries.length >= 250, `${entries.length} entries found`);
   check('curation batch floor', Array.isArray(batches.batches) && batches.batches.length >= 30);
 
   const entryIds = new Set(entries.map(entry => entry.id));
