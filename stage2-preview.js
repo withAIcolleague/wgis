@@ -115,6 +115,19 @@ function createIcon(entry) {
   });
 }
 
+function clearMarkers() {
+  markers.forEach(marker => {
+    marker.closeTooltip();
+    marker.unbindTooltip();
+    marker.remove();
+  });
+  markers = [];
+
+  stage2Map.getContainer()
+    .querySelectorAll('.leaflet-tooltip.stage2-label')
+    .forEach(tooltip => tooltip.remove());
+}
+
 function renderDatasetSelect() {
   const select = document.getElementById('datasetSelect');
   if (!select || !stage2Index) return;
@@ -184,8 +197,7 @@ function renderEntries() {
 }
 
 function renderMarkers({ fit = false } = {}) {
-  markers.forEach(marker => marker.remove());
-  markers = [];
+  clearMarkers();
 
   const entries = getFilteredEntries();
 

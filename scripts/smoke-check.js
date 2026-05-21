@@ -144,6 +144,7 @@ function main() {
   check('stage 2 preview fetches dataset index', stage2App.includes("fetch('data/stage2/index.json')"));
   check('stage 2 preview can load selected dataset path', stage2App.includes('loadDataset(event.target.value)'));
   check('stage 2 preview renders Leaflet markers', includesAll(stage2App, ['L.map', 'L.marker', 'bindTooltip']));
+  check('stage 2 preview clears stale marker labels', includesAll(stage2App, ['function clearMarkers()', 'unbindTooltip()', '.leaflet-tooltip.stage2-label']));
   check('stage 2 preview has responsive mobile rules', includesAll(stage2Css, ['@media (max-width: 820px)', '.entry-list']));
   check('stage 2 index has multiple datasets', stage2Datasets.length >= 3);
 
