@@ -14,7 +14,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Current entry count: 250
 - Completed curation batches: 31
 - Latest completed batch: `africa-egypt-late-temple-centers-v1`
-- Latest completed infrastructure milestone: stage-2 Egypt ancient core pilot
+- Latest completed infrastructure milestone: stage-2 four-dataset usability pass
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
@@ -93,6 +93,13 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - URL path: `/stage2-preview.html`
   - Scope: add a fourth Stage 2 preview dataset using the existing ancient Egypt core and late temple entries
   - Model stress test: royal capitals, pyramid and Theban funerary landscapes, temple complexes, Amarna reform, Nubian frontier monuments, Ptolemaic-Roman temple networks, and Hellenistic Mediterranean port contexts
+
+- Stage-2 four-dataset usability pass
+  - Files: `docs/stage2-preview.md`
+  - URL path: `/stage2-preview.html`
+  - Scope: verify public preview behavior after adding the fourth dataset
+  - Checked: dataset switching, search, context filtering, detail panel rendering, stale marker/label cleanup, and mobile entry-list scrolling
+  - Result: public browser pass completed for 4 datasets and 40 Stage 2 preview entries
 
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`
@@ -559,14 +566,14 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Review Stage-2 visual preview
-   - Scope: compare Atlantic revolutions, Ethiopia human origins, Mesopotamia early cities, and ancient Egypt in `/stage2-preview.html`, then confirm whether multi-context links, UI filters, research tags, and source confidence are easy to understand
-
-2. Stage-2 fifth pilot dataset
+1. Stage-2 fifth pilot dataset
    - Scope: create one more Stage 2 file from another ancient civilization batch, likely Indus or early China, to compare against Mesopotamia and Egypt
 
-3. Stage-2 preview usability pass
-   - Scope: check whether four datasets remain easy to select, filter, and inspect on desktop and mobile before adding more preview datasets
+2. Stage-2 preview usability refinement
+   - Scope: consider whether mobile preview should add a compact map jump or detail jump once more datasets are added
+
+3. First-stage DB next expansion batch
+   - Scope: resume focused first-stage source-record growth if the priority shifts back from Stage 2 modeling to raw coverage
 
 ## Resume Checklist
 
