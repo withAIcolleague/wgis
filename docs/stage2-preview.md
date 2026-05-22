@@ -184,6 +184,17 @@ The fourteenth pilot dataset tests Southeast Asian early states, maritime exchan
 - `sukhothai`
 - `ayutthaya`
 
+The fifteenth pilot dataset tests Maya lowland dynastic centers, Usumacinta river cities, Puuc architecture, Postclassic Yucatan politics, and Caribbean coastal exchange:
+
+- `palenque`
+- `copan`
+- `uxmal`
+- `mayapan`
+- `coba`
+- `bonampak`
+- `yaxchilan`
+- `tulum`
+
 The dataset list is managed in:
 
 ```text
@@ -388,3 +399,18 @@ The 2026-05-22 fourteen-dataset browser pass checks `/stage2-preview.html` after
 - Switching back from the Southeast Asia dataset to Atlantic revolutions clears stale Southeast Asia list items, markers, labels, and map zoom state.
 - On mobile, the Southeast Asia entry list scrolls independently, `옥에오` detail scrolls into view, `지도에서 보기` returns to the map, and `닫기` hides the detail panel.
 - Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-fourteen-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-fourteen-datasets-mobile.png`.
+
+## Fifteen-Dataset Public Usability Pass
+
+The 2026-05-22 fifteen-dataset browser pass checks `/stage2-preview.html` after adding the Maya lowland and Postclassic networks pilot dataset:
+
+- Dataset selector exposes 15 datasets.
+- All 15 indexed datasets render their expected entry, marker, and permanent-label counts: Atlantic revolutions 8, Ethiopia 8, Mesopotamia 10, Egypt 14, Indus 8, Early China 8, Ancient Greece 10, Achaemenid Persia 8, Roman Republic and Empire 8, Magadha-Maurya 8, Mesoamerica 8, West Africa 8, Andes 8, Southeast Asia 8, and Maya lowland/Postclassic 8.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control after every dataset switch.
+- Searching `야슈칠란` in the Maya dataset narrows the list and map to 2 related entries, markers, and labels: `보남팍` and `야슈칠란`.
+- Selecting `야슈칠란` opens the detail panel with source-confidence information and detail actions.
+- Closing the `야슈칠란` detail panel preserves the current search marker and label.
+- The `우수마신타 강권 도시` context filter returns 3 entries: `팔렌케`, `보남팍`, and `야슈칠란`.
+- Switching back from the Maya dataset to Atlantic revolutions clears stale Maya list items, markers, labels, and map zoom state.
+- On mobile, the Maya entry list scrolls independently, `팔렌케` detail scrolls into view, `지도에서 보기` returns to the map, and `닫기` hides the detail panel.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-fifteen-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-fifteen-datasets-mobile.png`.

@@ -1,0 +1,514 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-maya-lowland-postclassic-preview",
+  "titleKo": "2단계 미리보기: 마야 저지대와 포스트클래식 네트워크",
+  "descriptionKo": "고전기 마야 왕조 도시, 우수마신타 강권, 푸크 양식, 마야판 이후 유카탄 정치, 동부 유카탄 도로망과 카리브 해상 교역을 함께 비교하는 2단계 미리보기 데이터셋입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "고전기 마야",
+        "후기 고전기 마야",
+        "푸크 양식",
+        "포스트클래식 마야",
+        "동부 유카탄 장기 지속"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "치아파스·우수마신타",
+        "마야 남동부 저지대",
+        "유카탄 푸크 지역",
+        "유카탄 북부",
+        "동부 유카탄 내륙",
+        "유카탄 동해안"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "왕조 도시국가",
+        "상형문자·비문",
+        "강변 도시",
+        "푸크 건축",
+        "포스트클래식 정치",
+        "사크베 도로망",
+        "해상 교역",
+        "궁정 벽화",
+        "순례·의례 항구"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지도 유형",
+      "options": [
+        "장소"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "maya-lowland-postclassic-networks",
+      "labelKo": "마야 저지대와 포스트클래식 네트워크",
+      "parentId": null,
+      "periodKo": "4-16세기",
+      "summaryKo": "치아파스, 우수마신타, 유카탄, 카리브 해안을 잇는 고전기 마야 왕조 도시와 포스트클래식 정치·교역 거점을 함께 비교하는 상위 맥락입니다."
+    },
+    {
+      "id": "classic-maya-dynastic-centers",
+      "labelKo": "고전기 마야 왕조 중심지",
+      "parentId": "maya-lowland-postclassic-networks",
+      "periodKo": "4-9세기",
+      "summaryKo": "팔렌케와 코판처럼 왕조 기록, 기념비, 궁전·신전 경관을 통해 고전기 마야 도시국가의 권력과 계보를 읽는 맥락입니다."
+    },
+    {
+      "id": "usumacinta-river-cities",
+      "labelKo": "우수마신타 강권 도시",
+      "parentId": "maya-lowland-postclassic-networks",
+      "periodKo": "4-9세기",
+      "summaryKo": "팔렌케, 야슈칠란, 보남팍처럼 우수마신타 유역의 강길, 동맹, 경쟁, 의례 경관을 연결해 보는 맥락입니다."
+    },
+    {
+      "id": "puuc-yucatan-architecture",
+      "labelKo": "유카탄 푸크 건축",
+      "parentId": "maya-lowland-postclassic-networks",
+      "periodKo": "7-10세기",
+      "summaryKo": "우슈말을 중심으로 정교한 석조 모자이크 장식, 총독궁, 피라미드, 북부 유카탄 후기 고전기 권력 경관을 보는 맥락입니다."
+    },
+    {
+      "id": "postclassic-mayapan-yucatan-politics",
+      "labelKo": "마야판과 유카탄 포스트클래식 정치",
+      "parentId": "maya-lowland-postclassic-networks",
+      "periodKo": "13-15세기",
+      "summaryKo": "마야판을 통해 치첸이트사 이후 북부 유카탄의 성벽 도시, 동맹, 지배 집단, 스페인 도래 직전 정치 질서를 다룹니다."
+    },
+    {
+      "id": "eastern-yucatan-sacbe-coastal-network",
+      "labelKo": "동부 유카탄 사크베와 해안 연결",
+      "parentId": "maya-lowland-postclassic-networks",
+      "periodKo": "6-16세기",
+      "summaryKo": "코바와 툴룸을 통해 내륙 호수권, 사크베 도로망, 카리브 해안 교역과 의례 거점의 연결을 보는 맥락입니다."
+    },
+    {
+      "id": "bonampak-painted-court-scenes",
+      "labelKo": "보남팍 궁정 벽화",
+      "parentId": "maya-lowland-postclassic-networks",
+      "periodKo": "8세기",
+      "summaryKo": "보남팍 벽화가 보여주는 궁정 의례, 전쟁, 음악, 복식, 포로 처리 장면을 통해 마야 시각 자료의 역사성을 다룹니다."
+    },
+    {
+      "id": "caribbean-coastal-trade-pilgrimage",
+      "labelKo": "카리브 해상 교역과 순례 항구",
+      "parentId": "maya-lowland-postclassic-networks",
+      "periodKo": "13-16세기",
+      "summaryKo": "툴룸과 동부 유카탄 거점을 통해 카리브 해안 항로, 해상 교역, 의례 순례, 스페인 접촉 직전 마야 생활을 연결합니다."
+    },
+    {
+      "id": "maya-writing-dynastic-memory",
+      "labelKo": "마야 문자와 왕조 기억",
+      "parentId": "maya-lowland-postclassic-networks",
+      "periodKo": "4-9세기",
+      "summaryKo": "팔렌케, 코판, 야슈칠란, 보남팍의 비문과 부조를 통해 왕조 계보, 전쟁, 의례, 여성 엘리트 역할을 비교합니다."
+    },
+    {
+      "id": "northern-yucatan-urban-exchange",
+      "labelKo": "북부·동부 유카탄 도시 교류",
+      "parentId": "maya-lowland-postclassic-networks",
+      "periodKo": "7-16세기",
+      "summaryKo": "우슈말, 마야판, 코바, 툴룸을 묶어 북부·동부 유카탄의 도시 권력, 도로망, 해상 교역, 장기 지속성을 비교합니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "palenque",
+      "titleKo": "팔렌케",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "멕시코",
+      "coordinates": {
+        "lat": 17.4849,
+        "lng": -92.0468
+      },
+      "yearLabelKo": "5-8세기, 600-700년경 전성기",
+      "summaryKo": "우수마신타 유역의 고전기 마야 왕조 도시로, 비문 신전과 궁전, 파칼 왕 관련 기록이 왕권·계보·의례를 복원하는 핵심 자료가 됩니다.",
+      "stage2": {
+        "primaryContextId": "classic-maya-dynastic-centers",
+        "contextIds": [
+          "maya-lowland-postclassic-networks",
+          "classic-maya-dynastic-centers",
+          "usumacinta-river-cities",
+          "maya-writing-dynastic-memory"
+        ],
+        "periodPathKo": [
+          "고대",
+          "마야 고전기",
+          "팔렌케 왕조 도시와 비문 기록"
+        ],
+        "topicTagsKo": [
+          "팔렌케",
+          "라캄하",
+          "파칼 왕",
+          "비문 신전",
+          "우수마신타"
+        ],
+        "uiFilters": {
+          "era": "고전기 마야",
+          "region": "치아파스·우수마신타",
+          "theme": [
+            "왕조 도시국가",
+            "상형문자·비문",
+            "강변 도시"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "UNESCO 팔렌케 세계유산 자료와 World History Encyclopedia, Britannica 항목을 함께 사용해 중심 유적권과 왕조 도시 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "copan",
+      "titleKo": "코판",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "온두라스",
+      "coordinates": {
+        "lat": 14.8383,
+        "lng": -89.1404
+      },
+      "yearLabelKo": "5-9세기",
+      "summaryKo": "마야 남동부 저지대의 대표 왕조 중심지로, 석비와 제단, 상형문자 계단이 고전기 마야 정치사와 왕조 기억을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "classic-maya-dynastic-centers",
+        "contextIds": [
+          "maya-lowland-postclassic-networks",
+          "classic-maya-dynastic-centers",
+          "maya-writing-dynastic-memory"
+        ],
+        "periodPathKo": [
+          "고대",
+          "마야 고전기",
+          "코판 왕조와 상형문자 계단"
+        ],
+        "topicTagsKo": [
+          "코판",
+          "상형문자 계단",
+          "석비",
+          "마야 남동부",
+          "야슈 쿠크 모"
+        ],
+        "uiFilters": {
+          "era": "고전기 마야",
+          "region": "마야 남동부 저지대",
+          "theme": [
+            "왕조 도시국가",
+            "상형문자·비문"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 코판 세계유산 자료와 World History Encyclopedia 항목을 사용해 좌표와 고전기 왕조 중심지 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "uxmal",
+      "titleKo": "우슈말",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "멕시코",
+      "coordinates": {
+        "lat": 20.3599,
+        "lng": -89.7709
+      },
+      "yearLabelKo": "7-10세기",
+      "summaryKo": "유카탄 푸크 지역의 대표 마야 도시로, 마법사의 피라미드와 총독궁, 정교한 석조 장식이 후기 고전기 북부 유카탄 권력 경관을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "puuc-yucatan-architecture",
+        "contextIds": [
+          "maya-lowland-postclassic-networks",
+          "puuc-yucatan-architecture",
+          "northern-yucatan-urban-exchange"
+        ],
+        "periodPathKo": [
+          "중세",
+          "마야 후기 고전기",
+          "유카탄 푸크 건축과 도시 권력"
+        ],
+        "topicTagsKo": [
+          "우슈말",
+          "푸크",
+          "마법사의 피라미드",
+          "총독궁",
+          "유카탄"
+        ],
+        "uiFilters": {
+          "era": "푸크 양식",
+          "region": "유카탄 푸크 지역",
+          "theme": [
+            "푸크 건축",
+            "왕조 도시국가"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "UNESCO 우슈말 세계유산 자료와 World History Encyclopedia, Britannica 항목을 사용해 푸크 건축과 유적권 위치를 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "mayapan",
+      "titleKo": "마야판",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "멕시코",
+      "coordinates": {
+        "lat": 20.6293,
+        "lng": -89.459
+      },
+      "yearLabelKo": "13-15세기",
+      "summaryKo": "치첸이트사 이후 북부 유카탄의 포스트클래식 정치 중심지로, 성벽 도시와 의례 구조가 마야판 동맹과 후기 마야 정치 질서를 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "postclassic-mayapan-yucatan-politics",
+        "contextIds": [
+          "maya-lowland-postclassic-networks",
+          "postclassic-mayapan-yucatan-politics",
+          "northern-yucatan-urban-exchange"
+        ],
+        "periodPathKo": [
+          "중세",
+          "마야 포스트클래식",
+          "마야판 동맹과 북부 유카탄 정치"
+        ],
+        "topicTagsKo": [
+          "마야판",
+          "마야판 동맹",
+          "코콤",
+          "성벽 도시",
+          "유카탄 북부"
+        ],
+        "uiFilters": {
+          "era": "포스트클래식 마야",
+          "region": "유카탄 북부",
+          "theme": [
+            "포스트클래식 정치",
+            "왕조 도시국가"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "INAH 마야판 고고유적 자료와 Britannica, World History Encyclopedia 마야 문명 항목을 사용해 위치와 포스트클래식 정치 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "coba",
+      "titleKo": "코바",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "멕시코",
+      "coordinates": {
+        "lat": 20.4917,
+        "lng": -87.7322
+      },
+      "yearLabelKo": "6-15세기",
+      "summaryKo": "동부 유카탄 내륙의 호수와 사크베 도로망을 바탕으로 성장한 마야 도시로, 내륙 중심지와 카리브 해안 거점의 연결을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "eastern-yucatan-sacbe-coastal-network",
+        "contextIds": [
+          "maya-lowland-postclassic-networks",
+          "eastern-yucatan-sacbe-coastal-network",
+          "caribbean-coastal-trade-pilgrimage",
+          "northern-yucatan-urban-exchange"
+        ],
+        "periodPathKo": [
+          "중세",
+          "동부 유카탄",
+          "코바 사크베 도로망과 해안 연결"
+        ],
+        "topicTagsKo": [
+          "코바",
+          "사크베",
+          "노호치 물",
+          "동부 유카탄",
+          "카리브 해안"
+        ],
+        "uiFilters": {
+          "era": "동부 유카탄 장기 지속",
+          "region": "동부 유카탄 내륙",
+          "theme": [
+            "사크베 도로망",
+            "해상 교역",
+            "포스트클래식 정치"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "INAH 코바 고고유적 자료와 Britannica 항목을 사용해 내륙 호수권 유적 위치와 도로망 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "bonampak",
+      "titleKo": "보남팍",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "멕시코",
+      "coordinates": {
+        "lat": 16.704,
+        "lng": -91.066
+      },
+      "yearLabelKo": "6-9세기, 8세기 벽화",
+      "summaryKo": "야슈칠란과 연결된 후기 고전기 마야 도시로, 궁정·전쟁·의례 벽화가 지배층의 복식, 음악, 포로 처리와 왕위 계승 장면을 시각적으로 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "bonampak-painted-court-scenes",
+        "contextIds": [
+          "maya-lowland-postclassic-networks",
+          "usumacinta-river-cities",
+          "bonampak-painted-court-scenes",
+          "maya-writing-dynastic-memory"
+        ],
+        "periodPathKo": [
+          "고대",
+          "마야 후기 고전기",
+          "보남팍 궁정 벽화와 우수마신타 정치"
+        ],
+        "topicTagsKo": [
+          "보남팍",
+          "궁정 벽화",
+          "야슈칠란",
+          "라칸돈 정글",
+          "전쟁 의례"
+        ],
+        "uiFilters": {
+          "era": "후기 고전기 마야",
+          "region": "치아파스·우수마신타",
+          "theme": [
+            "궁정 벽화",
+            "상형문자·비문",
+            "왕조 도시국가"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "INAH 보남팍 고고유적 자료와 Britannica 항목을 사용해 좌표와 벽화 중심의 해석 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "yaxchilan",
+      "titleKo": "야슈칠란",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "멕시코",
+      "coordinates": {
+        "lat": 16.8989,
+        "lng": -90.9672
+      },
+      "yearLabelKo": "4-9세기",
+      "summaryKo": "우수마신타강변의 후기 고전기 마야 강국으로, 문설주 부조와 비문이 왕조 의례, 전쟁, 여성 엘리트의 역할을 자세히 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "usumacinta-river-cities",
+        "contextIds": [
+          "maya-lowland-postclassic-networks",
+          "classic-maya-dynastic-centers",
+          "usumacinta-river-cities",
+          "maya-writing-dynastic-memory"
+        ],
+        "periodPathKo": [
+          "고대",
+          "마야 후기 고전기",
+          "우수마신타 강권 왕조 경쟁"
+        ],
+        "topicTagsKo": [
+          "야슈칠란",
+          "우수마신타",
+          "방패재규어",
+          "새재규어",
+          "문설주 부조"
+        ],
+        "uiFilters": {
+          "era": "후기 고전기 마야",
+          "region": "치아파스·우수마신타",
+          "theme": [
+            "강변 도시",
+            "상형문자·비문",
+            "왕조 도시국가"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "INAH 야슈칠란 고고유적 자료와 World History Encyclopedia 항목을 사용해 강변 유적 위치와 왕조 비문 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "tulum",
+      "titleKo": "툴룸",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "멕시코",
+      "coordinates": {
+        "lat": 20.2147,
+        "lng": -87.429
+      },
+      "yearLabelKo": "13-16세기",
+      "summaryKo": "카리브 해 절벽 위의 포스트클래식 마야 항구·의례 도시로, 성벽과 엘 카스티요, 해안 접근로가 해상 교역과 순례 거점의 성격을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "caribbean-coastal-trade-pilgrimage",
+        "contextIds": [
+          "maya-lowland-postclassic-networks",
+          "eastern-yucatan-sacbe-coastal-network",
+          "caribbean-coastal-trade-pilgrimage",
+          "northern-yucatan-urban-exchange"
+        ],
+        "periodPathKo": [
+          "중세-근세 초",
+          "마야 포스트클래식",
+          "카리브 해상 교역과 순례 항구"
+        ],
+        "topicTagsKo": [
+          "툴룸",
+          "사마",
+          "카리브 해상 교역",
+          "엘 카스티요",
+          "유카탄 동해안"
+        ],
+        "uiFilters": {
+          "era": "포스트클래식 마야",
+          "region": "유카탄 동해안",
+          "theme": [
+            "해상 교역",
+            "순례·의례 항구",
+            "포스트클래식 정치"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "INAH 툴룸 고고유적 자료와 World History Encyclopedia 항목을 사용해 해안 절벽 유적권과 포스트클래식 항구 맥락을 확인했습니다."
+        }
+      }
+    }
+  ]
+}

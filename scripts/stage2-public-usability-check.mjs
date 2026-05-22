@@ -91,6 +91,11 @@ const datasets = [
     path: 'data/stage2/southeast-asia-early-states-preview.json',
     count: 8,
     firstEntryId: 'oc-eo'
+  },
+  {
+    path: 'data/stage2/maya-lowland-postclassic-preview.json',
+    count: 8,
+    firstEntryId: 'palenque'
   }
 ];
 
@@ -188,8 +193,8 @@ function assertCheck(condition, message, details = undefined) {
 async function main() {
   await mkdir(outputDir, { recursive: true });
   const userDataDir = await mkdtemp(path.join(os.tmpdir(), 'wgis-stage2-public-'));
-  const desktopShot = path.join(outputDir, 'wgis-stage2-fourteen-datasets-desktop.png');
-  const mobileShot = path.join(outputDir, 'wgis-stage2-fourteen-datasets-mobile.png');
+  const desktopShot = path.join(outputDir, 'wgis-stage2-fifteen-datasets-desktop.png');
+  const mobileShot = path.join(outputDir, 'wgis-stage2-fifteen-datasets-mobile.png');
 
   const chrome = spawn(chromePath, [
     '--headless=new',
@@ -442,6 +447,7 @@ async function main() {
     const westAfrica = datasets.find(dataset => dataset.path.endsWith('west-africa-early-states-preview.json'));
     const andes = datasets.find(dataset => dataset.path.endsWith('andean-core-sites-preview.json'));
     const southeastAsia = datasets.find(dataset => dataset.path.endsWith('southeast-asia-early-states-preview.json'));
+    const maya = datasets.find(dataset => dataset.path.endsWith('maya-lowland-postclassic-preview.json'));
     await selectDataset(greece);
     await setSearch('델포이', 1);
     state = await captureState('desktop-greece-search-delphi');
@@ -768,6 +774,46 @@ async function main() {
       state
     );
 
+    await selectDataset(maya);
+    await setSearch('야슈칠란', 2);
+    state = await captureState('desktop-maya-search-yaxchilan');
+    assertCheck(state.entryIds.includes('bonampak') && state.entryIds.includes('yaxchilan'), 'Maya search should find Yaxchilan-related entries', state);
+
+    await clickEntry('yaxchilan', '야슈칠란');
+    state = await captureState('desktop-maya-detail-yaxchilan');
+    assertCheck(state.detailTitle === '야슈칠란' && state.detailHasConfidence && state.detailActions === 2, 'Maya detail should show Yaxchilan and detail actions', state);
+
+    await clickDetailAction('close');
+    await waitForExpression("document.querySelector('#detailPanel')?.classList.contains('is-empty') && !document.querySelector('.entry-card.active')", 'desktop Maya detail closes');
+    state = await captureState('desktop-maya-detail-closed');
+    assertCheck(state.detailHidden && state.markers === 2 && state.labels === 2, 'Closing Maya detail should preserve current search markers', state);
+
+    await setSearch('', 8);
+    await clickContextId('usumacinta-river-cities', 3);
+    state = await captureState('desktop-maya-usumacinta-context');
+    assertCheck(
+      state.entryIds.includes('palenque') &&
+        state.entryIds.includes('bonampak') &&
+        state.entryIds.includes('yaxchilan') &&
+        state.contextFilterButtons <= 4,
+      'Usumacinta context should return Palenque, Bonampak, and Yaxchilan while filters collapse again',
+      state
+    );
+
+    await selectDataset(datasets[0]);
+    await waitForExpression("typeof stage2Map !== 'undefined' && stage2Map.getZoom() <= 4", 'Atlantic map refits after Maya dataset');
+    state = await captureState('desktop-return-atlantic-after-maya');
+    assertCheck(
+      state.entryCountNumber === 8 &&
+        state.markers === 8 &&
+        state.labels === 8 &&
+        state.mapZoom <= 4 &&
+        !state.entryIds.includes('yaxchilan') &&
+        !state.entryIds.includes('bonampak'),
+      'Switching away from Maya dataset should clear stale list, markers, labels, and map view',
+      state
+    );
+
     const desktopPng = await client.send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: false }, sessionId);
     await writeFile(desktopShot, Buffer.from(desktopPng.data, 'base64'));
 
@@ -781,28 +827,28 @@ async function main() {
       screenOrientation: { type: 'portraitPrimary', angle: 0 }
     });
 
-    await selectDataset(southeastAsia);
+    await selectDataset(maya);
     await evaluate(`(() => {
       const list = document.querySelector('.entry-list');
       list.scrollTop = 360;
     })()`);
     await waitForExpression("document.querySelector('.entry-list')?.scrollTop > 0", 'mobile entry list scrolls');
-    state = await captureState('mobile-southeast-asia-list-scroll');
+    state = await captureState('mobile-maya-list-scroll');
     assertCheck(state.entryListCanScroll && state.entryListScrollTop > 0 && state.contextFilterButtons <= 4, 'Mobile Stage 2 entry list should scroll independently with compact filters', state);
 
-    await clickEntry('oc-eo', '옥에오');
+    await clickEntry('palenque', '팔렌케');
     await waitForExpression("document.querySelector('#detailPanel')?.getBoundingClientRect().top < 80", 'mobile detail scrolls into view');
-    state = await captureState('mobile-southeast-asia-detail-oc-eo');
-    assertCheck(state.detailTitle === '옥에오' && state.detailPosition === 'static' && state.detailTop < 80 && state.documentHeight > state.viewportHeight, 'Mobile detail should sit in normal page flow and scroll into view after selection', state);
+    state = await captureState('mobile-maya-detail-palenque');
+    assertCheck(state.detailTitle === '팔렌케' && state.detailPosition === 'static' && state.detailTop < 80 && state.documentHeight > state.viewportHeight, 'Mobile detail should sit in normal page flow and scroll into view after selection', state);
 
     await clickDetailAction('focus-map');
     await waitForExpression("(() => { const top = document.querySelector('#stage2Map')?.getBoundingClientRect().top || 0; return typeof stage2Map !== 'undefined' && stage2Map.getZoom() >= 8 && top > -80 && top < window.innerHeight - 80; })()", 'mobile detail map focus returns to map');
-    state = await captureState('mobile-southeast-asia-focus-map');
-    assertCheck(state.detailTitle === '옥에오' && state.mapTop > -80 && state.mapTop < state.viewportHeight - 80 && state.mapZoom >= 8, 'Mobile map focus should return to the selected map location', state);
+    state = await captureState('mobile-maya-focus-map');
+    assertCheck(state.detailTitle === '팔렌케' && state.mapTop > -80 && state.mapTop < state.viewportHeight - 80 && state.mapZoom >= 8, 'Mobile map focus should return to the selected map location', state);
 
     await clickDetailAction('close');
     await waitForExpression("document.querySelector('#detailPanel')?.classList.contains('is-empty') && !document.querySelector('.entry-card.active')", 'mobile detail closes');
-    state = await captureState('mobile-southeast-asia-detail-closed');
+    state = await captureState('mobile-maya-detail-closed');
     assertCheck(state.detailHidden && state.activeEntryCards === 0 && state.mapTop > -80 && state.mapTop < state.viewportHeight - 80, 'Mobile close should hide detail and return to the map area', state);
 
     const mobilePng = await client.send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: false }, sessionId);
