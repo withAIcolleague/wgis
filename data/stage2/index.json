@@ -104,6 +104,12 @@
       "titleKo": "라피타와 태평양 정착 경관",
       "path": "data/stage2/lapita-pacific-settlement-preview.json",
       "status": "preview-only"
+    },
+    {
+      "id": "stage2-north-america-indigenous-mound-urban-centers-preview",
+      "titleKo": "북미 원주민 봉분·도시 중심지",
+      "path": "data/stage2/north-america-indigenous-mound-urban-centers-preview.json",
+      "status": "preview-only"
     }
   ]
 }

@@ -217,6 +217,17 @@ The seventeenth pilot dataset tests Lapita expansion, Polynesian navigation, cer
 - `rapa-nui`
 - `taputapuatea`
 
+The eighteenth pilot dataset tests North American Indigenous earthwork landscapes, Ancestral Pueblo networks, Mississippian urbanism, Cahokia, Poverty Point, Chaco, and cross-regional exchange routes:
+
+- `cahokia-mounds`
+- `chaco-canyon`
+- `mesa-verde`
+- `poverty-point`
+- `serpent-mound`
+- `etowah-mounds`
+- `spiro-mounds`
+- `moundville`
+
 The dataset list is managed in:
 
 ```text
@@ -466,3 +477,18 @@ The 2026-05-22 seventeen-dataset browser pass checks `/stage2-preview.html` afte
 - Switching back from the Lapita/Pacific dataset to Atlantic revolutions clears stale Pacific list items, markers, labels, and map zoom state.
 - On mobile, the Lapita/Pacific entry list scrolls independently, `푸에 반도 Lapita` detail scrolls into view, `지도에서 보기` returns to the map, and `닫기` hides the detail panel.
 - Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-seventeen-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-seventeen-datasets-mobile.png`.
+
+## Eighteen-Dataset Public Usability Pass
+
+The 2026-05-22 eighteen-dataset browser pass checks `/stage2-preview.html` after adding the North American Indigenous mound and urban centers pilot dataset:
+
+- Dataset selector exposes 18 datasets.
+- All 18 indexed datasets render their expected entry, marker, and permanent-label counts: Atlantic revolutions 8, Ethiopia 8, Mesopotamia 10, Egypt 14, Indus 8, Early China 8, Ancient Greece 10, Achaemenid Persia 8, Roman Republic and Empire 8, Magadha-Maurya 8, Mesoamerica 8, West Africa 8, Andes 8, Southeast Asia 8, Maya lowland/Postclassic 8, Swahili Coast 8, Lapita/Pacific 8, and North American Indigenous mound/urban centers 8.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control after every dataset switch.
+- Searching `카호키아` in the North America dataset narrows the list and map to 1 entry, marker, and label.
+- Selecting `카호키아 마운즈` opens the detail panel with source-confidence information and detail actions.
+- Closing the `카호키아 마운즈` detail panel preserves the current search marker and label.
+- The `동남부 미시시피 권력 중심지` context filter returns 2 entries: `에토와 마운즈` and `마운드빌`.
+- Switching back from the North America dataset to Atlantic revolutions clears stale North America list items, markers, labels, and map zoom state.
+- On mobile, the North America entry list scrolls independently, `카호키아 마운즈` detail scrolls into view, `지도에서 보기` returns to the map, and `닫기` hides the detail panel.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-eighteen-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-eighteen-datasets-mobile.png`.

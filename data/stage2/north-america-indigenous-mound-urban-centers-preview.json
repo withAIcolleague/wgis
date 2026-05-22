@@ -1,0 +1,525 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-north-america-indigenous-mound-urban-centers-preview",
+  "titleKo": "2단계 미리보기: 북미 원주민 봉분·도시 중심지",
+  "descriptionKo": "고대기 후기 토목 경관, 오하이오 계곡 의례 봉분, 조상 푸에블로 건축 네트워크, 미시시피 문화 도시 중심지와 장거리 교역망을 비교하기 위한 2단계 미리보기 데이터셋입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "고대기 후기",
+        "조상 푸에블로",
+        "오하이오 계곡 의례",
+        "미시시피 문화",
+        "카도계 미시시피",
+        "남부 애팔래치아 미시시피"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "미시시피 하류",
+        "아메리칸 보텀",
+        "포 코너스",
+        "오하이오 계곡",
+        "에토와 강 유역",
+        "아칸소 강 유역",
+        "블랙 워리어 강 유역"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "토목 경관",
+        "봉분·광장",
+        "도시 중심지",
+        "의례 경관",
+        "장거리 교역",
+        "조상 푸에블로 건축",
+        "절벽 주거",
+        "권력 중심지"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지도 유형",
+      "options": [
+        "유적"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "north-american-indigenous-mound-urban-centers",
+      "labelKo": "북미 원주민 봉분·도시 중심지",
+      "parentId": null,
+      "periodKo": "기원전 1700년경-16세기",
+      "summaryKo": "미시시피 하류, 오하이오 계곡, 포 코너스, 동남부와 중부 강 유역의 토목 경관·의례 중심지·도시 중심지를 함께 비교하는 상위 맥락입니다."
+    },
+    {
+      "id": "lower-mississippi-archaic-earthworks",
+      "labelKo": "미시시피 하류 고대기 토목 경관",
+      "parentId": "north-american-indigenous-mound-urban-centers",
+      "periodKo": "기원전 1700-1100년경",
+      "summaryKo": "포버티 포인트처럼 본격적인 농경 도시 이전에도 대규모 노동 조직, 계획 토목, 장거리 교환망이 결합했음을 보여주는 경관입니다."
+    },
+    {
+      "id": "ohio-valley-effigy-ceremonial-landscapes",
+      "labelKo": "오하이오 계곡 상징 봉분 경관",
+      "parentId": "north-american-indigenous-mound-urban-centers",
+      "periodKo": "1천년기 후반-12세기경",
+      "summaryKo": "서펀트 마운드 같은 effigy mound를 통해 지형, 천문 방향, 의례 상징이 결합된 북미 동부 의례 경관을 살펴봅니다."
+    },
+    {
+      "id": "ancestral-pueblo-four-corners-network",
+      "labelKo": "포 코너스 조상 푸에블로 네트워크",
+      "parentId": "north-american-indigenous-mound-urban-centers",
+      "periodKo": "6-13세기",
+      "summaryKo": "차코 캐니언과 메사 베르데를 묶어 고원·협곡 환경에서 대형 건축, 도로망, 의례 공간, 절벽 주거가 어떻게 조직되었는지 비교합니다."
+    },
+    {
+      "id": "chacoan-road-ritual-centers",
+      "labelKo": "차코식 도로·의례 중심지",
+      "parentId": "ancestral-pueblo-four-corners-network",
+      "periodKo": "850-1250년경",
+      "summaryKo": "차코 캐니언의 대형 푸에블로, 도로망, 천문 정렬, 의례 공간을 중심으로 포 코너스 장거리 네트워크를 살펴봅니다."
+    },
+    {
+      "id": "mesa-verde-cliff-dwellings",
+      "labelKo": "메사 베르데 절벽 주거 경관",
+      "parentId": "ancestral-pueblo-four-corners-network",
+      "periodKo": "6-13세기",
+      "summaryKo": "메사 위 농경과 12-13세기 절벽 주거를 통해 물 관리, 공동체 조직, 방어와 의례 공간의 변화를 살펴봅니다."
+    },
+    {
+      "id": "mississippian-urban-mound-centers",
+      "labelKo": "미시시피 문화 도시·봉분 중심지",
+      "parentId": "north-american-indigenous-mound-urban-centers",
+      "periodKo": "900-1550년경",
+      "summaryKo": "카호키아, 에토와, 스피로, 마운드빌을 묶어 봉분, 광장, 목책, 권력 중심지, 의례 네트워크가 결합된 미시시피 문화권 도시화를 비교합니다."
+    },
+    {
+      "id": "cahokia-american-bottom-urbanism",
+      "labelKo": "카호키아와 아메리칸 보텀 도시화",
+      "parentId": "mississippian-urban-mound-centers",
+      "periodKo": "1050-1350년경",
+      "summaryKo": "몽크스 마운드와 광장을 중심으로 북미 최대급 선콜럼버스 도시 중심지가 농업·의례·정치권력과 결합한 양상을 살펴봅니다."
+    },
+    {
+      "id": "southeastern-mississippian-chiefdom-centers",
+      "labelKo": "동남부 미시시피 권력 중심지",
+      "parentId": "mississippian-urban-mound-centers",
+      "periodKo": "1000-1550년경",
+      "summaryKo": "에토와와 마운드빌을 통해 동남부 강 유역의 봉분·광장·방어 시설·엘리트 거주지가 정치 중심지로 구성되는 방식을 비교합니다."
+    },
+    {
+      "id": "caddoan-mississippian-exchange-spiro",
+      "labelKo": "카도계 미시시피 교역과 스피로",
+      "parentId": "mississippian-urban-mound-centers",
+      "periodKo": "800-1450년경",
+      "summaryKo": "스피로 마운즈를 중심으로 걸프 해안, 오대호, 대서양 연안을 잇는 조개·동판·석재·상징물 교역과 의례 네트워크를 살펴봅니다."
+    },
+    {
+      "id": "eastern-woodlands-long-distance-exchange-ritual",
+      "labelKo": "동부 우드랜드 장거리 교역·의례망",
+      "parentId": "north-american-indigenous-mound-urban-centers",
+      "periodKo": "고대기 후기-16세기",
+      "summaryKo": "포버티 포인트, 카호키아, 에토와, 스피로, 마운드빌을 가로질러 토목 경관과 장거리 교역품이 어떻게 의례·권력 네트워크를 형성했는지 연결합니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "cahokia-mounds",
+      "titleKo": "카호키아 마운즈",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "미국",
+      "coordinates": {
+        "lat": 38.6551,
+        "lng": -90.0618
+      },
+      "yearLabelKo": "1050-1350년경 전성기",
+      "summaryKo": "미시시피 강 동쪽 아메리칸 보텀에 형성된 북미 최대급 선콜럼버스 도시 중심지로, 몽크스 마운드와 광장, 목책, 수십 기의 봉분이 복합적으로 배치되어 있습니다.",
+      "stage2": {
+        "primaryContextId": "cahokia-american-bottom-urbanism",
+        "contextIds": [
+          "north-american-indigenous-mound-urban-centers",
+          "mississippian-urban-mound-centers",
+          "cahokia-american-bottom-urbanism",
+          "eastern-woodlands-long-distance-exchange-ritual"
+        ],
+        "periodPathKo": [
+          "중세",
+          "미시시피 문화",
+          "카호키아와 아메리칸 보텀 도시화"
+        ],
+        "topicTagsKo": [
+          "카호키아",
+          "몽크스 마운드",
+          "아메리칸 보텀",
+          "미시시피 문화",
+          "선콜럼버스 도시"
+        ],
+        "uiFilters": {
+          "era": "미시시피 문화",
+          "region": "아메리칸 보텀",
+          "theme": [
+            "도시 중심지",
+            "봉분·광장",
+            "권력 중심지",
+            "장거리 교역"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 카호키아 세계유산 자료와 World History Encyclopedia 항목을 함께 사용해 위치와 미시시피 문화권 중심지 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "chaco-canyon",
+      "titleKo": "차코 캐니언",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "미국",
+      "coordinates": {
+        "lat": 36.0591,
+        "lng": -107.9618
+      },
+      "yearLabelKo": "850-1250년경",
+      "summaryKo": "포 코너스 지역의 조상 푸에블로 문화 중심지로, 푸에블로 보니토 같은 대형 건축, 도로망, 천문 정렬, 의례 공간이 집중되어 있습니다.",
+      "stage2": {
+        "primaryContextId": "chacoan-road-ritual-centers",
+        "contextIds": [
+          "north-american-indigenous-mound-urban-centers",
+          "ancestral-pueblo-four-corners-network",
+          "chacoan-road-ritual-centers"
+        ],
+        "periodPathKo": [
+          "중세",
+          "조상 푸에블로 문화",
+          "차코식 도로·의례 중심지"
+        ],
+        "topicTagsKo": [
+          "차코 캐니언",
+          "푸에블로 보니토",
+          "조상 푸에블로",
+          "포 코너스",
+          "차코 도로망"
+        ],
+        "uiFilters": {
+          "era": "조상 푸에블로",
+          "region": "포 코너스",
+          "theme": [
+            "조상 푸에블로 건축",
+            "의례 경관",
+            "장거리 교역"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 0,
+          "noteKo": "UNESCO 차코 문화 세계유산 자료와 미국 국립공원관리청 자료를 사용해 위치, 시기, 조상 푸에블로 네트워크 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "mesa-verde",
+      "titleKo": "메사 베르데",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "미국",
+      "coordinates": {
+        "lat": 37.2309,
+        "lng": -108.4618
+      },
+      "yearLabelKo": "6-13세기, 12-13세기 절벽 주거 전성기",
+      "summaryKo": "조상 푸에블로 사람들이 메사 위와 절벽 아래에 남긴 주거·의례 복합 유적으로, 클리프 팰리스 같은 절벽 주거가 특히 잘 알려져 있습니다.",
+      "stage2": {
+        "primaryContextId": "mesa-verde-cliff-dwellings",
+        "contextIds": [
+          "north-american-indigenous-mound-urban-centers",
+          "ancestral-pueblo-four-corners-network",
+          "mesa-verde-cliff-dwellings"
+        ],
+        "periodPathKo": [
+          "중세",
+          "조상 푸에블로 문화",
+          "메사 베르데 절벽 주거 경관"
+        ],
+        "topicTagsKo": [
+          "메사 베르데",
+          "클리프 팰리스",
+          "절벽 주거",
+          "포 코너스",
+          "조상 푸에블로"
+        ],
+        "uiFilters": {
+          "era": "조상 푸에블로",
+          "region": "포 코너스",
+          "theme": [
+            "절벽 주거",
+            "조상 푸에블로 건축",
+            "의례 경관"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 0,
+          "noteKo": "UNESCO 메사 베르데 국립공원 자료와 미국 국립공원관리청 자료를 사용해 절벽 주거와 고원 공동체 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "poverty-point",
+      "titleKo": "포버티 포인트",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "미국",
+      "coordinates": {
+        "lat": 32.6367,
+        "lng": -91.4115
+      },
+      "yearLabelKo": "기원전 1700-1100년경",
+      "summaryKo": "미시시피 하류의 고대기 후기 토목 복합 유적으로, 반원형 능선, 봉분, 광장이 계획적으로 조성되어 대규모 노동 조직과 장거리 교환망을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "lower-mississippi-archaic-earthworks",
+        "contextIds": [
+          "north-american-indigenous-mound-urban-centers",
+          "lower-mississippi-archaic-earthworks",
+          "eastern-woodlands-long-distance-exchange-ritual"
+        ],
+        "periodPathKo": [
+          "선사",
+          "고대기 후기",
+          "미시시피 하류 토목 경관"
+        ],
+        "topicTagsKo": [
+          "포버티 포인트",
+          "미시시피 하류",
+          "고대기 후기",
+          "반원형 능선",
+          "토목 경관"
+        ],
+        "uiFilters": {
+          "era": "고대기 후기",
+          "region": "미시시피 하류",
+          "theme": [
+            "토목 경관",
+            "봉분·광장",
+            "장거리 교역"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 0,
+          "noteKo": "UNESCO 포버티 포인트 세계유산 자료와 미국 국립공원관리청 자료를 사용해 위치, 시기, 토목 경관 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "serpent-mound",
+      "titleKo": "서펀트 마운드",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "미국",
+      "coordinates": {
+        "lat": 39.025,
+        "lng": -83.4308
+      },
+      "yearLabelKo": "1120년경 추정, 편년 논쟁 있음",
+      "summaryKo": "능선을 따라 뱀 형상으로 조성된 대형 effigy mound로, 지형과 천문·의례 상징을 결합한 북미 동부의 대표적 토목 의례 경관입니다.",
+      "stage2": {
+        "primaryContextId": "ohio-valley-effigy-ceremonial-landscapes",
+        "contextIds": [
+          "north-american-indigenous-mound-urban-centers",
+          "ohio-valley-effigy-ceremonial-landscapes"
+        ],
+        "periodPathKo": [
+          "중세",
+          "오하이오 계곡 봉분 전통",
+          "상징 봉분과 의례 경관"
+        ],
+        "topicTagsKo": [
+          "서펀트 마운드",
+          "Great Serpent Mound",
+          "effigy mound",
+          "오하이오 계곡",
+          "편년 논쟁"
+        ],
+        "uiFilters": {
+          "era": "오하이오 계곡 의례",
+          "region": "오하이오 계곡",
+          "theme": [
+            "토목 경관",
+            "의례 경관"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "Ohio History Connection, UNESCO tentative list, World History Encyclopedia 자료를 함께 사용했지만 조성 주체와 편년에 논쟁이 있어 중간 신뢰도로 관리합니다."
+        }
+      }
+    },
+    {
+      "entryId": "etowah-mounds",
+      "titleKo": "에토와 마운즈",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "미국",
+      "coordinates": {
+        "lat": 34.1264,
+        "lng": -84.8089
+      },
+      "yearLabelKo": "1000-1550년경",
+      "summaryKo": "에토와 강가의 미시시피 문화권 중심지로, 평정 봉분, 광장, 방어 도랑, 주거 구역과 의례 유물이 확인되는 동남부 권력 중심지입니다.",
+      "stage2": {
+        "primaryContextId": "southeastern-mississippian-chiefdom-centers",
+        "contextIds": [
+          "north-american-indigenous-mound-urban-centers",
+          "mississippian-urban-mound-centers",
+          "southeastern-mississippian-chiefdom-centers",
+          "eastern-woodlands-long-distance-exchange-ritual"
+        ],
+        "periodPathKo": [
+          "중세",
+          "남부 애팔래치아 미시시피 문화",
+          "에토와 강 유역 권력 중심지"
+        ],
+        "topicTagsKo": [
+          "에토와 마운즈",
+          "에토와 강",
+          "동남부 미시시피",
+          "동판",
+          "의례 유물"
+        ],
+        "uiFilters": {
+          "era": "남부 애팔래치아 미시시피",
+          "region": "에토와 강 유역",
+          "theme": [
+            "권력 중심지",
+            "봉분·광장",
+            "장거리 교역"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "Georgia State Parks, New Georgia Encyclopedia, World History Encyclopedia 자료를 사용해 위치와 동남부 미시시피 문화권 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "spiro-mounds",
+      "titleKo": "스피로 마운즈",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "미국",
+      "coordinates": {
+        "lat": 35.307,
+        "lng": -94.5687
+      },
+      "yearLabelKo": "800-1450년경, 900-1300년 전성기",
+      "summaryKo": "아칸소 강가의 카도계 미시시피 문화 중심지로, 12개 봉분과 엘리트 거주지, 의례 유물이 알려져 있으며 광역 교역·의례 네트워크를 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "caddoan-mississippian-exchange-spiro",
+        "contextIds": [
+          "north-american-indigenous-mound-urban-centers",
+          "mississippian-urban-mound-centers",
+          "caddoan-mississippian-exchange-spiro",
+          "eastern-woodlands-long-distance-exchange-ritual"
+        ],
+        "periodPathKo": [
+          "중세",
+          "카도계 미시시피 문화",
+          "스피로와 장거리 의례 교역망"
+        ],
+        "topicTagsKo": [
+          "스피로 마운즈",
+          "Craig Mound",
+          "카도계 미시시피",
+          "아칸소 강",
+          "장거리 교역"
+        ],
+        "uiFilters": {
+          "era": "카도계 미시시피",
+          "region": "아칸소 강 유역",
+          "theme": [
+            "권력 중심지",
+            "봉분·광장",
+            "장거리 교역",
+            "의례 경관"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "Oklahoma Historical Society 자료와 World History Encyclopedia 자료를 사용해 위치와 카도계 미시시피 교역망 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "moundville",
+      "titleKo": "마운드빌",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "미국",
+      "coordinates": {
+        "lat": 33.0044,
+        "lng": -87.6314
+      },
+      "yearLabelKo": "1000-1450년경",
+      "summaryKo": "블랙 워리어 강 절벽 위의 미시시피 문화권 대형 중심지로, 중앙 광장을 둘러싼 26기 이상의 봉분과 목책, 주거·의례 공간이 확인됩니다.",
+      "stage2": {
+        "primaryContextId": "southeastern-mississippian-chiefdom-centers",
+        "contextIds": [
+          "north-american-indigenous-mound-urban-centers",
+          "mississippian-urban-mound-centers",
+          "southeastern-mississippian-chiefdom-centers",
+          "eastern-woodlands-long-distance-exchange-ritual"
+        ],
+        "periodPathKo": [
+          "중세",
+          "미시시피 문화",
+          "블랙 워리어 강 유역 권력 중심지"
+        ],
+        "topicTagsKo": [
+          "마운드빌",
+          "블랙 워리어 강",
+          "미시시피 문화",
+          "중앙 광장",
+          "봉분 도시"
+        ],
+        "uiFilters": {
+          "era": "미시시피 문화",
+          "region": "블랙 워리어 강 유역",
+          "theme": [
+            "권력 중심지",
+            "봉분·광장",
+            "도시 중심지",
+            "의례 경관"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "University of Alabama Museums, Encyclopedia of Alabama, World History Encyclopedia 자료를 사용해 위치와 남동부 미시시피 중심지 맥락을 확인했습니다."
+        }
+      }
+    }
+  ]
+}
