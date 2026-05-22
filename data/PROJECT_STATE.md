@@ -14,7 +14,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Current entry count: 250
 - Completed curation batches: 31
 - Latest completed batch: `africa-egypt-late-temple-centers-v1`
-- Latest completed infrastructure milestone: stage-2 six-dataset usability pass
+- Latest completed infrastructure milestone: stage-2 compact context filter refinement
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
@@ -126,6 +126,13 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - Scope: verify public preview behavior after adding the sixth dataset
   - Checked: 6-dataset switching, Early China search/filter/detail behavior, stale marker/label cleanup, and mobile entry-list scrolling
   - Result: public browser pass completed for 6 datasets and 56 Stage 2 preview entries
+
+- Stage-2 compact context filter refinement
+  - Files: `stage2-preview.js`, `stage2-preview.css`, `scripts/smoke-check.js`, `docs/stage2-preview.md`
+  - URL path: `/stage2-preview.html`
+  - Scope: reduce visible context-filter footprint as the Stage 2 preview grows beyond a few datasets
+  - Checked: compact filter default state, hidden-context expansion, active-context preservation after selection, dataset switching, search, marker cleanup, and mobile entry-list scrolling
+  - Result: browser pass completed for compact filters across 6 datasets and 56 Stage 2 preview entries
 
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`
@@ -592,11 +599,11 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Stage-2 preview usability refinement
-   - Scope: compact or progressive-disclose preview filters and detail movement if the dataset selector grows beyond the current pilot shape
-
-2. Stage-2 seventh pilot dataset
+1. Stage-2 seventh pilot dataset
    - Scope: create another Stage 2 file from ancient Greece or Achaemenid Persia to compare Mediterranean and imperial network contexts against the current ancient city/civilization samples
+
+2. Stage-2 preview detail-flow refinement
+   - Scope: review whether the desktop detail panel and mobile detail placement need a clearer close, jump, or map-return flow after more datasets are added
 
 3. First-stage DB next expansion batch
    - Scope: resume focused first-stage source-record growth if the priority shifts back from Stage 2 modeling to raw coverage

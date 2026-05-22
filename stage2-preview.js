@@ -5,6 +5,9 @@ let activeDatasetPath = null;
 let activeContextId = 'all';
 let activeEntryId = null;
 let markers = [];
+let contextFiltersExpanded = false;
+
+const CONTEXT_COLLAPSED_LIMIT = 4;
 
 const CONTEXT_ALL = {
   id: 'all',
@@ -43,6 +46,22 @@ function escapeHtml(value) {
 function getContext(id) {
   if (!stage2Data) return null;
   return stage2Data.contexts.find(context => context.id === id);
+}
+
+function getVisibleContexts(contexts) {
+  if (contextFiltersExpanded || contexts.length <= CONTEXT_COLLAPSED_LIMIT) {
+    return contexts;
+  }
+
+  const visible = contexts.slice(0, CONTEXT_COLLAPSED_LIMIT);
+  if (activeContextId !== CONTEXT_ALL.id && !visible.some(context => context.id === activeContextId)) {
+    const activeContext = contexts.find(context => context.id === activeContextId);
+    if (activeContext) {
+      visible[visible.length - 1] = activeContext;
+    }
+  }
+
+  return visible;
 }
 
 function getFilteredEntries() {
@@ -147,17 +166,35 @@ function renderContextFilters() {
   }
 
   const contexts = [CONTEXT_ALL, ...stage2Data.contexts];
+  const visibleContexts = getVisibleContexts(contexts);
+  const hiddenCount = Math.max(contexts.length - visibleContexts.length, 0);
+  const shouldShowToggle = contexts.length > CONTEXT_COLLAPSED_LIMIT;
 
-  container.innerHTML = contexts.map(context => `
+  container.classList.toggle('is-collapsed', shouldShowToggle && !contextFiltersExpanded);
+  container.innerHTML = [
+    ...visibleContexts.map(context => `
     <button class="context-chip ${context.id === activeContextId ? 'active' : ''}" type="button" data-context-id="${escapeHtml(context.id)}">
       ${escapeHtml(context.labelKo)}
     </button>
-  `).join('');
+    `),
+    shouldShowToggle
+      ? `<button class="context-chip context-filter-toggle" type="button" data-filter-toggle="context" aria-controls="contextFilters" aria-expanded="${contextFiltersExpanded ? 'true' : 'false'}">${contextFiltersExpanded ? '접기' : `+${hiddenCount}개`}</button>`
+      : ''
+  ].join('');
 
-  container.querySelectorAll('button').forEach(button => {
+  const toggleButton = container.querySelector('[data-filter-toggle="context"]');
+  if (toggleButton) {
+    toggleButton.addEventListener('click', () => {
+      contextFiltersExpanded = !contextFiltersExpanded;
+      renderContextFilters();
+    });
+  }
+
+  container.querySelectorAll('button[data-context-id]').forEach(button => {
     button.addEventListener('click', () => {
       activeContextId = button.dataset.contextId;
       activeEntryId = null;
+      contextFiltersExpanded = false;
       update();
     });
   });
@@ -345,6 +382,7 @@ async function loadDataset(path) {
   activeDatasetPath = path;
   activeContextId = 'all';
   activeEntryId = null;
+  contextFiltersExpanded = false;
   document.getElementById('stage2Search').value = '';
   renderDatasetSelect();
   update();

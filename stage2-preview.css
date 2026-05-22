@@ -170,6 +170,16 @@ select {
   cursor: pointer;
 }
 
+.context-filter-toggle {
+  border-style: dashed;
+  background: #fffdf6;
+  color: #365a42;
+}
+
+.chip-row.is-collapsed {
+  align-items: flex-start;
+}
+
 .context-chip.active {
   border-color: #365a42;
   background: #365a42;

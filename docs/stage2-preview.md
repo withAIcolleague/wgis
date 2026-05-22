@@ -148,3 +148,12 @@ The 2026-05-22 public browser pass checked `/stage2-preview.html` after adding t
 - The `초기 상 도성 네트워크` context filter returns 3 Early China entries.
 - Switching from Early China back to Atlantic revolutions clears stale Early China markers and labels.
 - On mobile, the Early China entry list scrolls independently and the detail panel stays in normal page flow below the map.
+
+## UI Refinement Pass
+
+The 2026-05-22 compact-filter pass reduced the Stage 2 context filter footprint:
+
+- Context filters now start collapsed to 4 visible context chips plus a `+N개` expansion control.
+- Expanding the context filters exposes hidden research contexts only when needed.
+- Selecting a hidden context collapses the filter list again while keeping the active context visible.
+- Desktop and mobile browser checks confirm the compact filters preserve dataset switching, search, context filtering, marker cleanup, and list scrolling.
