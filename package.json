@@ -6,6 +6,7 @@
   "scripts": {
     "validate": "node scripts/validate-data.js",
     "validate:stage2": "node scripts/validate-stage2.js",
+    "check:stage2-public": "node scripts/stage2-public-usability-check.mjs",
     "smoke": "node scripts/smoke-check.js",
     "check": "npm run validate && npm run validate:stage2 && npm run smoke",
     "start": "python -m http.server 8000"

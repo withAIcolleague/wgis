@@ -14,11 +14,12 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Current entry count: 250
 - Completed curation batches: 31
 - Latest completed batch: `africa-egypt-late-temple-centers-v1`
-- Latest completed infrastructure milestone: stage-2 ancient Greece pilot
+- Latest completed infrastructure milestone: stage-2 seven-dataset usability pass
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
 - Functional smoke-check script: `scripts/smoke-check.js`
+- Stage-2 public usability script: `scripts/stage2-public-usability-check.mjs`
 - Data quality floor: every app entry must have `curationBatch` and at least one valid `sources` URL
 
 ## Completed
@@ -139,6 +140,13 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - URL path: `/stage2-preview.html`
   - Scope: add a seventh Stage 2 preview dataset using the existing ancient Greece core sites batch
   - Model stress test: Aegean Bronze Age palatial worlds, Mycenaean fortress and epic memory, classical polis civic centers, Peloponnesian power centers, Panhellenic sanctuaries and games, Aegean-Anatolian crossroads, and Ionian maritime knowledge networks
+
+- Stage-2 seven-dataset public usability pass
+  - Files: `scripts/stage2-public-usability-check.mjs`, `package.json`, `docs/stage2-preview.md`
+  - URL path: `https://wgis.vercel.app/stage2-preview.html`
+  - Scope: make the public Stage 2 preview browser check repeatable after adding the seventh dataset
+  - Checked: 7-dataset selector, expected entry/marker/label counts across 66 Stage 2 preview entries, compact context filters, Ancient Greece search/detail/context behavior, stale Greek marker cleanup, and mobile entry-list scrolling
+  - Result: public headless Chrome pass completed; screenshots saved under `C:\Users\Public\Documents\ESTsoft\CreatorTemp\`
 
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`
@@ -605,16 +613,13 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Stage-2 seven-dataset usability pass
-   - Scope: verify `/stage2-preview.html` after adding ancient Greece, especially dataset switching, Greek search/filter behavior, compact context filters, stale marker labels, and mobile scrolling
-
-2. Stage-2 preview detail-flow refinement
+1. Stage-2 preview detail-flow refinement
    - Scope: review whether the desktop detail panel and mobile detail placement need a clearer close, jump, or map-return flow after more datasets are added
 
-3. Stage-2 eighth pilot dataset
+2. Stage-2 eighth pilot dataset
    - Scope: create another Stage 2 file from Achaemenid Persia to compare imperial road, capital, inscription, and satrapal network contexts against the current ancient civilization samples
 
-4. First-stage DB next expansion batch
+3. First-stage DB next expansion batch
    - Scope: resume focused first-stage source-record growth if the priority shifts back from Stage 2 modeling to raw coverage
 
 ## Resume Checklist

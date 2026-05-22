@@ -1,0 +1,471 @@
+import { spawn } from 'node:child_process';
+import { mkdir, mkdtemp, rm, writeFile } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+
+const targetUrl = process.argv[2] || 'https://wgis.vercel.app/stage2-preview.html';
+const port = Number(process.argv[3] || 9247);
+const outputDir = process.argv[4] || 'C:/Users/Public/Documents/ESTsoft/CreatorTemp';
+
+const chromeCandidates = [
+  process.env.CHROME_PATH,
+  'C:/Program Files/Google/Chrome/Application/chrome.exe',
+  'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe',
+  'C:/Program Files/Microsoft/Edge/Application/msedge.exe',
+  'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'
+].filter(Boolean);
+
+const chromePath = chromeCandidates.find(candidate => existsSync(candidate));
+if (!chromePath) throw new Error('Chrome or Edge executable was not found');
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+const datasets = [
+  {
+    path: 'data/stage2/atlantic-revolutions-preview.json',
+    count: 8,
+    firstEntryId: 'philadelphia-independence-hall'
+  },
+  {
+    path: 'data/stage2/ethiopia-human-origins-preview.json',
+    count: 8,
+    firstEntryId: 'ardi-aramis'
+  },
+  {
+    path: 'data/stage2/mesopotamia-early-cities-preview.json',
+    count: 10,
+    firstEntryId: 'eridu'
+  },
+  {
+    path: 'data/stage2/egypt-ancient-core-preview.json',
+    count: 14,
+    firstEntryId: 'memphis-egypt'
+  },
+  {
+    path: 'data/stage2/indus-civilization-preview.json',
+    count: 8,
+    firstEntryId: 'mehrgarh'
+  },
+  {
+    path: 'data/stage2/early-china-core-preview.json',
+    count: 8,
+    firstEntryId: 'banpo'
+  },
+  {
+    path: 'data/stage2/ancient-greece-core-preview.json',
+    count: 10,
+    firstEntryId: 'athens-acropolis'
+  }
+];
+
+class CdpClient {
+  constructor(ws) {
+    this.ws = ws;
+    this.nextId = 1;
+    this.pending = new Map();
+    this.listeners = new Map();
+
+    ws.addEventListener('message', event => {
+      const message = JSON.parse(event.data);
+      if (message.id && this.pending.has(message.id)) {
+        const { resolve, reject } = this.pending.get(message.id);
+        this.pending.delete(message.id);
+        message.error ? reject(new Error(message.error.message)) : resolve(message.result || {});
+        return;
+      }
+
+      const key = `${message.sessionId || 'browser'}:${message.method}`;
+      for (const listener of this.listeners.get(key) || []) listener(message.params || {}, message);
+    });
+  }
+
+  static async connect(wsUrl) {
+    const ws = new WebSocket(wsUrl);
+    await new Promise((resolve, reject) => {
+      ws.addEventListener('open', resolve, { once: true });
+      ws.addEventListener('error', reject, { once: true });
+    });
+    return new CdpClient(ws);
+  }
+
+  on(method, sessionId, callback) {
+    const key = `${sessionId || 'browser'}:${method}`;
+    const listeners = this.listeners.get(key) || [];
+    listeners.push(callback);
+    this.listeners.set(key, listeners);
+    return () => this.listeners.set(key, (this.listeners.get(key) || []).filter(listener => listener !== callback));
+  }
+
+  waitForEvent(method, sessionId, timeoutMs = 15000, predicate = () => true) {
+    return new Promise((resolve, reject) => {
+      const timer = setTimeout(() => {
+        off();
+        reject(new Error(`Timed out waiting for ${method}`));
+      }, timeoutMs);
+      const off = this.on(method, sessionId, (params, message) => {
+        if (!predicate(params, message)) return;
+        clearTimeout(timer);
+        off();
+        resolve(params);
+      });
+    });
+  }
+
+  send(method, params = {}, sessionId) {
+    const id = this.nextId++;
+    const payload = { id, method, params };
+    if (sessionId) payload.sessionId = sessionId;
+    return new Promise((resolve, reject) => {
+      this.pending.set(id, { resolve, reject });
+      this.ws.send(JSON.stringify(payload));
+    });
+  }
+
+  close() {
+    this.ws.close();
+  }
+}
+
+async function waitForJson(url, timeoutMs = 15000) {
+  const started = Date.now();
+  let lastError;
+  while (Date.now() - started < timeoutMs) {
+    try {
+      const response = await fetch(url);
+      if (response.ok) return response.json();
+      lastError = new Error(`${response.status} ${response.statusText}`);
+    } catch (error) {
+      lastError = error;
+    }
+    await sleep(250);
+  }
+  throw lastError || new Error(`Timed out waiting for ${url}`);
+}
+
+function assertCheck(condition, message, details = undefined) {
+  if (!condition) {
+    const suffix = details === undefined ? '' : `: ${JSON.stringify(details)}`;
+    throw new Error(`${message}${suffix}`);
+  }
+}
+
+async function main() {
+  await mkdir(outputDir, { recursive: true });
+  const userDataDir = await mkdtemp(path.join(os.tmpdir(), 'wgis-stage2-public-'));
+  const desktopShot = path.join(outputDir, 'wgis-stage2-seven-datasets-desktop.png');
+  const mobileShot = path.join(outputDir, 'wgis-stage2-seven-datasets-mobile.png');
+
+  const chrome = spawn(chromePath, [
+    '--headless=new',
+    `--remote-debugging-port=${port}`,
+    `--user-data-dir=${userDataDir}`,
+    '--disable-gpu',
+    '--no-first-run',
+    '--no-default-browser-check',
+    '--window-size=1440,920',
+    'about:blank'
+  ], { detached: false, stdio: 'ignore' });
+
+  let client;
+  let sessionId;
+  const runtimeErrors = [];
+  const states = [];
+
+  try {
+    const version = await waitForJson(`http://127.0.0.1:${port}/json/version`);
+    client = await CdpClient.connect(version.webSocketDebuggerUrl);
+    const { targetId } = await client.send('Target.createTarget', { url: 'about:blank' });
+    ({ sessionId } = await client.send('Target.attachToTarget', { targetId, flatten: true }));
+    await client.send('Target.activateTarget', { targetId });
+
+    client.on('Runtime.exceptionThrown', sessionId, params => {
+      runtimeErrors.push(params.exceptionDetails?.text || 'Runtime exception');
+    });
+    client.on('Log.entryAdded', sessionId, params => {
+      const entry = params.entry || {};
+      if (entry.level === 'error' && !String(entry.url || '').includes('favicon')) {
+        runtimeErrors.push(entry.text || entry.url || 'Log error');
+      }
+    });
+
+    await client.send('Page.enable', {}, sessionId);
+    await client.send('Runtime.enable', {}, sessionId);
+    await client.send('Log.enable', {}, sessionId);
+    await client.send('Network.enable', {}, sessionId);
+
+    async function evaluate(expression) {
+      const result = await client.send('Runtime.evaluate', {
+        expression,
+        awaitPromise: true,
+        returnByValue: true,
+        userGesture: true
+      }, sessionId);
+      if (result.exceptionDetails) throw new Error(result.exceptionDetails.text || 'Evaluation failed');
+      return result.result?.value;
+    }
+
+    async function waitForExpression(expression, label, timeoutMs = 20000) {
+      const started = Date.now();
+      let last;
+      while (Date.now() - started < timeoutMs) {
+        last = await evaluate(`(() => {
+          try { return Boolean(${expression}); }
+          catch (error) { return String(error && error.message || error); }
+        })()`);
+        if (last === true) return;
+        await sleep(200);
+      }
+      throw new Error(`Timed out waiting for ${label}: ${JSON.stringify(last)}`);
+    }
+
+    async function navigate(metrics) {
+      if (metrics) {
+        await client.send('Emulation.setDeviceMetricsOverride', metrics, sessionId);
+        await client.send('Emulation.setTouchEmulationEnabled', { enabled: Boolean(metrics.mobile) }, sessionId);
+      } else {
+        await client.send('Emulation.clearDeviceMetricsOverride', {}, sessionId);
+        await client.send('Emulation.setTouchEmulationEnabled', { enabled: false }, sessionId);
+      }
+
+      const loaded = client.waitForEvent('Page.loadEventFired', sessionId, 20000).catch(() => null);
+      await client.send('Page.navigate', { url: targetUrl }, sessionId);
+      await loaded;
+      await waitForExpression(
+        `document.readyState === 'complete' &&
+          document.querySelectorAll('#datasetSelect option').length === ${datasets.length} &&
+          document.querySelectorAll('.entry-card').length > 0`,
+        'stage 2 preview initial load'
+      );
+    }
+
+    const stateExpression = label => `(() => {
+      const text = selector => document.querySelector(selector)?.textContent.trim() || '';
+      const countText = text('#entryCount');
+      const entryList = document.querySelector('.entry-list');
+      const detailPanel = document.querySelector('#detailPanel');
+      return {
+        label: ${JSON.stringify(label)},
+        selectedDataset: document.querySelector('#datasetSelect')?.selectedOptions[0]?.textContent.trim() || '',
+        selectedPath: document.querySelector('#datasetSelect')?.value || '',
+        searchValue: document.querySelector('#stage2Search')?.value || '',
+        datasetOptions: [...document.querySelectorAll('#datasetSelect option')].map(option => option.textContent.trim()),
+        entryCountText: countText,
+        entryCountNumber: Number((countText.match(/\\d+/) || ['0'])[0]),
+        entryCards: document.querySelectorAll('.entry-card').length,
+        entryIds: [...document.querySelectorAll('.entry-card')].map(card => card.dataset.entryId),
+        contextFilterButtons: document.querySelectorAll('.context-chip[data-context-id]').length,
+        contextFilterToggle: text('.context-filter-toggle'),
+        activeContext: text('.context-chip.active'),
+        markers: document.querySelectorAll('.leaflet-marker-icon').length,
+        labels: document.querySelectorAll('.leaflet-tooltip.stage2-label').length,
+        detailTitle: text('#detailPanel h2'),
+        detailHasConfidence: text('#detailPanel').includes('출처'),
+        detailPosition: detailPanel ? getComputedStyle(detailPanel).position : '',
+        entryListCanScroll: entryList ? entryList.scrollHeight > entryList.clientHeight : false,
+        entryListScrollTop: entryList ? entryList.scrollTop : 0,
+        entryListClientHeight: entryList ? entryList.clientHeight : 0,
+        entryListScrollHeight: entryList ? entryList.scrollHeight : 0,
+        documentHeight: document.documentElement.scrollHeight,
+        viewportHeight: window.innerHeight
+      };
+    })()`;
+
+    async function captureState(label) {
+      const state = await evaluate(stateExpression(label));
+      states.push(state);
+      return state;
+    }
+
+    async function selectDataset(dataset) {
+      const alreadySelected = await evaluate(`(() => {
+        const firstEntry = document.querySelector(${JSON.stringify(`.entry-card[data-entry-id="${dataset.firstEntryId}"]`)});
+        const count = Number((document.querySelector('#entryCount')?.textContent.match(/\\d+/) || ['0'])[0]);
+        return document.querySelector('#datasetSelect')?.value === ${JSON.stringify(dataset.path)} &&
+          count === ${dataset.count} &&
+          Boolean(firstEntry);
+      })()`);
+
+      if (!alreadySelected) {
+        await evaluate(`(() => {
+          const select = document.getElementById('datasetSelect');
+          select.value = ${JSON.stringify(dataset.path)};
+          select.dispatchEvent(new Event('change', { bubbles: true }));
+        })()`);
+      }
+
+      await waitForExpression(
+        `document.querySelector('#datasetSelect')?.value === ${JSON.stringify(dataset.path)} &&
+          Number((document.querySelector('#entryCount')?.textContent.match(/\\d+/) || ['0'])[0]) === ${dataset.count} &&
+          document.querySelectorAll('.entry-card').length === ${dataset.count} &&
+          document.querySelectorAll('.leaflet-marker-icon').length === ${dataset.count} &&
+          document.querySelectorAll('.leaflet-tooltip.stage2-label').length === ${dataset.count} &&
+          Boolean(document.querySelector(${JSON.stringify(`.entry-card[data-entry-id="${dataset.firstEntryId}"]`)}))`,
+        `dataset ${dataset.path} count ${dataset.count}`
+      );
+    }
+
+    async function setSearch(value, expectedCount) {
+      await evaluate(`(() => {
+        const input = document.getElementById('stage2Search');
+        input.value = ${JSON.stringify(value)};
+        input.dispatchEvent(new Event('input', { bubbles: true }));
+      })()`);
+      try {
+        await waitForExpression(
+          `Number((document.querySelector('#entryCount')?.textContent.match(/\\d+/) || ['0'])[0]) === ${expectedCount} &&
+            document.querySelectorAll('.entry-card').length === ${expectedCount} &&
+            document.querySelectorAll('.leaflet-marker-icon').length === ${expectedCount} &&
+            document.querySelectorAll('.leaflet-tooltip.stage2-label').length === ${expectedCount}`,
+          `search ${value}`
+        );
+      } catch (error) {
+        const state = await captureState(`failed-search-${value}`);
+        throw new Error(`${error.message}; state=${JSON.stringify(state)}`);
+      }
+    }
+
+    async function clickEntry(entryId, expectedTitle) {
+      await evaluate(`(() => {
+        const card = document.querySelector(${JSON.stringify(`.entry-card[data-entry-id="${entryId}"]`)});
+        if (!card) throw new Error('missing entry ${entryId}');
+        card.click();
+      })()`);
+      try {
+        await waitForExpression(
+          `document.querySelector('#detailPanel h2')?.textContent.trim() === ${JSON.stringify(expectedTitle)}`,
+          `${expectedTitle} detail opens`
+        );
+      } catch (error) {
+        const state = await captureState(`failed-detail-${entryId}`);
+        throw new Error(`${error.message}; state=${JSON.stringify(state)}`);
+      }
+    }
+
+    async function clickContextId(contextId, expectedCount) {
+      const isVisible = await evaluate(`(() => Boolean(document.querySelector(${JSON.stringify(`[data-context-id="${contextId}"]`)})))()`);
+      if (!isVisible) {
+        await evaluate(`(() => {
+          const toggle = document.querySelector('[data-filter-toggle="context"]');
+          if (!toggle) throw new Error('missing context filter toggle');
+          toggle.click();
+        })()`);
+        await waitForExpression(
+          `Boolean(document.querySelector(${JSON.stringify(`[data-context-id="${contextId}"]`)}))`,
+          `context ${contextId} visible`
+        );
+      }
+
+      await evaluate(`(() => {
+        const button = document.querySelector(${JSON.stringify(`[data-context-id="${contextId}"]`)});
+        if (!button) throw new Error('missing context ${contextId}');
+        button.click();
+      })()`);
+      await waitForExpression(
+        `Number((document.querySelector('#entryCount')?.textContent.match(/\\d+/) || ['0'])[0]) === ${expectedCount} &&
+          document.querySelectorAll('.entry-card').length === ${expectedCount} &&
+          document.querySelectorAll('.leaflet-marker-icon').length === ${expectedCount} &&
+          document.querySelectorAll('.leaflet-tooltip.stage2-label').length === ${expectedCount}`,
+        `context ${contextId} count ${expectedCount}`
+      );
+    }
+
+    await navigate(null);
+    let state = await captureState('desktop-initial');
+    assertCheck(state.datasetOptions.length === datasets.length, 'Desktop should expose 7 datasets', state);
+    assertCheck(state.entryCountNumber === 8 && state.markers === 8 && state.labels === 8, 'Initial Atlantic dataset should render 8 markers/labels', state);
+    assertCheck(state.contextFilterButtons <= 4 && state.contextFilterToggle.startsWith('+'), 'Context filters should start compact on desktop', state);
+
+    for (const dataset of datasets) {
+      await selectDataset(dataset);
+      state = await captureState(`desktop-${dataset.path.split('/').pop().replace('.json', '')}`);
+      assertCheck(state.markers === dataset.count && state.labels === dataset.count, 'Dataset switch should not leave stale markers or labels', state);
+      assertCheck(state.contextFilterButtons <= 4 && state.contextFilterToggle.startsWith('+'), 'Dataset switch should keep context filters compact', state);
+    }
+
+    const greece = datasets.at(-1);
+    await selectDataset(greece);
+    await setSearch('델포이', 1);
+    state = await captureState('desktop-greece-search-delphi');
+    assertCheck(state.entryIds.includes('delphi'), 'Greek search should find Delphi', state);
+
+    await clickEntry('delphi', '델포이');
+    state = await captureState('desktop-greece-detail-delphi');
+    assertCheck(state.detailTitle === '델포이' && state.detailHasConfidence, 'Greek detail should show title and source confidence', state);
+
+    await setSearch('', 10);
+    await clickContextId('panhellenic-sanctuaries-games', 2);
+    state = await captureState('desktop-greece-panhellenic-context');
+    assertCheck(
+      state.entryIds.includes('delphi') &&
+        state.entryIds.includes('olympia') &&
+        state.contextFilterButtons <= 4,
+      'Panhellenic sanctuary context should return Delphi and Olympia while filters collapse again',
+      state
+    );
+
+    await selectDataset(datasets[0]);
+    state = await captureState('desktop-return-atlantic-after-greece');
+    assertCheck(
+      state.entryCountNumber === 8 &&
+        state.markers === 8 &&
+        state.labels === 8 &&
+        !state.entryIds.includes('delphi') &&
+        !state.entryIds.includes('olympia'),
+      'Switching away from Greece should clear stale Greek list, markers, and labels',
+      state
+    );
+
+    const desktopPng = await client.send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: false }, sessionId);
+    await writeFile(desktopShot, Buffer.from(desktopPng.data, 'base64'));
+
+    await navigate({
+      width: 390,
+      height: 844,
+      deviceScaleFactor: 2,
+      mobile: true,
+      screenWidth: 390,
+      screenHeight: 844,
+      screenOrientation: { type: 'portraitPrimary', angle: 0 }
+    });
+
+    await selectDataset(greece);
+    await evaluate(`(() => {
+      const list = document.querySelector('.entry-list');
+      list.scrollTop = 360;
+    })()`);
+    await waitForExpression("document.querySelector('.entry-list')?.scrollTop > 0", 'mobile entry list scrolls');
+    state = await captureState('mobile-greece-list-scroll');
+    assertCheck(state.entryListCanScroll && state.entryListScrollTop > 0 && state.contextFilterButtons <= 4, 'Mobile Stage 2 entry list should scroll independently with compact filters', state);
+
+    await clickEntry('athens-acropolis', '아테네 아크로폴리스');
+    state = await captureState('mobile-greece-detail-athens');
+    assertCheck(state.detailTitle === '아테네 아크로폴리스' && state.detailPosition === 'static' && state.documentHeight > state.viewportHeight, 'Mobile detail should sit in the normal page flow below the map', state);
+
+    const mobilePng = await client.send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: false }, sessionId);
+    await writeFile(mobileShot, Buffer.from(mobilePng.data, 'base64'));
+
+    assertCheck(runtimeErrors.length === 0, 'Browser runtime errors detected', runtimeErrors);
+
+    console.log(JSON.stringify({
+      ok: true,
+      url: targetUrl,
+      checkedDatasets: datasets.length,
+      checkedEntries: datasets.reduce((total, dataset) => total + dataset.count, 0),
+      desktopShot,
+      mobileShot,
+      states,
+      runtimeErrors
+    }, null, 2));
+  } finally {
+    if (client) client.close();
+    chrome.kill();
+    await sleep(750);
+    await rm(userDataDir, { recursive: true, force: true }).catch(() => {});
+  }
+}
+
+main().catch(error => {
+  console.error(error.stack || error.message);
+  process.exit(1);
+});

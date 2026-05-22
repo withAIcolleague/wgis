@@ -137,6 +137,14 @@ npm run check
 
 The Stage 2 validator checks the preview data against `data/stage2/schema.json`. The smoke check confirms that the preview page, assets, critical UI wiring, and every indexed Stage 2 dataset are present.
 
+The public browser usability pass can be run with:
+
+```bash
+npm run check:stage2-public -- https://wgis.vercel.app/stage2-preview.html
+```
+
+It opens the deployed preview in headless Chrome, verifies dataset switching, compact context filters, search, detail rendering, stale marker cleanup, and mobile list scrolling, then saves desktop and mobile screenshots outside the repository.
+
 ## Browser Usability Pass
 
 The 2026-05-22 public browser pass checked `/stage2-preview.html` after adding the sixth dataset:
@@ -170,3 +178,17 @@ The 2026-05-22 compact-filter pass reduced the Stage 2 context filter footprint:
 - Expanding the context filters exposes hidden research contexts only when needed.
 - Selecting a hidden context collapses the filter list again while keeping the active context visible.
 - Desktop and mobile browser checks confirm the compact filters preserve dataset switching, search, context filtering, marker cleanup, and list scrolling.
+
+## Seven-Dataset Public Usability Pass
+
+The 2026-05-22 seven-dataset public browser pass checked `https://wgis.vercel.app/stage2-preview.html` after adding the ancient Greece pilot dataset:
+
+- Dataset selector exposes 7 datasets.
+- All 7 indexed datasets render their expected entry, marker, and permanent-label counts: Atlantic revolutions 8, Ethiopia 8, Mesopotamia 10, Egypt 14, Indus 8, Early China 8, and Ancient Greece 10.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control after every dataset switch.
+- Searching `델포이` in the Ancient Greece dataset narrows the list and map to 1 entry, marker, and label.
+- Selecting `델포이` opens the detail panel with source-confidence information.
+- The `범그리스 성소와 제전` context filter returns `델포이` and `올림피아` with 2 markers and 2 labels.
+- Switching back from Ancient Greece to Atlantic revolutions clears stale Greek list items, markers, and labels.
+- On mobile, the Ancient Greece entry list scrolls independently and the detail panel stays in normal page flow below the map.
+- Browser screenshots were saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-seven-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-seven-datasets-mobile.png`.
