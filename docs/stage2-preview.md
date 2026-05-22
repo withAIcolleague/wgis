@@ -927,3 +927,30 @@ The 2026-05-22 thirty-five-dataset public browser pass checks `https://wgis.verc
 - The `서부 데칸 불교·힌두 석굴권` context filter returns `아잔타 석굴`, `엘로라 석굴`, and `엘레판타 석굴` with 3 markers and 3 labels and no stale Khajuraho data.
 - On mobile, `탄자부르 브리하디스와라 사원` detail renders with source-confidence information and both detail actions.
 - Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-five-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-five-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.
+
+## Thirty-Sixth Pilot Dataset
+
+The North African Punic and Roman urban heritage pilot dataset adds 8 entries:
+
+- `도우가·투가`
+- `엘젬 원형경기장`
+- `볼루빌리스`
+- `렙티스 마그나`
+- `사브라타`
+- `키레네`
+- `제밀라·쿠이쿨`
+- `팀가드·타무가디`
+
+## Thirty-Six-Dataset Public Usability Pass
+
+The 2026-05-22 thirty-six-dataset public browser pass checks `https://wgis.vercel.app/stage2-preview.html` after adding the North African Punic and Roman urban heritage pilot dataset:
+
+- Dataset selector exposes 36 datasets.
+- All 36 indexed datasets render their expected entry, marker, and permanent-label counts across 299 Stage 2 preview entries.
+- The new North African Punic and Roman dataset exposes 8 entries: `도우가·투가`, `엘젬 원형경기장`, `볼루빌리스`, `렙티스 마그나`, `사브라타`, `키레네`, `제밀라·쿠이쿨`, and `팀가드·타무가디`.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control.
+- Searching `팀가드` in the North African dataset narrows the list and map to `팀가드·타무가디` with 1 marker and 1 label.
+- Selecting `렙티스 마그나` opens the detail panel with source-confidence information and detail actions.
+- The `트리폴리타니아 포에니·로마 항구도시` context filter returns `렙티스 마그나` and `사브라타` with 2 markers and 2 labels and no stale Cyrene data.
+- On mobile, `엘젬 원형경기장` detail renders with source-confidence information and both detail actions.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-six-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-six-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.

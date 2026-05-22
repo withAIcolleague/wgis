@@ -1040,6 +1040,34 @@
         "Archaeological Survey of India and state tourism references for Indian cave and temple heritage sites",
         "Britannica and UNESCO reporting references for site context and representative coordinates"
       ]
+    },
+    {
+      "id": "africa-north-africa-punic-roman-urban-heritage-sites-v1",
+      "status": "completed",
+      "completedAt": "2026-05-22",
+      "continentId": "africa",
+      "countryIso2": "TN-MA-LY-DZ",
+      "countryKo": "튀니지·모로코·리비아·알제리",
+      "worldRegion": "북아프리카 고대사",
+      "focusKo": "북아프리카 포에니·로마 도시 유산 핵심 지점",
+      "scopeKo": "도우가, 엘젬, 볼루빌리스, 렙티스 마그나, 사브라타, 키레네, 제밀라, 팀가드를 통해 포에니·누미디아·그리스·로마 도시권과 북아프리카 속주 경관을 연결하는 핵심 지점",
+      "sourceFile": "data/records/africa/north-africa/punic-roman-urban-heritage-sites.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "dougga-thugga",
+        "el-jem-amphitheatre",
+        "volubilis",
+        "leptis-magna",
+        "sabratha",
+        "cyrene",
+        "djemila-cuicul",
+        "timgad-thamugadi"
+      ],
+      "sourceBasis": [
+        "UNESCO World Heritage pages for Dougga / Thugga, Amphitheatre of El Jem, Volubilis, Leptis Magna, Sabratha, Cyrene, Djémila, and Timgad",
+        "Britannica and Livius references for ancient North African city context",
+        "African World Heritage Sites references for Roman North Africa comparative framing"
+      ]
     }
   ]
 }

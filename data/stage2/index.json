@@ -212,6 +212,12 @@
       "titleKo": "인도 사원·석굴 유산",
       "path": "data/stage2/india-temple-cave-heritage-sites-preview.json",
       "status": "preview-only"
+    },
+    {
+      "id": "stage2-north-africa-punic-roman-urban-heritage-preview",
+      "titleKo": "북아프리카 포에니·로마 도시 유산",
+      "path": "data/stage2/north-africa-punic-roman-urban-heritage-preview.json",
+      "status": "preview-only"
     }
   ]
 }

@@ -1,0 +1,520 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-north-africa-punic-roman-urban-heritage-preview",
+  "titleKo": "2단계 미리보기: 북아프리카 포에니·로마 도시 유산",
+  "descriptionKo": "도우가·투가, 엘젬 원형경기장, 볼루빌리스, 렙티스 마그나, 사브라타, 키레네, 제밀라·쿠이쿨, 팀가드·타무가디를 비교해 북아프리카의 포에니·누미디아·그리스·로마 도시 경관을 보는 2단계 미리보기 데이터셋입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "리비코-포에니·누미디아",
+        "마우레타니아·로마",
+        "페니키아·포에니·로마",
+        "그리스·헬레니즘·로마",
+        "로마 제국"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "튀니지 내륙",
+        "튀니지 중부",
+        "모로코 메크네스",
+        "트리폴리타니아",
+        "키레나이카",
+        "알제리 세티프",
+        "알제리 아우레스"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "포에니 교역",
+        "누미디아 도시",
+        "로마 속주 도시",
+        "원형경기장",
+        "항구도시",
+        "그리스 식민도시",
+        "산지 도시",
+        "군사 식민도시",
+        "세계유산"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지점 유형",
+      "options": [
+        "유적"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "north-africa-punic-roman-urban-heritage-landscape",
+      "labelKo": "북아프리카 포에니·로마 도시 유산 경관",
+      "parentId": null,
+      "periodKo": "기원전 7세기-6세기",
+      "summaryKo": "마그레브, 트리폴리타니아, 키레나이카, 누미디아의 포에니·그리스·로마 도시 유산을 연결해 북아프리카가 지중해 제국과 지역 사회 사이에서 어떤 도시 경관을 만들었는지 비교합니다."
+    },
+    {
+      "id": "maghreb-punic-numidian-roman-cities",
+      "labelKo": "마그레브 포에니·누미디아·로마 도시",
+      "parentId": "north-africa-punic-roman-urban-heritage-landscape",
+      "periodKo": "기원전 3세기-8세기",
+      "summaryKo": "도우가와 볼루빌리스를 통해 토착·포에니 도시 전통, 누미디아·마우레타니아 왕권, 로마 속주 도시가 겹치는 서부 북아프리카 도시 경관을 봅니다."
+    },
+    {
+      "id": "dougga-libyco-punic-roman-hill-town",
+      "labelKo": "도우가 리비코-포에니·로마 언덕 도시",
+      "parentId": "maghreb-punic-numidian-roman-cities",
+      "periodKo": "기원전 2세기 이전-7세기",
+      "summaryKo": "도우가를 통해 언덕 지형, 비문 문화, 포에니·누미디아 전통과 로마 공공건축이 한 도시 안에서 결합한 방식을 봅니다."
+    },
+    {
+      "id": "volubilis-mauretanian-roman-western-outpost",
+      "labelKo": "볼루빌리스 마우레타니아·로마 서단 도시",
+      "parentId": "maghreb-punic-numidian-roman-cities",
+      "periodKo": "기원전 3세기-8세기",
+      "summaryKo": "볼루빌리스를 통해 마우레타니아 왕권, 로마 제국 서단의 농업·도시 경관, 이드리스조 초기 기억이 한 장소에 남은 방식을 봅니다."
+    },
+    {
+      "id": "tunisian-roman-public-monuments",
+      "labelKo": "튀니지 로마 공공건축과 속주 도시",
+      "parentId": "north-africa-punic-roman-urban-heritage-landscape",
+      "periodKo": "2-3세기",
+      "summaryKo": "도우가와 엘젬을 통해 북아프리카 속주 도시의 공공건축, 원형경기장, 도시 후원과 제국 문화의 확산을 비교합니다."
+    },
+    {
+      "id": "el-jem-thysdrus-amphitheatre",
+      "labelKo": "엘젬 티스드루스 원형경기장",
+      "parentId": "tunisian-roman-public-monuments",
+      "periodKo": "3세기",
+      "summaryKo": "엘젬 원형경기장을 통해 티스드루스의 부, 로마식 관람 문화, 평지 독립 구조의 대형 오락 건축이 속주 도시에서 구현된 방식을 봅니다."
+    },
+    {
+      "id": "tripolitanian-punic-roman-ports",
+      "labelKo": "트리폴리타니아 포에니·로마 항구도시",
+      "parentId": "north-africa-punic-roman-urban-heritage-landscape",
+      "periodKo": "기원전 7세기-6세기",
+      "summaryKo": "렙티스 마그나와 사브라타를 통해 페니키아계 교역항, 로마 공공건축, 지중해 항로와 사하라 내륙 교역이 결합한 트리폴리타니아 도시권을 봅니다."
+    },
+    {
+      "id": "leptis-magna-severan-port-city",
+      "labelKo": "렙티스 마그나 세베루스 항구도시",
+      "parentId": "tripolitanian-punic-roman-ports",
+      "periodKo": "기원전 7세기-6세기",
+      "summaryKo": "렙티스 마그나를 통해 페니키아계 항구가 세베루스 황제의 후원 아래 로마 제국의 기념 도시로 확장된 방식을 봅니다."
+    },
+    {
+      "id": "sabratha-coastal-trade-city",
+      "labelKo": "사브라타 해안 교역도시",
+      "parentId": "tripolitanian-punic-roman-ports",
+      "periodKo": "기원전 5세기-5세기",
+      "summaryKo": "사브라타를 통해 아프리카 내륙 산물의 출구, 해안 항구, 로마 극장과 신전이 결합한 트리폴리타니아 교역 경관을 봅니다."
+    },
+    {
+      "id": "cyrenaica-greek-roman-city",
+      "labelKo": "키레나이카 그리스·로마 도시",
+      "parentId": "north-africa-punic-roman-urban-heritage-landscape",
+      "periodKo": "기원전 7세기-4세기",
+      "summaryKo": "키레네를 통해 그리스 식민도시와 헬레니즘·로마 수도 경관이 북아프리카 동부 키레나이카에서 장기적으로 유지·변형된 방식을 봅니다."
+    },
+    {
+      "id": "cyrene-greek-roman-capital",
+      "labelKo": "키레네 그리스·로마 수도 유산",
+      "parentId": "cyrenaica-greek-roman-city",
+      "periodKo": "기원전 631년경-365년",
+      "summaryKo": "키레네를 통해 아폴론 성역, 아고라, 극장, 묘역이 그리스 식민도시의 정체성과 로마화 과정을 함께 보여주는 방식을 봅니다."
+    },
+    {
+      "id": "numidian-algerian-roman-planned-cities",
+      "labelKo": "알제리 산지·변경 로마 계획도시",
+      "parentId": "north-africa-punic-roman-urban-heritage-landscape",
+      "periodKo": "1-6세기",
+      "summaryKo": "제밀라와 팀가드를 통해 산지에 적응한 로마 도시와 트라야누스 군사 식민도시가 누미디아·아우레스 지형에서 어떻게 계획·운영되었는지 봅니다."
+    },
+    {
+      "id": "djemila-mountain-roman-town",
+      "labelKo": "제밀라 산지 로마 도시",
+      "parentId": "numidian-algerian-roman-planned-cities",
+      "periodKo": "2-6세기",
+      "summaryKo": "제밀라를 통해 포룸, 바실리카, 개선문, 주거 구역이 산악 지형에 맞춰 재배치된 로마 도시 계획을 봅니다."
+    },
+    {
+      "id": "timgad-trajanic-colony-grid",
+      "labelKo": "팀가드 트라야누스 격자 식민도시",
+      "parentId": "numidian-algerian-roman-planned-cities",
+      "periodKo": "100년 이후",
+      "summaryKo": "팀가드를 통해 카르도와 데쿠마누스, 정방형 도시 구획, 군사 식민도시 모델이 북아프리카 변경에서 구현된 방식을 봅니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "dougga-thugga",
+      "titleKo": "도우가·투가",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "튀니지",
+      "coordinates": { "lat": 36.4236, "lng": 9.2203 },
+      "yearLabelKo": "기원전 2세기 이전 누미디아 중심지, 로마·비잔틴 도시",
+      "summaryKo": "도우가·투가는 비옥한 계곡을 내려다보는 언덕 위에 자리한 누미디아·로마 도시 유적이다. 포에니와 토착 북아프리카 전통, 로마식 공공건축과 비문 문화가 겹쳐져 속주 도시가 지역 사회와 제국 질서 사이에서 작동한 방식을 보여준다.",
+      "stage2": {
+        "primaryContextId": "dougga-libyco-punic-roman-hill-town",
+        "contextIds": [
+          "north-africa-punic-roman-urban-heritage-landscape",
+          "maghreb-punic-numidian-roman-cities",
+          "tunisian-roman-public-monuments",
+          "dougga-libyco-punic-roman-hill-town"
+        ],
+        "periodPathKo": [
+          "고대",
+          "리비코-포에니·누미디아·로마",
+          "언덕 도시"
+        ],
+        "topicTagsKo": [
+          "도우가",
+          "투가",
+          "누미디아",
+          "리비코-포에니",
+          "로마 아프리카"
+        ],
+        "uiFilters": {
+          "era": "리비코-포에니·누미디아",
+          "region": "튀니지 내륙",
+          "theme": [
+            "누미디아 도시",
+            "로마 속주 도시",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "UNESCO 세계유산 좌표와 Britannica·Livius 참고 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "el-jem-amphitheatre",
+      "titleKo": "엘젬 원형경기장",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "튀니지",
+      "coordinates": { "lat": 35.2964, "lng": 10.7069 },
+      "yearLabelKo": "3세기 로마 원형경기장",
+      "summaryKo": "엘젬 원형경기장은 고대 티스드루스의 번영을 보여주는 거대한 로마 원형경기장이다. 평지 위에 독립 구조로 세워진 대형 관람 건축은 북아프리카 속주 도시의 부와 로마식 대중 오락, 제국 문화의 확산을 압축적으로 보여준다.",
+      "stage2": {
+        "primaryContextId": "el-jem-thysdrus-amphitheatre",
+        "contextIds": [
+          "north-africa-punic-roman-urban-heritage-landscape",
+          "tunisian-roman-public-monuments",
+          "el-jem-thysdrus-amphitheatre"
+        ],
+        "periodPathKo": [
+          "고대",
+          "로마 제국",
+          "원형경기장"
+        ],
+        "topicTagsKo": [
+          "엘젬",
+          "티스드루스",
+          "원형경기장",
+          "로마 아프리카",
+          "대중 오락"
+        ],
+        "uiFilters": {
+          "era": "로마 제국",
+          "region": "튀니지 중부",
+          "theme": [
+            "원형경기장",
+            "로마 속주 도시",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "UNESCO 세계유산 좌표와 Livius·African World Heritage Sites 참고 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "volubilis",
+      "titleKo": "볼루빌리스",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "모로코",
+      "coordinates": { "lat": 34.0739, "lng": -5.5569 },
+      "yearLabelKo": "기원전 3세기 창건, 로마 제국 서단 도시",
+      "summaryKo": "볼루빌리스는 마우레타니아 왕국과 로마 제국 서단의 도시 유산이다. 비옥한 농업지대, 모자이크 주택, 공공건축, 방어 시설은 로마 속주 도시가 토착 왕권과 지중해 교역, 이후 이드리스조 초기 기억과 연결된 방식을 보여준다.",
+      "stage2": {
+        "primaryContextId": "volubilis-mauretanian-roman-western-outpost",
+        "contextIds": [
+          "north-africa-punic-roman-urban-heritage-landscape",
+          "maghreb-punic-numidian-roman-cities",
+          "volubilis-mauretanian-roman-western-outpost"
+        ],
+        "periodPathKo": [
+          "고대",
+          "마우레타니아·로마",
+          "서마그레브 속주 도시"
+        ],
+        "topicTagsKo": [
+          "볼루빌리스",
+          "마우레타니아",
+          "마우레타니아 팅기타나",
+          "모자이크",
+          "이드리스 1세"
+        ],
+        "uiFilters": {
+          "era": "마우레타니아·로마",
+          "region": "모로코 메크네스",
+          "theme": [
+            "로마 속주 도시",
+            "누미디아 도시",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "UNESCO 세계유산 좌표와 Livius·African World Heritage Sites 참고 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "leptis-magna",
+      "titleKo": "렙티스 마그나",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "리비아",
+      "coordinates": { "lat": 32.6383, "lng": 14.2931 },
+      "yearLabelKo": "기원전 7세기 교역항, 2-3세기 세베루스 시대 대도시",
+      "summaryKo": "렙티스 마그나는 페니키아계 교역항에서 출발해 로마 제국기 트리폴리타니아의 대표 도시로 성장했다. 세베루스 황제의 고향이라는 정치적 후원, 항구와 시장, 개선문과 공공건축은 속주 도시가 제국 권력의 기념 경관으로 확장된 사례다.",
+      "stage2": {
+        "primaryContextId": "leptis-magna-severan-port-city",
+        "contextIds": [
+          "north-africa-punic-roman-urban-heritage-landscape",
+          "tripolitanian-punic-roman-ports",
+          "leptis-magna-severan-port-city"
+        ],
+        "periodPathKo": [
+          "고대",
+          "페니키아·포에니·로마",
+          "세베루스 항구도시"
+        ],
+        "topicTagsKo": [
+          "렙티스 마그나",
+          "렙키스",
+          "세베루스",
+          "트리폴리타니아",
+          "항구도시"
+        ],
+        "uiFilters": {
+          "era": "페니키아·포에니·로마",
+          "region": "트리폴리타니아",
+          "theme": [
+            "포에니 교역",
+            "항구도시",
+            "로마 속주 도시",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "UNESCO 세계유산 좌표와 Britannica·Livius 참고 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "sabratha",
+      "titleKo": "사브라타",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "리비아",
+      "coordinates": { "lat": 32.8053, "lng": 12.4850 },
+      "yearLabelKo": "페니키아 교역소, 2-3세기 로마 도시 재건",
+      "summaryKo": "사브라타는 아프리카 내륙 산물의 출구 역할을 한 페니키아계 교역소에서 로마 도시로 재편된 해안 유적이다. 극장과 신전, 항구 경관은 지중해 항로와 사하라 내륙 교역이 트리폴리타니아 도시들을 어떻게 성장시켰는지 보여준다.",
+      "stage2": {
+        "primaryContextId": "sabratha-coastal-trade-city",
+        "contextIds": [
+          "north-africa-punic-roman-urban-heritage-landscape",
+          "tripolitanian-punic-roman-ports",
+          "sabratha-coastal-trade-city"
+        ],
+        "periodPathKo": [
+          "고대",
+          "페니키아·누미디아·로마",
+          "해안 교역도시"
+        ],
+        "topicTagsKo": [
+          "사브라타",
+          "트리폴리타니아",
+          "페니키아 교역소",
+          "로마 극장",
+          "사하라 교역"
+        ],
+        "uiFilters": {
+          "era": "페니키아·포에니·로마",
+          "region": "트리폴리타니아",
+          "theme": [
+            "포에니 교역",
+            "항구도시",
+            "로마 속주 도시",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "UNESCO 세계유산 좌표와 Britannica·African World Heritage Sites 참고 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "cyrene",
+      "titleKo": "키레네",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "리비아",
+      "coordinates": { "lat": 32.8250, "lng": 21.8583 },
+      "yearLabelKo": "기원전 631년경 그리스 식민도시, 로마화 이후 365년 지진 전까지 중심지",
+      "summaryKo": "키레네는 테라 출신 그리스인들이 세운 키레나이카의 중심 도시로, 헬레니즘과 로마 시대까지 북아프리카 동부의 중요한 수도 역할을 했다. 아폴론 성역, 아고라, 극장과 묘역은 그리스 식민도시가 로마 세계 안에서 장기적으로 변형된 과정을 보여준다.",
+      "stage2": {
+        "primaryContextId": "cyrene-greek-roman-capital",
+        "contextIds": [
+          "north-africa-punic-roman-urban-heritage-landscape",
+          "cyrenaica-greek-roman-city",
+          "cyrene-greek-roman-capital"
+        ],
+        "periodPathKo": [
+          "고대",
+          "그리스·헬레니즘·로마",
+          "키레나이카 수도"
+        ],
+        "topicTagsKo": [
+          "키레네",
+          "키레나이카",
+          "그리스 식민도시",
+          "테라",
+          "아폴론 성역"
+        ],
+        "uiFilters": {
+          "era": "그리스·헬레니즘·로마",
+          "region": "키레나이카",
+          "theme": [
+            "그리스 식민도시",
+            "로마 속주 도시",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "UNESCO 세계유산 좌표와 Livius·African World Heritage Sites 참고 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "djemila-cuicul",
+      "titleKo": "제밀라·쿠이쿨",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "알제리",
+      "coordinates": { "lat": 36.3206, "lng": 5.7367 },
+      "yearLabelKo": "2-6세기 산지 로마 도시",
+      "summaryKo": "제밀라·쿠이쿨은 해발 약 900m 산지에 자리한 로마 도시 유산이다. 포룸, 신전, 바실리카, 개선문, 주거 구역은 표준화된 로마 도시 계획이 산악 지형에 맞춰 변형되고 후기 고대 기독교 경관으로 이어진 방식을 보여준다.",
+      "stage2": {
+        "primaryContextId": "djemila-mountain-roman-town",
+        "contextIds": [
+          "north-africa-punic-roman-urban-heritage-landscape",
+          "numidian-algerian-roman-planned-cities",
+          "djemila-mountain-roman-town"
+        ],
+        "periodPathKo": [
+          "고대",
+          "로마 제국·후기 고대",
+          "산지 도시"
+        ],
+        "topicTagsKo": [
+          "제밀라",
+          "쿠이쿨",
+          "세티프",
+          "로마 도시계획",
+          "바실리카"
+        ],
+        "uiFilters": {
+          "era": "로마 제국",
+          "region": "알제리 세티프",
+          "theme": [
+            "산지 도시",
+            "로마 속주 도시",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "UNESCO 세계유산 좌표와 Livius·African World Heritage Sites 참고 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "timgad-thamugadi",
+      "titleKo": "팀가드·타무가디",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "알제리",
+      "coordinates": { "lat": 35.4842, "lng": 6.4689 },
+      "yearLabelKo": "100년 트라야누스가 세운 군사 식민도시",
+      "summaryKo": "팀가드·타무가디는 트라야누스가 100년에 세운 로마 군사 식민도시로, 카르도와 데쿠마누스를 중심으로 한 직교 도시 계획이 뚜렷하게 남아 있다. 정방형 도시 구획과 포룸, 극장, 목욕장은 로마 변경 지배와 식민도시 모델을 한눈에 보여준다.",
+      "stage2": {
+        "primaryContextId": "timgad-trajanic-colony-grid",
+        "contextIds": [
+          "north-africa-punic-roman-urban-heritage-landscape",
+          "numidian-algerian-roman-planned-cities",
+          "timgad-trajanic-colony-grid"
+        ],
+        "periodPathKo": [
+          "고대",
+          "로마 제국",
+          "군사 식민도시"
+        ],
+        "topicTagsKo": [
+          "팀가드",
+          "타무가디",
+          "트라야누스",
+          "카르도",
+          "데쿠마누스"
+        ],
+        "uiFilters": {
+          "era": "로마 제국",
+          "region": "알제리 아우레스",
+          "theme": [
+            "군사 식민도시",
+            "로마 속주 도시",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "UNESCO 세계유산 좌표와 Livius·African World Heritage Sites 참고 자료를 사용했습니다."
+        }
+      }
+    }
+  ]
+}

@@ -193,12 +193,17 @@ const datasets = [
     path: 'data/stage2/india-temple-cave-heritage-sites-preview.json',
     count: 8,
     firstEntryId: 'ajanta-caves'
+  },
+  {
+    path: 'data/stage2/north-africa-punic-roman-urban-heritage-preview.json',
+    count: 8,
+    firstEntryId: 'dougga-thugga'
   }
 ];
 
 const latestDataset = datasets[datasets.length - 1];
-const desktopShot = path.join(outputDir, 'wgis-stage2-thirty-five-datasets-desktop.png');
-const mobileShot = path.join(outputDir, 'wgis-stage2-thirty-five-datasets-mobile.png');
+const desktopShot = path.join(outputDir, 'wgis-stage2-thirty-six-datasets-desktop.png');
+const mobileShot = path.join(outputDir, 'wgis-stage2-thirty-six-datasets-mobile.png');
 
 function assertCheck(condition, message, details = undefined) {
   if (!condition) {
@@ -367,60 +372,59 @@ async function main() {
       assertCheck(state.contextFilterButtons <= 4 && state.contextFilterToggle, 'Initial context filters should start compact', state);
 
       dom = await dumpDom(buildUrl({ dataset: latestDataset.path }), userDataDir);
-      state = extractState('desktop-india-temple-cave-default', dom);
+      state = extractState('desktop-north-africa-punic-roman-default', dom);
       states.push(state);
-      assertCheck(state.entryCards === latestDataset.count && state.entryIds.includes('ajanta-caves'), 'Latest dataset should render Ajanta and all entries', state);
+      assertCheck(state.entryCards === latestDataset.count && state.entryIds.includes('dougga-thugga'), 'Latest dataset should render Dougga and all entries', state);
 
-      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, q: '코나르크' }), userDataDir);
-      state = extractState('desktop-india-temple-cave-search-konark', dom);
+      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, q: '팀가드' }), userDataDir);
+      state = extractState('desktop-north-africa-punic-roman-search-timgad', dom);
       states.push(state);
-      assertCheck(state.entryCountText === '1개' && state.entryIds.includes('konark-sun-temple'), 'Latest dataset search should find Konark Sun Temple', state);
+      assertCheck(state.entryCountText === '1개' && state.entryIds.includes('timgad-thamugadi'), 'Latest dataset search should find Timgad', state);
 
-      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, entry: 'ellora-caves' }), userDataDir);
-      state = extractState('desktop-india-temple-cave-detail-ellora', dom);
+      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, entry: 'leptis-magna' }), userDataDir);
+      state = extractState('desktop-north-africa-punic-roman-detail-leptis', dom);
       states.push(state);
       assertCheck(
-        state.detailTitle === '엘로라 석굴' && state.detailActions === 2 && state.hasSourceConfidence,
-        'Latest dataset detail should show Ellora, source confidence, and detail actions',
+        state.detailTitle === '렙티스 마그나' && state.detailActions === 2 && state.hasSourceConfidence,
+        'Latest dataset detail should show Leptis Magna, source confidence, and detail actions',
         state
       );
 
       dom = await dumpDom(buildUrl({
         dataset: latestDataset.path,
-        context: 'western-deccan-buddhist-hindu-caves'
+        context: 'tripolitanian-punic-roman-ports'
       }), userDataDir);
-      state = extractState('desktop-india-temple-cave-western-deccan-context', dom);
+      state = extractState('desktop-north-africa-punic-roman-tripolitania-context', dom);
       states.push(state);
       assertCheck(
-        state.entryCountText === '3개' &&
-          state.entryIds.includes('ajanta-caves') &&
-          state.entryIds.includes('ellora-caves') &&
-          state.entryIds.includes('elephanta-caves') &&
-          !state.entryIds.includes('khajuraho-monuments'),
-        'Western Deccan context should return Ajanta, Ellora, and Elephanta without stale central India data',
+        state.entryCountText === '2개' &&
+          state.entryIds.includes('leptis-magna') &&
+          state.entryIds.includes('sabratha') &&
+          !state.entryIds.includes('cyrene'),
+        'Tripolitania context should return Leptis Magna and Sabratha without stale Cyrenaica data',
         state
       );
 
       dom = await dumpDom(buildUrl({
         dataset: latestDataset.path,
-        entry: 'thanjavur-brihadisvara-temple'
+        entry: 'el-jem-amphitheatre'
       }), userDataDir, { width: 390, height: 844 });
-      state = extractState('mobile-india-temple-cave-detail-thanjavur', dom);
+      state = extractState('mobile-north-africa-punic-roman-detail-el-jem', dom);
       states.push(state);
       assertCheck(
-        state.ready && state.detailTitle === '탄자부르 브리하디스와라 사원' && state.detailActions === 2,
-        'Mobile-sized latest dataset render should keep the Thanjavur detail panel available',
+        state.ready && state.detailTitle === '엘젬 원형경기장' && state.detailActions === 2,
+        'Mobile-sized latest dataset render should keep the El Jem detail panel available',
         state
       );
 
       await captureScreenshot(
-        buildUrl({ dataset: latestDataset.path, entry: 'ellora-caves' }),
+        buildUrl({ dataset: latestDataset.path, entry: 'leptis-magna' }),
         userDataDir,
         desktopShot,
         { width: 1440, height: 920 }
       );
       await captureScreenshot(
-        buildUrl({ dataset: latestDataset.path, entry: 'thanjavur-brihadisvara-temple' }),
+        buildUrl({ dataset: latestDataset.path, entry: 'el-jem-amphitheatre' }),
         userDataDir,
         mobileShot,
         { width: 390, height: 844 }
