@@ -14,7 +14,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Current entry count: 250
 - Completed curation batches: 31
 - Latest completed batch: `africa-egypt-late-temple-centers-v1`
-- Latest completed infrastructure milestone: stage-2 nineteen-dataset public usability pass
+- Latest completed infrastructure milestone: stage-2 twenty-dataset public usability pass
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
@@ -310,6 +310,19 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - Scope: keep the public Stage 2 preview browser check repeatable after adding the nineteenth dataset
   - Checked: 19-dataset selector, expected entry/marker/label counts across 162 Stage 2 preview entries, compact context filters, Indian Ocean search/detail/context behavior, stale Indian Ocean marker cleanup, deterministic map reframing after detail zoom, mobile entry-list scrolling, mobile detail map-return flow, and hidden-detail close behavior
   - Result: local and public browser passes completed for 19 datasets and 162 Stage 2 preview entries
+
+- Stage-2 early modern exploration and colonial port cities pilot dataset
+  - Files: `data/stage2/index.json`, `data/stage2/early-modern-exploration-colonial-port-cities-preview.json`, `scripts/smoke-check.js`, `docs/stage2-preview.md`
+  - URL path: `/stage2-preview.html`
+  - Scope: add a twentieth Stage 2 preview dataset using the existing Atlantic exploration and colonial port cities batch
+  - Model stress test: Iberian oceanic expansion, Portuguese Atlantic-Indian Ocean route making, Spanish Indies trade administration, Seville-Cadiz Casa de Contratacion shift, northern European commercial ports, Caribbean fortified fleet ports, and Atlantic colonial commerce and violence
+
+- Stage-2 twenty-dataset public usability pass
+  - Files: `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`
+  - URL path: `https://wgis.vercel.app/stage2-preview.html`
+  - Scope: keep the public Stage 2 preview browser check repeatable after adding the twentieth dataset
+  - Checked: 20-dataset selector, expected entry/marker/label counts across 170 Stage 2 preview entries, compact context filters, Early Modern ports search/detail/context behavior, stale Early Modern marker cleanup, deterministic map reframing after detail zoom, mobile entry-list scrolling, mobile detail map-return flow, and hidden-detail close behavior
+  - Result: local and public browser passes completed for 20 datasets and 170 Stage 2 preview entries
 
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`
@@ -776,8 +789,8 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Stage-2 twentieth pilot dataset
-   - Scope: create another Stage 2 file from early modern exploration and colonial port cities to compare Iberian oceanic expansion, Atlantic-Indian Ocean route making, colonial port competition, and early modern maritime empires
+1. Stage-2 twenty-first pilot dataset
+   - Scope: create another Stage 2 file from early modern Southeast Asian maritime sultanates and colonial port cities to compare Aceh, Malacca-Straits successor ports, Manila galleon exchange, Makassar, VOC competition, and regional spice routes
 
 2. First-stage DB next expansion batch
    - Scope: resume focused first-stage source-record growth if the priority shifts back from Stage 2 modeling to raw coverage

@@ -1,0 +1,516 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-early-modern-exploration-colonial-port-cities-preview",
+  "titleKo": "2단계 미리보기: 근세 탐험과 식민 항구 도시",
+  "descriptionKo": "포르투갈·스페인의 대항해와 신대륙 교역, 북유럽 상업항, 카리브해 식민 요새항, 대서양-인도양 항로 형성을 비교하기 위한 2단계 미리보기 데이터셋입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "포르투갈 대항해시대",
+        "스페인 인디아스 무역",
+        "스페인 대서양 교역",
+        "포르투갈 대서양 상업",
+        "네덜란드 황금기",
+        "잉글랜드 북대서양 탐험",
+        "카리브 선단 체제",
+        "스페인 카리브 요새항"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "이베리아 대서양",
+        "북해",
+        "북대서양",
+        "카리브해"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "대항해",
+        "식민 행정",
+        "Casa de Contratacion",
+        "조선소·선단 체제",
+        "요새 항구",
+        "상업·금융",
+        "노예무역",
+        "대서양-인도양 항로",
+        "와인·소비시장"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지도 유형",
+      "options": [
+        "장소"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "early-modern-atlantic-maritime-empires",
+      "labelKo": "근세 대서양 해양제국",
+      "parentId": null,
+      "periodKo": "15-18세기",
+      "summaryKo": "이베리아와 북유럽 항구, 카리브해 요새항을 묶어 탐험 항해, 식민 행정, 상업·금융, 조선소, 노예무역, 군사 방어가 결합한 근세 해양제국의 항구망을 봅니다."
+    },
+    {
+      "id": "iberian-oceanic-expansion-route-making",
+      "labelKo": "이베리아 해양 팽창과 항로 형성",
+      "parentId": "early-modern-atlantic-maritime-empires",
+      "periodKo": "15-16세기",
+      "summaryKo": "리스본과 세비야를 중심으로 왕실 후원, 항해 지식, 신대륙 식민 행정, 아프리카-인도양 항로 개척이 연결된 이베리아 초기 해양 팽창을 비교합니다."
+    },
+    {
+      "id": "portuguese-atlantic-indian-ocean-gateway",
+      "labelKo": "포르투갈 대서양-인도양 관문",
+      "parentId": "iberian-oceanic-expansion-route-making",
+      "periodKo": "15-16세기",
+      "summaryKo": "리스본 벨렝 지구를 통해 바스쿠 다 가마 항해 이후 포르투갈이 아프리카 해안과 인도양 항로를 연결한 유럽 측 관문을 살펴봅니다."
+    },
+    {
+      "id": "spanish-indies-trade-administration",
+      "labelKo": "스페인 인디아스 무역 행정",
+      "parentId": "iberian-oceanic-expansion-route-making",
+      "periodKo": "1503-18세기",
+      "summaryKo": "세비야와 카디스를 묶어 Casa de Contratacion, 항해 허가, 지도·기록 관리, 신대륙 무역 독점 기능이 하천 항구에서 외해 항구로 이동한 과정을 봅니다."
+    },
+    {
+      "id": "seville-cadiz-casa-contratacion-shift",
+      "labelKo": "세비야-카디스 인디아스 무역 이동",
+      "parentId": "spanish-indies-trade-administration",
+      "periodKo": "1503-1717년 이후",
+      "summaryKo": "세비야에서 카디스로 옮겨간 인디아스 무역과 Casa de Contratacion 기능을 통해 스페인 제국 교역 관리의 공간 변화를 비교합니다."
+    },
+    {
+      "id": "portuguese-atlantic-regional-commerce",
+      "labelKo": "포르투갈 대서양 지역 상업항",
+      "parentId": "early-modern-atlantic-maritime-empires",
+      "periodKo": "15-18세기",
+      "summaryKo": "포르투를 통해 도루 강 내륙 생산지, 와인 저장고, 대서양 소비시장, 지역 항구도시 경관이 연결되는 방식을 봅니다."
+    },
+    {
+      "id": "northern-europe-atlantic-commercial-capitals",
+      "labelKo": "북유럽 대서양 상업항",
+      "parentId": "early-modern-atlantic-maritime-empires",
+      "periodKo": "15-18세기",
+      "summaryKo": "암스테르담과 브리스톨을 묶어 북해·북대서양 항구가 탐험, 금융, 출판, 대서양 상품, 노예무역과 어떻게 연결되었는지 비교합니다."
+    },
+    {
+      "id": "dutch-golden-age-global-port-finance",
+      "labelKo": "암스테르담 황금기 항구·금융",
+      "parentId": "northern-europe-atlantic-commercial-capitals",
+      "periodKo": "17세기",
+      "summaryKo": "암스테르담 운하 지구를 통해 항구, 창고, 상인 주택, 금융 시장, VOC와 대서양·발트해·인도양 교역망이 결합한 도시 인프라를 봅니다."
+    },
+    {
+      "id": "english-north-atlantic-exploration-commerce",
+      "labelKo": "잉글랜드 북대서양 탐험·상업",
+      "parentId": "northern-europe-atlantic-commercial-capitals",
+      "periodKo": "1497년, 17-18세기",
+      "summaryKo": "브리스톨을 통해 존 캐벗 항해, 잉글랜드 북대서양 탐험, 설탕·담배·노예무역이 같은 항구 경제 안에서 연결된 양상을 봅니다."
+    },
+    {
+      "id": "spanish-caribbean-fortified-fleet-ports",
+      "labelKo": "스페인 카리브 선단·요새 항구",
+      "parentId": "early-modern-atlantic-maritime-empires",
+      "periodKo": "16-18세기",
+      "summaryKo": "아바나와 카르타헤나 데 인디아스를 묶어 서인도 선단 체제, 은·설탕 교역, 조선소, 성벽과 요새, 카리브해 방어 체계가 결합한 식민 항구 경관을 봅니다."
+    },
+    {
+      "id": "atlantic-colonial-commerce-violence",
+      "labelKo": "대서양 식민 상업과 폭력",
+      "parentId": "early-modern-atlantic-maritime-empires",
+      "periodKo": "16-18세기",
+      "summaryKo": "브리스톨, 아바나, 카르타헤나를 통해 탐험과 상업, 설탕·담배·은 교역, 노예무역, 군사 방어가 결합한 대서양 식민 경제의 폭력적 기반을 연결합니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "lisbon",
+      "titleKo": "리스본",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "포르투갈",
+      "coordinates": {
+        "lat": 38.6916,
+        "lng": -9.216
+      },
+      "yearLabelKo": "15-16세기 해양 팽창 중심",
+      "summaryKo": "포르투갈 대항해시대의 출항·상업·왕실 후원 중심지로, 아프리카 해안과 인도양 항로를 연결한 유럽 측 관문이었습니다.",
+      "stage2": {
+        "primaryContextId": "portuguese-atlantic-indian-ocean-gateway",
+        "contextIds": [
+          "early-modern-atlantic-maritime-empires",
+          "iberian-oceanic-expansion-route-making",
+          "portuguese-atlantic-indian-ocean-gateway"
+        ],
+        "periodPathKo": [
+          "근세",
+          "포르투갈 대항해시대",
+          "리스본 벨렝과 대서양-인도양 항로"
+        ],
+        "topicTagsKo": [
+          "리스본",
+          "벨렝",
+          "바스쿠 다 가마",
+          "제로니무스 수도원",
+          "벨렝 탑"
+        ],
+        "uiFilters": {
+          "era": "포르투갈 대항해시대",
+          "region": "이베리아 대서양",
+          "theme": [
+            "대항해",
+            "대서양-인도양 항로"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 리스본 벨렝 세계유산 자료와 Britannica 자료를 사용해 대항해시대 출항지와 항구 경관 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "seville",
+      "titleKo": "세비야",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "스페인",
+      "coordinates": {
+        "lat": 37.3839,
+        "lng": -5.9915
+      },
+      "yearLabelKo": "1503-1717년 인디아스 무역 관리 중심",
+      "summaryKo": "Casa de Contratacion 설치 이후 스페인령 아메리카 교역, 항해 허가, 지도·기록 관리의 중심지가 된 도시입니다.",
+      "stage2": {
+        "primaryContextId": "spanish-indies-trade-administration",
+        "contextIds": [
+          "early-modern-atlantic-maritime-empires",
+          "iberian-oceanic-expansion-route-making",
+          "spanish-indies-trade-administration",
+          "seville-cadiz-casa-contratacion-shift"
+        ],
+        "periodPathKo": [
+          "근세",
+          "스페인 제국",
+          "세비야 Casa de Contratacion과 인디아스 행정"
+        ],
+        "topicTagsKo": [
+          "세비야",
+          "Casa de Contratacion",
+          "인디아스 고문서관",
+          "스페인령 아메리카",
+          "항해 기록"
+        ],
+        "uiFilters": {
+          "era": "스페인 인디아스 무역",
+          "region": "이베리아 대서양",
+          "theme": [
+            "식민 행정",
+            "Casa de Contratacion"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 세비야 세계유산 자료, Archivo General de Indias 자료, Britannica 자료를 사용해 식민 행정과 인디아스 무역 관리 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "cadiz",
+      "titleKo": "카디스",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "스페인",
+      "coordinates": {
+        "lat": 36.5297,
+        "lng": -6.2923
+      },
+      "yearLabelKo": "1717년 이후 인디아스 무역 중심",
+      "summaryKo": "18세기 Casa de Contratacion과 인디아스 무역 기능이 세비야에서 옮겨오며 스페인 제국 교역의 핵심 항구가 되었습니다.",
+      "stage2": {
+        "primaryContextId": "seville-cadiz-casa-contratacion-shift",
+        "contextIds": [
+          "early-modern-atlantic-maritime-empires",
+          "spanish-indies-trade-administration",
+          "seville-cadiz-casa-contratacion-shift"
+        ],
+        "periodPathKo": [
+          "근세",
+          "스페인 대서양 교역",
+          "카디스 외해 항구와 인디아스 무역 이동"
+        ],
+        "topicTagsKo": [
+          "카디스",
+          "가디르",
+          "카디스만",
+          "Casa de Contratacion",
+          "인디아스 무역"
+        ],
+        "uiFilters": {
+          "era": "스페인 대서양 교역",
+          "region": "이베리아 대서양",
+          "theme": [
+            "Casa de Contratacion",
+            "식민 행정"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "카디스 항만청 역사 자료와 Britannica 자료를 사용해 세비야에서 카디스로 이동한 인디아스 무역 기능과 외해 항구 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "porto",
+      "titleKo": "포르투",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "포르투갈",
+      "coordinates": {
+        "lat": 41.1496,
+        "lng": -8.6109
+      },
+      "yearLabelKo": "15-18세기 대서양 항구·도루 와인 교역",
+      "summaryKo": "도루 강 하구의 항구도시로, 포르투갈 북부 내륙의 포도주와 농산물이 대서양 상업망으로 나가는 관문이었습니다.",
+      "stage2": {
+        "primaryContextId": "portuguese-atlantic-regional-commerce",
+        "contextIds": [
+          "early-modern-atlantic-maritime-empires",
+          "portuguese-atlantic-regional-commerce"
+        ],
+        "periodPathKo": [
+          "근세",
+          "포르투갈 대서양 상업",
+          "도루 강과 포트 와인 교역"
+        ],
+        "topicTagsKo": [
+          "포르투",
+          "도루 강",
+          "리베이라",
+          "포트 와인",
+          "빌라노바드가이아"
+        ],
+        "uiFilters": {
+          "era": "포르투갈 대서양 상업",
+          "region": "이베리아 대서양",
+          "theme": [
+            "와인·소비시장",
+            "상업·금융"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 포르투 역사중심지 자료와 Britannica 자료를 사용해 도루 강 항구와 대서양 소비시장 연결 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "amsterdam",
+      "titleKo": "암스테르담",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "네덜란드",
+      "coordinates": {
+        "lat": 52.3676,
+        "lng": 4.9041
+      },
+      "yearLabelKo": "17세기 세계경제 중심",
+      "summaryKo": "17세기 네덜란드 공화국의 상업·금융·출판 중심지로, 대서양·발트해·인도양 교역망을 연결했습니다.",
+      "stage2": {
+        "primaryContextId": "dutch-golden-age-global-port-finance",
+        "contextIds": [
+          "early-modern-atlantic-maritime-empires",
+          "northern-europe-atlantic-commercial-capitals",
+          "dutch-golden-age-global-port-finance"
+        ],
+        "periodPathKo": [
+          "근세",
+          "네덜란드 황금기",
+          "암스테르담 항구·운하·금융 중심지"
+        ],
+        "topicTagsKo": [
+          "암스테르담",
+          "운하 지구",
+          "네덜란드 황금기",
+          "VOC",
+          "세계경제"
+        ],
+        "uiFilters": {
+          "era": "네덜란드 황금기",
+          "region": "북해",
+          "theme": [
+            "상업·금융",
+            "대서양-인도양 항로"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 암스테르담 운하 지구 자료와 Britannica 자료를 사용해 항구·금융·상업도시 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "bristol",
+      "titleKo": "브리스톨",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "영국",
+      "coordinates": {
+        "lat": 51.4545,
+        "lng": -2.5879
+      },
+      "yearLabelKo": "1497년 존 캐벗 항해, 17-18세기 대서양 교역",
+      "summaryKo": "1497년 존 캐벗의 북대서양 항해가 출발한 항구로, 이후 설탕·담배·노예무역과 연결된 식민 상업항이 되었습니다.",
+      "stage2": {
+        "primaryContextId": "english-north-atlantic-exploration-commerce",
+        "contextIds": [
+          "early-modern-atlantic-maritime-empires",
+          "northern-europe-atlantic-commercial-capitals",
+          "english-north-atlantic-exploration-commerce",
+          "atlantic-colonial-commerce-violence"
+        ],
+        "periodPathKo": [
+          "근세",
+          "잉글랜드 북대서양 탐험",
+          "브리스톨과 대서양 식민 상업"
+        ],
+        "topicTagsKo": [
+          "브리스톨",
+          "존 캐벗",
+          "Matthew of Bristol",
+          "북대서양 탐험",
+          "대서양 노예무역"
+        ],
+        "uiFilters": {
+          "era": "잉글랜드 북대서양 탐험",
+          "region": "북대서양",
+          "theme": [
+            "대항해",
+            "노예무역",
+            "상업·금융"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "University of Bristol, Bristol Museums, Britannica 자료를 사용해 캐벗 항해와 이후 대서양 식민 상업 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "havana",
+      "titleKo": "아바나",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "쿠바",
+      "coordinates": {
+        "lat": 23.1353,
+        "lng": -82.3589
+      },
+      "yearLabelKo": "1519년 건설, 16-18세기 카리브해 최대 항구",
+      "summaryKo": "스페인령 서인도 선단 체제의 집결 항구로, 16세기 후반 카리브해 최대 항구가 되었고 18세기에는 신대륙의 대표 조선소를 갖추었습니다.",
+      "stage2": {
+        "primaryContextId": "spanish-caribbean-fortified-fleet-ports",
+        "contextIds": [
+          "early-modern-atlantic-maritime-empires",
+          "spanish-caribbean-fortified-fleet-ports",
+          "atlantic-colonial-commerce-violence"
+        ],
+        "periodPathKo": [
+          "근세",
+          "스페인령 카리브해",
+          "아바나 선단 집결항과 조선소"
+        ],
+        "topicTagsKo": [
+          "아바나",
+          "산크리스토발 데 라 아바나",
+          "서인도 선단",
+          "아바나 조선소",
+          "요새 체계"
+        ],
+        "uiFilters": {
+          "era": "카리브 선단 체제",
+          "region": "카리브해",
+          "theme": [
+            "조선소·선단 체제",
+            "요새 항구",
+            "노예무역"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 아바나 세계유산 자료와 Britannica 자료를 사용해 서인도 선단 항구, 조선소, 요새 체계 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "cartagena-de-indias",
+      "titleKo": "카르타헤나 데 인디아스",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "콜롬비아",
+      "coordinates": {
+        "lat": 10.4236,
+        "lng": -75.5253
+      },
+      "yearLabelKo": "1533년 건설, 16-18세기 서인도 항로 핵심",
+      "summaryKo": "스페인령 카리브해의 요새 항구로, 항구와 성벽, 산펠리페 요새, 구도심이 대서양 은무역과 방어 체계, 식민 행정을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "spanish-caribbean-fortified-fleet-ports",
+        "contextIds": [
+          "early-modern-atlantic-maritime-empires",
+          "spanish-caribbean-fortified-fleet-ports",
+          "atlantic-colonial-commerce-violence"
+        ],
+        "periodPathKo": [
+          "근세",
+          "스페인령 카리브해",
+          "카르타헤나 요새 항구와 서인도 항로"
+        ],
+        "topicTagsKo": [
+          "카르타헤나 데 인디아스",
+          "산펠리페 데 바라하스",
+          "Spanish Main",
+          "은무역",
+          "식민 요새"
+        ],
+        "uiFilters": {
+          "era": "스페인 카리브 요새항",
+          "region": "카리브해",
+          "theme": [
+            "요새 항구",
+            "식민 행정",
+            "노예무역"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 카르타헤나 세계유산 자료와 Britannica 자료를 사용해 항구·요새·식민 행정 맥락을 확인했습니다."
+        }
+      }
+    }
+  ]
+}

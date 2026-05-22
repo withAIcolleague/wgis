@@ -239,6 +239,17 @@ The nineteenth pilot dataset tests Indian Ocean entrepots, Red Sea and Persian G
 - `malacca`
 - `quanzhou`
 
+The twentieth pilot dataset tests early modern exploration, Iberian oceanic expansion, Spanish Indies trade administration, northern European commercial ports, Caribbean fortified fleet ports, and Atlantic colonial commerce:
+
+- `lisbon`
+- `seville`
+- `cadiz`
+- `porto`
+- `amsterdam`
+- `bristol`
+- `havana`
+- `cartagena-de-indias`
+
 The dataset list is managed in:
 
 ```text
@@ -518,3 +529,18 @@ The 2026-05-22 nineteen-dataset browser pass checks `/stage2-preview.html` after
 - Switching back from the Indian Ocean dataset to Atlantic revolutions clears stale Indian Ocean list items, markers, labels, and map zoom state.
 - On mobile, the Indian Ocean entry list scrolls independently, `아덴` detail scrolls into view, `지도에서 보기` returns to the map, and `닫기` hides the detail panel.
 - Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-nineteen-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-nineteen-datasets-mobile.png`.
+
+## Twenty-Dataset Public Usability Pass
+
+The 2026-05-22 twenty-dataset browser pass checks `/stage2-preview.html` after adding the early modern exploration and colonial port cities pilot dataset:
+
+- Dataset selector exposes 20 datasets.
+- All 20 indexed datasets render their expected entry, marker, and permanent-label counts: Atlantic revolutions 8, Ethiopia 8, Mesopotamia 10, Egypt 14, Indus 8, Early China 8, Ancient Greece 10, Achaemenid Persia 8, Roman Republic and Empire 8, Magadha-Maurya 8, Mesoamerica 8, West Africa 8, Andes 8, Southeast Asia 8, Maya lowland/Postclassic 8, Swahili Coast 8, Lapita/Pacific 8, North American Indigenous mound/urban centers 8, Indian Ocean trade ports 8, and Early Modern exploration/colonial ports 8.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control after every dataset switch.
+- Searching `아바나` in the Early Modern ports dataset narrows the list and map to 1 entry, marker, and label.
+- Selecting `아바나` opens the detail panel with source-confidence information and detail actions.
+- Closing the `아바나` detail panel preserves the current search marker and label.
+- The `스페인 카리브 선단·요새 항구` context filter returns 2 entries: `아바나` and `카르타헤나 데 인디아스`.
+- Switching back from the Early Modern ports dataset to Atlantic revolutions clears stale Early Modern port list items, markers, labels, and map zoom state.
+- On mobile, the Early Modern ports entry list scrolls independently, `리스본` detail scrolls into view, `지도에서 보기` returns to the map, and `닫기` hides the detail panel.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-datasets-mobile.png`.
