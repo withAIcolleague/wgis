@@ -92,6 +92,12 @@
       "titleKo": "마야 저지대와 포스트클래식 네트워크",
       "path": "data/stage2/maya-lowland-postclassic-preview.json",
       "status": "preview-only"
+    },
+    {
+      "id": "stage2-swahili-coast-trade-cities-preview",
+      "titleKo": "스와힐리 해안 교역 도시",
+      "path": "data/stage2/swahili-coast-trade-cities-preview.json",
+      "status": "preview-only"
     }
   ]
 }

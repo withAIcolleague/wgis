@@ -195,6 +195,17 @@ The fifteenth pilot dataset tests Maya lowland dynastic centers, Usumacinta rive
 - `yaxchilan`
 - `tulum`
 
+The sixteenth pilot dataset tests Swahili Coast city-states, Indian Ocean exchange, coral-stone urbanism, Islamic mercantile networks, and coastal-inland gold routes:
+
+- `kilwa-kisiwani`
+- `songo-mnara`
+- `fort-jesus-mombasa`
+- `gedi`
+- `lamu-old-town`
+- `zanzibar-stone-town`
+- `sofala`
+- `great-zimbabwe`
+
 The dataset list is managed in:
 
 ```text
@@ -414,3 +425,18 @@ The 2026-05-22 fifteen-dataset browser pass checks `/stage2-preview.html` after 
 - Switching back from the Maya dataset to Atlantic revolutions clears stale Maya list items, markers, labels, and map zoom state.
 - On mobile, the Maya entry list scrolls independently, `팔렌케` detail scrolls into view, `지도에서 보기` returns to the map, and `닫기` hides the detail panel.
 - Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-fifteen-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-fifteen-datasets-mobile.png`.
+
+## Sixteen-Dataset Public Usability Pass
+
+The 2026-05-22 sixteen-dataset browser pass checks `/stage2-preview.html` after adding the Swahili Coast trade cities pilot dataset:
+
+- Dataset selector exposes 16 datasets.
+- All 16 indexed datasets render their expected entry, marker, and permanent-label counts: Atlantic revolutions 8, Ethiopia 8, Mesopotamia 10, Egypt 14, Indus 8, Early China 8, Ancient Greece 10, Achaemenid Persia 8, Roman Republic and Empire 8, Magadha-Maurya 8, Mesoamerica 8, West Africa 8, Andes 8, Southeast Asia 8, Maya lowland/Postclassic 8, and Swahili Coast 8.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control after every dataset switch.
+- Searching `잔지바르` in the Swahili Coast dataset narrows the list and map to 1 entry, marker, and label.
+- Selecting `잔지바르 스톤타운` opens the detail panel with source-confidence information and detail actions.
+- Closing the `잔지바르 스톤타운` detail panel preserves the current search marker and label.
+- The `킬와·소팔라·그레이트 짐바브웨 금 교역로` context filter returns 3 entries: `킬와 키시와니`, `소팔라`, and `그레이트 짐바브웨`.
+- Switching back from the Swahili Coast dataset to Atlantic revolutions clears stale Swahili list items, markers, labels, and map zoom state.
+- On mobile, the Swahili Coast entry list scrolls independently, `킬와 키시와니` detail scrolls into view, `지도에서 보기` returns to the map, and `닫기` hides the detail panel.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-sixteen-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-sixteen-datasets-mobile.png`.

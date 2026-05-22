@@ -96,6 +96,11 @@ const datasets = [
     path: 'data/stage2/maya-lowland-postclassic-preview.json',
     count: 8,
     firstEntryId: 'palenque'
+  },
+  {
+    path: 'data/stage2/swahili-coast-trade-cities-preview.json',
+    count: 8,
+    firstEntryId: 'kilwa-kisiwani'
   }
 ];
 
@@ -193,8 +198,8 @@ function assertCheck(condition, message, details = undefined) {
 async function main() {
   await mkdir(outputDir, { recursive: true });
   const userDataDir = await mkdtemp(path.join(os.tmpdir(), 'wgis-stage2-public-'));
-  const desktopShot = path.join(outputDir, 'wgis-stage2-fifteen-datasets-desktop.png');
-  const mobileShot = path.join(outputDir, 'wgis-stage2-fifteen-datasets-mobile.png');
+  const desktopShot = path.join(outputDir, 'wgis-stage2-sixteen-datasets-desktop.png');
+  const mobileShot = path.join(outputDir, 'wgis-stage2-sixteen-datasets-mobile.png');
 
   const chrome = spawn(chromePath, [
     '--headless=new',
@@ -448,6 +453,7 @@ async function main() {
     const andes = datasets.find(dataset => dataset.path.endsWith('andean-core-sites-preview.json'));
     const southeastAsia = datasets.find(dataset => dataset.path.endsWith('southeast-asia-early-states-preview.json'));
     const maya = datasets.find(dataset => dataset.path.endsWith('maya-lowland-postclassic-preview.json'));
+    const swahili = datasets.find(dataset => dataset.path.endsWith('swahili-coast-trade-cities-preview.json'));
     await selectDataset(greece);
     await setSearch('델포이', 1);
     state = await captureState('desktop-greece-search-delphi');
@@ -814,6 +820,46 @@ async function main() {
       state
     );
 
+    await selectDataset(swahili);
+    await setSearch('잔지바르', 1);
+    state = await captureState('desktop-swahili-search-zanzibar');
+    assertCheck(state.entryIds.includes('zanzibar-stone-town'), 'Swahili Coast search should find Zanzibar Stone Town', state);
+
+    await clickEntry('zanzibar-stone-town', '잔지바르 스톤타운');
+    state = await captureState('desktop-swahili-detail-zanzibar');
+    assertCheck(state.detailTitle === '잔지바르 스톤타운' && state.detailHasConfidence && state.detailActions === 2, 'Swahili Coast detail should show Zanzibar Stone Town and detail actions', state);
+
+    await clickDetailAction('close');
+    await waitForExpression("document.querySelector('#detailPanel')?.classList.contains('is-empty') && !document.querySelector('.entry-card.active')", 'desktop Swahili Coast detail closes');
+    state = await captureState('desktop-swahili-detail-closed');
+    assertCheck(state.detailHidden && state.markers === 1 && state.labels === 1, 'Closing Swahili Coast detail should preserve current search markers', state);
+
+    await setSearch('', 8);
+    await clickContextId('kilwa-sofala-great-zimbabwe-gold-route', 3);
+    state = await captureState('desktop-swahili-gold-route-context');
+    assertCheck(
+      state.entryIds.includes('kilwa-kisiwani') &&
+        state.entryIds.includes('sofala') &&
+        state.entryIds.includes('great-zimbabwe') &&
+        state.contextFilterButtons <= 4,
+      'Kilwa-Sofala-Great Zimbabwe gold route should return the coastal and inland gold-route entries while filters collapse again',
+      state
+    );
+
+    await selectDataset(datasets[0]);
+    await waitForExpression("typeof stage2Map !== 'undefined' && stage2Map.getZoom() <= 4", 'Atlantic map refits after Swahili Coast dataset');
+    state = await captureState('desktop-return-atlantic-after-swahili');
+    assertCheck(
+      state.entryCountNumber === 8 &&
+        state.markers === 8 &&
+        state.labels === 8 &&
+        state.mapZoom <= 4 &&
+        !state.entryIds.includes('zanzibar-stone-town') &&
+        !state.entryIds.includes('great-zimbabwe'),
+      'Switching away from Swahili Coast dataset should clear stale list, markers, labels, and map view',
+      state
+    );
+
     const desktopPng = await client.send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: false }, sessionId);
     await writeFile(desktopShot, Buffer.from(desktopPng.data, 'base64'));
 
@@ -827,28 +873,28 @@ async function main() {
       screenOrientation: { type: 'portraitPrimary', angle: 0 }
     });
 
-    await selectDataset(maya);
+    await selectDataset(swahili);
     await evaluate(`(() => {
       const list = document.querySelector('.entry-list');
       list.scrollTop = 360;
     })()`);
     await waitForExpression("document.querySelector('.entry-list')?.scrollTop > 0", 'mobile entry list scrolls');
-    state = await captureState('mobile-maya-list-scroll');
+    state = await captureState('mobile-swahili-list-scroll');
     assertCheck(state.entryListCanScroll && state.entryListScrollTop > 0 && state.contextFilterButtons <= 4, 'Mobile Stage 2 entry list should scroll independently with compact filters', state);
 
-    await clickEntry('palenque', '팔렌케');
+    await clickEntry('kilwa-kisiwani', '킬와 키시와니');
     await waitForExpression("document.querySelector('#detailPanel')?.getBoundingClientRect().top < 80", 'mobile detail scrolls into view');
-    state = await captureState('mobile-maya-detail-palenque');
-    assertCheck(state.detailTitle === '팔렌케' && state.detailPosition === 'static' && state.detailTop < 80 && state.documentHeight > state.viewportHeight, 'Mobile detail should sit in normal page flow and scroll into view after selection', state);
+    state = await captureState('mobile-swahili-detail-kilwa');
+    assertCheck(state.detailTitle === '킬와 키시와니' && state.detailPosition === 'static' && state.detailTop < 80 && state.documentHeight > state.viewportHeight, 'Mobile detail should sit in normal page flow and scroll into view after selection', state);
 
     await clickDetailAction('focus-map');
     await waitForExpression("(() => { const top = document.querySelector('#stage2Map')?.getBoundingClientRect().top || 0; return typeof stage2Map !== 'undefined' && stage2Map.getZoom() >= 8 && top > -80 && top < window.innerHeight - 80; })()", 'mobile detail map focus returns to map');
-    state = await captureState('mobile-maya-focus-map');
-    assertCheck(state.detailTitle === '팔렌케' && state.mapTop > -80 && state.mapTop < state.viewportHeight - 80 && state.mapZoom >= 8, 'Mobile map focus should return to the selected map location', state);
+    state = await captureState('mobile-swahili-focus-map');
+    assertCheck(state.detailTitle === '킬와 키시와니' && state.mapTop > -80 && state.mapTop < state.viewportHeight - 80 && state.mapZoom >= 8, 'Mobile map focus should return to the selected map location', state);
 
     await clickDetailAction('close');
     await waitForExpression("document.querySelector('#detailPanel')?.classList.contains('is-empty') && !document.querySelector('.entry-card.active')", 'mobile detail closes');
-    state = await captureState('mobile-maya-detail-closed');
+    state = await captureState('mobile-swahili-detail-closed');
     assertCheck(state.detailHidden && state.activeEntryCards === 0 && state.mapTop > -80 && state.mapTop < state.viewportHeight - 80, 'Mobile close should hide detail and return to the map area', state);
 
     const mobilePng = await client.send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: false }, sessionId);

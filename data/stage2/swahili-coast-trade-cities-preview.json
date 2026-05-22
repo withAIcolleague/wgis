@@ -1,0 +1,530 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-swahili-coast-trade-cities-preview",
+  "titleKo": "2단계 미리보기: 스와힐리 해안 교역 도시",
+  "descriptionKo": "동아프리카 스와힐리 해안의 도시국가, 산호석 도시 경관, 이슬람 상인 네트워크, 인도양 교역, 잠베지-짐바브웨 내륙 금 교역 연결을 함께 비교하는 2단계 미리보기 데이터셋입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "스와힐리 도시국가",
+        "킬와 권역 전성기",
+        "포르투갈 인도양 경쟁",
+        "라무·잔지바르 근세 도시",
+        "잠베지 금 교역권",
+        "쇼나 석조 도시"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "탄자니아 남부 해안",
+        "킬와 군도",
+        "케냐 남부 해안",
+        "케냐 북부 해안",
+        "라무 군도",
+        "잔지바르",
+        "모잠비크 해협",
+        "짐바브웨 고원"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "인도양 교역",
+        "이슬람 상인 네트워크",
+        "산호석 도시",
+        "항구·해상 거점",
+        "금·상아 교역",
+        "포르투갈 요새",
+        "도시 주거·물 관리",
+        "살아 있는 역사도시",
+        "내륙 왕국 연결"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지도 유형",
+      "options": [
+        "장소",
+        "유적"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "swahili-coast-indian-ocean-networks",
+      "labelKo": "스와힐리 해안 인도양 네트워크",
+      "parentId": null,
+      "periodKo": "9-19세기",
+      "summaryKo": "탄자니아, 케냐, 모잠비크 해안을 잇는 스와힐리 도시국가와 이슬람 상인 공동체, 인도양 교역, 내륙 금·상아 교역 연결을 함께 보는 상위 맥락입니다."
+    },
+    {
+      "id": "kilwa-archipelago-maritime-city-states",
+      "labelKo": "킬와 군도 해상 도시국가",
+      "parentId": "swahili-coast-indian-ocean-networks",
+      "periodKo": "13-16세기",
+      "summaryKo": "킬와 키시와니와 송고 음나라를 통해 대모스크, 궁전, 산호석 주거지, 섬 항구가 결합한 스와힐리 해상 도시국가의 전성기를 다룹니다."
+    },
+    {
+      "id": "swahili-coral-stone-urbanism",
+      "labelKo": "스와힐리 산호석 도시 경관",
+      "parentId": "swahili-coast-indian-ocean-networks",
+      "periodKo": "10-19세기",
+      "summaryKo": "킬와, 송고 음나라, 게디, 라무, 잔지바르처럼 산호석, 목재, 안뜰형 주택, 모스크와 도시 조직이 결합한 해안 도시 경관을 비교합니다."
+    },
+    {
+      "id": "indian-ocean-islamic-mercantile-network",
+      "labelKo": "인도양 이슬람 상인 네트워크",
+      "parentId": "swahili-coast-indian-ocean-networks",
+      "periodKo": "9-19세기",
+      "summaryKo": "스와힐리 항구도시의 모스크, 상인 공동체, 도자·향료·상아·금 교역을 통해 동아프리카가 아라비아·페르시아·인도양 세계와 연결된 방식을 봅니다."
+    },
+    {
+      "id": "kenya-northern-swahili-urbanism",
+      "labelKo": "케냐 북부 스와힐리 도시화",
+      "parentId": "swahili-coast-indian-ocean-networks",
+      "periodKo": "10-19세기",
+      "summaryKo": "게디와 라무를 통해 해안림·군도 환경, 모스크와 주거지, 물 관리, 살아 있는 스와힐리 도시 전통을 함께 비교합니다."
+    },
+    {
+      "id": "mombasa-portuguese-fortified-harbor",
+      "labelKo": "몸바사 포르투갈 요새 항구",
+      "parentId": "swahili-coast-indian-ocean-networks",
+      "periodKo": "16-19세기",
+      "summaryKo": "포트 지저스를 중심으로 몸바사 항구의 전략성, 포르투갈·아랍·스와힐리·영국 세력 경쟁, 해상 통제와 교역 거점의 결합을 다룹니다."
+    },
+    {
+      "id": "zanzibar-sultanate-stone-town",
+      "labelKo": "잔지바르 술탄국과 스톤타운",
+      "parentId": "swahili-coast-indian-ocean-networks",
+      "periodKo": "18-19세기",
+      "summaryKo": "잔지바르 스톤타운을 통해 향신료, 상아, 노예무역, 오만계 술탄국, 아프리카·아랍·인도·유럽 요소가 결합한 근세 도시 경관을 봅니다."
+    },
+    {
+      "id": "kilwa-sofala-great-zimbabwe-gold-route",
+      "labelKo": "킬와·소팔라·그레이트 짐바브웨 금 교역로",
+      "parentId": "swahili-coast-indian-ocean-networks",
+      "periodKo": "11-16세기",
+      "summaryKo": "킬와, 소팔라, 그레이트 짐바브웨를 묶어 짐바브웨 고원의 금·구리·상아가 모잠비크 해협과 인도양으로 이동한 해안-내륙 교역로를 다룹니다."
+    },
+    {
+      "id": "sofala-mozambique-channel-entrepot",
+      "labelKo": "소팔라 모잠비크 해협 거점",
+      "parentId": "swahili-coast-indian-ocean-networks",
+      "periodKo": "10-16세기",
+      "summaryKo": "소팔라를 통해 킬와 술탄국 남부 거점, 잠베지·짐바브웨 내륙 금 교역, 항구 환경 변화와 도시 중요성의 이동을 봅니다."
+    },
+    {
+      "id": "great-zimbabwe-inland-stone-city",
+      "labelKo": "그레이트 짐바브웨 내륙 석조 도시",
+      "parentId": "swahili-coast-indian-ocean-networks",
+      "periodKo": "11-15세기",
+      "summaryKo": "그레이트 짐바브웨를 통해 쇼나 석조 도시, 내륙 정치 권력, 금·상아·수입 도자와 유리구슬이 보여주는 스와힐리 해안 교역 연결을 다룹니다."
+    },
+    {
+      "id": "portuguese-indian-ocean-contestation",
+      "labelKo": "포르투갈 인도양 교역 경쟁",
+      "parentId": "swahili-coast-indian-ocean-networks",
+      "periodKo": "16세기 이후",
+      "summaryKo": "몸바사 포트 지저스와 소팔라를 통해 포르투갈의 요새화, 항구 통제, 금 교역 확보, 기존 스와힐리-이슬람 교역망과의 긴장을 비교합니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "kilwa-kisiwani",
+      "titleKo": "킬와 키시와니",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "탄자니아",
+      "coordinates": {
+        "lat": -8.958,
+        "lng": 39.523
+      },
+      "yearLabelKo": "9-19세기, 13-15세기 전성기",
+      "summaryKo": "스와힐리 해안 남부의 대표 도시국가로, 대모스크와 후수니 쿠브와 궁전이 산호석 건축, 이슬람 도시문화, 금·상아·도자 교역의 규모를 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "kilwa-archipelago-maritime-city-states",
+        "contextIds": [
+          "swahili-coast-indian-ocean-networks",
+          "kilwa-archipelago-maritime-city-states",
+          "swahili-coral-stone-urbanism",
+          "indian-ocean-islamic-mercantile-network",
+          "kilwa-sofala-great-zimbabwe-gold-route"
+        ],
+        "periodPathKo": [
+          "중세",
+          "스와힐리 해안",
+          "킬와 도시국가와 인도양 금 교역"
+        ],
+        "topicTagsKo": [
+          "킬와 키시와니",
+          "후수니 쿠브와",
+          "대모스크",
+          "스와힐리",
+          "금 교역"
+        ],
+        "uiFilters": {
+          "era": "킬와 권역 전성기",
+          "region": "탄자니아 남부 해안",
+          "theme": [
+            "인도양 교역",
+            "이슬람 상인 네트워크",
+            "산호석 도시",
+            "금·상아 교역"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 2,
+          "noteKo": "UNESCO 세계유산 및 정기보고 자료와 World History Encyclopedia, Britannica 항목을 함께 사용해 위치와 교역·건축 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "songo-mnara",
+      "titleKo": "송고 음나라",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "탄자니아",
+      "coordinates": {
+        "lat": -9.049,
+        "lng": 39.567
+      },
+      "yearLabelKo": "14-16세기",
+      "summaryKo": "킬와 권역의 섬 유적으로, 모스크와 궁전 복합체, 산호석 주거지가 해상 교역과 이슬람 공동체가 결합한 스와힐리 도시 생활을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "kilwa-archipelago-maritime-city-states",
+        "contextIds": [
+          "swahili-coast-indian-ocean-networks",
+          "kilwa-archipelago-maritime-city-states",
+          "swahili-coral-stone-urbanism",
+          "indian-ocean-islamic-mercantile-network"
+        ],
+        "periodPathKo": [
+          "중세",
+          "스와힐리 해안",
+          "송고 음나라 섬 도시와 산호석 주거지"
+        ],
+        "topicTagsKo": [
+          "송고 음나라",
+          "킬와 군도",
+          "모스크",
+          "산호석 주거지",
+          "스와힐리 도시"
+        ],
+        "uiFilters": {
+          "era": "킬와 권역 전성기",
+          "region": "킬와 군도",
+          "theme": [
+            "인도양 교역",
+            "이슬람 상인 네트워크",
+            "산호석 도시"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO 세계유산, 정기보고, Silk Roads Programme 자료를 사용해 구성요소 좌표와 킬와 권역 도시 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "fort-jesus-mombasa",
+      "titleKo": "몸바사 포트 지저스",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "케냐",
+      "coordinates": {
+        "lat": -4.0628,
+        "lng": 39.6794
+      },
+      "yearLabelKo": "1593-1596년 건설, 16-19세기 점유",
+      "summaryKo": "몸바사 항구 입구를 통제하기 위해 세운 포르투갈 요새로, 인도양 교역로를 둘러싼 포르투갈·아랍·스와힐리·영국 세력 경쟁을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "mombasa-portuguese-fortified-harbor",
+        "contextIds": [
+          "swahili-coast-indian-ocean-networks",
+          "mombasa-portuguese-fortified-harbor",
+          "portuguese-indian-ocean-contestation"
+        ],
+        "periodPathKo": [
+          "근세",
+          "스와힐리 해안",
+          "몸바사 항구 요새와 인도양 교역 경쟁"
+        ],
+        "topicTagsKo": [
+          "포트 지저스",
+          "몸바사",
+          "포르투갈 요새",
+          "스와힐리 해안",
+          "인도양 교역"
+        ],
+        "uiFilters": {
+          "era": "포르투갈 인도양 경쟁",
+          "region": "케냐 남부 해안",
+          "theme": [
+            "포르투갈 요새",
+            "항구·해상 거점",
+            "인도양 교역"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 포트 지저스 세계유산 자료와 World History Encyclopedia 스와힐리 해안 항목을 사용해 위치와 전략 항구 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "gedi",
+      "titleKo": "게디",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "케냐",
+      "coordinates": {
+        "lat": -3.3103,
+        "lng": 40.0173
+      },
+      "yearLabelKo": "10-17세기",
+      "summaryKo": "케냐 해안림 속의 스와힐리 도시 유적으로, 성벽, 모스크, 궁전, 주거지와 물 관리 시설이 해안 생태와 교역 도시 생활의 결합을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "kenya-northern-swahili-urbanism",
+        "contextIds": [
+          "swahili-coast-indian-ocean-networks",
+          "kenya-northern-swahili-urbanism",
+          "swahili-coral-stone-urbanism",
+          "indian-ocean-islamic-mercantile-network"
+        ],
+        "periodPathKo": [
+          "중세-근세",
+          "케냐 북부 해안",
+          "게디 해안림 도시와 물 관리"
+        ],
+        "topicTagsKo": [
+          "게디",
+          "게데",
+          "와타무",
+          "스와힐리 유적",
+          "물 관리"
+        ],
+        "uiFilters": {
+          "era": "스와힐리 도시국가",
+          "region": "케냐 북부 해안",
+          "theme": [
+            "산호석 도시",
+            "도시 주거·물 관리",
+            "이슬람 상인 네트워크"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO 게디 세계유산 자료와 케냐 국립박물관 자료를 사용해 유적 위치, 도시 구성, 물 관리 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "lamu-old-town",
+      "titleKo": "라무 올드타운",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "케냐",
+      "coordinates": {
+        "lat": -2.2844,
+        "lng": 40.8525
+      },
+      "yearLabelKo": "14세기 이후, 19세기 종교·학문 중심",
+      "summaryKo": "지속적으로 거주된 스와힐리 항구도시로, 산호석과 맹그로브 목재 건축, 좁은 골목, 안뜰형 주택과 이슬람 학문·축제 전통이 함께 남아 있습니다.",
+      "stage2": {
+        "primaryContextId": "kenya-northern-swahili-urbanism",
+        "contextIds": [
+          "swahili-coast-indian-ocean-networks",
+          "kenya-northern-swahili-urbanism",
+          "swahili-coral-stone-urbanism",
+          "indian-ocean-islamic-mercantile-network"
+        ],
+        "periodPathKo": [
+          "중세-근세",
+          "라무 군도",
+          "살아 있는 스와힐리 항구도시"
+        ],
+        "topicTagsKo": [
+          "라무",
+          "라무섬",
+          "스와힐리 건축",
+          "마울리디",
+          "이슬람 학문"
+        ],
+        "uiFilters": {
+          "era": "라무·잔지바르 근세 도시",
+          "region": "라무 군도",
+          "theme": [
+            "살아 있는 역사도시",
+            "산호석 도시",
+            "이슬람 상인 네트워크"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 라무 올드타운 세계유산 자료와 World History Encyclopedia 스와힐리 해안 항목을 사용해 위치와 살아 있는 도시 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "zanzibar-stone-town",
+      "titleKo": "잔지바르 스톤타운",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "탄자니아",
+      "coordinates": {
+        "lat": -6.1631,
+        "lng": 39.1892
+      },
+      "yearLabelKo": "18-19세기 도시 경관",
+      "summaryKo": "근세 인도양 교역 도시의 대표 경관으로, 아프리카·아랍·인도·유럽 요소가 산호석 도시 조직과 향신료·상아·노예 교역의 기억 속에 겹쳐 있습니다.",
+      "stage2": {
+        "primaryContextId": "zanzibar-sultanate-stone-town",
+        "contextIds": [
+          "swahili-coast-indian-ocean-networks",
+          "zanzibar-sultanate-stone-town",
+          "swahili-coral-stone-urbanism",
+          "indian-ocean-islamic-mercantile-network"
+        ],
+        "periodPathKo": [
+          "근세",
+          "잔지바르",
+          "술탄국 스톤타운과 인도양 교역"
+        ],
+        "topicTagsKo": [
+          "잔지바르",
+          "스톤타운",
+          "운구자",
+          "향신료 교역",
+          "노예무역 폐지"
+        ],
+        "uiFilters": {
+          "era": "라무·잔지바르 근세 도시",
+          "region": "잔지바르",
+          "theme": [
+            "살아 있는 역사도시",
+            "인도양 교역",
+            "산호석 도시"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 잔지바르 스톤타운 세계유산 자료와 World History Encyclopedia 스와힐리 해안 항목을 사용해 도시 경관과 근세 교역 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "sofala",
+      "titleKo": "소팔라",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "모잠비크",
+      "coordinates": {
+        "lat": -20.1588,
+        "lng": 34.7202
+      },
+      "yearLabelKo": "10-16세기",
+      "summaryKo": "모잠비크 해협의 옛 항구로, 킬와의 남부 거점이자 짐바브웨 고원 금이 인도양으로 이동하던 해안-내륙 교역로의 핵심 노드였습니다.",
+      "stage2": {
+        "primaryContextId": "sofala-mozambique-channel-entrepot",
+        "contextIds": [
+          "swahili-coast-indian-ocean-networks",
+          "sofala-mozambique-channel-entrepot",
+          "kilwa-sofala-great-zimbabwe-gold-route",
+          "portuguese-indian-ocean-contestation"
+        ],
+        "periodPathKo": [
+          "중세-근세",
+          "모잠비크 해협",
+          "소팔라 금 교역 항구"
+        ],
+        "topicTagsKo": [
+          "소팔라",
+          "노바 소팔라",
+          "킬와",
+          "잠베지 금 교역",
+          "모잠비크 해협"
+        ],
+        "uiFilters": {
+          "era": "잠베지 금 교역권",
+          "region": "모잠비크 해협",
+          "theme": [
+            "항구·해상 거점",
+            "금·상아 교역",
+            "인도양 교역"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 0,
+          "referenceSources": 3,
+          "noteKo": "Britannica와 World History Encyclopedia 항목을 사용하지만 옛 항구의 정확한 유적권이 제한적으로 남아 있어 현대 노바 소팔라 일대 근사 좌표로 관리합니다."
+        }
+      }
+    },
+    {
+      "entryId": "great-zimbabwe",
+      "titleKo": "그레이트 짐바브웨",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "짐바브웨",
+      "coordinates": {
+        "lat": -20.2712,
+        "lng": 30.9333
+      },
+      "yearLabelKo": "11-15세기",
+      "summaryKo": "쇼나계 사회의 대규모 석조 도시로, 금·구리·상아와 수입 도자·유리구슬의 이동을 통해 킬와와 소팔라를 포함한 스와힐리 해안 교역망과 연결되었습니다.",
+      "stage2": {
+        "primaryContextId": "great-zimbabwe-inland-stone-city",
+        "contextIds": [
+          "swahili-coast-indian-ocean-networks",
+          "great-zimbabwe-inland-stone-city",
+          "kilwa-sofala-great-zimbabwe-gold-route"
+        ],
+        "periodPathKo": [
+          "중세",
+          "짐바브웨 고원",
+          "쇼나 석조 도시와 인도양 교역 연결"
+        ],
+        "topicTagsKo": [
+          "그레이트 짐바브웨",
+          "쇼나",
+          "대석벽",
+          "금 교역",
+          "소팔라"
+        ],
+        "uiFilters": {
+          "era": "쇼나 석조 도시",
+          "region": "짐바브웨 고원",
+          "theme": [
+            "내륙 왕국 연결",
+            "금·상아 교역"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 그레이트 짐바브웨 세계유산 자료와 World History Encyclopedia 항목을 사용해 위치와 해안 교역 연결 맥락을 확인했습니다."
+        }
+      }
+    }
+  ]
+}

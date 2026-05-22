@@ -14,7 +14,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Current entry count: 250
 - Completed curation batches: 31
 - Latest completed batch: `africa-egypt-late-temple-centers-v1`
-- Latest completed infrastructure milestone: stage-2 fifteen-dataset public usability pass
+- Latest completed infrastructure milestone: stage-2 sixteen-dataset public usability pass
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
@@ -258,6 +258,19 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - Scope: keep the public Stage 2 preview browser check repeatable after adding the fifteenth dataset
   - Checked: 15-dataset selector, expected entry/marker/label counts across 130 Stage 2 preview entries, compact context filters, Maya search/detail/context behavior, stale Maya marker cleanup, deterministic map reframing after detail zoom, mobile entry-list scrolling, mobile detail map-return flow, and hidden-detail close behavior
   - Result: local and public browser passes completed for 15 datasets and 130 Stage 2 preview entries
+
+- Stage-2 Swahili Coast trade cities pilot dataset
+  - Files: `data/stage2/index.json`, `data/stage2/swahili-coast-trade-cities-preview.json`, `scripts/smoke-check.js`, `docs/stage2-preview.md`
+  - URL path: `/stage2-preview.html`
+  - Scope: add a sixteenth Stage 2 preview dataset using the existing Swahili Coast trade cities batch
+  - Model stress test: East African city-states, Indian Ocean exchange, coral-stone urbanism, Islamic mercantile networks, Portuguese fortified harbor competition, and Kilwa-Sofala-Great Zimbabwe gold-route connections
+
+- Stage-2 sixteen-dataset public usability pass
+  - Files: `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`
+  - URL path: `https://wgis.vercel.app/stage2-preview.html`
+  - Scope: keep the public Stage 2 preview browser check repeatable after adding the sixteenth dataset
+  - Checked: 16-dataset selector, expected entry/marker/label counts across 138 Stage 2 preview entries, compact context filters, Swahili Coast search/detail/context behavior, stale Swahili marker cleanup, deterministic map reframing after detail zoom, mobile entry-list scrolling, mobile detail map-return flow, and hidden-detail close behavior
+  - Result: local and public browser passes completed for 16 datasets and 138 Stage 2 preview entries
 
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`
@@ -724,8 +737,8 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Stage-2 sixteenth pilot dataset
-   - Scope: create another Stage 2 file from Swahili Coast trade cities to compare East African city-states, Indian Ocean exchange, coral-stone urbanism, Islamic mercantile networks, and coastal entrepots
+1. Stage-2 seventeenth pilot dataset
+   - Scope: create another Stage 2 file from Lapita and Pacific settlement core sites to compare Lapita expansion, Polynesian navigation, ceremonial landscapes, island settlement routes, and Oceania exchange networks
 
 2. First-stage DB next expansion batch
    - Scope: resume focused first-stage source-record growth if the priority shifts back from Stage 2 modeling to raw coverage
