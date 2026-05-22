@@ -1,0 +1,538 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-early-modern-gunpowder-empire-capitals-preview",
+  "titleKo": "2단계 미리보기: 근세 화약제국 수도와 궁성 복합체",
+  "descriptionKo": "오스만 이스탄불과 톱카프, 사파비 이스파한과 나그셰 자한, 무굴 아그라·파테푸르 시크리·델리·라호르를 비교하기 위한 2단계 미리보기 데이터셋입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "오스만 제국",
+        "사파비 제국",
+        "무굴 제국"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "보스포루스·마르마라",
+        "이란 중앙고원",
+        "야무나강 북인도",
+        "펀자브"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "제국 수도",
+        "궁성",
+        "수도계획",
+        "제국 의례",
+        "이슬람 궁정문화",
+        "광장·시장",
+        "정원도시",
+        "군사 요새",
+        "변경 행정",
+        "세계유산"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지점 유형",
+      "options": [
+        "장소"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "early-modern-gunpowder-empire-capital-world",
+      "labelKo": "근세 화약제국 수도권",
+      "parentId": null,
+      "periodKo": "15-19세기",
+      "summaryKo": "오스만, 사파비, 무굴 제국의 수도와 궁성 복합체를 묶어 화약무기와 기병·관료제·궁정문화가 결합한 근세 유라시아 제국 권력이 도시 공간을 조직한 방식을 봅니다."
+    },
+    {
+      "id": "ottoman-istanbul-imperial-capital",
+      "labelKo": "오스만 이스탄불 제국 수도",
+      "parentId": "early-modern-gunpowder-empire-capital-world",
+      "periodKo": "1453-1922년",
+      "summaryKo": "이스탄불 역사 지구와 톱카프 궁전을 통해 비잔틴 수도 위에 오스만 제국 수도가 중첩되고, 발칸·아나톨리아·흑해·지중해 교차로가 술탄 권력의 중심으로 재편된 과정을 봅니다."
+    },
+    {
+      "id": "topkapi-palace-court-administration",
+      "labelKo": "톱카프 궁정과 제국 행정",
+      "parentId": "ottoman-istanbul-imperial-capital",
+      "periodKo": "15-19세기",
+      "summaryKo": "톱카프 궁전의 안뜰, 문, 보물고, 하렘, 의례 공간을 통해 정복으로 확장한 오스만 권력이 궁정 의례와 관료 행정으로 조직된 방식을 봅니다."
+    },
+    {
+      "id": "safavid-isfahan-capital-planning",
+      "labelKo": "사파비 이스파한 수도계획",
+      "parentId": "early-modern-gunpowder-empire-capital-world",
+      "periodKo": "1598-1722년",
+      "summaryKo": "사파비 이스파한과 나그셰 자한 광장을 통해 샤 압바스 1세가 왕도, 시장, 다리, 정원, 모스크를 결합해 시아 이슬람 왕권과 장거리 교역을 수도 공간에 통합한 방식을 봅니다."
+    },
+    {
+      "id": "naqsh-e-jahan-square-ritual-market",
+      "labelKo": "나그셰 자한 광장·시장·의례",
+      "parentId": "safavid-isfahan-capital-planning",
+      "periodKo": "1598-1629년",
+      "summaryKo": "알리 카푸 궁전, 샤 모스크, 셰이크 로트폴라 모스크, 시장 입구가 한 광장에 배치된 구조를 통해 왕권, 신앙, 상업이 시각적으로 조직된 사파비 수도계획을 봅니다."
+    },
+    {
+      "id": "mughal-imperial-capital-landscapes",
+      "labelKo": "무굴 제국 수도와 궁성 경관",
+      "parentId": "early-modern-gunpowder-empire-capital-world",
+      "periodKo": "16-19세기",
+      "summaryKo": "아그라 요새, 파테푸르 시크리, 델리 붉은 요새, 라호르 요새와 샬리마르 정원을 묶어 무굴 제국의 수도 이전, 궁성, 정원, 알현 의례, 군사 요새, 서북 변경 행정을 비교합니다."
+    },
+    {
+      "id": "akbar-agra-fatehpur-sikri-capitals",
+      "labelKo": "아크바르의 아그라·파테푸르 시크리",
+      "parentId": "mughal-imperial-capital-landscapes",
+      "periodKo": "1565-1585년",
+      "summaryKo": "아그라 요새와 파테푸르 시크리를 통해 아크바르 시기의 군사 요새, 계획 수도, 종교 토론, 궁정 실험, 중앙아시아·페르시아·인도 건축 요소의 결합을 봅니다."
+    },
+    {
+      "id": "shah-jahan-delhi-red-fort-capital",
+      "labelKo": "샤 자한의 델리 붉은 요새와 샤자하나바드",
+      "parentId": "mughal-imperial-capital-landscapes",
+      "periodKo": "1639-1857년",
+      "summaryKo": "델리 붉은 요새를 통해 샤 자한이 새 수도 샤자하나바드의 궁성으로 조직한 파빌리온, 물길, 정원, 붉은 사암 성벽, 후기 무굴 권력의 상징 공간을 봅니다."
+    },
+    {
+      "id": "lahore-mughal-frontier-garden-court",
+      "labelKo": "라호르 무굴 서북 변경과 정원 궁정",
+      "parentId": "mughal-imperial-capital-landscapes",
+      "periodKo": "1585-1700년",
+      "summaryKo": "라호르 요새와 샬리마르 정원을 통해 펀자브, 카불, 카슈미르 방면을 잇는 무굴 서북 변경 행정과 궁성·정원 문화의 장기 변화를 봅니다."
+    },
+    {
+      "id": "eurasian-islamic-court-urbanism",
+      "labelKo": "유라시아 이슬람 궁정 도시문화",
+      "parentId": "early-modern-gunpowder-empire-capital-world",
+      "periodKo": "15-19세기",
+      "summaryKo": "톱카프, 나그셰 자한, 아그라, 파테푸르 시크리, 델리, 라호르를 가로질러 궁정 의례, 모스크, 시장, 정원, 요새가 제국 권력의 시각 언어로 작동한 방식을 비교합니다."
+    },
+    {
+      "id": "world-heritage-gunpowder-empire-palace-sites",
+      "labelKo": "세계유산으로 남은 화약제국 궁성",
+      "parentId": "early-modern-gunpowder-empire-capital-world",
+      "periodKo": "현재 보존 기준",
+      "summaryKo": "UNESCO 세계유산으로 등재된 이스탄불 역사 지구, 메이단 에맘, 아그라 요새, 파테푸르 시크리, 레드 포트, 라호르 요새와 샬리마르 정원을 통해 보존된 궁성·수도 경관을 비교합니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "ottoman-istanbul",
+      "titleKo": "오스만 이스탄불",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "튀르키예",
+      "coordinates": {
+        "lat": 41.0086,
+        "lng": 28.9802
+      },
+      "yearLabelKo": "1453-1922년 오스만 수도",
+      "summaryKo": "1453년 오스만이 콘스탄티노폴리스를 점령한 뒤 제국의 수도이자 발칸, 아나톨리아, 흑해, 지중해를 연결하는 정치·군사·상업 중심지가 된 도시입니다.",
+      "stage2": {
+        "primaryContextId": "ottoman-istanbul-imperial-capital",
+        "contextIds": [
+          "early-modern-gunpowder-empire-capital-world",
+          "ottoman-istanbul-imperial-capital",
+          "eurasian-islamic-court-urbanism",
+          "world-heritage-gunpowder-empire-palace-sites"
+        ],
+        "periodPathKo": [
+          "근세",
+          "오스만 제국",
+          "이스탄불 제국 수도"
+        ],
+        "topicTagsKo": [
+          "오스만 이스탄불",
+          "콘스탄티니예",
+          "보스포루스",
+          "성소피아",
+          "제국 수도"
+        ],
+        "uiFilters": {
+          "era": "오스만 제국",
+          "region": "보스포루스·마르마라",
+          "theme": [
+            "제국 수도",
+            "수도계획",
+            "이슬람 궁정문화",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "UNESCO 이스탄불 역사 지구, Britannica, World History Encyclopedia 자료를 사용해 오스만 수도와 역사 지구 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "topkapi-palace",
+      "titleKo": "톱카프 궁전",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "튀르키예",
+      "coordinates": {
+        "lat": 41.0115,
+        "lng": 28.9833
+      },
+      "yearLabelKo": "1460-1478년 건설, 15-19세기 오스만 궁정",
+      "summaryKo": "메흐메트 2세가 콘스탄티노폴리스 정복 뒤 세운 오스만 술탄의 궁정이자 행정 중심지로, 안뜰과 의례 공간이 정복 제국의 통치 구조를 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "topkapi-palace-court-administration",
+        "contextIds": [
+          "early-modern-gunpowder-empire-capital-world",
+          "ottoman-istanbul-imperial-capital",
+          "topkapi-palace-court-administration",
+          "eurasian-islamic-court-urbanism",
+          "world-heritage-gunpowder-empire-palace-sites"
+        ],
+        "periodPathKo": [
+          "근세",
+          "오스만 제국",
+          "톱카프 궁정과 술탄 행정"
+        ],
+        "topicTagsKo": [
+          "톱카프 궁전",
+          "오스만 술탄",
+          "하렘",
+          "궁정 의례",
+          "제국 행정"
+        ],
+        "uiFilters": {
+          "era": "오스만 제국",
+          "region": "보스포루스·마르마라",
+          "theme": [
+            "궁성",
+            "제국 의례",
+            "이슬람 궁정문화",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 2,
+          "noteKo": "UNESCO Silk Roads Programme, UNESCO 이스탄불 역사 지구, Britannica, World History Encyclopedia 자료를 사용해 톱카프 궁전의 궁정·행정 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "safavid-isfahan",
+      "titleKo": "사파비 이스파한",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이란",
+      "coordinates": {
+        "lat": 32.6539,
+        "lng": 51.666
+      },
+      "yearLabelKo": "1598년 이후 사파비 수도",
+      "summaryKo": "샤 압바스 1세가 1598년 수도로 삼으며 사파비 이란의 정치·상업·종교 중심지로 재편한 도시로, 왕도와 시장, 다리, 정원, 모스크가 결합한 수도 구조를 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "safavid-isfahan-capital-planning",
+        "contextIds": [
+          "early-modern-gunpowder-empire-capital-world",
+          "safavid-isfahan-capital-planning",
+          "eurasian-islamic-court-urbanism",
+          "world-heritage-gunpowder-empire-palace-sites"
+        ],
+        "periodPathKo": [
+          "근세",
+          "사파비 제국",
+          "이스파한 수도계획"
+        ],
+        "topicTagsKo": [
+          "사파비 이스파한",
+          "샤 압바스 1세",
+          "시아 이슬람 왕권",
+          "실크로드",
+          "수도계획"
+        ],
+        "uiFilters": {
+          "era": "사파비 제국",
+          "region": "이란 중앙고원",
+          "theme": [
+            "제국 수도",
+            "수도계획",
+            "광장·시장",
+            "이슬람 궁정문화"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "UNESCO Silk Roads Programme, UNESCO Meidan Emam, Britannica 자료를 사용해 이스파한의 사파비 수도화와 도시계획 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "naqsh-e-jahan-square",
+      "titleKo": "나그셰 자한 광장",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이란",
+      "coordinates": {
+        "lat": 32.6574,
+        "lng": 51.6777
+      },
+      "yearLabelKo": "1598-1629년 사파비 수도계획 중심",
+      "summaryKo": "사파비 수도 이스파한의 정치, 경제, 종교, 사회 권력이 교차한 도시 무대로, 궁전·모스크·시장 입구가 한 광장에 배치된 수도계획의 핵심입니다.",
+      "stage2": {
+        "primaryContextId": "naqsh-e-jahan-square-ritual-market",
+        "contextIds": [
+          "early-modern-gunpowder-empire-capital-world",
+          "safavid-isfahan-capital-planning",
+          "naqsh-e-jahan-square-ritual-market",
+          "eurasian-islamic-court-urbanism",
+          "world-heritage-gunpowder-empire-palace-sites"
+        ],
+        "periodPathKo": [
+          "근세",
+          "사파비 제국",
+          "나그셰 자한 광장과 왕권·신앙·시장"
+        ],
+        "topicTagsKo": [
+          "나그셰 자한",
+          "메이단 에맘",
+          "알리 카푸",
+          "샤 모스크",
+          "이스파한 시장"
+        ],
+        "uiFilters": {
+          "era": "사파비 제국",
+          "region": "이란 중앙고원",
+          "theme": [
+            "광장·시장",
+            "제국 의례",
+            "수도계획",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "UNESCO Meidan Emam, UNESCO Silk Roads Programme, Britannica 자료를 사용해 광장·시장·궁정·종교 공간의 결합을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "agra-fort",
+      "titleKo": "아그라 요새",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "인도",
+      "coordinates": {
+        "lat": 27.1795,
+        "lng": 78.0211
+      },
+      "yearLabelKo": "16-17세기 무굴 제국 궁성·요새",
+      "summaryKo": "아크바르 이후 무굴 황제들이 아그라를 수도 권역으로 운영한 핵심 궁성 겸 군사 요새로, 붉은 사암 성벽 안에 궁전·알현실·모스크가 결합한 구조입니다.",
+      "stage2": {
+        "primaryContextId": "akbar-agra-fatehpur-sikri-capitals",
+        "contextIds": [
+          "early-modern-gunpowder-empire-capital-world",
+          "mughal-imperial-capital-landscapes",
+          "akbar-agra-fatehpur-sikri-capitals",
+          "eurasian-islamic-court-urbanism",
+          "world-heritage-gunpowder-empire-palace-sites"
+        ],
+        "periodPathKo": [
+          "근세",
+          "무굴 제국",
+          "아그라 요새 궁성·군사 요새"
+        ],
+        "topicTagsKo": [
+          "아그라 요새",
+          "아크바르",
+          "야무나강",
+          "무굴 궁성",
+          "군사 요새"
+        ],
+        "uiFilters": {
+          "era": "무굴 제국",
+          "region": "야무나강 북인도",
+          "theme": [
+            "궁성",
+            "군사 요새",
+            "제국 수도",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "UNESCO Agra Fort와 Britannica 자료를 사용해 아그라 요새의 무굴 궁성·군사 요새·수도권 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "fatehpur-sikri",
+      "titleKo": "파테푸르 시크리",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "인도",
+      "coordinates": {
+        "lat": 27.0945,
+        "lng": 77.6679
+      },
+      "yearLabelKo": "1571-1585년 무굴 수도",
+      "summaryKo": "아크바르가 세운 계획 수도로, 짧은 기간이지만 무굴 제국의 의례, 행정, 종교 토론, 궁정 실험이 집약된 도시였습니다.",
+      "stage2": {
+        "primaryContextId": "akbar-agra-fatehpur-sikri-capitals",
+        "contextIds": [
+          "early-modern-gunpowder-empire-capital-world",
+          "mughal-imperial-capital-landscapes",
+          "akbar-agra-fatehpur-sikri-capitals",
+          "eurasian-islamic-court-urbanism",
+          "world-heritage-gunpowder-empire-palace-sites"
+        ],
+        "periodPathKo": [
+          "근세",
+          "무굴 제국",
+          "파테푸르 시크리 계획 수도"
+        ],
+        "topicTagsKo": [
+          "파테푸르 시크리",
+          "아크바르",
+          "불란드 다르와자",
+          "이바다트 카나",
+          "궁정 실험"
+        ],
+        "uiFilters": {
+          "era": "무굴 제국",
+          "region": "야무나강 북인도",
+          "theme": [
+            "수도계획",
+            "제국 의례",
+            "이슬람 궁정문화",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "UNESCO Fatehpur Sikri, UNESCO Silk Roads Programme, Britannica 자료를 사용해 파테푸르 시크리의 계획 수도와 궁정 실험 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "red-fort-delhi",
+      "titleKo": "델리 붉은 요새",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "인도",
+      "coordinates": {
+        "lat": 28.6562,
+        "lng": 77.241
+      },
+      "yearLabelKo": "1639-1648년 건설, 1648년 이후 무굴 수도 궁성",
+      "summaryKo": "샤 자한이 새 수도 샤자하나바드의 궁성으로 건설한 무굴 제국 후기 권력의 상징으로, 붉은 사암 성벽과 궁전 파빌리온, 물길과 정원이 결합한 공간입니다.",
+      "stage2": {
+        "primaryContextId": "shah-jahan-delhi-red-fort-capital",
+        "contextIds": [
+          "early-modern-gunpowder-empire-capital-world",
+          "mughal-imperial-capital-landscapes",
+          "shah-jahan-delhi-red-fort-capital",
+          "eurasian-islamic-court-urbanism",
+          "world-heritage-gunpowder-empire-palace-sites"
+        ],
+        "periodPathKo": [
+          "근세",
+          "무굴 제국",
+          "샤자하나바드와 델리 붉은 요새"
+        ],
+        "topicTagsKo": [
+          "델리 붉은 요새",
+          "샤 자한",
+          "샤자하나바드",
+          "정원 궁정",
+          "후기 무굴"
+        ],
+        "uiFilters": {
+          "era": "무굴 제국",
+          "region": "야무나강 북인도",
+          "theme": [
+            "궁성",
+            "정원도시",
+            "제국 수도",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "UNESCO Red Fort Complex와 Britannica 자료를 사용해 델리 붉은 요새와 샤자하나바드 궁성의 후기 무굴 수도 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "lahore-fort-shalimar",
+      "titleKo": "라호르 요새와 샬리마르 정원",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "파키스탄",
+      "coordinates": {
+        "lat": 31.5883,
+        "lng": 74.3156
+      },
+      "yearLabelKo": "1585년 이후 무굴 궁정 거점, 1641-1642년 샬리마르 정원",
+      "summaryKo": "아크바르 이후 서북 변경과 카불·카슈미르 방면을 관리하는 무굴 궁정 거점으로 중요해졌고, 요새와 정원이 무굴 궁성·정원 문화의 장기 변화를 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "lahore-mughal-frontier-garden-court",
+        "contextIds": [
+          "early-modern-gunpowder-empire-capital-world",
+          "mughal-imperial-capital-landscapes",
+          "lahore-mughal-frontier-garden-court",
+          "eurasian-islamic-court-urbanism",
+          "world-heritage-gunpowder-empire-palace-sites"
+        ],
+        "periodPathKo": [
+          "근세",
+          "무굴 제국",
+          "라호르 서북 변경 궁정과 샬리마르 정원"
+        ],
+        "topicTagsKo": [
+          "라호르 요새",
+          "샬리마르 정원",
+          "펀자브",
+          "서북 변경",
+          "무굴 정원"
+        ],
+        "uiFilters": {
+          "era": "무굴 제국",
+          "region": "펀자브",
+          "theme": [
+            "궁성",
+            "정원도시",
+            "변경 행정",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "UNESCO Fort and Shalamar Gardens in Lahore와 Britannica 자료를 사용해 라호르 요새, 샬리마르 정원, 무굴 서북 변경 행정 맥락을 확인했습니다."
+        }
+      }
+    }
+  ]
+}

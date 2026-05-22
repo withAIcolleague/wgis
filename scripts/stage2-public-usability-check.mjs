@@ -128,12 +128,17 @@ const datasets = [
     path: 'data/stage2/early-modern-east-asia-ports-treaty-cities-preview.json',
     count: 8,
     firstEntryId: 'nagasaki-port'
+  },
+  {
+    path: 'data/stage2/early-modern-gunpowder-empire-capitals-preview.json',
+    count: 8,
+    firstEntryId: 'ottoman-istanbul'
   }
 ];
 
 const latestDataset = datasets[datasets.length - 1];
-const desktopShot = path.join(outputDir, 'wgis-stage2-twenty-two-datasets-desktop.png');
-const mobileShot = path.join(outputDir, 'wgis-stage2-twenty-two-datasets-mobile.png');
+const desktopShot = path.join(outputDir, 'wgis-stage2-twenty-three-datasets-desktop.png');
+const mobileShot = path.join(outputDir, 'wgis-stage2-twenty-three-datasets-mobile.png');
 
 function assertCheck(condition, message, details = undefined) {
   if (!condition) {
@@ -302,61 +307,61 @@ async function main() {
       assertCheck(state.contextFilterButtons <= 4 && state.contextFilterToggle, 'Initial context filters should start compact', state);
 
       dom = await dumpDom(buildUrl({ dataset: latestDataset.path }), userDataDir);
-      state = extractState('desktop-east-asia-ports-default', dom);
+      state = extractState('desktop-gunpowder-empires-default', dom);
       states.push(state);
-      assertCheck(state.entryCards === latestDataset.count && state.entryIds.includes('nagasaki-port'), 'Latest dataset should render Nagasaki and all entries', state);
+      assertCheck(state.entryCards === latestDataset.count && state.entryIds.includes('ottoman-istanbul'), 'Latest dataset should render Ottoman Istanbul and all entries', state);
 
-      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, q: '상하이' }), userDataDir);
-      state = extractState('desktop-east-asia-ports-search-shanghai', dom);
+      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, q: '샬리마르' }), userDataDir);
+      state = extractState('desktop-gunpowder-empires-search-shalimar', dom);
       states.push(state);
-      assertCheck(state.entryCountText === '1개' && state.entryIds.includes('shanghai-treaty-port'), 'Latest dataset search should find Shanghai treaty port', state);
+      assertCheck(state.entryCountText === '1개' && state.entryIds.includes('lahore-fort-shalimar'), 'Latest dataset search should find Lahore Fort and Shalimar Gardens', state);
 
-      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, entry: 'dejima' }), userDataDir);
-      state = extractState('desktop-east-asia-ports-detail-dejima', dom);
+      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, entry: 'topkapi-palace' }), userDataDir);
+      state = extractState('desktop-gunpowder-empires-detail-topkapi', dom);
       states.push(state);
       assertCheck(
-        state.detailTitle === '데지마' && state.detailActions === 2 && state.hasSourceConfidence,
-        'Latest dataset detail should show Dejima, source confidence, and detail actions',
+        state.detailTitle === '톱카프 궁전' && state.detailActions === 2 && state.hasSourceConfidence,
+        'Latest dataset detail should show Topkapi Palace, source confidence, and detail actions',
         state
       );
 
       dom = await dumpDom(buildUrl({
         dataset: latestDataset.path,
-        context: 'treaty-port-open-port-urbanism'
+        context: 'mughal-imperial-capital-landscapes'
       }), userDataDir);
-      state = extractState('desktop-east-asia-ports-treaty-context', dom);
+      state = extractState('desktop-gunpowder-empires-mughal-context', dom);
       states.push(state);
       assertCheck(
         state.entryCountText === '4개' &&
-          state.entryIds.includes('shanghai-treaty-port') &&
-          state.entryIds.includes('yokohama-port') &&
-          state.entryIds.includes('busan-open-port') &&
-          state.entryIds.includes('incheon-open-port') &&
-          !state.entryIds.includes('macau-historic-centre'),
-        'Treaty/open-port context should return Shanghai, Yokohama, Busan, and Incheon without stale Macau data',
+          state.entryIds.includes('agra-fort') &&
+          state.entryIds.includes('fatehpur-sikri') &&
+          state.entryIds.includes('red-fort-delhi') &&
+          state.entryIds.includes('lahore-fort-shalimar') &&
+          !state.entryIds.includes('topkapi-palace'),
+        'Mughal context should return Agra, Fatehpur Sikri, Red Fort, and Lahore without stale Topkapi data',
         state
       );
 
       dom = await dumpDom(buildUrl({
         dataset: latestDataset.path,
-        entry: 'nagasaki-port'
+        entry: 'ottoman-istanbul'
       }), userDataDir, { width: 390, height: 844 });
-      state = extractState('mobile-east-asia-ports-detail-nagasaki', dom);
+      state = extractState('mobile-gunpowder-empires-detail-istanbul', dom);
       states.push(state);
       assertCheck(
-        state.ready && state.detailTitle === '나가사키 항' && state.detailActions === 2,
-        'Mobile-sized latest dataset render should keep the Nagasaki detail panel available',
+        state.ready && state.detailTitle === '오스만 이스탄불' && state.detailActions === 2,
+        'Mobile-sized latest dataset render should keep the Ottoman Istanbul detail panel available',
         state
       );
 
       await captureScreenshot(
-        buildUrl({ dataset: latestDataset.path, entry: 'dejima' }),
+        buildUrl({ dataset: latestDataset.path, entry: 'topkapi-palace' }),
         userDataDir,
         desktopShot,
         { width: 1440, height: 920 }
       );
       await captureScreenshot(
-        buildUrl({ dataset: latestDataset.path, entry: 'nagasaki-port' }),
+        buildUrl({ dataset: latestDataset.path, entry: 'ottoman-istanbul' }),
         userDataDir,
         mobileShot,
         { width: 390, height: 844 }

@@ -272,6 +272,17 @@ The twenty-second pilot dataset tests early modern East Asian maritime trade por
 - `busan-open-port`
 - `incheon-open-port`
 
+The twenty-third pilot dataset tests early modern gunpowder empire capitals, palace-fort complexes, imperial squares, and garden court landscapes across the Ottoman, Safavid, and Mughal empires:
+
+- `ottoman-istanbul`
+- `topkapi-palace`
+- `safavid-isfahan`
+- `naqsh-e-jahan-square`
+- `agra-fort`
+- `fatehpur-sikri`
+- `red-fort-delhi`
+- `lahore-fort-shalimar`
+
 The dataset list is managed in:
 
 ```text
@@ -593,3 +604,17 @@ The 2026-05-22 twenty-two-dataset public browser pass checks `https://wgis.verce
 - The `조약항과 개항장 도시화` context filter returns `상하이 조약항`, `요코하마 항`, `부산 개항장`, and `인천 개항장` with 4 markers and 4 labels and no stale Macau data.
 - On mobile, `나가사키 항` detail renders with source-confidence information and both detail actions.
 - Browser screenshots were saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-two-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-two-datasets-mobile.png`.
+
+## Twenty-Three-Dataset Public Usability Pass
+
+The 2026-05-22 twenty-three-dataset public browser pass checks `https://wgis.vercel.app/stage2-preview.html` after adding the early modern gunpowder empire capitals pilot dataset:
+
+- Dataset selector exposes 23 datasets.
+- All 23 indexed datasets render their expected entry, marker, and permanent-label counts across 194 Stage 2 preview entries.
+- The new gunpowder empires dataset exposes 8 entries: `오스만 이스탄불`, `톱카프 궁전`, `사파비 이스파한`, `나그셰 자한 광장`, `아그라 요새`, `파테푸르 시크리`, `델리 붉은 요새`, and `라호르 요새와 샬리마르 정원`.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control.
+- Searching `샬리마르` in the gunpowder empires dataset narrows the list and map to `라호르 요새와 샬리마르 정원` with 1 marker and 1 label.
+- Selecting `톱카프 궁전` opens the detail panel with source-confidence information and detail actions.
+- The `무굴 제국 수도와 궁성 경관` context filter returns `아그라 요새`, `파테푸르 시크리`, `델리 붉은 요새`, and `라호르 요새와 샬리마르 정원` with 4 markers and 4 labels and no stale Topkapi data.
+- On mobile, `오스만 이스탄불` detail renders with source-confidence information and both detail actions.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-three-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-three-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.
