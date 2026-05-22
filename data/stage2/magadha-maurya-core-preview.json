@@ -1,0 +1,492 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-magadha-maurya-core-preview",
+  "titleKo": "2단계 미리보기: 마가다·마우리아 핵심 유적",
+  "descriptionKo": "마가다 왕국의 초기 국가 형성, 파탈리푸트라 제국 수도, 불교 성지망, 아소카 칙령과 후원, 간다라 접경 학문·교역 네트워크, 칼링가 전쟁 이후 통치 전환, 마우리아 석굴 건축을 비교하기 위한 2단계 미리보기 데이터셋입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "초기 마가다",
+        "마우리아 제국",
+        "아소카 이후 불교 성지",
+        "간다라 접경",
+        "칼링가 전환"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "비하르·마가다",
+        "중부 갠지스",
+        "말와·비디샤",
+        "간다라·인더스 상류",
+        "칼링가·오디샤"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "초기 국가 형성",
+        "제국 수도·행정",
+        "불교 성지",
+        "아소카 칙령·후원",
+        "장거리 학문·교역",
+        "칼링가 전쟁",
+        "석굴 건축",
+        "순례 네트워크"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지도 유형",
+      "options": [
+        "장소",
+        "유적"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "magadha-maurya-world",
+      "labelKo": "마가다·마우리아 세계",
+      "parentId": null,
+      "periodKo": "기원전 6세기-기원후 2세기",
+      "summaryKo": "갠지스 평원의 초기 국가 형성, 마우리아 제국의 통치, 불교 성지와 후원, 서북부 간다라 접경을 함께 다루는 상위 맥락입니다."
+    },
+    {
+      "id": "magadha-state-formation-ganges",
+      "labelKo": "마가다 국가 형성과 갠지스 평원",
+      "parentId": "magadha-maurya-world",
+      "periodKo": "기원전 6-4세기",
+      "summaryKo": "라지기르와 파탈리푸트라처럼 마가다 왕국이 산지 계곡과 강 교통권을 바탕으로 초기 국가와 제국 중심지로 성장한 과정을 봅니다."
+    },
+    {
+      "id": "pataliputra-imperial-administration",
+      "labelKo": "파탈리푸트라와 제국 행정",
+      "parentId": "magadha-maurya-world",
+      "periodKo": "기원전 5세기-기원후 6세기",
+      "summaryKo": "파탈리푸트라를 중심으로 난다, 마우리아, 굽타의 수도 행정과 갠지스 평원 제국 도시의 규모를 설명합니다."
+    },
+    {
+      "id": "buddhist-sacred-geography",
+      "labelKo": "초기 불교 성지와 순례 지리",
+      "parentId": "magadha-maurya-world",
+      "periodKo": "기원전 6세기 이후",
+      "summaryKo": "라지기르, 보드가야, 사르나트, 산치처럼 붓다 전승, 설법, 깨달음, 스투파와 승원 네트워크가 공간화된 장소를 묶습니다."
+    },
+    {
+      "id": "ashokan-monuments-edicts-dhamma",
+      "labelKo": "아소카 기념물과 담마 칙령",
+      "parentId": "magadha-maurya-world",
+      "periodKo": "기원전 3세기",
+      "summaryKo": "아소카의 석주, 암각 칙령, 스투파 후원이 제국 통치와 불교 후원, 담마 이념을 어떻게 시각화했는지 비교합니다."
+    },
+    {
+      "id": "gandhara-transregional-learning",
+      "labelKo": "간다라 접경과 장거리 학문·교역",
+      "parentId": "magadha-maurya-world",
+      "periodKo": "기원전 5세기-기원후 2세기",
+      "summaryKo": "탁실라를 중심으로 페르시아, 그리스, 중앙아시아, 인도 문화가 교차한 서북부 접경과 학문·불교 네트워크를 다룹니다."
+    },
+    {
+      "id": "kalinga-war-imperial-transformation",
+      "labelKo": "칼링가 전쟁과 제국 통치 전환",
+      "parentId": "magadha-maurya-world",
+      "periodKo": "기원전 260년경 이후",
+      "summaryKo": "다울리처럼 칼링가 전쟁의 기억과 아소카의 통치 이념 변화가 새겨진 장소를 별도 맥락으로 봅니다."
+    },
+    {
+      "id": "mauryan-rock-cut-architecture-ajivika",
+      "labelKo": "마우리아 석굴 건축과 아지비카 후원",
+      "parentId": "magadha-maurya-world",
+      "periodKo": "기원전 3세기",
+      "summaryKo": "바라바르 석굴을 중심으로 왕실 후원, 아지비카 공동체, 고광택 암반 석굴이라는 초기 석굴 건축 실험을 다룹니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "rajgir-rajagriha",
+      "titleKo": "라지기르",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "인도",
+      "coordinates": {
+        "lat": 25.0263,
+        "lng": 85.421
+      },
+      "yearLabelKo": "기원전 6-5세기 마가다 초기 수도",
+      "summaryKo": "고대 라자그리하로, 빔비사라와 아자타샤트루 시기 마가다 왕국의 초기 수도였으며 산지 계곡 도시와 불교·자이나교 전승이 겹칩니다.",
+      "stage2": {
+        "primaryContextId": "magadha-state-formation-ganges",
+        "contextIds": [
+          "magadha-maurya-world",
+          "magadha-state-formation-ganges",
+          "buddhist-sacred-geography"
+        ],
+        "periodPathKo": [
+          "고대",
+          "초기 역사시대 남아시아",
+          "마가다 초기 수도와 종교 운동"
+        ],
+        "topicTagsKo": [
+          "라지기르",
+          "라자그리하",
+          "마가다",
+          "빔비사라",
+          "초기 불교"
+        ],
+        "uiFilters": {
+          "era": "초기 마가다",
+          "region": "비하르·마가다",
+          "theme": [
+            "초기 국가 형성",
+            "불교 성지"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "고대 라자그리하가 현대 라지기르 계곡권에 넓게 분포해 대표 좌표는 근사값이지만, 주정부 관광 자료와 Britannica 설명으로 위치와 초기 수도 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "pataliputra",
+      "titleKo": "파탈리푸트라",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "인도",
+      "coordinates": {
+        "lat": 25.602,
+        "lng": 85.1788
+      },
+      "yearLabelKo": "기원전 5세기 이후, 마우리아 제국 수도",
+      "summaryKo": "마가다의 수도에서 난다, 마우리아, 굽타 제국의 핵심 정치 중심지로 성장한 도시로, 쿰라하르 유구와 문헌 기록이 제국 행정 규모를 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "pataliputra-imperial-administration",
+        "contextIds": [
+          "magadha-maurya-world",
+          "magadha-state-formation-ganges",
+          "pataliputra-imperial-administration"
+        ],
+        "periodPathKo": [
+          "고대",
+          "마가다·마우리아",
+          "갠지스 평원 제국 수도"
+        ],
+        "topicTagsKo": [
+          "파탈리푸트라",
+          "파트나",
+          "쿰라하르",
+          "마우리아 수도",
+          "제국 행정"
+        ],
+        "uiFilters": {
+          "era": "마우리아 제국",
+          "region": "비하르·마가다",
+          "theme": [
+            "제국 수도·행정",
+            "초기 국가 형성"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 0,
+          "referenceSources": 2,
+          "noteKo": "현대 파트나의 쿰라하르 유적권을 대표 좌표로 사용하며, Britannica와 World History Encyclopedia 설명으로 수도·마우리아 맥락을 보강했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "bodh-gaya",
+      "titleKo": "보드가야",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "인도",
+      "coordinates": {
+        "lat": 24.6951,
+        "lng": 84.9913
+      },
+      "yearLabelKo": "기원전 6-5세기 붓다 깨달음 전승, 기원전 3세기 아소카 후원",
+      "summaryKo": "붓다가 보리수 아래에서 깨달음을 얻었다고 전해지는 불교 핵심 성지로, 마하보디 사원 단지와 보리수 전승이 순례망의 중심을 이룹니다.",
+      "stage2": {
+        "primaryContextId": "buddhist-sacred-geography",
+        "contextIds": [
+          "magadha-maurya-world",
+          "buddhist-sacred-geography",
+          "ashokan-monuments-edicts-dhamma"
+        ],
+        "periodPathKo": [
+          "고대",
+          "초기 불교·마우리아 후원",
+          "깨달음 성지와 마하보디"
+        ],
+        "topicTagsKo": [
+          "보드가야",
+          "마하보디 사원",
+          "보리수",
+          "붓다 깨달음",
+          "순례 네트워크"
+        ],
+        "uiFilters": {
+          "era": "아소카 이후 불교 성지",
+          "region": "비하르·마가다",
+          "theme": [
+            "불교 성지",
+            "순례 네트워크",
+            "아소카 칙령·후원"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 0,
+          "noteKo": "UNESCO 세계유산 자료를 기준으로 좌표와 성지 맥락을 확인할 수 있어 신뢰도가 높습니다."
+        }
+      }
+    },
+    {
+      "entryId": "sarnath",
+      "titleKo": "사르나트",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "인도",
+      "coordinates": {
+        "lat": 25.3811,
+        "lng": 83.0214
+      },
+      "yearLabelKo": "기원전 6-5세기 첫 설법 전승, 기원전 3세기 아소카 기념물",
+      "summaryKo": "붓다의 첫 설법 전승이 있는 불교 성지로, 아소카 석주와 스투파, 승원 유적이 초기 불교 기억의 공간화를 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "buddhist-sacred-geography",
+        "contextIds": [
+          "magadha-maurya-world",
+          "buddhist-sacred-geography",
+          "ashokan-monuments-edicts-dhamma"
+        ],
+        "periodPathKo": [
+          "고대",
+          "초기 불교·마우리아 후원",
+          "첫 설법 성지와 아소카 석주"
+        ],
+        "topicTagsKo": [
+          "사르나트",
+          "첫 설법",
+          "다메크 스투파",
+          "아소카 석주",
+          "불교 성지"
+        ],
+        "uiFilters": {
+          "era": "아소카 이후 불교 성지",
+          "region": "중부 갠지스",
+          "theme": [
+            "불교 성지",
+            "아소카 칙령·후원",
+            "순례 네트워크"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 0,
+          "noteKo": "UNESCO 잠정목록과 국가 목록 자료를 사용해 사르나트 유적권과 불교 성지 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "sanchi",
+      "titleKo": "산치",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "인도",
+      "coordinates": {
+        "lat": 23.4793,
+        "lng": 77.739
+      },
+      "yearLabelKo": "기원전 3세기 아소카 스투파 이후",
+      "summaryKo": "아소카 시기 기원을 가진 대스투파를 중심으로 여러 시기의 스투파, 사원, 승원, 석문이 남아 있는 불교 기념물군입니다.",
+      "stage2": {
+        "primaryContextId": "ashokan-monuments-edicts-dhamma",
+        "contextIds": [
+          "magadha-maurya-world",
+          "buddhist-sacred-geography",
+          "ashokan-monuments-edicts-dhamma"
+        ],
+        "periodPathKo": [
+          "고대",
+          "마우리아·슝가 이후",
+          "스투파 후원과 불교 미술"
+        ],
+        "topicTagsKo": [
+          "산치",
+          "대스투파",
+          "아소카",
+          "석문",
+          "비디샤"
+        ],
+        "uiFilters": {
+          "era": "마우리아 제국",
+          "region": "말와·비디샤",
+          "theme": [
+            "아소카 칙령·후원",
+            "불교 성지",
+            "순례 네트워크"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 세계유산 좌표와 Britannica 항목이 함께 있어 산치 기념물군의 위치와 장기 불교 후원 맥락을 안정적으로 확인할 수 있습니다."
+        }
+      }
+    },
+    {
+      "entryId": "taxila",
+      "titleKo": "탁실라",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "파키스탄",
+      "coordinates": {
+        "lat": 33.7463,
+        "lng": 72.8397
+      },
+      "yearLabelKo": "기원전 5세기-기원후 2세기 학문·불교 중심",
+      "summaryKo": "간다라의 학문·교역·불교 중심지로, 페르시아, 그리스, 중앙아시아, 인도 문화가 반복적으로 교차한 마우리아 서북부 접경 거점입니다.",
+      "stage2": {
+        "primaryContextId": "gandhara-transregional-learning",
+        "contextIds": [
+          "magadha-maurya-world",
+          "gandhara-transregional-learning",
+          "buddhist-sacred-geography"
+        ],
+        "periodPathKo": [
+          "고대",
+          "간다라·마우리아 접경",
+          "장거리 학문·교역과 불교 네트워크"
+        ],
+        "topicTagsKo": [
+          "탁실라",
+          "간다라",
+          "탁샤실라",
+          "실카프",
+          "장거리 학문"
+        ],
+        "uiFilters": {
+          "era": "간다라 접경",
+          "region": "간다라·인더스 상류",
+          "theme": [
+            "장거리 학문·교역",
+            "불교 성지"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 탁실라 세계유산이 여러 유적으로 구성되어 대표 좌표는 근사값이지만, 공식 유산 자료와 World History Encyclopedia 항목으로 서북부 접경 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "dhauli",
+      "titleKo": "다울리",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "인도",
+      "coordinates": {
+        "lat": 20.1922,
+        "lng": 85.8395
+      },
+      "yearLabelKo": "기원전 260년경 칼링가 전쟁 이후",
+      "summaryKo": "칼링가 전쟁의 기억과 아소카 암각 칙령이 결합된 장소로, 정복 이후 폭력, 통치, 담마 이념의 변화를 새긴 핵심 지점입니다.",
+      "stage2": {
+        "primaryContextId": "kalinga-war-imperial-transformation",
+        "contextIds": [
+          "magadha-maurya-world",
+          "ashokan-monuments-edicts-dhamma",
+          "kalinga-war-imperial-transformation"
+        ],
+        "periodPathKo": [
+          "고대",
+          "마우리아 제국",
+          "칼링가 전쟁과 아소카 칙령"
+        ],
+        "topicTagsKo": [
+          "다울리",
+          "칼링가 전쟁",
+          "아소카 암각 칙령",
+          "다야강",
+          "담마"
+        ],
+        "uiFilters": {
+          "era": "칼링가 전환",
+          "region": "칼링가·오디샤",
+          "theme": [
+            "칼링가 전쟁",
+            "아소카 칙령·후원"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "오디샤 관광 자료와 아소카 칙령 참고 항목을 함께 사용하며, 다울리 언덕·칙령 유적권 대표 좌표를 근사값으로 관리합니다."
+        }
+      }
+    },
+    {
+      "entryId": "barabar-caves",
+      "titleKo": "바라바르 석굴",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "인도",
+      "coordinates": {
+        "lat": 25.0073,
+        "lng": 85.056
+      },
+      "yearLabelKo": "기원전 3세기",
+      "summaryKo": "마우리아 시대의 이른 암반 절개 석굴군으로, 아소카와 다사라타 명문, 고광택 내부 표면, 아지비카 후원이 특징입니다.",
+      "stage2": {
+        "primaryContextId": "mauryan-rock-cut-architecture-ajivika",
+        "contextIds": [
+          "magadha-maurya-world",
+          "ashokan-monuments-edicts-dhamma",
+          "mauryan-rock-cut-architecture-ajivika"
+        ],
+        "periodPathKo": [
+          "고대",
+          "마우리아 제국",
+          "왕실 후원 석굴 건축"
+        ],
+        "topicTagsKo": [
+          "바라바르 석굴",
+          "로마스 리시",
+          "수다마 동굴",
+          "아지비카",
+          "마우리아 광택"
+        ],
+        "uiFilters": {
+          "era": "마우리아 제국",
+          "region": "비하르·마가다",
+          "theme": [
+            "석굴 건축",
+            "아소카 칙령·후원"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 0,
+          "noteKo": "비하르 관광 자료와 바라바르 석굴 위치 자료를 함께 사용해 유적권 대표 좌표와 마우리아 석굴 맥락을 확인했습니다."
+        }
+      }
+    }
+  ]
+}

@@ -56,6 +56,12 @@
       "titleKo": "로마 공화정·제국 핵심 유적",
       "path": "data/stage2/roman-empire-core-preview.json",
       "status": "preview-only"
+    },
+    {
+      "id": "stage2-magadha-maurya-core-preview",
+      "titleKo": "마가다·마우리아 핵심 유적",
+      "path": "data/stage2/magadha-maurya-core-preview.json",
+      "status": "preview-only"
     }
   ]
 }

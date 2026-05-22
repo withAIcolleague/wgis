@@ -129,6 +129,17 @@ The ninth pilot dataset tests Roman republican and imperial capital spaces, Ital
 - `hadrians-wall`
 - `trier-roman-monuments`
 
+The tenth pilot dataset tests Magadha and Maurya state formation, Buddhist sacred geography, Ashokan monuments and edicts, Gandhara learning networks, Kalinga War memory, and early rock-cut architecture:
+
+- `rajgir-rajagriha`
+- `pataliputra`
+- `bodh-gaya`
+- `sarnath`
+- `sanchi`
+- `taxila`
+- `dhauli`
+- `barabar-caves`
+
 The dataset list is managed in:
 
 ```text
@@ -258,3 +269,18 @@ The 2026-05-22 nine-dataset browser pass checks `/stage2-preview.html` after add
 - Switching back from the Roman dataset to Atlantic revolutions clears stale Roman list items, markers, labels, and map zoom state.
 - On mobile, the Roman entry list scrolls independently, `로마 포룸` detail scrolls into view, `지도에서 보기` returns to the map, and `닫기` hides the detail panel.
 - Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-nine-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-nine-datasets-mobile.png`.
+
+## Ten-Dataset Public Usability Pass
+
+The 2026-05-22 ten-dataset browser pass checks `/stage2-preview.html` after adding the Magadha and Maurya pilot dataset:
+
+- Dataset selector exposes 10 datasets.
+- All 10 indexed datasets render their expected entry, marker, and permanent-label counts: Atlantic revolutions 8, Ethiopia 8, Mesopotamia 10, Egypt 14, Indus 8, Early China 8, Ancient Greece 10, Achaemenid Persia 8, Roman Republic and Empire 8, and Magadha-Maurya 8.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control after every dataset switch.
+- Searching `다울리` in the Magadha-Maurya dataset narrows the list and map to 1 entry, marker, and label.
+- Selecting `다울리` opens the detail panel with source-confidence information and detail actions.
+- Closing the `다울리` detail panel preserves the current search marker and label.
+- The `아소카 기념물과 담마 칙령` context filter returns 5 entries, including `산치`, `다울리`, and `바라바르 석굴`.
+- Switching back from the Magadha-Maurya dataset to Atlantic revolutions clears stale Magadha-Maurya list items, markers, labels, and map zoom state.
+- On mobile, the Magadha-Maurya entry list scrolls independently, `라지기르` detail scrolls into view, `지도에서 보기` returns to the map, and `닫기` hides the detail panel.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-ten-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-ten-datasets-mobile.png`.
