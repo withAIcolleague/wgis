@@ -1,0 +1,540 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-early-modern-east-asia-ports-treaty-cities-preview",
+  "titleKo": "2단계 미리보기: 동아시아 근세 교역항과 조약항 도시",
+  "descriptionKo": "나가사키·데지마 제한무역, 광저우 체제와 마카오 중계무역, 상하이·요코하마·부산·인천 조약항/개항장을 비교하기 위한 2단계 미리보기 데이터셋입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "남만·에도 제한무역",
+        "청대 광저우 체제",
+        "포르투갈령 마카오 중계",
+        "조약항·조계도시",
+        "일본 개항장",
+        "조선 개항장"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "나가사키·규슈",
+        "주강 삼각주",
+        "장강 하구",
+        "도쿄만",
+        "대한해협",
+        "경기만·황해"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "제한무역",
+        "남만무역",
+        "네덜란드 상관",
+        "난학·지식교류",
+        "광저우 체제",
+        "공행 무역",
+        "중계무역",
+        "포르투갈 교역망",
+        "조약항",
+        "외국인 거류지",
+        "근대 항만",
+        "해관·금융",
+        "선교·문화교류",
+        "조선 개항장",
+        "일본 개항장"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지점 유형",
+      "options": [
+        "장소"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "early-modern-east-asian-maritime-open-port-world",
+      "labelKo": "근세·근대 동아시아 해상 교역과 개항",
+      "parentId": null,
+      "periodKo": "16-20세기",
+      "summaryKo": "일본 열도, 주강 삼각주, 장강 하구, 한반도 항구를 묶어 제한무역, 중계무역, 조약항, 외국인 거류지, 근대 항만 인프라가 동아시아 도시 공간을 바꾼 과정을 봅니다."
+    },
+    {
+      "id": "nagasaki-edo-restricted-trade",
+      "labelKo": "나가사키와 에도 막부 제한무역",
+      "parentId": "early-modern-east-asian-maritime-open-port-world",
+      "periodKo": "1571-1859년",
+      "summaryKo": "나가사키 항과 데지마를 통해 남만무역, 중국 상인 교역, 네덜란드 상관, 난학 지식 이동이 에도 막부의 통제 아래 유지된 방식을 비교합니다."
+    },
+    {
+      "id": "nanban-portuguese-nagasaki",
+      "labelKo": "남만무역과 나가사키 항",
+      "parentId": "nagasaki-edo-restricted-trade",
+      "periodKo": "16-17세기",
+      "summaryKo": "포르투갈 선박의 입항 이후 나가사키가 일본, 중국, 유럽을 잇는 항구 도시로 성장하고, 선교와 상업 교류가 도시 성격을 바꾼 과정을 봅니다."
+    },
+    {
+      "id": "dejima-dutch-rangaku-network",
+      "labelKo": "데지마 네덜란드 상관과 난학 통로",
+      "parentId": "nagasaki-edo-restricted-trade",
+      "periodKo": "1641-1859년",
+      "summaryKo": "데지마를 통해 네덜란드 상관, VOC 네트워크, 의학·지도·과학기술 지식이 제한된 교역 체제 안에서 일본으로 들어온 통로를 봅니다."
+    },
+    {
+      "id": "canton-macao-pearl-river-trade",
+      "labelKo": "주강 삼각주 광저우·마카오 교역권",
+      "parentId": "early-modern-east-asian-maritime-open-port-world",
+      "periodKo": "16-19세기",
+      "summaryKo": "광저우 십삼행과 마카오 역사 지구를 묶어 중국 조정의 대외무역 통제, 포르투갈 중계무역, 선교와 상업 네트워크가 만난 주강 삼각주 항구권을 봅니다."
+    },
+    {
+      "id": "canton-system-thirteen-factories",
+      "labelKo": "광저우 체제와 십삼행",
+      "parentId": "canton-macao-pearl-river-trade",
+      "periodKo": "1757-1842년",
+      "summaryKo": "광저우 십삼행을 통해 청 조정의 제한무역, 공행 상인, 차·도자기·비단과 은 교역, 아편전쟁 이전 서구 상업 세력과의 긴장을 봅니다."
+    },
+    {
+      "id": "macau-portuguese-china-entrepot",
+      "labelKo": "마카오 포르투갈-중국 중계무역항",
+      "parentId": "canton-macao-pearl-river-trade",
+      "periodKo": "1557-1842년",
+      "summaryKo": "마카오를 통해 포르투갈 아시아 교역망, 중국 연안무역, 일본·동남아시아·인도양 항로, 가톨릭 선교가 하나의 도시 안에 공존한 양상을 봅니다."
+    },
+    {
+      "id": "treaty-port-open-port-urbanism",
+      "labelKo": "조약항과 개항장 도시화",
+      "parentId": "early-modern-east-asian-maritime-open-port-world",
+      "periodKo": "1840-1910년대",
+      "summaryKo": "상하이, 요코하마, 부산, 인천을 연결해 조약 체제, 외국인 거류지, 해관, 항만·철도 인프라, 금융과 해운 네트워크가 동아시아 항구 도시를 재편한 과정을 봅니다."
+    },
+    {
+      "id": "shanghai-treaty-port-concessions",
+      "labelKo": "상하이 조약항과 조계도시",
+      "parentId": "treaty-port-open-port-urbanism",
+      "periodKo": "1843-1943년",
+      "summaryKo": "상하이 와이탄과 조계지를 통해 난징조약 이후 장강 하구 항구가 외국 치외법권, 해관, 금융, 해운 중심지로 성장한 모습을 봅니다."
+    },
+    {
+      "id": "japan-bakumatsu-meiji-open-ports",
+      "labelKo": "막말·메이지 일본 개항장",
+      "parentId": "treaty-port-open-port-urbanism",
+      "periodKo": "1859-1899년",
+      "summaryKo": "요코하마 항을 통해 막말 개항과 메이지기 국제무역항, 외국인 거류지, 세관, 철도와 부두가 일본 도시 인프라를 바꾼 과정을 봅니다."
+    },
+    {
+      "id": "korea-open-port-treaty-network",
+      "labelKo": "조선 후기 부산·인천 개항장",
+      "parentId": "treaty-port-open-port-urbanism",
+      "periodKo": "1876-1910년",
+      "summaryKo": "부산과 인천을 통해 조선의 기존 외교무역 질서가 강화도조약 이후 개항장, 각국 조계, 근대 항만과 철도 연결로 바뀌어 간 현장을 봅니다."
+    },
+    {
+      "id": "east-asian-maritime-knowledge-goods-flows",
+      "labelKo": "동아시아 상품·지식·제도 이동",
+      "parentId": "early-modern-east-asian-maritime-open-port-world",
+      "periodKo": "16-20세기",
+      "summaryKo": "나가사키, 광저우, 마카오, 상하이, 요코하마, 부산, 인천을 가로질러 은, 차, 도자기, 선교, 난학, 해관, 조계 제도와 항만 기술이 이동한 흐름을 비교합니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "nagasaki-port",
+      "titleKo": "나가사키 항",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "일본",
+      "coordinates": {
+        "lat": 32.7503,
+        "lng": 129.8777
+      },
+      "yearLabelKo": "1571년 개항, 16-19세기 대외교역 중심",
+      "summaryKo": "1571년 포르투갈 선박 입항 이후 일본과 유럽, 중국을 잇는 대표 해상 교역항으로 성장했고, 에도 막부의 대외 통제 속에서도 제한된 국제 교류가 유지된 항구 도시입니다.",
+      "stage2": {
+        "primaryContextId": "nanban-portuguese-nagasaki",
+        "contextIds": [
+          "early-modern-east-asian-maritime-open-port-world",
+          "nagasaki-edo-restricted-trade",
+          "nanban-portuguese-nagasaki",
+          "east-asian-maritime-knowledge-goods-flows"
+        ],
+        "periodPathKo": [
+          "근세",
+          "일본 남만무역과 에도 제한무역",
+          "나가사키 항 대외교역"
+        ],
+        "topicTagsKo": [
+          "나가사키",
+          "남만무역",
+          "포르투갈",
+          "중국 상인",
+          "에도 제한무역"
+        ],
+        "uiFilters": {
+          "era": "남만·에도 제한무역",
+          "region": "나가사키·규슈",
+          "theme": [
+            "남만무역",
+            "제한무역",
+            "선교·문화교류"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "Nagasaki Customs, World History Encyclopedia, Britannica 자료를 사용해 나가사키 항의 개항, 남만무역, 제한 교역 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "dejima",
+      "titleKo": "데지마",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "일본",
+      "coordinates": {
+        "lat": 32.7447,
+        "lng": 129.8736
+      },
+      "yearLabelKo": "1636년 조성, 1641-1859년 네덜란드 상관",
+      "summaryKo": "에도 막부가 외국 상인의 거주와 교역을 통제하기 위해 나가사키 항 안에 조성한 인공섬으로, 네덜란드 상관과 난학 지식이 일본으로 들어오는 제한된 통로였습니다.",
+      "stage2": {
+        "primaryContextId": "dejima-dutch-rangaku-network",
+        "contextIds": [
+          "early-modern-east-asian-maritime-open-port-world",
+          "nagasaki-edo-restricted-trade",
+          "dejima-dutch-rangaku-network",
+          "east-asian-maritime-knowledge-goods-flows"
+        ],
+        "periodPathKo": [
+          "근세",
+          "에도 막부 제한무역",
+          "데지마 네덜란드 상관과 난학"
+        ],
+        "topicTagsKo": [
+          "데지마",
+          "네덜란드 상관",
+          "VOC",
+          "난학",
+          "나가사키"
+        ],
+        "uiFilters": {
+          "era": "남만·에도 제한무역",
+          "region": "나가사키·규슈",
+          "theme": [
+            "네덜란드 상관",
+            "난학·지식교류",
+            "제한무역"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "나가사키 데지마 복원지, 일본 국토교통성, Britannica 자료를 사용해 데지마의 위치, 네덜란드 상관, 제한무역 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "guangzhou-thirteen-factories",
+      "titleKo": "광저우 십삼행",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "중국",
+      "coordinates": {
+        "lat": 23.1136,
+        "lng": 113.252
+      },
+      "yearLabelKo": "1757-1842년 광저우 체제 대외무역 중심",
+      "summaryKo": "청 조정이 유럽 상인과의 무역을 광저우로 제한한 시기에 외국 상관과 공행 상인이 집중된 대외무역 구역으로, 아편전쟁 이전 동아시아 무역 구조를 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "canton-system-thirteen-factories",
+        "contextIds": [
+          "early-modern-east-asian-maritime-open-port-world",
+          "canton-macao-pearl-river-trade",
+          "canton-system-thirteen-factories",
+          "east-asian-maritime-knowledge-goods-flows"
+        ],
+        "periodPathKo": [
+          "근세",
+          "청대 광저우 체제",
+          "십삼행과 공행 무역"
+        ],
+        "topicTagsKo": [
+          "광저우",
+          "캔턴",
+          "십삼행",
+          "공행",
+          "차와 은 교역"
+        ],
+        "uiFilters": {
+          "era": "청대 광저우 체제",
+          "region": "주강 삼각주",
+          "theme": [
+            "광저우 체제",
+            "공행 무역",
+            "제한무역"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 0,
+          "referenceSources": 3,
+          "noteKo": "Britannica와 Google Arts & Culture 자료를 사용해 광저우 체제, 십삼행, 공행 무역 맥락을 확인했으며 위치는 옛 십삼행 권역을 근사 표시했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "macau-historic-centre",
+      "titleKo": "마카오 역사 지구",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "중국",
+      "coordinates": {
+        "lat": 22.1987,
+        "lng": 113.5439
+      },
+      "yearLabelKo": "1557년 포르투갈 정착, 16-18세기 중계무역",
+      "summaryKo": "16세기 중반 포르투갈 상인이 정착한 뒤 중국 연안과 일본, 동남아시아, 인도양을 잇는 중계무역항이 되었고, 선교·상업·중국 행정질서가 공존한 도시입니다.",
+      "stage2": {
+        "primaryContextId": "macau-portuguese-china-entrepot",
+        "contextIds": [
+          "early-modern-east-asian-maritime-open-port-world",
+          "canton-macao-pearl-river-trade",
+          "macau-portuguese-china-entrepot",
+          "east-asian-maritime-knowledge-goods-flows"
+        ],
+        "periodPathKo": [
+          "근세",
+          "주강 삼각주 중계무역",
+          "마카오 포르투갈-중국 교역항"
+        ],
+        "topicTagsKo": [
+          "마카오",
+          "포르투갈 아시아 교역망",
+          "가톨릭 선교",
+          "주강 하구",
+          "중계무역"
+        ],
+        "uiFilters": {
+          "era": "포르투갈령 마카오 중계",
+          "region": "주강 삼각주",
+          "theme": [
+            "중계무역",
+            "포르투갈 교역망",
+            "선교·문화교류"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "UNESCO, Macao World Heritage, Britannica 자료를 사용해 마카오 역사 지구의 위치, 중계무역, 선교와 도시유산 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "shanghai-treaty-port",
+      "titleKo": "상하이 조약항",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "중국",
+      "coordinates": {
+        "lat": 31.2342,
+        "lng": 121.4903
+      },
+      "yearLabelKo": "1843년 개항, 19-20세기 조계도시",
+      "summaryKo": "난징조약 뒤 외국 무역에 개방되며 장강 하구의 조약항 도시로 성장했고, 와이탄·조계지·해관·은행 건물은 외국 치외법권과 금융·해운 네트워크가 도시를 재편한 흔적입니다.",
+      "stage2": {
+        "primaryContextId": "shanghai-treaty-port-concessions",
+        "contextIds": [
+          "early-modern-east-asian-maritime-open-port-world",
+          "treaty-port-open-port-urbanism",
+          "shanghai-treaty-port-concessions",
+          "east-asian-maritime-knowledge-goods-flows"
+        ],
+        "periodPathKo": [
+          "근대",
+          "아편전쟁 이후 조약항",
+          "상하이 조계도시와 해관·금융"
+        ],
+        "topicTagsKo": [
+          "상하이",
+          "와이탄",
+          "공동조계",
+          "프랑스 조계",
+          "조약항"
+        ],
+        "uiFilters": {
+          "era": "조약항·조계도시",
+          "region": "장강 하구",
+          "theme": [
+            "조약항",
+            "외국인 거류지",
+            "해관·금융",
+            "근대 항만"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "Britannica, Britannica Treaty port, U.S. National Archives 자료를 사용해 상하이 개항, 조계, 금융·해운 중심지 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "yokohama-port",
+      "titleKo": "요코하마 항",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "일본",
+      "coordinates": {
+        "lat": 35.4437,
+        "lng": 139.638
+      },
+      "yearLabelKo": "1859년 개항, 메이지기 국제무역항",
+      "summaryKo": "1859년 개항 뒤 에도에서 가까운 국제무역항으로 성장했고, 외국인 거류지, 세관, 부두, 창고, 철도 연결은 막말 개항과 메이지 도시 인프라 변화를 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "japan-bakumatsu-meiji-open-ports",
+        "contextIds": [
+          "early-modern-east-asian-maritime-open-port-world",
+          "treaty-port-open-port-urbanism",
+          "japan-bakumatsu-meiji-open-ports"
+        ],
+        "periodPathKo": [
+          "근대",
+          "막말·메이지 개항",
+          "요코하마 국제무역항"
+        ],
+        "topicTagsKo": [
+          "요코하마",
+          "가나가와",
+          "외국인 거류지",
+          "세관",
+          "메이지 무역항"
+        ],
+        "uiFilters": {
+          "era": "일본 개항장",
+          "region": "도쿄만",
+          "theme": [
+            "일본 개항장",
+            "조약항",
+            "외국인 거류지",
+            "근대 항만"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "요코하마시 항만국, Yokohama Customs, Britannica 자료를 사용해 요코하마 항 개항과 국제무역항 성장 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "busan-open-port",
+      "titleKo": "부산 개항장",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "대한민국",
+      "coordinates": {
+        "lat": 35.1028,
+        "lng": 129.0364
+      },
+      "yearLabelKo": "1876년 개항, 조일수호조규 이후 개항장",
+      "summaryKo": "조선시대부터 왜관을 통해 일본과 제한 교류가 이루어지던 항구였고, 1876년 강화도조약 뒤 첫 개항장이 되면서 기존 외교무역 질서가 근대 조약 체제로 전환되는 현장이었습니다.",
+      "stage2": {
+        "primaryContextId": "korea-open-port-treaty-network",
+        "contextIds": [
+          "early-modern-east-asian-maritime-open-port-world",
+          "treaty-port-open-port-urbanism",
+          "korea-open-port-treaty-network"
+        ],
+        "periodPathKo": [
+          "근대",
+          "조선 후기 개항",
+          "부산 개항장과 일본 전관거류지"
+        ],
+        "topicTagsKo": [
+          "부산",
+          "부산포",
+          "초량왜관",
+          "강화도조약",
+          "일본 전관거류지"
+        ],
+        "uiFilters": {
+          "era": "조선 개항장",
+          "region": "대한해협",
+          "theme": [
+            "조선 개항장",
+            "외국인 거류지",
+            "근대 항만"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "부산광역시와 부산항만공사 자료를 사용해 부산의 왜관 유산, 1876년 개항, 근대 항만 전환 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "incheon-open-port",
+      "titleKo": "인천 개항장",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "대한민국",
+      "coordinates": {
+        "lat": 37.4747,
+        "lng": 126.6218
+      },
+      "yearLabelKo": "1883년 개항, 한성 관문 항구",
+      "summaryKo": "1883년 제물포항 개항 뒤 한성과 외국 공사관, 상인, 선박을 연결하는 서해 관문이 되었고, 각국 조계·세관·창고·철도와 항만 시설이 조선 수도권의 세계경제 연결을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "korea-open-port-treaty-network",
+        "contextIds": [
+          "early-modern-east-asian-maritime-open-port-world",
+          "treaty-port-open-port-urbanism",
+          "korea-open-port-treaty-network"
+        ],
+        "periodPathKo": [
+          "근대",
+          "조선 후기 개항",
+          "제물포와 인천 개항장 문화지구"
+        ],
+        "topicTagsKo": [
+          "인천",
+          "제물포",
+          "각국 조계",
+          "한성 관문",
+          "개항장 문화지구"
+        ],
+        "uiFilters": {
+          "era": "조선 개항장",
+          "region": "경기만·황해",
+          "theme": [
+            "조선 개항장",
+            "외국인 거류지",
+            "근대 항만"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "인천광역시, 인천항만공사, 인천지방해양수산청 자료를 사용해 인천 개항장과 제물포항, 각국 조계 맥락을 확인했습니다."
+        }
+      }
+    }
+  ]
+}

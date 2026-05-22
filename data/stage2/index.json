@@ -128,6 +128,12 @@
       "titleKo": "동남아 근세 해상 술탄국과 식민 항구도시",
       "path": "data/stage2/early-modern-southeast-asia-maritime-sultanates-port-cities-preview.json",
       "status": "preview-only"
+    },
+    {
+      "id": "stage2-early-modern-east-asia-ports-treaty-cities-preview",
+      "titleKo": "동아시아 근세 교역항과 조약항 도시",
+      "path": "data/stage2/early-modern-east-asia-ports-treaty-cities-preview.json",
+      "status": "preview-only"
     }
   ]
 }

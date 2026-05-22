@@ -261,6 +261,17 @@ The twenty-first pilot dataset tests early modern Southeast Asian maritime sulta
 - `intramuros-manila`
 - `batavia-jakarta`
 
+The twenty-second pilot dataset tests early modern East Asian maritime trade ports, restricted trade systems, the Canton system, treaty ports, and Korean/Japanese open-port urbanism:
+
+- `nagasaki-port`
+- `dejima`
+- `guangzhou-thirteen-factories`
+- `macau-historic-centre`
+- `shanghai-treaty-port`
+- `yokohama-port`
+- `busan-open-port`
+- `incheon-open-port`
+
 The dataset list is managed in:
 
 ```text
@@ -568,3 +579,16 @@ The 2026-05-22 twenty-one-dataset browser pass checks `/stage2-preview.html` aft
 - Switching back from the early modern Southeast Asian maritime dataset to Atlantic revolutions clears stale Southeast Asian list items, markers, labels, and map zoom state.
 - On mobile, the early modern Southeast Asian maritime entry list scrolls independently, `아체 술탄국` detail scrolls into view, `지도에서 보기` returns to the map, and `닫기` hides the detail panel.
 - Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-one-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-one-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing the dataset endpoint checks.
+
+## Twenty-Two-Dataset Local Usability Pass
+
+The 2026-05-22 twenty-two-dataset local pass checks `/stage2-preview.html` after adding the early modern East Asian ports and treaty cities pilot dataset:
+
+- Dataset selector exposes 22 datasets.
+- All 22 indexed datasets expose their expected entry counts across 186 Stage 2 preview entries.
+- The new East Asian ports dataset exposes 8 entries: `나가사키 항`, `데지마`, `광저우 십삼행`, `마카오 역사 지구`, `상하이 조약항`, `요코하마 항`, `부산 개항장`, and `인천 개항장`.
+- Searching `상하이` in the East Asian ports dataset narrows the list and map to `상하이 조약항`.
+- Selecting `데지마` opens the detail panel with source-confidence information and detail actions.
+- The `조약항과 개항장 도시화` context filter returns `상하이 조약항`, `요코하마 항`, `부산 개항장`, and `인천 개항장`.
+- The public Vercel check could not yet prove this state because the GitHub `Vercel` status for the latest pushed commit reports `build-rate-limit`; endpoint verification should be rerun against `https://wgis.vercel.app/stage2-preview.html` after the deployment limit clears.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-two-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-two-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.
