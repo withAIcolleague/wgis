@@ -294,6 +294,17 @@ The twenty-fourth pilot dataset tests Central Asian Silk Road oasis cities, cara
 - `turfan-gaochang`
 - `dunhuang-mogao-caves`
 
+The twenty-fifth pilot dataset tests Islamic caliphate capitals, knowledge-city networks, mosque and madrasa urbanism, craft-market centers, and world-heritage medieval Islamic cityscapes:
+
+- `baghdad`
+- `damascus`
+- `cairo-islamic`
+- `cordoba`
+- `kairouan`
+- `samarra`
+- `nishapur`
+- `fez`
+
 The dataset list is managed in:
 
 ```text
@@ -643,3 +654,17 @@ The 2026-05-22 twenty-four-dataset public browser pass checks `https://wgis.verc
 - The `타림 분지 오아시스 노선망` context filter returns `카슈가르` and `투르판 고창` with 2 markers and 2 labels and no stale Samarkand data.
 - On mobile, `사마르칸트` detail renders with source-confidence information and both detail actions.
 - Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-four-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-four-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.
+
+## Twenty-Five-Dataset Public Usability Pass
+
+The 2026-05-22 twenty-five-dataset public browser pass checks `https://wgis.vercel.app/stage2-preview.html` after adding the Islamic caliphate and knowledge cities pilot dataset:
+
+- Dataset selector exposes 25 datasets.
+- All 25 indexed datasets render their expected entry, marker, and permanent-label counts across 210 Stage 2 preview entries.
+- The new Islamic caliphate and knowledge cities dataset exposes 8 entries: `바그다드`, `다마스쿠스`, `이슬람 카이로`, `코르도바`, `카이루안`, `사마라`, `니샤푸르`, and `페스`.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control.
+- Searching `코르도바` in the Islamic caliphate and knowledge cities dataset narrows the list and map to `코르도바` with 1 marker and 1 label.
+- Selecting `바그다드` opens the detail panel with source-confidence information and detail actions.
+- The `서방 이슬람권과 안달루스·마그레브 지식도시` context filter returns `코르도바`, `카이루안`, and `페스` with 3 markers and 3 labels and no stale Baghdad data.
+- On mobile, `다마스쿠스` detail renders with source-confidence information and both detail actions.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-five-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-five-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.

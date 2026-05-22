@@ -146,6 +146,12 @@
       "titleKo": "중앙아시아 실크로드 오아시스 도시",
       "path": "data/stage2/central-asia-silk-road-oasis-cities-preview.json",
       "status": "preview-only"
+    },
+    {
+      "id": "stage2-islamic-caliphate-knowledge-cities-preview",
+      "titleKo": "이슬람 칼리프국과 지식도시",
+      "path": "data/stage2/islamic-caliphate-knowledge-cities-preview.json",
+      "status": "preview-only"
     }
   ]
 }

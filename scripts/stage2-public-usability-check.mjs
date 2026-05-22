@@ -138,12 +138,17 @@ const datasets = [
     path: 'data/stage2/central-asia-silk-road-oasis-cities-preview.json',
     count: 8,
     firstEntryId: 'samarkand'
+  },
+  {
+    path: 'data/stage2/islamic-caliphate-knowledge-cities-preview.json',
+    count: 8,
+    firstEntryId: 'baghdad'
   }
 ];
 
 const latestDataset = datasets[datasets.length - 1];
-const desktopShot = path.join(outputDir, 'wgis-stage2-twenty-four-datasets-desktop.png');
-const mobileShot = path.join(outputDir, 'wgis-stage2-twenty-four-datasets-mobile.png');
+const desktopShot = path.join(outputDir, 'wgis-stage2-twenty-five-datasets-desktop.png');
+const mobileShot = path.join(outputDir, 'wgis-stage2-twenty-five-datasets-mobile.png');
 
 function assertCheck(condition, message, details = undefined) {
   if (!condition) {
@@ -312,59 +317,60 @@ async function main() {
       assertCheck(state.contextFilterButtons <= 4 && state.contextFilterToggle, 'Initial context filters should start compact', state);
 
       dom = await dumpDom(buildUrl({ dataset: latestDataset.path }), userDataDir);
-      state = extractState('desktop-central-asia-oasis-default', dom);
+      state = extractState('desktop-islamic-knowledge-default', dom);
       states.push(state);
-      assertCheck(state.entryCards === latestDataset.count && state.entryIds.includes('samarkand'), 'Latest dataset should render Samarkand and all entries', state);
+      assertCheck(state.entryCards === latestDataset.count && state.entryIds.includes('baghdad'), 'Latest dataset should render Baghdad and all entries', state);
 
-      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, q: '막고굴' }), userDataDir);
-      state = extractState('desktop-central-asia-oasis-search-dunhuang', dom);
+      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, q: '코르도바' }), userDataDir);
+      state = extractState('desktop-islamic-knowledge-search-cordoba', dom);
       states.push(state);
-      assertCheck(state.entryCountText === '1개' && state.entryIds.includes('dunhuang-mogao-caves'), 'Latest dataset search should find Dunhuang Mogao Caves', state);
+      assertCheck(state.entryCountText === '1개' && state.entryIds.includes('cordoba'), 'Latest dataset search should find Cordoba', state);
 
-      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, entry: 'bukhara' }), userDataDir);
-      state = extractState('desktop-central-asia-oasis-detail-bukhara', dom);
+      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, entry: 'baghdad' }), userDataDir);
+      state = extractState('desktop-islamic-knowledge-detail-baghdad', dom);
       states.push(state);
       assertCheck(
-        state.detailTitle === '부하라' && state.detailActions === 2 && state.hasSourceConfidence,
-        'Latest dataset detail should show Bukhara, source confidence, and detail actions',
+        state.detailTitle === '바그다드' && state.detailActions === 2 && state.hasSourceConfidence,
+        'Latest dataset detail should show Baghdad, source confidence, and detail actions',
         state
       );
 
       dom = await dumpDom(buildUrl({
         dataset: latestDataset.path,
-        context: 'tarim-basin-oasis-route-network'
+        context: 'western-islamic-andalus-maghrib-learning-cities'
       }), userDataDir);
-      state = extractState('desktop-central-asia-oasis-tarim-context', dom);
+      state = extractState('desktop-islamic-knowledge-western-context', dom);
       states.push(state);
       assertCheck(
-        state.entryCountText === '2개' &&
-          state.entryIds.includes('kashgar') &&
-          state.entryIds.includes('turfan-gaochang') &&
-          !state.entryIds.includes('samarkand'),
-        'Tarim context should return Kashgar and Turfan without stale Samarkand data',
+        state.entryCountText === '3개' &&
+          state.entryIds.includes('cordoba') &&
+          state.entryIds.includes('kairouan') &&
+          state.entryIds.includes('fez') &&
+          !state.entryIds.includes('baghdad'),
+        'Western Islamic context should return Cordoba, Kairouan, and Fez without stale Baghdad data',
         state
       );
 
       dom = await dumpDom(buildUrl({
         dataset: latestDataset.path,
-        entry: 'samarkand'
+        entry: 'damascus'
       }), userDataDir, { width: 390, height: 844 });
-      state = extractState('mobile-central-asia-oasis-detail-samarkand', dom);
+      state = extractState('mobile-islamic-knowledge-detail-damascus', dom);
       states.push(state);
       assertCheck(
-        state.ready && state.detailTitle === '사마르칸트' && state.detailActions === 2,
-        'Mobile-sized latest dataset render should keep the Samarkand detail panel available',
+        state.ready && state.detailTitle === '다마스쿠스' && state.detailActions === 2,
+        'Mobile-sized latest dataset render should keep the Damascus detail panel available',
         state
       );
 
       await captureScreenshot(
-        buildUrl({ dataset: latestDataset.path, entry: 'bukhara' }),
+        buildUrl({ dataset: latestDataset.path, entry: 'baghdad' }),
         userDataDir,
         desktopShot,
         { width: 1440, height: 920 }
       );
       await captureScreenshot(
-        buildUrl({ dataset: latestDataset.path, entry: 'samarkand' }),
+        buildUrl({ dataset: latestDataset.path, entry: 'damascus' }),
         userDataDir,
         mobileShot,
         { width: 390, height: 844 }
