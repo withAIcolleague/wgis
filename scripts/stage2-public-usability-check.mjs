@@ -316,7 +316,7 @@ async function main() {
       states.push(state);
       assertCheck(state.entryCards === latestDataset.count && state.entryIds.includes('samarkand'), 'Latest dataset should render Samarkand and all entries', state);
 
-      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, q: '둔황' }), userDataDir);
+      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, q: '막고굴' }), userDataDir);
       state = extractState('desktop-central-asia-oasis-search-dunhuang', dom);
       states.push(state);
       assertCheck(state.entryCountText === '1개' && state.entryIds.includes('dunhuang-mogao-caves'), 'Latest dataset search should find Dunhuang Mogao Caves', state);

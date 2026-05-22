@@ -638,7 +638,7 @@ The 2026-05-22 twenty-four-dataset public browser pass checks `https://wgis.verc
 - All 24 indexed datasets render their expected entry, marker, and permanent-label counts across 202 Stage 2 preview entries.
 - The new Central Asian oasis dataset exposes 8 entries: `사마르칸트`, `부하라`, `메르브`, `히바 이찬 칼라`, `오트라르`, `카슈가르`, `투르판 고창`, and `둔황 막고굴`.
 - Compact context filters stay limited to 4 visible context buttons plus an expansion control.
-- Searching `둔황` in the Central Asian oasis dataset narrows the list and map to `둔황 막고굴` with 1 marker and 1 label.
+- Searching `막고굴` in the Central Asian oasis dataset narrows the list and map to `둔황 막고굴` with 1 marker and 1 label.
 - Selecting `부하라` opens the detail panel with source-confidence information and detail actions.
 - The `타림 분지 오아시스 노선망` context filter returns `카슈가르` and `투르판 고창` with 2 markers and 2 labels and no stale Samarkand data.
 - On mobile, `사마르칸트` detail renders with source-confidence information and both detail actions.
