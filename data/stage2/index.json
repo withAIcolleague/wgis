@@ -158,6 +158,12 @@
       "titleKo": "유럽 중세 교역·도시 네트워크",
       "path": "data/stage2/europe-medieval-trade-urban-networks-preview.json",
       "status": "preview-only"
+    },
+    {
+      "id": "stage2-east-asia-medieval-capitals-knowledge-cities-preview",
+      "titleKo": "동아시아 중세 수도와 지식도시",
+      "path": "data/stage2/east-asia-medieval-capitals-knowledge-cities-preview.json",
+      "status": "preview-only"
     }
   ]
 }

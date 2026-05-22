@@ -1,0 +1,549 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-east-asia-medieval-capitals-knowledge-cities-preview",
+  "titleKo": "2단계 미리보기: 동아시아 중세 수도와 지식도시",
+  "descriptionKo": "장안, 뤄양, 카이펑, 난징, 헤이안쿄, 나라, 서라벌, 개경을 비교하기 위한 2단계 미리보기 데이터셋입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "중국 제국 수도",
+        "북송 수도",
+        "일본 고대·중세 수도",
+        "신라 왕경",
+        "고려 왕경"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "관중·중원",
+        "황허·화북",
+        "강남·양쯔 하류",
+        "야마토·교토 분지",
+        "한반도 남동부",
+        "한반도 중서부"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "도성 계획",
+        "불교 도시",
+        "관학·과거제",
+        "실크로드 동단",
+        "인쇄·서적 유통",
+        "궁정문화",
+        "왕경·고분",
+        "외교·조공 교류",
+        "수도 이전",
+        "세계유산"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지점 유형",
+      "options": [
+        "장소"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "medieval-east-asian-capitals-knowledge-city-world",
+      "labelKo": "동아시아 중세 수도와 지식도시 세계",
+      "parentId": null,
+      "periodKo": "7-15세기",
+      "summaryKo": "중국 중원과 강남, 일본 야마토·교토 분지, 한반도 신라·고려 수도권을 묶어 도성 계획, 불교 사원, 관학과 과거제, 목판·인쇄, 외교·조공 교류가 수도 공간에 결합한 방식을 봅니다."
+    },
+    {
+      "id": "chinese-imperial-capital-knowledge-network",
+      "labelKo": "중국 제국 수도와 지식 네트워크",
+      "parentId": "medieval-east-asian-capitals-knowledge-city-world",
+      "periodKo": "한-명 초기",
+      "summaryKo": "장안, 뤄양, 카이펑, 난징을 통해 중국 왕조 수도의 이전, 격자형 도성, 불교 석굴, 관학·과거제, 운하·시장·인쇄 네트워크가 중원과 강남에 축적된 방식을 비교합니다."
+    },
+    {
+      "id": "changan-silk-road-buddhist-cosmopolitan-capital",
+      "labelKo": "장안 실크로드 동단과 국제 불교 수도",
+      "parentId": "chinese-imperial-capital-knowledge-network",
+      "periodKo": "7-9세기",
+      "summaryKo": "당 장안의 격자형 도성, 궁성, 사원, 시장, 외국인 거주지를 통해 중앙아시아와 중국 내륙을 잇는 실크로드 동단의 국제 수도 경관을 봅니다."
+    },
+    {
+      "id": "luoyang-longmen-central-plains-buddhist-capital",
+      "labelKo": "뤄양 중원 수도와 룽먼 불교 석굴",
+      "parentId": "chinese-imperial-capital-knowledge-network",
+      "periodKo": "5-8세기",
+      "summaryKo": "뤄양과 룽먼석굴을 통해 북위의 수도 이전, 왕조 후원 불교 조각, 중원 정치·학문·불교 문화가 결합한 고도 네트워크를 봅니다."
+    },
+    {
+      "id": "kaifeng-northern-song-commerce-print-city",
+      "labelKo": "카이펑 북송 상업·인쇄 수도",
+      "parentId": "chinese-imperial-capital-knowledge-network",
+      "periodKo": "960-1127년",
+      "summaryKo": "북송 변경 카이펑을 통해 운하와 황허 수계, 궁성·시장, 도시 소비문화, 인쇄·서적 유통, 관료제가 결합한 중세 중국 상업 수도를 봅니다."
+    },
+    {
+      "id": "nanjing-jiangnan-dynastic-capital-ming-transition",
+      "labelKo": "난징 강남 수도와 명 초기 제국 전환",
+      "parentId": "chinese-imperial-capital-knowledge-network",
+      "periodKo": "3-15세기",
+      "summaryKo": "건강과 응천부 난징, 명 샤오링 능과 성벽을 통해 강남 정치·문학·불교·관료제 중심지가 명 초기 제국 수도로 재구성된 과정을 봅니다."
+    },
+    {
+      "id": "japanese-ancient-medieval-capital-buddhist-court-network",
+      "labelKo": "일본 고대·중세 수도와 불교·궁정 네트워크",
+      "parentId": "medieval-east-asian-capitals-knowledge-city-world",
+      "periodKo": "710-1185년",
+      "summaryKo": "나라와 헤이안쿄를 통해 중국식 도성 모델 수용, 율령국가, 불교 사원, 궁정문화, 문학과 정원 전통이 일본 수도 공간에서 변형된 방식을 비교합니다."
+    },
+    {
+      "id": "heian-kyo-court-buddhist-literary-capital",
+      "labelKo": "헤이안쿄 궁정문화·불교·문학 수도",
+      "parentId": "japanese-ancient-medieval-capital-buddhist-court-network",
+      "periodKo": "794-1185년",
+      "summaryKo": "헤이안쿄와 교토 사원·정원을 통해 중국식 계획 수도가 일본 궁정문화, 불교, 정원, 문학 전통의 장기 중심지로 변형된 방식을 봅니다."
+    },
+    {
+      "id": "nara-heijo-buddhist-silk-road-end",
+      "labelKo": "나라 헤이조쿄와 실크로드 동쪽 끝",
+      "parentId": "japanese-ancient-medieval-capital-buddhist-court-network",
+      "periodKo": "710-784년",
+      "summaryKo": "헤이조쿄 나라, 도다이지, 쇼소인을 통해 율령국가 수도, 대규모 불교 사원, 동아시아 외교와 실크로드 물품·양식·지식 이동의 흔적을 봅니다."
+    },
+    {
+      "id": "korean-medieval-royal-capital-network",
+      "labelKo": "한반도 중세 왕경과 불교·관학 네트워크",
+      "parentId": "medieval-east-asian-capitals-knowledge-city-world",
+      "periodKo": "7-14세기",
+      "summaryKo": "서라벌과 개경을 통해 신라·고려 왕경의 산지 분지 지형, 궁성·고분·사원·관학, 불교 왕권과 성리학 전환이 한반도 수도 경관에 축적된 방식을 비교합니다."
+    },
+    {
+      "id": "silla-seorabeol-buddhist-royal-capital",
+      "labelKo": "서라벌 신라 왕경과 불교·과학 지식",
+      "parentId": "korean-medieval-royal-capital-network",
+      "periodKo": "7-9세기",
+      "summaryKo": "경주 서라벌의 왕경 계획, 고분군, 궁성, 불교 사원과 천문 관측 전통을 통해 통일신라 정치·종교·장례·과학 지식이 축적된 수도 경관을 봅니다."
+    },
+    {
+      "id": "goryeo-gaegyeong-buddhist-confucian-transition-capital",
+      "labelKo": "개경 고려 수도와 불교·성리학 전환",
+      "parentId": "korean-medieval-royal-capital-network",
+      "periodKo": "918-1392년",
+      "summaryKo": "개경 만월대, 성균관, 첨성대, 성곽과 왕릉을 통해 고려의 불교 왕권, 관료 교육, 성리학 전환이 산지 분지 수도 공간에 결합한 방식을 봅니다."
+    },
+    {
+      "id": "east-asian-capital-heritage-preservation",
+      "labelKo": "세계유산으로 남은 동아시아 수도 경관",
+      "parentId": "medieval-east-asian-capitals-knowledge-city-world",
+      "periodKo": "현재 보존 기준",
+      "summaryKo": "장안-톈산 실크로드, 룽먼석굴, 명·청 황릉, 고도 교토와 나라, 경주 역사유적지구, 개성역사유적지구 등 세계유산으로 남은 동아시아 수도·불교·왕경 경관을 비교합니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "changan-xian",
+      "titleKo": "장안",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "중국",
+      "coordinates": {
+        "lat": 34.3416,
+        "lng": 108.9398
+      },
+      "yearLabelKo": "전한·수·당 수도, 7-9세기 당 장안 전성기",
+      "summaryKo": "한·수·당 제국의 대표 수도로, 관중 평원에서 중앙아시아와 중국 내륙을 연결한 실크로드 동쪽 출발점이었습니다.",
+      "stage2": {
+        "primaryContextId": "changan-silk-road-buddhist-cosmopolitan-capital",
+        "contextIds": [
+          "medieval-east-asian-capitals-knowledge-city-world",
+          "chinese-imperial-capital-knowledge-network",
+          "changan-silk-road-buddhist-cosmopolitan-capital",
+          "east-asian-capital-heritage-preservation"
+        ],
+        "periodPathKo": [
+          "중세",
+          "중국 제국 수도",
+          "당 장안 실크로드 동단"
+        ],
+        "topicTagsKo": [
+          "장안",
+          "시안",
+          "당 장안",
+          "실크로드 동단",
+          "대명궁"
+        ],
+        "uiFilters": {
+          "era": "중국 제국 수도",
+          "region": "관중·중원",
+          "theme": [
+            "도성 계획",
+            "불교 도시",
+            "실크로드 동단",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 장안-톈산 실크로드 세계유산, UNESCO Silk Roads Programme 시안 자료, Britannica 시안 자료를 사용해 위치와 당 장안·실크로드 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "luoyang",
+      "titleKo": "뤄양",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "중국",
+      "coordinates": {
+        "lat": 34.6197,
+        "lng": 112.454
+      },
+      "yearLabelKo": "여러 왕조 수도, 5-8세기 불교·수당 동도 중심",
+      "summaryKo": "동주 이후 여러 왕조의 수도였고, 후한·북위·수당 시기에는 장안과 함께 중원 정치와 불교 문화의 중심지였습니다.",
+      "stage2": {
+        "primaryContextId": "luoyang-longmen-central-plains-buddhist-capital",
+        "contextIds": [
+          "medieval-east-asian-capitals-knowledge-city-world",
+          "chinese-imperial-capital-knowledge-network",
+          "luoyang-longmen-central-plains-buddhist-capital",
+          "east-asian-capital-heritage-preservation"
+        ],
+        "periodPathKo": [
+          "중세",
+          "중국 제국 수도",
+          "뤄양 중원 고도와 룽먼석굴"
+        ],
+        "topicTagsKo": [
+          "뤄양",
+          "낙양",
+          "룽먼석굴",
+          "북위",
+          "수당 동도"
+        ],
+        "uiFilters": {
+          "era": "중국 제국 수도",
+          "region": "관중·중원",
+          "theme": [
+            "수도 이전",
+            "불교 도시",
+            "도성 계획",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 룽먼석굴과 장안-톈산 실크로드 자료, Britannica 뤄양 자료를 사용해 뤄양 고도와 북위·수당 불교 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "kaifeng",
+      "titleKo": "카이펑",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "중국",
+      "coordinates": {
+        "lat": 34.7973,
+        "lng": 114.3076
+      },
+      "yearLabelKo": "960-1127년 북송 수도",
+      "summaryKo": "북송의 수도 변경으로, 운하와 황허 수계를 통해 곡물과 물자가 집중된 동아시아 최대 상업 도시 중 하나였습니다.",
+      "stage2": {
+        "primaryContextId": "kaifeng-northern-song-commerce-print-city",
+        "contextIds": [
+          "medieval-east-asian-capitals-knowledge-city-world",
+          "chinese-imperial-capital-knowledge-network",
+          "kaifeng-northern-song-commerce-print-city"
+        ],
+        "periodPathKo": [
+          "중세",
+          "북송 수도",
+          "카이펑 상업·인쇄 도시"
+        ],
+        "topicTagsKo": [
+          "카이펑",
+          "변량",
+          "변경",
+          "북송 수도",
+          "청명상하도"
+        ],
+        "uiFilters": {
+          "era": "북송 수도",
+          "region": "황허·화북",
+          "theme": [
+            "도성 계획",
+            "관학·과거제",
+            "인쇄·서적 유통",
+            "외교·조공 교류"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 0,
+          "referenceSources": 2,
+          "noteKo": "Britannica 카이펑과 송 왕조 자료를 사용해 북송 수도, 운하·상업, 인쇄·관료제 맥락을 확인했습니다. 세계유산 직접 등재 지점은 아니므로 출처 신뢰도는 중간으로 두었습니다."
+        }
+      }
+    },
+    {
+      "entryId": "nanjing",
+      "titleKo": "난징",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "중국",
+      "coordinates": {
+        "lat": 32.0603,
+        "lng": 118.7969
+      },
+      "yearLabelKo": "3-6세기 남조 수도, 1368-1420년 명 수도",
+      "summaryKo": "육조의 건강과 명 초기 응천부를 거치며 강남 정치·문학·불교·관료제의 중심지였습니다.",
+      "stage2": {
+        "primaryContextId": "nanjing-jiangnan-dynastic-capital-ming-transition",
+        "contextIds": [
+          "medieval-east-asian-capitals-knowledge-city-world",
+          "chinese-imperial-capital-knowledge-network",
+          "nanjing-jiangnan-dynastic-capital-ming-transition",
+          "east-asian-capital-heritage-preservation"
+        ],
+        "periodPathKo": [
+          "중세",
+          "중국 제국 수도",
+          "난징 강남 수도와 명 초기 전환"
+        ],
+        "topicTagsKo": [
+          "난징",
+          "건강",
+          "응천부",
+          "명 샤오링",
+          "강남 수도"
+        ],
+        "uiFilters": {
+          "era": "중국 제국 수도",
+          "region": "강남·양쯔 하류",
+          "theme": [
+            "도성 계획",
+            "수도 이전",
+            "관학·과거제",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 명·청 황릉, China.org.cn 난징 고도 자료, Britannica 난징 자료를 사용해 강남 수도와 명 초기 제국 전환 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "heian-kyo",
+      "titleKo": "헤이안쿄",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "일본",
+      "coordinates": {
+        "lat": 35.0116,
+        "lng": 135.7681
+      },
+      "yearLabelKo": "794년 천도, 794-1185년 헤이안 시대 중심",
+      "summaryKo": "794년 일본 조정이 세운 계획 수도로, 중국식 도성 모델을 받아들이면서도 일본 궁정문화와 불교, 정원, 문학 전통을 장기적으로 형성했습니다.",
+      "stage2": {
+        "primaryContextId": "heian-kyo-court-buddhist-literary-capital",
+        "contextIds": [
+          "medieval-east-asian-capitals-knowledge-city-world",
+          "japanese-ancient-medieval-capital-buddhist-court-network",
+          "heian-kyo-court-buddhist-literary-capital",
+          "east-asian-capital-heritage-preservation"
+        ],
+        "periodPathKo": [
+          "중세",
+          "일본 고대·중세 수도",
+          "헤이안쿄 궁정문화와 불교 수도"
+        ],
+        "topicTagsKo": [
+          "헤이안쿄",
+          "교토",
+          "헤이안 시대",
+          "궁정문화",
+          "고도 교토"
+        ],
+        "uiFilters": {
+          "era": "일본 고대·중세 수도",
+          "region": "야마토·교토 분지",
+          "theme": [
+            "도성 계획",
+            "불교 도시",
+            "궁정문화",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 고도 교토 세계유산, 일본정부관광국, Britannica 교토 자료를 사용해 헤이안쿄 계획 수도와 궁정·불교 문화 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "nara",
+      "titleKo": "나라",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "일본",
+      "coordinates": {
+        "lat": 34.6851,
+        "lng": 135.8048
+      },
+      "yearLabelKo": "710-784년 일본 수도",
+      "summaryKo": "헤이조쿄로 조성된 일본의 8세기 수도로, 율령국가와 대규모 불교 사원, 동아시아 외교·불교 교류가 결합한 도시였습니다.",
+      "stage2": {
+        "primaryContextId": "nara-heijo-buddhist-silk-road-end",
+        "contextIds": [
+          "medieval-east-asian-capitals-knowledge-city-world",
+          "japanese-ancient-medieval-capital-buddhist-court-network",
+          "nara-heijo-buddhist-silk-road-end",
+          "east-asian-capital-heritage-preservation"
+        ],
+        "periodPathKo": [
+          "중세",
+          "일본 고대·중세 수도",
+          "나라 헤이조쿄와 실크로드 동쪽 끝"
+        ],
+        "topicTagsKo": [
+          "나라",
+          "헤이조쿄",
+          "도다이지",
+          "쇼소인",
+          "실크로드 동쪽 끝"
+        ],
+        "uiFilters": {
+          "era": "일본 고대·중세 수도",
+          "region": "야마토·교토 분지",
+          "theme": [
+            "도성 계획",
+            "불교 도시",
+            "실크로드 동단",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 고도 나라 세계유산, UNESCO Silk Roads Programme 나라 자료, Britannica 나라 자료를 사용해 헤이조쿄와 동아시아 불교·교류 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "silla-seorabeol",
+      "titleKo": "서라벌",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "대한민국",
+      "coordinates": {
+        "lat": 35.8562,
+        "lng": 129.2247
+      },
+      "yearLabelKo": "신라 수도, 7-9세기 통일신라 전성기",
+      "summaryKo": "오늘날 경주는 신라와 통일신라의 수도로, 왕경 계획, 고분군, 궁성, 불교 사원과 천문 관측 전통이 집중된 도시였습니다.",
+      "stage2": {
+        "primaryContextId": "silla-seorabeol-buddhist-royal-capital",
+        "contextIds": [
+          "medieval-east-asian-capitals-knowledge-city-world",
+          "korean-medieval-royal-capital-network",
+          "silla-seorabeol-buddhist-royal-capital",
+          "east-asian-capital-heritage-preservation"
+        ],
+        "periodPathKo": [
+          "중세",
+          "신라 왕경",
+          "서라벌 불교 왕경과 과학 지식"
+        ],
+        "topicTagsKo": [
+          "서라벌",
+          "경주",
+          "신라 왕경",
+          "경주 역사유적지구",
+          "첨성대"
+        ],
+        "uiFilters": {
+          "era": "신라 왕경",
+          "region": "한반도 남동부",
+          "theme": [
+            "왕경·고분",
+            "불교 도시",
+            "도성 계획",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 경주 역사유적지구, 한국관광공사, Britannica 신라 자료를 사용해 신라 왕경과 불교·장례·천문 지식 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "goryeo-gaegyeong",
+      "titleKo": "개경",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "북한",
+      "coordinates": {
+        "lat": 37.9706,
+        "lng": 126.5544
+      },
+      "yearLabelKo": "918-1392년 고려 수도",
+      "summaryKo": "고려 왕조의 수도로, 만월대 궁성, 성균관, 첨성대, 성곽과 왕릉이 산지 분지 지형 안에 배치되었습니다.",
+      "stage2": {
+        "primaryContextId": "goryeo-gaegyeong-buddhist-confucian-transition-capital",
+        "contextIds": [
+          "medieval-east-asian-capitals-knowledge-city-world",
+          "korean-medieval-royal-capital-network",
+          "goryeo-gaegyeong-buddhist-confucian-transition-capital",
+          "east-asian-capital-heritage-preservation"
+        ],
+        "periodPathKo": [
+          "중세",
+          "고려 왕경",
+          "개경 불교 왕권과 성리학 전환"
+        ],
+        "topicTagsKo": [
+          "개경",
+          "개성",
+          "고려 수도",
+          "만월대",
+          "성균관"
+        ],
+        "uiFilters": {
+          "era": "고려 왕경",
+          "region": "한반도 중서부",
+          "theme": [
+            "왕경·고분",
+            "관학·과거제",
+            "불교 도시",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 개성역사유적지구와 Britannica 개성 자료를 사용해 고려 수도, 만월대, 성균관, 왕릉과 성리학 전환 맥락을 확인했습니다."
+        }
+      }
+    }
+  ]
+}

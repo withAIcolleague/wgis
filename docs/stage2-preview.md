@@ -316,6 +316,17 @@ The twenty-sixth pilot dataset tests European medieval trade cities, maritime re
 - `bergen-bryggen`
 - `dubrovnik`
 
+The twenty-seventh pilot dataset tests East Asian medieval capitals, palace-city planning, Buddhist capitals, imperial academies, manuscript and print routes, and royal capital landscapes:
+
+- `changan-xian`
+- `luoyang`
+- `kaifeng`
+- `nanjing`
+- `heian-kyo`
+- `nara`
+- `silla-seorabeol`
+- `goryeo-gaegyeong`
+
 The dataset list is managed in:
 
 ```text
@@ -693,3 +704,17 @@ The 2026-05-22 twenty-six-dataset public browser pass checks `https://wgis.verce
 - The `한자동맹 북해·발트해 네트워크` context filter returns `브뤼헤`, `뤼베크`, `비스뷔`, and `베르겐 브뤼겐` with 4 markers and 4 labels and no stale Venice data.
 - On mobile, `뤼베크` detail renders with source-confidence information and both detail actions.
 - Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-six-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-six-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.
+
+## Twenty-Seven-Dataset Public Usability Pass
+
+The 2026-05-22 twenty-seven-dataset public browser pass checks `https://wgis.vercel.app/stage2-preview.html` after adding the East Asian medieval capitals and knowledge cities pilot dataset:
+
+- Dataset selector exposes 27 datasets.
+- All 27 indexed datasets render their expected entry, marker, and permanent-label counts across 226 Stage 2 preview entries.
+- The new East Asian medieval capitals dataset exposes 8 entries: `장안`, `뤄양`, `카이펑`, `난징`, `헤이안쿄`, `나라`, `서라벌`, and `개경`.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control.
+- Searching `개경` in the East Asian medieval capitals dataset narrows the list and map to `개경` with 1 marker and 1 label.
+- Selecting `장안` opens the detail panel with source-confidence information and detail actions.
+- The `한반도 중세 왕경과 불교·관학 네트워크` context filter returns `서라벌` and `개경` with 2 markers and 2 labels and no stale Changan data.
+- On mobile, `나라` detail renders with source-confidence information and both detail actions.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-seven-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-seven-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.
