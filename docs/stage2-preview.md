@@ -900,3 +900,30 @@ The 2026-05-22 thirty-four-dataset public browser pass checks `https://wgis.verc
 - The `청대 황실 원림과 행궁` context filter returns `이화원` and `청더 피서산장` with 2 markers and 2 labels and no stale palace data.
 - On mobile, `다쭈석각` detail renders with source-confidence information and both detail actions.
 - Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-four-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-four-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.
+
+## Thirty-Fifth Pilot Dataset
+
+The Indian temple and cave heritage pilot dataset adds 8 entries:
+
+- `아잔타 석굴`
+- `엘로라 석굴`
+- `엘레판타 석굴`
+- `카주라호 사원군`
+- `함피 비자야나가라 유적`
+- `파타다칼 사원군`
+- `코나르크 태양신 사원`
+- `탄자부르 브리하디스와라 사원`
+
+## Thirty-Five-Dataset Public Usability Pass
+
+The 2026-05-22 thirty-five-dataset public browser pass checks `https://wgis.vercel.app/stage2-preview.html` after adding the Indian temple and cave heritage pilot dataset:
+
+- Dataset selector exposes 35 datasets.
+- All 35 indexed datasets render their expected entry, marker, and permanent-label counts across 291 Stage 2 preview entries.
+- The new Indian temple and cave dataset exposes 8 entries: `아잔타 석굴`, `엘로라 석굴`, `엘레판타 석굴`, `카주라호 사원군`, `함피 비자야나가라 유적`, `파타다칼 사원군`, `코나르크 태양신 사원`, and `탄자부르 브리하디스와라 사원`.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control.
+- Searching `코나르크` in the Indian temple and cave dataset narrows the list and map to `코나르크 태양신 사원` with 1 marker and 1 label.
+- Selecting `엘로라 석굴` opens the detail panel with source-confidence information and detail actions.
+- The `서부 데칸 불교·힌두 석굴권` context filter returns `아잔타 석굴`, `엘로라 석굴`, and `엘레판타 석굴` with 3 markers and 3 labels and no stale Khajuraho data.
+- On mobile, `탄자부르 브리하디스와라 사원` detail renders with source-confidence information and both detail actions.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-five-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-five-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.

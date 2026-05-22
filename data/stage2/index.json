@@ -206,6 +206,12 @@
       "titleKo": "중국 제국 의례·방어·불교 유산",
       "path": "data/stage2/china-imperial-buddhist-heritage-sites-preview.json",
       "status": "preview-only"
+    },
+    {
+      "id": "stage2-india-temple-cave-heritage-sites-preview",
+      "titleKo": "인도 사원·석굴 유산",
+      "path": "data/stage2/india-temple-cave-heritage-sites-preview.json",
+      "status": "preview-only"
     }
   ]
 }

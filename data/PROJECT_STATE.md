@@ -11,10 +11,10 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 283
-- Completed curation batches: 35
-- Latest completed batch: `asia-china-imperial-buddhist-heritage-sites-v1`
-- Latest completed infrastructure milestone: stage-2 thirty-four-dataset public usability pass
+- Current entry count: 291
+- Completed curation batches: 36
+- Latest completed batch: `asia-south-asia-india-temple-cave-heritage-sites-v1`
+- Latest completed infrastructure milestone: stage-2 thirty-five-dataset public usability pass
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
@@ -563,6 +563,33 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - Checked: 34 indexed dataset endpoints and expected entry counts across 283 Stage 2 preview entries, compact context filters, Chinese imperial heritage search/detail/context behavior, stale-data cleanup, and mobile-sized rendering
   - Result: public endpoint and headless browser verification completed for 34 datasets and 283 Stage 2 preview entries; screenshots saved under `C:\Users\Public\Documents\ESTsoft\CreatorTemp\` when the local headless browser runtime is available
 
+- Indian temple and cave heritage sites batch
+  - Batch ID: `asia-south-asia-india-temple-cave-heritage-sites-v1`
+  - Source file: `data/records/asia/south-asia/india-temple-cave-heritage-sites.json`
+  - Entries added: 8
+  - Entry IDs:
+    - `ajanta-caves`
+    - `ellora-caves`
+    - `elephanta-caves`
+    - `khajuraho-monuments`
+    - `hampi-vijayanagara`
+    - `pattadakal-monuments`
+    - `konark-sun-temple`
+    - `thanjavur-brihadisvara-temple`
+
+- Stage-2 Indian temple and cave heritage pilot dataset
+  - Files: `data/stage2/index.json`, `data/stage2/india-temple-cave-heritage-sites-preview.json`, `scripts/smoke-check.js`, `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`
+  - URL path: `/stage2-preview.html`
+  - Scope: add a thirty-fifth Stage 2 preview dataset using the new Indian temple and cave heritage source batch
+  - Model stress test: Ajanta Buddhist monastic mural caves, Ellora multi-religious rock-cut complex, Elephanta Shiva island caves, Khajuraho Chandela temple city, Hampi Vijayanagara capital landscape, Pattadakal Chalukya temple experiment, Konark Sun Temple chariot landscape, and Thanjavur Chola royal temple
+
+- Stage-2 thirty-five-dataset public usability pass
+  - Files: `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`
+  - URL path: `https://wgis.vercel.app/stage2-preview.html`
+  - Scope: keep the Stage 2 preview endpoint and browser-state check repeatable after adding the thirty-fifth dataset
+  - Checked: 35 indexed dataset endpoints and expected entry counts across 291 Stage 2 preview entries, compact context filters, Indian temple and cave search/detail/context behavior, stale-data cleanup, and mobile-sized rendering
+  - Result: public endpoint and headless browser verification completed for 35 datasets and 291 Stage 2 preview entries; screenshots saved under `C:\Users\Public\Documents\ESTsoft\CreatorTemp\` when the local headless browser runtime is available
+
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`
   - Source file: `data/records/global/legacy/core-seed-entries.json`
@@ -1031,8 +1058,8 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 1. First-stage DB next expansion batch
    - Scope: continue focused source-record growth with another bounded culture/region/time slice and keep the batch small enough to verify end to end
 
-2. Stage-2 thirty-fifth pilot dataset
-   - Scope: optionally model the legacy core seed entries as a cross-regional demonstration set if we want every existing source file to have a Stage 2 preview, while recognizing it is less culturally focused than the newer batches
+2. Stage-2 thirty-sixth pilot dataset
+   - Scope: continue modeling the next focused source-record batch as a Stage 2 preview dataset, or optionally model the legacy core seed entries as a cross-regional demonstration set if we want every existing source file to have a Stage 2 preview
 
 ## Resume Checklist
 

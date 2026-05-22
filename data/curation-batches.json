@@ -1012,6 +1012,34 @@
         "Beijing municipal government and Palace Museum references for Beijing imperial sites",
         "UNESCO periodic reporting, state-of-conservation, nomination, Britannica, and National Geographic references for site context and representative coordinates"
       ]
+    },
+    {
+      "id": "asia-south-asia-india-temple-cave-heritage-sites-v1",
+      "status": "completed",
+      "completedAt": "2026-05-22",
+      "continentId": "asia",
+      "countryIso2": "IN",
+      "countryKo": "인도",
+      "worldRegion": "남아시아·인도사",
+      "focusKo": "인도 사원·석굴 유산 핵심 지점",
+      "scopeKo": "불교 석굴 회화와 힌두·자이나 석굴, 찰루키아·찬델라·촐라·동강가 왕조 사원 건축, 비자야나가라 수도 유산을 연결하는 핵심 지점",
+      "sourceFile": "data/records/asia/south-asia/india-temple-cave-heritage-sites.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "ajanta-caves",
+        "ellora-caves",
+        "elephanta-caves",
+        "khajuraho-monuments",
+        "hampi-vijayanagara",
+        "pattadakal-monuments",
+        "konark-sun-temple",
+        "thanjavur-brihadisvara-temple"
+      ],
+      "sourceBasis": [
+        "UNESCO World Heritage pages for Ajanta, Ellora, Elephanta, Khajuraho, Hampi, Pattadakal, Konark, and Great Living Chola Temples",
+        "Archaeological Survey of India and state tourism references for Indian cave and temple heritage sites",
+        "Britannica and UNESCO reporting references for site context and representative coordinates"
+      ]
     }
   ]
 }

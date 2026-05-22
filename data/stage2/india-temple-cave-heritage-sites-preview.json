@@ -1,0 +1,510 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-india-temple-cave-heritage-sites-preview",
+  "titleKo": "2단계 미리보기: 인도 사원·석굴 유산",
+  "descriptionKo": "아잔타, 엘로라, 엘레판타, 카주라호, 함피, 파타다칼, 코나르크, 탄자부르 브리하디스와라 사원을 비교해 인도 불교 석굴 회화, 힌두·자이나 석굴, 왕조 사원 건축과 수도 유산을 보는 2단계 미리보기 데이터셋입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "불교 석굴",
+        "초기 중세 데칸",
+        "찬델라",
+        "비자야나가라",
+        "찰루키아",
+        "동강가",
+        "촐라"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "마하라슈트라",
+        "뭄바이 항만",
+        "중부 인도",
+        "카르나타카",
+        "오디샤",
+        "타밀나두"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "불교 석굴",
+        "힌두 석굴",
+        "자이나 유산",
+        "사원 도시",
+        "남인도 사원",
+        "왕조 건축",
+        "해안 사원",
+        "세계유산"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지점 유형",
+      "options": [
+        "장소"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "india-temple-cave-heritage-landscape",
+      "labelKo": "인도 사원·석굴 유산 경관",
+      "parentId": null,
+      "periodKo": "기원전 2세기-16세기",
+      "summaryKo": "불교 석굴 회화, 힌두·자이나 석굴, 찬델라·찰루키아·촐라·동강가 왕조 사원, 비자야나가라 수도 유산을 묶어 인도 종교 건축과 왕조 후원의 지리적 확산을 비교합니다."
+    },
+    {
+      "id": "western-deccan-buddhist-hindu-caves",
+      "labelKo": "서부 데칸 불교·힌두 석굴권",
+      "parentId": "india-temple-cave-heritage-landscape",
+      "periodKo": "기원전 2세기-10세기",
+      "summaryKo": "아잔타, 엘로라, 엘레판타를 통해 데칸과 서해안 교통로에서 불교 수도원, 시바 신앙, 다종교 석굴 건축이 발전한 방식을 봅니다."
+    },
+    {
+      "id": "ajanta-buddhist-monastic-mural-caves",
+      "labelKo": "아잔타 불교 수도원과 벽화 석굴",
+      "parentId": "western-deccan-buddhist-hindu-caves",
+      "periodKo": "기원전 2세기-기원후 6세기",
+      "summaryKo": "아잔타 석굴을 통해 와고라 계곡의 수도원, 예배굴, 자타카 벽화가 후원 세력과 상업로 위에서 결합한 방식을 봅니다."
+    },
+    {
+      "id": "ellora-multi-religious-rock-cut-complex",
+      "labelKo": "엘로라 다종교 석굴 복합체",
+      "parentId": "western-deccan-buddhist-hindu-caves",
+      "periodKo": "6-10세기",
+      "summaryKo": "엘로라 석굴을 통해 불교·힌두·자이나 사원과 카일라사 암반 건축이 라슈트라쿠타 후원 아래 공존한 방식을 봅니다."
+    },
+    {
+      "id": "elephanta-shiva-island-caves",
+      "labelKo": "엘레판타 시바 섬 석굴",
+      "parentId": "western-deccan-buddhist-hindu-caves",
+      "periodKo": "6-7세기",
+      "summaryKo": "엘레판타 석굴을 통해 뭄바이 항만의 섬, 시바 조각, 해상 교통과 권력 후원이 종교 경관으로 결합한 방식을 봅니다."
+    },
+    {
+      "id": "central-india-temple-sculpture",
+      "labelKo": "중부 인도 사원 조각 경관",
+      "parentId": "india-temple-cave-heritage-landscape",
+      "periodKo": "10-11세기",
+      "summaryKo": "카주라호를 통해 찬델라 왕조의 나가라 양식 사원, 외벽 조각, 사원 도시의 조형 언어를 봅니다."
+    },
+    {
+      "id": "khajuraho-chandela-temple-city",
+      "labelKo": "카주라호 찬델라 사원 도시",
+      "parentId": "central-india-temple-sculpture",
+      "periodKo": "10-11세기",
+      "summaryKo": "카주라호 사원군을 통해 힌두·자이나 사원, 높은 기단, 탑과 조각 장식이 중부 인도 왕권과 종교 후원에 연결된 방식을 봅니다."
+    },
+    {
+      "id": "deccan-south-india-royal-temple-urbanism",
+      "labelKo": "데칸·남인도 왕조 사원 도시",
+      "parentId": "india-temple-cave-heritage-landscape",
+      "periodKo": "7-16세기",
+      "summaryKo": "함피와 파타다칼을 통해 데칸과 남인도에서 왕조 수도, 대관 중심지, 사원 건축 실험이 도시·강·바위 지형과 결합한 방식을 봅니다."
+    },
+    {
+      "id": "hampi-vijayanagara-capital-landscape",
+      "labelKo": "함피 비자야나가라 수도 경관",
+      "parentId": "deccan-south-india-royal-temple-urbanism",
+      "periodKo": "14-16세기",
+      "summaryKo": "함피를 통해 퉁가바드라 강, 바위 지형, 궁전·시장·사원·수리 시설이 비자야나가라 제국 수도로 조직된 방식을 봅니다."
+    },
+    {
+      "id": "pattadakal-chalukya-temple-experiment",
+      "labelKo": "파타다칼 찰루키아 사원 실험",
+      "parentId": "deccan-south-india-royal-temple-urbanism",
+      "periodKo": "7-8세기",
+      "summaryKo": "파타다칼을 통해 나가라와 드라비다 양식이 말라프라바 강 유역의 찰루키아 대관 중심지에서 함께 실험된 방식을 봅니다."
+    },
+    {
+      "id": "eastern-southern-india-monumental-temples",
+      "labelKo": "동·남인도 왕조 기념 사원",
+      "parentId": "india-temple-cave-heritage-landscape",
+      "periodKo": "11-13세기",
+      "summaryKo": "코나르크와 탄자부르를 통해 동강가와 촐라 왕조가 해안과 삼각주 지형 위에 조성한 대형 사원 건축과 왕권 상징을 봅니다."
+    },
+    {
+      "id": "konark-sun-temple-chariot-landscape",
+      "labelKo": "코나르크 태양신 전차형 사원",
+      "parentId": "eastern-southern-india-monumental-temples",
+      "periodKo": "13세기",
+      "summaryKo": "코나르크 태양신 사원을 통해 수리아 숭배, 전차 형상, 오디샤 해안 교역권과 동강가 왕조 권위가 결합한 방식을 봅니다."
+    },
+    {
+      "id": "thanjavur-chola-royal-temple",
+      "labelKo": "탄자부르 촐라 왕실 사원",
+      "parentId": "eastern-southern-india-monumental-temples",
+      "periodKo": "1003-1010년",
+      "summaryKo": "탄자부르 브리하디스와라 사원을 통해 촐라 제국의 시바 신앙, 높은 비마나, 사원 경제와 왕권 기념 건축을 봅니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "ajanta-caves",
+      "titleKo": "아잔타 석굴",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "인도",
+      "coordinates": { "lat": 20.5519, "lng": 75.7033 },
+      "yearLabelKo": "기원전 2세기-기원후 6세기 불교 석굴",
+      "summaryKo": "아잔타 석굴은 와고라 계곡 절벽을 따라 조성된 불교 수도원·예배 석굴군이다. 차이티야와 비하라, 자타카 벽화와 불상은 상업로와 후원 세력, 수행 공동체가 결합해 인도 불교미술의 대표 양식을 만든 과정을 보여준다.",
+      "stage2": {
+        "primaryContextId": "ajanta-buddhist-monastic-mural-caves",
+        "contextIds": [
+          "india-temple-cave-heritage-landscape",
+          "western-deccan-buddhist-hindu-caves",
+          "ajanta-buddhist-monastic-mural-caves"
+        ],
+        "periodPathKo": [
+          "고대",
+          "사타바하나·바카타카",
+          "불교 석굴 회화"
+        ],
+        "topicTagsKo": [
+          "아잔타",
+          "와고라 계곡",
+          "자타카 벽화",
+          "비하라",
+          "차이티야"
+        ],
+        "uiFilters": {
+          "era": "불교 석굴",
+          "region": "마하라슈트라",
+          "theme": [
+            "불교 석굴",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 세계유산과 ASI, Britannica 참고 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "ellora-caves",
+      "titleKo": "엘로라 석굴",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "인도",
+      "coordinates": { "lat": 20.0269, "lng": 75.1792 },
+      "yearLabelKo": "6-10세기 불교·힌두·자이나 석굴",
+      "summaryKo": "엘로라 석굴은 데칸 고원에 조성된 불교·힌두·자이나 석굴 사원군이다. 특히 카일라사 사원은 바위를 위에서 아래로 파낸 대형 단일 암반 건축으로, 종교 다원성과 석굴 기술, 라슈트라쿠타 왕조 후원이 결합한 유산이다.",
+      "stage2": {
+        "primaryContextId": "ellora-multi-religious-rock-cut-complex",
+        "contextIds": [
+          "india-temple-cave-heritage-landscape",
+          "western-deccan-buddhist-hindu-caves",
+          "ellora-multi-religious-rock-cut-complex"
+        ],
+        "periodPathKo": [
+          "중세",
+          "찰루키아·라슈트라쿠타",
+          "다종교 석굴"
+        ],
+        "topicTagsKo": [
+          "엘로라",
+          "카일라사 사원",
+          "라슈트라쿠타",
+          "힌두 석굴",
+          "자이나 석굴"
+        ],
+        "uiFilters": {
+          "era": "초기 중세 데칸",
+          "region": "마하라슈트라",
+          "theme": [
+            "불교 석굴",
+            "힌두 석굴",
+            "자이나 유산",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 세계유산과 ASI, Maharashtra Tourism 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "elephanta-caves",
+      "titleKo": "엘레판타 석굴",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "인도",
+      "coordinates": { "lat": 18.9633, "lng": 72.9315 },
+      "yearLabelKo": "6-7세기 시바 신앙 석굴",
+      "summaryKo": "엘레판타 석굴은 뭄바이 항만의 가라푸리 섬에 조성된 시바 신앙 석굴군이다. 주 석굴의 삼면 시바상과 여러 신화 장면은 해상 교통로 위의 섬이 종교 조각과 권력 후원의 무대가 된 방식을 보여준다.",
+      "stage2": {
+        "primaryContextId": "elephanta-shiva-island-caves",
+        "contextIds": [
+          "india-temple-cave-heritage-landscape",
+          "western-deccan-buddhist-hindu-caves",
+          "elephanta-shiva-island-caves"
+        ],
+        "periodPathKo": [
+          "중세",
+          "초기 중세 데칸",
+          "시바 신앙 석굴"
+        ],
+        "topicTagsKo": [
+          "엘레판타",
+          "가라푸리",
+          "시바",
+          "트리무르티",
+          "뭄바이 항만"
+        ],
+        "uiFilters": {
+          "era": "초기 중세 데칸",
+          "region": "뭄바이 항만",
+          "theme": [
+            "힌두 석굴",
+            "해안 사원",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 세계유산과 ASI, Britannica 참고 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "khajuraho-monuments",
+      "titleKo": "카주라호 사원군",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "인도",
+      "coordinates": { "lat": 24.8318, "lng": 79.9199 },
+      "yearLabelKo": "10-11세기 힌두·자이나 사원군",
+      "summaryKo": "카주라호 사원군은 찬델라 왕조가 조성한 힌두·자이나 사원 유산이다. 높은 기단, 나가라 양식 탑, 외벽 조각군은 중부 인도 왕권과 종교 후원, 사원 도시의 조형 언어가 어떻게 발전했는지 보여준다.",
+      "stage2": {
+        "primaryContextId": "khajuraho-chandela-temple-city",
+        "contextIds": [
+          "india-temple-cave-heritage-landscape",
+          "central-india-temple-sculpture",
+          "khajuraho-chandela-temple-city"
+        ],
+        "periodPathKo": [
+          "중세",
+          "찬델라 왕조",
+          "사원 도시"
+        ],
+        "topicTagsKo": [
+          "카주라호",
+          "찬델라",
+          "나가라 양식",
+          "칸다리야 마하데바",
+          "자이나 사원"
+        ],
+        "uiFilters": {
+          "era": "찬델라",
+          "region": "중부 인도",
+          "theme": [
+            "사원 도시",
+            "왕조 건축",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 세계유산과 ASI, Britannica 참고 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "hampi-vijayanagara",
+      "titleKo": "함피 비자야나가라 유적",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "인도",
+      "coordinates": { "lat": 15.3350, "lng": 76.4600 },
+      "yearLabelKo": "14-16세기 비자야나가라 수도 유적",
+      "summaryKo": "함피는 비자야나가라 제국의 수도 유적으로, 퉁가바드라 강과 바위 지형 사이에 궁전, 시장, 사원, 수리 시설이 배치되었다. 비루팍샤 사원과 왕궁 구역은 남인도 제국의 도시 계획과 종교·상업 공간을 함께 보여준다.",
+      "stage2": {
+        "primaryContextId": "hampi-vijayanagara-capital-landscape",
+        "contextIds": [
+          "india-temple-cave-heritage-landscape",
+          "deccan-south-india-royal-temple-urbanism",
+          "hampi-vijayanagara-capital-landscape"
+        ],
+        "periodPathKo": [
+          "중세",
+          "비자야나가라 제국",
+          "수도 경관"
+        ],
+        "topicTagsKo": [
+          "함피",
+          "비자야나가라",
+          "퉁가바드라",
+          "비루팍샤 사원",
+          "왕궁 구역"
+        ],
+        "uiFilters": {
+          "era": "비자야나가라",
+          "region": "카르나타카",
+          "theme": [
+            "사원 도시",
+            "왕조 건축",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "함피 유적은 넓게 분포하므로 비루팍샤 사원과 왕궁 권역 사이를 대표 좌표로 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "pattadakal-monuments",
+      "titleKo": "파타다칼 사원군",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "인도",
+      "coordinates": { "lat": 15.9486, "lng": 75.8162 },
+      "yearLabelKo": "7-8세기 찰루키아 사원 건축",
+      "summaryKo": "파타다칼 사원군은 바다미 찰루키아 왕조의 대관·사원 중심지로, 나가라와 드라비다 양식이 함께 실험된 건축 유산이다. 비루팍샤와 말리카르주나 사원은 남북 인도 사원 양식이 데칸에서 섞이며 새로운 형식을 만든 과정을 보여준다.",
+      "stage2": {
+        "primaryContextId": "pattadakal-chalukya-temple-experiment",
+        "contextIds": [
+          "india-temple-cave-heritage-landscape",
+          "deccan-south-india-royal-temple-urbanism",
+          "pattadakal-chalukya-temple-experiment"
+        ],
+        "periodPathKo": [
+          "중세",
+          "바다미 찰루키아",
+          "사원 건축 실험"
+        ],
+        "topicTagsKo": [
+          "파타다칼",
+          "찰루키아",
+          "말라프라바",
+          "비루팍샤 사원",
+          "드라비다 양식"
+        ],
+        "uiFilters": {
+          "era": "찰루키아",
+          "region": "카르나타카",
+          "theme": [
+            "남인도 사원",
+            "왕조 건축",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO 세계유산·주기보고서와 ASI 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "konark-sun-temple",
+      "titleKo": "코나르크 태양신 사원",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "인도",
+      "coordinates": { "lat": 19.8876, "lng": 86.0945 },
+      "yearLabelKo": "13세기 수리아 신전",
+      "summaryKo": "코나르크 태양신 사원은 동강가 왕조가 오디샤 해안에 조성한 수리아 신전이다. 거대한 전차 형상, 바퀴와 말 조각, 해안 입지는 왕권, 태양 숭배, 해양 교역권의 상징이 결합한 동인도 사원 건축을 보여준다.",
+      "stage2": {
+        "primaryContextId": "konark-sun-temple-chariot-landscape",
+        "contextIds": [
+          "india-temple-cave-heritage-landscape",
+          "eastern-southern-india-monumental-temples",
+          "konark-sun-temple-chariot-landscape"
+        ],
+        "periodPathKo": [
+          "중세",
+          "동강가 왕조",
+          "수리아 신전"
+        ],
+        "topicTagsKo": [
+          "코나르크",
+          "수리아",
+          "전차형 사원",
+          "오디샤",
+          "동강가"
+        ],
+        "uiFilters": {
+          "era": "동강가",
+          "region": "오디샤",
+          "theme": [
+            "남인도 사원",
+            "해안 사원",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 세계유산과 ASI, Britannica 참고 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "thanjavur-brihadisvara-temple",
+      "titleKo": "탄자부르 브리하디스와라 사원",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "인도",
+      "coordinates": { "lat": 10.7828, "lng": 79.1318 },
+      "yearLabelKo": "1003-1010년 라자라자 1세의 시바 사원",
+      "summaryKo": "탄자부르 브리하디스와라 사원은 촐라 황제 라자라자 1세가 세운 거대한 시바 사원이다. 높은 비마나, 화강암 구조, 명문과 벽화는 카베리 삼각주의 왕권, 사원 경제, 남인도 건축 기술이 절정에 이른 모습을 보여준다.",
+      "stage2": {
+        "primaryContextId": "thanjavur-chola-royal-temple",
+        "contextIds": [
+          "india-temple-cave-heritage-landscape",
+          "eastern-southern-india-monumental-temples",
+          "thanjavur-chola-royal-temple"
+        ],
+        "periodPathKo": [
+          "중세",
+          "촐라 제국",
+          "왕실 사원"
+        ],
+        "topicTagsKo": [
+          "탄자부르",
+          "브리하디스와라",
+          "라자라자 1세",
+          "촐라",
+          "비마나"
+        ],
+        "uiFilters": {
+          "era": "촐라",
+          "region": "타밀나두",
+          "theme": [
+            "남인도 사원",
+            "왕조 건축",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO 세계유산·주기보고서와 ASI 자료를 사용했습니다."
+        }
+      }
+    }
+  ]
+}
