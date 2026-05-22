@@ -305,6 +305,17 @@ The twenty-fifth pilot dataset tests Islamic caliphate capitals, knowledge-city 
 - `nishapur`
 - `fez`
 
+The twenty-sixth pilot dataset tests European medieval trade cities, maritime republics, Hanseatic ports, cloth and finance centers, merchant warehouse districts, and urban league networks:
+
+- `venice`
+- `genoa`
+- `bruges`
+- `lubeck`
+- `novgorod`
+- `visby`
+- `bergen-bryggen`
+- `dubrovnik`
+
 The dataset list is managed in:
 
 ```text
@@ -668,3 +679,17 @@ The 2026-05-22 twenty-five-dataset public browser pass checks `https://wgis.verc
 - The `서방 이슬람권과 안달루스·마그레브 지식도시` context filter returns `코르도바`, `카이루안`, and `페스` with 3 markers and 3 labels and no stale Baghdad data.
 - On mobile, `다마스쿠스` detail renders with source-confidence information and both detail actions.
 - Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-five-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-five-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.
+
+## Twenty-Six-Dataset Public Usability Pass
+
+The 2026-05-22 twenty-six-dataset public browser pass checks `https://wgis.vercel.app/stage2-preview.html` after adding the European medieval trade and urban networks pilot dataset:
+
+- Dataset selector exposes 26 datasets.
+- All 26 indexed datasets render their expected entry, marker, and permanent-label counts across 218 Stage 2 preview entries.
+- The new European medieval trade dataset exposes 8 entries: `베네치아`, `제노바`, `브뤼헤`, `뤼베크`, `노브고로드`, `비스뷔`, `베르겐 브뤼겐`, and `두브로브니크`.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control.
+- Searching `브뤼겐` in the European medieval trade dataset narrows the list and map to `베르겐 브뤼겐` with 1 marker and 1 label.
+- Selecting `베네치아` opens the detail panel with source-confidence information and detail actions.
+- The `한자동맹 북해·발트해 네트워크` context filter returns `브뤼헤`, `뤼베크`, `비스뷔`, and `베르겐 브뤼겐` with 4 markers and 4 labels and no stale Venice data.
+- On mobile, `뤼베크` detail renders with source-confidence information and both detail actions.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-six-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-six-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.

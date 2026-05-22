@@ -1,0 +1,559 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-europe-medieval-trade-urban-networks-preview",
+  "titleKo": "2단계 미리보기: 유럽 중세 교역·도시 네트워크",
+  "descriptionKo": "베네치아, 제노바, 브뤼헤, 뤼베크, 노브고로드, 비스뷔, 베르겐 브뤼겐, 두브로브니크를 비교하기 위한 2단계 미리보기 데이터셋입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "이탈리아 해상공화국",
+        "한자동맹",
+        "플랑드르 상업도시",
+        "루스 도시공화국",
+        "아드리아 해상공화국"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "지중해",
+        "아드리아해",
+        "북해",
+        "발트해",
+        "동유럽 하천권",
+        "북대서양"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "해상공화국",
+        "한자 교역소",
+        "직물·금융",
+        "길드·시장",
+        "상인 창고",
+        "도시공화국",
+        "항구 네트워크",
+        "지중해 교역",
+        "발트해 교역",
+        "세계유산"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지점 유형",
+      "options": [
+        "장소",
+        "유적"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "medieval-european-trade-urban-network-world",
+      "labelKo": "유럽 중세 교역·도시 네트워크 세계",
+      "parentId": null,
+      "periodKo": "9-16세기",
+      "summaryKo": "지중해 해상공화국, 플랑드르 상업도시, 한자동맹, 루스 하천 교역권, 아드리아 도시국가를 묶어 항구·길드·상인 창고·시장·금융·도시법이 중세 유럽 도시화를 이끈 방식을 봅니다."
+    },
+    {
+      "id": "mediterranean-maritime-republics-venice-genoa-ragusa",
+      "labelKo": "지중해·아드리아 해상공화국",
+      "parentId": "medieval-european-trade-urban-network-world",
+      "periodKo": "9-16세기",
+      "summaryKo": "베네치아, 제노바, 두브로브니크를 통해 레반트, 흑해, 아드리아해, 발칸 내륙을 잇는 해상공화국의 항구·외교·상업 네트워크를 비교합니다."
+    },
+    {
+      "id": "venice-arsenal-lagoon-levant-trade",
+      "labelKo": "베네치아 석호·조선소·레반트 교역",
+      "parentId": "mediterranean-maritime-republics-venice-genoa-ragusa",
+      "periodKo": "9-15세기",
+      "summaryKo": "베네치아 석호, 산마르코 광장, 대운하, 조선소와 상인 거주지를 통해 비잔티움·레반트·북이탈리아를 잇는 해상공화국의 도시 기반을 봅니다."
+    },
+    {
+      "id": "genoa-western-mediterranean-black-sea-finance",
+      "labelKo": "제노바 서지중해·흑해 교역과 금융",
+      "parentId": "mediterranean-maritime-republics-venice-genoa-ragusa",
+      "periodKo": "11-15세기",
+      "summaryKo": "제노바를 통해 서지중해와 흑해 식민 거점, 선박·은행·상인 가문, 항구 도시 경관이 결합한 중세 상업공화국의 경쟁 구조를 봅니다."
+    },
+    {
+      "id": "dubrovnik-ragusa-adriatic-balkan-diplomacy",
+      "labelKo": "라구사 아드리아·발칸 교역 외교",
+      "parentId": "mediterranean-maritime-republics-venice-genoa-ragusa",
+      "periodKo": "13-16세기",
+      "summaryKo": "두브로브니크 성벽, 항구, 수도원, 스폰자 궁전을 통해 베네치아와 오스만 사이에서 독자 외교와 상업 질서를 유지한 아드리아 도시국가를 봅니다."
+    },
+    {
+      "id": "north-sea-low-countries-cloth-finance",
+      "labelKo": "북해 저지대 직물·금융 도시",
+      "parentId": "medieval-european-trade-urban-network-world",
+      "periodKo": "12-15세기",
+      "summaryKo": "브뤼헤를 중심으로 플랑드르 직물 생산, 북해·발트·지중해 상인 회합, 운하와 시장광장, 금융 거래 관행이 중세 도시경제를 어떻게 촉진했는지 봅니다."
+    },
+    {
+      "id": "bruges-flanders-cloth-bourse-hanseatic-exchange",
+      "labelKo": "브뤼헤 플랑드르 직물·거래소·한자 교역",
+      "parentId": "north-sea-low-countries-cloth-finance",
+      "periodKo": "12-15세기",
+      "summaryKo": "브뤼헤 역사중심지, 운하, 시장광장, 길드 건물을 통해 직물 생산과 국제 상인 네트워크, 초기 금융 거래가 결합한 북서유럽 상업도시를 봅니다."
+    },
+    {
+      "id": "hanseatic-baltic-north-sea-network",
+      "labelKo": "한자동맹 북해·발트해 네트워크",
+      "parentId": "medieval-european-trade-urban-network-world",
+      "periodKo": "12-16세기",
+      "summaryKo": "브뤼헤, 뤼베크, 비스뷔, 베르겐 브뤼겐을 묶어 발트해·북해·북대서양 상품, 상인 창고, 도시법, 한자 교역소가 연결된 방식을 비교합니다."
+    },
+    {
+      "id": "lubeck-hanseatic-law-baltic-broker",
+      "labelKo": "뤼베크 한자 도시법과 발트 교역 중개",
+      "parentId": "hanseatic-baltic-north-sea-network",
+      "periodKo": "12-16세기",
+      "summaryKo": "뤼베크 구도심 섬, 항구, 상인 주택, 고딕 벽돌 건축을 통해 한자동맹의 대표 도시가 북해·발트 상품 교역과 도시법 확산을 중개한 방식을 봅니다."
+    },
+    {
+      "id": "visby-gotland-baltic-warehouse-city",
+      "labelKo": "비스뷔 고틀란드 발트해 창고도시",
+      "parentId": "hanseatic-baltic-north-sea-network",
+      "periodKo": "12-14세기",
+      "summaryKo": "비스뷔 성벽, 창고, 교회 폐허와 거리 구조를 통해 고틀란드섬 항구가 러시아·스칸디나비아·독일 상인망을 잇는 발트해 중계지였던 모습을 봅니다."
+    },
+    {
+      "id": "bergen-bryggen-stockfish-hanseatic-kontor",
+      "labelKo": "베르겐 브뤼겐 대구무역 한자 교역소",
+      "parentId": "hanseatic-baltic-north-sea-network",
+      "periodKo": "14-16세기",
+      "summaryKo": "브뤼겐 목조 창고, 좁은 통로, 상인 거주·작업 공간을 통해 노르웨이 대구와 곡물·직물 교환을 관리한 한자 교역소의 물리적 구조를 봅니다."
+    },
+    {
+      "id": "eastern-rus-river-hanseatic-contact",
+      "labelKo": "동유럽 루스 하천·한자 접촉권",
+      "parentId": "medieval-european-trade-urban-network-world",
+      "periodKo": "9-15세기",
+      "summaryKo": "노브고로드를 통해 발트해, 볼호프 강, 일멘 호수, 볼가·드네프르 수계가 북유럽·비잔티움·루스 도시공화국을 연결한 동유럽 교역로를 봅니다."
+    },
+    {
+      "id": "novgorod-rus-hanseatic-river-trade",
+      "labelKo": "노브고로드 루스 도시공화국과 한자 동방 교역",
+      "parentId": "eastern-rus-river-hanseatic-contact",
+      "periodKo": "9-15세기",
+      "summaryKo": "노브고로드 크렘린, 성 소피아 대성당, 야로슬라프 궁정과 상업 지구를 통해 루스 도시공화국과 한자 상인이 만난 동방 교역 접점을 봅니다."
+    },
+    {
+      "id": "medieval-europe-urban-heritage-preservation",
+      "labelKo": "세계유산으로 남은 중세 유럽 상업도시 경관",
+      "parentId": "medieval-european-trade-urban-network-world",
+      "periodKo": "현재 보존 기준",
+      "summaryKo": "베네치아, 제노바, 브뤼헤, 뤼베크, 노브고로드, 비스뷔, 브뤼겐, 두브로브니크 등 UNESCO 세계유산으로 남은 항구·성벽·시장·창고·상업도시 경관을 비교합니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "venice",
+      "titleKo": "베네치아",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이탈리아",
+      "coordinates": {
+        "lat": 45.4408,
+        "lng": 12.3155
+      },
+      "yearLabelKo": "9-15세기 해상공화국 전성기",
+      "summaryKo": "석호 위의 도시국가로 성장해 비잔티움, 레반트, 아드리아해, 북이탈리아를 잇는 중세 지중해 교역망의 핵심 항구가 되었습니다.",
+      "stage2": {
+        "primaryContextId": "venice-arsenal-lagoon-levant-trade",
+        "contextIds": [
+          "medieval-european-trade-urban-network-world",
+          "mediterranean-maritime-republics-venice-genoa-ragusa",
+          "venice-arsenal-lagoon-levant-trade",
+          "medieval-europe-urban-heritage-preservation"
+        ],
+        "periodPathKo": [
+          "중세",
+          "이탈리아 해상공화국",
+          "베네치아 석호와 레반트 교역"
+        ],
+        "topicTagsKo": [
+          "베네치아",
+          "베네치아 공화국",
+          "아드리아해",
+          "레반트 교역",
+          "조선소"
+        ],
+        "uiFilters": {
+          "era": "이탈리아 해상공화국",
+          "region": "아드리아해",
+          "theme": [
+            "해상공화국",
+            "항구 네트워크",
+            "지중해 교역",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 베네치아와 그 석호 세계유산 자료와 Britannica 베네치아 자료를 사용해 위치, 도시 경관, 해상공화국 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "genoa",
+      "titleKo": "제노바",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이탈리아",
+      "coordinates": {
+        "lat": 44.4071,
+        "lng": 8.934
+      },
+      "yearLabelKo": "11-15세기 해상공화국 전성기",
+      "summaryKo": "서지중해와 흑해, 레반트 교역을 연결한 해상공화국으로, 은행·선박·식민 거점 네트워크를 통해 베네치아와 경쟁했습니다.",
+      "stage2": {
+        "primaryContextId": "genoa-western-mediterranean-black-sea-finance",
+        "contextIds": [
+          "medieval-european-trade-urban-network-world",
+          "mediterranean-maritime-republics-venice-genoa-ragusa",
+          "genoa-western-mediterranean-black-sea-finance",
+          "medieval-europe-urban-heritage-preservation"
+        ],
+        "periodPathKo": [
+          "중세",
+          "이탈리아 해상공화국",
+          "제노바 서지중해·흑해 교역"
+        ],
+        "topicTagsKo": [
+          "제노바",
+          "제노바 공화국",
+          "흑해 교역",
+          "상인 금융",
+          "팔라치 데이 롤리"
+        ],
+        "uiFilters": {
+          "era": "이탈리아 해상공화국",
+          "region": "지중해",
+          "theme": [
+            "해상공화국",
+            "항구 네트워크",
+            "직물·금융",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 제노바 스트라데 누오베 세계유산 자료와 Britannica 제노바 자료를 사용해 역사 항구 도시 중심과 상업공화국 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "bruges",
+      "titleKo": "브뤼헤",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "벨기에",
+      "coordinates": {
+        "lat": 51.2093,
+        "lng": 3.2247
+      },
+      "yearLabelKo": "12-15세기 상업 전성기",
+      "summaryKo": "플랑드르 직물 생산과 북해·발트·지중해 상인의 중계 교역이 결합한 중세 상업 도시였습니다.",
+      "stage2": {
+        "primaryContextId": "bruges-flanders-cloth-bourse-hanseatic-exchange",
+        "contextIds": [
+          "medieval-european-trade-urban-network-world",
+          "north-sea-low-countries-cloth-finance",
+          "bruges-flanders-cloth-bourse-hanseatic-exchange",
+          "hanseatic-baltic-north-sea-network",
+          "medieval-europe-urban-heritage-preservation"
+        ],
+        "periodPathKo": [
+          "중세",
+          "플랑드르 상업도시",
+          "브뤼헤 직물·금융·한자 교역"
+        ],
+        "topicTagsKo": [
+          "브뤼헤",
+          "플랑드르 직물",
+          "운하",
+          "길드",
+          "한자 교역"
+        ],
+        "uiFilters": {
+          "era": "플랑드르 상업도시",
+          "region": "북해",
+          "theme": [
+            "직물·금융",
+            "길드·시장",
+            "한자 교역소",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 브뤼헤 역사중심지 세계유산 자료와 Britannica 브뤼헤 자료를 사용해 시장광장, 운하, 플랑드르 상업도시 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "lubeck",
+      "titleKo": "뤼베크",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "독일",
+      "coordinates": {
+        "lat": 53.8655,
+        "lng": 10.6866
+      },
+      "yearLabelKo": "12-16세기 한자동맹 중심",
+      "summaryKo": "발트해와 북해를 연결한 한자동맹의 대표 도시로, 소금·곡물·목재·모피·청어 교역을 조정하는 상업·법률 중심지였습니다.",
+      "stage2": {
+        "primaryContextId": "lubeck-hanseatic-law-baltic-broker",
+        "contextIds": [
+          "medieval-european-trade-urban-network-world",
+          "hanseatic-baltic-north-sea-network",
+          "lubeck-hanseatic-law-baltic-broker",
+          "medieval-europe-urban-heritage-preservation"
+        ],
+        "periodPathKo": [
+          "중세",
+          "한자동맹",
+          "뤼베크 도시법과 발트해 교역"
+        ],
+        "topicTagsKo": [
+          "뤼베크",
+          "한자동맹",
+          "발트해",
+          "고딕 벽돌 건축",
+          "도시법"
+        ],
+        "uiFilters": {
+          "era": "한자동맹",
+          "region": "발트해",
+          "theme": [
+            "한자 교역소",
+            "발트해 교역",
+            "길드·시장",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "UNESCO 한자동맹 도시 뤼베크 세계유산 자료와 Britannica 뤼베크·한자동맹 자료를 사용해 구도심 섬, 항구, 한자 네트워크 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "novgorod",
+      "titleKo": "노브고로드",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "러시아",
+      "coordinates": {
+        "lat": 58.5213,
+        "lng": 31.2755
+      },
+      "yearLabelKo": "9-15세기",
+      "summaryKo": "발트해와 볼가·드네프르 수계, 비잔티움·북유럽을 잇는 동유럽 교역 중심지였습니다.",
+      "stage2": {
+        "primaryContextId": "novgorod-rus-hanseatic-river-trade",
+        "contextIds": [
+          "medieval-european-trade-urban-network-world",
+          "eastern-rus-river-hanseatic-contact",
+          "novgorod-rus-hanseatic-river-trade",
+          "medieval-europe-urban-heritage-preservation"
+        ],
+        "periodPathKo": [
+          "중세",
+          "루스 도시공화국",
+          "노브고로드 하천·한자 동방 교역"
+        ],
+        "topicTagsKo": [
+          "노브고로드",
+          "루스",
+          "볼호프 강",
+          "한자 동방 교역",
+          "야로슬라프 궁정"
+        ],
+        "uiFilters": {
+          "era": "루스 도시공화국",
+          "region": "동유럽 하천권",
+          "theme": [
+            "도시공화국",
+            "항구 네트워크",
+            "길드·시장",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 노브고로드와 주변 역사기념물 세계유산 자료와 Britannica 벨리키 노브고로드 자료를 사용해 크렘린·볼호프 강변 위치와 루스 교역권 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "visby",
+      "titleKo": "비스뷔",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "스웨덴",
+      "coordinates": {
+        "lat": 57.6348,
+        "lng": 18.2948
+      },
+      "yearLabelKo": "12-14세기 전성기",
+      "summaryKo": "발트해 중앙의 고틀란드섬 항구로, 러시아·스칸디나비아·독일 상인 교역망의 중계지였습니다.",
+      "stage2": {
+        "primaryContextId": "visby-gotland-baltic-warehouse-city",
+        "contextIds": [
+          "medieval-european-trade-urban-network-world",
+          "hanseatic-baltic-north-sea-network",
+          "visby-gotland-baltic-warehouse-city",
+          "medieval-europe-urban-heritage-preservation"
+        ],
+        "periodPathKo": [
+          "중세",
+          "한자동맹",
+          "비스뷔 고틀란드 발트해 창고도시"
+        ],
+        "topicTagsKo": [
+          "비스뷔",
+          "고틀란드",
+          "발트해",
+          "성벽",
+          "상인 창고"
+        ],
+        "uiFilters": {
+          "era": "한자동맹",
+          "region": "발트해",
+          "theme": [
+            "한자 교역소",
+            "상인 창고",
+            "발트해 교역",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 한자동맹 도시 비스뷔 세계유산 자료와 Britannica 비스뷔 자료를 사용해 성벽 안 구도심, 창고도시, 발트해 교역 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "bergen-bryggen",
+      "titleKo": "베르겐 브뤼겐",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "노르웨이",
+      "coordinates": {
+        "lat": 60.3971,
+        "lng": 5.3245
+      },
+      "yearLabelKo": "14-16세기 한자 교역소",
+      "summaryKo": "한자동맹 상인들이 노르웨이 대구와 곡물·직물 교환을 관리하던 베르겐 항구의 목조 창고 지구입니다.",
+      "stage2": {
+        "primaryContextId": "bergen-bryggen-stockfish-hanseatic-kontor",
+        "contextIds": [
+          "medieval-european-trade-urban-network-world",
+          "hanseatic-baltic-north-sea-network",
+          "bergen-bryggen-stockfish-hanseatic-kontor",
+          "medieval-europe-urban-heritage-preservation"
+        ],
+        "periodPathKo": [
+          "중세",
+          "한자동맹",
+          "베르겐 브뤼겐 대구무역 교역소"
+        ],
+        "topicTagsKo": [
+          "베르겐 브뤼겐",
+          "브뤼겐",
+          "한자 교역소",
+          "대구무역",
+          "상인 창고"
+        ],
+        "uiFilters": {
+          "era": "한자동맹",
+          "region": "북대서양",
+          "theme": [
+            "한자 교역소",
+            "상인 창고",
+            "항구 네트워크",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "UNESCO 브뤼겐 세계유산 자료, Visit Bergen, Britannica 베르겐 자료를 사용해 항구 창고 지구와 한자 교역소 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "dubrovnik",
+      "titleKo": "두브로브니크",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "크로아티아",
+      "coordinates": {
+        "lat": 42.641,
+        "lng": 18.1106
+      },
+      "yearLabelKo": "13-16세기 해상공화국 전성기",
+      "summaryKo": "옛 라구사는 아드리아해 동쪽 해안의 해상공화국으로, 발칸 내륙과 지중해 교역을 연결했습니다.",
+      "stage2": {
+        "primaryContextId": "dubrovnik-ragusa-adriatic-balkan-diplomacy",
+        "contextIds": [
+          "medieval-european-trade-urban-network-world",
+          "mediterranean-maritime-republics-venice-genoa-ragusa",
+          "dubrovnik-ragusa-adriatic-balkan-diplomacy",
+          "medieval-europe-urban-heritage-preservation"
+        ],
+        "periodPathKo": [
+          "중세",
+          "아드리아 해상공화국",
+          "라구사 외교·상업 도시국가"
+        ],
+        "topicTagsKo": [
+          "두브로브니크",
+          "라구사",
+          "아드리아해",
+          "발칸 교역",
+          "도시 성벽"
+        ],
+        "uiFilters": {
+          "era": "아드리아 해상공화국",
+          "region": "아드리아해",
+          "theme": [
+            "해상공화국",
+            "항구 네트워크",
+            "도시공화국",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 두브로브니크 구시가지 세계유산 자료와 Britannica 두브로브니크 자료를 사용해 성벽 안 역사도시, 항구, 라구사 공화국 맥락을 확인했습니다."
+        }
+      }
+    }
+  ]
+}

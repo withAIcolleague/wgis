@@ -152,7 +152,7 @@ function main() {
   check('stage 2 preview detail actions are wired', includesAll(stage2App, ['function focusMapOnEntry(entry)', 'function closeDetail()', 'data-detail-action="focus-map"', 'data-detail-action="close"', "event.key === 'Escape'"]));
   check('stage 2 preview hides empty detail panel', includesAll(stage2App, ["panel.classList.add('is-empty')", "panel.classList.remove('is-empty')"]) && includesAll(stage2Css, ['.detail-panel.is-empty', 'display: none']));
   check('stage 2 preview has responsive mobile rules', includesAll(stage2Css, ['@media (max-width: 820px)', '.entry-list']));
-  check('stage 2 index has multiple datasets', stage2Datasets.length >= 25);
+  check('stage 2 index has multiple datasets', stage2Datasets.length >= 26);
 
   for (const { metadata, data } of stage2Datasets) {
     const datasetLabel = metadata.id || metadata.path;

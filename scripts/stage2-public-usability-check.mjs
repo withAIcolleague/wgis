@@ -143,12 +143,17 @@ const datasets = [
     path: 'data/stage2/islamic-caliphate-knowledge-cities-preview.json',
     count: 8,
     firstEntryId: 'baghdad'
+  },
+  {
+    path: 'data/stage2/europe-medieval-trade-urban-networks-preview.json',
+    count: 8,
+    firstEntryId: 'venice'
   }
 ];
 
 const latestDataset = datasets[datasets.length - 1];
-const desktopShot = path.join(outputDir, 'wgis-stage2-twenty-five-datasets-desktop.png');
-const mobileShot = path.join(outputDir, 'wgis-stage2-twenty-five-datasets-mobile.png');
+const desktopShot = path.join(outputDir, 'wgis-stage2-twenty-six-datasets-desktop.png');
+const mobileShot = path.join(outputDir, 'wgis-stage2-twenty-six-datasets-mobile.png');
 
 function assertCheck(condition, message, details = undefined) {
   if (!condition) {
@@ -317,60 +322,61 @@ async function main() {
       assertCheck(state.contextFilterButtons <= 4 && state.contextFilterToggle, 'Initial context filters should start compact', state);
 
       dom = await dumpDom(buildUrl({ dataset: latestDataset.path }), userDataDir);
-      state = extractState('desktop-islamic-knowledge-default', dom);
+      state = extractState('desktop-europe-medieval-trade-default', dom);
       states.push(state);
-      assertCheck(state.entryCards === latestDataset.count && state.entryIds.includes('baghdad'), 'Latest dataset should render Baghdad and all entries', state);
+      assertCheck(state.entryCards === latestDataset.count && state.entryIds.includes('venice'), 'Latest dataset should render Venice and all entries', state);
 
-      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, q: '코르도바' }), userDataDir);
-      state = extractState('desktop-islamic-knowledge-search-cordoba', dom);
+      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, q: '브뤼겐' }), userDataDir);
+      state = extractState('desktop-europe-medieval-trade-search-bryggen', dom);
       states.push(state);
-      assertCheck(state.entryCountText === '1개' && state.entryIds.includes('cordoba'), 'Latest dataset search should find Cordoba', state);
+      assertCheck(state.entryCountText === '1개' && state.entryIds.includes('bergen-bryggen'), 'Latest dataset search should find Bryggen', state);
 
-      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, entry: 'baghdad' }), userDataDir);
-      state = extractState('desktop-islamic-knowledge-detail-baghdad', dom);
+      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, entry: 'venice' }), userDataDir);
+      state = extractState('desktop-europe-medieval-trade-detail-venice', dom);
       states.push(state);
       assertCheck(
-        state.detailTitle === '바그다드' && state.detailActions === 2 && state.hasSourceConfidence,
-        'Latest dataset detail should show Baghdad, source confidence, and detail actions',
+        state.detailTitle === '베네치아' && state.detailActions === 2 && state.hasSourceConfidence,
+        'Latest dataset detail should show Venice, source confidence, and detail actions',
         state
       );
 
       dom = await dumpDom(buildUrl({
         dataset: latestDataset.path,
-        context: 'western-islamic-andalus-maghrib-learning-cities'
+        context: 'hanseatic-baltic-north-sea-network'
       }), userDataDir);
-      state = extractState('desktop-islamic-knowledge-western-context', dom);
+      state = extractState('desktop-europe-medieval-trade-hanseatic-context', dom);
       states.push(state);
       assertCheck(
-        state.entryCountText === '3개' &&
-          state.entryIds.includes('cordoba') &&
-          state.entryIds.includes('kairouan') &&
-          state.entryIds.includes('fez') &&
-          !state.entryIds.includes('baghdad'),
-        'Western Islamic context should return Cordoba, Kairouan, and Fez without stale Baghdad data',
+        state.entryCountText === '4개' &&
+          state.entryIds.includes('bruges') &&
+          state.entryIds.includes('lubeck') &&
+          state.entryIds.includes('visby') &&
+          state.entryIds.includes('bergen-bryggen') &&
+          !state.entryIds.includes('venice'),
+        'Hanseatic context should return Bruges, Lubeck, Visby, and Bryggen without stale Venice data',
         state
       );
 
       dom = await dumpDom(buildUrl({
         dataset: latestDataset.path,
-        entry: 'damascus'
+        entry: 'lubeck'
       }), userDataDir, { width: 390, height: 844 });
-      state = extractState('mobile-islamic-knowledge-detail-damascus', dom);
+      state = extractState('mobile-europe-medieval-trade-detail-lubeck', dom);
       states.push(state);
       assertCheck(
-        state.ready && state.detailTitle === '다마스쿠스' && state.detailActions === 2,
-        'Mobile-sized latest dataset render should keep the Damascus detail panel available',
+        state.ready && state.detailTitle === '뤼베크' && state.detailActions === 2,
+        'Mobile-sized latest dataset render should keep the Lubeck detail panel available',
         state
       );
 
       await captureScreenshot(
-        buildUrl({ dataset: latestDataset.path, entry: 'baghdad' }),
+        buildUrl({ dataset: latestDataset.path, entry: 'venice' }),
         userDataDir,
         desktopShot,
         { width: 1440, height: 920 }
       );
       await captureScreenshot(
-        buildUrl({ dataset: latestDataset.path, entry: 'damascus' }),
+        buildUrl({ dataset: latestDataset.path, entry: 'lubeck' }),
         userDataDir,
         mobileShot,
         { width: 390, height: 844 }
