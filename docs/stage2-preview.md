@@ -83,6 +83,17 @@ The fifth pilot dataset tests Indus Civilization urban, riverine, craft, water-m
 - `rakhigarhi`
 - `ganweriwala`
 
+The sixth pilot dataset tests early China civilization formation across Yellow River, lower Yangtze, Central Plains, Anyang, and Sichuan Basin contexts:
+
+- `banpo`
+- `liangzhu-city`
+- `taosi`
+- `erlitou`
+- `yanshi-shang-city`
+- `zhengzhou-shang-city`
+- `yinxu-anyang`
+- `sanxingdui`
+
 The dataset list is managed in:
 
 ```text

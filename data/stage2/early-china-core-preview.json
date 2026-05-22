@@ -1,0 +1,499 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-early-china-core-preview",
+  "titleKo": "2단계 미리보기: 초기 중국 문명 형성",
+  "descriptionKo": "반포의 신석기 취락부터 량주, 타오쓰, 얼리터우, 초기 상 도성, 인허와 싼싱두이까지 초기 중국 문명 형성의 지역별 경로를 맥락, 사용자 필터, 출처 신뢰도로 나누어 보는 샘플입니다.",
+  "modelComparison": {
+    "currentKo": [
+      "1단계에서는 각 유적을 현재 중국의 위치와 간단한 시대 정보 중심으로 검색하고 지도에 표시합니다.",
+      "사용자는 반포, 얼리터우, 인허 같은 이름과 현재 행정구역, 좌표, 요약 설명을 빠르게 확인합니다.",
+      "황허 중류, 장강 하류, 쓰촨 분지처럼 서로 다른 문명 형성 경로는 요약문과 태그 안에 압축되어 있습니다."
+    ],
+    "stage2Ko": [
+      "2단계에서는 같은 유적을 신석기 농경 취락, 수리 기반 지역 국가, 룽산 후기 정치 중심, 초기 청동기 도성, 상 왕조 문자·청동기 체계 같은 연구 맥락으로 연결합니다.",
+      "사용자용 필터는 시대, 지역, 주제 중심으로 단순화하고, 연구 태그에는 양사오, 량주, 얼리터우, 상 왕조, 고대 촉 같은 더 촘촘한 분류를 남깁니다.",
+      "UNESCO, 지방 정부, 박물관, 학술·백과 참고자료의 조합을 sourceConfidence로 분리해 좌표와 해석의 신뢰 수준을 따로 보여줍니다."
+    ]
+  },
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "신석기",
+        "초기 청동기",
+        "상 왕조"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "지역",
+      "options": [
+        "황허 중류",
+        "장강 하류",
+        "이뤄 분지",
+        "정저우·뤄양 중원",
+        "안양·화북",
+        "쓰촨 분지"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "농경 취락",
+        "수리·제방",
+        "도시 계획",
+        "초기 국가 형성",
+        "궁전·도성",
+        "청동기 생산",
+        "문자·의례",
+        "지역 문명"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지도 유형",
+      "options": [
+        "유적"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "early-china-civilization",
+      "labelKo": "초기 중국 문명 형성",
+      "parentId": null,
+      "periodKo": "기원전 5000-1000년경",
+      "summaryKo": "황허, 장강, 쓰촨 분지의 여러 신석기·청동기 문화가 취락, 수리, 도시, 도성, 문자, 청동기 체계를 통해 초기 중국 문명권으로 얽혀 가는 장기 흐름입니다."
+    },
+    {
+      "id": "neolithic-yellow-river-settlements",
+      "labelKo": "황허 중류 신석기 농경 취락",
+      "parentId": "early-china-civilization",
+      "periodKo": "기원전 5000-3000년경",
+      "summaryKo": "반포처럼 주거지, 해자, 묘지, 토기 생산이 결합된 양사오 문화 취락을 통해 황허 유역 농경 공동체의 공간 구조를 보는 맥락입니다."
+    },
+    {
+      "id": "lower-yangtze-liangzhu-state",
+      "labelKo": "장강 하류 량주 수리 국가",
+      "parentId": "early-china-civilization",
+      "periodKo": "기원전 3300-2300년경",
+      "summaryKo": "량주 고성의 성곽, 대형 제방, 중심 건축, 옥기와 묘지 위계를 통해 장강 하류의 벼농사 기반 지역 국가를 이해하는 맥락입니다."
+    },
+    {
+      "id": "longshan-late-neolithic-polities",
+      "labelKo": "룽산 후기 정치 중심",
+      "parentId": "early-china-civilization",
+      "periodKo": "기원전 2500-1900년경",
+      "summaryKo": "타오쓰처럼 성곽, 대형 건물, 위계화된 묘지, 의례·천문 구조가 결합된 신석기 말기 정치 중심의 형성을 다룹니다."
+    },
+    {
+      "id": "erlitou-early-bronze-urbanism",
+      "labelKo": "얼리터우 초기 청동기 도시화",
+      "parentId": "early-china-civilization",
+      "periodKo": "기원전 1900-1500년경",
+      "summaryKo": "이뤄 분지의 궁전 건축, 도로망, 공방, 청동기 의례가 중원 초기 도시와 왕권적 질서의 형성을 보여주는 맥락입니다."
+    },
+    {
+      "id": "early-shang-capital-network",
+      "labelKo": "초기 상 도성 네트워크",
+      "parentId": "early-china-civilization",
+      "periodKo": "기원전 1600-1400년경",
+      "summaryKo": "옌스 상성과 정저우 상성처럼 성곽, 궁성, 작업장, 외곽 도시가 결합된 초기 상 왕조 도성의 확장을 보는 맥락입니다."
+    },
+    {
+      "id": "late-shang-writing-bronze-state",
+      "labelKo": "후기 상 문자와 청동기 국가",
+      "parentId": "early-china-civilization",
+      "periodKo": "기원전 1300-1046년경",
+      "summaryKo": "인허의 갑골문, 왕실 묘역, 궁전·종묘, 청동기 공방을 통해 문자 기록과 왕조사, 의례 체계를 연결하는 맥락입니다."
+    },
+    {
+      "id": "regional-bronze-age-shu",
+      "labelKo": "쓰촨 분지 고대 촉 청동기 문화",
+      "parentId": "early-china-civilization",
+      "periodKo": "기원전 1800-1000년경",
+      "summaryKo": "싼싱두이의 청동 가면, 인물상, 제의 구덩이를 통해 황허 중원 밖의 지역 문명이 초기 중국 문명 형성에 참여한 양상을 봅니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "banpo",
+      "titleKo": "반포",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "중국",
+      "coordinates": {
+        "lat": 34.2745,
+        "lng": 109.0481
+      },
+      "yearLabelKo": "기원전 4800-3750년경",
+      "summaryKo": "시안 동쪽의 양사오 문화 대표 취락으로, 주거지, 해자, 묘지, 토기 가마가 결합된 황허 유역 신석기 농경 마을 유적입니다.",
+      "stage2": {
+        "primaryContextId": "neolithic-yellow-river-settlements",
+        "contextIds": [
+          "early-china-civilization",
+          "neolithic-yellow-river-settlements"
+        ],
+        "periodPathKo": [
+          "고대",
+          "초기 중국",
+          "양사오 문화 농경 취락"
+        ],
+        "topicTagsKo": [
+          "반포",
+          "양사오 문화",
+          "채도",
+          "해자 취락",
+          "신석기 농경"
+        ],
+        "uiFilters": {
+          "era": "신석기",
+          "region": "황허 중류",
+          "theme": [
+            "농경 취락"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 0,
+          "referenceSources": 2,
+          "noteKo": "World History Encyclopedia와 Britannica가 같은 유적 성격을 설명하며, 박물관 공개 위치와 시안 동부 좌표가 널리 쓰입니다."
+        }
+      }
+    },
+    {
+      "entryId": "liangzhu-city",
+      "titleKo": "량주 고성",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "중국",
+      "coordinates": {
+        "lat": 30.3955,
+        "lng": 119.9908
+      },
+      "yearLabelKo": "기원전 3300-2300년경",
+      "summaryKo": "장강 하류의 벼농사 기반 지역 국가를 보여주는 후기 신석기 도시 유적으로, 성곽, 수리 시설, 옥기와 위계화된 묘지가 중요합니다.",
+      "stage2": {
+        "primaryContextId": "lower-yangtze-liangzhu-state",
+        "contextIds": [
+          "early-china-civilization",
+          "lower-yangtze-liangzhu-state"
+        ],
+        "periodPathKo": [
+          "고대",
+          "초기 중국",
+          "장강 하류 량주 문화"
+        ],
+        "topicTagsKo": [
+          "량주",
+          "벼농사",
+          "수리 시설",
+          "옥기",
+          "지역 국가"
+        ],
+        "uiFilters": {
+          "era": "신석기",
+          "region": "장강 하류",
+          "theme": [
+            "수리·제방",
+            "도시 계획",
+            "초기 국가 형성"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 0,
+          "noteKo": "UNESCO 세계유산 본문과 지도 자료가 함께 있어 유적 범위와 좌표 신뢰도가 높습니다."
+        }
+      }
+    },
+    {
+      "entryId": "taosi",
+      "titleKo": "타오쓰",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "중국",
+      "coordinates": {
+        "lat": 35.8906,
+        "lng": 111.4972
+      },
+      "yearLabelKo": "기원전 2500-1900년경",
+      "summaryKo": "산시 남부 펀허 유역의 대형 룽산 문화 유적으로, 성곽, 대형 건물지, 묘지 위계, 천문 관측 구조 해석이 결합됩니다.",
+      "stage2": {
+        "primaryContextId": "longshan-late-neolithic-polities",
+        "contextIds": [
+          "early-china-civilization",
+          "longshan-late-neolithic-polities"
+        ],
+        "periodPathKo": [
+          "고대",
+          "초기 중국",
+          "룽산 후기 정치 중심"
+        ],
+        "topicTagsKo": [
+          "타오쓰",
+          "룽산 문화",
+          "펀허 유역",
+          "초기 국가",
+          "천문 관측"
+        ],
+        "uiFilters": {
+          "era": "신석기",
+          "region": "황허 중류",
+          "theme": [
+            "도시 계획",
+            "초기 국가 형성",
+            "문자·의례"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "World History Encyclopedia와 ChinaCulture 자료를 함께 쓰지만, 표시 좌표는 타오쓰 유적권 공개 좌표의 근사값입니다."
+        }
+      }
+    },
+    {
+      "entryId": "erlitou",
+      "titleKo": "얼리터우",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "중국",
+      "coordinates": {
+        "lat": 34.692,
+        "lng": 112.696
+      },
+      "yearLabelKo": "기원전 1900-1500년경",
+      "summaryKo": "이뤄 분지의 대형 초기 청동기 중심지로, 궁전 건축, 도로망, 공방, 의례용 청동기의 초기 전개가 확인됩니다.",
+      "stage2": {
+        "primaryContextId": "erlitou-early-bronze-urbanism",
+        "contextIds": [
+          "early-china-civilization",
+          "erlitou-early-bronze-urbanism"
+        ],
+        "periodPathKo": [
+          "고대",
+          "초기 중국",
+          "얼리터우 초기 청동기 도시화"
+        ],
+        "topicTagsKo": [
+          "얼리터우",
+          "이뤄 분지",
+          "하 왕조 논쟁",
+          "궁전 건축",
+          "청동기 의례"
+        ],
+        "uiFilters": {
+          "era": "초기 청동기",
+          "region": "이뤄 분지",
+          "theme": [
+            "궁전·도성",
+            "청동기 생산",
+            "초기 국가 형성"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "허난성 정부 자료와 박물관 소개를 기준으로 하되, 유적권이 넓고 하 왕조 연결은 해석 논쟁이 있어 approximate로 둡니다."
+        }
+      }
+    },
+    {
+      "entryId": "yanshi-shang-city",
+      "titleKo": "옌스 상성",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "중국",
+      "coordinates": {
+        "lat": 34.7192,
+        "lng": 112.7642
+      },
+      "yearLabelKo": "기원전 1600년경 이후",
+      "summaryKo": "얼리터우 북동쪽에 조성된 초기 상 왕조 성곽 도시 유적으로, 대성, 소성, 궁성 구조를 통해 하·상 전환기 도성 계획을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "early-shang-capital-network",
+        "contextIds": [
+          "early-china-civilization",
+          "erlitou-early-bronze-urbanism",
+          "early-shang-capital-network"
+        ],
+        "periodPathKo": [
+          "고대",
+          "상 왕조",
+          "뤄양 권역 초기 상 도성"
+        ],
+        "topicTagsKo": [
+          "옌스 상성",
+          "시샹거우",
+          "초기 상",
+          "도성 계획",
+          "하상 전환"
+        ],
+        "uiFilters": {
+          "era": "상 왕조",
+          "region": "정저우·뤄양 중원",
+          "theme": [
+            "궁전·도성",
+            "도시 계획",
+            "초기 국가 형성"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "허난성 정부와 ChinaCulture 자료를 기준으로 하며, 넓은 성곽 유적권의 대표 좌표로 근사 표시합니다."
+        }
+      }
+    },
+    {
+      "entryId": "zhengzhou-shang-city",
+      "titleKo": "정저우 상성",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "중국",
+      "coordinates": {
+        "lat": 34.7522,
+        "lng": 113.6903
+      },
+      "yearLabelKo": "기원전 1630-1400년경",
+      "summaryKo": "현대 정저우 도심 아래에 남아 있는 초기 상 왕조 거대 성곽 도시 유적으로, 내성, 궁전 구역, 작업장과 외곽 도시 흔적이 중요합니다.",
+      "stage2": {
+        "primaryContextId": "early-shang-capital-network",
+        "contextIds": [
+          "early-china-civilization",
+          "early-shang-capital-network"
+        ],
+        "periodPathKo": [
+          "고대",
+          "상 왕조",
+          "정저우 얼리강 도성"
+        ],
+        "topicTagsKo": [
+          "정저우 상성",
+          "얼리강",
+          "초기 상",
+          "성곽 도시",
+          "청동기 생산"
+        ],
+        "uiFilters": {
+          "era": "상 왕조",
+          "region": "정저우·뤄양 중원",
+          "theme": [
+            "궁전·도성",
+            "도시 계획",
+            "청동기 생산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "허난성 정부 자료와 학술 논문을 함께 쓰지만, 현대 도시 아래 분산된 유적이므로 중심 좌표는 근사값입니다."
+        }
+      }
+    },
+    {
+      "entryId": "yinxu-anyang",
+      "titleKo": "인허",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "중국",
+      "coordinates": {
+        "lat": 36.1267,
+        "lng": 114.3139
+      },
+      "yearLabelKo": "기원전 1300-1046년경",
+      "summaryKo": "상 왕조 후기 수도 은의 유적으로, 갑골문, 왕실 묘역, 궁전·종묘 구역, 청동기 공방이 왕조사와 문자 기록을 연결합니다.",
+      "stage2": {
+        "primaryContextId": "late-shang-writing-bronze-state",
+        "contextIds": [
+          "early-china-civilization",
+          "early-shang-capital-network",
+          "late-shang-writing-bronze-state"
+        ],
+        "periodPathKo": [
+          "고대",
+          "상 왕조",
+          "후기 상 인허"
+        ],
+        "topicTagsKo": [
+          "인허",
+          "안양",
+          "갑골문",
+          "청동기 의례",
+          "상 왕실 묘역"
+        ],
+        "uiFilters": {
+          "era": "상 왕조",
+          "region": "안양·화북",
+          "theme": [
+            "문자·의례",
+            "청동기 생산",
+            "궁전·도성"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 0,
+          "noteKo": "UNESCO 세계유산과 허난성 공식 자료가 함께 있어 좌표와 유적 성격 모두 신뢰도가 높습니다."
+        }
+      }
+    },
+    {
+      "entryId": "sanxingdui",
+      "titleKo": "싼싱두이",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "중국",
+      "coordinates": {
+        "lat": 30.9939,
+        "lng": 104.1994
+      },
+      "yearLabelKo": "기원전 1800-1000년경",
+      "summaryKo": "청두 평원의 고대 촉 문화 중심 유적으로, 거대한 청동 가면과 인물상, 금박, 옥기, 제의 구덩이가 출토되었습니다.",
+      "stage2": {
+        "primaryContextId": "regional-bronze-age-shu",
+        "contextIds": [
+          "early-china-civilization",
+          "regional-bronze-age-shu"
+        ],
+        "periodPathKo": [
+          "고대",
+          "초기 중국",
+          "쓰촨 분지 고대 촉"
+        ],
+        "topicTagsKo": [
+          "싼싱두이",
+          "고대 촉",
+          "청동 가면",
+          "제의 구덩이",
+          "지역 문명"
+        ],
+        "uiFilters": {
+          "era": "초기 청동기",
+          "region": "쓰촨 분지",
+          "theme": [
+            "지역 문명",
+            "청동기 생산",
+            "문자·의례"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 잠정목록 좌표와 학술 참고자료를 함께 사용해 위치와 문화적 성격을 확인했습니다."
+        }
+      }
+    }
+  ]
+}
