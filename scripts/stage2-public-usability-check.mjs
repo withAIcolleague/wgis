@@ -163,12 +163,17 @@ const datasets = [
     path: 'data/stage2/modern-imperial-chokepoints-canal-port-cities-preview.json',
     count: 8,
     firstEntryId: 'suez-canal'
+  },
+  {
+    path: 'data/stage2/egypt-late-temple-centers-preview.json',
+    count: 8,
+    firstEntryId: 'karnak'
   }
 ];
 
 const latestDataset = datasets[datasets.length - 1];
-const desktopShot = path.join(outputDir, 'wgis-stage2-twenty-nine-datasets-desktop.png');
-const mobileShot = path.join(outputDir, 'wgis-stage2-twenty-nine-datasets-mobile.png');
+const desktopShot = path.join(outputDir, 'wgis-stage2-thirty-datasets-desktop.png');
+const mobileShot = path.join(outputDir, 'wgis-stage2-thirty-datasets-mobile.png');
 
 function assertCheck(condition, message, details = undefined) {
   if (!condition) {
@@ -337,60 +342,62 @@ async function main() {
       assertCheck(state.contextFilterButtons <= 4 && state.contextFilterToggle, 'Initial context filters should start compact', state);
 
       dom = await dumpDom(buildUrl({ dataset: latestDataset.path }), userDataDir);
-      state = extractState('desktop-modern-imperial-chokepoints-default', dom);
+      state = extractState('desktop-egypt-late-temples-default', dom);
       states.push(state);
-      assertCheck(state.entryCards === latestDataset.count && state.entryIds.includes('suez-canal'), 'Latest dataset should render Suez Canal and all entries', state);
+      assertCheck(state.entryCards === latestDataset.count && state.entryIds.includes('karnak'), 'Latest dataset should render Karnak and all entries', state);
 
-      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, q: '지브롤터' }), userDataDir);
-      state = extractState('desktop-modern-imperial-chokepoints-search-gibraltar', dom);
+      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, q: '콤 옴보' }), userDataDir);
+      state = extractState('desktop-egypt-late-temples-search-kom-ombo', dom);
       states.push(state);
-      assertCheck(state.entryCountText === '1개' && state.entryIds.includes('gibraltar-port'), 'Latest dataset search should find Gibraltar', state);
+      assertCheck(state.entryCountText === '1개' && state.entryIds.includes('kom-ombo-temple'), 'Latest dataset search should find Kom Ombo Temple', state);
 
-      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, entry: 'suez-canal' }), userDataDir);
-      state = extractState('desktop-modern-imperial-chokepoints-detail-suez', dom);
+      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, entry: 'dendera-temple' }), userDataDir);
+      state = extractState('desktop-egypt-late-temples-detail-dendera', dom);
       states.push(state);
       assertCheck(
-        state.detailTitle === '수에즈 운하' && state.detailActions === 2 && state.hasSourceConfidence,
-        'Latest dataset detail should show Suez Canal, source confidence, and detail actions',
+        state.detailTitle === '덴데라 신전' && state.detailActions === 2 && state.hasSourceConfidence,
+        'Latest dataset detail should show Dendera Temple, source confidence, and detail actions',
         state
       );
 
       dom = await dumpDom(buildUrl({
         dataset: latestDataset.path,
-        context: 'asian-colonial-hub-port-network'
+        context: 'ptolemaic-roman-nile-temple-network'
       }), userDataDir);
-      state = extractState('desktop-modern-imperial-chokepoints-asian-context', dom);
+      state = extractState('desktop-egypt-late-temples-ptolemaic-context', dom);
       states.push(state);
       assertCheck(
-        state.entryCountText === '3개' &&
-          state.entryIds.includes('singapore-port') &&
-          state.entryIds.includes('hong-kong-victoria-harbour') &&
-          state.entryIds.includes('colombo-port') &&
-          !state.entryIds.includes('suez-canal'),
-        'Asian colonial hub context should return Singapore, Hong Kong, and Colombo without stale Suez data',
+        state.entryCountText === '5개' &&
+          state.entryIds.includes('alexandria-egypt') &&
+          state.entryIds.includes('dendera-temple') &&
+          state.entryIds.includes('edfu-temple') &&
+          state.entryIds.includes('philae') &&
+          state.entryIds.includes('kom-ombo-temple') &&
+          !state.entryIds.includes('karnak'),
+        'Ptolemaic-Roman Nile temple context should return Alexandria and late temples without stale Karnak data',
         state
       );
 
       dom = await dumpDom(buildUrl({
         dataset: latestDataset.path,
-        entry: 'singapore-port'
+        entry: 'philae'
       }), userDataDir, { width: 390, height: 844 });
-      state = extractState('mobile-modern-imperial-chokepoints-detail-singapore', dom);
+      state = extractState('mobile-egypt-late-temples-detail-philae', dom);
       states.push(state);
       assertCheck(
-        state.ready && state.detailTitle === '싱가포르 항' && state.detailActions === 2,
-        'Mobile-sized latest dataset render should keep the Singapore detail panel available',
+        state.ready && state.detailTitle === '필레' && state.detailActions === 2,
+        'Mobile-sized latest dataset render should keep the Philae detail panel available',
         state
       );
 
       await captureScreenshot(
-        buildUrl({ dataset: latestDataset.path, entry: 'suez-canal' }),
+        buildUrl({ dataset: latestDataset.path, entry: 'dendera-temple' }),
         userDataDir,
         desktopShot,
         { width: 1440, height: 920 }
       );
       await captureScreenshot(
-        buildUrl({ dataset: latestDataset.path, entry: 'singapore-port' }),
+        buildUrl({ dataset: latestDataset.path, entry: 'philae' }),
         userDataDir,
         mobileShot,
         { width: 390, height: 844 }

@@ -1,0 +1,541 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-egypt-late-temple-centers-preview",
+  "titleKo": "2단계 미리보기: 이집트 후기 신전 중심지",
+  "descriptionKo": "카르나크, 룩소르 신전, 아부심벨, 알렉산드리아, 덴데라 신전, 에드푸 신전, 필레, 콤 옴보 신전을 비교해 신왕국 의례 유산과 프톨레마이오스·로마 시대 나일 신전망을 함께 보는 2단계 미리보기 데이터셋입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "신왕국 의례 유산",
+        "프톨레마이오스 왕조",
+        "로마 시대 이집트",
+        "헬레니즘 이집트",
+        "현대 유산 보존"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "테베권",
+        "나일 중류",
+        "나일 상류",
+        "누비아 경계",
+        "지중해 항구"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "신전",
+        "왕권 의례",
+        "지역 제의",
+        "사제 지식",
+        "천문 도상",
+        "이시스 신앙",
+        "이중 신전",
+        "누비아",
+        "UNESCO 구제 사업",
+        "헬레니즘 수도"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지점 유형",
+      "options": [
+        "장소"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "egypt-late-sacred-landscape",
+      "labelKo": "이집트 후기 신전과 나일 의례 경관",
+      "parentId": null,
+      "periodKo": "기원전 16세기-서기 6세기",
+      "summaryKo": "테베권의 신왕국 신전 유산, 프톨레마이오스·로마 시대 지역 신전, 누비아 경계의 구제 유산, 알렉산드리아의 헬레니즘 통치 맥락을 하나의 나일 축으로 비교합니다."
+    },
+    {
+      "id": "theban-new-kingdom-ritual-legacy",
+      "labelKo": "테베권 신왕국 의례 유산",
+      "parentId": "egypt-late-sacred-landscape",
+      "periodKo": "기원전 16-11세기 중심",
+      "summaryKo": "카르나크와 룩소르 신전을 통해 아문 신앙, 오페트 축제, 왕권 재생 의례가 후기 나일 신전망의 선행 모델이 된 방식을 봅니다."
+    },
+    {
+      "id": "nile-processional-temple-corridor",
+      "labelKo": "나일 의례 축과 신전 회랑",
+      "parentId": "egypt-late-sacred-landscape",
+      "periodKo": "기원전 15세기-서기 2세기",
+      "summaryKo": "테베권에서 덴데라, 에드푸, 콤 옴보, 필레로 이어지는 나일 축을 따라 신전, 축제, 지역 제의, 강 교통이 결합되는 방식을 비교합니다."
+    },
+    {
+      "id": "ptolemaic-roman-nile-temple-network",
+      "labelKo": "프톨레마이오스·로마 나일 신전망",
+      "parentId": "egypt-late-sacred-landscape",
+      "periodKo": "기원전 4세기-서기 6세기",
+      "summaryKo": "덴데라, 에드푸, 필레, 콤 옴보를 중심으로 그리스·로마 지배기에도 이집트식 신전 건축과 지역 제의가 재구성되어 지속된 양상을 봅니다."
+    },
+    {
+      "id": "dendera-hathor-astral-priesthood",
+      "labelKo": "덴데라 하토르 성소와 천문 도상",
+      "parentId": "ptolemaic-roman-nile-temple-network",
+      "periodKo": "프톨레마이오스-로마 시대",
+      "summaryKo": "덴데라를 통해 하토르 신앙, 천문 도상, 사제 지식, 로마 시대까지 이어진 후기 신전 장식 체계를 살펴봅니다."
+    },
+    {
+      "id": "edfu-horus-temple-texts",
+      "labelKo": "에드푸 호루스 신전과 제의 문헌",
+      "parentId": "ptolemaic-roman-nile-temple-network",
+      "periodKo": "기원전 237-57년",
+      "summaryKo": "에드푸를 통해 보존 상태가 뛰어난 프톨레마이오스 신전 평면, 축선, 벽면 제의 문헌이 후기 신전 운영을 설명하는 방식을 봅니다."
+    },
+    {
+      "id": "philae-isis-nubian-frontier",
+      "labelKo": "필레 이시스 성소와 누비아 경계",
+      "parentId": "ptolemaic-roman-nile-temple-network",
+      "periodKo": "기원전 4세기-서기 6세기",
+      "summaryKo": "필레를 통해 이시스 신앙, 누비아 경계권, 로마·비잔틴 시대까지 이어진 이집트 종교의 장기 지속성을 봅니다."
+    },
+    {
+      "id": "kom-ombo-dual-cult-temple",
+      "labelKo": "콤 옴보 이중 신전과 지역 제의",
+      "parentId": "ptolemaic-roman-nile-temple-network",
+      "periodKo": "기원전 2세기-서기 2세기",
+      "summaryKo": "콤 옴보를 통해 소베크와 하로에리스에게 바쳐진 이중 신전, 나일 교통축의 지역 제의, 후기 신전의 복합 신앙 구조를 봅니다."
+    },
+    {
+      "id": "late-egyptian-priestly-knowledge",
+      "labelKo": "후기 이집트 사제 지식과 신전 기록",
+      "parentId": "ptolemaic-roman-nile-temple-network",
+      "periodKo": "프톨레마이오스-로마 시대",
+      "summaryKo": "덴데라와 에드푸를 중심으로 천문 도상, 제의 문헌, 사제단의 지식 관리가 후기 이집트 신전의 핵심 기능으로 남은 방식을 비교합니다."
+    },
+    {
+      "id": "nubian-frontier-temple-and-rescue",
+      "labelKo": "누비아 경계 신전과 현대 구제 유산",
+      "parentId": "egypt-late-sacred-landscape",
+      "periodKo": "신왕국-20세기 구제 사업",
+      "summaryKo": "아부심벨과 필레를 통해 남부 경계 신전, 아스완 하이댐 이후 국제 구제 사업, 현재 관람 위치와 고대 원위치 사이의 차이를 함께 봅니다."
+    },
+    {
+      "id": "hellenistic-alexandria-egypt-rule",
+      "labelKo": "알렉산드리아와 헬레니즘 이집트 통치",
+      "parentId": "egypt-late-sacred-landscape",
+      "periodKo": "기원전 331년 이후",
+      "summaryKo": "알렉산드리아를 통해 프톨레마이오스 왕조의 지중해 항구 수도, 헬레니즘 지식 체계, 나일 신전 후원 정치가 연결되는 배경을 봅니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "karnak",
+      "titleKo": "카르나크",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이집트",
+      "coordinates": {
+        "lat": 25.7189,
+        "lng": 32.6573
+      },
+      "yearLabelKo": "기원전 20세기-기원후 4세기",
+      "summaryKo": "테베의 아문 신앙과 왕권 의례가 집중된 거대한 신전 복합체로, 여러 왕조의 증축 흔적이 누적되어 있습니다.",
+      "stage2": {
+        "primaryContextId": "theban-new-kingdom-ritual-legacy",
+        "contextIds": [
+          "egypt-late-sacred-landscape",
+          "theban-new-kingdom-ritual-legacy",
+          "nile-processional-temple-corridor"
+        ],
+        "periodPathKo": [
+          "고대",
+          "신왕국 의례 유산",
+          "테베권 아문 신전"
+        ],
+        "topicTagsKo": [
+          "카르나크",
+          "아문",
+          "오페트 축제",
+          "왕권 의례",
+          "신전 복합체"
+        ],
+        "uiFilters": {
+          "era": "신왕국 의례 유산",
+          "region": "테베권",
+          "theme": [
+            "신전",
+            "왕권 의례"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 고대 테베 자료와 World History Encyclopedia 항목이 함께 있는 고신뢰 항목입니다."
+        }
+      }
+    },
+    {
+      "entryId": "luxor-temple",
+      "titleKo": "룩소르 신전",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이집트",
+      "coordinates": {
+        "lat": 25.6999,
+        "lng": 32.639
+      },
+      "yearLabelKo": "기원전 15세기 이후",
+      "summaryKo": "카르나크와 스핑크스 길로 연결된 테베 남쪽의 주요 신전으로, 아문 신앙과 왕권 재생 의례를 이해하게 해줍니다.",
+      "stage2": {
+        "primaryContextId": "theban-new-kingdom-ritual-legacy",
+        "contextIds": [
+          "egypt-late-sacred-landscape",
+          "theban-new-kingdom-ritual-legacy",
+          "nile-processional-temple-corridor"
+        ],
+        "periodPathKo": [
+          "고대",
+          "신왕국 의례 유산",
+          "오페트 의례 축"
+        ],
+        "topicTagsKo": [
+          "룩소르 신전",
+          "오페트 축제",
+          "스핑크스 길",
+          "아문",
+          "왕권 재생"
+        ],
+        "uiFilters": {
+          "era": "신왕국 의례 유산",
+          "region": "테베권",
+          "theme": [
+            "신전",
+            "왕권 의례"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 0,
+          "noteKo": "이집트 관광유물부와 UNESCO 지도 자료가 함께 있는 공식 출처 중심 항목입니다."
+        }
+      }
+    },
+    {
+      "entryId": "abu-simbel",
+      "titleKo": "아부심벨",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이집트",
+      "coordinates": {
+        "lat": 22.3372,
+        "lng": 31.6258
+      },
+      "yearLabelKo": "기원전 13세기",
+      "summaryKo": "람세스 2세가 누비아 경계권에 조성한 암굴 신전 복합체로, 신왕국 왕권 선전과 남부 경계 감각을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "nubian-frontier-temple-and-rescue",
+        "contextIds": [
+          "egypt-late-sacred-landscape",
+          "nubian-frontier-temple-and-rescue"
+        ],
+        "periodPathKo": [
+          "고대",
+          "신왕국 의례 유산",
+          "누비아 경계 암굴 신전"
+        ],
+        "topicTagsKo": [
+          "아부심벨",
+          "람세스 2세",
+          "누비아",
+          "암굴 신전",
+          "UNESCO 구제 사업"
+        ],
+        "uiFilters": {
+          "era": [
+            "신왕국 의례 유산",
+            "현대 유산 보존"
+          ],
+          "region": "누비아 경계",
+          "theme": [
+            "신전",
+            "왕권 의례",
+            "누비아",
+            "UNESCO 구제 사업"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 누비아 유적 자료와 World History Encyclopedia 항목이 함께 있는 고신뢰 항목입니다."
+        }
+      }
+    },
+    {
+      "entryId": "alexandria-egypt",
+      "titleKo": "알렉산드리아",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이집트",
+      "coordinates": {
+        "lat": 31.2001,
+        "lng": 29.9187
+      },
+      "yearLabelKo": "기원전 331년 건설 이후",
+      "summaryKo": "알렉산드로스가 세운 지중해 항구 도시이자 프톨레마이오스 왕조 수도로, 도서관과 파로스 등대가 상징하는 지식·교역 중심지였습니다.",
+      "stage2": {
+        "primaryContextId": "hellenistic-alexandria-egypt-rule",
+        "contextIds": [
+          "egypt-late-sacred-landscape",
+          "hellenistic-alexandria-egypt-rule",
+          "ptolemaic-roman-nile-temple-network"
+        ],
+        "periodPathKo": [
+          "고대",
+          "헬레니즘 이집트",
+          "프톨레마이오스 항구 수도"
+        ],
+        "topicTagsKo": [
+          "알렉산드리아",
+          "프톨레마이오스",
+          "도서관",
+          "파로스",
+          "헬레니즘 수도"
+        ],
+        "uiFilters": {
+          "era": [
+            "헬레니즘 이집트",
+            "프톨레마이오스 왕조"
+          ],
+          "region": "지중해 항구",
+          "theme": [
+            "헬레니즘 수도",
+            "사제 지식"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 0,
+          "referenceSources": 2,
+          "noteKo": "고대 도시층이 현대 도시에 중첩된 항목이므로 도심 근사 좌표로 관리합니다."
+        }
+      }
+    },
+    {
+      "entryId": "dendera-temple",
+      "titleKo": "덴데라 신전",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이집트",
+      "coordinates": {
+        "lat": 26.142,
+        "lng": 32.6702
+      },
+      "yearLabelKo": "프톨레마이오스 시대 건립, 로마 시대 완성",
+      "summaryKo": "하토르 숭배의 핵심 중심지로, 후기 이집트 신전 건축과 천문 도상, 지역 제의의 지속성을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "dendera-hathor-astral-priesthood",
+        "contextIds": [
+          "egypt-late-sacred-landscape",
+          "ptolemaic-roman-nile-temple-network",
+          "dendera-hathor-astral-priesthood",
+          "late-egyptian-priestly-knowledge",
+          "nile-processional-temple-corridor"
+        ],
+        "periodPathKo": [
+          "고대",
+          "프톨레마이오스·로마 이집트",
+          "하토르 성소와 천문 도상"
+        ],
+        "topicTagsKo": [
+          "덴데라",
+          "하토르",
+          "천문 도상",
+          "사제 지식",
+          "후기 신전"
+        ],
+        "uiFilters": {
+          "era": [
+            "프톨레마이오스 왕조",
+            "로마 시대 이집트"
+          ],
+          "region": "나일 중류",
+          "theme": [
+            "신전",
+            "지역 제의",
+            "사제 지식",
+            "천문 도상"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "이집트 관광유물부 자료와 Britannica 항목이 함께 있는 후기 신전 항목입니다."
+        }
+      }
+    },
+    {
+      "entryId": "edfu-temple",
+      "titleKo": "에드푸 신전",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이집트",
+      "coordinates": {
+        "lat": 24.9778,
+        "lng": 32.8735
+      },
+      "yearLabelKo": "기원전 237-57년",
+      "summaryKo": "호루스에게 바쳐진 프톨레마이오스 시대 신전으로, 축선 배치와 제의 문헌을 통해 후기 이집트 신전 운영을 이해하게 해줍니다.",
+      "stage2": {
+        "primaryContextId": "edfu-horus-temple-texts",
+        "contextIds": [
+          "egypt-late-sacred-landscape",
+          "ptolemaic-roman-nile-temple-network",
+          "edfu-horus-temple-texts",
+          "late-egyptian-priestly-knowledge",
+          "nile-processional-temple-corridor"
+        ],
+        "periodPathKo": [
+          "고대",
+          "프톨레마이오스 이집트",
+          "호루스 신전과 제의 문헌"
+        ],
+        "topicTagsKo": [
+          "에드푸",
+          "호루스",
+          "프톨레마이오스",
+          "제의 문헌",
+          "후기 신전"
+        ],
+        "uiFilters": {
+          "era": "프톨레마이오스 왕조",
+          "region": "나일 상류",
+          "theme": [
+            "신전",
+            "지역 제의",
+            "사제 지식"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "이집트 관광유물부 자료와 Britannica 항목으로 위치와 시기 정보를 확인합니다."
+        }
+      }
+    },
+    {
+      "entryId": "philae",
+      "titleKo": "필레",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이집트",
+      "coordinates": {
+        "lat": 24.025,
+        "lng": 32.8841
+      },
+      "yearLabelKo": "기원전 4세기-서기 6세기",
+      "summaryKo": "이시스 신앙의 대표 성소로, 고대 이집트 종교가 프톨레마이오스·로마 시대를 거쳐 비잔틴 시대까지 이어진 흐름을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "philae-isis-nubian-frontier",
+        "contextIds": [
+          "egypt-late-sacred-landscape",
+          "ptolemaic-roman-nile-temple-network",
+          "philae-isis-nubian-frontier",
+          "nubian-frontier-temple-and-rescue",
+          "nile-processional-temple-corridor"
+        ],
+        "periodPathKo": [
+          "고대",
+          "프톨레마이오스·로마 이집트",
+          "이시스 성소와 누비아 경계"
+        ],
+        "topicTagsKo": [
+          "필레",
+          "이시스",
+          "누비아 유적",
+          "후기 신전",
+          "UNESCO 구제 사업"
+        ],
+        "uiFilters": {
+          "era": [
+            "프톨레마이오스 왕조",
+            "로마 시대 이집트",
+            "현대 유산 보존"
+          ],
+          "region": "누비아 경계",
+          "theme": [
+            "신전",
+            "이시스 신앙",
+            "누비아",
+            "UNESCO 구제 사업"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "이집트 관광유물부, UNESCO, Britannica 자료가 함께 있는 고신뢰 항목입니다."
+        }
+      }
+    },
+    {
+      "entryId": "kom-ombo-temple",
+      "titleKo": "콤 옴보 신전",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이집트",
+      "coordinates": {
+        "lat": 24.4524,
+        "lng": 32.9285
+      },
+      "yearLabelKo": "기원전 2세기-서기 2세기",
+      "summaryKo": "소베크와 하로에리스에게 바쳐진 이중 신전으로, 나일 교통축 위의 지역 제의와 후기 신전 운영을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "kom-ombo-dual-cult-temple",
+        "contextIds": [
+          "egypt-late-sacred-landscape",
+          "ptolemaic-roman-nile-temple-network",
+          "kom-ombo-dual-cult-temple",
+          "nile-processional-temple-corridor"
+        ],
+        "periodPathKo": [
+          "고대",
+          "프톨레마이오스·로마 이집트",
+          "소베크·하로에리스 이중 신전"
+        ],
+        "topicTagsKo": [
+          "콤 옴보",
+          "소베크",
+          "하로에리스",
+          "이중 신전",
+          "후기 신전"
+        ],
+        "uiFilters": {
+          "era": [
+            "프톨레마이오스 왕조",
+            "로마 시대 이집트"
+          ],
+          "region": "나일 상류",
+          "theme": [
+            "신전",
+            "지역 제의",
+            "이중 신전"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "이집트 관광유물부 자료와 Britannica 항목으로 위치와 기능을 확인합니다."
+        }
+      }
+    }
+  ]
+}

@@ -349,6 +349,17 @@ The twenty-ninth pilot dataset tests modern imperial maritime chokepoints, canal
 - `panama-canal`
 - `gibraltar-port`
 
+The thirtieth pilot dataset tests Egyptian late temple centers, Theban ritual legacy, Ptolemaic/Roman Nile temple building, priestly knowledge, Nubian rescue heritage, and Hellenistic Egyptian rule:
+
+- `karnak`
+- `luxor-temple`
+- `abu-simbel`
+- `alexandria-egypt`
+- `dendera-temple`
+- `edfu-temple`
+- `philae`
+- `kom-ombo-temple`
+
 The dataset list is managed in:
 
 ```text
@@ -768,3 +779,17 @@ The 2026-05-22 twenty-nine-dataset public browser pass checks `https://wgis.verc
 - The `아시아 식민 중계항과 해협 물류망` context filter returns `싱가포르 항`, `홍콩 빅토리아항`, and `콜롬보 항` with 3 markers and 3 labels and no stale Suez data.
 - On mobile, `싱가포르 항` detail renders with source-confidence information and both detail actions.
 - Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-nine-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-nine-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.
+
+## Thirty-Dataset Public Usability Pass
+
+The 2026-05-22 thirty-dataset public browser pass checks `https://wgis.vercel.app/stage2-preview.html` after adding the Egyptian late temple centers pilot dataset:
+
+- Dataset selector exposes 30 datasets.
+- All 30 indexed datasets render their expected entry, marker, and permanent-label counts across 250 Stage 2 preview entries.
+- The new Egyptian late temple dataset exposes 8 entries: `카르나크`, `룩소르 신전`, `아부심벨`, `알렉산드리아`, `덴데라 신전`, `에드푸 신전`, `필레`, and `콤 옴보 신전`.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control.
+- Searching `콤 옴보` in the Egyptian late temple dataset narrows the list and map to `콤 옴보 신전` with 1 marker and 1 label.
+- Selecting `덴데라 신전` opens the detail panel with source-confidence information and detail actions.
+- The `프톨레마이오스·로마 나일 신전망` context filter returns `알렉산드리아`, `덴데라 신전`, `에드푸 신전`, `필레`, and `콤 옴보 신전` with 5 markers and 5 labels and no stale Karnak data.
+- On mobile, `필레` detail renders with source-confidence information and both detail actions.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.

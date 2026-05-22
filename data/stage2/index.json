@@ -176,6 +176,12 @@
       "titleKo": "근대 제국주의 해상 관문·운하·항구도시",
       "path": "data/stage2/modern-imperial-chokepoints-canal-port-cities-preview.json",
       "status": "preview-only"
+    },
+    {
+      "id": "stage2-egypt-late-temple-centers-preview",
+      "titleKo": "이집트 후기 신전 중심지",
+      "path": "data/stage2/egypt-late-temple-centers-preview.json",
+      "status": "preview-only"
     }
   ]
 }
