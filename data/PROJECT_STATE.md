@@ -1,6 +1,6 @@
 # WGIS Data Project State
 
-Last updated: 2026-05-21
+Last updated: 2026-05-22
 
 ## Current Goal
 
@@ -14,7 +14,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Current entry count: 250
 - Completed curation batches: 31
 - Latest completed batch: `africa-egypt-late-temple-centers-v1`
-- Latest completed infrastructure milestone: stage-2 Indus civilization pilot
+- Latest completed infrastructure milestone: stage-2 five-dataset usability pass
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
@@ -106,6 +106,13 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - URL path: `/stage2-preview.html`
   - Scope: add a fifth Stage 2 preview dataset using the existing Indus Civilization major urban sites batch
   - Model stress test: early farming roots, mature Harappan urban planning, Indus river core cities, Ghaggar-Hakra/eastern settlements, Gujarat maritime and water-management sites, craft/trade standardization, and underexplored Cholistan large-site handling
+
+- Stage-2 five-dataset usability pass
+  - Files: `docs/stage2-preview.md`
+  - URL path: `/stage2-preview.html`
+  - Scope: verify public preview behavior after adding the fifth dataset
+  - Checked: 5-dataset switching, Indus search/filter/detail behavior, stale marker/label cleanup, and mobile entry-list scrolling
+  - Result: public browser pass completed for 5 datasets and 48 Stage 2 preview entries
 
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`
@@ -572,11 +579,11 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Stage-2 five-dataset usability pass
-   - Scope: verify `/stage2-preview.html` after adding Indus, especially dataset switching, Indus search/filter behavior, stale marker labels, and mobile scrolling
-
-2. Stage-2 sixth pilot dataset
+1. Stage-2 sixth pilot dataset
    - Scope: create one more Stage 2 file from early China to compare river-basin, Bronze Age, and state-formation contexts against Mesopotamia, Egypt, and Indus
+
+2. Stage-2 preview usability refinement
+   - Scope: compact or progressive-disclose preview filters and detail movement if the dataset selector grows beyond the current pilot shape
 
 3. First-stage DB next expansion batch
   - Scope: resume focused first-stage source-record growth if the priority shifts back from Stage 2 modeling to raw coverage
