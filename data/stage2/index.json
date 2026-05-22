@@ -38,6 +38,12 @@
       "titleKo": "초기 중국 문명 형성",
       "path": "data/stage2/early-china-core-preview.json",
       "status": "preview-only"
+    },
+    {
+      "id": "stage2-ancient-greece-core-preview",
+      "titleKo": "고대 그리스 핵심 유적",
+      "path": "data/stage2/ancient-greece-core-preview.json",
+      "status": "preview-only"
     }
   ]
 }

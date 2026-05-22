@@ -1,0 +1,591 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-ancient-greece-core-preview",
+  "titleKo": "2단계 미리보기: 고대 그리스 핵심 유적",
+  "descriptionKo": "크노소스, 미케네, 트로이에서 아테네, 스파르타, 코린토스, 테베, 델포이, 올림피아, 밀레토스까지 고대 그리스 세계의 궁전·성채, 폴리스, 성소, 해상·지식 네트워크를 맥락별로 나누어 보는 샘플입니다.",
+  "modelComparison": {
+    "currentKo": [
+      "1단계에서는 각 그리스사 항목을 하나의 지도 위치와 간단한 시대·요약 정보로 보여줍니다.",
+      "사용자는 아테네, 스파르타, 델포이처럼 익숙한 이름을 검색하고 현재 지명과 좌표를 빠르게 확인합니다.",
+      "청동기 에게해, 고전기 폴리스, 범그리스 성소, 이오니아 지식 네트워크 같은 연구 맥락은 요약문 안에 압축되어 있습니다."
+    ],
+    "stage2Ko": [
+      "2단계에서는 같은 항목을 에게해 청동기 궁전권, 미케네 성채와 영웅 전승, 고전기 폴리스 경쟁, 범그리스 성소, 지중해 해상 교역과 지식 네트워크로 분리합니다.",
+      "사용자용 필터는 시대, 지역, 주제 중심으로 단순화하고, 연구 태그에는 폴리스, 성소, 오라클, 올림픽, 이오니아 자연철학 같은 세부 분류를 남깁니다.",
+      "UNESCO, 그리스 문화부, World History Encyclopedia, Britannica 등 기존 출처 기반을 sourceConfidence로 요약해 위치와 해석 신뢰도를 따로 보여줍니다."
+    ]
+  },
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "청동기 에게해",
+        "고전기 그리스",
+        "이오니아·아나톨리아"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "지역",
+      "options": [
+        "아티카",
+        "펠로폰네소스",
+        "중부 그리스",
+        "크레타",
+        "트로아스",
+        "이오니아"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "궁전·성채",
+        "폴리스",
+        "범그리스 성소",
+        "신화·서사",
+        "해상 교역",
+        "민주정·제국",
+        "군사 체제",
+        "지식사"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지도 유형",
+      "options": [
+        "장소",
+        "유적"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "ancient-greek-world",
+      "labelKo": "고대 그리스 세계",
+      "parentId": null,
+      "periodKo": "기원전 3000년경-기원전 4세기",
+      "summaryKo": "에게해 청동기 궁전권, 폴리스 체계, 범그리스 성소, 식민·해상 네트워크가 겹치며 지중해 동부의 정치·문화 지형을 만든 장기 맥락입니다."
+    },
+    {
+      "id": "aegean-bronze-age-palatial-world",
+      "labelKo": "에게해 청동기 궁전권",
+      "parentId": "ancient-greek-world",
+      "periodKo": "기원전 2000-1100년경",
+      "summaryKo": "크레타 미노아 궁전과 미케네 성채가 행정, 의례, 저장, 공방, 해상 네트워크를 결합한 청동기 에게해 세계를 보여줍니다."
+    },
+    {
+      "id": "mycenaean-epic-memory",
+      "labelKo": "미케네 성채와 영웅 서사",
+      "parentId": "ancient-greek-world",
+      "periodKo": "기원전 1600-1100년경, 후대 서사 전승",
+      "summaryKo": "미케네와 트로이처럼 청동기 성채와 후대 호메로스 전승이 겹치는 장소를 통해 고고학과 기억의 관계를 다룹니다."
+    },
+    {
+      "id": "classical-polis-civic-centers",
+      "labelKo": "고전기 폴리스와 시민 정치",
+      "parentId": "ancient-greek-world",
+      "periodKo": "기원전 8-4세기",
+      "summaryKo": "아테네, 코린토스, 테베처럼 도시 공동체, 성역, 시장, 방어 거점, 동맹 정치가 결합된 폴리스 중심지를 보는 맥락입니다."
+    },
+    {
+      "id": "peloponnesian-power-centers",
+      "labelKo": "펠로폰네소스 권력 중심",
+      "parentId": "ancient-greek-world",
+      "periodKo": "기원전 10-4세기",
+      "summaryKo": "스파르타, 코린토스, 미케네, 올림피아처럼 펠로폰네소스의 군사, 교역, 성소, 청동기 기억이 결합된 권역을 묶습니다."
+    },
+    {
+      "id": "panhellenic-sanctuaries-games",
+      "labelKo": "범그리스 성소와 제전",
+      "parentId": "ancient-greek-world",
+      "periodKo": "기원전 8세기 이후",
+      "summaryKo": "델포이와 올림피아처럼 여러 폴리스가 경쟁과 봉헌, 신탁, 제전을 통해 연결되던 종교·외교 중심지를 설명합니다."
+    },
+    {
+      "id": "aegean-anatolian-crossroads",
+      "labelKo": "에게해·아나톨리아 접점",
+      "parentId": "ancient-greek-world",
+      "periodKo": "청동기-고전기",
+      "summaryKo": "트로이와 밀레토스처럼 에게해와 아나톨리아, 흑해와 지중해가 만나는 이동·교역·문화 접점을 다룹니다."
+    },
+    {
+      "id": "ionian-maritime-knowledge-network",
+      "labelKo": "이오니아 해상·지식 네트워크",
+      "parentId": "ancient-greek-world",
+      "periodKo": "기원전 7-5세기",
+      "summaryKo": "밀레토스처럼 해상 교역, 식민 활동, 자연철학과 지식 생산이 연결된 이오니아 도시 네트워크를 보는 맥락입니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "athens-acropolis",
+      "titleKo": "아테네 아크로폴리스",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "그리스",
+      "coordinates": {
+        "lat": 37.9715,
+        "lng": 23.7267
+      },
+      "yearLabelKo": "기원전 13세기 방어벽, 기원전 5세기 전성기",
+      "summaryKo": "아티카 폴리스의 종교·상징 중심으로, 고전기 아테네 민주정, 제국, 예술 후원이 파르테논과 여러 기념 건축에 응축된 장소입니다.",
+      "stage2": {
+        "primaryContextId": "classical-polis-civic-centers",
+        "contextIds": [
+          "ancient-greek-world",
+          "classical-polis-civic-centers"
+        ],
+        "periodPathKo": [
+          "고대",
+          "고대 그리스",
+          "아티카 고전기 폴리스"
+        ],
+        "topicTagsKo": [
+          "아테네",
+          "아크로폴리스",
+          "파르테논",
+          "민주정",
+          "페리클레스"
+        ],
+        "uiFilters": {
+          "era": "고전기 그리스",
+          "region": "아티카",
+          "theme": [
+            "폴리스",
+            "민주정·제국"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 세계유산과 World History Encyclopedia가 함께 있어 유적 위치와 고전기 아테네 맥락 신뢰도가 높습니다."
+        }
+      }
+    },
+    {
+      "entryId": "sparta-laconia",
+      "titleKo": "스파르타",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "그리스",
+      "coordinates": {
+        "lat": 37.0745,
+        "lng": 22.43
+      },
+      "yearLabelKo": "기원전 10세기경 정착 이후",
+      "summaryKo": "라코니아 에우로타스 계곡의 군사 귀족정 폴리스로, 헤일로타이 노동과 시민 전사 훈련 체계가 그리스 권력 균형에 큰 영향을 주었습니다.",
+      "stage2": {
+        "primaryContextId": "peloponnesian-power-centers",
+        "contextIds": [
+          "ancient-greek-world",
+          "classical-polis-civic-centers",
+          "peloponnesian-power-centers"
+        ],
+        "periodPathKo": [
+          "고대",
+          "고대 그리스",
+          "펠로폰네소스 군사 폴리스"
+        ],
+        "topicTagsKo": [
+          "스파르타",
+          "라케다이몬",
+          "라코니아",
+          "헤일로타이",
+          "펠로폰네소스 전쟁"
+        ],
+        "uiFilters": {
+          "era": "고전기 그리스",
+          "region": "펠로폰네소스",
+          "theme": [
+            "폴리스",
+            "군사 체제"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 0,
+          "referenceSources": 2,
+          "noteKo": "현대 스파르티가 고대 스파르타 권역 위에 이어져 있어 표시 좌표는 도시 중심부 근사값으로 관리합니다."
+        }
+      }
+    },
+    {
+      "entryId": "ancient-corinth",
+      "titleKo": "코린토스",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "그리스",
+      "coordinates": {
+        "lat": 37.906,
+        "lng": 22.879
+      },
+      "yearLabelKo": "기원전 8-6세기 전성",
+      "summaryKo": "그리스 본토와 펠로폰네소스를 잇는 지협의 상업·해상 교역 폴리스로, 항구, 식민 활동, 아폴론 신전, 아크로코린토스가 결합됩니다.",
+      "stage2": {
+        "primaryContextId": "classical-polis-civic-centers",
+        "contextIds": [
+          "ancient-greek-world",
+          "classical-polis-civic-centers",
+          "peloponnesian-power-centers"
+        ],
+        "periodPathKo": [
+          "고대",
+          "고대 그리스",
+          "코린토스 지협 폴리스"
+        ],
+        "topicTagsKo": [
+          "코린토스",
+          "아크로코린토스",
+          "지협",
+          "해상 교역",
+          "아폴론 신전"
+        ],
+        "uiFilters": {
+          "era": "고전기 그리스",
+          "region": "펠로폰네소스",
+          "theme": [
+            "폴리스",
+            "해상 교역"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "그리스 문화부 유적 정보와 World History Encyclopedia를 함께 사용해 유적 중심 좌표와 도시 성격을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "thebes-boeotia",
+      "titleKo": "테베",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "그리스",
+      "coordinates": {
+        "lat": 38.3222,
+        "lng": 23.3189
+      },
+      "yearLabelKo": "기원전 3000년경 이후, 기원전 4세기 패권",
+      "summaryKo": "보이오티아 평원의 오래된 도시로, 신화 전승, 미케네 시대 중심지, 보이오티아 동맹, 기원전 4세기 패권이 겹쳐진 장소입니다.",
+      "stage2": {
+        "primaryContextId": "classical-polis-civic-centers",
+        "contextIds": [
+          "ancient-greek-world",
+          "classical-polis-civic-centers"
+        ],
+        "periodPathKo": [
+          "고대",
+          "고대 그리스",
+          "보이오티아 폴리스와 동맹"
+        ],
+        "topicTagsKo": [
+          "테베",
+          "보이오티아",
+          "카드메이아",
+          "에파메이논다스",
+          "레욱트라"
+        ],
+        "uiFilters": {
+          "era": "고전기 그리스",
+          "region": "중부 그리스",
+          "theme": [
+            "폴리스",
+            "군사 체제"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 0,
+          "referenceSources": 2,
+          "noteKo": "현대 테베가 고대 도시 위에 이어져 있어 카드메이아 권역의 근사 좌표로 표시합니다."
+        }
+      }
+    },
+    {
+      "entryId": "delphi",
+      "titleKo": "델포이",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "그리스",
+      "coordinates": {
+        "lat": 38.4823,
+        "lng": 22.501
+      },
+      "yearLabelKo": "기원전 8세기 이후",
+      "summaryKo": "파르나소스 산기슭의 아폴론 성소로, 신탁과 피티아 제전, 폴리스 봉헌물이 종교·정치·외교를 연결한 범그리스 중심지입니다.",
+      "stage2": {
+        "primaryContextId": "panhellenic-sanctuaries-games",
+        "contextIds": [
+          "ancient-greek-world",
+          "panhellenic-sanctuaries-games"
+        ],
+        "periodPathKo": [
+          "고대",
+          "고대 그리스",
+          "아폴론 신탁과 범그리스 성소"
+        ],
+        "topicTagsKo": [
+          "델포이",
+          "아폴론",
+          "피티아",
+          "신탁",
+          "봉헌물"
+        ],
+        "uiFilters": {
+          "era": "고전기 그리스",
+          "region": "중부 그리스",
+          "theme": [
+            "범그리스 성소",
+            "신화·서사"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 세계유산 좌표와 World History Encyclopedia가 함께 있어 신탁 성소 맥락 신뢰도가 높습니다."
+        }
+      }
+    },
+    {
+      "entryId": "olympia",
+      "titleKo": "올림피아",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "그리스",
+      "coordinates": {
+        "lat": 37.6379,
+        "lng": 21.63
+      },
+      "yearLabelKo": "기원전 10세기 이후, 기원전 776년 올림픽",
+      "summaryKo": "제우스에게 바쳐진 범그리스 성소이자 올림픽 경기의 무대로, 신전, 제단, 경기장, 체육 시설이 한 권역에 모여 있습니다.",
+      "stage2": {
+        "primaryContextId": "panhellenic-sanctuaries-games",
+        "contextIds": [
+          "ancient-greek-world",
+          "peloponnesian-power-centers",
+          "panhellenic-sanctuaries-games"
+        ],
+        "periodPathKo": [
+          "고대",
+          "고대 그리스",
+          "제우스 성소와 올림픽"
+        ],
+        "topicTagsKo": [
+          "올림피아",
+          "제우스",
+          "올림픽",
+          "알티스",
+          "제전"
+        ],
+        "uiFilters": {
+          "era": "고전기 그리스",
+          "region": "펠로폰네소스",
+          "theme": [
+            "범그리스 성소"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 세계유산과 World History Encyclopedia를 기준으로 위치와 범그리스 제전 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "knossos",
+      "titleKo": "크노소스",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "그리스",
+      "coordinates": {
+        "lat": 35.2983,
+        "lng": 25.1631
+      },
+      "yearLabelKo": "기원전 1900-1100년경 궁전 중심",
+      "summaryKo": "크레타 미노아 문명의 대표 궁전 중심지로, 행정, 의례, 저장, 공방 기능이 결합된 에게해 청동기 문명의 핵심 거점입니다.",
+      "stage2": {
+        "primaryContextId": "aegean-bronze-age-palatial-world",
+        "contextIds": [
+          "ancient-greek-world",
+          "aegean-bronze-age-palatial-world"
+        ],
+        "periodPathKo": [
+          "고대",
+          "에게해 청동기",
+          "미노아 궁전 중심지"
+        ],
+        "topicTagsKo": [
+          "크노소스",
+          "미노아",
+          "궁전",
+          "선형문자",
+          "크레타"
+        ],
+        "uiFilters": {
+          "era": "청동기 에게해",
+          "region": "크레타",
+          "theme": [
+            "궁전·성채",
+            "해상 교역"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 미노아 궁전 중심지 자료와 World History Encyclopedia를 함께 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "mycenae",
+      "titleKo": "미케네",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "그리스",
+      "coordinates": {
+        "lat": 37.7309,
+        "lng": 22.7547
+      },
+      "yearLabelKo": "기원전 1600-1100년경",
+      "summaryKo": "후기 청동기 에게해 세계를 대표하는 성채 도시로, 사자문, 원형묘역, 궁전 유구가 왕권과 전사 귀족 문화를 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "mycenaean-epic-memory",
+        "contextIds": [
+          "ancient-greek-world",
+          "aegean-bronze-age-palatial-world",
+          "mycenaean-epic-memory",
+          "peloponnesian-power-centers"
+        ],
+        "periodPathKo": [
+          "고대",
+          "에게해 청동기",
+          "미케네 성채와 영웅 전승"
+        ],
+        "topicTagsKo": [
+          "미케네",
+          "사자문",
+          "아가멤논",
+          "성채",
+          "미케네 문명"
+        ],
+        "uiFilters": {
+          "era": "청동기 에게해",
+          "region": "펠로폰네소스",
+          "theme": [
+            "궁전·성채",
+            "신화·서사"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 미케네와 티린스 세계유산 좌표와 World History Encyclopedia를 함께 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "troy-hisarlik",
+      "titleKo": "트로이",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "튀르키예",
+      "coordinates": {
+        "lat": 39.9572,
+        "lng": 26.2389
+      },
+      "yearLabelKo": "기원전 3000년경-기원후 12세기",
+      "summaryKo": "다르다넬스 남쪽 히사를르크 언덕의 장기 점유 유적으로, 에게해와 아나톨리아 접점, 청동기 성채, 호메로스 전승이 겹칩니다.",
+      "stage2": {
+        "primaryContextId": "aegean-anatolian-crossroads",
+        "contextIds": [
+          "ancient-greek-world",
+          "mycenaean-epic-memory",
+          "aegean-anatolian-crossroads"
+        ],
+        "periodPathKo": [
+          "고대",
+          "에게해·아나톨리아",
+          "트로아스 성채와 서사 기억"
+        ],
+        "topicTagsKo": [
+          "트로이",
+          "일리온",
+          "히사를르크",
+          "일리아스",
+          "다르다넬스"
+        ],
+        "uiFilters": {
+          "era": "청동기 에게해",
+          "region": "트로아스",
+          "theme": [
+            "궁전·성채",
+            "신화·서사",
+            "해상 교역"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 트로이 고고유적 세계유산과 World History Encyclopedia를 함께 사용해 위치 신뢰도가 높습니다."
+        }
+      }
+    },
+    {
+      "entryId": "miletus",
+      "titleKo": "밀레토스",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "튀르키예",
+      "coordinates": {
+        "lat": 37.5294,
+        "lng": 27.2775
+      },
+      "yearLabelKo": "기원전 7-5세기 전성",
+      "summaryKo": "서아나톨리아 이오니아의 대표 항구도시로, 흑해와 지중해 식민 활동, 교역, 자연철학의 출발점과 연결됩니다.",
+      "stage2": {
+        "primaryContextId": "ionian-maritime-knowledge-network",
+        "contextIds": [
+          "ancient-greek-world",
+          "aegean-anatolian-crossroads",
+          "ionian-maritime-knowledge-network"
+        ],
+        "periodPathKo": [
+          "고대",
+          "고대 그리스",
+          "이오니아 해상·지식 네트워크"
+        ],
+        "topicTagsKo": [
+          "밀레토스",
+          "이오니아",
+          "탈레스",
+          "자연철학",
+          "식민 활동"
+        ],
+        "uiFilters": {
+          "era": "이오니아·아나톨리아",
+          "region": "이오니아",
+          "theme": [
+            "해상 교역",
+            "지식사"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 0,
+          "referenceSources": 2,
+          "noteKo": "Britannica와 World History Encyclopedia를 기준으로 하며, 발라트 인근 고대도시 중심 좌표를 사용합니다."
+        }
+      }
+    }
+  ]
+}

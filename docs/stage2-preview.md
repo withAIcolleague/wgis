@@ -94,6 +94,19 @@ The sixth pilot dataset tests early China civilization formation across Yellow R
 - `yinxu-anyang`
 - `sanxingdui`
 
+The seventh pilot dataset tests ancient Greek Bronze Age, polis, sanctuary, Aegean-Anatolian, and Ionian network contexts:
+
+- `athens-acropolis`
+- `sparta-laconia`
+- `ancient-corinth`
+- `thebes-boeotia`
+- `delphi`
+- `olympia`
+- `knossos`
+- `mycenae`
+- `troy-hisarlik`
+- `miletus`
+
 The dataset list is managed in:
 
 ```text
