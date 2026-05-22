@@ -1,0 +1,507 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-achaemenid-persia-core-preview",
+  "titleKo": "2단계 미리보기: 아케메네스 페르시아 핵심 유적",
+  "descriptionKo": "파사르가다에, 페르세폴리스, 수사, 엑바타나, 베히스툰, 나크셰 로스탐, 사르디스, 다스킬레이온을 통해 아케메네스 페르시아 제국의 왕실 수도, 의례 경관, 왕권 비문, 왕도와 사트라피 네트워크를 나누어 보는 샘플입니다.",
+  "modelComparison": {
+    "currentKo": [
+      "1단계에서는 각 항목이 지도상의 위치, 현재 국가, 간단한 시대와 요약 정보로 표시됩니다.",
+      "사용자는 페르세폴리스나 베히스툰처럼 잘 알려진 유적을 검색해 위치와 기본 정보를 확인할 수 있습니다.",
+      "하지만 왕실 수도, 사트라피 행정, 왕도, 비문, 엘람·메디아 계승 같은 연구 맥락은 항목 요약 안에 섞여 있습니다."
+    ],
+    "stage2Ko": [
+      "2단계에서는 같은 항목을 파르스 왕실 수도권, 의례·왕릉 경관, 수사 행정권, 메디아 고원권, 서아나톨리아 사트라피, 제국 통신망 같은 맥락으로 분리합니다.",
+      "사용자용 필터는 권역과 주제 중심으로 단순화하고, 연구 태그에는 왕도, 다리우스 비문, 조공 부조, 사트라피 행정 같은 더 세밀한 분류를 담습니다.",
+      "UNESCO, Encyclopaedia Iranica, World History Encyclopedia, Britannica 등 기존 출처를 sourceConfidence로 요약해 위치와 해석의 신뢰도를 따로 보여줍니다."
+    ]
+  },
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "초기 아케메네스",
+        "다리우스-크세르크세스기",
+        "메디아·엘람 계승권",
+        "서방 사트라피"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "파르스",
+        "후제스탄·엘람",
+        "자그로스·메디아",
+        "서아나톨리아·리디아",
+        "헬레스폰토스 프리기아"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "왕실 수도",
+        "의례·궁전",
+        "왕릉",
+        "비문·왕권 선전",
+        "왕도·통신",
+        "사트라피 행정",
+        "제국 변방",
+        "엘람·메디아 계승"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지도 유형",
+      "options": [
+        "장소",
+        "유적"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "achaemenid-persian-empire",
+      "labelKo": "아케메네스 페르시아 제국",
+      "parentId": null,
+      "periodKo": "기원전 550-330년경",
+      "summaryKo": "키루스 2세 이후 서아시아, 이란 고원, 아나톨리아, 이집트까지 연결한 광역 제국을 왕실 중심지와 지방 통치망으로 함께 보는 기본 맥락입니다."
+    },
+    {
+      "id": "persis-royal-capitals",
+      "labelKo": "파르스 왕실 수도권",
+      "parentId": "achaemenid-persian-empire",
+      "periodKo": "기원전 6-4세기",
+      "summaryKo": "파사르가다에, 페르세폴리스, 나크셰 로스탐처럼 파르스 지역에 집중된 왕실 건축, 정원, 의례 단상, 왕릉을 연결합니다."
+    },
+    {
+      "id": "imperial-ceremonial-landscape",
+      "labelKo": "제국 의례와 궁전 경관",
+      "parentId": "achaemenid-persian-empire",
+      "periodKo": "기원전 6-4세기",
+      "summaryKo": "왕, 조공 행렬, 의례 공간, 궁전 단상이 결합해 여러 민족을 통합한 제국 질서를 시각화한 장소들을 묶습니다."
+    },
+    {
+      "id": "elamite-susian-administration",
+      "labelKo": "엘람·수사 행정권",
+      "parentId": "achaemenid-persian-empire",
+      "periodKo": "기원전 5천년기 이후, 아케메네스기 집중",
+      "summaryKo": "수사를 중심으로 기존 엘람 도시 전통과 아케메네스 왕실 행정이 겹쳐진 장기 도시·궁전 맥락을 설명합니다."
+    },
+    {
+      "id": "median-iranian-highlands",
+      "labelKo": "메디아와 이란 고원 통치권",
+      "parentId": "achaemenid-persian-empire",
+      "periodKo": "기원전 7-4세기",
+      "summaryKo": "엑바타나와 베히스툰처럼 메디아 고원, 자그로스 통로, 왕권 정당화가 연결되는 이란 내륙 권력 중심을 다룹니다."
+    },
+    {
+      "id": "royal-road-satrapal-network",
+      "labelKo": "왕도와 사트라피 네트워크",
+      "parentId": "achaemenid-persian-empire",
+      "periodKo": "기원전 6-4세기",
+      "summaryKo": "수사에서 서아나톨리아로 이어지는 통신·군사·재정 경로와 지방 총독령 거점을 함께 보는 제국 운영 맥락입니다."
+    },
+    {
+      "id": "imperial-inscriptions-kingship",
+      "labelKo": "왕권 비문과 정당화",
+      "parentId": "achaemenid-persian-empire",
+      "periodKo": "기원전 6-4세기",
+      "summaryKo": "베히스툰, 나크셰 로스탐, 페르세폴리스 부조처럼 왕권의 기원, 정복, 질서, 신성성을 문자와 이미지로 표현한 자료를 묶습니다."
+    },
+    {
+      "id": "western-anatolian-frontier-satrapies",
+      "labelKo": "서아나톨리아 사트라피와 변방",
+      "parentId": "achaemenid-persian-empire",
+      "periodKo": "기원전 546-334년경",
+      "summaryKo": "사르디스와 다스킬레이온을 중심으로 리디아, 프리기아, 그리스 세계와 맞닿은 서방 제국 행정과 변방 문화를 설명합니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "pasargadae",
+      "titleKo": "파사르가다에",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "이란",
+      "coordinates": {
+        "lat": 30.1939,
+        "lng": 53.1676
+      },
+      "yearLabelKo": "기원전 6세기, 키루스 2세 창건",
+      "summaryKo": "키루스 2세가 세운 아케메네스 왕조의 첫 왕실 수도로, 키루스의 무덤과 궁전, 정원 배치가 이후 페르시아 왕실 경관의 출발점이 됩니다.",
+      "stage2": {
+        "primaryContextId": "persis-royal-capitals",
+        "contextIds": [
+          "achaemenid-persian-empire",
+          "persis-royal-capitals",
+          "imperial-ceremonial-landscape"
+        ],
+        "periodPathKo": [
+          "고대",
+          "아케메네스 페르시아",
+          "키루스 2세의 초기 왕실 수도"
+        ],
+        "topicTagsKo": [
+          "파사르가다에",
+          "키루스 2세",
+          "키루스의 무덤",
+          "사방정원",
+          "초기 왕실 수도"
+        ],
+        "uiFilters": {
+          "era": "초기 아케메네스",
+          "region": "파르스",
+          "theme": [
+            "왕실 수도",
+            "의례·궁전"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 세계유산 좌표와 World History Encyclopedia 항목이 함께 있어 위치와 초기 왕실 수도 맥락의 신뢰도가 높습니다."
+        }
+      }
+    },
+    {
+      "entryId": "persepolis",
+      "titleKo": "페르세폴리스",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "이란",
+      "coordinates": {
+        "lat": 29.9355,
+        "lng": 52.8916
+      },
+      "yearLabelKo": "기원전 518-330년경",
+      "summaryKo": "다리우스 1세가 조성한 제국의 의례적 왕실 중심지로, 단상 위 궁전과 조공 행렬 부조가 광역 제국 질서를 시각적으로 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "imperial-ceremonial-landscape",
+        "contextIds": [
+          "achaemenid-persian-empire",
+          "persis-royal-capitals",
+          "imperial-ceremonial-landscape",
+          "imperial-inscriptions-kingship"
+        ],
+        "periodPathKo": [
+          "고대",
+          "아케메네스 페르시아",
+          "다리우스 1세의 의례 궁전 경관"
+        ],
+        "topicTagsKo": [
+          "페르세폴리스",
+          "파르사",
+          "다리우스 1세",
+          "아파다나",
+          "조공 행렬 부조"
+        ],
+        "uiFilters": {
+          "era": "다리우스-크세르크세스기",
+          "region": "파르스",
+          "theme": [
+            "왕실 수도",
+            "의례·궁전",
+            "비문·왕권 선전"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 세계유산 좌표와 World History Encyclopedia 항목이 함께 있어 위치와 의례 경관 맥락 신뢰도가 높습니다."
+        }
+      }
+    },
+    {
+      "entryId": "susa",
+      "titleKo": "수사",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이란",
+      "coordinates": {
+        "lat": 32.1894,
+        "lng": 48.2578
+      },
+      "yearLabelKo": "기원전 5천년기 이후, 아케메네스 왕실 수도",
+      "summaryKo": "엘람 시대부터 이어진 장기 도시 유적이자 아케메네스 제국의 주요 행정·왕실 거점으로, 광역 통치가 기존 도시 전통을 활용한 방식을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "elamite-susian-administration",
+        "contextIds": [
+          "achaemenid-persian-empire",
+          "elamite-susian-administration",
+          "royal-road-satrapal-network"
+        ],
+        "periodPathKo": [
+          "고대",
+          "엘람·아케메네스 페르시아",
+          "수사 왕실 행정 중심"
+        ],
+        "topicTagsKo": [
+          "수사",
+          "슈샨",
+          "엘람",
+          "다리우스 궁전",
+          "왕도 동부 거점"
+        ],
+        "uiFilters": {
+          "era": "메디아·엘람 계승권",
+          "region": "후제스탄·엘람",
+          "theme": [
+            "왕실 수도",
+            "엘람·메디아 계승",
+            "왕도·통신"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 세계유산 자료와 World History Encyclopedia 항목이 있어 장기 도시와 왕실 행정 거점 해석의 신뢰도가 높습니다."
+        }
+      }
+    },
+    {
+      "entryId": "ecbatana-hegmataneh",
+      "titleKo": "엑바타나",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이란",
+      "coordinates": {
+        "lat": 34.7992,
+        "lng": 48.5127
+      },
+      "yearLabelKo": "기원전 7세기 이후, 아케메네스 여름 수도",
+      "summaryKo": "메디아의 중심지로 전해지고 이후 여러 이란 왕조의 여름 수도와 정부 거점으로 기능한 장소로, 이란 고원 북서부 권력 중심의 지속성을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "median-iranian-highlands",
+        "contextIds": [
+          "achaemenid-persian-empire",
+          "median-iranian-highlands",
+          "royal-road-satrapal-network"
+        ],
+        "periodPathKo": [
+          "고대",
+          "메디아·아케메네스 페르시아",
+          "이란 고원 북서부 수도권"
+        ],
+        "topicTagsKo": [
+          "엑바타나",
+          "헤그마타네",
+          "메디아",
+          "하마단",
+          "여름 수도"
+        ],
+        "uiFilters": {
+          "era": "메디아·엘람 계승권",
+          "region": "자그로스·메디아",
+          "theme": [
+            "왕실 수도",
+            "엘람·메디아 계승",
+            "왕도·통신"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO Hegmataneh 자료와 Britannica 항목을 사용하지만, 고대 엑바타나의 정확한 범위는 현대 하마단 유적권 근사값으로 관리합니다."
+        }
+      }
+    },
+    {
+      "entryId": "behistun",
+      "titleKo": "베히스툰",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "이란",
+      "coordinates": {
+        "lat": 34.3884,
+        "lng": 47.436
+      },
+      "yearLabelKo": "기원전 521-520년경 다리우스 비문",
+      "summaryKo": "다리우스 1세가 왕위 장악과 반란 진압을 새긴 부조·삼언어 비문 유적으로, 왕권 정당화와 설형문자 해독사에서 핵심 자료입니다.",
+      "stage2": {
+        "primaryContextId": "imperial-inscriptions-kingship",
+        "contextIds": [
+          "achaemenid-persian-empire",
+          "median-iranian-highlands",
+          "royal-road-satrapal-network",
+          "imperial-inscriptions-kingship"
+        ],
+        "periodPathKo": [
+          "고대",
+          "아케메네스 페르시아",
+          "다리우스 1세 왕권 비문"
+        ],
+        "topicTagsKo": [
+          "베히스툰",
+          "비소툰",
+          "다리우스 1세",
+          "고대 페르시아어",
+          "삼언어 비문"
+        ],
+        "uiFilters": {
+          "era": "다리우스-크세르크세스기",
+          "region": "자그로스·메디아",
+          "theme": [
+            "비문·왕권 선전",
+            "왕도·통신"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO Bisotun 세계유산 좌표와 World History Encyclopedia 비문 항목이 함께 있어 위치와 비문 맥락 신뢰도가 높습니다."
+        }
+      }
+    },
+    {
+      "entryId": "naqsh-e-rostam",
+      "titleKo": "나크셰 로스탐",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "이란",
+      "coordinates": {
+        "lat": 29.9883,
+        "lng": 52.8747
+      },
+      "yearLabelKo": "기원전 6-4세기 왕릉",
+      "summaryKo": "페르세폴리스 북서쪽 절벽의 아케메네스 왕릉군으로, 다리우스 1세의 무덤과 후대 왕릉들이 왕, 아후라 마즈다, 제국 민족의 이미지를 결합합니다.",
+      "stage2": {
+        "primaryContextId": "imperial-inscriptions-kingship",
+        "contextIds": [
+          "achaemenid-persian-empire",
+          "persis-royal-capitals",
+          "imperial-ceremonial-landscape",
+          "imperial-inscriptions-kingship"
+        ],
+        "periodPathKo": [
+          "고대",
+          "아케메네스 페르시아",
+          "파르스 왕릉과 왕권 이미지"
+        ],
+        "topicTagsKo": [
+          "나크셰 로스탐",
+          "다리우스 왕릉",
+          "아후라 마즈다",
+          "왕릉군",
+          "제국 부조"
+        ],
+        "uiFilters": {
+          "era": "다리우스-크세르크세스기",
+          "region": "파르스",
+          "theme": [
+            "왕릉",
+            "비문·왕권 선전"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 0,
+          "referenceSources": 2,
+          "noteKo": "Encyclopaedia Iranica 자료를 중심으로 왕릉군 좌표와 왕권 도상 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "sardis",
+      "titleKo": "사르디스",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "튀르키예",
+      "coordinates": {
+        "lat": 38.4881,
+        "lng": 28.04
+      },
+      "yearLabelKo": "기원전 7세기 이후, 기원전 546년 페르시아 편입",
+      "summaryKo": "리디아 왕국의 수도였고 아케메네스 제국 서방 통치의 핵심 거점이 된 도시로, 수사에서 이어지는 페르시아 왕도의 서쪽 종점입니다.",
+      "stage2": {
+        "primaryContextId": "western-anatolian-frontier-satrapies",
+        "contextIds": [
+          "achaemenid-persian-empire",
+          "royal-road-satrapal-network",
+          "western-anatolian-frontier-satrapies"
+        ],
+        "periodPathKo": [
+          "고대",
+          "아케메네스 페르시아",
+          "서아나톨리아 리디아 사트라피"
+        ],
+        "topicTagsKo": [
+          "사르디스",
+          "리디아",
+          "크로이소스",
+          "페르시아 왕도",
+          "서방 사트라피"
+        ],
+        "uiFilters": {
+          "era": "서방 사트라피",
+          "region": "서아나톨리아·리디아",
+          "theme": [
+            "왕도·통신",
+            "사트라피 행정",
+            "제국 변방"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 0,
+          "referenceSources": 2,
+          "noteKo": "World History Encyclopedia와 Britannica 항목이 도시의 리디아·페르시아 맥락을 함께 설명하며, 고고유적 중심 좌표를 사용합니다."
+        }
+      }
+    },
+    {
+      "entryId": "daskyleion",
+      "titleKo": "다스킬레이온",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "튀르키예",
+      "coordinates": {
+        "lat": 40.1321,
+        "lng": 28.0508
+      },
+      "yearLabelKo": "기원전 6-4세기 페르시아 사트라피 중심",
+      "summaryKo": "마니아스 호수 근처의 서아나톨리아 사트라피 중심지로, 아케메네스 제국이 해협과 북서 아나톨리아를 관리하던 행정 거점입니다.",
+      "stage2": {
+        "primaryContextId": "western-anatolian-frontier-satrapies",
+        "contextIds": [
+          "achaemenid-persian-empire",
+          "royal-road-satrapal-network",
+          "western-anatolian-frontier-satrapies"
+        ],
+        "periodPathKo": [
+          "고대",
+          "아케메네스 페르시아",
+          "헬레스폰토스 프리기아 사트라피"
+        ],
+        "topicTagsKo": [
+          "다스킬레이온",
+          "히사르테페",
+          "헬레스폰토스 프리기아",
+          "사트라피",
+          "제국 변방"
+        ],
+        "uiFilters": {
+          "era": "서방 사트라피",
+          "region": "헬레스폰토스 프리기아",
+          "theme": [
+            "사트라피 행정",
+            "제국 변방"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 0,
+          "referenceSources": 2,
+          "noteKo": "Encyclopaedia Iranica와 현장 소개 자료를 사용하며, 히사르테페 다스킬레이온 유적 공개 좌표를 근사값으로 관리합니다."
+        }
+      }
+    }
+  ]
+}

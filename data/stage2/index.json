@@ -44,6 +44,12 @@
       "titleKo": "고대 그리스 핵심 유적",
       "path": "data/stage2/ancient-greece-core-preview.json",
       "status": "preview-only"
+    },
+    {
+      "id": "stage2-achaemenid-persia-core-preview",
+      "titleKo": "아케메네스 페르시아 핵심 유적",
+      "path": "data/stage2/achaemenid-persia-core-preview.json",
+      "status": "preview-only"
     }
   ]
 }

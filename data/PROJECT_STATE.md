@@ -14,7 +14,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Current entry count: 250
 - Completed curation batches: 31
 - Latest completed batch: `africa-egypt-late-temple-centers-v1`
-- Latest completed infrastructure milestone: stage-2 detail-flow refinement
+- Latest completed infrastructure milestone: stage-2 eight-dataset public usability pass
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
@@ -154,6 +154,19 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - Scope: make the Stage 2 detail panel easier to close, return from, and use on mobile after adding more datasets
   - Checked: hidden empty-detail state, detail `지도에서 보기` action, detail `닫기` action, Escape close wiring, current search marker preservation after close, mobile detail scroll-into-view, mobile map-return flow, stale map-animation cleanup after dataset switching, and removal of blank space below the hidden mobile detail panel
   - Result: local and public browser passes completed for 7 datasets and 66 Stage 2 preview entries
+
+- Stage-2 Achaemenid Persia core pilot dataset
+  - Files: `data/stage2/index.json`, `data/stage2/achaemenid-persia-core-preview.json`, `stage2-preview.js`, `scripts/smoke-check.js`, `docs/stage2-preview.md`
+  - URL path: `/stage2-preview.html`
+  - Scope: add an eighth Stage 2 preview dataset using the existing Achaemenid Persia core imperial sites batch
+  - Model stress test: Persian royal capitals, ceremonial palace landscapes, Elamite and Median inheritance, imperial inscriptions and kingship, royal road/satrapal administration, and western Anatolian frontier satrapies
+
+- Stage-2 eight-dataset public usability pass
+  - Files: `stage2-preview.js`, `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`
+  - URL path: `https://wgis.vercel.app/stage2-preview.html`
+  - Scope: keep the public Stage 2 preview browser check repeatable after adding the eighth dataset
+  - Checked: 8-dataset selector, expected entry/marker/label counts across 74 Stage 2 preview entries, compact context filters, Achaemenid Persia search/detail/context behavior, stale Persian marker cleanup, deterministic map reframing after detail zoom, mobile entry-list scrolling, mobile detail map-return flow, and hidden-detail close behavior
+  - Result: local and public browser passes completed for 8 datasets and 74 Stage 2 preview entries
 
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`
@@ -620,8 +633,8 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Stage-2 eighth pilot dataset
-   - Scope: create another Stage 2 file from Achaemenid Persia to compare imperial road, capital, inscription, and satrapal network contexts against the current ancient civilization samples
+1. Stage-2 ninth pilot dataset
+   - Scope: create another Stage 2 file from Roman Republic and Empire core sites to compare imperial urban, military frontier, port, provincial capital, and late antique transformation contexts
 
 2. First-stage DB next expansion batch
    - Scope: resume focused first-stage source-record growth if the priority shifts back from Stage 2 modeling to raw coverage

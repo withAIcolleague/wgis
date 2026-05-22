@@ -151,6 +151,26 @@ function clearMarkers() {
     .forEach(tooltip => tooltip.remove());
 }
 
+function fitMapToEntries(entries) {
+  if (!entries.length) return;
+
+  if (entries.length === 1) {
+    const [entry] = entries;
+    stage2Map.setView([entry.coordinates.lat, entry.coordinates.lng], 8, { animate: false });
+    return;
+  }
+
+  const bounds = L.latLngBounds(entries.map(entry => [entry.coordinates.lat, entry.coordinates.lng]));
+  const paddedBounds = bounds.pad(0.2);
+  const nextZoom = stage2Map.getBoundsZoom(paddedBounds);
+
+  stage2Map.fitBounds(paddedBounds, { animate: false, maxZoom: 8 });
+
+  if (Number.isFinite(nextZoom)) {
+    stage2Map.setView(paddedBounds.getCenter(), Math.min(nextZoom, 8), { animate: false });
+  }
+}
+
 function renderDatasetSelect() {
   const select = document.getElementById('datasetSelect');
   if (!select || !stage2Index) return;
@@ -266,8 +286,7 @@ function renderMarkers({ fit = false } = {}) {
 
   if (!fit || !entries.length) return;
 
-  const bounds = L.latLngBounds(entries.map(entry => [entry.coordinates.lat, entry.coordinates.lng]));
-  stage2Map.fitBounds(bounds.pad(0.2), { animate: false });
+  fitMapToEntries(entries);
 }
 
 function scrollDetailIntoView() {
@@ -277,8 +296,11 @@ function scrollDetailIntoView() {
 }
 
 function focusMapOnEntry(entry) {
-  const nextZoom = Math.max(stage2Map.getZoom(), 8);
-  stage2Map.setView([entry.coordinates.lat, entry.coordinates.lng], nextZoom, { animate: true });
+  stage2Map.stop();
+
+  const currentZoom = stage2Map.getZoom();
+  const nextZoom = Number.isFinite(currentZoom) ? Math.max(currentZoom, 8) : 8;
+  stage2Map.setView([entry.coordinates.lat, entry.coordinates.lng], nextZoom, { animate: false });
 
   if (isMobileLayout()) {
     document.getElementById('stage2Map').scrollIntoView({ block: 'start', behavior: 'smooth' });
@@ -306,7 +328,8 @@ function selectEntry(entryId, { pan = false, revealDetail = false } = {}) {
   renderMarkers();
 
   if (pan) {
-    stage2Map.setView([entry.coordinates.lat, entry.coordinates.lng], 6, { animate: true });
+    stage2Map.stop();
+    stage2Map.setView([entry.coordinates.lat, entry.coordinates.lng], 6, { animate: false });
   }
 
   if (revealDetail) {

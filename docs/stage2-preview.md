@@ -107,6 +107,17 @@ The seventh pilot dataset tests ancient Greek Bronze Age, polis, sanctuary, Aege
 - `troy-hisarlik`
 - `miletus`
 
+The eighth pilot dataset tests Achaemenid Persian royal capitals, ceremonial landscapes, inscriptions, royal road/satrapal networks, and western Anatolian frontier contexts:
+
+- `pasargadae`
+- `persepolis`
+- `susa`
+- `ecbatana-hegmataneh`
+- `behistun`
+- `naqsh-e-rostam`
+- `sardis`
+- `daskyleion`
+
 The dataset list is managed in:
 
 ```text
@@ -205,3 +216,19 @@ The 2026-05-22 detail-flow pass refined how the Stage 2 detail panel behaves aft
 - On mobile, selecting a list item or marker scrolls the detail panel into view, and closing the panel avoids leaving a large blank area below the map.
 - Dataset and filter refreshes stop pending map animations before fitting new result bounds, preventing stale map positions after a `지도에서 보기` action.
 - The browser pass verifies these desktop and mobile detail-flow behaviors alongside the 7-dataset switching, search, filter, marker-label, and scrolling checks.
+
+## Eight-Dataset Public Usability Pass
+
+The 2026-05-22 eight-dataset browser pass checks `/stage2-preview.html` after adding the Achaemenid Persia pilot dataset:
+
+- Dataset selector exposes 8 datasets.
+- All 8 indexed datasets render their expected entry, marker, and permanent-label counts: Atlantic revolutions 8, Ethiopia 8, Mesopotamia 10, Egypt 14, Indus 8, Early China 8, Ancient Greece 10, and Achaemenid Persia 8.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control after every dataset switch.
+- Searching `베히스툰` in the Achaemenid Persia dataset narrows the list and map to 1 entry, marker, and label.
+- Selecting `베히스툰` opens the detail panel with source-confidence information and detail actions.
+- Closing the `베히스툰` detail panel preserves the current search marker and label.
+- The `서아나톨리아 사트라피와 변방` context filter returns `사르디스` and `다스킬레이온` with 2 markers and 2 labels.
+- Switching back from Achaemenid Persia to Atlantic revolutions clears stale Persian list items, markers, labels, and map zoom state.
+- Dataset, search, and context changes explicitly reframe the map after any prior detail zoom.
+- On mobile, the Achaemenid Persia entry list scrolls independently, `파사르가다에` detail scrolls into view, `지도에서 보기` returns to the map, and `닫기` hides the detail panel.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-eight-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-eight-datasets-mobile.png`.
