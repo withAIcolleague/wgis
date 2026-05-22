@@ -14,7 +14,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Current entry count: 250
 - Completed curation batches: 31
 - Latest completed batch: `africa-egypt-late-temple-centers-v1`
-- Latest completed infrastructure milestone: stage-2 twelve-dataset public usability pass
+- Latest completed infrastructure milestone: stage-2 thirteen-dataset public usability pass
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
@@ -219,6 +219,19 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - Scope: keep the public Stage 2 preview browser check repeatable after adding the twelfth dataset
   - Checked: 12-dataset selector, expected entry/marker/label counts across 106 Stage 2 preview entries, compact context filters, West Africa search/detail/context behavior, stale West Africa marker cleanup, deterministic map reframing after detail zoom, mobile entry-list scrolling, mobile detail map-return flow, and hidden-detail close behavior
   - Result: local and public browser passes completed for 12 datasets and 106 Stage 2 preview entries
+
+- Stage-2 Andean early states and Inca core sites pilot dataset
+  - Files: `data/stage2/index.json`, `data/stage2/andean-core-sites-preview.json`, `scripts/smoke-check.js`, `docs/stage2-preview.md`
+  - URL path: `/stage2-preview.html`
+  - Scope: add a thirteenth Stage 2 preview dataset using the existing Andean early states and Inca core sites batch
+  - Model stress test: Norte Chico/Caral early urbanism, Chavin ritual landscapes, Moche north-coast ritual power, Chimu Chan Chan urbanism, Tiwanaku highland networks, Cusco royal capital ritual, Inca mountain estates, and coast-highland exchange
+
+- Stage-2 thirteen-dataset public usability pass
+  - Files: `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`
+  - URL path: `https://wgis.vercel.app/stage2-preview.html`
+  - Scope: keep the public Stage 2 preview browser check repeatable after adding the thirteenth dataset
+  - Checked: 13-dataset selector, expected entry/marker/label counts across 114 Stage 2 preview entries, compact context filters, Andes search/detail/context behavior, stale Andes marker cleanup, deterministic map reframing after detail zoom, mobile entry-list scrolling, mobile detail map-return flow, and hidden-detail close behavior
+  - Result: local and public browser passes completed for 13 datasets and 114 Stage 2 preview entries
 
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`
@@ -685,8 +698,8 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Stage-2 thirteenth pilot dataset
-   - Scope: create another Stage 2 file from Andean early states and Inca core sites to compare Norte Chico urbanism, Chavin ritual landscapes, Moche coastal centers, Tiwanaku highland networks, Chimu urbanism, and Inca imperial sacred geography
+1. Stage-2 fourteenth pilot dataset
+   - Scope: create another Stage 2 file from Southeast Asian early states and temple networks to compare Mekong delta exchange, Champa temple valleys, Khmer imperial landscapes, Java temple networks, Pagan, Sukhothai, and Ayutthaya urban states
 
 2. First-stage DB next expansion batch
    - Scope: resume focused first-stage source-record growth if the priority shifts back from Stage 2 modeling to raw coverage

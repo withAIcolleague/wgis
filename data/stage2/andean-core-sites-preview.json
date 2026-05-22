@@ -1,0 +1,512 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-andean-core-sites-preview",
+  "titleKo": "2단계 미리보기: 안데스 초기 국가와 잉카 핵심 유적",
+  "descriptionKo": "노르테 치코 초기 도시화, 차빈 의례 경관, 모체·치무 북부 해안 국가, 티와나쿠 고원 네트워크, 쿠스코 중심의 잉카 제국 성스러운 지리를 비교하는 2단계 미리보기 데이터입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "노르테 치코",
+        "차빈 형성기",
+        "모체",
+        "티와나쿠",
+        "치무",
+        "잉카 제국"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "중앙 페루 해안",
+        "북중부 안데스 고원",
+        "북부 페루 해안",
+        "티티카카 고원",
+        "쿠스코 고원",
+        "우루밤바 계곡"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "초기 도시화",
+        "의례 중심지",
+        "해안 국가",
+        "고원 네트워크",
+        "제국 수도",
+        "왕실·의례 경관",
+        "거석 석축",
+        "관개·농업"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지도 유형",
+      "options": [
+        "장소",
+        "유적"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "andean-civilizations-core-sites",
+      "labelKo": "안데스 문명 핵심 유적",
+      "parentId": null,
+      "periodKo": "기원전 3000년경-16세기",
+      "summaryKo": "중앙 안데스의 해안·고원 환경에서 초기 도시화, 의례 중심지, 해안 국가, 고원 네트워크, 잉카 제국 수도권과 성스러운 지리를 함께 비교하는 상위 맥락입니다."
+    },
+    {
+      "id": "norte-chico-caral-urbanism",
+      "labelKo": "노르테 치코·카라알 초기 도시화",
+      "parentId": "andean-civilizations-core-sites",
+      "periodKo": "기원전 3000-1800년경",
+      "summaryKo": "카라알-수페를 중심으로 피라미드형 단, 원형 광장, 농업·어업·교역이 결합한 아메리카 초기 복합사회와 도시화의 맥락입니다."
+    },
+    {
+      "id": "chavin-ritual-landscape",
+      "labelKo": "차빈 의례 경관",
+      "parentId": "andean-civilizations-core-sites",
+      "periodKo": "기원전 1500-300년경",
+      "summaryKo": "차빈 데 우안타르의 지하 회랑, 란손 석상, 광장과 신전 구조를 통해 해안과 고원을 연결한 순례·상징체계와 권위 형성 과정을 다루는 맥락입니다."
+    },
+    {
+      "id": "north-coast-moche-ritual-power",
+      "labelKo": "북부 해안 모체 의례 권력",
+      "parentId": "andean-civilizations-core-sites",
+      "periodKo": "1-8세기",
+      "summaryKo": "모체 우아카스의 흙벽돌 단, 채색 부조, 제의와 희생 장면, 수리 농업 기반을 통해 북부 페루 해안의 권력과 전문 공예를 보는 맥락입니다."
+    },
+    {
+      "id": "chimu-chan-chan-urbanism",
+      "labelKo": "치무 찬찬 도시와 해안 국가",
+      "parentId": "andean-civilizations-core-sites",
+      "periodKo": "9-15세기",
+      "summaryKo": "찬찬의 성벽 궁정 복합체, 저장·의례·행정 공간, 사막 해안 관개와 해양 자원을 통해 치무 왕국의 도시 운영을 다루는 맥락입니다."
+    },
+    {
+      "id": "tiwanaku-highland-network",
+      "labelKo": "티와나쿠 고원 네트워크",
+      "parentId": "andean-civilizations-core-sites",
+      "periodKo": "5-12세기",
+      "summaryKo": "티티카카 호수 남쪽 고원의 티와나쿠를 중심으로 기념 구조, 고원 농업, 라마 교역, 광역 의례 네트워크를 보는 맥락입니다."
+    },
+    {
+      "id": "inca-imperial-sacred-geography",
+      "labelKo": "잉카 제국 성스러운 지리",
+      "parentId": "andean-civilizations-core-sites",
+      "periodKo": "13-16세기",
+      "summaryKo": "쿠스코, 마추픽추, 삭사이와만을 통해 잉카 제국의 수도, 왕실·의례 경관, 산악 지형, 수자원, 거석 석축을 연결해 보는 맥락입니다."
+    },
+    {
+      "id": "cusco-royal-capital-ritual",
+      "labelKo": "쿠스코 왕도와 세케 의례 체계",
+      "parentId": "andean-civilizations-core-sites",
+      "periodKo": "13-16세기",
+      "summaryKo": "쿠스코와 삭사이와만의 도시 경관, 코리칸차, 왕궁, 세케 의례 체계, 거석 석축을 통해 잉카 수도권의 정치·종교 구조를 보는 맥락입니다."
+    },
+    {
+      "id": "inca-mountain-estate-landscapes",
+      "labelKo": "잉카 산악 왕실·의례 경관",
+      "parentId": "andean-civilizations-core-sites",
+      "periodKo": "15-16세기",
+      "summaryKo": "마추픽추와 삭사이와만을 중심으로 고산 능선, 계단식 경작지, 석조 의례 공간, 수도권 방어·왕권 상징을 비교하는 맥락입니다."
+    },
+    {
+      "id": "andean-coast-highland-exchange",
+      "labelKo": "안데스 해안-고원 교류",
+      "parentId": "andean-civilizations-core-sites",
+      "periodKo": "기원전 3000년경-16세기",
+      "summaryKo": "페루 해안, 북중부 고원, 티티카카 고원, 쿠스코 고원을 잇는 교역·순례·권력 네트워크를 통해 안데스 문명의 환경별 연결성을 보는 맥락입니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "caral",
+      "titleKo": "카라알",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "페루",
+      "coordinates": {
+        "lat": -10.893,
+        "lng": -77.52
+      },
+      "yearLabelKo": "기원전 3000-1800년경",
+      "summaryKo": "수페 계곡의 초기 도시·기념건축 중심지로, 피라미드형 단, 원형 광장, 주거구, 의례 공간이 농업·어업·교역 기반의 중앙 안데스 초기 복합사회를 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "norte-chico-caral-urbanism",
+        "contextIds": [
+          "andean-civilizations-core-sites",
+          "norte-chico-caral-urbanism",
+          "andean-coast-highland-exchange"
+        ],
+        "periodPathKo": [
+          "고대",
+          "중앙 안데스 초기 복합사회",
+          "노르테 치코·카라알 도시화"
+        ],
+        "topicTagsKo": [
+          "카라알",
+          "노르테 치코",
+          "수페 계곡",
+          "원형 광장",
+          "피라미드형 단"
+        ],
+        "uiFilters": {
+          "era": "노르테 치코",
+          "region": "중앙 페루 해안",
+          "theme": [
+            "초기 도시화",
+            "의례 중심지"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 카라알-수페 세계유산 자료와 World History Encyclopedia 항목을 함께 사용해 중심 유적권과 초기 도시화 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "chavin-de-huantar",
+      "titleKo": "차빈 데 우안타르",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "페루",
+      "coordinates": {
+        "lat": -9.5931,
+        "lng": -77.1772
+      },
+      "yearLabelKo": "기원전 1500-300년경",
+      "summaryKo": "안데스 형성기 의례 네트워크의 대표 중심지로, 지하 회랑, 란손 석상, 광장과 신전 구조가 해안과 고원을 잇는 순례·상징체계를 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "chavin-ritual-landscape",
+        "contextIds": [
+          "andean-civilizations-core-sites",
+          "chavin-ritual-landscape",
+          "andean-coast-highland-exchange"
+        ],
+        "periodPathKo": [
+          "고대",
+          "안데스 형성기",
+          "차빈 의례 중심지와 순례 네트워크"
+        ],
+        "topicTagsKo": [
+          "차빈 데 우안타르",
+          "차빈",
+          "란손",
+          "지하 회랑",
+          "형성기 안데스"
+        ],
+        "uiFilters": {
+          "era": "차빈 형성기",
+          "region": "북중부 안데스 고원",
+          "theme": [
+            "의례 중심지",
+            "고원 네트워크"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 차빈 세계유산 자료와 World History Encyclopedia 항목을 사용해 유적 좌표와 형성기 의례 네트워크 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "moche-huacas",
+      "titleKo": "모체 우아카스",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "페루",
+      "coordinates": {
+        "lat": -8.1369,
+        "lng": -78.9936
+      },
+      "yearLabelKo": "1-8세기",
+      "summaryKo": "우아카 델 솔과 우아카 데 라 루나를 중심으로 한 모체 권력·의례 중심지로, 흙벽돌 단, 채색 부조, 제의와 희생 장면, 수리 농업 기반을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "north-coast-moche-ritual-power",
+        "contextIds": [
+          "andean-civilizations-core-sites",
+          "north-coast-moche-ritual-power",
+          "andean-coast-highland-exchange"
+        ],
+        "periodPathKo": [
+          "고대",
+          "북부 페루 해안",
+          "모체 의례 권력과 전문 공예"
+        ],
+        "topicTagsKo": [
+          "모체",
+          "우아카 델 솔",
+          "우아카 데 라 루나",
+          "채색 부조",
+          "수리 농업"
+        ],
+        "uiFilters": {
+          "era": "모체",
+          "region": "북부 페루 해안",
+          "theme": [
+            "해안 국가",
+            "의례 중심지",
+            "관개·농업"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "Huacas de Moche 현장 자료, World History Encyclopedia, Britannica 자료가 모체 복합체와 북부 해안 권력 맥락을 함께 설명합니다."
+        }
+      }
+    },
+    {
+      "entryId": "chan-chan",
+      "titleKo": "찬찬",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "페루",
+      "coordinates": {
+        "lat": -8.111,
+        "lng": -79.0754
+      },
+      "yearLabelKo": "9-15세기",
+      "summaryKo": "치무 왕국의 수도이자 아메리카 최대급 흙건축 도시로, 성벽 궁정 복합체, 저장·의례·행정 공간, 사막 해안 관개 체계가 북부 안데스 국가 운영을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "chimu-chan-chan-urbanism",
+        "contextIds": [
+          "andean-civilizations-core-sites",
+          "chimu-chan-chan-urbanism",
+          "andean-coast-highland-exchange"
+        ],
+        "periodPathKo": [
+          "중세",
+          "북부 페루 해안",
+          "치무 왕국 수도와 흙건축 도시"
+        ],
+        "topicTagsKo": [
+          "찬찬",
+          "치무",
+          "치모르",
+          "흙건축",
+          "관개"
+        ],
+        "uiFilters": {
+          "era": "치무",
+          "region": "북부 페루 해안",
+          "theme": [
+            "해안 국가",
+            "제국 수도",
+            "관개·농업"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 찬찬 세계유산 자료와 Britannica 항목을 사용해 고고지대 좌표와 치무 수도 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "tiwanaku",
+      "titleKo": "티와나쿠",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "볼리비아",
+      "coordinates": {
+        "lat": -16.5547,
+        "lng": -68.6733
+      },
+      "yearLabelKo": "5-12세기",
+      "summaryKo": "티티카카 호수 남쪽 고원의 정치·종교 중심지로, 칼라사사야, 아카파나, 태양의 문, 고원 농업과 라마 교역이 잉카 이전 안데스 고원 국가의 확장을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "tiwanaku-highland-network",
+        "contextIds": [
+          "andean-civilizations-core-sites",
+          "tiwanaku-highland-network",
+          "andean-coast-highland-exchange"
+        ],
+        "periodPathKo": [
+          "중세",
+          "티티카카 고원",
+          "티와나쿠 의례·교역 네트워크"
+        ],
+        "topicTagsKo": [
+          "티와나쿠",
+          "티티카카",
+          "태양의 문",
+          "아카파나",
+          "라마 교역"
+        ],
+        "uiFilters": {
+          "era": "티와나쿠",
+          "region": "티티카카 고원",
+          "theme": [
+            "고원 네트워크",
+            "의례 중심지",
+            "관개·농업"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 티와나쿠 세계유산 자료와 World History Encyclopedia 항목을 사용해 유적권과 고원 네트워크 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "cusco",
+      "titleKo": "쿠스코",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "페루",
+      "coordinates": {
+        "lat": -13.5167,
+        "lng": -71.9789
+      },
+      "yearLabelKo": "13-16세기, 15세기 제국 수도",
+      "summaryKo": "잉카 제국 타완틴수유의 수도로, 왕궁, 코리칸차, 세케 의례 체계, 정교한 석축 도시 구조가 스페인 식민 도시 층위와 겹쳐 남아 있습니다.",
+      "stage2": {
+        "primaryContextId": "cusco-royal-capital-ritual",
+        "contextIds": [
+          "andean-civilizations-core-sites",
+          "inca-imperial-sacred-geography",
+          "cusco-royal-capital-ritual"
+        ],
+        "periodPathKo": [
+          "중세-근대",
+          "페루 남부 고원",
+          "잉카 제국 수도 쿠스코"
+        ],
+        "topicTagsKo": [
+          "쿠스코",
+          "코스코",
+          "타완틴수유",
+          "코리칸차",
+          "세케"
+        ],
+        "uiFilters": {
+          "era": "잉카 제국",
+          "region": "쿠스코 고원",
+          "theme": [
+            "제국 수도",
+            "왕실·의례 경관",
+            "거석 석축"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 쿠스코 세계유산 자료와 Britannica 항목을 사용해 역사도심 좌표와 잉카 수도 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "machu-picchu",
+      "titleKo": "마추픽추",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "페루",
+      "coordinates": {
+        "lat": -13.1631,
+        "lng": -72.545
+      },
+      "yearLabelKo": "15세기",
+      "summaryKo": "우루밤바 계곡 위 산악 능선에 조성된 잉카 왕실·의례 복합체로, 계단식 경작지, 석조 주거·의례 공간, 산악 경관이 결합된 대표 유적입니다.",
+      "stage2": {
+        "primaryContextId": "inca-mountain-estate-landscapes",
+        "contextIds": [
+          "andean-civilizations-core-sites",
+          "inca-imperial-sacred-geography",
+          "inca-mountain-estate-landscapes"
+        ],
+        "periodPathKo": [
+          "중세-근대",
+          "우루밤바 계곡",
+          "잉카 산악 왕실·의례 경관"
+        ],
+        "topicTagsKo": [
+          "마추픽추",
+          "잉카",
+          "우루밤바",
+          "계단식 경작지",
+          "산악 의례"
+        ],
+        "uiFilters": {
+          "era": "잉카 제국",
+          "region": "우루밤바 계곡",
+          "theme": [
+            "왕실·의례 경관",
+            "관개·농업",
+            "거석 석축"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 마추픽추 세계유산 자료와 World History Encyclopedia 항목을 사용해 역사보호구역과 잉카 산악 경관 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "sacsayhuaman",
+      "titleKo": "삭사이와만",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "페루",
+      "coordinates": {
+        "lat": -13.5089,
+        "lng": -71.9817
+      },
+      "yearLabelKo": "15-16세기",
+      "summaryKo": "쿠스코 북쪽 능선의 잉카 거석 석축 복합체로, 방어·의례·왕권 상징 기능이 결합되어 잉카 건축 조직력과 수도권 의례 질서를 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "cusco-royal-capital-ritual",
+        "contextIds": [
+          "andean-civilizations-core-sites",
+          "inca-imperial-sacred-geography",
+          "cusco-royal-capital-ritual",
+          "inca-mountain-estate-landscapes"
+        ],
+        "periodPathKo": [
+          "중세-근대",
+          "쿠스코 고원",
+          "잉카 수도권 거석 석축과 의례"
+        ],
+        "topicTagsKo": [
+          "삭사이와만",
+          "삭사이우아만",
+          "쿠스코",
+          "잉카 석축",
+          "거석 건축"
+        ],
+        "uiFilters": {
+          "era": "잉카 제국",
+          "region": "쿠스코 고원",
+          "theme": [
+            "거석 석축",
+            "왕실·의례 경관",
+            "제국 수도"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "UNESCO 쿠스코 세계유산 자료와 WHE·Britannica 항목을 함께 사용해 삭사이와만 위치와 잉카 수도권 석축 맥락을 확인했습니다."
+        }
+      }
+    }
+  ]
+}

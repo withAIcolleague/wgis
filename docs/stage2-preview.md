@@ -162,6 +162,17 @@ The twelfth pilot dataset tests West African early states, inland urbanism, tran
 - `benin-city`
 - `igbo-ukwu`
 
+The thirteenth pilot dataset tests Andean early states, coast-highland exchange, and Inca imperial sacred geography:
+
+- `caral`
+- `chavin-de-huantar`
+- `moche-huacas`
+- `chan-chan`
+- `tiwanaku`
+- `cusco`
+- `machu-picchu`
+- `sacsayhuaman`
+
 The dataset list is managed in:
 
 ```text
@@ -336,3 +347,18 @@ The 2026-05-22 twelve-dataset browser pass checks `/stage2-preview.html` after a
 - Switching back from the West Africa dataset to Atlantic revolutions clears stale West Africa list items, markers, labels, and map zoom state.
 - On mobile, the West Africa entry list scrolls independently, `젠네-제노` detail scrolls into view, `지도에서 보기` returns to the map, and `닫기` hides the detail panel.
 - Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twelve-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twelve-datasets-mobile.png`.
+
+## Thirteen-Dataset Public Usability Pass
+
+The 2026-05-22 thirteen-dataset browser pass checks `/stage2-preview.html` after adding the Andean early states and Inca core sites pilot dataset:
+
+- Dataset selector exposes 13 datasets.
+- All 13 indexed datasets render their expected entry, marker, and permanent-label counts: Atlantic revolutions 8, Ethiopia 8, Mesopotamia 10, Egypt 14, Indus 8, Early China 8, Ancient Greece 10, Achaemenid Persia 8, Roman Republic and Empire 8, Magadha-Maurya 8, Mesoamerica 8, West Africa 8, and Andes 8.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control after every dataset switch.
+- Searching `마추픽추` in the Andes dataset narrows the list and map to 1 entry, marker, and label.
+- Selecting `마추픽추` opens the detail panel with source-confidence information and detail actions.
+- Closing the `마추픽추` detail panel preserves the current search marker and label.
+- The `잉카 제국 성스러운 지리` context filter returns 3 entries: `쿠스코`, `마추픽추`, and `삭사이와만`.
+- Switching back from the Andes dataset to Atlantic revolutions clears stale Andes list items, markers, labels, and map zoom state.
+- On mobile, the Andes entry list scrolls independently, `카라알` detail scrolls into view, `지도에서 보기` returns to the map, and `닫기` hides the detail panel.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirteen-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirteen-datasets-mobile.png`.

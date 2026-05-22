@@ -74,6 +74,12 @@
       "titleKo": "서아프리카 초기 국가와 교역망",
       "path": "data/stage2/west-africa-early-states-preview.json",
       "status": "preview-only"
+    },
+    {
+      "id": "stage2-andean-core-sites-preview",
+      "titleKo": "안데스 초기 국가와 잉카 핵심 유적",
+      "path": "data/stage2/andean-core-sites-preview.json",
+      "status": "preview-only"
     }
   ]
 }

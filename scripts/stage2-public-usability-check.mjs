@@ -81,6 +81,11 @@ const datasets = [
     path: 'data/stage2/west-africa-early-states-preview.json',
     count: 8,
     firstEntryId: 'jenne-jeno'
+  },
+  {
+    path: 'data/stage2/andean-core-sites-preview.json',
+    count: 8,
+    firstEntryId: 'caral'
   }
 ];
 
@@ -178,8 +183,8 @@ function assertCheck(condition, message, details = undefined) {
 async function main() {
   await mkdir(outputDir, { recursive: true });
   const userDataDir = await mkdtemp(path.join(os.tmpdir(), 'wgis-stage2-public-'));
-  const desktopShot = path.join(outputDir, 'wgis-stage2-twelve-datasets-desktop.png');
-  const mobileShot = path.join(outputDir, 'wgis-stage2-twelve-datasets-mobile.png');
+  const desktopShot = path.join(outputDir, 'wgis-stage2-thirteen-datasets-desktop.png');
+  const mobileShot = path.join(outputDir, 'wgis-stage2-thirteen-datasets-mobile.png');
 
   const chrome = spawn(chromePath, [
     '--headless=new',
@@ -430,6 +435,7 @@ async function main() {
     const magadha = datasets.find(dataset => dataset.path.endsWith('magadha-maurya-core-preview.json'));
     const mesoamerica = datasets.find(dataset => dataset.path.endsWith('mesoamerica-core-preview.json'));
     const westAfrica = datasets.find(dataset => dataset.path.endsWith('west-africa-early-states-preview.json'));
+    const andes = datasets.find(dataset => dataset.path.endsWith('andean-core-sites-preview.json'));
     await selectDataset(greece);
     await setSearch('델포이', 1);
     state = await captureState('desktop-greece-search-delphi');
@@ -676,6 +682,46 @@ async function main() {
       state
     );
 
+    await selectDataset(andes);
+    await setSearch('마추픽추', 1);
+    state = await captureState('desktop-andes-search-machu-picchu');
+    assertCheck(state.entryIds.includes('machu-picchu'), 'Andes search should find Machu Picchu', state);
+
+    await clickEntry('machu-picchu', '마추픽추');
+    state = await captureState('desktop-andes-detail-machu-picchu');
+    assertCheck(state.detailTitle === '마추픽추' && state.detailHasConfidence && state.detailActions === 2, 'Andes detail should show Machu Picchu and detail actions', state);
+
+    await clickDetailAction('close');
+    await waitForExpression("document.querySelector('#detailPanel')?.classList.contains('is-empty') && !document.querySelector('.entry-card.active')", 'desktop Andes detail closes');
+    state = await captureState('desktop-andes-detail-closed');
+    assertCheck(state.detailHidden && state.markers === 1 && state.labels === 1, 'Closing Andes detail should preserve current search markers', state);
+
+    await setSearch('', 8);
+    await clickContextId('inca-imperial-sacred-geography', 3);
+    state = await captureState('desktop-andes-inca-sacred-geography-context');
+    assertCheck(
+      state.entryIds.includes('cusco') &&
+        state.entryIds.includes('machu-picchu') &&
+        state.entryIds.includes('sacsayhuaman') &&
+        state.contextFilterButtons <= 4,
+      'Inca sacred geography context should return Cusco, Machu Picchu, and Sacsayhuaman while filters collapse again',
+      state
+    );
+
+    await selectDataset(datasets[0]);
+    await waitForExpression("typeof stage2Map !== 'undefined' && stage2Map.getZoom() <= 4", 'Atlantic map refits after Andes dataset');
+    state = await captureState('desktop-return-atlantic-after-andes');
+    assertCheck(
+      state.entryCountNumber === 8 &&
+        state.markers === 8 &&
+        state.labels === 8 &&
+        state.mapZoom <= 4 &&
+        !state.entryIds.includes('machu-picchu') &&
+        !state.entryIds.includes('sacsayhuaman'),
+      'Switching away from Andes dataset should clear stale list, markers, labels, and map view',
+      state
+    );
+
     const desktopPng = await client.send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: false }, sessionId);
     await writeFile(desktopShot, Buffer.from(desktopPng.data, 'base64'));
 
@@ -689,28 +735,28 @@ async function main() {
       screenOrientation: { type: 'portraitPrimary', angle: 0 }
     });
 
-    await selectDataset(westAfrica);
+    await selectDataset(andes);
     await evaluate(`(() => {
       const list = document.querySelector('.entry-list');
       list.scrollTop = 360;
     })()`);
     await waitForExpression("document.querySelector('.entry-list')?.scrollTop > 0", 'mobile entry list scrolls');
-    state = await captureState('mobile-west-africa-list-scroll');
+    state = await captureState('mobile-andes-list-scroll');
     assertCheck(state.entryListCanScroll && state.entryListScrollTop > 0 && state.contextFilterButtons <= 4, 'Mobile Stage 2 entry list should scroll independently with compact filters', state);
 
-    await clickEntry('jenne-jeno', '젠네-제노');
+    await clickEntry('caral', '카라알');
     await waitForExpression("document.querySelector('#detailPanel')?.getBoundingClientRect().top < 80", 'mobile detail scrolls into view');
-    state = await captureState('mobile-west-africa-detail-jenne-jeno');
-    assertCheck(state.detailTitle === '젠네-제노' && state.detailPosition === 'static' && state.detailTop < 80 && state.documentHeight > state.viewportHeight, 'Mobile detail should sit in normal page flow and scroll into view after selection', state);
+    state = await captureState('mobile-andes-detail-caral');
+    assertCheck(state.detailTitle === '카라알' && state.detailPosition === 'static' && state.detailTop < 80 && state.documentHeight > state.viewportHeight, 'Mobile detail should sit in normal page flow and scroll into view after selection', state);
 
     await clickDetailAction('focus-map');
     await waitForExpression("(() => { const top = document.querySelector('#stage2Map')?.getBoundingClientRect().top || 0; return typeof stage2Map !== 'undefined' && stage2Map.getZoom() >= 8 && top > -80 && top < window.innerHeight - 80; })()", 'mobile detail map focus returns to map');
-    state = await captureState('mobile-west-africa-focus-map');
-    assertCheck(state.detailTitle === '젠네-제노' && state.mapTop > -80 && state.mapTop < state.viewportHeight - 80 && state.mapZoom >= 8, 'Mobile map focus should return to the selected map location', state);
+    state = await captureState('mobile-andes-focus-map');
+    assertCheck(state.detailTitle === '카라알' && state.mapTop > -80 && state.mapTop < state.viewportHeight - 80 && state.mapZoom >= 8, 'Mobile map focus should return to the selected map location', state);
 
     await clickDetailAction('close');
     await waitForExpression("document.querySelector('#detailPanel')?.classList.contains('is-empty') && !document.querySelector('.entry-card.active')", 'mobile detail closes');
-    state = await captureState('mobile-west-africa-detail-closed');
+    state = await captureState('mobile-andes-detail-closed');
     assertCheck(state.detailHidden && state.activeEntryCards === 0 && state.mapTop > -80 && state.mapTop < state.viewportHeight - 80, 'Mobile close should hide detail and return to the map area', state);
 
     const mobilePng = await client.send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: false }, sessionId);
