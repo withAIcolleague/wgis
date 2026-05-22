@@ -71,6 +71,11 @@ const datasets = [
     path: 'data/stage2/magadha-maurya-core-preview.json',
     count: 8,
     firstEntryId: 'rajgir-rajagriha'
+  },
+  {
+    path: 'data/stage2/mesoamerica-core-preview.json',
+    count: 8,
+    firstEntryId: 'san-lorenzo-tenochtitlan'
   }
 ];
 
@@ -168,8 +173,8 @@ function assertCheck(condition, message, details = undefined) {
 async function main() {
   await mkdir(outputDir, { recursive: true });
   const userDataDir = await mkdtemp(path.join(os.tmpdir(), 'wgis-stage2-public-'));
-  const desktopShot = path.join(outputDir, 'wgis-stage2-ten-datasets-desktop.png');
-  const mobileShot = path.join(outputDir, 'wgis-stage2-ten-datasets-mobile.png');
+  const desktopShot = path.join(outputDir, 'wgis-stage2-eleven-datasets-desktop.png');
+  const mobileShot = path.join(outputDir, 'wgis-stage2-eleven-datasets-mobile.png');
 
   const chrome = spawn(chromePath, [
     '--headless=new',
@@ -418,6 +423,7 @@ async function main() {
     const persia = datasets.find(dataset => dataset.path.endsWith('achaemenid-persia-core-preview.json'));
     const roman = datasets.find(dataset => dataset.path.endsWith('roman-empire-core-preview.json'));
     const magadha = datasets.find(dataset => dataset.path.endsWith('magadha-maurya-core-preview.json'));
+    const mesoamerica = datasets.find(dataset => dataset.path.endsWith('mesoamerica-core-preview.json'));
     await selectDataset(greece);
     await setSearch('델포이', 1);
     state = await captureState('desktop-greece-search-delphi');
@@ -580,6 +586,49 @@ async function main() {
       state
     );
 
+    await selectDataset(mesoamerica);
+    await setSearch('테오티우아칸', 2);
+    state = await captureState('desktop-mesoamerica-search-teotihuacan');
+    assertCheck(state.entryIds.includes('tikal') && state.entryIds.includes('teotihuacan'), 'Mesoamerica search should find Teotihuacan-related entries', state);
+
+    await clickEntry('teotihuacan', '테오티우아칸');
+    state = await captureState('desktop-mesoamerica-detail-teotihuacan');
+    assertCheck(state.detailTitle === '테오티우아칸' && state.detailHasConfidence && state.detailActions === 2, 'Mesoamerica detail should show Teotihuacan and detail actions', state);
+
+    await clickDetailAction('close');
+    await waitForExpression("document.querySelector('#detailPanel')?.classList.contains('is-empty') && !document.querySelector('.entry-card.active')", 'desktop Mesoamerica detail closes');
+    state = await captureState('desktop-mesoamerica-detail-closed');
+    assertCheck(state.detailHidden && state.markers === 2 && state.labels === 2, 'Closing Mesoamerica detail should preserve current search markers', state);
+
+    await setSearch('', 8);
+    await clickContextId('mesoamerican-long-distance-exchange-ritual', 6);
+    state = await captureState('desktop-mesoamerica-exchange-context');
+    assertCheck(
+      state.entryIds.includes('san-lorenzo-tenochtitlan') &&
+        state.entryIds.includes('la-venta') &&
+        state.entryIds.includes('tikal') &&
+        state.entryIds.includes('chichen-itza') &&
+        state.entryIds.includes('teotihuacan') &&
+        state.entryIds.includes('tenochtitlan') &&
+        state.contextFilterButtons <= 4,
+      'Mesoamerican exchange context should return Olmec, Maya, Teotihuacan, and Tenochtitlan entries while filters collapse again',
+      state
+    );
+
+    await selectDataset(datasets[0]);
+    await waitForExpression("typeof stage2Map !== 'undefined' && stage2Map.getZoom() <= 4", 'Atlantic map refits after Mesoamerica dataset');
+    state = await captureState('desktop-return-atlantic-after-mesoamerica');
+    assertCheck(
+      state.entryCountNumber === 8 &&
+        state.markers === 8 &&
+        state.labels === 8 &&
+        state.mapZoom <= 4 &&
+        !state.entryIds.includes('teotihuacan') &&
+        !state.entryIds.includes('tenochtitlan'),
+      'Switching away from Mesoamerica dataset should clear stale list, markers, labels, and map view',
+      state
+    );
+
     const desktopPng = await client.send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: false }, sessionId);
     await writeFile(desktopShot, Buffer.from(desktopPng.data, 'base64'));
 
@@ -593,28 +642,28 @@ async function main() {
       screenOrientation: { type: 'portraitPrimary', angle: 0 }
     });
 
-    await selectDataset(magadha);
+    await selectDataset(mesoamerica);
     await evaluate(`(() => {
       const list = document.querySelector('.entry-list');
       list.scrollTop = 360;
     })()`);
     await waitForExpression("document.querySelector('.entry-list')?.scrollTop > 0", 'mobile entry list scrolls');
-    state = await captureState('mobile-magadha-list-scroll');
+    state = await captureState('mobile-mesoamerica-list-scroll');
     assertCheck(state.entryListCanScroll && state.entryListScrollTop > 0 && state.contextFilterButtons <= 4, 'Mobile Stage 2 entry list should scroll independently with compact filters', state);
 
-    await clickEntry('rajgir-rajagriha', '라지기르');
+    await clickEntry('san-lorenzo-tenochtitlan', '산로렌소 테노치티틀란');
     await waitForExpression("document.querySelector('#detailPanel')?.getBoundingClientRect().top < 80", 'mobile detail scrolls into view');
-    state = await captureState('mobile-magadha-detail-rajgir');
-    assertCheck(state.detailTitle === '라지기르' && state.detailPosition === 'static' && state.detailTop < 80 && state.documentHeight > state.viewportHeight, 'Mobile detail should sit in normal page flow and scroll into view after selection', state);
+    state = await captureState('mobile-mesoamerica-detail-san-lorenzo');
+    assertCheck(state.detailTitle === '산로렌소 테노치티틀란' && state.detailPosition === 'static' && state.detailTop < 80 && state.documentHeight > state.viewportHeight, 'Mobile detail should sit in normal page flow and scroll into view after selection', state);
 
     await clickDetailAction('focus-map');
     await waitForExpression("(() => { const top = document.querySelector('#stage2Map')?.getBoundingClientRect().top || 0; return typeof stage2Map !== 'undefined' && stage2Map.getZoom() >= 8 && top > -80 && top < window.innerHeight - 80; })()", 'mobile detail map focus returns to map');
-    state = await captureState('mobile-magadha-focus-map');
-    assertCheck(state.detailTitle === '라지기르' && state.mapTop > -80 && state.mapTop < state.viewportHeight - 80 && state.mapZoom >= 8, 'Mobile map focus should return to the selected map location', state);
+    state = await captureState('mobile-mesoamerica-focus-map');
+    assertCheck(state.detailTitle === '산로렌소 테노치티틀란' && state.mapTop > -80 && state.mapTop < state.viewportHeight - 80 && state.mapZoom >= 8, 'Mobile map focus should return to the selected map location', state);
 
     await clickDetailAction('close');
     await waitForExpression("document.querySelector('#detailPanel')?.classList.contains('is-empty') && !document.querySelector('.entry-card.active')", 'mobile detail closes');
-    state = await captureState('mobile-magadha-detail-closed');
+    state = await captureState('mobile-mesoamerica-detail-closed');
     assertCheck(state.detailHidden && state.activeEntryCards === 0 && state.mapTop > -80 && state.mapTop < state.viewportHeight - 80, 'Mobile close should hide detail and return to the map area', state);
 
     const mobilePng = await client.send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: false }, sessionId);

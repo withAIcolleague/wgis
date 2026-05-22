@@ -14,7 +14,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Current entry count: 250
 - Completed curation batches: 31
 - Latest completed batch: `africa-egypt-late-temple-centers-v1`
-- Latest completed infrastructure milestone: stage-2 ten-dataset public usability pass
+- Latest completed infrastructure milestone: stage-2 eleven-dataset public usability pass
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
@@ -193,6 +193,19 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - Scope: keep the public Stage 2 preview browser check repeatable after adding the tenth dataset
   - Checked: 10-dataset selector, expected entry/marker/label counts across 90 Stage 2 preview entries, compact context filters, Magadha-Maurya search/detail/context behavior, stale Magadha-Maurya marker cleanup, deterministic map reframing after detail zoom, mobile entry-list scrolling, mobile detail map-return flow, and hidden-detail close behavior
   - Result: local and public browser passes completed for 10 datasets and 90 Stage 2 preview entries
+
+- Stage-2 Mesoamerica core pilot dataset
+  - Files: `data/stage2/index.json`, `data/stage2/mesoamerica-core-preview.json`, `scripts/smoke-check.js`, `docs/stage2-preview.md`
+  - URL path: `/stage2-preview.html`
+  - Scope: add an eleventh Stage 2 preview dataset using the existing Mesoamerica core sites batch
+  - Model stress test: Olmec formative centers, Preclassic Maya urbanism, Classic Maya dynastic rivalry, Yucatan Postclassic ritual/astronomy, Teotihuacan planned metropolis, Mexica imperial capital, and long-distance exchange/ritual networks
+
+- Stage-2 eleven-dataset public usability pass
+  - Files: `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`
+  - URL path: `https://wgis.vercel.app/stage2-preview.html`
+  - Scope: keep the public Stage 2 preview browser check repeatable after adding the eleventh dataset
+  - Checked: 11-dataset selector, expected entry/marker/label counts across 98 Stage 2 preview entries, compact context filters, Mesoamerica search/detail/context behavior, stale Mesoamerica marker cleanup, deterministic map reframing after detail zoom, mobile entry-list scrolling, mobile detail map-return flow, and hidden-detail close behavior
+  - Result: local and public browser passes completed for 11 datasets and 98 Stage 2 preview entries
 
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`
@@ -659,8 +672,8 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Stage-2 eleventh pilot dataset
-   - Scope: create another Stage 2 file from Mesoamerica core sites to compare Olmec, Maya, Teotihuacan, and Mexica urban, ritual, political, and long-distance exchange contexts
+1. Stage-2 twelfth pilot dataset
+   - Scope: create another Stage 2 file from West African early states and trade networks to compare Niger inland urbanism, Sahelian gold-salt trade, Islamic learning centers, forest kingdoms, and craft/ritual centers
 
 2. First-stage DB next expansion batch
    - Scope: resume focused first-stage source-record growth if the priority shifts back from Stage 2 modeling to raw coverage

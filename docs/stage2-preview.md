@@ -140,6 +140,17 @@ The tenth pilot dataset tests Magadha and Maurya state formation, Buddhist sacre
 - `dhauli`
 - `barabar-caves`
 
+The eleventh pilot dataset tests Mesoamerican formative, Maya, Teotihuacan, and Mexica urban, ritual, political, and exchange contexts:
+
+- `san-lorenzo-tenochtitlan`
+- `la-venta`
+- `el-mirador`
+- `tikal`
+- `calakmul`
+- `chichen-itza`
+- `teotihuacan`
+- `tenochtitlan`
+
 The dataset list is managed in:
 
 ```text
@@ -284,3 +295,18 @@ The 2026-05-22 ten-dataset browser pass checks `/stage2-preview.html` after addi
 - Switching back from the Magadha-Maurya dataset to Atlantic revolutions clears stale Magadha-Maurya list items, markers, labels, and map zoom state.
 - On mobile, the Magadha-Maurya entry list scrolls independently, `라지기르` detail scrolls into view, `지도에서 보기` returns to the map, and `닫기` hides the detail panel.
 - Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-ten-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-ten-datasets-mobile.png`.
+
+## Eleven-Dataset Public Usability Pass
+
+The 2026-05-22 eleven-dataset browser pass checks `/stage2-preview.html` after adding the Mesoamerica core pilot dataset:
+
+- Dataset selector exposes 11 datasets.
+- All 11 indexed datasets render their expected entry, marker, and permanent-label counts: Atlantic revolutions 8, Ethiopia 8, Mesopotamia 10, Egypt 14, Indus 8, Early China 8, Ancient Greece 10, Achaemenid Persia 8, Roman Republic and Empire 8, Magadha-Maurya 8, and Mesoamerica 8.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control after every dataset switch.
+- Searching `테오티우아칸` in the Mesoamerica dataset narrows the list and map to 2 related entries, markers, and labels.
+- Selecting `테오티우아칸` opens the detail panel with source-confidence information and detail actions.
+- Closing the `테오티우아칸` detail panel preserves the current search markers and labels.
+- The `장거리 교역과 의례 네트워크` context filter returns 6 entries, including `산로렌소 테노치티틀란`, `라벤타`, `티칼`, `치첸이트사`, `테오티우아칸`, and `테노치티틀란`.
+- Switching back from the Mesoamerica dataset to Atlantic revolutions clears stale Mesoamerica list items, markers, labels, and map zoom state.
+- On mobile, the Mesoamerica entry list scrolls independently, `산로렌소 테노치티틀란` detail scrolls into view, `지도에서 보기` returns to the map, and `닫기` hides the detail panel.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-eleven-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-eleven-datasets-mobile.png`.

@@ -62,6 +62,12 @@
       "titleKo": "마가다·마우리아 핵심 유적",
       "path": "data/stage2/magadha-maurya-core-preview.json",
       "status": "preview-only"
+    },
+    {
+      "id": "stage2-mesoamerica-core-preview",
+      "titleKo": "메소아메리카 핵심 유적",
+      "path": "data/stage2/mesoamerica-core-preview.json",
+      "status": "preview-only"
     }
   ]
 }

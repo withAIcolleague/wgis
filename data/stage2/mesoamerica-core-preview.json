@@ -1,0 +1,504 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-mesoamerica-core-preview",
+  "titleKo": "2단계 미리보기: 메소아메리카 핵심 유적",
+  "descriptionKo": "올멕 형성기 중심지, 전고전기 마야 도시화, 고전기 마야 도시국가 경쟁, 유카탄 포스트클래식 의례 도시, 중앙 멕시코 테오티우아칸 계획도시, 메시카 수도와 장거리 교역·의례 네트워크를 비교하기 위한 2단계 미리보기 데이터셋입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "형성기 올멕",
+        "전고전기 마야",
+        "고전기 마야",
+        "포스트클래식 마야",
+        "중앙 멕시코 고전기",
+        "메시카·아스테카"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "멕시코만 저지대",
+        "페텐·미라도르 분지",
+        "유카탄 남부·캄페체",
+        "유카탄 북부",
+        "멕시코 분지",
+        "과테말라 저지대"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "초기 도시화",
+        "의례 중심지",
+        "거석 조각",
+        "왕조 도시국가",
+        "계획도시",
+        "장거리 교역",
+        "천문·구기 의례",
+        "제국 수도"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지도 유형",
+      "options": [
+        "장소"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "mesoamerican-civilizations",
+      "labelKo": "메소아메리카 문명권",
+      "parentId": null,
+      "periodKo": "기원전 2천년기-16세기",
+      "summaryKo": "멕시코만 저지대, 마야 저지대, 유카탄, 중앙 멕시코의 도시화·의례·교역·정치 체계를 함께 다루는 상위 맥락입니다."
+    },
+    {
+      "id": "olmec-gulf-coast-formative-centers",
+      "labelKo": "올멕 형성기 멕시코만 중심지",
+      "parentId": "mesoamerican-civilizations",
+      "periodKo": "기원전 1200-400년",
+      "summaryKo": "산로렌소와 라벤타처럼 멕시코만 저지대에서 초기 대규모 의례 중심지, 거석 조각, 장거리 교역이 결합한 올멕 세계를 봅니다."
+    },
+    {
+      "id": "preclassic-maya-urbanism-mirador-basin",
+      "labelKo": "전고전기 마야 도시화와 미라도르 분지",
+      "parentId": "mesoamerican-civilizations",
+      "periodKo": "기원전 6세기-기원후 2세기",
+      "summaryKo": "엘미라도르를 중심으로 사크베 도로망과 거대한 피라미드 복합체가 보여주는 초기 마야 도시화 규모를 다룹니다."
+    },
+    {
+      "id": "classic-maya-lowland-kingdoms",
+      "labelKo": "고전기 마야 저지대 왕국",
+      "parentId": "mesoamerican-civilizations",
+      "periodKo": "기원전 600년-기원후 1000년 전후",
+      "summaryKo": "티칼과 칼라크물처럼 왕조 비문, 사원 피라미드, 숲 속 도시 경관이 결합된 저지대 마야 도시국가를 묶습니다."
+    },
+    {
+      "id": "tikal-calakmul-dynastic-rivalry",
+      "labelKo": "티칼·칼라크물 왕조 경쟁",
+      "parentId": "mesoamerican-civilizations",
+      "periodKo": "고전기 마야",
+      "summaryKo": "무탈/티칼과 칸 왕조/칼라크물이 저지대 마야 정치 질서에서 형성한 경쟁과 동맹 네트워크를 비교합니다."
+    },
+    {
+      "id": "yucatan-postclassic-ritual-astronomy",
+      "labelKo": "유카탄 포스트클래식 의례와 천문",
+      "parentId": "mesoamerican-civilizations",
+      "periodKo": "6-12세기",
+      "summaryKo": "치첸이트사의 세노테, 엘카스티요, 구기장, 천문 관측 구조를 통해 북부 유카탄의 의례 도시와 마야-톨텍 양식 논의를 봅니다."
+    },
+    {
+      "id": "central-mexico-teotihuacan-metropolis",
+      "labelKo": "중앙 멕시코 테오티우아칸 계획도시",
+      "parentId": "mesoamerican-civilizations",
+      "periodKo": "1-7세기",
+      "summaryKo": "테오티우아칸의 죽은 자의 길, 태양·달 피라미드, 깃털 달린 뱀 신전, 벽화와 대규모 계획도시 구조를 다룹니다."
+    },
+    {
+      "id": "mexica-tenochtitlan-imperial-capital",
+      "labelKo": "메시카 테노치티틀란 제국 수도",
+      "parentId": "mesoamerican-civilizations",
+      "periodKo": "1325년경-1521년",
+      "summaryKo": "테노치티틀란을 통해 텍스코코 호수 섬 도시, 삼각동맹, 아스테카 제국의 정치·종교 중심지를 봅니다."
+    },
+    {
+      "id": "mesoamerican-long-distance-exchange-ritual",
+      "labelKo": "장거리 교역과 의례 네트워크",
+      "parentId": "mesoamerican-civilizations",
+      "periodKo": "형성기-포스트클래식",
+      "summaryKo": "올멕 거석·옥 공물, 테오티우아칸 영향, 마야 도시 간 접촉, 포스트클래식 교역과 의례 네트워크를 횡단 맥락으로 연결합니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "san-lorenzo-tenochtitlan",
+      "titleKo": "산로렌소 테노치티틀란",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "멕시코",
+      "coordinates": {
+        "lat": 17.752,
+        "lng": -94.761
+      },
+      "yearLabelKo": "기원전 1200-900년 전성기",
+      "summaryKo": "올멕 문명의 이른 대규모 중심지로, 멕시코만 저지대의 강·범람원 환경, 거대한 현무암 두상, 인공 대지와 배수 시설이 초기 도시화의 단서를 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "olmec-gulf-coast-formative-centers",
+        "contextIds": [
+          "mesoamerican-civilizations",
+          "olmec-gulf-coast-formative-centers",
+          "mesoamerican-long-distance-exchange-ritual"
+        ],
+        "periodPathKo": [
+          "고대",
+          "메소아메리카 형성기",
+          "올멕 초기 중심지와 거석 조각"
+        ],
+        "topicTagsKo": [
+          "산로렌소",
+          "올멕",
+          "현무암 두상",
+          "멕시코만 저지대",
+          "초기 도시화"
+        ],
+        "uiFilters": {
+          "era": "형성기 올멕",
+          "region": "멕시코만 저지대",
+          "theme": [
+            "초기 도시화",
+            "거석 조각",
+            "장거리 교역"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "INAH 자료와 World History Encyclopedia 항목을 사용하지만 유적군이 넓게 분산되어 대표 좌표는 근사값으로 관리합니다."
+        }
+      }
+    },
+    {
+      "entryId": "la-venta",
+      "titleKo": "라벤타",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "멕시코",
+      "coordinates": {
+        "lat": 18.1036,
+        "lng": -94.04
+      },
+      "yearLabelKo": "기원전 1200-400년",
+      "summaryKo": "산로렌소 이후 올멕 세계의 대표 의례 중심지로, 남북 축 배치, 대형 흙 피라미드, 거석 조각과 옥 공물이 권력과 교역망을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "olmec-gulf-coast-formative-centers",
+        "contextIds": [
+          "mesoamerican-civilizations",
+          "olmec-gulf-coast-formative-centers",
+          "mesoamerican-long-distance-exchange-ritual"
+        ],
+        "periodPathKo": [
+          "고대",
+          "메소아메리카 형성기",
+          "올멕 의례 중심지와 장거리 교역"
+        ],
+        "topicTagsKo": [
+          "라벤타",
+          "올멕",
+          "컴플렉스 A",
+          "대형 피라미드",
+          "옥 공물"
+        ],
+        "uiFilters": {
+          "era": "형성기 올멕",
+          "region": "멕시코만 저지대",
+          "theme": [
+            "의례 중심지",
+            "거석 조각",
+            "장거리 교역"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "INAH 라벤타 고고유적 자료와 World History Encyclopedia 올멕 항목이 함께 있어 위치와 의례 중심지 맥락을 안정적으로 확인할 수 있습니다."
+        }
+      }
+    },
+    {
+      "entryId": "el-mirador",
+      "titleKo": "엘미라도르",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "과테말라",
+      "coordinates": {
+        "lat": 17.755,
+        "lng": -89.92
+      },
+      "yearLabelKo": "기원전 6세기-기원후 2세기 전후",
+      "summaryKo": "미라도르 분지의 전고전기 마야 대도시로, 거대한 피라미드 복합체와 사크베 도로망이 티칼·칼라크물 이전 단계의 도시화 규모를 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "preclassic-maya-urbanism-mirador-basin",
+        "contextIds": [
+          "mesoamerican-civilizations",
+          "preclassic-maya-urbanism-mirador-basin",
+          "classic-maya-lowland-kingdoms"
+        ],
+        "periodPathKo": [
+          "고대",
+          "마야 전고전기",
+          "미라도르 분지 초기 도시화"
+        ],
+        "topicTagsKo": [
+          "엘미라도르",
+          "미라도르 분지",
+          "라단타",
+          "전고전기 마야",
+          "사크베"
+        ],
+        "uiFilters": {
+          "era": "전고전기 마야",
+          "region": "페텐·미라도르 분지",
+          "theme": [
+            "초기 도시화",
+            "의례 중심지"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "NASA Earth Observatory와 Mirador Basin Project 자료를 사용하며, 밀림 속 넓은 유적군이라 중심 의례구역 근사 좌표로 관리합니다."
+        }
+      }
+    },
+    {
+      "entryId": "tikal",
+      "titleKo": "티칼",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "과테말라",
+      "coordinates": {
+        "lat": 17.222,
+        "lng": -89.6237
+      },
+      "yearLabelKo": "기원전 600년-기원후 900년",
+      "summaryKo": "고전기 마야 세계를 대표하는 도시국가로, 사원 피라미드와 왕조 비문, 칼라크물과의 경쟁, 테오티우아칸 접촉이 겹친 핵심 유적입니다.",
+      "stage2": {
+        "primaryContextId": "classic-maya-lowland-kingdoms",
+        "contextIds": [
+          "mesoamerican-civilizations",
+          "classic-maya-lowland-kingdoms",
+          "tikal-calakmul-dynastic-rivalry",
+          "mesoamerican-long-distance-exchange-ritual"
+        ],
+        "periodPathKo": [
+          "고대",
+          "고전기 마야",
+          "티칼 왕조 도시국가"
+        ],
+        "topicTagsKo": [
+          "티칼",
+          "무탈",
+          "마야 도시국가",
+          "왕조 비문",
+          "테오티우아칸 접촉"
+        ],
+        "uiFilters": {
+          "era": "고전기 마야",
+          "region": "과테말라 저지대",
+          "theme": [
+            "왕조 도시국가",
+            "의례 중심지",
+            "장거리 교역"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 티칼 국립공원 세계유산 좌표와 World History Encyclopedia 항목이 있어 위치와 고전기 마야 도시 맥락의 신뢰도가 높습니다."
+        }
+      }
+    },
+    {
+      "entryId": "calakmul",
+      "titleKo": "칼라크물",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "멕시코",
+      "coordinates": {
+        "lat": 18.1056,
+        "lng": -89.8113
+      },
+      "yearLabelKo": "기원전 5세기-기원후 1000년 전후",
+      "summaryKo": "칸 왕조의 중심지로 평가되는 고전기 마야 대도시이며, 티칼과 함께 저지대 마야 정치사의 양대 축을 형성했습니다.",
+      "stage2": {
+        "primaryContextId": "tikal-calakmul-dynastic-rivalry",
+        "contextIds": [
+          "mesoamerican-civilizations",
+          "classic-maya-lowland-kingdoms",
+          "tikal-calakmul-dynastic-rivalry"
+        ],
+        "periodPathKo": [
+          "고대",
+          "고전기 마야",
+          "칼라크물 칸 왕조와 저지대 정치"
+        ],
+        "topicTagsKo": [
+          "칼라크물",
+          "칸 왕조",
+          "뱀 왕국",
+          "티칼 경쟁",
+          "열대림 도시"
+        ],
+        "uiFilters": {
+          "era": "고전기 마야",
+          "region": "유카탄 남부·캄페체",
+          "theme": [
+            "왕조 도시국가",
+            "의례 중심지"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 칼라크물 세계유산 좌표와 Britannica 마야 설명을 함께 사용해 유적 위치와 저지대 마야 정치 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "chichen-itza",
+      "titleKo": "치첸이트사",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "멕시코",
+      "coordinates": {
+        "lat": 20.6843,
+        "lng": -88.5678
+      },
+      "yearLabelKo": "6-12세기",
+      "summaryKo": "유카탄 북부의 대표 마야 도시로, 세노테 수자원, 엘카스티요, 전사의 신전, 구기장, 천문 관측 구조가 결합된 포스트클래식 의례 도시입니다.",
+      "stage2": {
+        "primaryContextId": "yucatan-postclassic-ritual-astronomy",
+        "contextIds": [
+          "mesoamerican-civilizations",
+          "yucatan-postclassic-ritual-astronomy",
+          "mesoamerican-long-distance-exchange-ritual"
+        ],
+        "periodPathKo": [
+          "중세",
+          "마야 고전기-포스트클래식",
+          "유카탄 의례 도시와 천문 구조"
+        ],
+        "topicTagsKo": [
+          "치첸이트사",
+          "엘카스티요",
+          "쿠쿨칸",
+          "세노테",
+          "구기장"
+        ],
+        "uiFilters": {
+          "era": "포스트클래식 마야",
+          "region": "유카탄 북부",
+          "theme": [
+            "의례 중심지",
+            "천문·구기 의례",
+            "장거리 교역"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 치첸이트사 세계유산 좌표와 World History Encyclopedia 항목이 함께 있어 위치와 마야-톨텍 의례 도시 맥락의 신뢰도가 높습니다."
+        }
+      }
+    },
+    {
+      "entryId": "teotihuacan",
+      "titleKo": "테오티우아칸",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "멕시코",
+      "coordinates": {
+        "lat": 19.6925,
+        "lng": -98.8438
+      },
+      "yearLabelKo": "1-7세기",
+      "summaryKo": "멕시코 분지의 대규모 계획도시로, 죽은 자의 길, 태양·달 피라미드, 깃털 달린 뱀 신전이 고전기 메소아메리카 전역의 도시·종교 네트워크를 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "central-mexico-teotihuacan-metropolis",
+        "contextIds": [
+          "mesoamerican-civilizations",
+          "central-mexico-teotihuacan-metropolis",
+          "mesoamerican-long-distance-exchange-ritual"
+        ],
+        "periodPathKo": [
+          "고대",
+          "중앙 멕시코 고전기",
+          "테오티우아칸 계획도시와 광역 영향"
+        ],
+        "topicTagsKo": [
+          "테오티우아칸",
+          "죽은 자의 길",
+          "태양의 피라미드",
+          "달의 피라미드",
+          "깃털 달린 뱀"
+        ],
+        "uiFilters": {
+          "era": "중앙 멕시코 고전기",
+          "region": "멕시코 분지",
+          "theme": [
+            "계획도시",
+            "의례 중심지",
+            "장거리 교역"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 테오티우아칸 세계유산 좌표와 World History Encyclopedia 항목이 함께 있어 중심 유적권과 계획도시 맥락을 안정적으로 확인할 수 있습니다."
+        }
+      }
+    },
+    {
+      "entryId": "tenochtitlan",
+      "titleKo": "테노치티틀란",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "멕시코",
+      "coordinates": {
+        "lat": 19.4349,
+        "lng": -99.1314
+      },
+      "yearLabelKo": "1325년경-1521년",
+      "summaryKo": "텍스코코 호수의 섬과 제방 위에 세워진 메시카 수도로, 삼각동맹과 아스테카 제국의 정치·종교 중심이자 오늘날 템플로 마요르와 멕시코시티 역사도심이 겹친 장소입니다.",
+      "stage2": {
+        "primaryContextId": "mexica-tenochtitlan-imperial-capital",
+        "contextIds": [
+          "mesoamerican-civilizations",
+          "mexica-tenochtitlan-imperial-capital",
+          "mesoamerican-long-distance-exchange-ritual"
+        ],
+        "periodPathKo": [
+          "중세",
+          "메시카·아스테카",
+          "테노치티틀란 제국 수도와 정복 이후 중첩"
+        ],
+        "topicTagsKo": [
+          "테노치티틀란",
+          "메시카",
+          "아스테카",
+          "템플로 마요르",
+          "텍스코코 호수"
+        ],
+        "uiFilters": {
+          "era": "메시카·아스테카",
+          "region": "멕시코 분지",
+          "theme": [
+            "제국 수도",
+            "의례 중심지",
+            "장거리 교역"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "INAH 템플로 마요르, UNESCO 멕시코시티 역사도심, World History Encyclopedia 항목을 함께 사용해 좌표와 수도·정복 이후 중첩 맥락의 신뢰도가 높습니다."
+        }
+      }
+    }
+  ]
+}
