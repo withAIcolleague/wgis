@@ -200,6 +200,12 @@
       "titleKo": "일본 고대·중세·근세 유산",
       "path": "data/stage2/japan-ancient-medieval-heritage-sites-preview.json",
       "status": "preview-only"
+    },
+    {
+      "id": "stage2-china-imperial-buddhist-heritage-sites-preview",
+      "titleKo": "중국 제국 의례·방어·불교 유산",
+      "path": "data/stage2/china-imperial-buddhist-heritage-sites-preview.json",
+      "status": "preview-only"
     }
   ]
 }

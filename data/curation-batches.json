@@ -984,6 +984,34 @@
         "Japan National Tourism Organization references for major Japanese World Heritage sites",
         "Official temple, shrine, city, and tourism references for Horyuji, Todaiji, Enryakuji, Byodoin, Kiyomizu-dera, Miyajima, Himeji, and Nikko"
       ]
+    },
+    {
+      "id": "asia-china-imperial-buddhist-heritage-sites-v1",
+      "status": "completed",
+      "completedAt": "2026-05-22",
+      "continentId": "asia",
+      "countryIso2": "CN",
+      "countryKo": "중국",
+      "worldRegion": "동아시아·중국사",
+      "focusKo": "중국 제국 의례·방어·불교 유산 핵심 지점",
+      "scopeKo": "북위·당송 불교 석굴과 명청 궁궐·제사·원림·황릉·방어 유산을 연결하는 핵심 지점",
+      "sourceFile": "data/records/asia/china/imperial-buddhist-heritage-sites.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "forbidden-city-beijing",
+        "temple-of-heaven-beijing",
+        "summer-palace-beijing",
+        "chengde-mountain-resort",
+        "ming-tombs-beijing",
+        "great-wall-badaling-section",
+        "yungang-grottoes",
+        "dazu-rock-carvings"
+      ],
+      "sourceBasis": [
+        "UNESCO World Heritage pages for Ming-Qing imperial palaces, Temple of Heaven, Summer Palace, Chengde, Ming-Qing imperial tombs, the Great Wall, Yungang, and Dazu",
+        "Beijing municipal government and Palace Museum references for Beijing imperial sites",
+        "UNESCO periodic reporting, state-of-conservation, nomination, Britannica, and National Geographic references for site context and representative coordinates"
+      ]
     }
   ]
 }

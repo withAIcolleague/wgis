@@ -873,3 +873,30 @@ The 2026-05-22 thirty-three-dataset public browser pass checks `https://wgis.ver
 - The `헤이안 교토 불교와 정토 경관` context filter returns `엔랴쿠지`, `뵤도인 봉황당`, and `기요미즈데라` with 3 markers and 3 labels and no stale castle data.
 - On mobile, `이쓰쿠시마 신사` detail renders with source-confidence information and both detail actions.
 - Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-three-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-three-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.
+
+## Thirty-Fourth Pilot Dataset
+
+The Chinese imperial ritual, defense, and Buddhist heritage pilot dataset adds 8 entries:
+
+- `자금성`
+- `천단`
+- `이화원`
+- `청더 피서산장`
+- `명13릉`
+- `만리장성 바다링 구간`
+- `윈강석굴`
+- `다쭈석각`
+
+## Thirty-Four-Dataset Public Usability Pass
+
+The 2026-05-22 thirty-four-dataset public browser pass checks `https://wgis.vercel.app/stage2-preview.html` after adding the Chinese imperial ritual, defense, and Buddhist heritage pilot dataset:
+
+- Dataset selector exposes 34 datasets.
+- All 34 indexed datasets render their expected entry, marker, and permanent-label counts across 283 Stage 2 preview entries.
+- The new Chinese imperial heritage dataset exposes 8 entries: `자금성`, `천단`, `이화원`, `청더 피서산장`, `명13릉`, `만리장성 바다링 구간`, `윈강석굴`, and `다쭈석각`.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control.
+- Searching `천단` in the Chinese imperial heritage dataset narrows the list and map to `천단` with 1 marker and 1 label.
+- Selecting `자금성` opens the detail panel with source-confidence information and detail actions.
+- The `청대 황실 원림과 행궁` context filter returns `이화원` and `청더 피서산장` with 2 markers and 2 labels and no stale palace data.
+- On mobile, `다쭈석각` detail renders with source-confidence information and both detail actions.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-four-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-four-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.

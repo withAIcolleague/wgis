@@ -1,0 +1,501 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-china-imperial-buddhist-heritage-sites-preview",
+  "titleKo": "2단계 미리보기: 중국 제국 의례·방어·불교 유산",
+  "descriptionKo": "자금성, 천단, 이화원, 청더 피서산장, 명13릉, 만리장성 바다링 구간, 윈강석굴, 다쭈석각을 비교해 중국 제국의 수도 의례, 황실 원림과 행궁, 황릉과 방어선, 불교·도교 석각 유산을 보는 2단계 미리보기 데이터셋입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "북위",
+        "당송",
+        "명",
+        "명청",
+        "청"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "베이징",
+        "베이징 북부",
+        "청더",
+        "다퉁",
+        "충칭 다쭈"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "궁궐",
+        "국가 제사",
+        "황실 원림",
+        "행궁",
+        "황릉",
+        "방어선",
+        "불교 석굴",
+        "종교 석각",
+        "세계유산"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지점 유형",
+      "options": [
+        "장소"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "china-imperial-buddhist-heritage-landscape",
+      "labelKo": "중국 제국 의례·방어·불교 유산 경관",
+      "parentId": null,
+      "periodKo": "5-19세기",
+      "summaryKo": "북위 불교 석굴, 당송 종교 석각, 명청 궁궐·제사·황릉·원림·방어선을 묶어 중국 제국 권력과 종교 경관이 지형 위에 남긴 유산을 비교합니다."
+    },
+    {
+      "id": "ming-qing-beijing-ritual-capital",
+      "labelKo": "명청 베이징 궁궐과 국가 의례",
+      "parentId": "china-imperial-buddhist-heritage-landscape",
+      "periodKo": "15-20세기",
+      "summaryKo": "자금성과 천단을 통해 베이징 중축선의 황궁, 제천 의례, 황제 권력과 우주론이 도시 공간에 배치된 방식을 봅니다."
+    },
+    {
+      "id": "forbidden-city-palace-axis",
+      "labelKo": "자금성과 황궁 중축선",
+      "parentId": "ming-qing-beijing-ritual-capital",
+      "periodKo": "1406-1912년",
+      "summaryKo": "자금성을 통해 외조·내정, 남북 중축선, 궁문과 전각 위계가 명청 황제 권력과 궁정 의례를 구성한 방식을 봅니다."
+    },
+    {
+      "id": "temple-of-heaven-state-ritual",
+      "labelKo": "천단과 제천 의례",
+      "parentId": "ming-qing-beijing-ritual-capital",
+      "periodKo": "1420-1911년",
+      "summaryKo": "천단을 통해 기년전, 환구단, 제천 의례가 황제의 천명과 농업 질서를 건축·축선·상징으로 표현한 방식을 봅니다."
+    },
+    {
+      "id": "qing-imperial-gardens-retreats",
+      "labelKo": "청대 황실 원림과 행궁",
+      "parentId": "china-imperial-buddhist-heritage-landscape",
+      "periodKo": "18-19세기",
+      "summaryKo": "이화원과 청더 피서산장을 비교해 청 황실이 물·산·원림·사원 건축을 통해 휴양, 정치, 다민족 통치 의례를 구성한 방식을 봅니다."
+    },
+    {
+      "id": "summer-palace-kunming-lake-garden",
+      "labelKo": "이화원과 쿤밍호 황실 원림",
+      "parentId": "qing-imperial-gardens-retreats",
+      "periodKo": "18-19세기",
+      "summaryKo": "이화원을 통해 쿤밍호와 만수산, 장랑과 누각이 청대 황실 휴양과 강남식 경관 재구성으로 결합된 방식을 봅니다."
+    },
+    {
+      "id": "chengde-mountain-resort-frontier-court",
+      "labelKo": "청더 피서산장과 변방 궁정",
+      "parentId": "qing-imperial-gardens-retreats",
+      "periodKo": "1703-1792년",
+      "summaryKo": "청더 피서산장과 외팔묘를 통해 청 제국이 만주·몽골·티베트·한족 세계를 황실 행궁과 사원 경관으로 연결한 방식을 봅니다."
+    },
+    {
+      "id": "imperial-tombs-frontier-defense",
+      "labelKo": "황릉과 북방 방어 경관",
+      "parentId": "china-imperial-buddhist-heritage-landscape",
+      "periodKo": "기원전 3세기-17세기",
+      "summaryKo": "명13릉과 만리장성을 통해 황제의 사후 권위, 풍수 지형, 북방 변경 방어와 군사 통제가 산지와 관문에 배치된 방식을 봅니다."
+    },
+    {
+      "id": "ming-tombs-tianshou-mausoleum-landscape",
+      "labelKo": "명13릉과 톈서우산 황릉 경관",
+      "parentId": "imperial-tombs-frontier-defense",
+      "periodKo": "1409-1644년",
+      "summaryKo": "명13릉을 통해 베이징 북쪽 산지, 신도, 석상, 능침이 명 황제의 사후 권위와 수도 방어 지형에 연결된 방식을 봅니다."
+    },
+    {
+      "id": "great-wall-badaling-frontier-defense",
+      "labelKo": "바다링 장성과 북방 변경 방어",
+      "parentId": "imperial-tombs-frontier-defense",
+      "periodKo": "전국-명",
+      "summaryKo": "바다링 구간을 대표점으로 삼아 만리장성이 산지, 관문, 성벽을 통해 북방 유목 세계와 제국 내부를 나누고 연결한 방식을 봅니다."
+    },
+    {
+      "id": "buddhist-grottoes-rock-carvings",
+      "labelKo": "불교 석굴과 종교 석각",
+      "parentId": "china-imperial-buddhist-heritage-landscape",
+      "periodKo": "5-13세기",
+      "summaryKo": "윈강석굴과 다쭈석각을 비교해 북위 황실 후원 불교 조각과 당송 이후 불교·도교·유교 융합 석각이 지역별로 발전한 방식을 봅니다."
+    },
+    {
+      "id": "yungang-northern-wei-grottoes",
+      "labelKo": "윈강석굴과 북위 불교 조각",
+      "parentId": "buddhist-grottoes-rock-carvings",
+      "periodKo": "5-6세기",
+      "summaryKo": "윈강석굴을 통해 북위 왕조가 초원계 정치 권력, 중원 불교, 인도·중앙아시아 조형 양식을 황실 석굴 조각으로 통합한 방식을 봅니다."
+    },
+    {
+      "id": "dazu-tang-song-syncretic-rock-carvings",
+      "labelKo": "다쭈석각과 당송 종교 융합",
+      "parentId": "buddhist-grottoes-rock-carvings",
+      "periodKo": "9-13세기",
+      "summaryKo": "다쭈석각을 통해 중국 남서부에서 불교·도교·유교 도상과 대중 교화, 지역 후원이 결합해 독자적 석각 예술을 만든 방식을 봅니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "forbidden-city-beijing",
+      "titleKo": "자금성",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "중국",
+      "coordinates": { "lat": 39.9163, "lng": 116.3972 },
+      "yearLabelKo": "1406-1420년 건설, 명청 황궁",
+      "summaryKo": "자금성은 명·청 황제가 거주하고 통치한 베이징의 궁궐 복합체다. 남북 중축선, 외조와 내정, 궁문과 전각의 위계는 황제 권력과 궁정 의례가 도시 공간의 중심에 어떻게 배치되었는지 보여준다.",
+      "stage2": {
+        "primaryContextId": "forbidden-city-palace-axis",
+        "contextIds": [
+          "china-imperial-buddhist-heritage-landscape",
+          "ming-qing-beijing-ritual-capital",
+          "forbidden-city-palace-axis"
+        ],
+        "periodPathKo": [
+          "근세",
+          "명청",
+          "베이징 황궁"
+        ],
+        "topicTagsKo": [
+          "자금성",
+          "고궁박물원",
+          "명청 황궁",
+          "베이징 중축선",
+          "궁정 의례"
+        ],
+        "uiFilters": {
+          "era": "명청",
+          "region": "베이징",
+          "theme": [
+            "궁궐",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO, 베이징시, 고궁박물원 자료를 함께 사용한 고신뢰 항목입니다."
+        }
+      }
+    },
+    {
+      "entryId": "temple-of-heaven-beijing",
+      "titleKo": "천단",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "중국",
+      "coordinates": { "lat": 39.8822, "lng": 116.4066 },
+      "yearLabelKo": "1420년 건립, 명청 황제의 제천 의례 공간",
+      "summaryKo": "천단은 명·청 황제가 하늘에 제사를 올리고 풍년을 기원하던 국가 의례 공간이다. 원형과 방형 배치, 기년전과 환구단의 축선은 황제가 천명과 농업 질서를 매개한다고 이해한 중국 제국의 우주론을 건축으로 보여준다.",
+      "stage2": {
+        "primaryContextId": "temple-of-heaven-state-ritual",
+        "contextIds": [
+          "china-imperial-buddhist-heritage-landscape",
+          "ming-qing-beijing-ritual-capital",
+          "temple-of-heaven-state-ritual"
+        ],
+        "periodPathKo": [
+          "근세",
+          "명청",
+          "국가 제사"
+        ],
+        "topicTagsKo": [
+          "천단",
+          "기년전",
+          "환구단",
+          "제천 의례",
+          "황제 의례"
+        ],
+        "uiFilters": {
+          "era": "명청",
+          "region": "베이징",
+          "theme": [
+            "국가 제사",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO와 베이징시 공식 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "summer-palace-beijing",
+      "titleKo": "이화원",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "중국",
+      "coordinates": { "lat": 39.9999, "lng": 116.2755 },
+      "yearLabelKo": "18세기 조성, 19세기 재건된 황실 원림",
+      "summaryKo": "이화원은 쿤밍호와 만수산을 중심으로 조성된 청대 황실 원림이다. 베이징 교외의 물과 산을 강남식 경관, 궁정 건축, 장랑과 누각으로 재구성해 황실 휴양과 정치적 상징이 결합한 정원 공간을 보여준다.",
+      "stage2": {
+        "primaryContextId": "summer-palace-kunming-lake-garden",
+        "contextIds": [
+          "china-imperial-buddhist-heritage-landscape",
+          "qing-imperial-gardens-retreats",
+          "summer-palace-kunming-lake-garden"
+        ],
+        "periodPathKo": [
+          "근세",
+          "청",
+          "황실 원림"
+        ],
+        "topicTagsKo": [
+          "이화원",
+          "쿤밍호",
+          "만수산",
+          "황실 원림",
+          "청대 정원"
+        ],
+        "uiFilters": {
+          "era": "청",
+          "region": "베이징",
+          "theme": [
+            "황실 원림",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "UNESCO와 베이징시 공식 자료, Britannica 참고 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "chengde-mountain-resort",
+      "titleKo": "청더 피서산장",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "중국",
+      "coordinates": { "lat": 40.9864, "lng": 117.9391 },
+      "yearLabelKo": "1703-1792년 조성, 청대 황실 피서 행궁",
+      "summaryKo": "청더 피서산장은 청 황제가 여름에 머물던 행궁과 외팔묘 사원군으로 이루어진 거대한 황실 경관이다. 만주·몽골·티베트·한족 세계를 연결한 건축과 의례 배치는 청 제국의 다민족 통치와 변방 정치가 궁정 공간으로 조직된 방식을 보여준다.",
+      "stage2": {
+        "primaryContextId": "chengde-mountain-resort-frontier-court",
+        "contextIds": [
+          "china-imperial-buddhist-heritage-landscape",
+          "qing-imperial-gardens-retreats",
+          "chengde-mountain-resort-frontier-court"
+        ],
+        "periodPathKo": [
+          "근세",
+          "청",
+          "열하 행궁과 외팔묘"
+        ],
+        "topicTagsKo": [
+          "청더",
+          "피서산장",
+          "외팔묘",
+          "열하",
+          "청 제국"
+        ],
+        "uiFilters": {
+          "era": "청",
+          "region": "청더",
+          "theme": [
+            "행궁",
+            "황실 원림",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO 세계유산, 주기보고서, 보존상태 자료를 함께 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "ming-tombs-beijing",
+      "titleKo": "명13릉",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "중국",
+      "coordinates": { "lat": 40.2556, "lng": 116.2208 },
+      "yearLabelKo": "1409년 이후 조성된 명 황제릉군",
+      "summaryKo": "명13릉은 베이징 북쪽 톈서우산 기슭에 조성된 명 황제들의 능원이다. 산지와 신도, 석상, 능침 배치는 황제의 사후 권위와 풍수적 입지, 수도 베이징과 황릉 경관의 관계를 보여준다.",
+      "stage2": {
+        "primaryContextId": "ming-tombs-tianshou-mausoleum-landscape",
+        "contextIds": [
+          "china-imperial-buddhist-heritage-landscape",
+          "imperial-tombs-frontier-defense",
+          "ming-tombs-tianshou-mausoleum-landscape"
+        ],
+        "periodPathKo": [
+          "근세",
+          "명",
+          "황릉 경관"
+        ],
+        "topicTagsKo": [
+          "명13릉",
+          "장릉",
+          "정릉",
+          "톈서우산",
+          "황릉"
+        ],
+        "uiFilters": {
+          "era": "명",
+          "region": "베이징 북부",
+          "theme": [
+            "황릉",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "명13릉은 넓은 능원군이므로 장릉·신도 권역을 대표 좌표로 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "great-wall-badaling-section",
+      "titleKo": "만리장성 바다링 구간",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "중국",
+      "coordinates": { "lat": 40.3599, "lng": 116.0205 },
+      "yearLabelKo": "기원전 3세기 이후, 명대 대규모 축성",
+      "summaryKo": "만리장성은 중국 북방 변경을 따라 시대별로 축조·보수된 방어 체계이며, 바다링 구간은 명대 장성의 대표적 보존 구간이다. 산지를 따라 이어지는 성벽과 관문은 제국이 유목 세력, 군사 통제, 교통로를 관리한 방식을 지형 위에서 보여준다.",
+      "stage2": {
+        "primaryContextId": "great-wall-badaling-frontier-defense",
+        "contextIds": [
+          "china-imperial-buddhist-heritage-landscape",
+          "imperial-tombs-frontier-defense",
+          "great-wall-badaling-frontier-defense"
+        ],
+        "periodPathKo": [
+          "고대-근세",
+          "전국·진·한·명",
+          "북방 방어선"
+        ],
+        "topicTagsKo": [
+          "만리장성",
+          "바다링",
+          "명 장성",
+          "북방 변경",
+          "관문"
+        ],
+        "uiFilters": {
+          "era": "명",
+          "region": "베이징 북부",
+          "theme": [
+            "방어선",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "만리장성은 선형 유산이므로 베이징 바다링 구간을 대표 좌표로 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "yungang-grottoes",
+      "titleKo": "윈강석굴",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "중국",
+      "coordinates": { "lat": 40.1103, "lng": 113.1222 },
+      "yearLabelKo": "5-6세기 북위 불교 석굴",
+      "summaryKo": "윈강석굴은 북위가 다퉁 일대에 조성한 대규모 불교 석굴군이다. 초원계 왕조가 중원 불교와 인도·중앙아시아 양식을 받아들여 황실 후원 조각으로 전환한 과정을 보여주는 중국 불교미술의 핵심 유산이다.",
+      "stage2": {
+        "primaryContextId": "yungang-northern-wei-grottoes",
+        "contextIds": [
+          "china-imperial-buddhist-heritage-landscape",
+          "buddhist-grottoes-rock-carvings",
+          "yungang-northern-wei-grottoes"
+        ],
+        "periodPathKo": [
+          "고대",
+          "북위",
+          "불교 석굴"
+        ],
+        "topicTagsKo": [
+          "윈강석굴",
+          "다퉁",
+          "북위",
+          "불교 석굴",
+          "황실 후원"
+        ],
+        "uiFilters": {
+          "era": "북위",
+          "region": "다퉁",
+          "theme": [
+            "불교 석굴",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 세계유산·주기보고서와 Britannica 참고 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "dazu-rock-carvings",
+      "titleKo": "다쭈석각",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "중국",
+      "coordinates": { "lat": 29.7482, "lng": 105.7999 },
+      "yearLabelKo": "9-13세기 불교·도교·유교 석각",
+      "summaryKo": "다쭈석각은 충칭 다쭈 일대의 절벽과 산지에 새겨진 불교·도교·유교 조각군이다. 당송 이후 중국 남서부에서 종교 도상과 대중 교화, 지역 후원이 결합해 독자적 석각 예술을 만든 방식을 보여준다.",
+      "stage2": {
+        "primaryContextId": "dazu-tang-song-syncretic-rock-carvings",
+        "contextIds": [
+          "china-imperial-buddhist-heritage-landscape",
+          "buddhist-grottoes-rock-carvings",
+          "dazu-tang-song-syncretic-rock-carvings"
+        ],
+        "periodPathKo": [
+          "중세",
+          "당송",
+          "종교 융합 석각"
+        ],
+        "topicTagsKo": [
+          "다쭈석각",
+          "보정산",
+          "북산",
+          "불교 석각",
+          "삼교 융합"
+        ],
+        "uiFilters": {
+          "era": "당송",
+          "region": "충칭 다쭈",
+          "theme": [
+            "종교 석각",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "다쭈석각은 여러 지점으로 구성되므로 보정산 권역을 대표 좌표로 사용했습니다."
+        }
+      }
+    }
+  ]
+}
