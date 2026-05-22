@@ -72,6 +72,17 @@ The fourth pilot dataset tests ancient Egyptian royal, temple, funerary, frontie
 - `philae`
 - `kom-ombo-temple`
 
+The fifth pilot dataset tests Indus Civilization urban, riverine, craft, water-management, and maritime contexts:
+
+- `mehrgarh`
+- `harappa`
+- `mohenjo-daro`
+- `dholavira`
+- `lothal`
+- `kalibangan`
+- `rakhigarhi`
+- `ganweriwala`
+
 The dataset list is managed in:
 
 ```text

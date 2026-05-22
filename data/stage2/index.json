@@ -26,6 +26,12 @@
       "titleKo": "고대 이집트 핵심 유적",
       "path": "data/stage2/egypt-ancient-core-preview.json",
       "status": "preview-only"
+    },
+    {
+      "id": "stage2-indus-civilization-preview",
+      "titleKo": "인더스 문명 도시망",
+      "path": "data/stage2/indus-civilization-preview.json",
+      "status": "preview-only"
     }
   ]
 }

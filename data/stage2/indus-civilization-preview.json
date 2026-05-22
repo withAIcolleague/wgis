@@ -1,0 +1,506 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-indus-civilization-preview",
+  "titleKo": "2단계 미리보기: 인더스 문명 도시망",
+  "descriptionKo": "메르가르의 초기 농경 정착지부터 하라파·모헨조다로·돌라비라·로탈·칼리방간·라키가르히·간웨리왈라까지, 인더스 문명의 도시 계획, 물 관리, 교역, 지역 네트워크를 분리해 보는 샘플입니다.",
+  "modelComparison": {
+    "currentKo": [
+      "1단계에서는 각 인더스 유적이 현재 국가와 좌표를 가진 지도 항목으로 표시됩니다.",
+      "사용자는 유적 이름, 현재 행정구역, 시대, 간단한 설명을 중심으로 위치를 확인합니다.",
+      "농경 정착, 성숙기 도시망, 하천권, 해상 교역, 미발굴 대형 유적 같은 해석 축은 요약문 안에 압축되어 있습니다."
+    ],
+    "stage2Ko": [
+      "2단계에서는 같은 유적을 초기 농경, 성숙기 도시 계획, 하천권 도시망, 구자라트 해상 교역권, 미발굴 대형 유적 같은 맥락으로 나눕니다.",
+      "사용자용 필터는 권역과 주제 중심으로 단순화하고, 연구 태그에는 하라파계 도시, 물 관리, 표준화, 항구도시 같은 촘촘한 키워드를 둡니다.",
+      "UNESCO, 정부·관광유물 자료, World History Encyclopedia, Britannica, Harappa.com 등 기존 출처 기반을 sourceConfidence로 요약합니다."
+    ]
+  },
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "고대"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "발루치스탄·볼란 고개",
+        "펀자브·라비강",
+        "신드·하류 인더스",
+        "구자라트·카치",
+        "가가르-하크라·동부권",
+        "촐리스탄"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "초기 농경",
+        "도시 계획",
+        "물 관리",
+        "교역",
+        "공예 생산",
+        "항구",
+        "묘지·정착",
+        "미발굴 대형 유적"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지도 유형",
+      "options": [
+        "유적"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "indus-civilization",
+      "labelKo": "인더스 문명",
+      "parentId": null,
+      "periodKo": "기원전 7000-1300년경",
+      "summaryKo": "인더스강과 주변 하천·건조 지대·해안권에 걸쳐 농경 정착, 도시 계획, 표준화, 공예와 교역망이 전개된 남아시아 고대 문명권입니다."
+    },
+    {
+      "id": "early-farming-preurban-mehrgarh",
+      "labelKo": "초기 농경과 선도시 정착",
+      "parentId": "indus-civilization",
+      "periodKo": "기원전 7000-2600년경",
+      "summaryKo": "메르가르처럼 볼란 고개 주변의 이른 농경·목축 정착지가 후대 하라파 도시 문명으로 이어지는 장기 변화의 출발점을 보여줍니다."
+    },
+    {
+      "id": "mature-harappan-urban-network",
+      "labelKo": "성숙기 하라파 도시망",
+      "parentId": "indus-civilization",
+      "periodKo": "기원전 2600-1900년경",
+      "summaryKo": "표준화된 벽돌, 배수 시설, 도시 구획, 인장과 공예 생산을 공유한 대규모 정착지 네트워크입니다."
+    },
+    {
+      "id": "indus-river-core-cities",
+      "labelKo": "인더스강 핵심 도시",
+      "parentId": "indus-civilization",
+      "periodKo": "기원전 3300-1300년경",
+      "summaryKo": "하라파와 모헨조다로처럼 인더스·라비강 권역에서 도시 계획과 대규모 정착을 대표하는 핵심 유적 맥락입니다."
+    },
+    {
+      "id": "ghaggar-hakra-eastern-settlements",
+      "labelKo": "가가르-하크라와 동부 정착권",
+      "parentId": "indus-civilization",
+      "periodKo": "기원전 3500-1750년경",
+      "summaryKo": "칼리방간, 라키가르히, 간웨리왈라처럼 옛 하천권과 동부 확산 경로를 따라 인더스 도시망의 지역적 변형을 보여주는 맥락입니다."
+    },
+    {
+      "id": "gujarat-maritime-water-management",
+      "labelKo": "구자라트 해상 교역과 물 관리",
+      "parentId": "indus-civilization",
+      "periodKo": "기원전 3000-1500년경",
+      "summaryKo": "돌라비라와 로탈처럼 건조 지대 물 관리, 항구성, 공예 생산, 해상 교역이 결합한 남부 인더스 문명권입니다."
+    },
+    {
+      "id": "craft-trade-standardization",
+      "labelKo": "공예·교역·표준화",
+      "parentId": "indus-civilization",
+      "periodKo": "기원전 2600-1900년경",
+      "summaryKo": "인장, 공예품, 표준화된 재료와 도시 기반시설을 통해 멀리 떨어진 유적들이 하나의 경제·문화 네트워크로 작동한 모습을 봅니다."
+    },
+    {
+      "id": "underexplored-cholistan-urban-sites",
+      "labelKo": "촐리스탄 미발굴 대형 유적",
+      "parentId": "indus-civilization",
+      "periodKo": "기원전 2600-1900년경",
+      "summaryKo": "간웨리왈라처럼 아직 충분히 발굴되지 않았지만 하라파와 모헨조다로 사이의 도시망 공백을 설명할 수 있는 후보 유적 맥락입니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "mehrgarh",
+      "titleKo": "메르가르",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "파키스탄",
+      "coordinates": {
+        "lat": 29.2125,
+        "lng": 67.6708
+      },
+      "yearLabelKo": "기원전 7000-2600년경",
+      "summaryKo": "볼란 고개 입구의 이른 농경 정착지로, 인더스 도시 문명 이전의 농업, 목축, 토기, 매장 관습을 추적하게 해줍니다.",
+      "stage2": {
+        "primaryContextId": "early-farming-preurban-mehrgarh",
+        "contextIds": [
+          "indus-civilization",
+          "early-farming-preurban-mehrgarh"
+        ],
+        "periodPathKo": [
+          "고대",
+          "남아시아",
+          "인더스 문명 이전 초기 농경"
+        ],
+        "topicTagsKo": [
+          "메르가르",
+          "볼란 고개",
+          "초기 농경",
+          "목축",
+          "선도시 정착"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "발루치스탄·볼란 고개",
+          "theme": [
+            "초기 농경",
+            "묘지·정착"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 잠정목록과 World History Encyclopedia 인더스 문명 항목이 함께 있어 초기 농경 맥락의 신뢰도가 높습니다."
+        }
+      }
+    },
+    {
+      "entryId": "harappa",
+      "titleKo": "하라파",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "파키스탄",
+      "coordinates": {
+        "lat": 30.1,
+        "lng": 72.1333
+      },
+      "yearLabelKo": "기원전 3300-1300년경",
+      "summaryKo": "인더스 문명의 이름을 낳은 대표 도시 유적으로, 도시 계획, 벽돌 건축, 공예 생산, 장거리 교역을 이해하는 기준점입니다.",
+      "stage2": {
+        "primaryContextId": "indus-river-core-cities",
+        "contextIds": [
+          "indus-civilization",
+          "mature-harappan-urban-network",
+          "indus-river-core-cities",
+          "craft-trade-standardization"
+        ],
+        "periodPathKo": [
+          "고대",
+          "인더스 문명",
+          "하라파 도시망"
+        ],
+        "topicTagsKo": [
+          "하라파",
+          "라비강",
+          "성숙기 하라파",
+          "공예 생산",
+          "표준화"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "펀자브·라비강",
+          "theme": [
+            "도시 계획",
+            "공예 생산",
+            "교역"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 잠정목록과 World History Encyclopedia의 하라파 건축·도시계획 자료를 함께 사용합니다."
+        }
+      }
+    },
+    {
+      "entryId": "mohenjo-daro",
+      "titleKo": "모헨조다로",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "파키스탄",
+      "coordinates": {
+        "lat": 27.3292,
+        "lng": 68.1389
+      },
+      "yearLabelKo": "기원전 2600-1900년경",
+      "summaryKo": "하류 인더스의 대규모 도시 유적으로, 성채 구역과 하부 도시, 대욕장, 배수 체계, 표준화된 벽돌 건축을 통해 초기 도시 계획을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "indus-river-core-cities",
+        "contextIds": [
+          "indus-civilization",
+          "mature-harappan-urban-network",
+          "indus-river-core-cities",
+          "craft-trade-standardization"
+        ],
+        "periodPathKo": [
+          "고대",
+          "인더스 문명",
+          "하류 인더스 핵심 도시"
+        ],
+        "topicTagsKo": [
+          "모헨조다로",
+          "대욕장",
+          "배수 체계",
+          "성채 구역",
+          "표준 벽돌"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "신드·하류 인더스",
+          "theme": [
+            "도시 계획",
+            "물 관리"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 0,
+          "noteKo": "UNESCO 세계유산 본문과 지도 자료가 모두 있어 좌표와 유적 범위 신뢰도가 높습니다."
+        }
+      }
+    },
+    {
+      "entryId": "dholavira",
+      "titleKo": "돌라비라",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "인도",
+      "coordinates": {
+        "lat": 23.8884,
+        "lng": 70.2133
+      },
+      "yearLabelKo": "기원전 3000-1500년경",
+      "summaryKo": "카치의 건조한 섬 환경에 자리한 남부 인더스 거점으로, 성채·중간 도시·하부 도시와 저수·배수 시설이 잘 남아 있습니다.",
+      "stage2": {
+        "primaryContextId": "gujarat-maritime-water-management",
+        "contextIds": [
+          "indus-civilization",
+          "mature-harappan-urban-network",
+          "gujarat-maritime-water-management",
+          "craft-trade-standardization"
+        ],
+        "periodPathKo": [
+          "고대",
+          "인더스 문명",
+          "구자라트 물 관리 도시"
+        ],
+        "topicTagsKo": [
+          "돌라비라",
+          "카치",
+          "저수 시설",
+          "도시 구획",
+          "건조 지대"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "구자라트·카치",
+          "theme": [
+            "도시 계획",
+            "물 관리",
+            "교역"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 0,
+          "noteKo": "UNESCO 세계유산 본문과 지도 자료가 함께 있는 고신뢰 유적입니다."
+        }
+      }
+    },
+    {
+      "entryId": "lothal",
+      "titleKo": "로탈",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "인도",
+      "coordinates": {
+        "lat": 22.5214,
+        "lng": 72.2494
+      },
+      "yearLabelKo": "기원전 2400-1900년경",
+      "summaryKo": "캄베이만 내륙 수로와 연결된 하라파계 항구도시 유적으로, 상부·하부 도시, 배수 시설, 공예 생산 구역이 확인됩니다.",
+      "stage2": {
+        "primaryContextId": "gujarat-maritime-water-management",
+        "contextIds": [
+          "indus-civilization",
+          "mature-harappan-urban-network",
+          "gujarat-maritime-water-management",
+          "craft-trade-standardization"
+        ],
+        "periodPathKo": [
+          "고대",
+          "인더스 문명",
+          "구자라트 항구도시"
+        ],
+        "topicTagsKo": [
+          "로탈",
+          "항구도시",
+          "캄베이만",
+          "해상 교역",
+          "공예 생산"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "구자라트·카치",
+          "theme": [
+            "항구",
+            "교역",
+            "공예 생산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 잠정목록과 World History Encyclopedia 인더스 문명 항목을 함께 사용합니다."
+        }
+      }
+    },
+    {
+      "entryId": "kalibangan",
+      "titleKo": "칼리방간",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "인도",
+      "coordinates": {
+        "lat": 29.47,
+        "lng": 74.13
+      },
+      "yearLabelKo": "기원전 3500-1750년경",
+      "summaryKo": "선하라파 단계와 성숙기 하라파 단계가 이어지는 라자스탄 주요 유적으로, 성채·묘지·격자형 도시 흔적과 제의 구조가 확인됩니다.",
+      "stage2": {
+        "primaryContextId": "ghaggar-hakra-eastern-settlements",
+        "contextIds": [
+          "indus-civilization",
+          "mature-harappan-urban-network",
+          "ghaggar-hakra-eastern-settlements"
+        ],
+        "periodPathKo": [
+          "고대",
+          "인더스 문명",
+          "가가르-하크라 동부 정착권"
+        ],
+        "topicTagsKo": [
+          "칼리방간",
+          "라자스탄",
+          "가가르-하크라",
+          "선하라파",
+          "제의 구조"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "가가르-하크라·동부권",
+          "theme": [
+            "도시 계획",
+            "묘지·정착"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 0,
+          "referenceSources": 2,
+          "noteKo": "Britannica와 World History Encyclopedia를 사용하며, 좌표는 넓은 유적권의 근사값으로 관리합니다."
+        }
+      }
+    },
+    {
+      "entryId": "rakhigarhi",
+      "titleKo": "라키가르히",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "인도",
+      "coordinates": {
+        "lat": 29.298,
+        "lng": 76.1142
+      },
+      "yearLabelKo": "기원전 2600-1800년경",
+      "summaryKo": "하리아나의 대형 하라파 도시 유적으로, 여러 둔덕이 이어진 광범위한 정착지와 주거·배수·곡물 저장·공예 자료가 확인됩니다.",
+      "stage2": {
+        "primaryContextId": "ghaggar-hakra-eastern-settlements",
+        "contextIds": [
+          "indus-civilization",
+          "mature-harappan-urban-network",
+          "ghaggar-hakra-eastern-settlements",
+          "craft-trade-standardization"
+        ],
+        "periodPathKo": [
+          "고대",
+          "인더스 문명",
+          "동부 대형 도시 유적"
+        ],
+        "topicTagsKo": [
+          "라키가르히",
+          "하리아나",
+          "동부 확산",
+          "인장",
+          "대형 정착지"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "가가르-하크라·동부권",
+          "theme": [
+            "도시 계획",
+            "공예 생산",
+            "묘지·정착"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 2,
+          "referenceSources": 0,
+          "noteKo": "하리아나 관광 및 히사르 행정 자료를 사용하지만, 여러 둔덕이 이어진 넓은 유적권이므로 표시 좌표는 근사값입니다."
+        }
+      }
+    },
+    {
+      "entryId": "ganweriwala",
+      "titleKo": "간웨리왈라",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "파키스탄",
+      "coordinates": {
+        "lat": 28.5989,
+        "lng": 71.15
+      },
+      "yearLabelKo": "기원전 2600-1900년경",
+      "summaryKo": "촐리스탄 사막의 하크라 옛 물길 가까이에 있는 대형 인더스 문명 유적으로, 하라파와 모헨조다로 사이 도시망의 빈 공간을 설명하는 후보지입니다.",
+      "stage2": {
+        "primaryContextId": "underexplored-cholistan-urban-sites",
+        "contextIds": [
+          "indus-civilization",
+          "mature-harappan-urban-network",
+          "ghaggar-hakra-eastern-settlements",
+          "underexplored-cholistan-urban-sites"
+        ],
+        "periodPathKo": [
+          "고대",
+          "인더스 문명",
+          "촐리스탄 미발굴 대형 유적"
+        ],
+        "topicTagsKo": [
+          "간웨리왈라",
+          "촐리스탄",
+          "하크라",
+          "미발굴 대형 유적",
+          "도시망 공백"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "촐리스탄",
+          "theme": [
+            "미발굴 대형 유적",
+            "도시 계획"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 0,
+          "referenceSources": 2,
+          "noteKo": "Harappa.com과 World History Encyclopedia를 참고하지만 충분히 발굴되지 않은 유적이므로 sourceConfidence를 approximate로 유지합니다."
+        }
+      }
+    }
+  ]
+}

@@ -14,7 +14,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Current entry count: 250
 - Completed curation batches: 31
 - Latest completed batch: `africa-egypt-late-temple-centers-v1`
-- Latest completed infrastructure milestone: stage-2 four-dataset usability pass
+- Latest completed infrastructure milestone: stage-2 Indus civilization pilot
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
@@ -100,6 +100,12 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - Scope: verify public preview behavior after adding the fourth dataset
   - Checked: dataset switching, search, context filtering, detail panel rendering, stale marker/label cleanup, and mobile entry-list scrolling
   - Result: public browser pass completed for 4 datasets and 40 Stage 2 preview entries
+
+- Stage-2 Indus Civilization pilot dataset
+  - Files: `data/stage2/index.json`, `data/stage2/indus-civilization-preview.json`, `docs/stage2-preview.md`
+  - URL path: `/stage2-preview.html`
+  - Scope: add a fifth Stage 2 preview dataset using the existing Indus Civilization major urban sites batch
+  - Model stress test: early farming roots, mature Harappan urban planning, Indus river core cities, Ghaggar-Hakra/eastern settlements, Gujarat maritime and water-management sites, craft/trade standardization, and underexplored Cholistan large-site handling
 
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`
@@ -566,14 +572,14 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Stage-2 fifth pilot dataset
-   - Scope: create one more Stage 2 file from another ancient civilization batch, likely Indus or early China, to compare against Mesopotamia and Egypt
+1. Stage-2 five-dataset usability pass
+   - Scope: verify `/stage2-preview.html` after adding Indus, especially dataset switching, Indus search/filter behavior, stale marker labels, and mobile scrolling
 
-2. Stage-2 preview usability refinement
-   - Scope: consider whether mobile preview should add a compact map jump or detail jump once more datasets are added
+2. Stage-2 sixth pilot dataset
+   - Scope: create one more Stage 2 file from early China to compare river-basin, Bronze Age, and state-formation contexts against Mesopotamia, Egypt, and Indus
 
 3. First-stage DB next expansion batch
-   - Scope: resume focused first-stage source-record growth if the priority shifts back from Stage 2 modeling to raw coverage
+  - Scope: resume focused first-stage source-record growth if the priority shifts back from Stage 2 modeling to raw coverage
 
 ## Resume Checklist
 
