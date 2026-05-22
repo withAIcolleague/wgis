@@ -1,0 +1,515 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-lapita-pacific-settlement-preview",
+  "titleKo": "2단계 미리보기: 라피타와 태평양 정착 경관",
+  "descriptionKo": "Lapita 토기와 원양 항해 확산, 멜라네시아·서폴리네시아 초기 정착, 미크로네시아·폴리네시아 석조 의례 경관을 함께 비교하는 2단계 미리보기 데이터셋입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "초기 Lapita",
+        "남부 Lapita",
+        "원격 오세아니아 정착",
+        "서폴리네시아 Lapita",
+        "미크로네시아 중세 의례",
+        "동폴리네시아 의례 경관",
+        "중앙폴리네시아 항해 네트워크"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "뉴칼레도니아",
+        "바누아투",
+        "비스마르크 제도",
+        "통가",
+        "사모아",
+        "미크로네시아",
+        "라파누이",
+        "라이아테아"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "Lapita 토기",
+        "원양 항해",
+        "초기 정착",
+        "묘지·매장",
+        "교환 네트워크",
+        "조상 폴리네시아",
+        "석조 의례 경관",
+        "항해·계보 네트워크",
+        "섬 권력 중심"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지도 유형",
+      "options": [
+        "유적"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "lapita-pacific-settlement-navigation",
+      "labelKo": "Lapita와 태평양 정착·항해",
+      "parentId": null,
+      "periodKo": "기원전 1500년경-18세기",
+      "summaryKo": "비스마르크 제도에서 멜라네시아, 서폴리네시아, 미크로네시아, 동폴리네시아까지 이어지는 원양 항해, 섬 정착, 의례 경관을 함께 비교하는 상위 맥락입니다."
+    },
+    {
+      "id": "early-western-lapita-exchange-network",
+      "labelKo": "초기 서부 Lapita 교환망",
+      "parentId": "lapita-pacific-settlement-navigation",
+      "periodKo": "기원전 1500-800년경",
+      "summaryKo": "탈레파케말라이를 중심으로 비스마르크 제도에서 수상가옥, 흑요석, 토기, 해양 자원과 교환망이 결합한 초기 Lapita 확산권을 봅니다."
+    },
+    {
+      "id": "southern-lapita-pottery-homeland",
+      "labelKo": "남부 Lapita 토기 표지 유적",
+      "parentId": "lapita-pacific-settlement-navigation",
+      "periodKo": "기원전 1300-800년경",
+      "summaryKo": "푸에 반도의 Lapita 표지 유적을 통해 dentate-stamped 토기 명칭의 기원, 뉴칼레도니아 해안 정착, 남부 Lapita 문화권을 다룹니다."
+    },
+    {
+      "id": "vanuatu-remote-oceania-cemetery",
+      "labelKo": "바누아투 원격 오세아니아 묘지",
+      "parentId": "lapita-pacific-settlement-navigation",
+      "periodKo": "기원전 10-9세기",
+      "summaryKo": "테오우마 묘지와 패총을 통해 원격 오세아니아 초기 정착민의 매장 관습, 식생활, 인구 이동과 항해 경로를 직접 살펴봅니다."
+    },
+    {
+      "id": "western-polynesian-lapita-settlement",
+      "labelKo": "서폴리네시아 Lapita 정착",
+      "parentId": "lapita-pacific-settlement-navigation",
+      "periodKo": "기원전 1000-800년경",
+      "summaryKo": "누쿨레카와 물리파누아를 통해 통가-사모아권 초기 정착, 조상 폴리네시아 문화 형성, 서폴리네시아 동쪽 확산을 비교합니다."
+    },
+    {
+      "id": "lapita-pottery-oceanic-expansion",
+      "labelKo": "Lapita 토기와 원양 확산",
+      "parentId": "lapita-pacific-settlement-navigation",
+      "periodKo": "기원전 1500-800년경",
+      "summaryKo": "푸에, 테오우마, 탈레파케말라이, 누쿨레카, 물리파누아를 묶어 Lapita 토기, 해안 취락, 원양 항해 확산을 횡단 비교합니다."
+    },
+    {
+      "id": "micronesian-ceremonial-stone-centers",
+      "labelKo": "미크로네시아 석조 의례 중심지",
+      "parentId": "lapita-pacific-settlement-navigation",
+      "periodKo": "1200-1500년경",
+      "summaryKo": "난 마돌의 인공 섬, 수로, 현무암·산호석 건축을 통해 사우델레우르 왕조 권력, 노동 동원, 동부 미크로네시아 의례 중심지를 다룹니다."
+    },
+    {
+      "id": "eastern-polynesian-ceremonial-landscapes",
+      "labelKo": "동폴리네시아 의례 경관",
+      "parentId": "lapita-pacific-settlement-navigation",
+      "periodKo": "10-18세기",
+      "summaryKo": "라파누이와 타푸타푸아테아를 통해 moai·ahu와 marae가 조상 숭배, 항해 기억, 계보와 동맹을 섬 경관에 새긴 방식을 비교합니다."
+    },
+    {
+      "id": "central-polynesian-navigation-ritual-network",
+      "labelKo": "중앙폴리네시아 항해·의례 네트워크",
+      "parentId": "lapita-pacific-settlement-navigation",
+      "periodKo": "17-18세기",
+      "summaryKo": "타푸타푸아테아의 marae와 바다로 열린 경관을 통해 라이아테아, 오로 신 숭배, 중앙폴리네시아 항해·계보 네트워크를 다룹니다."
+    },
+    {
+      "id": "pacific-island-power-ritual-centers",
+      "labelKo": "태평양 섬 권력과 의례 중심",
+      "parentId": "lapita-pacific-settlement-navigation",
+      "periodKo": "1200-1800년경",
+      "summaryKo": "난 마돌, 라파누이, 타푸타푸아테아를 묶어 석조 건축, 조상 숭배, 추장권, 노동 동원과 해양 세계의 의례 중심지를 비교합니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "foue-peninsula-lapita",
+      "titleKo": "푸에 반도 Lapita",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "프랑스령 뉴칼레도니아",
+      "coordinates": {
+        "lat": -21.047,
+        "lng": 164.7902
+      },
+      "yearLabelKo": "기원전 1300-800년경",
+      "summaryKo": "Lapita 문화와 dentate-stamped 토기 이름의 기원이 된 표지 유적으로, 뉴칼레도니아 해안 정착과 초기 원양 항해 집단의 토기 제작·해양 자원 이용을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "southern-lapita-pottery-homeland",
+        "contextIds": [
+          "lapita-pacific-settlement-navigation",
+          "southern-lapita-pottery-homeland",
+          "lapita-pottery-oceanic-expansion"
+        ],
+        "periodPathKo": [
+          "선사",
+          "남부 Lapita 문화권",
+          "뉴칼레도니아 표지 유적과 토기 명칭"
+        ],
+        "topicTagsKo": [
+          "푸에 반도",
+          "Lapita",
+          "Xapeta'a",
+          "dentate-stamped 토기",
+          "뉴칼레도니아"
+        ],
+        "uiFilters": {
+          "era": "남부 Lapita",
+          "region": "뉴칼레도니아",
+          "theme": [
+            "Lapita 토기",
+            "원양 항해",
+            "초기 정착"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "Lapita Database와 뉴칼레도니아 박물관 자료, Metropolitan Museum Lapita 설명을 함께 사용해 표지 유적 위치와 토기 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "teouma",
+      "titleKo": "테오우마",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "바누아투",
+      "coordinates": {
+        "lat": -17.8089,
+        "lng": 168.3834
+      },
+      "yearLabelKo": "기원전 10-9세기, 약 3000년 전",
+      "summaryKo": "에파테섬 남부의 Lapita 묘지와 패총 복합 유적으로, 원격 오세아니아 초기 정착민의 매장 관습, 식생활, 이동 경로를 직접 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "vanuatu-remote-oceania-cemetery",
+        "contextIds": [
+          "lapita-pacific-settlement-navigation",
+          "vanuatu-remote-oceania-cemetery",
+          "lapita-pottery-oceanic-expansion"
+        ],
+        "periodPathKo": [
+          "선사",
+          "원격 오세아니아",
+          "바누아투 Lapita 묘지와 초기 정착"
+        ],
+        "topicTagsKo": [
+          "테오우마",
+          "에파테",
+          "Lapita 묘지",
+          "바누아투",
+          "원격 오세아니아"
+        ],
+        "uiFilters": {
+          "era": "원격 오세아니아 정착",
+          "region": "바누아투",
+          "theme": [
+            "묘지·매장",
+            "초기 정착",
+            "Lapita 토기"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "Lapita Database 좌표와 ANU·PMC 공개 연구 자료를 사용해 묘지 유적, 식생활, 초기 정착 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "talepakemalai",
+      "titleKo": "탈레파케말라이",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "파푸아뉴기니",
+      "coordinates": {
+        "lat": -1.5715,
+        "lng": 149.6303
+      },
+      "yearLabelKo": "기원전 1500-800년경",
+      "summaryKo": "무사우 제도의 초기 Lapita 대형 취락으로, 수상가옥 흔적과 토기, 흑요석, 조개·동물 자료가 원격 오세아니아로 향한 초기 항해 확산의 출발권역을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "early-western-lapita-exchange-network",
+        "contextIds": [
+          "lapita-pacific-settlement-navigation",
+          "early-western-lapita-exchange-network",
+          "lapita-pottery-oceanic-expansion"
+        ],
+        "periodPathKo": [
+          "선사",
+          "비스마르크 제도",
+          "초기 Lapita 수상 취락과 교환망"
+        ],
+        "topicTagsKo": [
+          "탈레파케말라이",
+          "무사우 제도",
+          "수상가옥",
+          "흑요석",
+          "Lapita 교환망"
+        ],
+        "uiFilters": {
+          "era": "초기 Lapita",
+          "region": "비스마르크 제도",
+          "theme": [
+            "Lapita 토기",
+            "교환 네트워크",
+            "원양 항해"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "Lapita Database, UCLA Cotsen Institute, tDAR 자료를 사용해 유적 좌표와 무사우 제도 교환망 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "nukuleka-lapita",
+      "titleKo": "누쿨레카 Lapita",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "통가",
+      "coordinates": {
+        "lat": -21.135,
+        "lng": -175.033
+      },
+      "yearLabelKo": "기원전 900-800년경",
+      "summaryKo": "통가타푸 동부의 Lapita 취락으로, 피지·통가·사모아로 이어진 원격 오세아니아 동쪽 확산과 조상 폴리네시아 문화 형성의 초기 단계를 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "western-polynesian-lapita-settlement",
+        "contextIds": [
+          "lapita-pacific-settlement-navigation",
+          "western-polynesian-lapita-settlement",
+          "lapita-pottery-oceanic-expansion"
+        ],
+        "periodPathKo": [
+          "선사",
+          "서폴리네시아",
+          "통가 Lapita 정착과 조상 폴리네시아"
+        ],
+        "topicTagsKo": [
+          "누쿨레카",
+          "통가타푸",
+          "Lapita 통가",
+          "조상 폴리네시아",
+          "서폴리네시아"
+        ],
+        "uiFilters": {
+          "era": "서폴리네시아 Lapita",
+          "region": "통가",
+          "theme": [
+            "조상 폴리네시아",
+            "초기 정착",
+            "Lapita 토기"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 통가 Lapita 잠정목록과 통가 관광청 자료, Britannica Lapita 설명을 사용하지만 대표 좌표는 누쿨레카 일대 근사값으로 관리합니다."
+        }
+      }
+    },
+    {
+      "entryId": "mulifanua-lapita",
+      "titleKo": "물리파누아 Lapita",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "사모아",
+      "coordinates": {
+        "lat": -13.8305,
+        "lng": -172.0369
+      },
+      "yearLabelKo": "기원전 1000-800년경",
+      "summaryKo": "사모아에서 장식 Lapita 토기가 확인된 대표 수중·해안 유적으로, 통가-사모아권 초기 항해와 서폴리네시아 동쪽 끝 정착 연대를 잡는 데 중요합니다.",
+      "stage2": {
+        "primaryContextId": "western-polynesian-lapita-settlement",
+        "contextIds": [
+          "lapita-pacific-settlement-navigation",
+          "western-polynesian-lapita-settlement",
+          "lapita-pottery-oceanic-expansion"
+        ],
+        "periodPathKo": [
+          "선사",
+          "서폴리네시아",
+          "사모아 Lapita 수중·해안 유적"
+        ],
+        "topicTagsKo": [
+          "물리파누아",
+          "사모아 Lapita",
+          "우폴루",
+          "페리 선착장",
+          "통가-사모아권"
+        ],
+        "uiFilters": {
+          "era": "서폴리네시아 Lapita",
+          "region": "사모아",
+          "theme": [
+            "조상 폴리네시아",
+            "초기 정착",
+            "Lapita 토기"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 0,
+          "referenceSources": 3,
+          "noteKo": "Mulifanua 방사성탄소 연대 논문과 Met·Britannica Lapita 설명을 사용하지만 유적 위치는 물리파누아 항 일대 근사값으로 관리합니다."
+        }
+      }
+    },
+    {
+      "entryId": "nan-madol",
+      "titleKo": "난 마돌",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "미크로네시아",
+      "coordinates": {
+        "lat": 6.8444,
+        "lng": 158.329
+      },
+      "yearLabelKo": "1200-1500년경",
+      "summaryKo": "폰페이 동남 해안 산호초 위의 인공 섬과 수로, 궁전·사원·무덤 유적으로 이루어진 의례 중심지로, 사우델레우르 왕조의 권력과 노동 동원을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "micronesian-ceremonial-stone-centers",
+        "contextIds": [
+          "lapita-pacific-settlement-navigation",
+          "micronesian-ceremonial-stone-centers",
+          "pacific-island-power-ritual-centers"
+        ],
+        "periodPathKo": [
+          "중세",
+          "동부 미크로네시아",
+          "난 마돌 석조 의례 중심지"
+        ],
+        "topicTagsKo": [
+          "난 마돌",
+          "폰페이",
+          "사우델레우르",
+          "인공 섬",
+          "석조 의례 경관"
+        ],
+        "uiFilters": {
+          "era": "미크로네시아 중세 의례",
+          "region": "미크로네시아",
+          "theme": [
+            "석조 의례 경관",
+            "섬 권력 중심"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 0,
+          "noteKo": "UNESCO 난 마돌 세계유산 및 정기보고 자료를 사용해 구성요소 좌표와 동부 미크로네시아 의례 중심지 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "rapa-nui",
+      "titleKo": "라파누이",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "칠레령 라파누이",
+      "coordinates": {
+        "lat": -27.1127,
+        "lng": -109.3497
+      },
+      "yearLabelKo": "10-16세기 moai·ahu 경관",
+      "summaryKo": "동폴리네시아의 고립된 거주 섬으로, moai 석상과 ahu 의례 플랫폼이 항해 정착 이후 조상 숭배, 채석·운반 기술, 의례 경관의 발전을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "eastern-polynesian-ceremonial-landscapes",
+        "contextIds": [
+          "lapita-pacific-settlement-navigation",
+          "eastern-polynesian-ceremonial-landscapes",
+          "pacific-island-power-ritual-centers"
+        ],
+        "periodPathKo": [
+          "중세",
+          "동폴리네시아",
+          "라파누이 moai와 ahu 의례 경관"
+        ],
+        "topicTagsKo": [
+          "라파누이",
+          "이스터섬",
+          "moai",
+          "ahu",
+          "라노 라라쿠"
+        ],
+        "uiFilters": {
+          "era": "동폴리네시아 의례 경관",
+          "region": "라파누이",
+          "theme": [
+            "석조 의례 경관",
+            "섬 권력 중심"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 라파누이 국립공원 세계유산 자료와 Britannica 항목을 사용해 의례 경관과 대표 좌표를 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "taputapuatea",
+      "titleKo": "타푸타푸아테아",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "프랑스령 폴리네시아",
+      "coordinates": {
+        "lat": -16.8392,
+        "lng": -151.3573
+      },
+      "yearLabelKo": "17-18세기 지역 의례 중심",
+      "summaryKo": "라이아테아섬 오포아의 marae 복합체로, 오로 신 숭배와 추장권, 중앙폴리네시아 항해·계보 네트워크가 만나는 의례 중심지였습니다.",
+      "stage2": {
+        "primaryContextId": "central-polynesian-navigation-ritual-network",
+        "contextIds": [
+          "lapita-pacific-settlement-navigation",
+          "eastern-polynesian-ceremonial-landscapes",
+          "central-polynesian-navigation-ritual-network",
+          "pacific-island-power-ritual-centers"
+        ],
+        "periodPathKo": [
+          "근세",
+          "중앙폴리네시아",
+          "라이아테아 marae와 항해·계보 네트워크"
+        ],
+        "topicTagsKo": [
+          "타푸타푸아테아",
+          "라이아테아",
+          "marae",
+          "오로",
+          "중앙폴리네시아 항해"
+        ],
+        "uiFilters": {
+          "era": "중앙폴리네시아 항해 네트워크",
+          "region": "라이아테아",
+          "theme": [
+            "항해·계보 네트워크",
+            "석조 의례 경관",
+            "섬 권력 중심"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 타푸타푸아테아 세계유산 자료와 Britannica 라이아테아 항목을 사용해 marae 복합체 위치와 의례·항해 네트워크 맥락을 확인했습니다."
+        }
+      }
+    }
+  ]
+}
