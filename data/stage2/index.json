@@ -122,6 +122,12 @@
       "titleKo": "근세 탐험과 식민 항구 도시",
       "path": "data/stage2/early-modern-exploration-colonial-port-cities-preview.json",
       "status": "preview-only"
+    },
+    {
+      "id": "stage2-early-modern-southeast-asia-maritime-sultanates-port-cities-preview",
+      "titleKo": "동남아 근세 해상 술탄국과 식민 항구도시",
+      "path": "data/stage2/early-modern-southeast-asia-maritime-sultanates-port-cities-preview.json",
+      "status": "preview-only"
     }
   ]
 }

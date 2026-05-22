@@ -1,0 +1,523 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-early-modern-southeast-asia-maritime-sultanates-port-cities-preview",
+  "titleKo": "2단계 미리보기: 동남아 근세 해상 술탄국과 식민 항구도시",
+  "descriptionKo": "말라카 이후 동남아 해상 술탄국, 향신료·후추 무역, 마닐라 갤리언, VOC 항구도시를 비교하기 위한 2단계 미리보기 데이터셋입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "아체 술탄국",
+        "조호르 술탄국",
+        "브루나이 술탄국",
+        "고와-탈로 술탄국",
+        "말루쿠 술탄국",
+        "스페인령 필리핀",
+        "VOC 바타비아"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "말라카 해협",
+        "보르네오 북안",
+        "술라웨시·말루쿠",
+        "루손·마닐라만",
+        "자바 북안"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "해상 술탄국",
+        "향신료 무역",
+        "후추 무역",
+        "이슬람 상업 네트워크",
+        "식민 항구도시",
+        "갤리언 무역",
+        "VOC 경쟁",
+        "자유항",
+        "수상도시"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지점 유형",
+      "options": [
+        "장소",
+        "유적"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "early-modern-southeast-asian-maritime-world",
+      "labelKo": "근세 동남아 해상 교역 세계",
+      "parentId": null,
+      "periodKo": "15-18세기",
+      "summaryKo": "말라카 해협, 보르네오, 술라웨시, 말루쿠, 루손, 자바 북안을 묶어 해상 술탄국, 향신료·후추 무역, 이슬람 상업 네트워크, 스페인·VOC 식민 항구가 겹친 근세 동남아의 항구 정치 지형을 봅니다."
+    },
+    {
+      "id": "post-malacca-straits-sultanate-rivalry",
+      "labelKo": "말라카 이후 해협 술탄국 경쟁",
+      "parentId": "early-modern-southeast-asian-maritime-world",
+      "periodKo": "16-17세기",
+      "summaryKo": "아체와 조호르 라마를 통해 포르투갈령 말라카 이후 말라카 해협 교역을 둘러싼 말레이·수마트라 술탄국의 경쟁, 후추 무역, VOC 개입을 비교합니다."
+    },
+    {
+      "id": "aceh-pepper-islamic-oceanic-network",
+      "labelKo": "아체 후추무역과 인도양 이슬람 네트워크",
+      "parentId": "post-malacca-straits-sultanate-rivalry",
+      "periodKo": "16-17세기",
+      "summaryKo": "반다아체를 중심으로 북수마트라 항구 권력이 후추, 이슬람 학문, 오스만·인도양 교역망, 포르투갈·조호르·VOC 경쟁과 연결된 방식을 봅니다."
+    },
+    {
+      "id": "johor-post-malacca-riverine-sultanate",
+      "labelKo": "조호르 라마와 말라카 계승 왕권",
+      "parentId": "post-malacca-straits-sultanate-rivalry",
+      "periodKo": "1528년 이후",
+      "summaryKo": "조호르강 하구의 조호르 라마를 통해 말라카 술탄국 계승 세력이 강 수계와 해협 항로를 바탕으로 재편한 왕권과 항구 방어 전략을 봅니다."
+    },
+    {
+      "id": "brunei-river-south-china-sea-sultanate",
+      "labelKo": "브루나이강과 남중국해 술탄국",
+      "parentId": "early-modern-southeast-asian-maritime-world",
+      "periodKo": "15-16세기",
+      "summaryKo": "코타 바투와 브루나이강 권역을 통해 보르네오 북안의 수상 취락, 강 하구 항만, 술루해·남중국해 교역로가 술탄국 정치 중심과 결합한 모습을 봅니다."
+    },
+    {
+      "id": "makassar-free-port-spice-transit",
+      "labelKo": "마카사르 자유항과 향신료 중계",
+      "parentId": "early-modern-southeast-asian-maritime-world",
+      "periodKo": "16-17세기",
+      "summaryKo": "마카사르와 솜바 오푸를 통해 VOC 향신료 독점 이전 고와-탈로 술탄국의 자유항 정책, 말루쿠 향신료 중계, 인도양·남중국해 상인 연결을 봅니다."
+    },
+    {
+      "id": "maluku-clove-sultanates-european-rivalry",
+      "labelKo": "말루쿠 정향 술탄국과 유럽 경쟁",
+      "parentId": "early-modern-southeast-asian-maritime-world",
+      "periodKo": "15-17세기",
+      "summaryKo": "테르나테와 티도레를 묶어 정향 생산 섬들이 포르투갈, 스페인, 네덜란드의 요새·무역 경쟁 속에서도 토착 왕권과 광역 해상정치를 유지한 방식을 비교합니다."
+    },
+    {
+      "id": "spanish-east-indies-manila-galleon",
+      "labelKo": "마닐라 갤리언과 스페인령 동인도",
+      "parentId": "early-modern-southeast-asian-maritime-world",
+      "periodKo": "1571-1815년",
+      "summaryKo": "인트라무로스를 통해 중국 상인 상품, 멕시코 은, 스페인 식민 행정, 태평양 갤리언 무역이 만난 루손 항구도시의 세계 교역 거점을 봅니다."
+    },
+    {
+      "id": "voc-batavia-company-capital",
+      "labelKo": "VOC 바타비아와 회사형 항구도시",
+      "parentId": "early-modern-southeast-asian-maritime-world",
+      "periodKo": "1619-1799년",
+      "summaryKo": "바타비아를 통해 VOC가 성채, 운하, 창고, 시청, 중국인 거주지와 항구를 조직해 자바 북안의 향신료 무역 통제 중심지를 만든 방식을 봅니다."
+    },
+    {
+      "id": "southeast-asian-spice-route-port-politics",
+      "labelKo": "동남아 향신료 항로와 항구 정치",
+      "parentId": "early-modern-southeast-asian-maritime-world",
+      "periodKo": "16-18세기",
+      "summaryKo": "아체, 마카사르, 테르나테, 티도레, 바타비아를 연결해 후추·정향·육두구 항로가 토착 술탄국, 자유항, 회사 식민 항구 사이에서 재편된 과정을 봅니다."
+    },
+    {
+      "id": "colonial-company-fortified-port-cities",
+      "labelKo": "식민·회사형 요새 항구도시",
+      "parentId": "early-modern-southeast-asian-maritime-world",
+      "periodKo": "16-18세기",
+      "summaryKo": "마닐라 인트라무로스와 바타비아를 중심으로 성벽, 요새, 행정, 창고, 항만이 결합한 유럽 식민·회사형 항구도시의 동남아 변형을 비교합니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "aceh-banda-aceh",
+      "titleKo": "아체 술탄국",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "인도네시아",
+      "coordinates": {
+        "lat": 5.5483,
+        "lng": 95.3238
+      },
+      "yearLabelKo": "16-17세기 북수마트라 해상 술탄국",
+      "summaryKo": "말라카가 포르투갈에 점령된 뒤 북수마트라에서 성장한 해상 술탄국으로, 후추 무역과 이슬람 학문, 오스만·인도양 교역망을 연결한 항구 정치 중심지였습니다.",
+      "stage2": {
+        "primaryContextId": "aceh-pepper-islamic-oceanic-network",
+        "contextIds": [
+          "early-modern-southeast-asian-maritime-world",
+          "post-malacca-straits-sultanate-rivalry",
+          "aceh-pepper-islamic-oceanic-network",
+          "southeast-asian-spice-route-port-politics"
+        ],
+        "periodPathKo": [
+          "근세",
+          "말라카 이후 해협 경쟁",
+          "아체와 반다아체 후추·이슬람 네트워크"
+        ],
+        "topicTagsKo": [
+          "아체",
+          "반다아체",
+          "후추 무역",
+          "말라카 해협",
+          "오스만·인도양 네트워크"
+        ],
+        "uiFilters": {
+          "era": "아체 술탄국",
+          "region": "말라카 해협",
+          "theme": [
+            "해상 술탄국",
+            "후추 무역",
+            "이슬람 상업 네트워크",
+            "VOC 경쟁"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 0,
+          "referenceSources": 3,
+          "noteKo": "Britannica의 아체·반다아체 자료와 Atlas of Mutual Heritage 자료를 사용해 반다아체의 위치, 술탄국, 후추무역 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "johor-lama",
+      "titleKo": "조호르 라마",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "말레이시아",
+      "coordinates": {
+        "lat": 1.589,
+        "lng": 104.0167
+      },
+      "yearLabelKo": "1528년 이후 조호르 술탄국 왕도",
+      "summaryKo": "말라카 술탄국 멸망 뒤 계승 세력이 조호르강 유역에 세운 핵심 거점으로, 포르투갈 말라카, 아체, VOC 사이의 해협 교역 경쟁을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "johor-post-malacca-riverine-sultanate",
+        "contextIds": [
+          "early-modern-southeast-asian-maritime-world",
+          "post-malacca-straits-sultanate-rivalry",
+          "johor-post-malacca-riverine-sultanate"
+        ],
+        "periodPathKo": [
+          "근세",
+          "말라카 술탄국 이후",
+          "조호르강 하구 왕도와 해협 항구 전략"
+        ],
+        "topicTagsKo": [
+          "조호르 라마",
+          "조호르 술탄국",
+          "말라카 계승",
+          "조호르강",
+          "포르투갈-아체-VOC 경쟁"
+        ],
+        "uiFilters": {
+          "era": "조호르 술탄국",
+          "region": "말라카 해협",
+          "theme": [
+            "해상 술탄국",
+            "이슬람 상업 네트워크",
+            "VOC 경쟁"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "말레이시아 박물관국, 조호르 왕실 역사 포털, Britannica 자료를 사용해 조호르 라마 유적과 조호르 술탄국 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "brunei-kota-batu",
+      "titleKo": "브루나이 코타 바투",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "브루나이",
+      "coordinates": {
+        "lat": 4.8895,
+        "lng": 114.95
+      },
+      "yearLabelKo": "15-16세기 브루나이 술탄국 해상 중심",
+      "summaryKo": "코타 바투와 브루나이강 권역은 보르네오 북안과 술루해, 남중국해 교역로를 잇는 술탄국 정치 중심과 수상 항구 경관을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "brunei-river-south-china-sea-sultanate",
+        "contextIds": [
+          "early-modern-southeast-asian-maritime-world",
+          "brunei-river-south-china-sea-sultanate"
+        ],
+        "periodPathKo": [
+          "근세",
+          "보르네오 북안",
+          "브루나이강 술탄국과 남중국해 교역"
+        ],
+        "topicTagsKo": [
+          "브루나이",
+          "코타 바투",
+          "캄퐁 아예르",
+          "브루나이강",
+          "남중국해 교역"
+        ],
+        "uiFilters": {
+          "era": "브루나이 술탄국",
+          "region": "보르네오 북안",
+          "theme": [
+            "해상 술탄국",
+            "수상도시",
+            "이슬람 상업 네트워크"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "Brunei Tourism 자료와 Britannica 자료를 사용해 코타 바투·브루나이강 권역을 근사 위치로 잡고 술탄국 해상 전성기 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "makassar-gowa-tallo",
+      "titleKo": "마카사르 고와-탈로",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "인도네시아",
+      "coordinates": {
+        "lat": -5.1919,
+        "lng": 119.4162
+      },
+      "yearLabelKo": "16-17세기 동인도 해상 중계항",
+      "summaryKo": "고와-탈로 술탄국의 항구 도시로 성장한 마카사르는 말루쿠 향신료와 인도양·남중국해 상인을 연결한 자유항이자 VOC 독점 이전의 중계무역 거점이었습니다.",
+      "stage2": {
+        "primaryContextId": "makassar-free-port-spice-transit",
+        "contextIds": [
+          "early-modern-southeast-asian-maritime-world",
+          "makassar-free-port-spice-transit",
+          "southeast-asian-spice-route-port-politics"
+        ],
+        "periodPathKo": [
+          "근세",
+          "술라웨시 해상 술탄국",
+          "마카사르 자유항과 말루쿠 향신료 중계"
+        ],
+        "topicTagsKo": [
+          "마카사르",
+          "고와-탈로",
+          "솜바 오푸",
+          "자유항",
+          "말루쿠 향신료"
+        ],
+        "uiFilters": {
+          "era": "고와-탈로 술탄국",
+          "region": "술라웨시·말루쿠",
+          "theme": [
+            "해상 술탄국",
+            "향신료 무역",
+            "자유항",
+            "VOC 경쟁"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "마카사르 시 정부 자료, Britannica Gowa 자료, Atlas of Mutual Heritage 자료를 사용해 마카사르 자유항과 고와-탈로 술탄국 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "ternate-sultanate",
+      "titleKo": "테르나테 술탄국",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "인도네시아",
+      "coordinates": {
+        "lat": 0.7893,
+        "lng": 127.378
+      },
+      "yearLabelKo": "15-17세기 정향 무역 중심",
+      "summaryKo": "테르나테는 말루쿠 정향 생산지와 해상 항로를 둘러싼 대표 술탄국으로, 포르투갈·스페인·네덜란드의 향신료 경쟁이 직접 충돌한 섬 도시였습니다.",
+      "stage2": {
+        "primaryContextId": "maluku-clove-sultanates-european-rivalry",
+        "contextIds": [
+          "early-modern-southeast-asian-maritime-world",
+          "maluku-clove-sultanates-european-rivalry",
+          "southeast-asian-spice-route-port-politics"
+        ],
+        "periodPathKo": [
+          "근세",
+          "말루쿠 향신료 제도",
+          "테르나테 정향 술탄국과 유럽 요새 경쟁"
+        ],
+        "topicTagsKo": [
+          "테르나테",
+          "정향",
+          "향신료 제도",
+          "포르투갈",
+          "VOC"
+        ],
+        "uiFilters": {
+          "era": "말루쿠 술탄국",
+          "region": "술라웨시·말루쿠",
+          "theme": [
+            "해상 술탄국",
+            "향신료 무역",
+            "VOC 경쟁"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 0,
+          "referenceSources": 3,
+          "noteKo": "Britannica의 테르나테·말루쿠 자료와 World History Encyclopedia 자료를 사용해 정향 무역과 유럽 경쟁 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "tidore-sultanate",
+      "titleKo": "티도레 술탄국",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "인도네시아",
+      "coordinates": {
+        "lat": 0.6845,
+        "lng": 127.4057
+      },
+      "yearLabelKo": "15-17세기 테르나테와 경쟁한 정향 술탄국",
+      "summaryKo": "티도레는 테르나테와 함께 말루쿠 정향 무역을 둘러싼 주요 술탄국으로, 스페인·네덜란드 개입과 파푸아 방면 해상 관계가 겹친 항구 정치 중심지였습니다.",
+      "stage2": {
+        "primaryContextId": "maluku-clove-sultanates-european-rivalry",
+        "contextIds": [
+          "early-modern-southeast-asian-maritime-world",
+          "maluku-clove-sultanates-european-rivalry",
+          "southeast-asian-spice-route-port-politics"
+        ],
+        "periodPathKo": [
+          "근세",
+          "말루쿠 향신료 제도",
+          "티도레 정향 술탄국과 스페인·네덜란드 경쟁"
+        ],
+        "topicTagsKo": [
+          "티도레",
+          "소아시오",
+          "정향",
+          "향신료 제도",
+          "스페인-네덜란드 경쟁"
+        ],
+        "uiFilters": {
+          "era": "말루쿠 술탄국",
+          "region": "술라웨시·말루쿠",
+          "theme": [
+            "해상 술탄국",
+            "향신료 무역",
+            "VOC 경쟁"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 0,
+          "referenceSources": 3,
+          "noteKo": "Britannica의 티도레·말루쿠 자료와 World History Encyclopedia 자료를 사용해 티도레의 정향 술탄국, 테르나테 경쟁, 유럽 개입 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "intramuros-manila",
+      "titleKo": "마닐라 인트라무로스",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "필리핀",
+      "coordinates": {
+        "lat": 14.5896,
+        "lng": 120.9747
+      },
+      "yearLabelKo": "1571년 건설, 1571-1815년 마닐라 갤리언 중심",
+      "summaryKo": "인트라무로스는 스페인이 마닐라에 세운 성벽 도시로, 필리핀 식민 행정과 중국 상품, 멕시코 은, 태평양 갤리언 무역이 만난 세계 교역 거점이었습니다.",
+      "stage2": {
+        "primaryContextId": "spanish-east-indies-manila-galleon",
+        "contextIds": [
+          "early-modern-southeast-asian-maritime-world",
+          "spanish-east-indies-manila-galleon",
+          "colonial-company-fortified-port-cities"
+        ],
+        "periodPathKo": [
+          "근세",
+          "스페인령 동인도",
+          "마닐라 인트라무로스와 태평양 갤리언"
+        ],
+        "topicTagsKo": [
+          "마닐라",
+          "인트라무로스",
+          "마닐라 갤리언",
+          "스페인령 필리핀",
+          "중국 상인"
+        ],
+        "uiFilters": {
+          "era": "스페인령 필리핀",
+          "region": "루손·마닐라만",
+          "theme": [
+            "식민 항구도시",
+            "갤리언 무역"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "Intramuros Administration, UNESCO 잠정목록, Britannica 마닐라 갤리언 자료를 사용해 성벽도시와 태평양 교역 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "batavia-jakarta",
+      "titleKo": "바타비아",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "인도네시아",
+      "coordinates": {
+        "lat": -6.1352,
+        "lng": 106.8133
+      },
+      "yearLabelKo": "1619년 건설, 17-18세기 VOC 아시아 본부",
+      "summaryKo": "VOC가 자야카르타를 장악한 뒤 세운 아시아 본부로, 성채, 운하, 창고, 시청, 중국인 거주지와 항구가 회사 통치와 향신료 무역 독점을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "voc-batavia-company-capital",
+        "contextIds": [
+          "early-modern-southeast-asian-maritime-world",
+          "voc-batavia-company-capital",
+          "southeast-asian-spice-route-port-politics",
+          "colonial-company-fortified-port-cities"
+        ],
+        "periodPathKo": [
+          "근세",
+          "VOC 동인도 회사",
+          "바타비아 회사형 항구도시와 향신료 무역 통제"
+        ],
+        "topicTagsKo": [
+          "바타비아",
+          "자카르타 구시가지",
+          "VOC",
+          "네덜란드 동인도 회사",
+          "자바 북안"
+        ],
+        "uiFilters": {
+          "era": "VOC 바타비아",
+          "region": "자바 북안",
+          "theme": [
+            "식민 항구도시",
+            "향신료 무역",
+            "VOC 경쟁"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "UNESCO 자카르타 구시가지 잠정목록, Britannica 자카르타 역사, Dutch East India Company 자료를 사용해 바타비아의 VOC 본부 맥락을 확인했습니다."
+        }
+      }
+    }
+  ]
+}

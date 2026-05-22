@@ -14,7 +14,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Current entry count: 250
 - Completed curation batches: 31
 - Latest completed batch: `africa-egypt-late-temple-centers-v1`
-- Latest completed infrastructure milestone: stage-2 twenty-dataset public usability pass
+- Latest completed infrastructure milestone: stage-2 twenty-one-dataset public usability pass
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
@@ -323,6 +323,19 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - Scope: keep the public Stage 2 preview browser check repeatable after adding the twentieth dataset
   - Checked: 20-dataset selector, expected entry/marker/label counts across 170 Stage 2 preview entries, compact context filters, Early Modern ports search/detail/context behavior, stale Early Modern marker cleanup, deterministic map reframing after detail zoom, mobile entry-list scrolling, mobile detail map-return flow, and hidden-detail close behavior
   - Result: local and public browser passes completed for 20 datasets and 170 Stage 2 preview entries
+
+- Stage-2 early modern Southeast Asian maritime sultanates and port cities pilot dataset
+  - Files: `data/stage2/index.json`, `data/stage2/early-modern-southeast-asia-maritime-sultanates-port-cities-preview.json`, `scripts/smoke-check.js`, `docs/stage2-preview.md`
+  - URL path: `/stage2-preview.html`
+  - Scope: add a twenty-first Stage 2 preview dataset using the existing early modern Southeast Asian maritime sultanates and colonial port cities batch
+  - Model stress test: post-Malacca Straits sultanate rivalry, Aceh pepper and Islamic oceanic networks, Johor riverine kingship, Brunei riverine sultanate, Makassar free-port spice transit, Maluku clove sultanates, Manila galleon exchange, VOC Batavia, and colonial-company fortified port cities
+
+- Stage-2 twenty-one-dataset public usability pass
+  - Files: `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`
+  - URL path: `https://wgis.vercel.app/stage2-preview.html`
+  - Scope: keep the public Stage 2 preview browser check repeatable after adding the twenty-first dataset
+  - Checked: 21 indexed dataset endpoints and expected entry counts across 178 Stage 2 preview entries; when headless Chrome is available, the same script probes rendered URL states for compact context filters, early modern Southeast Asian maritime search/detail/context behavior, stale-data cleanup, and mobile-sized rendering
+  - Result: local endpoint verification completed for 21 datasets and 178 Stage 2 preview entries; the current Windows sandbox reports `browserProbe: "skipped"` because the installed Chrome/Edge headless GPU process exits before DOM/screenshot capture
 
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`
@@ -789,8 +802,8 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Stage-2 twenty-first pilot dataset
-   - Scope: create another Stage 2 file from early modern Southeast Asian maritime sultanates and colonial port cities to compare Aceh, Malacca-Straits successor ports, Manila galleon exchange, Makassar, VOC competition, and regional spice routes
+1. Stage-2 twenty-second pilot dataset
+   - Scope: create another Stage 2 file from early modern East Asian ports and treaty cities to compare Dejima/Nagasaki, Guangzhou-Canton trade, Macau, Shanghai treaty-port urbanism, Hong Kong harbor, and wider East Asian maritime exchange
 
 2. First-stage DB next expansion batch
    - Scope: resume focused first-stage source-record growth if the priority shifts back from Stage 2 modeling to raw coverage

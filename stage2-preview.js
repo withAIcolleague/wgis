@@ -8,6 +8,7 @@ let markers = [];
 let contextFiltersExpanded = false;
 
 const CONTEXT_COLLAPSED_LIMIT = 4;
+const initialParams = new URLSearchParams(window.location.search);
 
 const CONTEXT_ALL = {
   id: 'all',
@@ -424,7 +425,11 @@ async function init() {
   const indexResponse = await fetch('data/stage2/index.json');
   if (!indexResponse.ok) throw new Error(`2단계 목록을 불러오지 못했습니다: ${indexResponse.status}`);
   stage2Index = await indexResponse.json();
-  activeDatasetPath = stage2Index.datasets[0]?.path || null;
+
+  const requestedDatasetPath = initialParams.get('dataset');
+  activeDatasetPath = stage2Index.datasets.some(dataset => dataset.path === requestedDatasetPath)
+    ? requestedDatasetPath
+    : stage2Index.datasets[0]?.path || null;
   if (!activeDatasetPath) throw new Error('2단계 미리보기 데이터셋이 없습니다.');
 
   renderDatasetSelect();
@@ -444,21 +449,30 @@ async function init() {
     }
   });
 
-  await loadDataset(activeDatasetPath);
+  await loadDataset(activeDatasetPath, {
+    search: initialParams.get('q') || '',
+    contextId: initialParams.get('context') || 'all',
+    entryId: initialParams.get('entry') || null
+  });
 }
 
-async function loadDataset(path) {
+async function loadDataset(path, options = {}) {
   const response = await fetch(path);
   if (!response.ok) throw new Error(`2단계 미리보기 데이터를 불러오지 못했습니다: ${response.status}`);
 
   stage2Data = await response.json();
   activeDatasetPath = path;
-  activeContextId = 'all';
-  activeEntryId = null;
+  activeContextId = stage2Data.contexts.some(context => context.id === options.contextId)
+    ? options.contextId
+    : 'all';
+  activeEntryId = stage2Data.entries.some(entry => entry.entryId === options.entryId)
+    ? options.entryId
+    : null;
   contextFiltersExpanded = false;
-  document.getElementById('stage2Search').value = '';
+  document.getElementById('stage2Search').value = options.search || '';
   renderDatasetSelect();
   update();
+  document.documentElement.dataset.stage2Ready = 'true';
 }
 
 init().catch(error => {

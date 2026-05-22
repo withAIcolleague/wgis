@@ -250,6 +250,17 @@ The twentieth pilot dataset tests early modern exploration, Iberian oceanic expa
 - `havana`
 - `cartagena-de-indias`
 
+The twenty-first pilot dataset tests early modern Southeast Asian maritime sultanates, post-Malacca Straits rivalry, spice-route port politics, the Manila galleon, and VOC Batavia:
+
+- `aceh-banda-aceh`
+- `johor-lama`
+- `brunei-kota-batu`
+- `makassar-gowa-tallo`
+- `ternate-sultanate`
+- `tidore-sultanate`
+- `intramuros-manila`
+- `batavia-jakarta`
+
 The dataset list is managed in:
 
 ```text
@@ -280,13 +291,13 @@ npm run check
 
 The Stage 2 validator checks the preview data against `data/stage2/schema.json`. The smoke check confirms that the preview page, assets, critical UI wiring, and every indexed Stage 2 dataset are present.
 
-The public browser usability pass can be run with:
+The public usability pass can be run with:
 
 ```bash
 npm run check:stage2-public -- https://wgis.vercel.app/stage2-preview.html
 ```
 
-It opens the deployed preview in headless Chrome, verifies dataset switching, compact context filters, search, detail rendering, stale marker cleanup, and mobile list scrolling, then saves desktop and mobile screenshots outside the repository.
+It verifies the deployed Stage 2 index and every dataset endpoint. When headless Chrome is available, it also probes rendered URL states for compact context filters, search, detail rendering, stale-data cleanup, and mobile-sized rendering, then saves desktop and mobile screenshots outside the repository. If the local Chrome/Edge runtime cannot run headless rendering, the script reports `browserProbe: "skipped"` with the browser error while keeping the data endpoint verification explicit.
 
 ## Browser Usability Pass
 
@@ -544,3 +555,16 @@ The 2026-05-22 twenty-dataset browser pass checks `/stage2-preview.html` after a
 - Switching back from the Early Modern ports dataset to Atlantic revolutions clears stale Early Modern port list items, markers, labels, and map zoom state.
 - On mobile, the Early Modern ports entry list scrolls independently, `리스본` detail scrolls into view, `지도에서 보기` returns to the map, and `닫기` hides the detail panel.
 - Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-datasets-mobile.png`.
+
+The 2026-05-22 twenty-one-dataset browser pass checks `/stage2-preview.html` after adding the early modern Southeast Asian maritime sultanates and colonial port cities pilot dataset:
+
+- Dataset selector exposes 21 datasets.
+- All 21 indexed datasets render their expected entry, marker, and permanent-label counts: Atlantic revolutions 8, Ethiopia 8, Mesopotamia 10, Egypt 14, Indus 8, Early China 8, Ancient Greece 10, Achaemenid Persia 8, Roman Republic and Empire 8, Magadha-Maurya 8, Mesoamerica 8, West Africa 8, Andes 8, Southeast Asia 8, Maya lowland/Postclassic 8, Swahili Coast 8, Lapita/Pacific 8, North American Indigenous mound/urban centers 8, Indian Ocean trade ports 8, Early Modern exploration/colonial ports 8, and early modern Southeast Asian maritime sultanates/ports 8.
+- Context filters remain compact on every dataset switch.
+- Searching `마닐라` in the early modern Southeast Asian maritime dataset narrows the list and map to 1 entry, marker, and label.
+- Selecting `마닐라 인트라무로스` opens the detail panel with source-confidence information and detail actions.
+- Closing the detail panel preserves the current filtered marker and label.
+- The `말루쿠 정향 술탄국과 유럽 경쟁` context filter returns `테르나테 술탄국` and `티도레 술탄국`.
+- Switching back from the early modern Southeast Asian maritime dataset to Atlantic revolutions clears stale Southeast Asian list items, markers, labels, and map zoom state.
+- On mobile, the early modern Southeast Asian maritime entry list scrolls independently, `아체 술탄국` detail scrolls into view, `지도에서 보기` returns to the map, and `닫기` hides the detail panel.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-one-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-one-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing the dataset endpoint checks.
