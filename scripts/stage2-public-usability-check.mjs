@@ -111,6 +111,11 @@ const datasets = [
     path: 'data/stage2/north-america-indigenous-mound-urban-centers-preview.json',
     count: 8,
     firstEntryId: 'cahokia-mounds'
+  },
+  {
+    path: 'data/stage2/indian-ocean-trade-ports-entrepots-preview.json',
+    count: 8,
+    firstEntryId: 'aden'
   }
 ];
 
@@ -208,8 +213,8 @@ function assertCheck(condition, message, details = undefined) {
 async function main() {
   await mkdir(outputDir, { recursive: true });
   const userDataDir = await mkdtemp(path.join(os.tmpdir(), 'wgis-stage2-public-'));
-  const desktopShot = path.join(outputDir, 'wgis-stage2-eighteen-datasets-desktop.png');
-  const mobileShot = path.join(outputDir, 'wgis-stage2-eighteen-datasets-mobile.png');
+  const desktopShot = path.join(outputDir, 'wgis-stage2-nineteen-datasets-desktop.png');
+  const mobileShot = path.join(outputDir, 'wgis-stage2-nineteen-datasets-mobile.png');
 
   const chrome = spawn(chromePath, [
     '--headless=new',
@@ -466,6 +471,7 @@ async function main() {
     const swahili = datasets.find(dataset => dataset.path.endsWith('swahili-coast-trade-cities-preview.json'));
     const pacific = datasets.find(dataset => dataset.path.endsWith('lapita-pacific-settlement-preview.json'));
     const northAmerica = datasets.find(dataset => dataset.path.endsWith('north-america-indigenous-mound-urban-centers-preview.json'));
+    const indianOcean = datasets.find(dataset => dataset.path.endsWith('indian-ocean-trade-ports-entrepots-preview.json'));
     await selectDataset(greece);
     await setSearch('델포이', 1);
     state = await captureState('desktop-greece-search-delphi');
@@ -950,6 +956,46 @@ async function main() {
       state
     );
 
+    await selectDataset(indianOcean);
+    await setSearch('말라카', 1);
+    state = await captureState('desktop-indian-ocean-search-malacca');
+    assertCheck(state.entryIds.includes('malacca'), 'Indian Ocean search should find Malacca', state);
+
+    await clickEntry('malacca', '말라카');
+    state = await captureState('desktop-indian-ocean-detail-malacca');
+    assertCheck(state.detailTitle === '말라카' && state.detailHasConfidence && state.detailActions === 2, 'Indian Ocean detail should show Malacca and detail actions', state);
+
+    await clickDetailAction('close');
+    await waitForExpression("document.querySelector('#detailPanel')?.classList.contains('is-empty') && !document.querySelector('.entry-card.active')", 'desktop Indian Ocean detail closes');
+    state = await captureState('desktop-indian-ocean-detail-closed');
+    assertCheck(state.detailHidden && state.markers === 1 && state.labels === 1, 'Closing Indian Ocean detail should preserve current search markers', state);
+
+    await setSearch('', 8);
+    await clickContextId('persian-gulf-islamic-entrepots', 3);
+    state = await captureState('desktop-indian-ocean-persian-gulf-context');
+    assertCheck(
+      state.entryIds.includes('hormuz') &&
+        state.entryIds.includes('basra') &&
+        state.entryIds.includes('siraf') &&
+        state.contextFilterButtons <= 4,
+      'Persian Gulf Islamic entrepots context should return Hormuz, Basra, and Siraf while filters collapse again',
+      state
+    );
+
+    await selectDataset(datasets[0]);
+    await waitForExpression("typeof stage2Map !== 'undefined' && stage2Map.getZoom() <= 4", 'Atlantic map refits after Indian Ocean dataset');
+    state = await captureState('desktop-return-atlantic-after-indian-ocean');
+    assertCheck(
+      state.entryCountNumber === 8 &&
+        state.markers === 8 &&
+        state.labels === 8 &&
+        state.mapZoom <= 4 &&
+        !state.entryIds.includes('malacca') &&
+        !state.entryIds.includes('hormuz'),
+      'Switching away from Indian Ocean dataset should clear stale list, markers, labels, and map view',
+      state
+    );
+
     const desktopPng = await client.send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: false }, sessionId);
     await writeFile(desktopShot, Buffer.from(desktopPng.data, 'base64'));
 
@@ -963,28 +1009,28 @@ async function main() {
       screenOrientation: { type: 'portraitPrimary', angle: 0 }
     });
 
-    await selectDataset(northAmerica);
+    await selectDataset(indianOcean);
     await evaluate(`(() => {
       const list = document.querySelector('.entry-list');
       list.scrollTop = 360;
     })()`);
     await waitForExpression("document.querySelector('.entry-list')?.scrollTop > 0", 'mobile entry list scrolls');
-    state = await captureState('mobile-north-america-list-scroll');
+    state = await captureState('mobile-indian-ocean-list-scroll');
     assertCheck(state.entryListCanScroll && state.entryListScrollTop > 0 && state.contextFilterButtons <= 4, 'Mobile Stage 2 entry list should scroll independently with compact filters', state);
 
-    await clickEntry('cahokia-mounds', '카호키아 마운즈');
+    await clickEntry('aden', '아덴');
     await waitForExpression("document.querySelector('#detailPanel')?.getBoundingClientRect().top < 80", 'mobile detail scrolls into view');
-    state = await captureState('mobile-north-america-detail-cahokia');
-    assertCheck(state.detailTitle === '카호키아 마운즈' && state.detailPosition === 'static' && state.detailTop < 80 && state.documentHeight > state.viewportHeight, 'Mobile detail should sit in normal page flow and scroll into view after selection', state);
+    state = await captureState('mobile-indian-ocean-detail-aden');
+    assertCheck(state.detailTitle === '아덴' && state.detailPosition === 'static' && state.detailTop < 80 && state.documentHeight > state.viewportHeight, 'Mobile detail should sit in normal page flow and scroll into view after selection', state);
 
     await clickDetailAction('focus-map');
     await waitForExpression("(() => { const top = document.querySelector('#stage2Map')?.getBoundingClientRect().top || 0; return typeof stage2Map !== 'undefined' && stage2Map.getZoom() >= 8 && top > -80 && top < window.innerHeight - 80; })()", 'mobile detail map focus returns to map');
-    state = await captureState('mobile-north-america-focus-map');
-    assertCheck(state.detailTitle === '카호키아 마운즈' && state.mapTop > -80 && state.mapTop < state.viewportHeight - 80 && state.mapZoom >= 8, 'Mobile map focus should return to the selected map location', state);
+    state = await captureState('mobile-indian-ocean-focus-map');
+    assertCheck(state.detailTitle === '아덴' && state.mapTop > -80 && state.mapTop < state.viewportHeight - 80 && state.mapZoom >= 8, 'Mobile map focus should return to the selected map location', state);
 
     await clickDetailAction('close');
     await waitForExpression("document.querySelector('#detailPanel')?.classList.contains('is-empty') && !document.querySelector('.entry-card.active')", 'mobile detail closes');
-    state = await captureState('mobile-north-america-detail-closed');
+    state = await captureState('mobile-indian-ocean-detail-closed');
     assertCheck(state.detailHidden && state.activeEntryCards === 0 && state.mapTop > -80 && state.mapTop < state.viewportHeight - 80, 'Mobile close should hide detail and return to the map area', state);
 
     const mobilePng = await client.send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: false }, sessionId);

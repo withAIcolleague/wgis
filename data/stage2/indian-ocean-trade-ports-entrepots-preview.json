@@ -1,0 +1,524 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-indian-ocean-trade-ports-entrepots-preview",
+  "titleKo": "2단계 미리보기: 인도양 교역항과 중계항",
+  "descriptionKo": "홍해 입구, 페르시아만, 말라바르 해안, 말라카 해협, 남중국해를 잇는 인도양 교역항과 중계항을 비교하기 위한 2단계 미리보기 데이터셋입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "고대 인도양",
+        "남아라비아·홍해 중계항",
+        "초기 이슬람",
+        "중세 페르시아만",
+        "말라바르 향신료 교역",
+        "말라카 술탄국",
+        "송·원 해상 실크로드"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "홍해·아덴만",
+        "페르시아만",
+        "말라바르 해안",
+        "말라카 해협",
+        "남중국해"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "중계항",
+        "향신료 교역",
+        "해협 통제",
+        "이슬람 상인 네트워크",
+        "해상 실크로드",
+        "로마-인도 교역",
+        "항구도시 물관리",
+        "내륙-해양 연결"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지도 유형",
+      "options": [
+        "장소",
+        "유적"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "indian-ocean-maritime-trade-network",
+      "labelKo": "인도양 해상 교역망",
+      "parentId": null,
+      "periodKo": "기원전 1세기-17세기",
+      "summaryKo": "홍해와 아라비아해, 페르시아만, 말라바르 해안, 말라카 해협, 남중국해를 연결한 장거리 해상 교역과 항구도시 네트워크를 보는 상위 맥락입니다."
+    },
+    {
+      "id": "red-sea-aden-gulf-crossroads",
+      "labelKo": "홍해·아덴만 관문",
+      "parentId": "indian-ocean-maritime-trade-network",
+      "periodKo": "고대 이후, 10-16세기",
+      "summaryKo": "아덴을 중심으로 밥엘만데브, 홍해, 아라비아해, 동아프리카와 남아라비아 향료 교역이 만나는 관문 항구의 역할을 살펴봅니다."
+    },
+    {
+      "id": "persian-gulf-islamic-entrepots",
+      "labelKo": "페르시아만 이슬람 중계항",
+      "parentId": "indian-ocean-maritime-trade-network",
+      "periodKo": "7-17세기",
+      "summaryKo": "바스라, 시라프, 호르무즈를 묶어 이라크·이란 내륙, 페르시아만, 아라비아해, 인도양 상품이 연결되는 이슬람권 항구망을 비교합니다."
+    },
+    {
+      "id": "basra-siraf-gulf-inland-corridor",
+      "labelKo": "바스라·시라프 내륙 연결로",
+      "parentId": "persian-gulf-islamic-entrepots",
+      "periodKo": "7-10세기",
+      "summaryKo": "바스라와 시라프를 통해 페르시아만 상품이 메소포타미아, 이란 내륙, 바그다드 학문·상업 중심지로 이동한 경로를 봅니다."
+    },
+    {
+      "id": "hormuz-strait-port-polity",
+      "labelKo": "호르무즈 해협 항구권력",
+      "parentId": "persian-gulf-islamic-entrepots",
+      "periodKo": "13-17세기",
+      "summaryKo": "호르무즈 왕국과 해협 통제를 통해 진주, 말, 직물, 향신료, 금속 교역과 포르투갈·사파비 경쟁의 전략성을 살펴봅니다."
+    },
+    {
+      "id": "malabar-spice-port-corridor",
+      "labelKo": "말라바르 향신료 항구권",
+      "parentId": "indian-ocean-maritime-trade-network",
+      "periodKo": "기원전 1세기-16세기",
+      "summaryKo": "무지리스와 캘리컷을 묶어 후추·향신료 교역, 로마-인도 교역, 아랍·페르시아·중국 상인 공동체가 결합한 말라바르 해안을 봅니다."
+    },
+    {
+      "id": "muziris-roman-red-sea-spice-route",
+      "labelKo": "무지리스와 로마-홍해 향신료 교역",
+      "parentId": "malabar-spice-port-corridor",
+      "periodKo": "기원전 1세기-기원후 5세기경",
+      "summaryKo": "무지리스를 통해 로마 제국, 홍해, 아라비아, 남인도를 연결한 고대 후추 교역과 항구 위치 논쟁을 함께 다룹니다."
+    },
+    {
+      "id": "calicut-zamorin-spice-entrepot",
+      "labelKo": "캘리컷 자모린 향신료 중계항",
+      "parentId": "malabar-spice-port-corridor",
+      "periodKo": "12-16세기",
+      "summaryKo": "캘리컷을 중심으로 말라바르 후추, 해상 상인 공동체, 포르투갈 항해자와 기존 인도양 상업 질서의 접점을 봅니다."
+    },
+    {
+      "id": "straits-of-malacca-southeast-asian-entrepot",
+      "labelKo": "말라카 해협 동남아 중계항",
+      "parentId": "indian-ocean-maritime-trade-network",
+      "periodKo": "15-16세기",
+      "summaryKo": "말라카 술탄국을 통해 인도양과 남중국해, 벵골만을 잇는 다언어 상인, 이슬람 법·외교, 해협 통제의 중계항 구조를 살펴봅니다."
+    },
+    {
+      "id": "song-yuan-maritime-silk-road-quanzhou",
+      "labelKo": "송·원 취안저우 해상 실크로드",
+      "parentId": "indian-ocean-maritime-trade-network",
+      "periodKo": "10-14세기",
+      "summaryKo": "취안저우를 통해 남중국해와 동남아·인도양을 잇는 송·원대 해상 무역, 항구 행정, 종교 공동체, 교량·시장 기반 시설을 봅니다."
+    },
+    {
+      "id": "transoceanic-spice-horse-ceramic-networks",
+      "labelKo": "향신료·말·도자 장거리 교역망",
+      "parentId": "indian-ocean-maritime-trade-network",
+      "periodKo": "고대-17세기",
+      "summaryKo": "아덴, 호르무즈, 시라프, 캘리컷, 무지리스, 말라카, 취안저우를 관통하는 향신료, 말, 진주, 도자, 금속, 직물의 장거리 이동을 연결합니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "aden",
+      "titleKo": "아덴",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "예멘",
+      "coordinates": {
+        "lat": 12.7797,
+        "lng": 45.0367
+      },
+      "yearLabelKo": "고대 이후, 10-16세기 인도양 중계항",
+      "summaryKo": "홍해 입구와 인도양을 잇는 밥엘만데브 근처의 천연 항구로, 남아라비아 향료 교역과 중세 인도양 상업망에서 핵심 중계지였습니다.",
+      "stage2": {
+        "primaryContextId": "red-sea-aden-gulf-crossroads",
+        "contextIds": [
+          "indian-ocean-maritime-trade-network",
+          "red-sea-aden-gulf-crossroads",
+          "transoceanic-spice-horse-ceramic-networks"
+        ],
+        "periodPathKo": [
+          "중세",
+          "남아라비아·홍해 중계항",
+          "아덴만과 밥엘만데브 관문"
+        ],
+        "topicTagsKo": [
+          "아덴",
+          "밥엘만데브",
+          "아덴만",
+          "향료 교역",
+          "타윌라 저수조"
+        ],
+        "uiFilters": {
+          "era": "남아라비아·홍해 중계항",
+          "region": "홍해·아덴만",
+          "theme": [
+            "중계항",
+            "향신료 교역",
+            "항구도시 물관리"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO tentative list와 Britannica 자료를 함께 사용해 아덴의 항구 위치, 저수 시설, 홍해-인도양 관문 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "hormuz",
+      "titleKo": "호르무즈",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이란",
+      "coordinates": {
+        "lat": 27.095,
+        "lng": 56.4528
+      },
+      "yearLabelKo": "13-17세기 전성기",
+      "summaryKo": "페르시아만 입구를 통제한 항구도시로, 이란 내륙·아라비아·인도양 상인이 만나는 중계지였고 해협 통제권의 전략성을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "hormuz-strait-port-polity",
+        "contextIds": [
+          "indian-ocean-maritime-trade-network",
+          "persian-gulf-islamic-entrepots",
+          "hormuz-strait-port-polity",
+          "transoceanic-spice-horse-ceramic-networks"
+        ],
+        "periodPathKo": [
+          "중세-근세",
+          "페르시아만 중계무역",
+          "호르무즈 해협 항구권력"
+        ],
+        "topicTagsKo": [
+          "호르무즈",
+          "호르무즈 해협",
+          "호르무즈 왕국",
+          "진주 교역",
+          "포르투갈-사파비 경쟁"
+        ],
+        "uiFilters": {
+          "era": "중세 페르시아만",
+          "region": "페르시아만",
+          "theme": [
+            "중계항",
+            "해협 통제",
+            "향신료 교역"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 0,
+          "referenceSources": 3,
+          "noteKo": "Britannica와 Encyclopaedia Iranica 자료를 사용했으며, 항구권력과 해협 통제 맥락은 신뢰할 수 있으나 중세 도시 위치와 세부 범위는 중간 신뢰도로 관리합니다."
+        }
+      }
+    },
+    {
+      "entryId": "basra",
+      "titleKo": "바스라",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이라크",
+      "coordinates": {
+        "lat": 30.5085,
+        "lng": 47.7804
+      },
+      "yearLabelKo": "636년 건설 이후, 8-10세기 교역·학문 중심",
+      "summaryKo": "이슬람 정복 이후 이라크 남부에 세워진 군영·항구도시로, 티그리스-유프라테스 수계와 페르시아만을 연결했습니다.",
+      "stage2": {
+        "primaryContextId": "basra-siraf-gulf-inland-corridor",
+        "contextIds": [
+          "indian-ocean-maritime-trade-network",
+          "persian-gulf-islamic-entrepots",
+          "basra-siraf-gulf-inland-corridor"
+        ],
+        "periodPathKo": [
+          "중세",
+          "초기 이슬람",
+          "바스라와 메소포타미아 내륙 연결"
+        ],
+        "topicTagsKo": [
+          "바스라",
+          "샤트알아랍",
+          "아바스 이라크",
+          "바그다드 교역",
+          "문법학 전통"
+        ],
+        "uiFilters": {
+          "era": "초기 이슬람",
+          "region": "페르시아만",
+          "theme": [
+            "중계항",
+            "내륙-해양 연결",
+            "이슬람 상인 네트워크"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 0,
+          "referenceSources": 2,
+          "noteKo": "Britannica 자료를 사용해 바스라의 건설 시기, 페르시아만 교역 관문, 이라크 내륙 연결 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "siraf",
+      "titleKo": "시라프",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "이란",
+      "coordinates": {
+        "lat": 27.6652,
+        "lng": 52.342
+      },
+      "yearLabelKo": "7-10세기 전성기",
+      "summaryKo": "사산 말기부터 초기 이슬람 시대까지 페르시아만 북안의 대표 항구였으며, 중국 도자와 동남아·인도양 상품이 이란 내륙으로 들어오는 중계지였습니다.",
+      "stage2": {
+        "primaryContextId": "basra-siraf-gulf-inland-corridor",
+        "contextIds": [
+          "indian-ocean-maritime-trade-network",
+          "persian-gulf-islamic-entrepots",
+          "basra-siraf-gulf-inland-corridor",
+          "transoceanic-spice-horse-ceramic-networks"
+        ],
+        "periodPathKo": [
+          "중세",
+          "초기 이슬람 페르시아만",
+          "시라프 항구 유적과 내륙 연결"
+        ],
+        "topicTagsKo": [
+          "시라프",
+          "반다르 시라프",
+          "페르시아만 항구",
+          "중국 도자",
+          "이란 내륙 교역"
+        ],
+        "uiFilters": {
+          "era": "초기 이슬람",
+          "region": "페르시아만",
+          "theme": [
+            "중계항",
+            "해상 실크로드",
+            "내륙-해양 연결"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO tentative list와 Encyclopaedia Iranica 자료를 사용해 시라프 항구 유적과 초기 이슬람 페르시아만 교역 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "calicut",
+      "titleKo": "캘리컷",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "인도",
+      "coordinates": {
+        "lat": 11.2588,
+        "lng": 75.7804
+      },
+      "yearLabelKo": "12-16세기 말라바르 교역 중심",
+      "summaryKo": "오늘날 코지코드로, 말라바르 해안의 향신료 항구이자 아랍·페르시아·중국 상인과 이후 포르투갈 항해자가 만난 중계지였습니다.",
+      "stage2": {
+        "primaryContextId": "calicut-zamorin-spice-entrepot",
+        "contextIds": [
+          "indian-ocean-maritime-trade-network",
+          "malabar-spice-port-corridor",
+          "calicut-zamorin-spice-entrepot",
+          "transoceanic-spice-horse-ceramic-networks"
+        ],
+        "periodPathKo": [
+          "중세-근세",
+          "말라바르 향신료 교역",
+          "자모린 캘리컷 중계항"
+        ],
+        "topicTagsKo": [
+          "캘리컷",
+          "코지코드",
+          "자모린",
+          "말라바르 해안",
+          "바스쿠 다 가마"
+        ],
+        "uiFilters": {
+          "era": "말라바르 향신료 교역",
+          "region": "말라바르 해안",
+          "theme": [
+            "향신료 교역",
+            "중계항",
+            "이슬람 상인 네트워크"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 0,
+          "referenceSources": 2,
+          "noteKo": "Britannica 자료를 사용해 캘리컷의 말라바르 향신료 항구, 자모린 권력, 포르투갈 접촉 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "muziris",
+      "titleKo": "무지리스",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "인도",
+      "coordinates": {
+        "lat": 10.1622,
+        "lng": 76.2121
+      },
+      "yearLabelKo": "기원전 1세기-기원후 5세기경",
+      "summaryKo": "고대 말라바르 해안의 전설적 항구로, 로마 제국·홍해·아라비아·남인도를 잇는 후추와 향신료 교역의 대표 지점입니다.",
+      "stage2": {
+        "primaryContextId": "muziris-roman-red-sea-spice-route",
+        "contextIds": [
+          "indian-ocean-maritime-trade-network",
+          "malabar-spice-port-corridor",
+          "muziris-roman-red-sea-spice-route",
+          "transoceanic-spice-horse-ceramic-networks"
+        ],
+        "periodPathKo": [
+          "고대",
+          "로마-인도 교역",
+          "무지리스와 말라바르 후추 항로"
+        ],
+        "topicTagsKo": [
+          "무지리스",
+          "파타남",
+          "코둥갈루르",
+          "로마-인도 교역",
+          "후추 교역"
+        ],
+        "uiFilters": {
+          "era": "고대 인도양",
+          "region": "말라바르 해안",
+          "theme": [
+            "로마-인도 교역",
+            "향신료 교역",
+            "중계항"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "Kerala Tourism, KIIDC, Britannica 자료를 사용했지만 정확한 고대 항구 위치에는 논쟁이 있어 중간 신뢰도로 관리합니다."
+        }
+      }
+    },
+    {
+      "entryId": "malacca",
+      "titleKo": "말라카",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "말레이시아",
+      "coordinates": {
+        "lat": 2.1896,
+        "lng": 102.2501
+      },
+      "yearLabelKo": "15-16세기 해협 중계항",
+      "summaryKo": "인도양과 남중국해를 잇는 해협의 전략 항구로, 말라카 술탄국 아래 다언어 상인과 이슬람 법·외교가 결합한 국제 중계항이 되었습니다.",
+      "stage2": {
+        "primaryContextId": "straits-of-malacca-southeast-asian-entrepot",
+        "contextIds": [
+          "indian-ocean-maritime-trade-network",
+          "straits-of-malacca-southeast-asian-entrepot",
+          "transoceanic-spice-horse-ceramic-networks"
+        ],
+        "periodPathKo": [
+          "중세-근세",
+          "말라카 술탄국",
+          "말라카 해협 동남아 중계항"
+        ],
+        "topicTagsKo": [
+          "말라카",
+          "멜라카",
+          "말라카 술탄국",
+          "말라카 해협",
+          "다언어 상인"
+        ],
+        "uiFilters": {
+          "era": "말라카 술탄국",
+          "region": "말라카 해협",
+          "theme": [
+            "중계항",
+            "해협 통제",
+            "이슬람 상인 네트워크"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 세계유산 자료와 Britannica 자료를 사용해 말라카의 해협 중계항, 술탄국, 식민 지배 누적 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "quanzhou",
+      "titleKo": "취안저우",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "중국",
+      "coordinates": {
+        "lat": 24.8741,
+        "lng": 118.6757
+      },
+      "yearLabelKo": "10-14세기 전성기",
+      "summaryKo": "송·원대 중국의 대표 해상 무역항으로, 남중국해와 동남아·인도양을 연결한 세계적 중계항이었습니다.",
+      "stage2": {
+        "primaryContextId": "song-yuan-maritime-silk-road-quanzhou",
+        "contextIds": [
+          "indian-ocean-maritime-trade-network",
+          "song-yuan-maritime-silk-road-quanzhou",
+          "transoceanic-spice-horse-ceramic-networks"
+        ],
+        "periodPathKo": [
+          "중세",
+          "송·원 해상 실크로드",
+          "취안저우 세계 해양상업 중심"
+        ],
+        "topicTagsKo": [
+          "취안저우",
+          "자이툰",
+          "송·원 중국",
+          "해상 실크로드",
+          "해양무역사무소"
+        ],
+        "uiFilters": {
+          "era": "송·원 해상 실크로드",
+          "region": "남중국해",
+          "theme": [
+            "해상 실크로드",
+            "중계항",
+            "이슬람 상인 네트워크"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 취안저우 세계유산 자료와 Silk Roads Programme, Britannica 자료를 사용해 송·원 해상 무역항 맥락을 확인했습니다."
+        }
+      }
+    }
+  ]
+}

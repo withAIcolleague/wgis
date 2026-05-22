@@ -110,6 +110,12 @@
       "titleKo": "북미 원주민 봉분·도시 중심지",
       "path": "data/stage2/north-america-indigenous-mound-urban-centers-preview.json",
       "status": "preview-only"
+    },
+    {
+      "id": "stage2-indian-ocean-trade-ports-entrepots-preview",
+      "titleKo": "인도양 교역항과 중계항",
+      "path": "data/stage2/indian-ocean-trade-ports-entrepots-preview.json",
+      "status": "preview-only"
     }
   ]
 }
