@@ -83,8 +83,7 @@ function getFilteredEntries() {
       entry.yearLabelKo,
       entry.summaryKo,
       ...entry.stage2.periodPathKo,
-      ...entry.stage2.topicTagsKo,
-      ...entry.stage2.contextIds.map(id => getContext(id)?.labelKo)
+      ...entry.stage2.topicTagsKo
     ].join(' '));
 
     return searchText.includes(query);
