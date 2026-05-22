@@ -1,0 +1,550 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-central-asia-silk-road-oasis-cities-preview",
+  "titleKo": "2단계 미리보기: 중앙아시아 실크로드 오아시스 도시",
+  "descriptionKo": "사마르칸트, 부하라, 메르브, 히바, 오트라르, 카슈가르, 투르판 고창, 둔황 막고굴을 비교하기 위한 2단계 미리보기 데이터셋입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "소그드·티무르 중앙아시아",
+        "이슬람 학문 도시",
+        "셀주크·호라산 오아시스",
+        "호라즘·히바 칸국",
+        "시르다리야 교차로",
+        "타림 오아시스",
+        "불교 실크로드"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "제라프샨·트란스옥시아나",
+        "무르가브·호라산",
+        "호라즘·아무다리야",
+        "시르다리야",
+        "서부 타림",
+        "동부 타림·투르판",
+        "하서 회랑"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "실크로드 교역",
+        "오아시스 도시",
+        "카라반 교차로",
+        "이슬람 학문",
+        "티무르 도시문화",
+        "성벽 도시",
+        "몽골 침공 기억",
+        "타림 분지",
+        "불교 석굴",
+        "수리체계",
+        "세계유산"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지점 유형",
+      "options": [
+        "장소",
+        "유적"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "central-asian-silk-road-oasis-world",
+      "labelKo": "중앙아시아 실크로드 오아시스 세계",
+      "parentId": null,
+      "periodKo": "기원전 7세기-19세기",
+      "summaryKo": "트란스옥시아나, 호라산, 호라즘, 시르다리야, 타림 분지, 하서 회랑을 묶어 사막과 초원을 가로지른 카라반 교역, 오아시스 도시, 이슬람 학문, 불교 석굴, 장기 도시층을 봅니다."
+    },
+    {
+      "id": "transoxiana-islamic-learning-oasis-cities",
+      "labelKo": "트란스옥시아나 이슬람 학문·교역 도시",
+      "parentId": "central-asian-silk-road-oasis-world",
+      "periodKo": "9-16세기",
+      "summaryKo": "사마르칸트와 부하라를 통해 소그드 교역 전통, 사만 왕조 이후 이슬람 학문, 수피즘, 티무르 시대 도시문화가 제라프샨·부하라 오아시스권에서 겹친 방식을 봅니다."
+    },
+    {
+      "id": "samarkand-timurid-crossroad-city",
+      "labelKo": "사마르칸트 티무르 교차로 도시",
+      "parentId": "transoxiana-islamic-learning-oasis-cities",
+      "periodKo": "기원전 7세기 이후, 14-15세기",
+      "summaryKo": "아프라시압 유적, 레기스탄, 비비하눔 모스크, 구르에미르를 통해 고대 소그드 도시층과 티무르 제국 수도 경관이 한 도시 안에 중첩된 모습을 봅니다."
+    },
+    {
+      "id": "bukhara-islamic-scholarship-sufi-city",
+      "labelKo": "부하라 이슬람 학문과 수피 도시",
+      "parentId": "transoxiana-islamic-learning-oasis-cities",
+      "periodKo": "9-16세기",
+      "summaryKo": "아르크 성채, 칼란 미나레트, 이스마일 사마니 영묘, 보존된 구도심을 통해 실크로드 상업과 이슬람 학문·수피즘 중심지로 성장한 부하라를 봅니다."
+    },
+    {
+      "id": "khorasan-khorezm-layered-oasis-cities",
+      "labelKo": "호라산·호라즘 장기 오아시스 도시층",
+      "parentId": "central-asian-silk-road-oasis-world",
+      "periodKo": "기원전 6세기-19세기",
+      "summaryKo": "메르브와 히바를 통해 무르가브 오아시스의 다층 도시 유적과 호라즘 성벽 도시가 이란, 호라산, 아무다리야, 사막 카라반 노선을 이어 준 방식을 봅니다."
+    },
+    {
+      "id": "merv-murgab-oasis-imperial-layers",
+      "labelKo": "메르브 무르가브 오아시스 제국 도시층",
+      "parentId": "khorasan-khorezm-layered-oasis-cities",
+      "periodKo": "기원전 6세기-13세기",
+      "summaryKo": "아케메네스, 파르티아, 사산, 압바스, 셀주크 도시층이 순차적으로 남은 메르브를 통해 호라산 실크로드 도시의 교역·군사·학문 중심지 변화를 봅니다."
+    },
+    {
+      "id": "khiva-khorezm-walled-caravan-city",
+      "labelKo": "히바 이찬 칼라 호라즘 성벽 도시",
+      "parentId": "khorasan-khorezm-layered-oasis-cities",
+      "periodKo": "17-19세기 현존 경관",
+      "summaryKo": "이찬 칼라의 성벽, 주마 모스크, 마드라사, 궁전, 미나렛을 통해 중세 실크로드 기능 위에 근세 히바 칸국 도시 경관이 겹친 사례를 봅니다."
+    },
+    {
+      "id": "syr-darya-steppe-oasis-crossroads",
+      "labelKo": "시르다리야 초원·오아시스 교차로",
+      "parentId": "central-asian-silk-road-oasis-world",
+      "periodKo": "8-18세기",
+      "summaryKo": "오트라르를 통해 시르다리야와 아리스 강 합류부에서 타라즈, 발라사군, 동투르키스탄, 호라즘, 사마르칸트 방면 노선이 갈라진 교차로와 몽골 침공 기억을 봅니다."
+    },
+    {
+      "id": "tarim-basin-oasis-route-network",
+      "labelKo": "타림 분지 오아시스 노선망",
+      "parentId": "central-asian-silk-road-oasis-world",
+      "periodKo": "기원전 2세기-14세기",
+      "summaryKo": "카슈가르와 투르판 고창을 통해 파미르·톈산·쿤룬 산맥, 타클라마칸 북로, 하미·둔황 방면 노선이 만난 타림 오아시스 네트워크를 봅니다."
+    },
+    {
+      "id": "kashgar-western-tarim-crossroads",
+      "labelKo": "카슈가르 서부 타림 교차로",
+      "parentId": "tarim-basin-oasis-route-network",
+      "periodKo": "기원전 2세기 이후",
+      "summaryKo": "카슈가르를 통해 페르가나, 카슈미르, 우루무치, 일리 계곡 방면 노선이 갈라지는 타림 서쪽 끝의 전략적 오아시스 교차로를 봅니다."
+    },
+    {
+      "id": "turfan-gaochang-buddhist-uighur-oasis",
+      "labelKo": "투르판 고창 불교·위구르 오아시스",
+      "parentId": "tarim-basin-oasis-route-network",
+      "periodKo": "5-14세기",
+      "summaryKo": "고창고성과 투르판 분지를 통해 카레즈 수리체계, 불교·마니교·위구르 문화층, 동부 타림의 농업·종교·문자 이동 경로를 봅니다."
+    },
+    {
+      "id": "dunhuang-mogao-buddhist-cave-corridor",
+      "labelKo": "둔황 막고굴 불교 석굴 회랑",
+      "parentId": "central-asian-silk-road-oasis-world",
+      "periodKo": "4-14세기",
+      "summaryKo": "둔황 막고굴을 통해 타림 북·남로가 하서 회랑으로 모이는 지점에서 인도, 중앙아시아, 중국의 종교미술, 필사·인쇄 문화가 이동한 과정을 봅니다."
+    },
+    {
+      "id": "silk-road-world-heritage-oasis-preservation",
+      "labelKo": "세계유산으로 보존된 실크로드 오아시스",
+      "parentId": "central-asian-silk-road-oasis-world",
+      "periodKo": "현재 보존 기준",
+      "summaryKo": "사마르칸트, 부하라, 메르브, 히바, 투르판 고창, 둔황 막고굴 등 세계유산·잠정목록·UNESCO 자료로 확인되는 실크로드 오아시스 도시와 유적 보존 상태를 비교합니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "samarkand",
+      "titleKo": "사마르칸트",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "우즈베키스탄",
+      "coordinates": {
+        "lat": 39.6542,
+        "lng": 66.975
+      },
+      "yearLabelKo": "기원전 7세기 이후, 14-15세기 티무르 시대 전성기",
+      "summaryKo": "제라프샨 계곡의 오아시스 도시로, 소그드 교역망과 이슬람 중앙아시아, 티무르 제국의 수도 기능이 겹친 실크로드 핵심 거점입니다.",
+      "stage2": {
+        "primaryContextId": "samarkand-timurid-crossroad-city",
+        "contextIds": [
+          "central-asian-silk-road-oasis-world",
+          "transoxiana-islamic-learning-oasis-cities",
+          "samarkand-timurid-crossroad-city",
+          "silk-road-world-heritage-oasis-preservation"
+        ],
+        "periodPathKo": [
+          "고대-중세",
+          "트란스옥시아나",
+          "사마르칸트 소그드·티무르 교차로"
+        ],
+        "topicTagsKo": [
+          "사마르칸트",
+          "아프라시압",
+          "레기스탄",
+          "티무르",
+          "제라프샨 계곡"
+        ],
+        "uiFilters": {
+          "era": "소그드·티무르 중앙아시아",
+          "region": "제라프샨·트란스옥시아나",
+          "theme": [
+            "실크로드 교역",
+            "오아시스 도시",
+            "티무르 도시문화",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "UNESCO 사마르칸트 세계유산, World History Encyclopedia, Britannica 자료를 사용해 사마르칸트의 위치, 소그드·티무르 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "bukhara",
+      "titleKo": "부하라",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "우즈베키스탄",
+      "coordinates": {
+        "lat": 39.7747,
+        "lng": 64.4286
+      },
+      "yearLabelKo": "1세기 이후, 9-16세기 이슬람 학문 중심",
+      "summaryKo": "2천 년 이상 된 실크로드 오아시스 도시로, 사만 왕조 이후 이슬람 학문과 수피즘, 상업의 중심지로 성장했습니다.",
+      "stage2": {
+        "primaryContextId": "bukhara-islamic-scholarship-sufi-city",
+        "contextIds": [
+          "central-asian-silk-road-oasis-world",
+          "transoxiana-islamic-learning-oasis-cities",
+          "bukhara-islamic-scholarship-sufi-city",
+          "silk-road-world-heritage-oasis-preservation"
+        ],
+        "periodPathKo": [
+          "중세",
+          "트란스옥시아나",
+          "부하라 이슬람 학문 도시"
+        ],
+        "topicTagsKo": [
+          "부하라",
+          "사만 왕조",
+          "칼란 미나레트",
+          "아르크 성채",
+          "수피즘"
+        ],
+        "uiFilters": {
+          "era": "이슬람 학문 도시",
+          "region": "제라프샨·트란스옥시아나",
+          "theme": [
+            "실크로드 교역",
+            "오아시스 도시",
+            "이슬람 학문",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 부하라 역사중심지와 Britannica 자료를 사용해 부하라의 세계유산 경관과 이슬람 학문·상업 중심지 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "merv",
+      "titleKo": "메르브",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "투르크메니스탄",
+      "coordinates": {
+        "lat": 37.7058,
+        "lng": 62.1772
+      },
+      "yearLabelKo": "기원전 6세기-13세기, 11-12세기 셀주크 전성기",
+      "summaryKo": "무르가브 오아시스의 여러 시대 도시층이 이어진 거대한 실크로드 유적군으로, 이란·호라산·아프가니스탄을 잇는 장기 교역·군사·학문 중심지였습니다.",
+      "stage2": {
+        "primaryContextId": "merv-murgab-oasis-imperial-layers",
+        "contextIds": [
+          "central-asian-silk-road-oasis-world",
+          "khorasan-khorezm-layered-oasis-cities",
+          "merv-murgab-oasis-imperial-layers",
+          "silk-road-world-heritage-oasis-preservation"
+        ],
+        "periodPathKo": [
+          "고대-중세",
+          "호라산·마르기아나",
+          "메르브 무르가브 오아시스 도시층"
+        ],
+        "topicTagsKo": [
+          "메르브",
+          "무르가브 오아시스",
+          "셀주크",
+          "마르기아나",
+          "호라산"
+        ],
+        "uiFilters": {
+          "era": "셀주크·호라산 오아시스",
+          "region": "무르가브·호라산",
+          "theme": [
+            "실크로드 교역",
+            "오아시스 도시",
+            "이슬람 학문",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 고대 메르브 세계유산과 Britannica 자료를 사용해 메르브의 오아시스 도시층과 셀주크·호라산 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "khiva-itchan-kala",
+      "titleKo": "히바 이찬 칼라",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "우즈베키스탄",
+      "coordinates": {
+        "lat": 41.3783,
+        "lng": 60.3596
+      },
+      "yearLabelKo": "2천 년 이상 도시 전통, 17-19세기 현존 경관",
+      "summaryKo": "호라즘 오아시스의 성벽 안 도시로, 사막을 건너기 전 카라반이 머물던 정착지였고 근세 히바 칸국 도시 경관이 뚜렷하게 남아 있습니다.",
+      "stage2": {
+        "primaryContextId": "khiva-khorezm-walled-caravan-city",
+        "contextIds": [
+          "central-asian-silk-road-oasis-world",
+          "khorasan-khorezm-layered-oasis-cities",
+          "khiva-khorezm-walled-caravan-city",
+          "silk-road-world-heritage-oasis-preservation"
+        ],
+        "periodPathKo": [
+          "중세-근세",
+          "호라즘·아무다리야",
+          "히바 이찬 칼라 성벽 도시"
+        ],
+        "topicTagsKo": [
+          "히바",
+          "이찬 칼라",
+          "호라즘",
+          "히바 칸국",
+          "성벽 도시"
+        ],
+        "uiFilters": {
+          "era": "호라즘·히바 칸국",
+          "region": "호라즘·아무다리야",
+          "theme": [
+            "실크로드 교역",
+            "오아시스 도시",
+            "성벽 도시",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 이찬 칼라 세계유산과 Britannica 자료를 사용해 히바 내성, 카라반 정착지, 히바 칸국 경관 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "otrar",
+      "titleKo": "오트라르",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "카자흐스탄",
+      "coordinates": {
+        "lat": 42.8536,
+        "lng": 68.303
+      },
+      "yearLabelKo": "8-18세기, 13세기 몽골 침공 전후 핵심 거점",
+      "summaryKo": "시르다리야와 아리스 강이 만나는 오아시스권의 중세 도시 유적으로, 여러 실크로드 노선이 갈라지는 교차점이자 몽골 침공 기억의 표지입니다.",
+      "stage2": {
+        "primaryContextId": "syr-darya-steppe-oasis-crossroads",
+        "contextIds": [
+          "central-asian-silk-road-oasis-world",
+          "syr-darya-steppe-oasis-crossroads",
+          "silk-road-world-heritage-oasis-preservation"
+        ],
+        "periodPathKo": [
+          "중세",
+          "시르다리야",
+          "오트라르 초원·오아시스 교차로"
+        ],
+        "topicTagsKo": [
+          "오트라르",
+          "파라브",
+          "시르다리야",
+          "오트라르 사건",
+          "몽골 침공"
+        ],
+        "uiFilters": {
+          "era": "시르다리야 교차로",
+          "region": "시르다리야",
+          "theme": [
+            "카라반 교차로",
+            "오아시스 도시",
+            "몽골 침공 기억"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO 오트라르 관련 문서, 시르다리야-페르가나 회랑 잠정목록, Silk Roads Programme Kazakhstan 자료를 사용해 위치와 교차로 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "kashgar",
+      "titleKo": "카슈가르",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "중국",
+      "coordinates": {
+        "lat": 39.4704,
+        "lng": 75.9898
+      },
+      "yearLabelKo": "기원전 2세기 이후, 중세 실크로드 교차로",
+      "summaryKo": "타림 분지 서쪽 끝, 파미르와 톈산·쿤룬 산맥이 만나는 오아시스 도시로, 서쪽·남쪽·북쪽 노선이 갈라지는 전략적 교차로였습니다.",
+      "stage2": {
+        "primaryContextId": "kashgar-western-tarim-crossroads",
+        "contextIds": [
+          "central-asian-silk-road-oasis-world",
+          "tarim-basin-oasis-route-network",
+          "kashgar-western-tarim-crossroads"
+        ],
+        "periodPathKo": [
+          "고대-중세",
+          "타림 분지",
+          "카슈가르 서부 타림 교차로"
+        ],
+        "topicTagsKo": [
+          "카슈가르",
+          "타림 분지",
+          "파미르",
+          "페르가나 노선",
+          "위구르 오아시스"
+        ],
+        "uiFilters": {
+          "era": "타림 오아시스",
+          "region": "서부 타림",
+          "theme": [
+            "실크로드 교역",
+            "카라반 교차로",
+            "타림 분지"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "Britannica, UNESCO Silk Roads 소개, World History Encyclopedia 자료를 사용해 카슈가르의 타림 교차로 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "turfan-gaochang",
+      "titleKo": "투르판 고창",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "중국",
+      "coordinates": {
+        "lat": 42.8528,
+        "lng": 89.5306
+      },
+      "yearLabelKo": "기원전 1세기 이후, 5-14세기 오아시스 도시",
+      "summaryKo": "타클라마칸 북쪽 길과 하미·둔황 방면을 잇는 동부 타림의 오아시스 도시 유적으로, 수리체계와 불교·위구르 문화층을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "turfan-gaochang-buddhist-uighur-oasis",
+        "contextIds": [
+          "central-asian-silk-road-oasis-world",
+          "tarim-basin-oasis-route-network",
+          "turfan-gaochang-buddhist-uighur-oasis",
+          "silk-road-world-heritage-oasis-preservation"
+        ],
+        "periodPathKo": [
+          "고대-중세",
+          "동부 타림·투르판",
+          "고창 불교·위구르 오아시스"
+        ],
+        "topicTagsKo": [
+          "투르판",
+          "고창",
+          "카라호자",
+          "카레즈",
+          "타클라마칸 북로"
+        ],
+        "uiFilters": {
+          "era": "불교 실크로드",
+          "region": "동부 타림·투르판",
+          "theme": [
+            "실크로드 교역",
+            "타림 분지",
+            "불교 석굴",
+            "수리체계",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 장안-톈산 회랑, UNESCO Silk Roads 소개, World History Encyclopedia 자료를 사용해 고창고성과 투르판 오아시스 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "dunhuang-mogao-caves",
+      "titleKo": "둔황 막고굴",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "중국",
+      "coordinates": {
+        "lat": 40.0372,
+        "lng": 94.8092
+      },
+      "yearLabelKo": "4-14세기",
+      "summaryKo": "타림 분지 북·남로가 하서 회랑으로 모이는 지점의 불교 석굴군으로, 벽화·조각·장경동 문서가 종교미술과 필사·인쇄 문화의 이동을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "dunhuang-mogao-buddhist-cave-corridor",
+        "contextIds": [
+          "central-asian-silk-road-oasis-world",
+          "dunhuang-mogao-buddhist-cave-corridor",
+          "silk-road-world-heritage-oasis-preservation"
+        ],
+        "periodPathKo": [
+          "중세",
+          "하서 회랑",
+          "둔황 막고굴 불교 석굴"
+        ],
+        "topicTagsKo": [
+          "둔황",
+          "막고굴",
+          "장경동",
+          "불교 석굴",
+          "하서 회랑"
+        ],
+        "uiFilters": {
+          "era": "불교 실크로드",
+          "region": "하서 회랑",
+          "theme": [
+            "불교 석굴",
+            "실크로드 교역",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 막고굴 세계유산, UNESCO Silk Roads Programme Dunhuang, Britannica 자료를 사용해 둔황 막고굴의 불교 석굴과 하서 회랑 맥락을 확인했습니다."
+        }
+      }
+    }
+  ]
+}

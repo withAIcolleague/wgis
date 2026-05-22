@@ -14,7 +14,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Current entry count: 250
 - Completed curation batches: 31
 - Latest completed batch: `africa-egypt-late-temple-centers-v1`
-- Latest completed infrastructure milestone: stage-2 twenty-three-dataset public usability pass
+- Latest completed infrastructure milestone: stage-2 twenty-four-dataset public usability pass
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
@@ -362,6 +362,19 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - Scope: keep the Stage 2 preview endpoint and browser-state check repeatable after adding the twenty-third dataset
   - Checked: 23 indexed dataset endpoints and expected entry counts across 194 Stage 2 preview entries, compact context filters, gunpowder empires search/detail/context behavior, stale-data cleanup, and mobile-sized rendering
   - Result: public endpoint and headless browser verification completed for 23 datasets and 194 Stage 2 preview entries; screenshots saved under `C:\Users\Public\Documents\ESTsoft\CreatorTemp\` when the local headless browser runtime is available
+
+- Stage-2 Central Asian Silk Road and oasis cities pilot dataset
+  - Files: `data/stage2/index.json`, `data/stage2/central-asia-silk-road-oasis-cities-preview.json`, `scripts/smoke-check.js`, `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`
+  - URL path: `/stage2-preview.html`
+  - Scope: add a twenty-fourth Stage 2 preview dataset using the existing Central Asian Silk Road and oasis cities batch
+  - Model stress test: Samarkand and Bukhara Transoxiana learning/crossroad cities, Merv and Khiva layered Khorasan/Khorezm oasis urbanism, Otrar Syr Darya crossroads and Mongol invasion memory, Kashgar western Tarim crossroads, Turfan/Gaochang Buddhist-Uighur oasis, Dunhuang Mogao Buddhist cave corridor, and world-heritage oasis preservation
+
+- Stage-2 twenty-four-dataset public usability pass
+  - Files: `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`
+  - URL path: `https://wgis.vercel.app/stage2-preview.html`
+  - Scope: keep the Stage 2 preview endpoint and browser-state check repeatable after adding the twenty-fourth dataset
+  - Checked: 24 indexed dataset endpoints and expected entry counts across 202 Stage 2 preview entries, compact context filters, Central Asian oasis search/detail/context behavior, stale-data cleanup, and mobile-sized rendering
+  - Result: public endpoint and headless browser verification completed for 24 datasets and 202 Stage 2 preview entries; screenshots saved under `C:\Users\Public\Documents\ESTsoft\CreatorTemp\` when the local headless browser runtime is available
 
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`
@@ -828,8 +841,8 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Stage-2 twenty-fourth pilot dataset
-   - Scope: create another Stage 2 file from Central Asian Silk Road and oasis cities to compare Samarkand, Bukhara, Merv, Khiva, Otrar, Kashgar, Turfan/Gaochang, Dunhuang Mogao, oasis urbanism, caravan trade, Islamic learning, and Buddhist cave networks
+1. Stage-2 twenty-fifth pilot dataset
+   - Scope: create another Stage 2 file from Islamic caliphate and knowledge cities to compare Baghdad, Damascus, Islamic Cairo, Cordoba, Kairouan, Samarra, Nishapur, Fez, caliphal capitals, madrasa/ulama networks, mosque cities, and transregional Islamic learning routes
 
 2. First-stage DB next expansion batch
    - Scope: resume focused first-stage source-record growth if the priority shifts back from Stage 2 modeling to raw coverage

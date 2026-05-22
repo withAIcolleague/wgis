@@ -283,6 +283,17 @@ The twenty-third pilot dataset tests early modern gunpowder empire capitals, pal
 - `red-fort-delhi`
 - `lahore-fort-shalimar`
 
+The twenty-fourth pilot dataset tests Central Asian Silk Road oasis cities, caravan crossroads, Islamic learning cities, Tarim Basin route networks, and Buddhist cave corridors:
+
+- `samarkand`
+- `bukhara`
+- `merv`
+- `khiva-itchan-kala`
+- `otrar`
+- `kashgar`
+- `turfan-gaochang`
+- `dunhuang-mogao-caves`
+
 The dataset list is managed in:
 
 ```text
@@ -618,3 +629,17 @@ The 2026-05-22 twenty-three-dataset public browser pass checks `https://wgis.ver
 - The `무굴 제국 수도와 궁성 경관` context filter returns `아그라 요새`, `파테푸르 시크리`, `델리 붉은 요새`, and `라호르 요새와 샬리마르 정원` with 4 markers and 4 labels and no stale Topkapi data.
 - On mobile, `오스만 이스탄불` detail renders with source-confidence information and both detail actions.
 - Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-three-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-three-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.
+
+## Twenty-Four-Dataset Public Usability Pass
+
+The 2026-05-22 twenty-four-dataset public browser pass checks `https://wgis.vercel.app/stage2-preview.html` after adding the Central Asian Silk Road oasis cities pilot dataset:
+
+- Dataset selector exposes 24 datasets.
+- All 24 indexed datasets render their expected entry, marker, and permanent-label counts across 202 Stage 2 preview entries.
+- The new Central Asian oasis dataset exposes 8 entries: `사마르칸트`, `부하라`, `메르브`, `히바 이찬 칼라`, `오트라르`, `카슈가르`, `투르판 고창`, and `둔황 막고굴`.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control.
+- Searching `둔황` in the Central Asian oasis dataset narrows the list and map to `둔황 막고굴` with 1 marker and 1 label.
+- Selecting `부하라` opens the detail panel with source-confidence information and detail actions.
+- The `타림 분지 오아시스 노선망` context filter returns `카슈가르` and `투르판 고창` with 2 markers and 2 labels and no stale Samarkand data.
+- On mobile, `사마르칸트` detail renders with source-confidence information and both detail actions.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-four-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-four-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.
