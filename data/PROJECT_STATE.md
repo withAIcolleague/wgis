@@ -14,7 +14,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Current entry count: 250
 - Completed curation batches: 31
 - Latest completed batch: `africa-egypt-late-temple-centers-v1`
-- Latest completed infrastructure milestone: stage-2 early China pilot
+- Latest completed infrastructure milestone: stage-2 six-dataset usability pass
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
@@ -119,6 +119,13 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - URL path: `/stage2-preview.html`
   - Scope: add a sixth Stage 2 preview dataset using the existing early China Yellow River and Bronze Age core sites batch
   - Model stress test: Yellow River Neolithic settlements, lower Yangtze Liangzhu water-management polity, Longshan late Neolithic political centers, Erlitou early Bronze Age urbanism, early Shang capital networks, late Shang writing and bronze ritual state, and Sichuan Basin regional Bronze Age civilization
+
+- Stage-2 six-dataset usability pass
+  - Files: `docs/stage2-preview.md`
+  - URL path: `/stage2-preview.html`
+  - Scope: verify public preview behavior after adding the sixth dataset
+  - Checked: 6-dataset switching, Early China search/filter/detail behavior, stale marker/label cleanup, and mobile entry-list scrolling
+  - Result: public browser pass completed for 6 datasets and 56 Stage 2 preview entries
 
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`
@@ -585,16 +592,13 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Stage-2 six-dataset usability pass
-   - Scope: verify `/stage2-preview.html` after adding early China, especially dataset switching, early China search/filter behavior, stale marker labels, and mobile scrolling
-
-2. Stage-2 preview usability refinement
+1. Stage-2 preview usability refinement
    - Scope: compact or progressive-disclose preview filters and detail movement if the dataset selector grows beyond the current pilot shape
 
-3. Stage-2 seventh pilot dataset
+2. Stage-2 seventh pilot dataset
    - Scope: create another Stage 2 file from ancient Greece or Achaemenid Persia to compare Mediterranean and imperial network contexts against the current ancient city/civilization samples
 
-4. First-stage DB next expansion batch
+3. First-stage DB next expansion batch
    - Scope: resume focused first-stage source-record growth if the priority shifts back from Stage 2 modeling to raw coverage
 
 ## Resume Checklist

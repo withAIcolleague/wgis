@@ -126,14 +126,15 @@ The Stage 2 validator checks the preview data against `data/stage2/schema.json`.
 
 ## Browser Usability Pass
 
-The 2026-05-22 public browser pass checked `/stage2-preview.html` after adding the fifth dataset:
+The 2026-05-22 public browser pass checked `/stage2-preview.html` after adding the sixth dataset:
 
-- Dataset selector exposes 5 datasets.
+- Dataset selector exposes 6 datasets.
 - Atlantic revolutions renders 8 entries, 8 markers, and 8 permanent labels.
 - Ethiopia human origins renders 8 entries, 8 markers, and 8 permanent labels.
 - Mesopotamia early cities renders 10 entries, 10 markers, and 10 permanent labels.
 - Ancient Egypt renders 14 entries, 14 markers, and 14 permanent labels.
 - Indus Civilization renders 8 entries, 8 markers, and 8 permanent labels.
+- Early China renders 8 entries, 8 markers, and 8 permanent labels.
 - Searching `아마르나` narrows the Egypt dataset to 1 entry, marker, and label.
 - Selecting `아마르나` opens the detail panel with source-confidence information.
 - The `프톨레마이오스·로마 시대 신전망` context filter returns 4 Egypt entries.
@@ -142,4 +143,8 @@ The 2026-05-22 public browser pass checked `/stage2-preview.html` after adding t
 - Selecting `로탈` opens the detail panel with source-confidence information.
 - The `구자라트 해상 교역과 물 관리` context filter returns 2 Indus entries.
 - Switching from Indus back to Atlantic revolutions clears stale Indus markers and labels.
-- On mobile, the Indus entry list scrolls independently and the detail panel stays in normal page flow below the map.
+- Searching `인허` narrows the Early China dataset to 1 entry, marker, and label.
+- Selecting `인허` opens the detail panel with source-confidence information.
+- The `초기 상 도성 네트워크` context filter returns 3 Early China entries.
+- Switching from Early China back to Atlantic revolutions clears stale Early China markers and labels.
+- On mobile, the Early China entry list scrolls independently and the detail panel stays in normal page flow below the map.
