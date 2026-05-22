@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "id": "asia-korea-three-kingdoms-silla-heritage-sites",
+  "titleKo": "한국 고대 삼국·통일신라 수도와 불교 유산",
+  "curationBatch": "asia-korea-three-kingdoms-silla-heritage-sites-v1",
+  "taxonomyFile": "data/taxonomy.json",
+  "appIndexFile": "data/entries.json",
+  "scope": {
+    "continentId": "asia",
+    "modernCountryIso2": "KR-KP-CN",
+    "modernCountryKo": "대한민국·북한·중국",
+    "historicalRegionKo": "한반도와 만주 남부",
+    "cultureAreaKo": "고구려·백제·신라 고대 국가권",
+    "periodBand": "ancient",
+    "topicKo": "삼국과 통일신라의 수도, 산성, 왕릉, 불교 사원, 세계유산 경관"
+  },
+  "records": [
+    {
+      "id": "gungnae-wandu-koguryo",
+      "title": "국내성·환도산성",
+      "type": "place",
+      "historicalName": "국내성 / 환도산성 / Guonei City / Wandu Mountain City",
+      "modernName": "지안 고구려 도성 유적",
+      "modernAdmin": "지린성 지안시",
+      "country": "중국",
+      "worldRegion": "한국고대사·만주 남부",
+      "period": "고구려",
+      "yearLabel": "1-5세기 고구려 도성권",
+      "date": { "startYear": 1, "endYear": 427, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "CN",
+        "historicalRegionKo": "압록강 중류 지안 분지",
+        "cultureAreaKo": "고구려 초기·중기 도성권"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 41.1275, "lng": 126.1949 },
+      "aliases": ["Gungnae-seong", "Guonei City", "Wandu Mountain City", "Hwando", "Koguryo", "Goguryeo", "Ji'an"],
+      "summary": "국내성·환도산성은 압록강 중류의 고구려 초기·중기 도성권을 대표하는 유산이다. 평지성 국내성과 산성 환도산성이 결합된 구조는 고구려의 방어, 왕권, 도성 운영 방식을 지도 위에서 함께 보게 해준다.",
+      "confidence": "medium",
+      "sourceNote": "UNESCO 세계유산의 지안 도성권을 대표하는 근사 좌표를 사용했다. 국내성과 환도산성은 인접한 별도 구성요소이므로 한 점으로 단순화했다.",
+      "curationBatch": "asia-korea-three-kingdoms-silla-heritage-sites-v1",
+      "sources": [
+        { "title": "UNESCO: Capital Cities and Tombs of the Ancient Koguryo Kingdom", "url": "https://whc.unesco.org/en/list/1135/" },
+        { "title": "UNESCO Maps: Capital Cities and Tombs of the Ancient Koguryo Kingdom", "url": "https://whc.unesco.org/en/list/1135/maps/" },
+        { "title": "China.org.cn: The Capital Cities and Tombs of the Ancient Koguryo Kingdom", "url": "https://www.china.org.cn/english/whp/101724.htm" }
+      ]
+    },
+    {
+      "id": "koguryo-tomb-king-tongmyong",
+      "title": "동명왕릉과 진파리 고분군",
+      "type": "place",
+      "historicalName": "동명왕릉 / 진파리 고분군 / Tomb of King Tongmyong",
+      "modernName": "동명왕릉 일대 고구려 고분군",
+      "modernAdmin": "평양시 력포구역",
+      "country": "북한",
+      "worldRegion": "한국고대사·평양권",
+      "period": "고구려",
+      "yearLabel": "고구려 후기 고분군, UNESCO 2004년 등재",
+      "date": { "startYear": 300, "endYear": 668, "precision": "range" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "KP",
+        "historicalRegionKo": "대동강 유역 평양권",
+        "cultureAreaKo": "고구려 후기 왕릉·벽화고분권"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 38.889, "lng": 125.93 },
+      "aliases": ["Tomb of King Tongmyong", "Jinpha-ri Tombs", "Koguryo Tombs", "Goguryeo Tombs", "Pyongyang"],
+      "summary": "동명왕릉과 진파리 고분군은 평양권 고구려 고분 문화와 왕권 기억을 보여주는 대표 구성요소다. 고구려 벽화고분은 장례 관습, 회화, 복식, 사상, 동아시아 문화 교류를 읽는 핵심 자료로 평가된다.",
+      "confidence": "medium",
+      "sourceNote": "UNESCO Complex of Koguryo Tombs의 구성요소 좌표를 대표점으로 사용했다. 고분군 전체가 여러 지점으로 나뉘므로 단일 마커는 대표 위치다.",
+      "curationBatch": "asia-korea-three-kingdoms-silla-heritage-sites-v1",
+      "sources": [
+        { "title": "UNESCO: Complex of Koguryo Tombs", "url": "https://whc.unesco.org/en/list/1091/" },
+        { "title": "UNESCO Maps: Complex of Koguryo Tombs", "url": "https://whc.unesco.org/en/list/1091/maps/" },
+        { "title": "UNESCO Nomination File: Complex of Koguryo Tombs", "url": "https://whc.unesco.org/uploads/nominations/1091.pdf" }
+      ]
+    },
+    {
+      "id": "gongsanseong-fortress",
+      "title": "공산성",
+      "type": "place",
+      "historicalName": "웅진성 / 공산성",
+      "modernName": "공산성",
+      "modernAdmin": "충청남도 공주시",
+      "country": "대한민국",
+      "worldRegion": "한국고대사·백제",
+      "period": "백제 웅진기",
+      "yearLabel": "475-538년 웅진 도성 방어 거점",
+      "date": { "startYear": 475, "endYear": 538, "precision": "range" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "KR",
+        "historicalRegionKo": "금강 유역 공주",
+        "cultureAreaKo": "백제 웅진 도성권"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 36.4611, "lng": 127.1222 },
+      "aliases": ["Gongsanseong", "Gongsanseong Fortress", "Ungjin", "Gongju", "Baekje Historic Areas"],
+      "summary": "공산성은 한성 함락 뒤 백제가 웅진으로 천도한 시기의 도성 방어 거점이다. 금강을 낀 산성 지형은 백제 왕권이 강과 산지를 활용해 새 수도를 운영한 방식을 보여준다.",
+      "confidence": "high",
+      "sourceNote": "UNESCO Baekje Historic Areas와 공산성 구성요소 지도 좌표를 기준으로 표시했다.",
+      "curationBatch": "asia-korea-three-kingdoms-silla-heritage-sites-v1",
+      "sources": [
+        { "title": "UNESCO: Baekje Historic Areas", "url": "https://whc.unesco.org/en/list/1477/" },
+        { "title": "UNESCO Document: Gongsanseong Fortress Map", "url": "https://whc.unesco.org/document/137899" },
+        { "title": "Gongju City: Gongsanseong Fortress", "url": "https://www.gongju.go.kr/en/sub02_02_02.do" }
+      ]
+    },
+    {
+      "id": "songsan-ri-royal-tombs",
+      "title": "송산리 고분군과 무령왕릉",
+      "type": "place",
+      "historicalName": "송산리 고분군 / 무령왕릉",
+      "modernName": "공주 무령왕릉과 왕릉원",
+      "modernAdmin": "충청남도 공주시",
+      "country": "대한민국",
+      "worldRegion": "한국고대사·백제",
+      "period": "백제 웅진기",
+      "yearLabel": "5-6세기 백제 왕릉군",
+      "date": { "startYear": 475, "endYear": 538, "precision": "range" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "KR",
+        "historicalRegionKo": "금강 유역 공주",
+        "cultureAreaKo": "백제 웅진 왕릉권"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 36.4625, "lng": 127.1136 },
+      "aliases": ["Songsan-ri Tombs", "Tomb of King Muryeong", "Royal Tombs in Songsan-ri", "Gongju Royal Tombs", "Baekje"],
+      "summary": "송산리 고분군과 무령왕릉은 웅진기 백제 왕실의 장례 경관을 대표한다. 무령왕릉의 묘지석과 출토품은 왕의 신원과 연대를 확인하게 해주며, 백제의 국제 교류와 장례 문화를 함께 보여준다.",
+      "confidence": "high",
+      "sourceNote": "공주 왕릉원과 무령왕릉 권역의 대표 좌표를 사용했다.",
+      "curationBatch": "asia-korea-three-kingdoms-silla-heritage-sites-v1",
+      "sources": [
+        { "title": "UNESCO: Baekje Historic Areas", "url": "https://whc.unesco.org/en/list/1477/" },
+        { "title": "Gongju City: Ancient Tombs in Songsan-ri", "url": "https://www.gongju.go.kr/en/sub02_02_03.do" },
+        { "title": "Britannica: Paekche", "url": "https://www.britannica.com/place/Paekche" }
+      ]
+    },
+    {
+      "id": "busosanseong-gwanbukri",
+      "title": "관북리 유적과 부소산성",
+      "type": "place",
+      "historicalName": "사비 왕궁지 / 부소산성",
+      "modernName": "관북리 유적과 부소산성",
+      "modernAdmin": "충청남도 부여군",
+      "country": "대한민국",
+      "worldRegion": "한국고대사·백제",
+      "period": "백제 사비기",
+      "yearLabel": "538-660년 사비 도성 핵심 권역",
+      "date": { "startYear": 538, "endYear": 660, "precision": "range" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "KR",
+        "historicalRegionKo": "금강 하류 부여",
+        "cultureAreaKo": "백제 사비 도성권"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 36.2816, "lng": 126.9127 },
+      "aliases": ["Busosanseong", "Gwanbuk-ri", "Sabi", "Buyeo", "Baekje Historic Areas"],
+      "summary": "관북리 유적과 부소산성은 사비기 백제 왕궁과 배후 산성의 결합을 보여준다. 금강 하류의 도성 공간에서 왕궁, 방어, 의례, 낙화암 기억이 겹치며 백제 말기 정치 중심지를 이해하게 해준다.",
+      "confidence": "medium",
+      "sourceNote": "부소산성과 관북리 유적을 묶은 UNESCO 구성요소의 대표 좌표를 사용했다.",
+      "curationBatch": "asia-korea-three-kingdoms-silla-heritage-sites-v1",
+      "sources": [
+        { "title": "UNESCO: Baekje Historic Areas", "url": "https://whc.unesco.org/en/list/1477/" },
+        { "title": "Buyeo-gun World Heritage: Archaeological Site in Gwanbuk-ri and Busosanseong Fortress", "url": "https://www.buyeo.go.kr/html/heritageen/sub2/sub2_0201.html" },
+        { "title": "UNESCO Document: Baekje Historic Areas", "url": "https://whc.unesco.org/document/152766" }
+      ]
+    },
+    {
+      "id": "mireuksa-temple-site",
+      "title": "익산 미륵사지",
+      "type": "place",
+      "historicalName": "미륵사 / 미륵사지",
+      "modernName": "익산 미륵사지",
+      "modernAdmin": "전북특별자치도 익산시",
+      "country": "대한민국",
+      "worldRegion": "한국고대사·백제",
+      "period": "백제 사비기",
+      "yearLabel": "602년 창건 전승, 7세기 백제 대가람",
+      "date": { "startYear": 602, "endYear": 660, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "KR",
+        "historicalRegionKo": "금마저·익산",
+        "cultureAreaKo": "백제 왕실 불교·익산 부도심권"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 36.0121, "lng": 127.0310 },
+      "aliases": ["Mireuksa", "Mireuksa Temple Site", "Iksan Mireuksaji", "Mireuksaji Stone Pagoda", "Baekje Buddhism"],
+      "summary": "익산 미륵사지는 백제 최대급 사찰 유적으로, 사비기 왕실 불교와 익산 권역의 정치적 위상을 보여준다. 석탑과 가람 배치는 백제 불교 건축이 동아시아 사원 건축으로 확산되는 흐름을 이해하게 해준다.",
+      "confidence": "high",
+      "sourceNote": "미륵사지 석탑과 국립익산박물관 인접 유적 권역의 대표 좌표를 사용했다.",
+      "curationBatch": "asia-korea-three-kingdoms-silla-heritage-sites-v1",
+      "sources": [
+        { "title": "UNESCO: Baekje Historic Areas", "url": "https://whc.unesco.org/en/list/1477/" },
+        { "title": "Iksan National Museum: Introduction", "url": "https://iksan.museum.go.kr/eng/html/sub04/0401.html" },
+        { "title": "VISITKOREA: Mireuksa Temple Site", "url": "https://english.visitkorea.or.kr/svc/contents/contentsViewCid.do?cmsCid=264600" }
+      ]
+    },
+    {
+      "id": "wolseong-palace-site",
+      "title": "경주 월성",
+      "type": "place",
+      "historicalName": "월성 / 반월성 / 신월성",
+      "modernName": "경주 월성",
+      "modernAdmin": "경상북도 경주시",
+      "country": "대한민국",
+      "worldRegion": "한국고대사·신라",
+      "period": "신라·통일신라",
+      "yearLabel": "신라 왕궁지, 1-10세기 도성 핵심",
+      "date": { "startYear": 100, "endYear": 935, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "KR",
+        "historicalRegionKo": "경주 분지",
+        "cultureAreaKo": "신라 왕경·월성권"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 35.8326, "lng": 129.2218 },
+      "aliases": ["Wolseong", "Banwolseong", "Silla palace", "Gyeongju Historic Areas", "Wolsong Belt"],
+      "summary": "경주 월성은 신라 왕궁지로, 서라벌의 정치 중심을 지형 위에서 보여준다. 반달 모양의 궁성, 인접한 첨성대·동궁과 월지·왕릉 경관은 신라 왕경의 권력과 의례 공간을 연결한다.",
+      "confidence": "high",
+      "sourceNote": "월성 왕궁지 중심부의 대표 좌표를 사용했다.",
+      "curationBatch": "asia-korea-three-kingdoms-silla-heritage-sites-v1",
+      "sources": [
+        { "title": "UNESCO: Gyeongju Historic Areas", "url": "https://whc.unesco.org/en/list/976/" },
+        { "title": "UNESCO Silk Roads Programme: Gyeongju", "url": "https://en.unesco.org/silkroad/content/gyeongju" },
+        { "title": "UNESCO Periodic Reporting: Gyeongju Historic Areas", "url": "https://whc.unesco.org/document/217540" }
+      ]
+    },
+    {
+      "id": "hwangnyongsa-temple-site",
+      "title": "황룡사지",
+      "type": "place",
+      "historicalName": "황룡사 / 황룡사지",
+      "modernName": "경주 황룡사지",
+      "modernAdmin": "경상북도 경주시",
+      "country": "대한민국",
+      "worldRegion": "한국고대사·신라",
+      "period": "신라·통일신라",
+      "yearLabel": "6세기 창건, 7세기 구층목탑 조성",
+      "date": { "startYear": 553, "endYear": 935, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "KR",
+        "historicalRegionKo": "경주 분지",
+        "cultureAreaKo": "신라 왕경 불교 사원권"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 35.8374, "lng": 129.2328 },
+      "aliases": ["Hwangnyongsa", "Hwangnyongsa Temple Site", "Hwangryongsa", "Nine-story wooden pagoda", "Silla Buddhism"],
+      "summary": "황룡사지는 신라 왕경 한가운데 조성된 대형 사찰 유적이다. 구층목탑과 왕실 후원 사찰의 기억은 신라 불교가 국가 통합, 왕권 상징, 동아시아 불교 교류와 연결된 방식을 보여준다.",
+      "confidence": "medium",
+      "sourceNote": "황룡사지 권역의 대표 좌표를 사용했다. 현재는 건물이 남아 있지 않은 발굴·보존 유적이므로 표시는 사지 중심부를 따른다.",
+      "curationBatch": "asia-korea-three-kingdoms-silla-heritage-sites-v1",
+      "sources": [
+        { "title": "UNESCO: Gyeongju Historic Areas", "url": "https://whc.unesco.org/en/list/976/" },
+        { "title": "HeritageWiki: Hwangnyongsa Temple Site, Gyeongju", "url": "https://dh.aks.ac.kr/~heritage/wiki/index.php/%EA%B2%BD%EC%A3%BC_%ED%99%A9%EB%A3%A1%EC%82%AC%EC%A7%80" },
+        { "title": "UNESCO Silk Roads Programme: Gyeongju", "url": "https://en.unesco.org/silkroad/content/gyeongju" }
+      ]
+    },
+    {
+      "id": "seokguram-bulguksa",
+      "title": "석굴암과 불국사",
+      "type": "place",
+      "historicalName": "석굴암 / 불국사",
+      "modernName": "석굴암과 불국사",
+      "modernAdmin": "경상북도 경주시",
+      "country": "대한민국",
+      "worldRegion": "한국고대사·통일신라",
+      "period": "통일신라",
+      "yearLabel": "8세기 통일신라 불교 건축",
+      "date": { "startYear": 751, "endYear": 774, "precision": "approximate" },
+      "spatial": {
+        "continentId": "asia",
+        "modernCountryIso2": "KR",
+        "historicalRegionKo": "토함산·경주 동부",
+        "cultureAreaKo": "통일신라 불교 건축·조각권"
+      },
+      "classification": { "periodBand": "ancient", "selectionTier": "core" },
+      "coordinates": { "lat": 35.791, "lng": 129.349 },
+      "aliases": ["Seokguram", "Bulguksa", "Seokguram Grotto", "Bulguksa Temple", "Tohamsan", "Unified Silla"],
+      "summary": "석굴암과 불국사는 통일신라 불교 예술과 건축의 대표 유산이다. 토함산의 석굴 조각과 불국사의 석조·목조 건축은 8세기 신라가 불교 세계관을 조형 언어로 구현한 방식을 보여준다.",
+      "confidence": "medium",
+      "sourceNote": "UNESCO 연속 유산의 대표 좌표를 사용했다. 석굴암과 불국사는 떨어진 두 구성요소이므로 한 점은 전체 유산을 대표한다.",
+      "curationBatch": "asia-korea-three-kingdoms-silla-heritage-sites-v1",
+      "sources": [
+        { "title": "UNESCO: Seokguram Grotto and Bulguksa Temple", "url": "https://whc.unesco.org/en/list/736/" },
+        { "title": "UNESCO Periodic Reporting: Seokguram Grotto and Bulguksa Temple", "url": "https://whc.unesco.org/document/217187" },
+        { "title": "UNESCO Silk Roads Programme: Gyeongju", "url": "https://en.unesco.org/silkroad/content/gyeongju" }
+      ]
+    }
+  ]
+}

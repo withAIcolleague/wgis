@@ -360,6 +360,18 @@ The thirtieth pilot dataset tests Egyptian late temple centers, Theban ritual le
 - `philae`
 - `kom-ombo-temple`
 
+The thirty-first pilot dataset tests Korean Three Kingdoms and Unified Silla heritage landscapes, including Goguryeo fortified capitals and tombs, Baekje Ungjin/Sabi/Iksan royal and Buddhist sites, and Silla Gyeongju palace and Buddhist architecture:
+
+- `gungnae-wandu-koguryo`
+- `koguryo-tomb-king-tongmyong`
+- `gongsanseong-fortress`
+- `songsan-ri-royal-tombs`
+- `busosanseong-gwanbukri`
+- `mireuksa-temple-site`
+- `wolseong-palace-site`
+- `hwangnyongsa-temple-site`
+- `seokguram-bulguksa`
+
 The dataset list is managed in:
 
 ```text
@@ -793,3 +805,17 @@ The 2026-05-22 thirty-dataset public browser pass checks `https://wgis.vercel.ap
 - The `프톨레마이오스·로마 나일 신전망` context filter returns `알렉산드리아`, `덴데라 신전`, `에드푸 신전`, `필레`, and `콤 옴보 신전` with 5 markers and 5 labels and no stale Karnak data.
 - On mobile, `필레` detail renders with source-confidence information and both detail actions.
 - Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.
+
+## Thirty-One-Dataset Public Usability Pass
+
+The 2026-05-22 thirty-one-dataset public browser pass checks `https://wgis.vercel.app/stage2-preview.html` after adding the Korean Three Kingdoms and Unified Silla heritage pilot dataset:
+
+- Dataset selector exposes 31 datasets.
+- All 31 indexed datasets render their expected entry, marker, and permanent-label counts across 259 Stage 2 preview entries.
+- The new Korean ancient heritage dataset exposes 9 entries: `국내성·환도산성`, `동명왕릉과 진파리 고분군`, `공산성`, `송산리 고분군과 무령왕릉`, `관북리 유적과 부소산성`, `익산 미륵사지`, `경주 월성`, `황룡사지`, and `석굴암과 불국사`.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control.
+- Searching `미륵사지` in the Korean ancient heritage dataset narrows the list and map to `익산 미륵사지` with 1 marker and 1 label.
+- Selecting `공산성` opens the detail panel with source-confidence information and detail actions.
+- The `백제 웅진·사비·익산 도성 네트워크` context filter returns `공산성`, `송산리 고분군과 무령왕릉`, `관북리 유적과 부소산성`, and `익산 미륵사지` with 4 markers and 4 labels and no stale Goguryeo data.
+- On mobile, `석굴암과 불국사` detail renders with source-confidence information and both detail actions.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-one-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-one-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.

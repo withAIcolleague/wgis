@@ -899,6 +899,35 @@
         "UNESCO World Heritage page for Nubian Monuments from Abu Simbel to Philae",
         "Britannica reference pages for Dandarah, Idfu, Philae, and Kawm Umbu"
       ]
+    },
+    {
+      "id": "asia-korea-three-kingdoms-silla-heritage-sites-v1",
+      "status": "completed",
+      "completedAt": "2026-05-22",
+      "continentId": "asia",
+      "countryIso2": "KR-KP-CN",
+      "countryKo": "대한민국·북한·중국",
+      "worldRegion": "동아시아·한국고대사",
+      "focusKo": "한국 고대 삼국·통일신라 수도와 불교 유산",
+      "scopeKo": "고구려 국내성·환도산성 및 평양권 고분, 백제 웅진·사비·익산 유산, 신라 경주 왕경과 불교 유산을 연결하는 핵심 지점",
+      "sourceFile": "data/records/asia/korea/three-kingdoms-silla-heritage-sites.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "gungnae-wandu-koguryo",
+        "koguryo-tomb-king-tongmyong",
+        "gongsanseong-fortress",
+        "songsan-ri-royal-tombs",
+        "busosanseong-gwanbukri",
+        "mireuksa-temple-site",
+        "wolseong-palace-site",
+        "hwangnyongsa-temple-site",
+        "seokguram-bulguksa"
+      ],
+      "sourceBasis": [
+        "UNESCO World Heritage pages and map documents for Koguryo, Baekje, Gyeongju, Seokguram, and Bulguksa heritage",
+        "Official Gongju, Buyeo, Iksan museum, VISITKOREA, and HeritageWiki references for Korean site-level context",
+        "Britannica and China.org.cn references for broader Baekje and Koguryo historical context"
+      ]
     }
   ]
 }

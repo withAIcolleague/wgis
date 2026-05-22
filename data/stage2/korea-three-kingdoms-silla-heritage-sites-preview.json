@@ -1,0 +1,560 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-korea-three-kingdoms-silla-heritage-sites-preview",
+  "titleKo": "2단계 미리보기: 한국 고대 삼국·통일신라 유산",
+  "descriptionKo": "국내성·환도산성, 동명왕릉과 진파리 고분군, 공산성, 송산리 고분군과 무령왕릉, 관북리 유적과 부소산성, 익산 미륵사지, 경주 월성, 황룡사지, 석굴암과 불국사를 비교해 한국 고대 국가의 수도·왕릉·불교 유산을 보는 2단계 미리보기 데이터셋입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "고구려",
+        "백제 웅진기",
+        "백제 사비기",
+        "신라 왕경",
+        "통일신라"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "압록강 지안",
+        "평양권",
+        "공주",
+        "부여",
+        "익산",
+        "경주"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "도성",
+        "산성",
+        "왕궁",
+        "왕릉",
+        "벽화고분",
+        "불교 사원",
+        "석굴 조각",
+        "세계유산",
+        "동아시아 교류",
+        "고대 국가"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지점 유형",
+      "options": [
+        "장소"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "korea-ancient-three-kingdoms-silla-heritage",
+      "labelKo": "한국 고대 삼국·통일신라 유산 경관",
+      "parentId": null,
+      "periodKo": "1-10세기",
+      "summaryKo": "고구려의 압록강·평양권, 백제의 웅진·사비·익산, 신라의 경주 왕경과 통일신라 불교 유산을 한반도와 만주 남부의 고대 국가 경관으로 비교합니다."
+    },
+    {
+      "id": "goguryeo-capital-and-tomb-landscape",
+      "labelKo": "고구려 도성과 왕릉·벽화고분 경관",
+      "parentId": "korea-ancient-three-kingdoms-silla-heritage",
+      "periodKo": "1-7세기",
+      "summaryKo": "국내성·환도산성과 평양권 고분을 통해 고구려가 평지성, 산성, 왕릉, 벽화고분으로 왕권과 방어 체계를 구축한 방식을 봅니다."
+    },
+    {
+      "id": "gungnae-wandu-fortified-capital",
+      "labelKo": "국내성·환도산성의 평지성·산성 복합 도성",
+      "parentId": "goguryeo-capital-and-tomb-landscape",
+      "periodKo": "1-5세기",
+      "summaryKo": "지안의 국내성·환도산성을 통해 압록강 중류 분지의 도성 입지, 산성 방어, 왕권 중심지의 이동 가능성을 함께 봅니다."
+    },
+    {
+      "id": "pyongyang-koguryo-tomb-memory",
+      "labelKo": "평양권 고구려 고분과 왕권 기억",
+      "parentId": "goguryeo-capital-and-tomb-landscape",
+      "periodKo": "4-7세기",
+      "summaryKo": "동명왕릉과 진파리 고분군을 통해 고구려 후기 장례 경관, 벽화고분, 건국 시조 기억이 평양권에서 재구성되는 방식을 봅니다."
+    },
+    {
+      "id": "baekje-ungjin-sabi-iksan-capitals",
+      "labelKo": "백제 웅진·사비·익산 도성 네트워크",
+      "parentId": "korea-ancient-three-kingdoms-silla-heritage",
+      "periodKo": "475-660년",
+      "summaryKo": "공주, 부여, 익산의 산성, 왕릉, 왕궁지, 사찰을 묶어 한성 이후 백제가 금강 유역에서 수도와 부도심을 재편한 방식을 봅니다."
+    },
+    {
+      "id": "ungjin-gongju-royal-landscape",
+      "labelKo": "웅진 공주의 산성·왕릉 경관",
+      "parentId": "baekje-ungjin-sabi-iksan-capitals",
+      "periodKo": "475-538년",
+      "summaryKo": "공산성과 송산리 고분군을 통해 웅진기 백제 왕권이 금강, 산성, 왕릉 경관을 중심으로 재건된 과정을 봅니다."
+    },
+    {
+      "id": "sabi-buyeo-royal-fortress-palace",
+      "labelKo": "사비 부여의 왕궁·산성 복합 경관",
+      "parentId": "baekje-ungjin-sabi-iksan-capitals",
+      "periodKo": "538-660년",
+      "summaryKo": "관북리 유적과 부소산성을 통해 사비기 백제 왕궁, 배후 산성, 금강 하류 도성 공간이 결합되는 방식을 봅니다."
+    },
+    {
+      "id": "iksan-baekje-buddhist-royal-project",
+      "labelKo": "익산 미륵사지와 백제 왕실 불교",
+      "parentId": "baekje-ungjin-sabi-iksan-capitals",
+      "periodKo": "7세기",
+      "summaryKo": "익산 미륵사지를 통해 백제 왕실 불교, 대가람 건축, 익산 권역의 정치·종교적 위상을 봅니다."
+    },
+    {
+      "id": "silla-gyeongju-royal-buddhist-city",
+      "labelKo": "신라 경주 왕경과 불교 도시",
+      "parentId": "korea-ancient-three-kingdoms-silla-heritage",
+      "periodKo": "1-10세기",
+      "summaryKo": "경주 월성, 황룡사지, 석굴암과 불국사를 통해 신라 왕경의 정치 중심, 왕실 후원 불교, 통일신라 불교 예술이 연결되는 방식을 봅니다."
+    },
+    {
+      "id": "wolseong-silla-palace-core",
+      "labelKo": "월성과 신라 왕궁 중심축",
+      "parentId": "silla-gyeongju-royal-buddhist-city",
+      "periodKo": "신라-통일신라",
+      "summaryKo": "월성을 통해 서라벌 왕경의 궁성, 권력 중심, 주변 의례·왕릉 경관과의 공간 관계를 봅니다."
+    },
+    {
+      "id": "silla-buddhist-monumental-architecture",
+      "labelKo": "황룡사지·석굴암·불국사의 불교 건축",
+      "parentId": "silla-gyeongju-royal-buddhist-city",
+      "periodKo": "6-8세기",
+      "summaryKo": "황룡사지와 석굴암·불국사를 통해 왕실 후원 사찰, 구층목탑 기억, 통일신라 석굴 조각과 불국토 구현을 비교합니다."
+    },
+    {
+      "id": "east-asian-heritage-transmission-korea",
+      "labelKo": "동아시아 교류 속 한국 고대 유산",
+      "parentId": "korea-ancient-three-kingdoms-silla-heritage",
+      "periodKo": "4-8세기",
+      "summaryKo": "고구려 고분, 백제 불교 사원, 신라 불교 건축을 통해 한반도 고대 국가들이 중국 대륙, 일본 열도, 불교 네트워크와 연결된 방식을 봅니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "gungnae-wandu-koguryo",
+      "titleKo": "국내성·환도산성",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "중국",
+      "coordinates": { "lat": 41.1275, "lng": 126.1949 },
+      "yearLabelKo": "1-5세기 고구려 도성권",
+      "summaryKo": "국내성·환도산성은 압록강 중류의 고구려 초기·중기 도성권을 대표하는 유산이다. 평지성 국내성과 산성 환도산성이 결합된 구조는 고구려의 방어, 왕권, 도성 운영 방식을 지도 위에서 함께 보게 해준다.",
+      "stage2": {
+        "primaryContextId": "gungnae-wandu-fortified-capital",
+        "contextIds": [
+          "korea-ancient-three-kingdoms-silla-heritage",
+          "goguryeo-capital-and-tomb-landscape",
+          "gungnae-wandu-fortified-capital",
+          "east-asian-heritage-transmission-korea"
+        ],
+        "periodPathKo": [
+          "고대",
+          "고구려",
+          "압록강 지안 도성권"
+        ],
+        "topicTagsKo": [
+          "국내성",
+          "환도산성",
+          "고구려",
+          "압록강",
+          "도성"
+        ],
+        "uiFilters": {
+          "era": "고구려",
+          "region": "압록강 지안",
+          "theme": [
+            "도성",
+            "산성",
+            "세계유산",
+            "고대 국가"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 세계유산 도성권을 대표하는 근사 좌표입니다. 국내성과 환도산성을 하나의 비교 항목으로 단순화했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "koguryo-tomb-king-tongmyong",
+      "titleKo": "동명왕릉과 진파리 고분군",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "북한",
+      "coordinates": { "lat": 38.889, "lng": 125.93 },
+      "yearLabelKo": "고구려 후기 고분군, UNESCO 2004년 등재",
+      "summaryKo": "동명왕릉과 진파리 고분군은 평양권 고구려 고분 문화와 왕권 기억을 보여주는 대표 구성요소다. 고구려 벽화고분은 장례 관습, 회화, 복식, 사상, 동아시아 문화 교류를 읽는 핵심 자료로 평가된다.",
+      "stage2": {
+        "primaryContextId": "pyongyang-koguryo-tomb-memory",
+        "contextIds": [
+          "korea-ancient-three-kingdoms-silla-heritage",
+          "goguryeo-capital-and-tomb-landscape",
+          "pyongyang-koguryo-tomb-memory",
+          "east-asian-heritage-transmission-korea"
+        ],
+        "periodPathKo": [
+          "고대",
+          "고구려",
+          "평양권 고분 경관"
+        ],
+        "topicTagsKo": [
+          "동명왕릉",
+          "진파리",
+          "고구려 고분",
+          "벽화고분",
+          "평양권"
+        ],
+        "uiFilters": {
+          "era": "고구려",
+          "region": "평양권",
+          "theme": [
+            "왕릉",
+            "벽화고분",
+            "세계유산",
+            "동아시아 교류"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO 구성요소 좌표를 대표점으로 사용했습니다. 여러 고분군을 포괄하므로 위치 해석은 대표 좌표입니다."
+        }
+      }
+    },
+    {
+      "entryId": "gongsanseong-fortress",
+      "titleKo": "공산성",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "대한민국",
+      "coordinates": { "lat": 36.4611, "lng": 127.1222 },
+      "yearLabelKo": "475-538년 웅진 도성 방어 거점",
+      "summaryKo": "공산성은 한성 함락 뒤 백제가 웅진으로 천도한 시기의 도성 방어 거점이다. 금강을 낀 산성 지형은 백제 왕권이 강과 산지를 활용해 새 수도를 운영한 방식을 보여준다.",
+      "stage2": {
+        "primaryContextId": "ungjin-gongju-royal-landscape",
+        "contextIds": [
+          "korea-ancient-three-kingdoms-silla-heritage",
+          "baekje-ungjin-sabi-iksan-capitals",
+          "ungjin-gongju-royal-landscape"
+        ],
+        "periodPathKo": [
+          "고대",
+          "백제 웅진기",
+          "공주 도성 방어"
+        ],
+        "topicTagsKo": [
+          "공산성",
+          "웅진",
+          "백제",
+          "금강",
+          "산성"
+        ],
+        "uiFilters": {
+          "era": "백제 웅진기",
+          "region": "공주",
+          "theme": [
+            "도성",
+            "산성",
+            "세계유산",
+            "고대 국가"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO와 공주시 공식 자료가 함께 있는 고신뢰 항목입니다."
+        }
+      }
+    },
+    {
+      "entryId": "songsan-ri-royal-tombs",
+      "titleKo": "송산리 고분군과 무령왕릉",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "대한민국",
+      "coordinates": { "lat": 36.4625, "lng": 127.1136 },
+      "yearLabelKo": "5-6세기 백제 왕릉군",
+      "summaryKo": "송산리 고분군과 무령왕릉은 웅진기 백제 왕실의 장례 경관을 대표한다. 무령왕릉의 묘지석과 출토품은 왕의 신원과 연대를 확인하게 해주며, 백제의 국제 교류와 장례 문화를 함께 보여준다.",
+      "stage2": {
+        "primaryContextId": "ungjin-gongju-royal-landscape",
+        "contextIds": [
+          "korea-ancient-three-kingdoms-silla-heritage",
+          "baekje-ungjin-sabi-iksan-capitals",
+          "ungjin-gongju-royal-landscape",
+          "east-asian-heritage-transmission-korea"
+        ],
+        "periodPathKo": [
+          "고대",
+          "백제 웅진기",
+          "공주 왕릉 경관"
+        ],
+        "topicTagsKo": [
+          "송산리 고분군",
+          "무령왕릉",
+          "백제 왕릉",
+          "웅진",
+          "국제 교류"
+        ],
+        "uiFilters": {
+          "era": "백제 웅진기",
+          "region": "공주",
+          "theme": [
+            "왕릉",
+            "세계유산",
+            "동아시아 교류"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "UNESCO와 공주시 공식 자료, Britannica 백제 참고 자료를 함께 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "busosanseong-gwanbukri",
+      "titleKo": "관북리 유적과 부소산성",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "대한민국",
+      "coordinates": { "lat": 36.2816, "lng": 126.9127 },
+      "yearLabelKo": "538-660년 사비 도성 핵심 권역",
+      "summaryKo": "관북리 유적과 부소산성은 사비기 백제 왕궁과 배후 산성의 결합을 보여준다. 금강 하류의 도성 공간에서 왕궁, 방어, 의례, 낙화암 기억이 겹치며 백제 말기 정치 중심지를 이해하게 해준다.",
+      "stage2": {
+        "primaryContextId": "sabi-buyeo-royal-fortress-palace",
+        "contextIds": [
+          "korea-ancient-three-kingdoms-silla-heritage",
+          "baekje-ungjin-sabi-iksan-capitals",
+          "sabi-buyeo-royal-fortress-palace"
+        ],
+        "periodPathKo": [
+          "고대",
+          "백제 사비기",
+          "부여 왕궁·산성 경관"
+        ],
+        "topicTagsKo": [
+          "부소산성",
+          "관북리",
+          "사비",
+          "백제 왕궁",
+          "부여"
+        ],
+        "uiFilters": {
+          "era": "백제 사비기",
+          "region": "부여",
+          "theme": [
+            "왕궁",
+            "산성",
+            "세계유산",
+            "고대 국가"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "부소산성과 관북리 유적을 묶은 연속 유산 구성요소이므로 대표 좌표로 관리합니다."
+        }
+      }
+    },
+    {
+      "entryId": "mireuksa-temple-site",
+      "titleKo": "익산 미륵사지",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "대한민국",
+      "coordinates": { "lat": 36.0121, "lng": 127.0310 },
+      "yearLabelKo": "602년 창건 전승, 7세기 백제 대가람",
+      "summaryKo": "익산 미륵사지는 백제 최대급 사찰 유적으로, 사비기 왕실 불교와 익산 권역의 정치적 위상을 보여준다. 석탑과 가람 배치는 백제 불교 건축이 동아시아 사원 건축으로 확산되는 흐름을 이해하게 해준다.",
+      "stage2": {
+        "primaryContextId": "iksan-baekje-buddhist-royal-project",
+        "contextIds": [
+          "korea-ancient-three-kingdoms-silla-heritage",
+          "baekje-ungjin-sabi-iksan-capitals",
+          "iksan-baekje-buddhist-royal-project",
+          "east-asian-heritage-transmission-korea"
+        ],
+        "periodPathKo": [
+          "고대",
+          "백제 사비기",
+          "익산 왕실 불교"
+        ],
+        "topicTagsKo": [
+          "미륵사지",
+          "익산",
+          "백제 불교",
+          "석탑",
+          "대가람"
+        ],
+        "uiFilters": {
+          "era": "백제 사비기",
+          "region": "익산",
+          "theme": [
+            "불교 사원",
+            "세계유산",
+            "동아시아 교류"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO, 국립익산박물관, VISITKOREA 자료로 위치와 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "wolseong-palace-site",
+      "titleKo": "경주 월성",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "대한민국",
+      "coordinates": { "lat": 35.8326, "lng": 129.2218 },
+      "yearLabelKo": "신라 왕궁지, 1-10세기 도성 핵심",
+      "summaryKo": "경주 월성은 신라 왕궁지로, 서라벌의 정치 중심을 지형 위에서 보여준다. 반달 모양의 궁성, 인접한 첨성대·동궁과 월지·왕릉 경관은 신라 왕경의 권력과 의례 공간을 연결한다.",
+      "stage2": {
+        "primaryContextId": "wolseong-silla-palace-core",
+        "contextIds": [
+          "korea-ancient-three-kingdoms-silla-heritage",
+          "silla-gyeongju-royal-buddhist-city",
+          "wolseong-silla-palace-core"
+        ],
+        "periodPathKo": [
+          "고대",
+          "신라 왕경",
+          "월성 왕궁 중심축"
+        ],
+        "topicTagsKo": [
+          "월성",
+          "반월성",
+          "서라벌",
+          "신라 왕궁",
+          "경주"
+        ],
+        "uiFilters": {
+          "era": "신라 왕경",
+          "region": "경주",
+          "theme": [
+            "왕궁",
+            "도성",
+            "세계유산",
+            "고대 국가"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO Gyeongju Historic Areas와 관련 공식 자료를 사용한 경주 왕궁지 항목입니다."
+        }
+      }
+    },
+    {
+      "entryId": "hwangnyongsa-temple-site",
+      "titleKo": "황룡사지",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "대한민국",
+      "coordinates": { "lat": 35.8374, "lng": 129.2328 },
+      "yearLabelKo": "6세기 창건, 7세기 구층목탑 조성",
+      "summaryKo": "황룡사지는 신라 왕경 한가운데 조성된 대형 사찰 유적이다. 구층목탑과 왕실 후원 사찰의 기억은 신라 불교가 국가 통합, 왕권 상징, 동아시아 불교 교류와 연결된 방식을 보여준다.",
+      "stage2": {
+        "primaryContextId": "silla-buddhist-monumental-architecture",
+        "contextIds": [
+          "korea-ancient-three-kingdoms-silla-heritage",
+          "silla-gyeongju-royal-buddhist-city",
+          "silla-buddhist-monumental-architecture",
+          "east-asian-heritage-transmission-korea"
+        ],
+        "periodPathKo": [
+          "고대",
+          "신라 왕경",
+          "황룡사 왕실 불교"
+        ],
+        "topicTagsKo": [
+          "황룡사지",
+          "구층목탑",
+          "신라 불교",
+          "왕실 후원",
+          "경주"
+        ],
+        "uiFilters": {
+          "era": "신라 왕경",
+          "region": "경주",
+          "theme": [
+            "불교 사원",
+            "세계유산",
+            "동아시아 교류"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "현존 건축물이 아니라 사지 중심부를 표시하는 항목이므로 위치는 대표 좌표입니다."
+        }
+      }
+    },
+    {
+      "entryId": "seokguram-bulguksa",
+      "titleKo": "석굴암과 불국사",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "대한민국",
+      "coordinates": { "lat": 35.791, "lng": 129.349 },
+      "yearLabelKo": "8세기 통일신라 불교 건축",
+      "summaryKo": "석굴암과 불국사는 통일신라 불교 예술과 건축의 대표 유산이다. 토함산의 석굴 조각과 불국사의 석조·목조 건축은 8세기 신라가 불교 세계관을 조형 언어로 구현한 방식을 보여준다.",
+      "stage2": {
+        "primaryContextId": "silla-buddhist-monumental-architecture",
+        "contextIds": [
+          "korea-ancient-three-kingdoms-silla-heritage",
+          "silla-gyeongju-royal-buddhist-city",
+          "silla-buddhist-monumental-architecture",
+          "east-asian-heritage-transmission-korea"
+        ],
+        "periodPathKo": [
+          "고대",
+          "통일신라",
+          "토함산 불교 예술"
+        ],
+        "topicTagsKo": [
+          "석굴암",
+          "불국사",
+          "통일신라",
+          "석굴 조각",
+          "불교 건축"
+        ],
+        "uiFilters": {
+          "era": "통일신라",
+          "region": "경주",
+          "theme": [
+            "불교 사원",
+            "석굴 조각",
+            "세계유산",
+            "동아시아 교류"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "석굴암과 불국사를 묶은 UNESCO 연속 유산 대표 좌표입니다."
+        }
+      }
+    }
+  ]
+}

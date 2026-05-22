@@ -168,12 +168,17 @@ const datasets = [
     path: 'data/stage2/egypt-late-temple-centers-preview.json',
     count: 8,
     firstEntryId: 'karnak'
+  },
+  {
+    path: 'data/stage2/korea-three-kingdoms-silla-heritage-sites-preview.json',
+    count: 9,
+    firstEntryId: 'gungnae-wandu-koguryo'
   }
 ];
 
 const latestDataset = datasets[datasets.length - 1];
-const desktopShot = path.join(outputDir, 'wgis-stage2-thirty-datasets-desktop.png');
-const mobileShot = path.join(outputDir, 'wgis-stage2-thirty-datasets-mobile.png');
+const desktopShot = path.join(outputDir, 'wgis-stage2-thirty-one-datasets-desktop.png');
+const mobileShot = path.join(outputDir, 'wgis-stage2-thirty-one-datasets-mobile.png');
 
 function assertCheck(condition, message, details = undefined) {
   if (!condition) {
@@ -342,62 +347,61 @@ async function main() {
       assertCheck(state.contextFilterButtons <= 4 && state.contextFilterToggle, 'Initial context filters should start compact', state);
 
       dom = await dumpDom(buildUrl({ dataset: latestDataset.path }), userDataDir);
-      state = extractState('desktop-egypt-late-temples-default', dom);
+      state = extractState('desktop-korea-three-kingdoms-default', dom);
       states.push(state);
-      assertCheck(state.entryCards === latestDataset.count && state.entryIds.includes('karnak'), 'Latest dataset should render Karnak and all entries', state);
+      assertCheck(state.entryCards === latestDataset.count && state.entryIds.includes('gungnae-wandu-koguryo'), 'Latest dataset should render Gungnae-Wandu and all entries', state);
 
-      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, q: '콤 옴보' }), userDataDir);
-      state = extractState('desktop-egypt-late-temples-search-kom-ombo', dom);
+      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, q: '미륵사지' }), userDataDir);
+      state = extractState('desktop-korea-three-kingdoms-search-mireuksa', dom);
       states.push(state);
-      assertCheck(state.entryCountText === '1개' && state.entryIds.includes('kom-ombo-temple'), 'Latest dataset search should find Kom Ombo Temple', state);
+      assertCheck(state.entryCountText === '1개' && state.entryIds.includes('mireuksa-temple-site'), 'Latest dataset search should find Mireuksa Temple Site', state);
 
-      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, entry: 'dendera-temple' }), userDataDir);
-      state = extractState('desktop-egypt-late-temples-detail-dendera', dom);
+      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, entry: 'gongsanseong-fortress' }), userDataDir);
+      state = extractState('desktop-korea-three-kingdoms-detail-gongsanseong', dom);
       states.push(state);
       assertCheck(
-        state.detailTitle === '덴데라 신전' && state.detailActions === 2 && state.hasSourceConfidence,
-        'Latest dataset detail should show Dendera Temple, source confidence, and detail actions',
+        state.detailTitle === '공산성' && state.detailActions === 2 && state.hasSourceConfidence,
+        'Latest dataset detail should show Gongsanseong, source confidence, and detail actions',
         state
       );
 
       dom = await dumpDom(buildUrl({
         dataset: latestDataset.path,
-        context: 'ptolemaic-roman-nile-temple-network'
+        context: 'baekje-ungjin-sabi-iksan-capitals'
       }), userDataDir);
-      state = extractState('desktop-egypt-late-temples-ptolemaic-context', dom);
+      state = extractState('desktop-korea-three-kingdoms-baekje-context', dom);
       states.push(state);
       assertCheck(
-        state.entryCountText === '5개' &&
-          state.entryIds.includes('alexandria-egypt') &&
-          state.entryIds.includes('dendera-temple') &&
-          state.entryIds.includes('edfu-temple') &&
-          state.entryIds.includes('philae') &&
-          state.entryIds.includes('kom-ombo-temple') &&
-          !state.entryIds.includes('karnak'),
-        'Ptolemaic-Roman Nile temple context should return Alexandria and late temples without stale Karnak data',
+        state.entryCountText === '4개' &&
+          state.entryIds.includes('gongsanseong-fortress') &&
+          state.entryIds.includes('songsan-ri-royal-tombs') &&
+          state.entryIds.includes('busosanseong-gwanbukri') &&
+          state.entryIds.includes('mireuksa-temple-site') &&
+          !state.entryIds.includes('gungnae-wandu-koguryo'),
+        'Baekje context should return Gongju, Buyeo, and Iksan entries without stale Goguryeo data',
         state
       );
 
       dom = await dumpDom(buildUrl({
         dataset: latestDataset.path,
-        entry: 'philae'
+        entry: 'seokguram-bulguksa'
       }), userDataDir, { width: 390, height: 844 });
-      state = extractState('mobile-egypt-late-temples-detail-philae', dom);
+      state = extractState('mobile-korea-three-kingdoms-detail-seokguram-bulguksa', dom);
       states.push(state);
       assertCheck(
-        state.ready && state.detailTitle === '필레' && state.detailActions === 2,
-        'Mobile-sized latest dataset render should keep the Philae detail panel available',
+        state.ready && state.detailTitle === '석굴암과 불국사' && state.detailActions === 2,
+        'Mobile-sized latest dataset render should keep the Seokguram and Bulguksa detail panel available',
         state
       );
 
       await captureScreenshot(
-        buildUrl({ dataset: latestDataset.path, entry: 'dendera-temple' }),
+        buildUrl({ dataset: latestDataset.path, entry: 'gongsanseong-fortress' }),
         userDataDir,
         desktopShot,
         { width: 1440, height: 920 }
       );
       await captureScreenshot(
-        buildUrl({ dataset: latestDataset.path, entry: 'philae' }),
+        buildUrl({ dataset: latestDataset.path, entry: 'seokguram-bulguksa' }),
         userDataDir,
         mobileShot,
         { width: 390, height: 844 }
