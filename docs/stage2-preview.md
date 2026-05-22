@@ -173,6 +173,17 @@ The thirteenth pilot dataset tests Andean early states, coast-highland exchange,
 - `machu-picchu`
 - `sacsayhuaman`
 
+The fourteenth pilot dataset tests Southeast Asian early states, maritime exchange, and temple networks:
+
+- `oc-eo`
+- `my-son`
+- `angkor`
+- `borobudur`
+- `prambanan`
+- `bagan`
+- `sukhothai`
+- `ayutthaya`
+
 The dataset list is managed in:
 
 ```text
@@ -362,3 +373,18 @@ The 2026-05-22 thirteen-dataset browser pass checks `/stage2-preview.html` after
 - Switching back from the Andes dataset to Atlantic revolutions clears stale Andes list items, markers, labels, and map zoom state.
 - On mobile, the Andes entry list scrolls independently, `카라알` detail scrolls into view, `지도에서 보기` returns to the map, and `닫기` hides the detail panel.
 - Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirteen-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirteen-datasets-mobile.png`.
+
+## Fourteen-Dataset Public Usability Pass
+
+The 2026-05-22 fourteen-dataset browser pass checks `/stage2-preview.html` after adding the Southeast Asian early states and temple networks pilot dataset:
+
+- Dataset selector exposes 14 datasets.
+- All 14 indexed datasets render their expected entry, marker, and permanent-label counts: Atlantic revolutions 8, Ethiopia 8, Mesopotamia 10, Egypt 14, Indus 8, Early China 8, Ancient Greece 10, Achaemenid Persia 8, Roman Republic and Empire 8, Magadha-Maurya 8, Mesoamerica 8, West Africa 8, Andes 8, and Southeast Asia 8.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control after every dataset switch.
+- Searching `앙코르` in the Southeast Asia dataset narrows the list and map to 1 entry, marker, and label.
+- Selecting `앙코르` opens the detail panel with source-confidence information and detail actions.
+- Closing the `앙코르` detail panel preserves the current search marker and label.
+- The `대륙부 상좌부 불교 도시국가` context filter returns 3 entries: `바간`, `수코타이`, and `아유타야`.
+- Switching back from the Southeast Asia dataset to Atlantic revolutions clears stale Southeast Asia list items, markers, labels, and map zoom state.
+- On mobile, the Southeast Asia entry list scrolls independently, `옥에오` detail scrolls into view, `지도에서 보기` returns to the map, and `닫기` hides the detail panel.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-fourteen-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-fourteen-datasets-mobile.png`.

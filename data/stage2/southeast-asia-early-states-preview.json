@@ -1,0 +1,519 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-southeast-asia-early-states-preview",
+  "titleKo": "2단계 미리보기: 동남아 초기 국가와 사원 네트워크",
+  "descriptionKo": "메콩 델타 초기 해상 교역, 참파 사원 성역, 크메르 제국 도시 경관, 중부 자바 불교·힌두 사원권, 바간·수코타이·아유타야의 상좌부 불교 도시국가를 비교하는 2단계 미리보기 데이터입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "푸난·옥에오",
+        "참파 왕국",
+        "크메르 제국",
+        "고전 자바",
+        "파간 왕국",
+        "수코타이 왕국",
+        "아유타야 왕국"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "메콩 델타",
+        "베트남 중부 해안",
+        "톤레사프 평원",
+        "중부 자바",
+        "이라와디강 중류",
+        "태국 중북부",
+        "차오프라야강 하류"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "해상 교역",
+        "힌두 사원",
+        "불교 사원",
+        "제국 수도",
+        "수리·농업",
+        "상좌부 불교",
+        "도시국가",
+        "국제 교역"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지도 유형",
+      "options": [
+        "장소",
+        "유적"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "southeast-asian-early-states-temple-networks",
+      "labelKo": "동남아 초기 국가와 사원 네트워크",
+      "parentId": null,
+      "periodKo": "1-18세기",
+      "summaryKo": "메콩 델타, 베트남 중부 해안, 캄보디아 톤레사프, 자바, 이라와디, 태국 평원을 잇는 초기 국가, 사원 경관, 해상·내륙 교역망을 함께 비교하는 상위 맥락입니다."
+    },
+    {
+      "id": "mekong-delta-funan-oc-eo-exchange",
+      "labelKo": "메콩 델타 푸난·옥에오 교역",
+      "parentId": "southeast-asian-early-states-temple-networks",
+      "periodKo": "1-7세기",
+      "summaryKo": "옥에오-바테 유적권을 통해 운하, 항만, 생산지, 묘역, 인도양·남중국해 교역품이 결합한 초기 해상 교역망을 보는 맥락입니다."
+    },
+    {
+      "id": "champa-my-son-temple-valley",
+      "labelKo": "참파 미선 사원 계곡",
+      "parentId": "southeast-asian-early-states-temple-networks",
+      "periodKo": "4-13세기",
+      "summaryKo": "미선 성역의 벽돌 탑사원, 시바 숭배, 참파 왕권과 베트남 중부 해안의 인도양 문화 수용을 다루는 맥락입니다."
+    },
+    {
+      "id": "khmer-angkor-imperial-landscape",
+      "labelKo": "크메르 앙코르 제국 경관",
+      "parentId": "southeast-asian-early-states-temple-networks",
+      "periodKo": "9-15세기",
+      "summaryKo": "앙코르와트, 앙코르톰, 바라이, 운하·도로망을 통해 크메르 제국의 왕권, 힌두·불교 의례, 수리 농업이 결합한 도시 경관을 보는 맥락입니다."
+    },
+    {
+      "id": "central-java-temple-network",
+      "labelKo": "중부 자바 사원 네트워크",
+      "parentId": "southeast-asian-early-states-temple-networks",
+      "periodKo": "8-10세기",
+      "summaryKo": "보로부두르와 프람바난을 중심으로 샤일렌드라·마타람 권력, 불교 만다라, 힌두 삼신 사원, 자바 왕권 후원을 비교하는 맥락입니다."
+    },
+    {
+      "id": "borobudur-sailendra-buddhist-mandala",
+      "labelKo": "보로부두르 샤일렌드라 불교 만다라",
+      "parentId": "southeast-asian-early-states-temple-networks",
+      "periodKo": "8-9세기",
+      "summaryKo": "보로부두르의 계단식 기단, 원형 테라스, 스투파, 부조와 순례 동선을 통해 중부 자바 불교 우주론과 왕권 후원을 보는 맥락입니다."
+    },
+    {
+      "id": "prambanan-mataram-hindu-kingship",
+      "labelKo": "프람바난 마타람 힌두 왕권",
+      "parentId": "southeast-asian-early-states-temple-networks",
+      "periodKo": "9-10세기",
+      "summaryKo": "프람바난의 시바·비슈누·브라흐마 신전, 라마야나 부조, 주변 불교 사원 분포를 통해 자바 힌두·불교 왕권의 공존과 경쟁을 보는 맥락입니다."
+    },
+    {
+      "id": "pagan-bagan-theravada-landscape",
+      "labelKo": "파간·바간 상좌부 불교 경관",
+      "parentId": "southeast-asian-early-states-temple-networks",
+      "periodKo": "11-13세기",
+      "summaryKo": "바간 고고지대의 수천 기 사원, 스투파, 수도원, 벽화를 통해 파간 왕국의 상좌부 불교 후원과 이라와디 평원 국가 형성을 보는 맥락입니다."
+    },
+    {
+      "id": "mainland-theravada-urban-states",
+      "labelKo": "대륙부 상좌부 불교 도시국가",
+      "parentId": "southeast-asian-early-states-temple-networks",
+      "periodKo": "11-18세기",
+      "summaryKo": "바간, 수코타이, 아유타야를 통해 상좌부 불교, 왕도, 강 유역 교역, 사원 경관이 대륙부 동남아 도시국가를 조직한 방식을 비교하는 맥락입니다."
+    },
+    {
+      "id": "tai-sukhothai-ayutthaya-urban-states",
+      "labelKo": "타이 수코타이·아유타야 도시국가",
+      "parentId": "southeast-asian-early-states-temple-networks",
+      "periodKo": "13-18세기",
+      "summaryKo": "수코타이의 초기 타이 왕국 도시 네트워크와 아유타야의 차오프라야 국제 왕도를 연결해 타이 정치문화와 상좌부 불교 도시 전통을 보는 맥락입니다."
+    },
+    {
+      "id": "southeast-asian-maritime-inland-exchange",
+      "labelKo": "동남아 해상·내륙 교역 연결",
+      "parentId": "southeast-asian-early-states-temple-networks",
+      "periodKo": "1-18세기",
+      "summaryKo": "옥에오, 참파, 앙코르, 자바, 이라와디, 차오프라야를 해상·강 유역 교역과 의례 후원 관점에서 연결해 보는 맥락입니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "oc-eo",
+      "titleKo": "옥에오",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "베트남",
+      "coordinates": {
+        "lat": 10.2546,
+        "lng": 105.1514
+      },
+      "yearLabelKo": "1-7세기",
+      "summaryKo": "메콩 델타의 푸난 관련 초기 도시·항만 네트워크 유적으로, 운하, 생산지, 묘역, 인도양·남중국해 교역품이 동남아 초기 해상 교역망을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "mekong-delta-funan-oc-eo-exchange",
+        "contextIds": [
+          "southeast-asian-early-states-temple-networks",
+          "mekong-delta-funan-oc-eo-exchange",
+          "southeast-asian-maritime-inland-exchange"
+        ],
+        "periodPathKo": [
+          "고대",
+          "메콩 델타",
+          "푸난·옥에오 해상 교역"
+        ],
+        "topicTagsKo": [
+          "옥에오",
+          "푸난",
+          "메콩 델타",
+          "운하",
+          "해상 교역"
+        ],
+        "uiFilters": {
+          "era": "푸난·옥에오",
+          "region": "메콩 델타",
+          "theme": [
+            "해상 교역",
+            "국제 교역"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 잠정목록과 Britannica 푸난 항목을 사용하지만 옥에오-바테 유적권이 넓어 대표 좌표는 근사값으로 관리합니다."
+        }
+      }
+    },
+    {
+      "entryId": "my-son",
+      "titleKo": "미선",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "베트남",
+      "coordinates": {
+        "lat": 15.765,
+        "lng": 108.122
+      },
+      "yearLabelKo": "4-13세기",
+      "summaryKo": "참파 왕국의 종교·정치 중심지였던 힌두 사원군으로, 벽돌 탑사원과 시바 숭배 전통이 베트남 중부 해안 국가와 인도양 문화 요소의 결합을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "champa-my-son-temple-valley",
+        "contextIds": [
+          "southeast-asian-early-states-temple-networks",
+          "champa-my-son-temple-valley",
+          "southeast-asian-maritime-inland-exchange"
+        ],
+        "periodPathKo": [
+          "고대-중세",
+          "베트남 중부 해안",
+          "참파 힌두 사원 성역"
+        ],
+        "topicTagsKo": [
+          "미선",
+          "참파",
+          "시바",
+          "벽돌 탑사원",
+          "베트남 중부 해안"
+        ],
+        "uiFilters": {
+          "era": "참파 왕국",
+          "region": "베트남 중부 해안",
+          "theme": [
+            "힌두 사원",
+            "국제 교역"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 미선 성역 세계유산 자료와 World History Encyclopedia 참파 항목을 사용해 유적권과 참파 왕권·힌두 사원 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "angkor",
+      "titleKo": "앙코르",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "캄보디아",
+      "coordinates": {
+        "lat": 13.4125,
+        "lng": 103.8667
+      },
+      "yearLabelKo": "9-15세기",
+      "summaryKo": "크메르 제국의 수도권이자 앙코르와트, 앙코르톰, 바라이, 운하·도로망이 결합된 도시 경관으로, 왕권, 힌두·불교 의례, 수리 농업을 함께 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "khmer-angkor-imperial-landscape",
+        "contextIds": [
+          "southeast-asian-early-states-temple-networks",
+          "khmer-angkor-imperial-landscape",
+          "southeast-asian-maritime-inland-exchange"
+        ],
+        "periodPathKo": [
+          "중세",
+          "톤레사프 평원",
+          "크메르 제국 수도권과 수리 경관"
+        ],
+        "topicTagsKo": [
+          "앙코르",
+          "앙코르와트",
+          "앙코르톰",
+          "크메르 제국",
+          "바라이"
+        ],
+        "uiFilters": {
+          "era": "크메르 제국",
+          "region": "톤레사프 평원",
+          "theme": [
+            "제국 수도",
+            "힌두 사원",
+            "수리·농업"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 앙코르 세계유산 자료와 World History Encyclopedia 앙코르와트 항목을 사용해 수도권 위치와 크메르 제국 경관 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "borobudur",
+      "titleKo": "보로부두르",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "인도네시아",
+      "coordinates": {
+        "lat": -7.6079,
+        "lng": 110.2038
+      },
+      "yearLabelKo": "8-9세기",
+      "summaryKo": "중부 자바의 거대한 불교 만다라형 기념물로, 계단식 기단, 원형 테라스, 스투파, 방대한 부조와 순례 동선이 샤일렌드라 왕조기의 불교 후원을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "borobudur-sailendra-buddhist-mandala",
+        "contextIds": [
+          "southeast-asian-early-states-temple-networks",
+          "central-java-temple-network",
+          "borobudur-sailendra-buddhist-mandala"
+        ],
+        "periodPathKo": [
+          "중세",
+          "중부 자바",
+          "샤일렌드라 불교 만다라 사원"
+        ],
+        "topicTagsKo": [
+          "보로부두르",
+          "샤일렌드라",
+          "불교 만다라",
+          "스투파",
+          "중부 자바"
+        ],
+        "uiFilters": {
+          "era": "고전 자바",
+          "region": "중부 자바",
+          "theme": [
+            "불교 사원",
+            "도시국가"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 보로부두르 세계유산 자료와 World History Encyclopedia 항목을 사용해 사원군 좌표와 불교 만다라 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "prambanan",
+      "titleKo": "프람바난",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "인도네시아",
+      "coordinates": {
+        "lat": -7.752,
+        "lng": 110.4915
+      },
+      "yearLabelKo": "9-10세기",
+      "summaryKo": "자바 고전기의 대표 힌두 사원군으로, 시바·비슈누·브라흐마 신전, 라마야나 부조, 주변 불교 사원군이 힌두·불교 왕권의 공존과 경쟁을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "prambanan-mataram-hindu-kingship",
+        "contextIds": [
+          "southeast-asian-early-states-temple-networks",
+          "central-java-temple-network",
+          "prambanan-mataram-hindu-kingship"
+        ],
+        "periodPathKo": [
+          "중세",
+          "중부 자바",
+          "마타람 힌두 왕권과 사원군"
+        ],
+        "topicTagsKo": [
+          "프람바난",
+          "로로 종그랑",
+          "마타람",
+          "시바",
+          "라마야나"
+        ],
+        "uiFilters": {
+          "era": "고전 자바",
+          "region": "중부 자바",
+          "theme": [
+            "힌두 사원",
+            "도시국가"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 프람바난 세계유산 자료와 World History Encyclopedia 항목을 사용해 로로 종그랑 중심 유적권과 자바 힌두 왕권 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "bagan",
+      "titleKo": "바간",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "미얀마",
+      "coordinates": {
+        "lat": 21.1717,
+        "lng": 94.8585
+      },
+      "yearLabelKo": "11-13세기",
+      "summaryKo": "이라와디강 중류의 파간 왕국 수도권으로, 수천 기의 사원, 스투파, 수도원, 벽화가 상좌부 불교 후원과 평원 농업·교역 기반의 지역 제국 형성을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "pagan-bagan-theravada-landscape",
+        "contextIds": [
+          "southeast-asian-early-states-temple-networks",
+          "pagan-bagan-theravada-landscape",
+          "mainland-theravada-urban-states"
+        ],
+        "periodPathKo": [
+          "중세",
+          "이라와디강 중류",
+          "파간 왕국 상좌부 불교 경관"
+        ],
+        "topicTagsKo": [
+          "바간",
+          "파간",
+          "이라와디",
+          "상좌부 불교",
+          "아난다 사원"
+        ],
+        "uiFilters": {
+          "era": "파간 왕국",
+          "region": "이라와디강 중류",
+          "theme": [
+            "상좌부 불교",
+            "불교 사원",
+            "제국 수도"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 바간 세계유산 자료와 Britannica 항목을 사용해 중심 사원군 권역과 파간 왕국 불교 경관 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "sukhothai",
+      "titleKo": "수코타이",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "태국",
+      "coordinates": {
+        "lat": 17.019,
+        "lng": 99.703
+      },
+      "yearLabelKo": "13-15세기",
+      "summaryKo": "초기 타이 왕국의 수도로, 불교 사원, 성벽 도시, 저수지, 비문 전통이 타이 정치문화와 상좌부 불교 미술의 초기 형성을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "tai-sukhothai-ayutthaya-urban-states",
+        "contextIds": [
+          "southeast-asian-early-states-temple-networks",
+          "mainland-theravada-urban-states",
+          "tai-sukhothai-ayutthaya-urban-states"
+        ],
+        "periodPathKo": [
+          "중세",
+          "태국 중북부",
+          "수코타이 초기 타이 왕국 도시권"
+        ],
+        "topicTagsKo": [
+          "수코타이",
+          "람캄행",
+          "시 삿차날라이",
+          "상좌부 불교",
+          "타이 왕국"
+        ],
+        "uiFilters": {
+          "era": "수코타이 왕국",
+          "region": "태국 중북부",
+          "theme": [
+            "상좌부 불교",
+            "도시국가",
+            "불교 사원"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "UNESCO 수코타이 세계유산 자료, World History Encyclopedia, Britannica를 함께 사용해 역사공원과 초기 타이 왕국 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "ayutthaya",
+      "titleKo": "아유타야",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "태국",
+      "coordinates": {
+        "lat": 14.3556,
+        "lng": 100.5586
+      },
+      "yearLabelKo": "1350-1767년",
+      "summaryKo": "차오프라야강 하류의 섬 도시에서 동서 교역과 외교를 연결한 시암의 국제 왕도로, 프랑, 불교 수도원, 운하·도로 체계와 1767년 파괴 이후 폐허가 함께 남아 있습니다.",
+      "stage2": {
+        "primaryContextId": "tai-sukhothai-ayutthaya-urban-states",
+        "contextIds": [
+          "southeast-asian-early-states-temple-networks",
+          "mainland-theravada-urban-states",
+          "tai-sukhothai-ayutthaya-urban-states",
+          "southeast-asian-maritime-inland-exchange"
+        ],
+        "periodPathKo": [
+          "중세-근세",
+          "차오프라야강 하류",
+          "아유타야 시암 국제 왕도"
+        ],
+        "topicTagsKo": [
+          "아유타야",
+          "시암",
+          "차오프라야",
+          "상좌부 불교",
+          "국제 교역"
+        ],
+        "uiFilters": {
+          "era": "아유타야 왕국",
+          "region": "차오프라야강 하류",
+          "theme": [
+            "상좌부 불교",
+            "도시국가",
+            "국제 교역"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "UNESCO 아유타야 세계유산 자료, World History Encyclopedia, Britannica를 사용해 역사도시 좌표와 국제 왕도 맥락을 확인했습니다."
+        }
+      }
+    }
+  ]
+}
