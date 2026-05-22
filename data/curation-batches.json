@@ -928,6 +928,34 @@
         "Official Gongju, Buyeo, Iksan museum, VISITKOREA, and HeritageWiki references for Korean site-level context",
         "Britannica and China.org.cn references for broader Baekje and Koguryo historical context"
       ]
+    },
+    {
+      "id": "asia-korea-goryeo-joseon-heritage-sites-v1",
+      "status": "completed",
+      "completedAt": "2026-05-22",
+      "continentId": "asia",
+      "countryIso2": "KR-KP",
+      "countryKo": "대한민국·북한",
+      "worldRegion": "동아시아·한국사",
+      "focusKo": "한국 고려·조선 왕조 유산 핵심 지점",
+      "scopeKo": "고려 개성 궁궐과 불교 기록 유산, 조선 한양 궁궐·종묘·왕릉·성곽 방어 체계를 연결하는 핵심 지점",
+      "sourceFile": "data/records/asia/korea/goryeo-joseon-heritage-sites.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "kaesong-manwoldae-palace",
+        "haeinsa-janggyeong-panjeon",
+        "gyeongbokgung-palace",
+        "jongmyo-shrine",
+        "changdeokgung-palace",
+        "donggureung-royal-tombs",
+        "suwon-hwaseong-fortress",
+        "namhansanseong-fortress"
+      ],
+      "sourceBasis": [
+        "UNESCO World Heritage pages and map or periodic-report documents for Kaesong, Haeinsa, Jongmyo, Changdeokgung, Joseon royal tombs, Hwaseong, and Namhansanseong",
+        "Korea Heritage Service, Royal Palaces and Tombs Center, VISITKOREA, Seoul Metropolitan Government, Suwon Cultural Foundation, and Namhansanseong official references",
+        "UNESCO Memory of the World and Intangible Heritage references for Tripitaka Koreana and Jongmyo ritual context"
+      ]
     }
   ]
 }

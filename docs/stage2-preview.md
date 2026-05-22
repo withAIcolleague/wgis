@@ -819,3 +819,30 @@ The 2026-05-22 thirty-one-dataset public browser pass checks `https://wgis.verce
 - The `백제 웅진·사비·익산 도성 네트워크` context filter returns `공산성`, `송산리 고분군과 무령왕릉`, `관북리 유적과 부소산성`, and `익산 미륵사지` with 4 markers and 4 labels and no stale Goguryeo data.
 - On mobile, `석굴암과 불국사` detail renders with source-confidence information and both detail actions.
 - Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-one-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-one-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.
+
+## Thirty-Second Pilot Dataset
+
+The Korean Goryeo and Joseon dynastic heritage pilot dataset adds 8 entries:
+
+- `개성 만월대`
+- `해인사 장경판전`
+- `경복궁`
+- `종묘`
+- `창덕궁`
+- `동구릉`
+- `수원 화성`
+- `남한산성`
+
+## Thirty-Two-Dataset Public Usability Pass
+
+The 2026-05-22 thirty-two-dataset public browser pass checks `https://wgis.vercel.app/stage2-preview.html` after adding the Korean Goryeo and Joseon dynastic heritage pilot dataset:
+
+- Dataset selector exposes 32 datasets.
+- All 32 indexed datasets render their expected entry, marker, and permanent-label counts across 267 Stage 2 preview entries.
+- The new Korean Goryeo and Joseon dataset exposes 8 entries: `개성 만월대`, `해인사 장경판전`, `경복궁`, `종묘`, `창덕궁`, `동구릉`, `수원 화성`, and `남한산성`.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control.
+- Searching `종묘` in the Korean Goryeo and Joseon dataset narrows the list and map to `종묘` with 1 marker and 1 label.
+- Selecting `창덕궁` opens the detail panel with source-confidence information and detail actions.
+- The `조선 한양 궁궐·종묘 의례 중심` context filter returns `경복궁`, `종묘`, and `창덕궁` with 3 markers and 3 labels and no stale Goryeo data.
+- On mobile, `해인사 장경판전` detail renders with source-confidence information and both detail actions.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-two-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-two-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.

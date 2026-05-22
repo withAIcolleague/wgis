@@ -188,6 +188,12 @@
       "titleKo": "한국 고대 삼국·통일신라 유산",
       "path": "data/stage2/korea-three-kingdoms-silla-heritage-sites-preview.json",
       "status": "preview-only"
+    },
+    {
+      "id": "stage2-korea-goryeo-joseon-heritage-sites-preview",
+      "titleKo": "한국 고려·조선 왕조 유산",
+      "path": "data/stage2/korea-goryeo-joseon-heritage-sites-preview.json",
+      "status": "preview-only"
     }
   ]
 }

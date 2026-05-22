@@ -1,0 +1,510 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-korea-goryeo-joseon-heritage-sites-preview",
+  "titleKo": "2단계 미리보기: 한국 고려·조선 왕조 유산",
+  "descriptionKo": "개성 만월대, 해인사 장경판전, 경복궁, 종묘, 창덕궁, 동구릉, 수원 화성, 남한산성을 비교해 고려 왕경·불교 기록 유산과 조선의 궁궐·종묘·왕릉·성곽 방어 체계를 보는 2단계 미리보기 데이터셋입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "고려",
+        "조선 전기",
+        "조선 후기",
+        "불교 기록 유산",
+        "왕조 의례"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "개성",
+        "합천",
+        "한양",
+        "구리",
+        "수원",
+        "남한산성"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "궁궐",
+        "왕궁터",
+        "사당",
+        "왕릉",
+        "성곽",
+        "산성",
+        "불교 기록",
+        "목판 인쇄",
+        "왕조 의례",
+        "수도 방어",
+        "세계유산"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지점 유형",
+      "options": [
+        "장소"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "korea-goryeo-joseon-dynastic-heritage",
+      "labelKo": "한국 고려·조선 왕조 유산 경관",
+      "parentId": null,
+      "periodKo": "10-19세기",
+      "summaryKo": "고려 개경의 왕궁터와 불교 기록 유산, 조선 한양의 궁궐·종묘·왕릉·성곽을 묶어 한반도 중세·근세 왕조 공간의 지속과 변화를 비교합니다."
+    },
+    {
+      "id": "goryeo-kaesong-palace-buddhist-records",
+      "labelKo": "고려 왕경과 불교 기록 유산",
+      "parentId": "korea-goryeo-joseon-dynastic-heritage",
+      "periodKo": "10-15세기",
+      "summaryKo": "개성 만월대와 해인사 장경판전을 통해 고려의 왕경 정치 공간과 불교 기록 문화가 서로 다른 지형 위에 남긴 유산을 봅니다."
+    },
+    {
+      "id": "kaesong-manwoldae-royal-capital",
+      "labelKo": "개성 만월대와 고려 왕경",
+      "parentId": "goryeo-kaesong-palace-buddhist-records",
+      "periodKo": "10-14세기",
+      "summaryKo": "개성 분지의 만월대를 통해 고려 궁궐, 도성 배치, 왕권 중심지가 산지와 분지 지형을 활용한 방식을 봅니다."
+    },
+    {
+      "id": "haeinsa-tripitaka-record-repository",
+      "labelKo": "해인사 장경판전과 고려대장경 보존",
+      "parentId": "goryeo-kaesong-palace-buddhist-records",
+      "periodKo": "13-15세기",
+      "summaryKo": "가야산 해인사의 장경판전을 통해 고려대장경 목판, 조선 전기 보존 건축, 불교 기록 유산의 장기 지속성을 봅니다."
+    },
+    {
+      "id": "joseon-hanyang-palace-ritual-core",
+      "labelKo": "조선 한양 궁궐·종묘 의례 중심",
+      "parentId": "korea-goryeo-joseon-dynastic-heritage",
+      "periodKo": "14-19세기",
+      "summaryKo": "경복궁, 종묘, 창덕궁을 묶어 한양 도성 안에서 왕권, 관료제, 유교 제례, 왕실 생활 공간이 배치된 방식을 봅니다."
+    },
+    {
+      "id": "gyeongbokgung-law-palace-state-axis",
+      "labelKo": "경복궁과 조선 법궁의 국가 축",
+      "parentId": "joseon-hanyang-palace-ritual-core",
+      "periodKo": "1395년 이후",
+      "summaryKo": "경복궁을 통해 조선 왕조의 법궁, 광화문-근정전 축, 한양 천도 이후 왕권 의례와 관료제 운영 공간을 봅니다."
+    },
+    {
+      "id": "jongmyo-royal-ancestral-ritual",
+      "labelKo": "종묘와 왕조 제례",
+      "parentId": "joseon-hanyang-palace-ritual-core",
+      "periodKo": "1394년 이후",
+      "summaryKo": "종묘를 통해 조선 왕실 사당, 종묘제례와 제례악, 왕조 정통성이 건축과 의례로 지속된 방식을 봅니다."
+    },
+    {
+      "id": "changdeokgung-palace-garden-landscape",
+      "labelKo": "창덕궁과 후원의 지형 적응 궁궐",
+      "parentId": "joseon-hanyang-palace-ritual-core",
+      "periodKo": "1405년 이후",
+      "summaryKo": "창덕궁과 후원을 통해 북악산 동쪽 지형을 살린 궁궐 배치, 왕실 생활 공간, 정원 경관을 함께 봅니다."
+    },
+    {
+      "id": "joseon-royal-tombs-and-memory",
+      "labelKo": "조선 왕릉과 왕실 기억 경관",
+      "parentId": "korea-goryeo-joseon-dynastic-heritage",
+      "periodKo": "15-19세기",
+      "summaryKo": "동구릉을 중심으로 한양 주변 산록에 조성된 왕릉, 제향 공간, 숲과 풍수 경관을 왕실 기억의 공간으로 봅니다."
+    },
+    {
+      "id": "donggureung-royal-tomb-cluster",
+      "labelKo": "동구릉 왕릉군",
+      "parentId": "joseon-royal-tombs-and-memory",
+      "periodKo": "1408년 이후",
+      "summaryKo": "태조 건원릉을 포함한 구리 동구릉을 통해 조선 왕릉군의 입지, 제례 동선, 장례 경관을 구체적으로 봅니다."
+    },
+    {
+      "id": "joseon-fortress-defense-urbanism",
+      "labelKo": "조선 성곽 방어와 도시 계획",
+      "parentId": "korea-goryeo-joseon-dynastic-heritage",
+      "periodKo": "17-18세기",
+      "summaryKo": "수원 화성과 남한산성을 비교해 조선 후기 성곽 기술, 왕권 개혁, 수도 방어, 산성 행궁 체계가 서로 다른 지형에 구현된 방식을 봅니다."
+    },
+    {
+      "id": "suwon-hwaseong-reform-fortress-city",
+      "labelKo": "수원 화성과 정조의 성곽 도시",
+      "parentId": "joseon-fortress-defense-urbanism",
+      "periodKo": "1794-1796년",
+      "summaryKo": "수원 화성을 통해 성곽, 행궁, 상업 도시 계획, 왕릉 참배 동선이 결합된 조선 후기 개혁 공간을 봅니다."
+    },
+    {
+      "id": "namhansanseong-mountain-emergency-capital",
+      "labelKo": "남한산성과 산성 행궁 방어 체계",
+      "parentId": "joseon-fortress-defense-urbanism",
+      "periodKo": "17세기",
+      "summaryKo": "남한산성을 통해 한강 남쪽 산악 지형을 활용한 수도 방어, 행궁, 군사 시설, 병자호란 기억이 겹치는 방식을 봅니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "kaesong-manwoldae-palace",
+      "titleKo": "개성 만월대",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "북한",
+      "coordinates": { "lat": 37.9819, "lng": 126.5574 },
+      "yearLabelKo": "10-14세기 고려 궁궐터",
+      "summaryKo": "개성 만월대는 고려 왕조의 궁궐터로, 개경의 왕권 중심과 도성 배치를 이해하는 핵심 유산이다. 불교·유교·도교·풍수 개념이 결합된 개성 세계유산의 중심 구성요소로 고려의 정치 공간을 보여준다.",
+      "stage2": {
+        "primaryContextId": "kaesong-manwoldae-royal-capital",
+        "contextIds": [
+          "korea-goryeo-joseon-dynastic-heritage",
+          "goryeo-kaesong-palace-buddhist-records",
+          "kaesong-manwoldae-royal-capital"
+        ],
+        "periodPathKo": [
+          "중세",
+          "고려",
+          "개성 왕경"
+        ],
+        "topicTagsKo": [
+          "만월대",
+          "개성",
+          "고려 궁성",
+          "왕경",
+          "세계유산"
+        ],
+        "uiFilters": {
+          "era": "고려",
+          "region": "개성",
+          "theme": [
+            "궁궐",
+            "왕궁터",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO 개성 역사유적지의 만월대 구성요소를 대표하는 근사 좌표입니다."
+        }
+      }
+    },
+    {
+      "entryId": "haeinsa-janggyeong-panjeon",
+      "titleKo": "해인사 장경판전",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "대한민국",
+      "coordinates": { "lat": 35.795, "lng": 128.0986 },
+      "yearLabelKo": "13세기 고려대장경, 15세기 장경판전",
+      "summaryKo": "해인사 장경판전은 고려대장경 목판을 보관하는 조선 전기 목조 건축 유산이다. 몽골 침입기 불교 신앙과 국가 위기 대응, 목판 인쇄, 습도와 통풍을 고려한 보존 건축을 함께 보여준다.",
+      "stage2": {
+        "primaryContextId": "haeinsa-tripitaka-record-repository",
+        "contextIds": [
+          "korea-goryeo-joseon-dynastic-heritage",
+          "goryeo-kaesong-palace-buddhist-records",
+          "haeinsa-tripitaka-record-repository"
+        ],
+        "periodPathKo": [
+          "중세",
+          "고려·조선",
+          "가야산 불교 기록 유산"
+        ],
+        "topicTagsKo": [
+          "해인사",
+          "장경판전",
+          "고려대장경",
+          "팔만대장경",
+          "목판 인쇄"
+        ],
+        "uiFilters": {
+          "era": "불교 기록 유산",
+          "region": "합천",
+          "theme": [
+            "불교 기록",
+            "목판 인쇄",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO 세계유산, Memory of the World, Korea Heritage Service 자료가 함께 있는 고신뢰 항목입니다."
+        }
+      }
+    },
+    {
+      "entryId": "gyeongbokgung-palace",
+      "titleKo": "경복궁",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "대한민국",
+      "coordinates": { "lat": 37.5796, "lng": 126.977 },
+      "yearLabelKo": "1395년 창건, 조선 법궁",
+      "summaryKo": "경복궁은 조선 왕조가 한양 천도 뒤 세운 법궁으로, 왕권 의례와 관료제 통치가 집중된 공간이다. 임진왜란 소실과 19세기 중건, 일제강점기 훼손과 복원 과정을 통해 서울 도심의 정치 기억을 읽게 해준다.",
+      "stage2": {
+        "primaryContextId": "gyeongbokgung-law-palace-state-axis",
+        "contextIds": [
+          "korea-goryeo-joseon-dynastic-heritage",
+          "joseon-hanyang-palace-ritual-core",
+          "gyeongbokgung-law-palace-state-axis"
+        ],
+        "periodPathKo": [
+          "중세-근세",
+          "조선",
+          "한양 법궁"
+        ],
+        "topicTagsKo": [
+          "경복궁",
+          "한양",
+          "법궁",
+          "광화문",
+          "근정전"
+        ],
+        "uiFilters": {
+          "era": "조선 전기",
+          "region": "한양",
+          "theme": [
+            "궁궐",
+            "왕조 의례"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "궁능유적본부, VISITKOREA, 서울시 자료를 함께 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "jongmyo-shrine",
+      "titleKo": "종묘",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "대한민국",
+      "coordinates": { "lat": 37.5747, "lng": 126.994 },
+      "yearLabelKo": "1394년 창건, 조선 왕실 사당",
+      "summaryKo": "종묘는 조선 왕실의 신위를 모신 유교 사당으로, 왕조 정통성과 국가 제례가 이어진 공간이다. 건축 유산과 종묘제례·제례악의 무형유산이 결합해 조선의 의례 국가 성격을 보여준다.",
+      "stage2": {
+        "primaryContextId": "jongmyo-royal-ancestral-ritual",
+        "contextIds": [
+          "korea-goryeo-joseon-dynastic-heritage",
+          "joseon-hanyang-palace-ritual-core",
+          "jongmyo-royal-ancestral-ritual"
+        ],
+        "periodPathKo": [
+          "중세-근세",
+          "조선",
+          "왕실 사당과 제례"
+        ],
+        "topicTagsKo": [
+          "종묘",
+          "종묘제례",
+          "종묘제례악",
+          "왕실 사당",
+          "유교 국가"
+        ],
+        "uiFilters": {
+          "era": "왕조 의례",
+          "region": "한양",
+          "theme": [
+            "사당",
+            "왕조 의례",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO 세계유산과 무형유산 자료, Korea Heritage Service 자료가 함께 있는 항목입니다."
+        }
+      }
+    },
+    {
+      "entryId": "changdeokgung-palace",
+      "titleKo": "창덕궁",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "대한민국",
+      "coordinates": { "lat": 37.5794, "lng": 126.991 },
+      "yearLabelKo": "1405년 창건, 조선 이궁과 후원",
+      "summaryKo": "창덕궁은 조선 왕실의 주요 궁궐이자 자연 지형을 살린 후원으로 유명한 세계유산이다. 경복궁과 다른 궁궐 배치, 왕실 생활 공간, 정원 경관은 조선 궁궐 건축의 유연한 지형 적응을 보여준다.",
+      "stage2": {
+        "primaryContextId": "changdeokgung-palace-garden-landscape",
+        "contextIds": [
+          "korea-goryeo-joseon-dynastic-heritage",
+          "joseon-hanyang-palace-ritual-core",
+          "changdeokgung-palace-garden-landscape"
+        ],
+        "periodPathKo": [
+          "중세-근세",
+          "조선",
+          "궁궐과 후원"
+        ],
+        "topicTagsKo": [
+          "창덕궁",
+          "후원",
+          "동궐",
+          "조선 궁궐",
+          "세계유산"
+        ],
+        "uiFilters": {
+          "era": "조선 전기",
+          "region": "한양",
+          "theme": [
+            "궁궐",
+            "왕조 의례",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO, VISITKOREA, 서울시 자료로 위치와 궁궐 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "donggureung-royal-tombs",
+      "titleKo": "동구릉",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "대한민국",
+      "coordinates": { "lat": 37.625, "lng": 127.131 },
+      "yearLabelKo": "15-19세기 조선 왕릉군",
+      "summaryKo": "동구릉은 태조 이성계의 건원릉을 포함한 조선 왕릉군으로, 한양 동쪽 산록에 조성된 유교 장례 경관을 대표한다. 왕릉, 제향 공간, 숲과 풍수 입지가 결합된 조선 왕실 기억의 장기 지속성을 보여준다.",
+      "stage2": {
+        "primaryContextId": "donggureung-royal-tomb-cluster",
+        "contextIds": [
+          "korea-goryeo-joseon-dynastic-heritage",
+          "joseon-royal-tombs-and-memory",
+          "donggureung-royal-tomb-cluster"
+        ],
+        "periodPathKo": [
+          "중세-근세",
+          "조선",
+          "왕릉 경관"
+        ],
+        "topicTagsKo": [
+          "동구릉",
+          "건원릉",
+          "조선 왕릉",
+          "구리",
+          "제향"
+        ],
+        "uiFilters": {
+          "era": "왕조 의례",
+          "region": "구리",
+          "theme": [
+            "왕릉",
+            "왕조 의례",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO 조선왕릉 세계유산과 주기보고서 좌표를 기준으로 한 고신뢰 항목입니다."
+        }
+      }
+    },
+    {
+      "entryId": "suwon-hwaseong-fortress",
+      "titleKo": "수원 화성",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "대한민국",
+      "coordinates": { "lat": 37.2873, "lng": 127.0117 },
+      "yearLabelKo": "1794-1796년 축성",
+      "summaryKo": "수원 화성은 정조가 건설한 조선 후기 성곽 도시로, 왕릉 참배, 군사 방어, 상업 도시 계획, 개혁 정치가 결합된 공간이다. 정교한 축성 기록과 동서 기술을 반영한 성곽 시설이 보존되어 있다.",
+      "stage2": {
+        "primaryContextId": "suwon-hwaseong-reform-fortress-city",
+        "contextIds": [
+          "korea-goryeo-joseon-dynastic-heritage",
+          "joseon-fortress-defense-urbanism",
+          "suwon-hwaseong-reform-fortress-city"
+        ],
+        "periodPathKo": [
+          "근세",
+          "조선 후기",
+          "성곽 도시"
+        ],
+        "topicTagsKo": [
+          "수원 화성",
+          "정조",
+          "화성행궁",
+          "성곽",
+          "도시 계획"
+        ],
+        "uiFilters": {
+          "era": "조선 후기",
+          "region": "수원",
+          "theme": [
+            "성곽",
+            "수도 방어",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO와 수원문화재단 자료를 사용한 조선 후기 성곽 도시 항목입니다."
+        }
+      }
+    },
+    {
+      "entryId": "namhansanseong-fortress",
+      "titleKo": "남한산성",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "대한민국",
+      "coordinates": { "lat": 37.478, "lng": 127.181 },
+      "yearLabelKo": "17세기 조선 산성 행궁 체계",
+      "summaryKo": "남한산성은 한양을 방어하기 위한 조선의 산성 행궁 체계로, 병자호란 때 왕실 피난과 항전의 무대가 되었다. 산악 지형, 성곽 기술, 행궁, 사찰과 군사 시설이 결합된 수도 방어 경관이다.",
+      "stage2": {
+        "primaryContextId": "namhansanseong-mountain-emergency-capital",
+        "contextIds": [
+          "korea-goryeo-joseon-dynastic-heritage",
+          "joseon-fortress-defense-urbanism",
+          "namhansanseong-mountain-emergency-capital"
+        ],
+        "periodPathKo": [
+          "근세",
+          "조선",
+          "산성 행궁 방어"
+        ],
+        "topicTagsKo": [
+          "남한산성",
+          "병자호란",
+          "산성",
+          "행궁",
+          "수도 방어"
+        ],
+        "uiFilters": {
+          "era": "조선 후기",
+          "region": "남한산성",
+          "theme": [
+            "산성",
+            "수도 방어",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "성곽과 행궁이 넓게 분포하므로 세계유산 권역 중심부를 대표 좌표로 사용했습니다."
+        }
+      }
+    }
+  ]
+}

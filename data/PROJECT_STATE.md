@@ -11,10 +11,10 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 259
-- Completed curation batches: 32
-- Latest completed batch: `asia-korea-three-kingdoms-silla-heritage-sites-v1`
-- Latest completed infrastructure milestone: stage-2 thirty-one-dataset public usability pass
+- Current entry count: 267
+- Completed curation batches: 33
+- Latest completed batch: `asia-korea-goryeo-joseon-heritage-sites-v1`
+- Latest completed infrastructure milestone: stage-2 thirty-two-dataset public usability pass
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
@@ -481,6 +481,33 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - Scope: keep the Stage 2 preview endpoint and browser-state check repeatable after adding the thirty-first dataset
   - Checked: 31 indexed dataset endpoints and expected entry counts across 259 Stage 2 preview entries, compact context filters, Korean ancient heritage search/detail/context behavior, stale-data cleanup, and mobile-sized rendering
   - Result: public endpoint and headless browser verification completed for 31 datasets and 259 Stage 2 preview entries; screenshots saved under `C:\Users\Public\Documents\ESTsoft\CreatorTemp\` when the local headless browser runtime is available
+
+- Korean Goryeo and Joseon heritage sites batch
+  - Batch ID: `asia-korea-goryeo-joseon-heritage-sites-v1`
+  - Source file: `data/records/asia/korea/goryeo-joseon-heritage-sites.json`
+  - Entries added: 8
+  - Entry IDs:
+    - `kaesong-manwoldae-palace`
+    - `haeinsa-janggyeong-panjeon`
+    - `gyeongbokgung-palace`
+    - `jongmyo-shrine`
+    - `changdeokgung-palace`
+    - `donggureung-royal-tombs`
+    - `suwon-hwaseong-fortress`
+    - `namhansanseong-fortress`
+
+- Stage-2 Korean Goryeo and Joseon heritage pilot dataset
+  - Files: `data/stage2/index.json`, `data/stage2/korea-goryeo-joseon-heritage-sites-preview.json`, `scripts/smoke-check.js`, `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`
+  - URL path: `/stage2-preview.html`
+  - Scope: add a thirty-second Stage 2 preview dataset using the new Korean Goryeo and Joseon heritage source batch
+  - Model stress test: Kaesong Manwoldae royal capital landscape, Haeinsa Tripitaka Koreana record repository, Hanyang palace and Jongmyo ritual core, Joseon royal tomb memory landscape, Suwon Hwaseong fortress city, and Namhansanseong mountain emergency-capital defense system
+
+- Stage-2 thirty-two-dataset public usability pass
+  - Files: `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`
+  - URL path: `https://wgis.vercel.app/stage2-preview.html`
+  - Scope: keep the Stage 2 preview endpoint and browser-state check repeatable after adding the thirty-second dataset
+  - Checked: 32 indexed dataset endpoints and expected entry counts across 267 Stage 2 preview entries, compact context filters, Korean Goryeo/Joseon heritage search/detail/context behavior, stale-data cleanup, and mobile-sized rendering
+  - Result: public endpoint and headless browser verification completed for 32 datasets and 267 Stage 2 preview entries; screenshots saved under `C:\Users\Public\Documents\ESTsoft\CreatorTemp\` when the local headless browser runtime is available
 
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`
@@ -950,7 +977,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 1. First-stage DB next expansion batch
    - Scope: continue focused source-record growth with another bounded culture/region/time slice and keep the batch small enough to verify end to end
 
-2. Stage-2 thirty-second pilot dataset
+2. Stage-2 thirty-third pilot dataset
    - Scope: optionally model the legacy core seed entries as a cross-regional demonstration set if we want every existing source file to have a Stage 2 preview, while recognizing it is less culturally focused than the newer batches
 
 ## Resume Checklist
