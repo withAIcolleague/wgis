@@ -1,0 +1,511 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-japan-ancient-medieval-heritage-sites-preview",
+  "titleKo": "2단계 미리보기: 일본 고대·중세·근세 유산",
+  "descriptionKo": "호류지, 도다이지, 엔랴쿠지, 뵤도인 봉황당, 기요미즈데라, 이쓰쿠시마 신사, 히메지성, 닛코 도쇼구를 비교해 일본 초기 국가 불교, 헤이안 불교 경관, 신도 해상 신사, 근세 성곽과 쇼군 권력 유산을 보는 2단계 미리보기 데이터셋입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "아스카·나라",
+        "헤이안",
+        "중세 신도",
+        "근세 성곽",
+        "에도 막부"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "이카루가",
+        "나라",
+        "히에이산",
+        "우지",
+        "교토 히가시야마",
+        "미야지마",
+        "히메지",
+        "닛코"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "불교 사원",
+        "국가 불교",
+        "산악 불교",
+        "정토 신앙",
+        "관음 순례",
+        "신도 신사",
+        "해상 신앙",
+        "성곽",
+        "쇼군 권력",
+        "세계유산"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지점 유형",
+      "options": [
+        "장소"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "japan-ancient-medieval-heritage-landscape",
+      "labelKo": "일본 고대·중세·근세 유산 경관",
+      "parentId": null,
+      "periodKo": "7-17세기",
+      "summaryKo": "야마토·나라의 초기 국가 불교, 헤이안 교토와 우지의 불교·정원 경관, 세토 내해 신도 신사, 에도 초기 성곽과 쇼군 의례 공간을 일본 열도 유산 흐름으로 비교합니다."
+    },
+    {
+      "id": "asuka-nara-state-buddhism",
+      "labelKo": "아스카·나라 국가 불교",
+      "parentId": "japan-ancient-medieval-heritage-landscape",
+      "periodKo": "7-8세기",
+      "summaryKo": "호류지와 도다이지를 통해 불교 건축과 조형이 일본 고대국가의 왕권, 율령체제, 동아시아 교류와 결합한 방식을 봅니다."
+    },
+    {
+      "id": "horyuji-buddhist-transmission",
+      "labelKo": "호류지와 초기 불교 전래",
+      "parentId": "asuka-nara-state-buddhism",
+      "periodKo": "7세기",
+      "summaryKo": "호류지를 통해 이카루가 분지의 목조 불교 건축, 쇼토쿠 태자 전승, 중국·한반도 계통 불교 양식의 일본 정착을 봅니다."
+    },
+    {
+      "id": "todaiji-nara-state-buddhism",
+      "labelKo": "도다이지와 나라 국가 불교",
+      "parentId": "asuka-nara-state-buddhism",
+      "periodKo": "8세기",
+      "summaryKo": "도다이지를 통해 대불, 대불전, 쇼소인 보물이 헤이조쿄의 국가 불교와 실크로드 동쪽 끝 교류를 상징한 방식을 봅니다."
+    },
+    {
+      "id": "heian-kyoto-mountain-pure-land-buddhism",
+      "labelKo": "헤이안 교토 불교와 정토 경관",
+      "parentId": "japan-ancient-medieval-heritage-landscape",
+      "periodKo": "8-17세기",
+      "summaryKo": "엔랴쿠지, 뵤도인, 기요미즈데라를 묶어 산악 수행, 정토 신앙, 관음 순례가 교토와 주변 지형 위에 배치된 방식을 봅니다."
+    },
+    {
+      "id": "enryakuji-hiei-tendai-network",
+      "labelKo": "엔랴쿠지와 히에이산 천태종",
+      "parentId": "heian-kyoto-mountain-pure-land-buddhism",
+      "periodKo": "788년 이후",
+      "summaryKo": "히에이산 엔랴쿠지를 통해 헤이안쿄 동북부 산악 불교, 천태종 교육·수행, 중세 사원 권력의 공간적 기반을 봅니다."
+    },
+    {
+      "id": "byodoin-uji-pure-land-landscape",
+      "labelKo": "뵤도인과 우지 정토 경관",
+      "parentId": "heian-kyoto-mountain-pure-land-buddhism",
+      "periodKo": "11세기",
+      "summaryKo": "뵤도인 봉황당을 통해 헤이안 귀족 별장, 정토 신앙, 연못과 건축이 결합된 극락정토 이미지의 공간화를 봅니다."
+    },
+    {
+      "id": "kiyomizudera-higashiyama-pilgrimage",
+      "labelKo": "기요미즈데라와 히가시야마 순례",
+      "parentId": "heian-kyoto-mountain-pure-land-buddhism",
+      "periodKo": "8-17세기",
+      "summaryKo": "기요미즈데라를 통해 교토 동산 산기슭의 관음 신앙, 목조 무대형 본당, 도시와 산지의 순례 경관을 봅니다."
+    },
+    {
+      "id": "shinto-maritime-sacred-landscape",
+      "labelKo": "신도 해상 신사와 자연 경관",
+      "parentId": "japan-ancient-medieval-heritage-landscape",
+      "periodKo": "12세기 이후",
+      "summaryKo": "이쓰쿠시마 신사를 통해 세토 내해의 바다, 섬, 산, 신사 건축이 하나의 신앙 경관으로 구성된 방식을 봅니다."
+    },
+    {
+      "id": "itsukushima-seto-inland-sea-sanctuary",
+      "labelKo": "이쓰쿠시마와 세토 내해 신앙 경관",
+      "parentId": "shinto-maritime-sacred-landscape",
+      "periodKo": "12세기",
+      "summaryKo": "이쓰쿠시마 신사의 해상 도리이와 배후 산지를 통해 자연숭배, 다이라노 기요모리 시대 귀족 취향, 중세 신도 경관을 봅니다."
+    },
+    {
+      "id": "warrior-shogunate-architecture",
+      "labelKo": "무가·쇼군 권력과 근세 건축",
+      "parentId": "japan-ancient-medieval-heritage-landscape",
+      "periodKo": "17세기",
+      "summaryKo": "히메지성과 닛코 도쇼구를 비교해 에도 초기 일본에서 성곽 방어, 다이묘 권력, 쇼군 의례와 신격화가 건축으로 구현된 방식을 봅니다."
+    },
+    {
+      "id": "himeji-castle-fortified-daimyo-power",
+      "labelKo": "히메지성과 다이묘 성곽 권력",
+      "parentId": "warrior-shogunate-architecture",
+      "periodKo": "1601-1609년",
+      "summaryKo": "히메지성을 통해 천수, 성문, 곽과 방어 동선이 근세 다이묘 권력과 성곽 도시 질서로 정리되는 모습을 봅니다."
+    },
+    {
+      "id": "nikko-toshogu-tokugawa-ritual-landscape",
+      "labelKo": "닛코 도쇼구와 도쿠가와 의례 경관",
+      "parentId": "warrior-shogunate-architecture",
+      "periodKo": "1617-1636년",
+      "summaryKo": "닛코 도쇼구를 통해 도쿠가와 이에야스 신격화, 산지 신사 건축, 신불습합 의례, 에도 막부 권위의 공간화를 봅니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "horyuji-temple-area",
+      "titleKo": "호류지",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "일본",
+      "coordinates": { "lat": 34.6143, "lng": 135.7355 },
+      "yearLabelKo": "607년 창건 전승, 7세기 목조 불교 건축",
+      "summaryKo": "호류지는 일본에 불교가 정착하던 아스카 시대의 대표 사원 유산이다. 이카루가 분지의 목조 불교 건축과 쇼토쿠 태자 전승은 중국·한반도에서 전해진 불교 건축과 조형 양식이 일본 고대국가 안에서 변형되는 과정을 보여준다.",
+      "stage2": {
+        "primaryContextId": "horyuji-buddhist-transmission",
+        "contextIds": [
+          "japan-ancient-medieval-heritage-landscape",
+          "asuka-nara-state-buddhism",
+          "horyuji-buddhist-transmission"
+        ],
+        "periodPathKo": [
+          "고대",
+          "아스카·나라",
+          "초기 불교 전래"
+        ],
+        "topicTagsKo": [
+          "호류지",
+          "이카루가",
+          "쇼토쿠 태자",
+          "목조 불교 건축",
+          "세계유산"
+        ],
+        "uiFilters": {
+          "era": "아스카·나라",
+          "region": "이카루가",
+          "theme": [
+            "불교 사원",
+            "국가 불교",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO, 호류지 공식 사이트, JNTO 자료를 함께 사용한 고신뢰 항목입니다."
+        }
+      }
+    },
+    {
+      "entryId": "todai-ji-temple",
+      "titleKo": "도다이지",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "일본",
+      "coordinates": { "lat": 34.6889, "lng": 135.8398 },
+      "yearLabelKo": "745-752년 대불 조성, 나라 불교 중심 사원",
+      "summaryKo": "도다이지는 8세기 나라 율령국가의 국가 불교를 상징하는 대사원이다. 대불과 대불전, 쇼소인 보물, 동아시아 교류 흔적은 헤이조쿄가 불교·외교·물품 이동의 동쪽 중심지로 기능한 방식을 보여준다.",
+      "stage2": {
+        "primaryContextId": "todaiji-nara-state-buddhism",
+        "contextIds": [
+          "japan-ancient-medieval-heritage-landscape",
+          "asuka-nara-state-buddhism",
+          "todaiji-nara-state-buddhism"
+        ],
+        "periodPathKo": [
+          "고대",
+          "나라",
+          "국가 불교"
+        ],
+        "topicTagsKo": [
+          "도다이지",
+          "나라",
+          "대불전",
+          "쇼소인",
+          "국가 불교"
+        ],
+        "uiFilters": {
+          "era": "아스카·나라",
+          "region": "나라",
+          "theme": [
+            "불교 사원",
+            "국가 불교",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO Ancient Nara, UNESCO Silk Roads, 도다이지 공식 사이트 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "enryaku-ji-mount-hiei",
+      "titleKo": "엔랴쿠지",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "일본",
+      "coordinates": { "lat": 35.0704, "lng": 135.8411 },
+      "yearLabelKo": "788년 창건, 천태종 산악 사원",
+      "summaryKo": "엔랴쿠지는 히에이산에 자리한 일본 천태종의 중심 사원으로, 헤이안쿄를 내려다보는 산악 불교 거점이었다. 수행, 학문, 승병 세력, 중세 불교 종파 형성의 기억이 겹쳐 일본 불교사의 장기적 영향력을 보여준다.",
+      "stage2": {
+        "primaryContextId": "enryakuji-hiei-tendai-network",
+        "contextIds": [
+          "japan-ancient-medieval-heritage-landscape",
+          "heian-kyoto-mountain-pure-land-buddhism",
+          "enryakuji-hiei-tendai-network"
+        ],
+        "periodPathKo": [
+          "중세",
+          "헤이안",
+          "히에이산 천태종"
+        ],
+        "topicTagsKo": [
+          "엔랴쿠지",
+          "히에이산",
+          "천태종",
+          "산악 불교",
+          "사이초"
+        ],
+        "uiFilters": {
+          "era": "헤이안",
+          "region": "히에이산",
+          "theme": [
+            "불교 사원",
+            "산악 불교",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "엔랴쿠지는 산내 구역이 넓어 동탑 권역을 대표 좌표로 단순화했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "byodoin-phoenix-hall",
+      "titleKo": "뵤도인 봉황당",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "일본",
+      "coordinates": { "lat": 34.8893, "lng": 135.8077 },
+      "yearLabelKo": "1052-1053년 정토 사원과 봉황당",
+      "summaryKo": "뵤도인 봉황당은 헤이안 귀족 문화와 정토 신앙이 결합된 우지의 대표 사원 경관이다. 연못과 봉황당의 배치는 극락정토 이미지를 건축과 정원으로 구현하며, 교토 주변 귀족 별장이 불교 사원으로 전환된 흐름을 보여준다.",
+      "stage2": {
+        "primaryContextId": "byodoin-uji-pure-land-landscape",
+        "contextIds": [
+          "japan-ancient-medieval-heritage-landscape",
+          "heian-kyoto-mountain-pure-land-buddhism",
+          "byodoin-uji-pure-land-landscape"
+        ],
+        "periodPathKo": [
+          "중세",
+          "헤이안",
+          "우지 정토 경관"
+        ],
+        "topicTagsKo": [
+          "뵤도인",
+          "봉황당",
+          "우지",
+          "정토 신앙",
+          "헤이안 귀족문화"
+        ],
+        "uiFilters": {
+          "era": "헤이안",
+          "region": "우지",
+          "theme": [
+            "불교 사원",
+            "정토 신앙",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO Ancient Kyoto, 뵤도인 공식 사이트, JNTO 자료를 함께 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "kiyomizu-dera-temple",
+      "titleKo": "기요미즈데라",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "일본",
+      "coordinates": { "lat": 34.9949, "lng": 135.785 },
+      "yearLabelKo": "778년 창건 전승, 1633년 본당 재건",
+      "summaryKo": "기요미즈데라는 교토 히가시야마 산기슭의 관음 신앙 사원으로, 도시와 산지가 맞닿는 입지를 잘 보여준다. 무대형 본당과 오토와 폭포 전승은 헤이안 이후 교토의 순례, 목조 건축, 도시 경관을 연결한다.",
+      "stage2": {
+        "primaryContextId": "kiyomizudera-higashiyama-pilgrimage",
+        "contextIds": [
+          "japan-ancient-medieval-heritage-landscape",
+          "heian-kyoto-mountain-pure-land-buddhism",
+          "kiyomizudera-higashiyama-pilgrimage"
+        ],
+        "periodPathKo": [
+          "중세",
+          "헤이안·에도",
+          "히가시야마 관음 순례"
+        ],
+        "topicTagsKo": [
+          "기요미즈데라",
+          "히가시야마",
+          "관음 신앙",
+          "오토와 폭포",
+          "교토"
+        ],
+        "uiFilters": {
+          "era": "헤이안",
+          "region": "교토 히가시야마",
+          "theme": [
+            "불교 사원",
+            "관음 순례",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO Ancient Kyoto, 기요미즈데라 공식 사이트, 교토시 자료를 함께 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "itsukushima-shrine",
+      "titleKo": "이쓰쿠시마 신사",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "일본",
+      "coordinates": { "lat": 34.2959, "lng": 132.3198 },
+      "yearLabelKo": "12세기 다이라노 기요모리 시대 신사 경관",
+      "summaryKo": "이쓰쿠시마 신사는 세토 내해의 섬, 바다, 산을 신앙 경관으로 결합한 중세 신도 유산이다. 바다 위에 배치된 신사 건축과 배후의 미센산은 자연숭배와 귀족적 미의식이 한 공간에서 구현된 방식을 보여준다.",
+      "stage2": {
+        "primaryContextId": "itsukushima-seto-inland-sea-sanctuary",
+        "contextIds": [
+          "japan-ancient-medieval-heritage-landscape",
+          "shinto-maritime-sacred-landscape",
+          "itsukushima-seto-inland-sea-sanctuary"
+        ],
+        "periodPathKo": [
+          "중세",
+          "헤이안 말기",
+          "세토 내해 신앙 경관"
+        ],
+        "topicTagsKo": [
+          "이쓰쿠시마",
+          "미야지마",
+          "세토 내해",
+          "신도 신사",
+          "해상 도리이"
+        ],
+        "uiFilters": {
+          "era": "중세 신도",
+          "region": "미야지마",
+          "theme": [
+            "신도 신사",
+            "해상 신앙",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO, JNTO, 미야지마 관광협회 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "himeji-castle",
+      "titleKo": "히메지성",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "일본",
+      "coordinates": { "lat": 34.8394, "lng": 134.6939 },
+      "yearLabelKo": "1601-1609년 성곽 대개축",
+      "summaryKo": "히메지성은 일본 근세 성곽 건축과 방어 체계를 대표하는 성이다. 복잡한 곽 배치, 천수, 성문과 성벽은 전국시대 이후 다이묘 권력과 군사 기술이 에도 초기 성곽 도시 안에 정리된 모습을 보여준다.",
+      "stage2": {
+        "primaryContextId": "himeji-castle-fortified-daimyo-power",
+        "contextIds": [
+          "japan-ancient-medieval-heritage-landscape",
+          "warrior-shogunate-architecture",
+          "himeji-castle-fortified-daimyo-power"
+        ],
+        "periodPathKo": [
+          "근세",
+          "에도 초기",
+          "성곽 도시"
+        ],
+        "topicTagsKo": [
+          "히메지성",
+          "백로성",
+          "다이묘",
+          "성곽",
+          "천수"
+        ],
+        "uiFilters": {
+          "era": "근세 성곽",
+          "region": "히메지",
+          "theme": [
+            "성곽",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO, JNTO, 히메지 관광 공식 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "nikko-toshogu-shrine",
+      "titleKo": "닛코 도쇼구",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "일본",
+      "coordinates": { "lat": 36.7581, "lng": 139.5989 },
+      "yearLabelKo": "1617년 창건, 1636년 대규모 재건",
+      "summaryKo": "닛코 도쇼구는 도쿠가와 이에야스를 신격화한 에도 막부의 대표 권력 유산이다. 산지 속 화려한 신사 건축, 린노지·후타라산 신사와의 복합 경관은 신도와 불교, 쇼군 권위, 도쿠가와 국가 질서가 결합된 방식을 보여준다.",
+      "stage2": {
+        "primaryContextId": "nikko-toshogu-tokugawa-ritual-landscape",
+        "contextIds": [
+          "japan-ancient-medieval-heritage-landscape",
+          "warrior-shogunate-architecture",
+          "nikko-toshogu-tokugawa-ritual-landscape"
+        ],
+        "periodPathKo": [
+          "근세",
+          "에도 막부",
+          "도쿠가와 의례 경관"
+        ],
+        "topicTagsKo": [
+          "닛코 도쇼구",
+          "도쿠가와 이에야스",
+          "에도 막부",
+          "쇼군 권력",
+          "신불습합"
+        ],
+        "uiFilters": {
+          "era": "에도 막부",
+          "region": "닛코",
+          "theme": [
+            "신도 신사",
+            "쇼군 권력",
+            "세계유산"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO Nikko, JNTO, UNESCO advisory evaluation 자료를 사용했습니다."
+        }
+      }
+    }
+  ]
+}

@@ -956,6 +956,34 @@
         "Korea Heritage Service, Royal Palaces and Tombs Center, VISITKOREA, Seoul Metropolitan Government, Suwon Cultural Foundation, and Namhansanseong official references",
         "UNESCO Memory of the World and Intangible Heritage references for Tripitaka Koreana and Jongmyo ritual context"
       ]
+    },
+    {
+      "id": "asia-japan-ancient-medieval-heritage-sites-v1",
+      "status": "completed",
+      "completedAt": "2026-05-22",
+      "continentId": "asia",
+      "countryIso2": "JP",
+      "countryKo": "일본",
+      "worldRegion": "동아시아·일본사",
+      "focusKo": "일본 고대·중세·근세 유산 핵심 지점",
+      "scopeKo": "호류지와 도다이지의 초기 국가 불교, 히에이산·우지·교토의 헤이안 불교 경관, 이쓰쿠시마 신사 해상 신앙, 히메지성과 닛코 도쇼구의 근세 권력 유산을 연결하는 핵심 지점",
+      "sourceFile": "data/records/asia/japan/ancient-medieval-heritage-sites.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "horyuji-temple-area",
+        "todai-ji-temple",
+        "enryaku-ji-mount-hiei",
+        "byodoin-phoenix-hall",
+        "kiyomizu-dera-temple",
+        "itsukushima-shrine",
+        "himeji-castle",
+        "nikko-toshogu-shrine"
+      ],
+      "sourceBasis": [
+        "UNESCO World Heritage pages for Horyu-ji, Ancient Nara, Ancient Kyoto, Itsukushima, Himeji-jo, and Nikko",
+        "Japan National Tourism Organization references for major Japanese World Heritage sites",
+        "Official temple, shrine, city, and tourism references for Horyuji, Todaiji, Enryakuji, Byodoin, Kiyomizu-dera, Miyajima, Himeji, and Nikko"
+      ]
     }
   ]
 }

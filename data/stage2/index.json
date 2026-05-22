@@ -194,6 +194,12 @@
       "titleKo": "한국 고려·조선 왕조 유산",
       "path": "data/stage2/korea-goryeo-joseon-heritage-sites-preview.json",
       "status": "preview-only"
+    },
+    {
+      "id": "stage2-japan-ancient-medieval-heritage-sites-preview",
+      "titleKo": "일본 고대·중세·근세 유산",
+      "path": "data/stage2/japan-ancient-medieval-heritage-sites-preview.json",
+      "status": "preview-only"
     }
   ]
 }
