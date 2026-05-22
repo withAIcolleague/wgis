@@ -338,6 +338,17 @@ The twenty-eighth pilot dataset tests European Renaissance and early modern scie
 - `paris-science`
 - `london-royal-society`
 
+The twenty-ninth pilot dataset tests modern imperial maritime chokepoints, canal geopolitics, steamship corridors, coaling and supply ports, colonial hub ports, and naval gateways:
+
+- `suez-canal`
+- `port-said`
+- `singapore-port`
+- `hong-kong-victoria-harbour`
+- `colombo-port`
+- `cape-town-table-bay`
+- `panama-canal`
+- `gibraltar-port`
+
 The dataset list is managed in:
 
 ```text
@@ -743,3 +754,17 @@ The 2026-05-22 twenty-eight-dataset public browser pass checks `https://wgis.ver
 - The `북서유럽 천문대·아카데미·국가 후원 과학` context filter returns `레이던`, `파리 천문대와 과학아카데미`, and `런던 왕립학회` with 3 markers and 3 labels and no stale Florence data.
 - On mobile, `파리 천문대와 과학아카데미` detail renders with source-confidence information and both detail actions.
 - Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-eight-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-eight-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.
+
+## Twenty-Nine-Dataset Public Usability Pass
+
+The 2026-05-22 twenty-nine-dataset public browser pass checks `https://wgis.vercel.app/stage2-preview.html` after adding the modern imperial maritime chokepoints and canal-port cities pilot dataset:
+
+- Dataset selector exposes 29 datasets.
+- All 29 indexed datasets render their expected entry, marker, and permanent-label counts across 242 Stage 2 preview entries.
+- The new modern imperial chokepoints dataset exposes 8 entries: `수에즈 운하`, `포트사이드`, `싱가포르 항`, `홍콩 빅토리아항`, `콜롬보 항`, `케이프타운`, `파나마 운하`, and `지브롤터`.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control.
+- Searching `지브롤터` in the modern imperial chokepoints dataset narrows the list and map to `지브롤터` with 1 marker and 1 label.
+- Selecting `수에즈 운하` opens the detail panel with source-confidence information and detail actions.
+- The `아시아 식민 중계항과 해협 물류망` context filter returns `싱가포르 항`, `홍콩 빅토리아항`, and `콜롬보 항` with 3 markers and 3 labels and no stale Suez data.
+- On mobile, `싱가포르 항` detail renders with source-confidence information and both detail actions.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-nine-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-nine-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.

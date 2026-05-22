@@ -158,12 +158,17 @@ const datasets = [
     path: 'data/stage2/europe-renaissance-science-cities-preview.json',
     count: 8,
     firstEntryId: 'florence'
+  },
+  {
+    path: 'data/stage2/modern-imperial-chokepoints-canal-port-cities-preview.json',
+    count: 8,
+    firstEntryId: 'suez-canal'
   }
 ];
 
 const latestDataset = datasets[datasets.length - 1];
-const desktopShot = path.join(outputDir, 'wgis-stage2-twenty-eight-datasets-desktop.png');
-const mobileShot = path.join(outputDir, 'wgis-stage2-twenty-eight-datasets-mobile.png');
+const desktopShot = path.join(outputDir, 'wgis-stage2-twenty-nine-datasets-desktop.png');
+const mobileShot = path.join(outputDir, 'wgis-stage2-twenty-nine-datasets-mobile.png');
 
 function assertCheck(condition, message, details = undefined) {
   if (!condition) {
@@ -332,60 +337,60 @@ async function main() {
       assertCheck(state.contextFilterButtons <= 4 && state.contextFilterToggle, 'Initial context filters should start compact', state);
 
       dom = await dumpDom(buildUrl({ dataset: latestDataset.path }), userDataDir);
-      state = extractState('desktop-renaissance-science-default', dom);
+      state = extractState('desktop-modern-imperial-chokepoints-default', dom);
       states.push(state);
-      assertCheck(state.entryCards === latestDataset.count && state.entryIds.includes('florence'), 'Latest dataset should render Florence and all entries', state);
+      assertCheck(state.entryCards === latestDataset.count && state.entryIds.includes('suez-canal'), 'Latest dataset should render Suez Canal and all entries', state);
 
-      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, q: '레이던' }), userDataDir);
-      state = extractState('desktop-renaissance-science-search-leiden', dom);
+      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, q: '지브롤터' }), userDataDir);
+      state = extractState('desktop-modern-imperial-chokepoints-search-gibraltar', dom);
       states.push(state);
-      assertCheck(state.entryCountText === '1개' && state.entryIds.includes('leiden'), 'Latest dataset search should find Leiden', state);
+      assertCheck(state.entryCountText === '1개' && state.entryIds.includes('gibraltar-port'), 'Latest dataset search should find Gibraltar', state);
 
-      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, entry: 'florence' }), userDataDir);
-      state = extractState('desktop-renaissance-science-detail-florence', dom);
+      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, entry: 'suez-canal' }), userDataDir);
+      state = extractState('desktop-modern-imperial-chokepoints-detail-suez', dom);
       states.push(state);
       assertCheck(
-        state.detailTitle === '피렌체' && state.detailActions === 2 && state.hasSourceConfidence,
-        'Latest dataset detail should show Florence, source confidence, and detail actions',
+        state.detailTitle === '수에즈 운하' && state.detailActions === 2 && state.hasSourceConfidence,
+        'Latest dataset detail should show Suez Canal, source confidence, and detail actions',
         state
       );
 
       dom = await dumpDom(buildUrl({
         dataset: latestDataset.path,
-        context: 'northern-european-observatory-academy-state-science'
+        context: 'asian-colonial-hub-port-network'
       }), userDataDir);
-      state = extractState('desktop-renaissance-science-northern-context', dom);
+      state = extractState('desktop-modern-imperial-chokepoints-asian-context', dom);
       states.push(state);
       assertCheck(
         state.entryCountText === '3개' &&
-          state.entryIds.includes('leiden') &&
-          state.entryIds.includes('paris-science') &&
-          state.entryIds.includes('london-royal-society') &&
-          !state.entryIds.includes('florence'),
-        'Northern science context should return Leiden, Paris, and London without stale Florence data',
+          state.entryIds.includes('singapore-port') &&
+          state.entryIds.includes('hong-kong-victoria-harbour') &&
+          state.entryIds.includes('colombo-port') &&
+          !state.entryIds.includes('suez-canal'),
+        'Asian colonial hub context should return Singapore, Hong Kong, and Colombo without stale Suez data',
         state
       );
 
       dom = await dumpDom(buildUrl({
         dataset: latestDataset.path,
-        entry: 'paris-science'
+        entry: 'singapore-port'
       }), userDataDir, { width: 390, height: 844 });
-      state = extractState('mobile-renaissance-science-detail-paris', dom);
+      state = extractState('mobile-modern-imperial-chokepoints-detail-singapore', dom);
       states.push(state);
       assertCheck(
-        state.ready && state.detailTitle === '파리 천문대와 과학아카데미' && state.detailActions === 2,
-        'Mobile-sized latest dataset render should keep the Paris science detail panel available',
+        state.ready && state.detailTitle === '싱가포르 항' && state.detailActions === 2,
+        'Mobile-sized latest dataset render should keep the Singapore detail panel available',
         state
       );
 
       await captureScreenshot(
-        buildUrl({ dataset: latestDataset.path, entry: 'florence' }),
+        buildUrl({ dataset: latestDataset.path, entry: 'suez-canal' }),
         userDataDir,
         desktopShot,
         { width: 1440, height: 920 }
       );
       await captureScreenshot(
-        buildUrl({ dataset: latestDataset.path, entry: 'paris-science' }),
+        buildUrl({ dataset: latestDataset.path, entry: 'singapore-port' }),
         userDataDir,
         mobileShot,
         { width: 390, height: 844 }

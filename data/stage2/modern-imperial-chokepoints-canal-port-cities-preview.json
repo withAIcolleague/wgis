@@ -1,0 +1,546 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-modern-imperial-chokepoints-canal-port-cities-preview",
+  "titleKo": "2단계 미리보기: 근대 제국주의 해상 관문·운하·항구도시",
+  "descriptionKo": "수에즈 운하, 포트사이드, 싱가포르 항, 홍콩 빅토리아항, 콜롬보 항, 케이프타운, 파나마 운하, 지브롤터를 비교하기 위한 2단계 미리보기 데이터셋입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "운하 제국주의",
+        "영국 해상제국",
+        "식민 중계항",
+        "해군 보급기지",
+        "미국 운하권"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "수에즈·홍해",
+        "말라카 해협",
+        "남중국해",
+        "인도양",
+        "희망봉",
+        "파나마 지협",
+        "지브롤터 해협"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "운하",
+        "해협 관문",
+        "석탄·보급항",
+        "식민 항구",
+        "해군기지",
+        "환적·중계무역",
+        "증기선 항로",
+        "제국 물류",
+        "운하 주권",
+        "지정학 위기"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지점 유형",
+      "options": [
+        "장소"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "modern-imperial-maritime-chokepoints-world",
+      "labelKo": "근대 제국주의 해상 관문과 세계 물류망",
+      "parentId": null,
+      "periodKo": "17-20세기",
+      "summaryKo": "수에즈-홍해, 말라카 해협, 남중국해, 실론, 희망봉, 파나마 지협, 지브롤터 해협을 묶어 운하, 해협, 석탄·보급항, 식민 항구, 해군기지가 근대 세계 무역과 제국 운영을 어떻게 압축했는지 봅니다."
+    },
+    {
+      "id": "suez-red-sea-canal-corridor",
+      "labelKo": "수에즈-홍해 운하 회랑",
+      "parentId": "modern-imperial-maritime-chokepoints-world",
+      "periodKo": "1859년 이후",
+      "summaryKo": "수에즈 운하와 포트사이드를 통해 지중해와 홍해가 직접 연결되고, 유럽-인도양 증기선 항로, 영국의 인도 방면 제국 운영, 운하 주권 문제가 한 회랑에 집중된 방식을 봅니다."
+    },
+    {
+      "id": "suez-canal-global-steamship-route",
+      "labelKo": "수에즈 운하와 세계 증기선 항로 단축",
+      "parentId": "suez-red-sea-canal-corridor",
+      "periodKo": "1869년 이후",
+      "summaryKo": "수에즈 운하를 통해 유럽-인도양 항로가 단축되고, 인도·동남아·동아시아로 향하는 제국 해운과 오늘날 해상 물류의 병목이 같은 선형 지형에 집중된 방식을 봅니다."
+    },
+    {
+      "id": "port-said-canal-city-suez-crisis",
+      "labelKo": "포트사이드 운하도시와 수에즈 위기",
+      "parentId": "suez-red-sea-canal-corridor",
+      "periodKo": "1859-1956년",
+      "summaryKo": "포트사이드를 통해 운하 공사 거점, 지중해 관문항, 1956년 수에즈 위기 상륙지라는 층위가 운하도시의 식민 물류와 주권 문제에 겹친 방식을 봅니다."
+    },
+    {
+      "id": "asian-colonial-hub-port-network",
+      "labelKo": "아시아 식민 중계항과 해협 물류망",
+      "parentId": "modern-imperial-maritime-chokepoints-world",
+      "periodKo": "16-20세기",
+      "summaryKo": "싱가포르, 홍콩 빅토리아항, 콜롬보를 통해 말라카 해협, 남중국해, 인도양이 자유항·식민 항구·환적항·해군 보급망으로 연결된 방식을 비교합니다."
+    },
+    {
+      "id": "singapore-straits-settlements-free-port",
+      "labelKo": "싱가포르 해협식민지 자유항과 환적망",
+      "parentId": "asian-colonial-hub-port-network",
+      "periodKo": "1819년 이후",
+      "summaryKo": "싱가포르 항을 통해 말라카 해협 남단의 위치, 영국 자유항 제도, 수에즈 운하 이후 증기선 보급·환적 기능이 동남아 중계무역을 재편한 방식을 봅니다."
+    },
+    {
+      "id": "hong-kong-victoria-harbour-china-trade",
+      "labelKo": "홍콩 빅토리아항과 중국 무역 관문",
+      "parentId": "asian-colonial-hub-port-network",
+      "periodKo": "1841-1997년",
+      "summaryKo": "빅토리아항을 통해 깊고 보호된 항만 조건, 영국령 홍콩의 자유항 성격, 주강 삼각주와 남중국해 교역, 해군 활동이 국제 금융·해운 중심지로 이어진 과정을 봅니다."
+    },
+    {
+      "id": "colombo-ceylon-indian-ocean-coaling-port",
+      "labelKo": "콜롬보 실론 인도양 보급·환적항",
+      "parentId": "asian-colonial-hub-port-network",
+      "periodKo": "16-20세기",
+      "summaryKo": "콜롬보 항을 통해 포르투갈·네덜란드·영국령 실론의 항구 기능, 인도양 항로, 수에즈 이후 증기선 중간 보급·환적항의 역할을 봅니다."
+    },
+    {
+      "id": "atlantic-indian-ocean-cape-and-mediterranean-gates",
+      "labelKo": "희망봉·지브롤터 대서양-지중해 관문",
+      "parentId": "modern-imperial-maritime-chokepoints-world",
+      "periodKo": "17-20세기",
+      "summaryKo": "케이프타운과 지브롤터를 통해 수에즈 이전의 케이프 항로 보급망, 대서양-지중해 해협 통제, 영국 해군기지와 증기선 시대 제국 항로가 이어진 방식을 비교합니다."
+    },
+    {
+      "id": "cape-town-table-bay-cape-route-supply",
+      "labelKo": "케이프타운 테이블베이와 케이프 항로 보급",
+      "parentId": "atlantic-indian-ocean-cape-and-mediterranean-gates",
+      "periodKo": "1652년 이후",
+      "summaryKo": "케이프타운을 통해 VOC 보급기지, 영국령 케이프 식민지, 수에즈 이전 유럽-인도양 장거리 항해의 중간 정박지, 남대서양-남인도양 전략항을 봅니다."
+    },
+    {
+      "id": "gibraltar-british-naval-mediterranean-gateway",
+      "labelKo": "지브롤터 영국 해군기지와 지중해 관문",
+      "parentId": "atlantic-indian-ocean-cape-and-mediterranean-gates",
+      "periodKo": "1713년 이후",
+      "summaryKo": "지브롤터를 통해 대서양에서 지중해로 들어가는 좁은 해협 통제, 영국 해군기지와 보급항, 수에즈 이후 지중해-인도양 항로의 전략성을 봅니다."
+    },
+    {
+      "id": "panama-canal-american-isthmian-geopolitics",
+      "labelKo": "파나마 운하와 미국 지협 지정학",
+      "parentId": "modern-imperial-maritime-chokepoints-world",
+      "periodKo": "1904-1999년",
+      "summaryKo": "파나마 운하를 통해 대서양-태평양 항로 단축, 미국 Canal Zone 지배, 해군·상업 전략, 1999년 관리권 이양이 아메리카 지협에 집중된 방식을 봅니다."
+    },
+    {
+      "id": "modern-maritime-chokepoint-governance-crisis",
+      "labelKo": "운하 주권과 해상 병목 위기",
+      "parentId": "modern-imperial-maritime-chokepoints-world",
+      "periodKo": "19-21세기",
+      "summaryKo": "수에즈 운하, 포트사이드, 파나마 운하, 지브롤터를 묶어 선형 운하와 해협 관문이 국가 주권, 제국 쇠퇴, 군사 개입, 현대 해상 물류 병목 문제와 연결되는 방식을 비교합니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "suez-canal",
+      "titleKo": "수에즈 운하",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이집트",
+      "coordinates": {
+        "lat": 30.5852,
+        "lng": 32.2654
+      },
+      "yearLabelKo": "1869년 개통, 지중해-홍해 연결",
+      "summaryKo": "지중해와 홍해를 직접 연결해 유럽-인도양 항로를 크게 단축한 근대 세계 교통의 핵심 관문입니다.",
+      "stage2": {
+        "primaryContextId": "suez-canal-global-steamship-route",
+        "contextIds": [
+          "modern-imperial-maritime-chokepoints-world",
+          "suez-red-sea-canal-corridor",
+          "suez-canal-global-steamship-route",
+          "modern-maritime-chokepoint-governance-crisis"
+        ],
+        "periodPathKo": [
+          "근대",
+          "운하 제국주의",
+          "수에즈 운하와 증기선 항로"
+        ],
+        "topicTagsKo": [
+          "수에즈 운하",
+          "지중해",
+          "홍해",
+          "증기선 항로",
+          "수에즈 위기"
+        ],
+        "uiFilters": {
+          "era": "운하 제국주의",
+          "region": "수에즈·홍해",
+          "theme": [
+            "운하",
+            "증기선 항로",
+            "제국 물류",
+            "운하 주권"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "Suez Canal Authority와 Britannica 자료를 사용했습니다. 운하 전체가 선형 지형이므로 이스마일리아 인근 중부 운하권 대표점으로 표시했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "port-said",
+      "titleKo": "포트사이드",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이집트",
+      "coordinates": {
+        "lat": 31.2653,
+        "lng": 32.3019
+      },
+      "yearLabelKo": "1859년 운하 공사 거점, 1869년 개통 이후 관문항",
+      "summaryKo": "수에즈 운하 북쪽 입구에 조성된 운하도시로, 지중해에서 홍해와 인도양으로 들어가는 선박의 관문이었습니다.",
+      "stage2": {
+        "primaryContextId": "port-said-canal-city-suez-crisis",
+        "contextIds": [
+          "modern-imperial-maritime-chokepoints-world",
+          "suez-red-sea-canal-corridor",
+          "port-said-canal-city-suez-crisis",
+          "modern-maritime-chokepoint-governance-crisis"
+        ],
+        "periodPathKo": [
+          "근대",
+          "운하 제국주의",
+          "포트사이드 운하도시와 수에즈 위기"
+        ],
+        "topicTagsKo": [
+          "포트사이드",
+          "수에즈 운하 북단",
+          "수에즈 위기",
+          "운하도시",
+          "지중해 관문항"
+        ],
+        "uiFilters": {
+          "era": "운하 제국주의",
+          "region": "수에즈·홍해",
+          "theme": [
+            "식민 항구",
+            "해협 관문",
+            "운하 주권",
+            "지정학 위기"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "Suez Canal Authority 운하 역사, Britannica 수에즈 운하와 수에즈 위기 자료를 사용해 포트사이드 관문항과 1956년 위기 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "singapore-port",
+      "titleKo": "싱가포르 항",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "싱가포르",
+      "coordinates": {
+        "lat": 1.2644,
+        "lng": 103.8218
+      },
+      "yearLabelKo": "1819년 영국 교역 거점, 1869년 수에즈 개통 이후 성장",
+      "summaryKo": "말라카 해협 남단의 위치를 바탕으로 영국의 자유항이자 동남아 중계무역 거점으로 성장했습니다.",
+      "stage2": {
+        "primaryContextId": "singapore-straits-settlements-free-port",
+        "contextIds": [
+          "modern-imperial-maritime-chokepoints-world",
+          "asian-colonial-hub-port-network",
+          "singapore-straits-settlements-free-port"
+        ],
+        "periodPathKo": [
+          "근대",
+          "영국 해상제국",
+          "싱가포르 자유항과 말라카 해협"
+        ],
+        "topicTagsKo": [
+          "싱가포르 항",
+          "말라카 해협",
+          "해협식민지",
+          "자유항",
+          "케펠 하버"
+        ],
+        "uiFilters": {
+          "era": "영국 해상제국",
+          "region": "말라카 해협",
+          "theme": [
+            "식민 항구",
+            "환적·중계무역",
+            "석탄·보급항",
+            "증기선 항로"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "Maritime and Port Authority of Singapore 공식 자료와 Britannica 싱가포르 자료를 사용해 자유항·중계항·해협식민지 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "hong-kong-victoria-harbour",
+      "titleKo": "홍콩 빅토리아항",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "중국",
+      "coordinates": {
+        "lat": 22.293,
+        "lng": 114.1694
+      },
+      "yearLabelKo": "1841년 영국 점령 이후 조약항·자유항 성장",
+      "summaryKo": "깊고 보호된 항만 조건을 바탕으로 19세기 영국의 중국 무역과 해군 활동의 거점이 되었습니다.",
+      "stage2": {
+        "primaryContextId": "hong-kong-victoria-harbour-china-trade",
+        "contextIds": [
+          "modern-imperial-maritime-chokepoints-world",
+          "asian-colonial-hub-port-network",
+          "hong-kong-victoria-harbour-china-trade"
+        ],
+        "periodPathKo": [
+          "근대",
+          "영국 해상제국",
+          "홍콩 빅토리아항과 중국 무역"
+        ],
+        "topicTagsKo": [
+          "홍콩 빅토리아항",
+          "영국령 홍콩",
+          "남중국해",
+          "주강 삼각주",
+          "자유항"
+        ],
+        "uiFilters": {
+          "era": "영국 해상제국",
+          "region": "남중국해",
+          "theme": [
+            "식민 항구",
+            "환적·중계무역",
+            "해군기지",
+            "제국 물류"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "Hong Kong Maritime and Port Board, Hong Kong Maritime Museum, Britannica 홍콩 자료를 사용해 빅토리아항과 영국령 홍콩 무역항 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "colombo-port",
+      "titleKo": "콜롬보 항",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "스리랑카",
+      "coordinates": {
+        "lat": 6.9497,
+        "lng": 79.8435
+      },
+      "yearLabelKo": "16세기 이후 식민 해상 거점, 19-20세기 인도양 항만",
+      "summaryKo": "실론 서해안의 인도양 항로에 자리해 포르투갈, 네덜란드, 영국이 차례로 이용한 식민 해상 거점이었습니다.",
+      "stage2": {
+        "primaryContextId": "colombo-ceylon-indian-ocean-coaling-port",
+        "contextIds": [
+          "modern-imperial-maritime-chokepoints-world",
+          "asian-colonial-hub-port-network",
+          "colombo-ceylon-indian-ocean-coaling-port"
+        ],
+        "periodPathKo": [
+          "근대",
+          "식민 중계항",
+          "콜롬보 실론 인도양 보급항"
+        ],
+        "topicTagsKo": [
+          "콜롬보 항",
+          "실론",
+          "인도양",
+          "환적항",
+          "식민 항구"
+        ],
+        "uiFilters": {
+          "era": "식민 중계항",
+          "region": "인도양",
+          "theme": [
+            "식민 항구",
+            "석탄·보급항",
+            "환적·중계무역",
+            "증기선 항로"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "Sri Lanka Ports Authority 콜롬보 항 자료와 Britannica 콜롬보 자료를 사용해 식민 실론과 인도양 환적항 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "cape-town-table-bay",
+      "titleKo": "케이프타운",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "남아프리카공화국",
+      "coordinates": {
+        "lat": -33.9189,
+        "lng": 18.4254
+      },
+      "yearLabelKo": "1652년 VOC 보급기지, 19세기 영국 제국 항구",
+      "summaryKo": "테이블베이의 보급항에서 출발해 유럽과 인도양을 잇는 케이프 항로의 핵심 정박지가 되었습니다.",
+      "stage2": {
+        "primaryContextId": "cape-town-table-bay-cape-route-supply",
+        "contextIds": [
+          "modern-imperial-maritime-chokepoints-world",
+          "atlantic-indian-ocean-cape-and-mediterranean-gates",
+          "cape-town-table-bay-cape-route-supply"
+        ],
+        "periodPathKo": [
+          "근대",
+          "해군 보급기지",
+          "케이프타운과 희망봉 항로"
+        ],
+        "topicTagsKo": [
+          "케이프타운",
+          "테이블베이",
+          "희망봉 항로",
+          "VOC 보급기지",
+          "케이프 식민지"
+        ],
+        "uiFilters": {
+          "era": "해군 보급기지",
+          "region": "희망봉",
+          "theme": [
+            "석탄·보급항",
+            "식민 항구",
+            "해군기지",
+            "증기선 항로"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "Transnet National Ports Authority 케이프타운 항 자료와 Britannica 케이프타운 자료를 사용해 테이블베이 항구와 케이프 항로 보급망을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "panama-canal",
+      "titleKo": "파나마 운하",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "파나마",
+      "coordinates": {
+        "lat": 9.08,
+        "lng": -79.68
+      },
+      "yearLabelKo": "1904-1914년 미국 주도 건설, 1914년 개통",
+      "summaryKo": "대서양과 태평양을 연결해 아메리카 대륙 남단을 우회하던 항로를 크게 단축했습니다.",
+      "stage2": {
+        "primaryContextId": "panama-canal-american-isthmian-geopolitics",
+        "contextIds": [
+          "modern-imperial-maritime-chokepoints-world",
+          "panama-canal-american-isthmian-geopolitics",
+          "modern-maritime-chokepoint-governance-crisis"
+        ],
+        "periodPathKo": [
+          "근대",
+          "미국 운하권",
+          "파나마 운하와 지협 지정학"
+        ],
+        "topicTagsKo": [
+          "파나마 운하",
+          "Canal Zone",
+          "가툰호",
+          "미국 제국주의",
+          "대서양-태평양"
+        ],
+        "uiFilters": {
+          "era": "미국 운하권",
+          "region": "파나마 지협",
+          "theme": [
+            "운하",
+            "제국 물류",
+            "운하 주권",
+            "지정학 위기"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "Panama Canal Authority와 Britannica 자료를 사용했습니다. 운하 전체가 선형 지형이므로 가툰호-쿨레브라 컷 권역 중간 대표점으로 표시했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "gibraltar-port",
+      "titleKo": "지브롤터",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "영국",
+      "coordinates": {
+        "lat": 36.1408,
+        "lng": -5.3536
+      },
+      "yearLabelKo": "1713년 영국령 확정, 1869년 수에즈 개통 후 전략성 증대",
+      "summaryKo": "대서양에서 지중해로 들어가는 좁은 해협을 감시하는 영국령 요충지로, 해군기지와 보급항의 성격이 강했습니다.",
+      "stage2": {
+        "primaryContextId": "gibraltar-british-naval-mediterranean-gateway",
+        "contextIds": [
+          "modern-imperial-maritime-chokepoints-world",
+          "atlantic-indian-ocean-cape-and-mediterranean-gates",
+          "gibraltar-british-naval-mediterranean-gateway",
+          "modern-maritime-chokepoint-governance-crisis"
+        ],
+        "periodPathKo": [
+          "근대",
+          "영국 해상제국",
+          "지브롤터 지중해 관문"
+        ],
+        "topicTagsKo": [
+          "지브롤터",
+          "지브롤터 해협",
+          "영국 해군기지",
+          "지중해 관문",
+          "수에즈 항로"
+        ],
+        "uiFilters": {
+          "era": "영국 해상제국",
+          "region": "지브롤터 해협",
+          "theme": [
+            "해협 관문",
+            "해군기지",
+            "석탄·보급항",
+            "제국 물류"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "Gibraltar Port Authority, Visit Gibraltar, Britannica 지브롤터 자료를 사용해 항만권, 영국령 해군기지, 지중해 관문 맥락을 확인했습니다."
+        }
+      }
+    }
+  ]
+}
