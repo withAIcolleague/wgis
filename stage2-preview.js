@@ -90,6 +90,10 @@ function getFilteredEntries() {
   });
 }
 
+function isMobileLayout() {
+  return window.matchMedia('(max-width: 820px)').matches;
+}
+
 function initMap() {
   stage2Map = L.map('stage2Map', {
     zoomControl: false,
@@ -229,11 +233,15 @@ function renderEntries() {
   }).join('');
 
   list.querySelectorAll('.entry-card').forEach(card => {
-    card.addEventListener('click', () => selectEntry(card.dataset.entryId, { pan: true }));
+    card.addEventListener('click', () => selectEntry(card.dataset.entryId, { pan: true, revealDetail: isMobileLayout() }));
   });
 }
 
 function renderMarkers({ fit = false } = {}) {
+  if (fit) {
+    stage2Map.stop();
+  }
+
   clearMarkers();
 
   const entries = getFilteredEntries();
@@ -252,7 +260,7 @@ function renderMarkers({ fit = false } = {}) {
       permanent: true
     });
 
-    marker.on('click', () => selectEntry(entry.entryId, { pan: false }));
+    marker.on('click', () => selectEntry(entry.entryId, { pan: false, revealDetail: isMobileLayout() }));
     markers.push(marker);
   });
 
@@ -262,7 +270,33 @@ function renderMarkers({ fit = false } = {}) {
   stage2Map.fitBounds(bounds.pad(0.2), { animate: false });
 }
 
-function selectEntry(entryId, { pan = false } = {}) {
+function scrollDetailIntoView() {
+  const panel = document.getElementById('detailPanel');
+  if (!panel || !isMobileLayout()) return;
+  panel.scrollIntoView({ block: 'start', behavior: 'smooth' });
+}
+
+function focusMapOnEntry(entry) {
+  const nextZoom = Math.max(stage2Map.getZoom(), 8);
+  stage2Map.setView([entry.coordinates.lat, entry.coordinates.lng], nextZoom, { animate: true });
+
+  if (isMobileLayout()) {
+    document.getElementById('stage2Map').scrollIntoView({ block: 'start', behavior: 'smooth' });
+  }
+}
+
+function closeDetail() {
+  activeEntryId = null;
+  renderEntries();
+  renderMarkers();
+  renderEmptyDetail();
+
+  if (isMobileLayout()) {
+    document.getElementById('stage2Map').scrollIntoView({ block: 'start', behavior: 'smooth' });
+  }
+}
+
+function selectEntry(entryId, { pan = false, revealDetail = false } = {}) {
   const entry = stage2Data.entries.find(item => item.entryId === entryId);
   if (!entry) return;
 
@@ -274,6 +308,10 @@ function selectEntry(entryId, { pan = false } = {}) {
   if (pan) {
     stage2Map.setView([entry.coordinates.lat, entry.coordinates.lng], 6, { animate: true });
   }
+
+  if (revealDetail) {
+    scrollDetailIntoView();
+  }
 }
 
 function renderDetail(entry) {
@@ -284,11 +322,16 @@ function renderDetail(entry) {
   const filterValues = Object.entries(entry.stage2.uiFilters)
     .flatMap(([key, value]) => Array.isArray(value) ? value.map(item => `${key}: ${item}`) : [`${key}: ${value}`]);
 
+  panel.classList.remove('is-empty');
   panel.innerHTML = `
     <article class="detail-content">
       <div class="detail-kicker">
         <span class="type-badge ${TYPE_CLASS[entry.displayTypeKo] || 'type-place'}">${escapeHtml(entry.displayTypeKo)}</span>
-        <span class="tier-badge tier-${escapeHtml(tier)}">출처 ${escapeHtml(TIER_LABEL[tier] || tier)}</span>
+        <div class="detail-kicker-tools">
+          <span class="tier-badge tier-${escapeHtml(tier)}">출처 ${escapeHtml(TIER_LABEL[tier] || tier)}</span>
+          <button class="detail-action-button" type="button" data-detail-action="focus-map" aria-label="지도에서 보기" title="지도에서 보기">◎</button>
+          <button class="detail-action-button" type="button" data-detail-action="close" aria-label="상세 닫기" title="닫기">×</button>
+        </div>
       </div>
       <h2>${escapeHtml(entry.titleKo)}</h2>
       <p class="detail-summary">${escapeHtml(entry.summaryKo)}</p>
@@ -328,14 +371,15 @@ function renderDetail(entry) {
       <p class="detail-summary">${escapeHtml(entry.stage2.sourceConfidence.noteKo)}</p>
     </article>
   `;
+
+  panel.querySelector('[data-detail-action="focus-map"]').addEventListener('click', () => focusMapOnEntry(entry));
+  panel.querySelector('[data-detail-action="close"]').addEventListener('click', closeDetail);
 }
 
 function renderEmptyDetail() {
-  document.getElementById('detailPanel').innerHTML = `
-    <div class="empty-state">
-      왼쪽 항목이나 지도 마커를 선택하면 1단계 지도용 정보와 2단계 분류 정보가 나란히 표시됩니다.
-    </div>
-  `;
+  const panel = document.getElementById('detailPanel');
+  panel.classList.add('is-empty');
+  panel.innerHTML = '';
 }
 
 function update() {
@@ -371,6 +415,12 @@ async function init() {
     update();
   });
 
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && activeEntryId) {
+      closeDetail();
+    }
+  });
+
   await loadDataset(activeDatasetPath);
 }
 
@@ -389,7 +439,9 @@ async function loadDataset(path) {
 }
 
 init().catch(error => {
-  document.getElementById('detailPanel').innerHTML = `
+  const panel = document.getElementById('detailPanel');
+  panel.classList.remove('is-empty');
+  panel.innerHTML = `
     <div class="empty-state">${escapeHtml(error.message)}</div>
   `;
   console.error(error);

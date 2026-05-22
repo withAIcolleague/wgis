@@ -261,7 +261,14 @@ async function main() {
         labels: document.querySelectorAll('.leaflet-tooltip.stage2-label').length,
         detailTitle: text('#detailPanel h2'),
         detailHasConfidence: text('#detailPanel').includes('출처'),
+        detailHidden: detailPanel ? detailPanel.classList.contains('is-empty') || getComputedStyle(detailPanel).display === 'none' : true,
+        detailActions: document.querySelectorAll('[data-detail-action]').length,
         detailPosition: detailPanel ? getComputedStyle(detailPanel).position : '',
+        activeEntryCards: document.querySelectorAll('.entry-card.active').length,
+        mapZoom: typeof stage2Map !== 'undefined' && stage2Map ? stage2Map.getZoom() : null,
+        scrollY: Math.round(window.scrollY),
+        mapTop: Math.round(document.querySelector('#stage2Map')?.getBoundingClientRect().top || 0),
+        detailTop: detailPanel ? Math.round(detailPanel.getBoundingClientRect().top) : null,
         entryListCanScroll: entryList ? entryList.scrollHeight > entryList.clientHeight : false,
         entryListScrollTop: entryList ? entryList.scrollTop : 0,
         entryListClientHeight: entryList ? entryList.clientHeight : 0,
@@ -342,6 +349,14 @@ async function main() {
       }
     }
 
+    async function clickDetailAction(action) {
+      await evaluate(`(() => {
+        const button = document.querySelector(${JSON.stringify(`[data-detail-action="${action}"]`)});
+        if (!button) throw new Error('missing detail action ${action}');
+        button.click();
+      })()`);
+    }
+
     async function clickContextId(contextId, expectedCount) {
       const isVisible = await evaluate(`(() => Boolean(document.querySelector(${JSON.stringify(`[data-context-id="${contextId}"]`)})))()`);
       if (!isVisible) {
@@ -375,6 +390,7 @@ async function main() {
     assertCheck(state.datasetOptions.length === datasets.length, 'Desktop should expose 7 datasets', state);
     assertCheck(state.entryCountNumber === 8 && state.markers === 8 && state.labels === 8, 'Initial Atlantic dataset should render 8 markers/labels', state);
     assertCheck(state.contextFilterButtons <= 4 && state.contextFilterToggle.startsWith('+'), 'Context filters should start compact on desktop', state);
+    assertCheck(state.detailHidden && state.detailActions === 0, 'Empty desktop detail panel should stay hidden until an entry is selected', state);
 
     for (const dataset of datasets) {
       await selectDataset(dataset);
@@ -391,7 +407,17 @@ async function main() {
 
     await clickEntry('delphi', '델포이');
     state = await captureState('desktop-greece-detail-delphi');
-    assertCheck(state.detailTitle === '델포이' && state.detailHasConfidence, 'Greek detail should show title and source confidence', state);
+    assertCheck(state.detailTitle === '델포이' && state.detailHasConfidence && !state.detailHidden && state.detailActions === 2, 'Greek detail should show title, source confidence, and detail actions', state);
+
+    await clickDetailAction('focus-map');
+    await waitForExpression("typeof stage2Map !== 'undefined' && stage2Map.getZoom() >= 8", 'desktop detail map focus zooms in');
+    state = await captureState('desktop-greece-detail-focus-map');
+    assertCheck(state.detailTitle === '델포이' && state.mapZoom >= 8, 'Detail map focus should zoom to the selected entry without closing detail', state);
+
+    await clickDetailAction('close');
+    await waitForExpression("document.querySelector('#detailPanel')?.classList.contains('is-empty') && !document.querySelector('.entry-card.active')", 'desktop detail closes');
+    state = await captureState('desktop-greece-detail-closed');
+    assertCheck(state.detailHidden && state.detailTitle === '' && state.activeEntryCards === 0 && state.markers === 1 && state.labels === 1, 'Closing detail should clear active entry while preserving current search markers', state);
 
     await setSearch('', 10);
     await clickContextId('panhellenic-sanctuaries-games', 2);
@@ -410,9 +436,10 @@ async function main() {
       state.entryCountNumber === 8 &&
         state.markers === 8 &&
         state.labels === 8 &&
+        state.mapZoom <= 4 &&
         !state.entryIds.includes('delphi') &&
         !state.entryIds.includes('olympia'),
-      'Switching away from Greece should clear stale Greek list, markers, and labels',
+      'Switching away from Greece should clear stale Greek list, markers, labels, and map view',
       state
     );
 
@@ -439,8 +466,19 @@ async function main() {
     assertCheck(state.entryListCanScroll && state.entryListScrollTop > 0 && state.contextFilterButtons <= 4, 'Mobile Stage 2 entry list should scroll independently with compact filters', state);
 
     await clickEntry('athens-acropolis', '아테네 아크로폴리스');
+    await waitForExpression("document.querySelector('#detailPanel')?.getBoundingClientRect().top < 80", 'mobile detail scrolls into view');
     state = await captureState('mobile-greece-detail-athens');
-    assertCheck(state.detailTitle === '아테네 아크로폴리스' && state.detailPosition === 'static' && state.documentHeight > state.viewportHeight, 'Mobile detail should sit in the normal page flow below the map', state);
+    assertCheck(state.detailTitle === '아테네 아크로폴리스' && state.detailPosition === 'static' && state.detailTop < 80 && state.documentHeight > state.viewportHeight, 'Mobile detail should sit in normal page flow and scroll into view after selection', state);
+
+    await clickDetailAction('focus-map');
+    await waitForExpression("(() => { const top = document.querySelector('#stage2Map')?.getBoundingClientRect().top || 0; return typeof stage2Map !== 'undefined' && stage2Map.getZoom() >= 8 && top > -80 && top < window.innerHeight - 80; })()", 'mobile detail map focus returns to map');
+    state = await captureState('mobile-greece-focus-map');
+    assertCheck(state.detailTitle === '아테네 아크로폴리스' && state.mapTop > -80 && state.mapTop < state.viewportHeight - 80 && state.mapZoom >= 8, 'Mobile map focus should return to the selected map location', state);
+
+    await clickDetailAction('close');
+    await waitForExpression("document.querySelector('#detailPanel')?.classList.contains('is-empty') && !document.querySelector('.entry-card.active')", 'mobile detail closes');
+    state = await captureState('mobile-greece-detail-closed');
+    assertCheck(state.detailHidden && state.activeEntryCards === 0 && state.mapTop > -80 && state.mapTop < state.viewportHeight - 80, 'Mobile close should hide detail and return to the map area', state);
 
     const mobilePng = await client.send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: false }, sessionId);
     await writeFile(mobileShot, Buffer.from(mobilePng.data, 'base64'));

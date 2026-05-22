@@ -14,7 +14,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Current entry count: 250
 - Completed curation batches: 31
 - Latest completed batch: `africa-egypt-late-temple-centers-v1`
-- Latest completed infrastructure milestone: stage-2 seven-dataset usability pass
+- Latest completed infrastructure milestone: stage-2 detail-flow refinement
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
@@ -147,6 +147,13 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - Scope: make the public Stage 2 preview browser check repeatable after adding the seventh dataset
   - Checked: 7-dataset selector, expected entry/marker/label counts across 66 Stage 2 preview entries, compact context filters, Ancient Greece search/detail/context behavior, stale Greek marker cleanup, and mobile entry-list scrolling
   - Result: public headless Chrome pass completed; screenshots saved under `C:\Users\Public\Documents\ESTsoft\CreatorTemp\`
+
+- Stage-2 detail-flow refinement
+  - Files: `stage2-preview.js`, `stage2-preview.css`, `scripts/smoke-check.js`, `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`
+  - URL path: `/stage2-preview.html`
+  - Scope: make the Stage 2 detail panel easier to close, return from, and use on mobile after adding more datasets
+  - Checked: hidden empty-detail state, detail `지도에서 보기` action, detail `닫기` action, Escape close wiring, current search marker preservation after close, mobile detail scroll-into-view, mobile map-return flow, stale map-animation cleanup after dataset switching, and removal of blank space below the hidden mobile detail panel
+  - Result: local and public browser passes completed for 7 datasets and 66 Stage 2 preview entries
 
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`
@@ -613,13 +620,10 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Stage-2 preview detail-flow refinement
-   - Scope: review whether the desktop detail panel and mobile detail placement need a clearer close, jump, or map-return flow after more datasets are added
-
-2. Stage-2 eighth pilot dataset
+1. Stage-2 eighth pilot dataset
    - Scope: create another Stage 2 file from Achaemenid Persia to compare imperial road, capital, inscription, and satrapal network contexts against the current ancient civilization samples
 
-3. First-stage DB next expansion batch
+2. First-stage DB next expansion batch
    - Scope: resume focused first-stage source-record growth if the priority shifts back from Stage 2 modeling to raw coverage
 
 ## Resume Checklist

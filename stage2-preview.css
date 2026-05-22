@@ -311,16 +311,50 @@ select {
   backdrop-filter: blur(4px);
 }
 
+.detail-panel.is-empty {
+  display: none;
+}
+
 .detail-content {
   padding: 20px;
 }
 
 .detail-kicker {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 12px;
   margin-bottom: 10px;
+}
+
+.detail-kicker-tools {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 6px;
+}
+
+.detail-action-button {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border: 1px solid #b7ad98;
+  border-radius: 4px;
+  background: #fff7e8;
+  color: #233629;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.detail-action-button:hover,
+.detail-action-button:focus-visible {
+  border-color: #365a42;
+  background: #365a42;
+  color: #fff8e8;
+  outline: none;
 }
 
 .detail-content h2 {
@@ -457,7 +491,7 @@ select {
   }
 
   .preview-main {
-    min-height: 92vh;
+    min-height: 0;
   }
 
   .stage2-map {

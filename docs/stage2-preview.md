@@ -192,3 +192,16 @@ The 2026-05-22 seven-dataset public browser pass checked `https://wgis.vercel.ap
 - Switching back from Ancient Greece to Atlantic revolutions clears stale Greek list items, markers, and labels.
 - On mobile, the Ancient Greece entry list scrolls independently and the detail panel stays in normal page flow below the map.
 - Browser screenshots were saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-seven-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-seven-datasets-mobile.png`.
+
+## Detail Flow Refinement Pass
+
+The 2026-05-22 detail-flow pass refined how the Stage 2 detail panel behaves after the preview grew to 7 datasets:
+
+- The empty detail panel now stays hidden until a user selects a list item or map marker, reducing map obstruction.
+- Selected entries show two detail actions: `지도에서 보기` and `닫기`.
+- `지도에서 보기` recenters and zooms to the selected entry; on mobile it also scrolls the map back into view.
+- `닫기` clears the active entry, hides the detail panel, and preserves the current search/filter result markers.
+- Pressing `Escape` also closes the active detail panel.
+- On mobile, selecting a list item or marker scrolls the detail panel into view, and closing the panel avoids leaving a large blank area below the map.
+- Dataset and filter refreshes stop pending map animations before fitting new result bounds, preventing stale map positions after a `지도에서 보기` action.
+- The browser pass verifies these desktop and mobile detail-flow behaviors alongside the 7-dataset switching, search, filter, marker-label, and scrolling checks.
