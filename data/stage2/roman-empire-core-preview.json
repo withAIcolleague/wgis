@@ -1,0 +1,492 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-roman-empire-core-preview",
+  "titleKo": "2단계 미리보기: 로마 공화정·제국 핵심 유적",
+  "descriptionKo": "로마 공화정과 제국의 수도 권력 공간, 이탈리아 도시 생활, 항구·물류망, 포에니-로마 아프리카, 브리타니아·라인 변경, 후기 고대 전환을 비교하기 위한 2단계 미리보기 데이터셋입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "공화정·초기 로마",
+        "제정 초기",
+        "고전 제국기",
+        "후기 고대 전환",
+        "포에니·로마 아프리카",
+        "변경 방어"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "로마·라티움",
+        "캄파니아·베수비오",
+        "티베르 하구",
+        "북아프리카",
+        "브리타니아 변경",
+        "라인·모젤",
+        "아드리아 북부"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "수도 정치",
+        "황실 권력",
+        "도시 생활",
+        "항구·물류",
+        "전쟁·식민 재편",
+        "속주 행정",
+        "변경 방어",
+        "후기 고대·기독교"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지도 유형",
+      "options": [
+        "장소",
+        "유적"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "roman-republic-empire",
+      "labelKo": "로마 공화정·제국",
+      "parentId": null,
+      "periodKo": "기원전 8세기-서기 6세기",
+      "summaryKo": "로마 도시의 성장, 공화정 제도, 지중해 제국, 속주와 변경, 후기 고대 전환을 함께 다루는 상위 맥락입니다."
+    },
+    {
+      "id": "rome-capital-forum-imperial-power",
+      "labelKo": "로마 수도와 황실 권력 공간",
+      "parentId": "roman-republic-empire",
+      "periodKo": "기원전 7세기-서기 5세기",
+      "summaryKo": "로마 포룸과 팔라티노처럼 공화정 정치, 종교, 연설, 황제 거처가 겹쳐진 수도 핵심 공간을 묶습니다."
+    },
+    {
+      "id": "roman-italian-urban-life-infrastructure",
+      "labelKo": "로마 이탈리아 도시 생활과 인프라",
+      "parentId": "roman-republic-empire",
+      "periodKo": "기원전 4세기-서기 5세기",
+      "summaryKo": "폼페이와 오스티아를 통해 거리, 주거, 상점, 목욕장, 창고, 조합 회관 등 로마 도시의 일상 인프라를 봅니다."
+    },
+    {
+      "id": "vesuvius-urban-preservation",
+      "labelKo": "베수비오 재난과 도시 보존",
+      "parentId": "roman-republic-empire",
+      "periodKo": "79년",
+      "summaryKo": "화산재 매몰이라는 특수한 사건을 통해 로마 도시 생활이 예외적으로 보존된 고고학 맥락입니다."
+    },
+    {
+      "id": "mediterranean-port-grain-logistics",
+      "labelKo": "지중해 항구와 곡물·물류망",
+      "parentId": "roman-republic-empire",
+      "periodKo": "기원전 4세기-서기 5세기",
+      "summaryKo": "수도 로마와 속주 도시를 연결한 항구, 창고, 해상 교역, 곡물 공급의 네트워크를 다룹니다."
+    },
+    {
+      "id": "punic-roman-africa-provincial-city",
+      "labelKo": "포에니-로마 아프리카와 속주 도시",
+      "parentId": "roman-republic-empire",
+      "periodKo": "기원전 9세기-서기 7세기",
+      "summaryKo": "카르타고처럼 포에니 해상 도시가 로마의 전쟁·식민 재편을 거쳐 속주 대도시로 바뀐 사례를 묶습니다."
+    },
+    {
+      "id": "imperial-frontiers-britain-rhine",
+      "labelKo": "브리타니아·라인 변경과 군사 경관",
+      "parentId": "roman-republic-empire",
+      "periodKo": "1-5세기",
+      "summaryKo": "하드리아누스 방벽과 트리어처럼 제국 경계, 요새, 군사 행정, 서방 속주 통치를 보여주는 공간입니다."
+    },
+    {
+      "id": "late-antique-western-capitals-christianization",
+      "labelKo": "후기 고대 서방 수도와 기독교화",
+      "parentId": "roman-republic-empire",
+      "periodKo": "3-6세기",
+      "summaryKo": "트리어와 라벤나를 통해 서방 제국의 황제 거주도시, 수도 이전, 초기 기독교 기념물, 비잔틴 전환을 비교합니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "roman-forum",
+      "titleKo": "로마 포룸",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이탈리아",
+      "coordinates": {
+        "lat": 41.8925,
+        "lng": 12.4853
+      },
+      "yearLabelKo": "기원전 7세기 이후",
+      "summaryKo": "공화정과 제국 로마의 정치, 사법, 종교, 상업 기능이 집중된 중심 광장으로, 원로원·연단·신전·개선문이 수도 권력의 흐름을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "rome-capital-forum-imperial-power",
+        "contextIds": [
+          "roman-republic-empire",
+          "rome-capital-forum-imperial-power",
+          "roman-italian-urban-life-infrastructure"
+        ],
+        "periodPathKo": [
+          "고대",
+          "로마 공화정·제국",
+          "수도 정치와 포룸"
+        ],
+        "topicTagsKo": [
+          "포룸 로마눔",
+          "원로원",
+          "연단",
+          "공화정 정치",
+          "수도 의례"
+        ],
+        "uiFilters": {
+          "era": "공화정·초기 로마",
+          "region": "로마·라티움",
+          "theme": [
+            "수도 정치",
+            "황실 권력"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 로마 역사 중심지와 World History Encyclopedia 항목을 함께 사용해 위치와 수도 정치 맥락을 안정적으로 확인할 수 있습니다."
+        }
+      }
+    },
+    {
+      "entryId": "palatine-hill",
+      "titleKo": "팔라티노 언덕",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "이탈리아",
+      "coordinates": {
+        "lat": 41.8897,
+        "lng": 12.4888
+      },
+      "yearLabelKo": "기원전 1천년기 취락, 제정기 황궁",
+      "summaryKo": "로마 건국 전승과 초기 취락 기억, 귀족 주거, 아우구스투스 이후 황궁이 겹친 언덕으로, 포룸을 내려다보는 제국 권력의 핵심 지형입니다.",
+      "stage2": {
+        "primaryContextId": "rome-capital-forum-imperial-power",
+        "contextIds": [
+          "roman-republic-empire",
+          "rome-capital-forum-imperial-power",
+          "late-antique-western-capitals-christianization"
+        ],
+        "periodPathKo": [
+          "고대",
+          "로마 공화정·제국",
+          "건국 기억과 황궁 경관"
+        ],
+        "topicTagsKo": [
+          "팔라티노",
+          "아우구스투스",
+          "황궁",
+          "로마 건국 전승",
+          "권력 지형"
+        ],
+        "uiFilters": {
+          "era": "제정 초기",
+          "region": "로마·라티움",
+          "theme": [
+            "황실 권력",
+            "수도 정치"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "로마 포룸-팔라티노 고고공원 자료와 Britannica 설명을 함께 사용하며, 유적 중심부 좌표가 명확합니다."
+        }
+      }
+    },
+    {
+      "entryId": "pompeii",
+      "titleKo": "폼페이",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "이탈리아",
+      "coordinates": {
+        "lat": 40.7484,
+        "lng": 14.4849
+      },
+      "yearLabelKo": "79년 베수비오 화산 폭발",
+      "summaryKo": "베수비오 화산 폭발로 매몰되어 거리, 주택, 상점, 목욕장, 벽화가 잘 보존된 로마 지방 도시로, 제국 초기 일상생활을 입체적으로 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "vesuvius-urban-preservation",
+        "contextIds": [
+          "roman-republic-empire",
+          "roman-italian-urban-life-infrastructure",
+          "vesuvius-urban-preservation"
+        ],
+        "periodPathKo": [
+          "고대",
+          "로마 제정 초기",
+          "베수비오 재난과 도시 보존"
+        ],
+        "topicTagsKo": [
+          "폼페이",
+          "베수비오",
+          "79년 화산 폭발",
+          "로마 도시 생활",
+          "벽화와 주거"
+        ],
+        "uiFilters": {
+          "era": "제정 초기",
+          "region": "캄파니아·베수비오",
+          "theme": [
+            "도시 생활"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 세계유산과 World History Encyclopedia 항목이 함께 있어 유적 위치와 79년 매몰 맥락의 신뢰도가 높습니다."
+        }
+      }
+    },
+    {
+      "entryId": "ostia-antica",
+      "titleKo": "오스티아 안티카",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이탈리아",
+      "coordinates": {
+        "lat": 41.7559,
+        "lng": 12.29
+      },
+      "yearLabelKo": "기원전 4세기 식민도시, 제국기 항구도시",
+      "summaryKo": "티베르 하구의 로마 항구도시로, 곡물 공급, 해상 교역, 창고, 조합 회관, 다층 주거가 수도 로마의 물류 기반을 설명합니다.",
+      "stage2": {
+        "primaryContextId": "mediterranean-port-grain-logistics",
+        "contextIds": [
+          "roman-republic-empire",
+          "roman-italian-urban-life-infrastructure",
+          "mediterranean-port-grain-logistics"
+        ],
+        "periodPathKo": [
+          "고대",
+          "로마 공화정·제국",
+          "티베르 하구 항구와 수도 물류"
+        ],
+        "topicTagsKo": [
+          "오스티아",
+          "티베르 하구",
+          "곡물 공급",
+          "창고",
+          "항구도시"
+        ],
+        "uiFilters": {
+          "era": "고전 제국기",
+          "region": "티베르 하구",
+          "theme": [
+            "항구·물류",
+            "도시 생활"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "오스티아 안티카 고고공원 공식 안내와 World History Encyclopedia 항목을 함께 사용해 항구도시 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "ravenna",
+      "titleKo": "라벤나",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "이탈리아",
+      "coordinates": {
+        "lat": 44.42,
+        "lng": 12.1969
+      },
+      "yearLabelKo": "402년 서로마 수도 이전 이후, 5-6세기 기념물",
+      "summaryKo": "서로마 황실 수도, 동고트 왕국, 비잔틴 이탈리아의 중심이 이어진 도시로, 초기 기독교 모자이크와 후기 고대 권력 전환을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "late-antique-western-capitals-christianization",
+        "contextIds": [
+          "roman-republic-empire",
+          "mediterranean-port-grain-logistics",
+          "late-antique-western-capitals-christianization"
+        ],
+        "periodPathKo": [
+          "고대",
+          "후기 로마·초기 비잔틴",
+          "서로마 수도와 기독교 기념물"
+        ],
+        "topicTagsKo": [
+          "라벤나",
+          "서로마 수도",
+          "갈라 플라키디아",
+          "산 비탈레",
+          "비잔틴 이탈리아"
+        ],
+        "uiFilters": {
+          "era": "후기 고대 전환",
+          "region": "아드리아 북부",
+          "theme": [
+            "후기 고대·기독교",
+            "황실 권력"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 유산이 도시 안 여러 지점에 분산되어 있어 라벤나 중심부 근사 좌표로 관리하지만, 후기 고대 수도 맥락은 공식 유산 설명으로 확인됩니다."
+        }
+      }
+    },
+    {
+      "entryId": "carthage",
+      "titleKo": "카르타고",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "튀니지",
+      "coordinates": {
+        "lat": 36.8528,
+        "lng": 10.3233
+      },
+      "yearLabelKo": "기원전 9세기경 창건, 기원전 146년 파괴, 기원전 1세기 로마 재건",
+      "summaryKo": "페니키아계 해상 도시국가에서 로마와의 전쟁, 파괴, 로마령 아프리카 대도시 재건으로 이어진 지중해 경쟁과 속주 재편의 핵심 장소입니다.",
+      "stage2": {
+        "primaryContextId": "punic-roman-africa-provincial-city",
+        "contextIds": [
+          "roman-republic-empire",
+          "mediterranean-port-grain-logistics",
+          "punic-roman-africa-provincial-city"
+        ],
+        "periodPathKo": [
+          "고대",
+          "포에니·로마 지중해",
+          "카르타고와 아프리카 속주"
+        ],
+        "topicTagsKo": [
+          "카르타고",
+          "포에니 전쟁",
+          "한니발",
+          "로마 아프리카",
+          "식민 도시 재편"
+        ],
+        "uiFilters": {
+          "era": "포에니·로마 아프리카",
+          "region": "북아프리카",
+          "theme": [
+            "전쟁·식민 재편",
+            "속주 행정",
+            "항구·물류"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 카르타고 고고유적과 World History Encyclopedia 항목이 함께 있어 위치와 포에니-로마 전환 맥락의 신뢰도가 높습니다."
+        }
+      }
+    },
+    {
+      "entryId": "hadrians-wall",
+      "titleKo": "하드리아누스 방벽",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "영국",
+      "coordinates": {
+        "lat": 55.013,
+        "lng": -2.331
+      },
+      "yearLabelKo": "122년 착공",
+      "summaryKo": "브리타니아 북부를 가로지르는 로마 제국의 변경 방어선으로, 성벽·요새·망루·도로가 결합된 군사·행정 경관입니다.",
+      "stage2": {
+        "primaryContextId": "imperial-frontiers-britain-rhine",
+        "contextIds": [
+          "roman-republic-empire",
+          "imperial-frontiers-britain-rhine"
+        ],
+        "periodPathKo": [
+          "고대",
+          "로마 브리타니아",
+          "제국 변경 방어선"
+        ],
+        "topicTagsKo": [
+          "하드리아누스 방벽",
+          "로마 브리타니아",
+          "하우스스테즈",
+          "요새",
+          "변경 통제"
+        ],
+        "uiFilters": {
+          "era": "변경 방어",
+          "region": "브리타니아 변경",
+          "theme": [
+            "변경 방어",
+            "속주 행정"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 선형 유산이라 대표 좌표는 하우스스테즈 인근 근사값이지만, 방벽과 변경 방어선 맥락은 공식 유산 설명과 참고 항목으로 확인됩니다."
+        }
+      }
+    },
+    {
+      "entryId": "trier-roman-monuments",
+      "titleKo": "트리어 로마 유적",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "독일",
+      "coordinates": {
+        "lat": 49.7596,
+        "lng": 6.6442
+      },
+      "yearLabelKo": "기원전 16년경 창건, 3-4세기 황제 거주도시",
+      "summaryKo": "아우구스투스 시대의 모젤강 도시에서 서방 제국 황제 거주지로 성장한 곳으로, 포르타 니그라와 황제 목욕장, 바실리카가 로마 속주 도시의 전환을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "imperial-frontiers-britain-rhine",
+        "contextIds": [
+          "roman-republic-empire",
+          "imperial-frontiers-britain-rhine",
+          "late-antique-western-capitals-christianization"
+        ],
+        "periodPathKo": [
+          "고대",
+          "로마 서방 속주",
+          "라인·모젤 황제 거주도시"
+        ],
+        "topicTagsKo": [
+          "트리어",
+          "아우구스타 트레베로룸",
+          "포르타 니그라",
+          "콘스탄티누스 바실리카",
+          "서방 제국"
+        ],
+        "uiFilters": {
+          "era": "후기 고대 전환",
+          "region": "라인·모젤",
+          "theme": [
+            "변경 방어",
+            "후기 고대·기독교",
+            "속주 행정"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 트리어 로마 기념물군과 Britannica 항목을 함께 사용해 도심 대표 좌표와 서방 제국 거점 맥락을 확인했습니다."
+        }
+      }
+    }
+  ]
+}

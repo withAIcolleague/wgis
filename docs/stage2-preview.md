@@ -118,6 +118,17 @@ The eighth pilot dataset tests Achaemenid Persian royal capitals, ceremonial lan
 - `sardis`
 - `daskyleion`
 
+The ninth pilot dataset tests Roman republican and imperial capital spaces, Italian urban life, ports and logistics, Punic-Roman Africa, western frontiers, and late antique transformations:
+
+- `roman-forum`
+- `palatine-hill`
+- `pompeii`
+- `ostia-antica`
+- `ravenna`
+- `carthage`
+- `hadrians-wall`
+- `trier-roman-monuments`
+
 The dataset list is managed in:
 
 ```text
@@ -232,3 +243,18 @@ The 2026-05-22 eight-dataset browser pass checks `/stage2-preview.html` after ad
 - Dataset, search, and context changes explicitly reframe the map after any prior detail zoom.
 - On mobile, the Achaemenid Persia entry list scrolls independently, `파사르가다에` detail scrolls into view, `지도에서 보기` returns to the map, and `닫기` hides the detail panel.
 - Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-eight-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-eight-datasets-mobile.png`.
+
+## Nine-Dataset Public Usability Pass
+
+The 2026-05-22 nine-dataset browser pass checks `/stage2-preview.html` after adding the Roman Republic and Empire pilot dataset:
+
+- Dataset selector exposes 9 datasets.
+- All 9 indexed datasets render their expected entry, marker, and permanent-label counts: Atlantic revolutions 8, Ethiopia 8, Mesopotamia 10, Egypt 14, Indus 8, Early China 8, Ancient Greece 10, Achaemenid Persia 8, and Roman Republic and Empire 8.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control after every dataset switch.
+- Searching `트리어` in the Roman dataset narrows the list and map to 1 entry, marker, and label.
+- Selecting `트리어 로마 유적` opens the detail panel with source-confidence information and detail actions.
+- Closing the `트리어 로마 유적` detail panel preserves the current search marker and label.
+- The `브리타니아·라인 변경과 군사 경관` context filter returns `하드리아누스 방벽` and `트리어 로마 유적` with 2 markers and 2 labels.
+- Switching back from the Roman dataset to Atlantic revolutions clears stale Roman list items, markers, labels, and map zoom state.
+- On mobile, the Roman entry list scrolls independently, `로마 포룸` detail scrolls into view, `지도에서 보기` returns to the map, and `닫기` hides the detail panel.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-nine-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-nine-datasets-mobile.png`.

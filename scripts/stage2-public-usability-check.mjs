@@ -61,6 +61,11 @@ const datasets = [
     path: 'data/stage2/achaemenid-persia-core-preview.json',
     count: 8,
     firstEntryId: 'pasargadae'
+  },
+  {
+    path: 'data/stage2/roman-empire-core-preview.json',
+    count: 8,
+    firstEntryId: 'roman-forum'
   }
 ];
 
@@ -158,8 +163,8 @@ function assertCheck(condition, message, details = undefined) {
 async function main() {
   await mkdir(outputDir, { recursive: true });
   const userDataDir = await mkdtemp(path.join(os.tmpdir(), 'wgis-stage2-public-'));
-  const desktopShot = path.join(outputDir, 'wgis-stage2-eight-datasets-desktop.png');
-  const mobileShot = path.join(outputDir, 'wgis-stage2-eight-datasets-mobile.png');
+  const desktopShot = path.join(outputDir, 'wgis-stage2-nine-datasets-desktop.png');
+  const mobileShot = path.join(outputDir, 'wgis-stage2-nine-datasets-mobile.png');
 
   const chrome = spawn(chromePath, [
     '--headless=new',
@@ -406,6 +411,7 @@ async function main() {
 
     const greece = datasets.find(dataset => dataset.path.endsWith('ancient-greece-core-preview.json'));
     const persia = datasets.find(dataset => dataset.path.endsWith('achaemenid-persia-core-preview.json'));
+    const roman = datasets.find(dataset => dataset.path.endsWith('roman-empire-core-preview.json'));
     await selectDataset(greece);
     await setSearch('델포이', 1);
     state = await captureState('desktop-greece-search-delphi');
@@ -489,6 +495,45 @@ async function main() {
       state
     );
 
+    await selectDataset(roman);
+    await setSearch('트리어', 1);
+    state = await captureState('desktop-roman-search-trier');
+    assertCheck(state.entryIds.includes('trier-roman-monuments'), 'Roman search should find Trier', state);
+
+    await clickEntry('trier-roman-monuments', '트리어 로마 유적');
+    state = await captureState('desktop-roman-detail-trier');
+    assertCheck(state.detailTitle === '트리어 로마 유적' && state.detailHasConfidence && state.detailActions === 2, 'Roman detail should show Trier and detail actions', state);
+
+    await clickDetailAction('close');
+    await waitForExpression("document.querySelector('#detailPanel')?.classList.contains('is-empty') && !document.querySelector('.entry-card.active')", 'desktop Roman detail closes');
+    state = await captureState('desktop-roman-detail-closed');
+    assertCheck(state.detailHidden && state.markers === 1 && state.labels === 1, 'Closing Roman detail should preserve current search markers', state);
+
+    await setSearch('', 8);
+    await clickContextId('imperial-frontiers-britain-rhine', 2);
+    state = await captureState('desktop-roman-frontier-context');
+    assertCheck(
+      state.entryIds.includes('hadrians-wall') &&
+        state.entryIds.includes('trier-roman-monuments') &&
+        state.contextFilterButtons <= 4,
+      'Roman frontier context should return Hadrian wall and Trier while filters collapse again',
+      state
+    );
+
+    await selectDataset(datasets[0]);
+    await waitForExpression("typeof stage2Map !== 'undefined' && stage2Map.getZoom() <= 4", 'Atlantic map refits after Roman dataset');
+    state = await captureState('desktop-return-atlantic-after-roman');
+    assertCheck(
+      state.entryCountNumber === 8 &&
+        state.markers === 8 &&
+        state.labels === 8 &&
+        state.mapZoom <= 4 &&
+        !state.entryIds.includes('hadrians-wall') &&
+        !state.entryIds.includes('trier-roman-monuments'),
+      'Switching away from Roman dataset should clear stale Roman list, markers, labels, and map view',
+      state
+    );
+
     const desktopPng = await client.send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: false }, sessionId);
     await writeFile(desktopShot, Buffer.from(desktopPng.data, 'base64'));
 
@@ -502,28 +547,28 @@ async function main() {
       screenOrientation: { type: 'portraitPrimary', angle: 0 }
     });
 
-    await selectDataset(persia);
+    await selectDataset(roman);
     await evaluate(`(() => {
       const list = document.querySelector('.entry-list');
       list.scrollTop = 360;
     })()`);
     await waitForExpression("document.querySelector('.entry-list')?.scrollTop > 0", 'mobile entry list scrolls');
-    state = await captureState('mobile-persia-list-scroll');
+    state = await captureState('mobile-roman-list-scroll');
     assertCheck(state.entryListCanScroll && state.entryListScrollTop > 0 && state.contextFilterButtons <= 4, 'Mobile Stage 2 entry list should scroll independently with compact filters', state);
 
-    await clickEntry('pasargadae', '파사르가다에');
+    await clickEntry('roman-forum', '로마 포룸');
     await waitForExpression("document.querySelector('#detailPanel')?.getBoundingClientRect().top < 80", 'mobile detail scrolls into view');
-    state = await captureState('mobile-persia-detail-pasargadae');
-    assertCheck(state.detailTitle === '파사르가다에' && state.detailPosition === 'static' && state.detailTop < 80 && state.documentHeight > state.viewportHeight, 'Mobile detail should sit in normal page flow and scroll into view after selection', state);
+    state = await captureState('mobile-roman-detail-forum');
+    assertCheck(state.detailTitle === '로마 포룸' && state.detailPosition === 'static' && state.detailTop < 80 && state.documentHeight > state.viewportHeight, 'Mobile detail should sit in normal page flow and scroll into view after selection', state);
 
     await clickDetailAction('focus-map');
     await waitForExpression("(() => { const top = document.querySelector('#stage2Map')?.getBoundingClientRect().top || 0; return typeof stage2Map !== 'undefined' && stage2Map.getZoom() >= 8 && top > -80 && top < window.innerHeight - 80; })()", 'mobile detail map focus returns to map');
-    state = await captureState('mobile-persia-focus-map');
-    assertCheck(state.detailTitle === '파사르가다에' && state.mapTop > -80 && state.mapTop < state.viewportHeight - 80 && state.mapZoom >= 8, 'Mobile map focus should return to the selected map location', state);
+    state = await captureState('mobile-roman-focus-map');
+    assertCheck(state.detailTitle === '로마 포룸' && state.mapTop > -80 && state.mapTop < state.viewportHeight - 80 && state.mapZoom >= 8, 'Mobile map focus should return to the selected map location', state);
 
     await clickDetailAction('close');
     await waitForExpression("document.querySelector('#detailPanel')?.classList.contains('is-empty') && !document.querySelector('.entry-card.active')", 'mobile detail closes');
-    state = await captureState('mobile-persia-detail-closed');
+    state = await captureState('mobile-roman-detail-closed');
     assertCheck(state.detailHidden && state.activeEntryCards === 0 && state.mapTop > -80 && state.mapTop < state.viewportHeight - 80, 'Mobile close should hide detail and return to the map area', state);
 
     const mobilePng = await client.send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: false }, sessionId);
