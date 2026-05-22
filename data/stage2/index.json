@@ -68,6 +68,12 @@
       "titleKo": "메소아메리카 핵심 유적",
       "path": "data/stage2/mesoamerica-core-preview.json",
       "status": "preview-only"
+    },
+    {
+      "id": "stage2-west-africa-early-states-preview",
+      "titleKo": "서아프리카 초기 국가와 교역망",
+      "path": "data/stage2/west-africa-early-states-preview.json",
+      "status": "preview-only"
     }
   ]
 }

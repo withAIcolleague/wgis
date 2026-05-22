@@ -1,0 +1,513 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-west-africa-early-states-preview",
+  "titleKo": "2단계 미리보기: 서아프리카 초기 국가와 교역망",
+  "descriptionKo": "니제르 내륙 삼각주의 초기 도시화, 사헬 제국의 금·소금 교역, 말리·송가이 이슬람 학문 도시, 요루바·에도·이그보 삼림대의 왕권·공예 중심지를 비교하는 2단계 미리보기 데이터입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "초기 도시화",
+        "가나 제국",
+        "말리·송가이",
+        "요루바 도시국가",
+        "베닌 왕국",
+        "이그보 초기 금속문화"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "니제르 내륙 삼각주",
+        "서수단 사헬",
+        "사하라 남연",
+        "요루바랜드",
+        "에도·베닌",
+        "이그보랜드"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "초기 도시화",
+        "사하라 횡단 교역",
+        "금·소금 교역",
+        "이슬람 학문",
+        "제국 수도",
+        "흙건축",
+        "궁정 예술",
+        "금속공예"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지도 유형",
+      "options": [
+        "장소",
+        "유적"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "west-african-early-states-trade-networks",
+      "labelKo": "서아프리카 초기 국가와 교역망",
+      "parentId": null,
+      "periodKo": "기원전 3세기-19세기",
+      "summaryKo": "중부 니제르의 초기 도시화, 사하라 횡단 금·소금 교역, 사헬 제국, 남부 나이지리아 삼림대 왕권과 공예 중심지를 함께 비교하는 상위 맥락입니다."
+    },
+    {
+      "id": "middle-niger-inland-urbanism",
+      "labelKo": "중부 니제르 내륙 도시화",
+      "parentId": "west-african-early-states-trade-networks",
+      "periodKo": "기원전 250년경-14세기",
+      "summaryKo": "젠네-제노를 중심으로 니제르 내륙 삼각주에서 철기, 쌀 재배, 테라코타, 지역 교역망이 결합해 자생적 도시 네트워크가 성장한 맥락입니다."
+    },
+    {
+      "id": "trans-saharan-gold-salt-trade",
+      "labelKo": "사하라 횡단 금·소금 교역",
+      "parentId": "west-african-early-states-trade-networks",
+      "periodKo": "8-16세기",
+      "summaryKo": "마그레브, 사하라 오아시스, 서수단 사헬을 잇는 교역로에서 금, 소금, 구리, 필사본, 말과 낙타 운송이 정치 권력과 도시 성장을 뒷받침한 맥락입니다."
+    },
+    {
+      "id": "ghana-wagadu-sahelian-power",
+      "labelKo": "가나·와가두 사헬 권력",
+      "parentId": "west-african-early-states-trade-networks",
+      "periodKo": "4-13세기",
+      "summaryKo": "쿰비 살레와 아우다곳을 통해 사하라 남연의 가나 제국 권력, 무슬림 상인 구역, 금·소금 교역 통제, 알모라비드 접촉을 다루는 맥락입니다."
+    },
+    {
+      "id": "mali-songhai-islamic-learning",
+      "labelKo": "말리·송가이 이슬람 학문 도시",
+      "parentId": "west-african-early-states-trade-networks",
+      "periodKo": "13-16세기",
+      "summaryKo": "팀북투와 가오를 중심으로 말리·송가이 세계에서 교역, 모스크, 필사본, 산코레 학문권이 결합한 사헬 이슬람 도시 맥락입니다."
+    },
+    {
+      "id": "songhai-imperial-niger-corridor",
+      "labelKo": "송가이 제국과 니제르 강 회랑",
+      "parentId": "west-african-early-states-trade-networks",
+      "periodKo": "15-16세기",
+      "summaryKo": "가오와 팀북투를 잇는 니제르 강 중류의 정치·군사·교역 회랑을 통해 송가이 제국의 수도권과 사헬 통치 구조를 보는 맥락입니다."
+    },
+    {
+      "id": "yoruba-ife-sacred-kingship",
+      "labelKo": "요루바 이페 성스러운 왕권",
+      "parentId": "west-african-early-states-trade-networks",
+      "periodKo": "11-15세기",
+      "summaryKo": "일레 이페의 왕권, 종교적 중심성, 자연주의적 테라코타·금속 두상, 포장도로와 궁정 전통을 통해 요루바 도시문화의 기준점을 다루는 맥락입니다."
+    },
+    {
+      "id": "edo-benin-court-atlantic-world",
+      "labelKo": "에도·베닌 궁정과 대서양 세계",
+      "parentId": "west-african-early-states-trade-networks",
+      "periodKo": "13-19세기",
+      "summaryKo": "베닌시티의 오바 궁정, 성벽·해자, 길드 조직, 놋쇠 부조와 상아 예술, 15세기 이후 대서양 교역 접촉을 연결해 보는 맥락입니다."
+    },
+    {
+      "id": "igbo-ukwu-metalwork-exchange",
+      "labelKo": "이그보-우쿠 금속공예와 교류",
+      "parentId": "west-african-early-states-trade-networks",
+      "periodKo": "9세기",
+      "summaryKo": "이그보-우쿠의 청동·구리 공예, 구슬, 의례 매장 유구를 통해 사헬 제국 밖의 남동부 나이지리아 교류망과 공예 기술을 보여주는 맥락입니다."
+    },
+    {
+      "id": "west-african-craft-ritual-centers",
+      "labelKo": "서아프리카 공예와 의례 중심지",
+      "parentId": "west-african-early-states-trade-networks",
+      "periodKo": "기원전 3세기-19세기",
+      "summaryKo": "테라코타, 흙건축, 청동·구리·놋쇠 공예, 왕권 의례, 장례와 궁정 예술을 비교해 서아프리카 도시와 국가 형성을 물질문화 관점에서 묶는 맥락입니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "jenne-jeno",
+      "titleKo": "젠네-제노",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "말리",
+      "coordinates": {
+        "lat": 13.888,
+        "lng": -4.543
+      },
+      "yearLabelKo": "기원전 250년경-14세기",
+      "summaryKo": "니제르 내륙 삼각주의 초기 도시화와 장거리 교역을 보여주는 대표 유적으로, 철기, 쌀 재배, 테라코타, 지역 교역망이 결합한 서아프리카 내부 도시 네트워크의 기준점입니다.",
+      "stage2": {
+        "primaryContextId": "middle-niger-inland-urbanism",
+        "contextIds": [
+          "west-african-early-states-trade-networks",
+          "middle-niger-inland-urbanism",
+          "west-african-craft-ritual-centers"
+        ],
+        "periodPathKo": [
+          "고대",
+          "서아프리카 중부 니제르",
+          "내륙 삼각주 초기 도시화"
+        ],
+        "topicTagsKo": [
+          "젠네-제노",
+          "중부 니제르",
+          "철기",
+          "쌀 재배",
+          "테라코타"
+        ],
+        "uiFilters": {
+          "era": "초기 도시화",
+          "region": "니제르 내륙 삼각주",
+          "theme": [
+            "초기 도시화",
+            "금속공예"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "Metropolitan Museum 자료와 Britannica 설명을 사용하지만 유적권이 넓어 대표 좌표는 현대 젠네 남동쪽 유적권의 근사값으로 관리합니다."
+        }
+      }
+    },
+    {
+      "entryId": "timbuktu",
+      "titleKo": "팀북투",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "말리",
+      "coordinates": {
+        "lat": 16.7666,
+        "lng": -3.0026
+      },
+      "yearLabelKo": "15-16세기 전성기",
+      "summaryKo": "사하라 남쪽 관문에 자리한 교역·학문 도시로, 금·소금 교역, 필사본, 이슬람 교육, 징가레베르·산코레·시디 야히아 모스크가 말리·송가이 세계의 지식권을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "mali-songhai-islamic-learning",
+        "contextIds": [
+          "west-african-early-states-trade-networks",
+          "trans-saharan-gold-salt-trade",
+          "mali-songhai-islamic-learning",
+          "songhai-imperial-niger-corridor"
+        ],
+        "periodPathKo": [
+          "중세",
+          "서수단 사헬",
+          "말리·송가이 교역과 학문 도시"
+        ],
+        "topicTagsKo": [
+          "팀북투",
+          "말리 제국",
+          "송가이",
+          "산코레",
+          "필사본"
+        ],
+        "uiFilters": {
+          "era": "말리·송가이",
+          "region": "서수단 사헬",
+          "theme": [
+            "사하라 횡단 교역",
+            "이슬람 학문",
+            "흙건축"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 세계유산 자료와 World History Encyclopedia 말리 제국 항목을 함께 사용해 역사도시 위치와 교역·학문 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "gao",
+      "titleKo": "가오",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "말리",
+      "coordinates": {
+        "lat": 16.2895,
+        "lng": -0.0447
+      },
+      "yearLabelKo": "15-16세기 송가이 수도",
+      "summaryKo": "니제르 강 중류의 교역 거점이자 송가이 제국 수도로 성장한 도시입니다. 아스키아 무덤은 제국 통치, 이슬람 권위, 사헬 흙건축 전통이 만나는 지점을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "songhai-imperial-niger-corridor",
+        "contextIds": [
+          "west-african-early-states-trade-networks",
+          "trans-saharan-gold-salt-trade",
+          "mali-songhai-islamic-learning",
+          "songhai-imperial-niger-corridor"
+        ],
+        "periodPathKo": [
+          "중세",
+          "니제르 강 중류",
+          "송가이 제국 수도권"
+        ],
+        "topicTagsKo": [
+          "가오",
+          "송가이 제국",
+          "아스키아 무함마드",
+          "아스키아 무덤",
+          "니제르 강"
+        ],
+        "uiFilters": {
+          "era": "말리·송가이",
+          "region": "서수단 사헬",
+          "theme": [
+            "제국 수도",
+            "사하라 횡단 교역",
+            "흙건축"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 아스키아 무덤 자료와 World History Encyclopedia 송가이 제국 항목을 기준으로 가오의 수도·교역 맥락을 확인했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "koumbi-saleh",
+      "titleKo": "쿰비 살레",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "모리타니",
+      "coordinates": {
+        "lat": 15.7667,
+        "lng": -8.0167
+      },
+      "yearLabelKo": "4-13세기",
+      "summaryKo": "가나 제국의 수도로 가장 널리 비정되는 사헬 고고유적으로, 왕의 구역과 무슬림 상인 구역, 모스크와 대규모 취락 흔적을 통해 금·소금 교역을 통제한 권력 중심지를 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "ghana-wagadu-sahelian-power",
+        "contextIds": [
+          "west-african-early-states-trade-networks",
+          "trans-saharan-gold-salt-trade",
+          "ghana-wagadu-sahelian-power"
+        ],
+        "periodPathKo": [
+          "중세",
+          "서수단 사헬",
+          "가나·와가두 권력과 교역 수도"
+        ],
+        "topicTagsKo": [
+          "쿰비 살레",
+          "가나 제국",
+          "와가두",
+          "소닌케",
+          "금·소금 교역"
+        ],
+        "uiFilters": {
+          "era": "가나 제국",
+          "region": "사하라 남연",
+          "theme": [
+            "금·소금 교역",
+            "제국 수도",
+            "사하라 횡단 교역"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "UNESCO 잠정목록과 WHE·Britannica 자료를 사용하지만 고대 수도 비정과 유적권 범위가 넓어 표시 좌표는 근사값으로 관리합니다."
+        }
+      }
+    },
+    {
+      "entryId": "aoudaghost",
+      "titleKo": "아우다곳",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "모리타니",
+      "coordinates": {
+        "lat": 17.4235,
+        "lng": -10.406
+      },
+      "yearLabelKo": "8-13세기",
+      "summaryKo": "마그레브와 서수단을 잇는 사하라 횡단 교역로의 핵심 중계 도시로, 금·철·구리·소금, 저울과 금속공예 자료를 통해 가나 제국 영향권과 알모라비드 접촉을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "trans-saharan-gold-salt-trade",
+        "contextIds": [
+          "west-african-early-states-trade-networks",
+          "trans-saharan-gold-salt-trade",
+          "ghana-wagadu-sahelian-power"
+        ],
+        "periodPathKo": [
+          "중세",
+          "사하라 남연",
+          "마그레브-서수단 교역 중계"
+        ],
+        "topicTagsKo": [
+          "아우다곳",
+          "테그다우스트",
+          "가나 제국",
+          "알모라비드",
+          "사하라 교역"
+        ],
+        "uiFilters": {
+          "era": "가나 제국",
+          "region": "사하라 남연",
+          "theme": [
+            "사하라 횡단 교역",
+            "금·소금 교역",
+            "금속공예"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "UNESCO 테그다우스트 잠정목록과 Britannica 설명을 사용하되, 현장 표시는 공개 유적권 근사 좌표로 관리합니다."
+        }
+      }
+    },
+    {
+      "entryId": "ife",
+      "titleKo": "이페",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "나이지리아",
+      "coordinates": {
+        "lat": 7.4905,
+        "lng": 4.5521
+      },
+      "yearLabelKo": "11-15세기 전성기",
+      "summaryKo": "요루바 세계의 종교적·왕권적 중심지로, 테라코타와 금속 두상, 포장도로, 궁정 전통을 통해 서아프리카 삼림대 도시문화와 베닌 왕권·예술 전통의 연결점을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "yoruba-ife-sacred-kingship",
+        "contextIds": [
+          "west-african-early-states-trade-networks",
+          "yoruba-ife-sacred-kingship",
+          "west-african-craft-ritual-centers"
+        ],
+        "periodPathKo": [
+          "중세",
+          "남부 나이지리아 삼림대",
+          "요루바 성스러운 왕권과 도시문화"
+        ],
+        "topicTagsKo": [
+          "이페",
+          "일레 이페",
+          "요루바",
+          "오오니",
+          "테라코타 두상"
+        ],
+        "uiFilters": {
+          "era": "요루바 도시국가",
+          "region": "요루바랜드",
+          "theme": [
+            "궁정 예술",
+            "금속공예",
+            "초기 도시화"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "Metropolitan Museum, Britannica, World History Encyclopedia 자료가 이페의 왕권·공예·도시 맥락을 함께 뒷받침하며 현대 일레 이페 중심 좌표를 사용합니다."
+        }
+      }
+    },
+    {
+      "entryId": "benin-city",
+      "titleKo": "베닌시티",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "나이지리아",
+      "coordinates": {
+        "lat": 6.3382,
+        "lng": 5.6258
+      },
+      "yearLabelKo": "13-19세기",
+      "summaryKo": "에도인이 세운 베닌 왕국의 수도로, 오바 궁정, 길드 조직, 토루·해자 체계, 놋쇠 부조와 상아 예술, 15세기 이후 대서양 교역 접촉을 함께 보여주는 중심지입니다.",
+      "stage2": {
+        "primaryContextId": "edo-benin-court-atlantic-world",
+        "contextIds": [
+          "west-african-early-states-trade-networks",
+          "edo-benin-court-atlantic-world",
+          "west-african-craft-ritual-centers"
+        ],
+        "periodPathKo": [
+          "중세-근대",
+          "남부 나이지리아 에도",
+          "베닌 왕국 궁정과 대서양 접촉"
+        ],
+        "topicTagsKo": [
+          "베닌시티",
+          "베닌 왕국",
+          "오바",
+          "베닌 브론즈",
+          "베닌 성벽"
+        ],
+        "uiFilters": {
+          "era": "베닌 왕국",
+          "region": "에도·베닌",
+          "theme": [
+            "궁정 예술",
+            "금속공예",
+            "제국 수도"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 0,
+          "referenceSources": 2,
+          "noteKo": "World History Encyclopedia와 Britannica 항목을 바탕으로 베닌 왕국 수도와 궁정 예술 맥락을 확인하며, 표시는 현대 베닌시티 도심 대표 좌표를 사용합니다."
+        }
+      }
+    },
+    {
+      "entryId": "igbo-ukwu",
+      "titleKo": "이그보-우쿠",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "나이지리아",
+      "coordinates": {
+        "lat": 6.012,
+        "lng": 7.018
+      },
+      "yearLabelKo": "9세기",
+      "summaryKo": "9세기 전후의 정교한 청동·구리 공예, 유리·카넬리언 구슬, 의례 매장 유구로 알려진 고고유적으로, 사헬 제국 밖의 남동부 나이지리아 교류망과 공예 기술을 보여줍니다.",
+      "stage2": {
+        "primaryContextId": "igbo-ukwu-metalwork-exchange",
+        "contextIds": [
+          "west-african-early-states-trade-networks",
+          "igbo-ukwu-metalwork-exchange",
+          "west-african-craft-ritual-centers"
+        ],
+        "periodPathKo": [
+          "중세 초기",
+          "남동부 나이지리아",
+          "이그보 초기 금속공예와 의례"
+        ],
+        "topicTagsKo": [
+          "이그보-우쿠",
+          "이그보",
+          "청동 공예",
+          "구슬",
+          "의례 매장"
+        ],
+        "uiFilters": {
+          "era": "이그보 초기 금속문화",
+          "region": "이그보랜드",
+          "theme": [
+            "금속공예",
+            "궁정 예술"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "approximate",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "Metropolitan Museum, Britannica, Cambridge 연구 자료를 사용하지만 세 발굴 구역이 마을 안에 분산되어 대표 좌표는 근사값으로 유지합니다."
+        }
+      }
+    }
+  ]
+}

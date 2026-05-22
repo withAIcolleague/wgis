@@ -151,6 +151,17 @@ The eleventh pilot dataset tests Mesoamerican formative, Maya, Teotihuacan, and 
 - `teotihuacan`
 - `tenochtitlan`
 
+The twelfth pilot dataset tests West African early states, inland urbanism, trans-Saharan trade, Islamic learning cities, forest-zone kingship, and craft/ritual centers:
+
+- `jenne-jeno`
+- `timbuktu`
+- `gao`
+- `koumbi-saleh`
+- `aoudaghost`
+- `ife`
+- `benin-city`
+- `igbo-ukwu`
+
 The dataset list is managed in:
 
 ```text
@@ -310,3 +321,18 @@ The 2026-05-22 eleven-dataset browser pass checks `/stage2-preview.html` after a
 - Switching back from the Mesoamerica dataset to Atlantic revolutions clears stale Mesoamerica list items, markers, labels, and map zoom state.
 - On mobile, the Mesoamerica entry list scrolls independently, `산로렌소 테노치티틀란` detail scrolls into view, `지도에서 보기` returns to the map, and `닫기` hides the detail panel.
 - Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-eleven-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-eleven-datasets-mobile.png`.
+
+## Twelve-Dataset Public Usability Pass
+
+The 2026-05-22 twelve-dataset browser pass checks `/stage2-preview.html` after adding the West African early states and trade networks pilot dataset:
+
+- Dataset selector exposes 12 datasets.
+- All 12 indexed datasets render their expected entry, marker, and permanent-label counts: Atlantic revolutions 8, Ethiopia 8, Mesopotamia 10, Egypt 14, Indus 8, Early China 8, Ancient Greece 10, Achaemenid Persia 8, Roman Republic and Empire 8, Magadha-Maurya 8, Mesoamerica 8, and West Africa 8.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control after every dataset switch.
+- Searching `팀북투` in the West Africa dataset narrows the list and map to 1 entry, marker, and label.
+- Selecting `팀북투` opens the detail panel with source-confidence information and detail actions.
+- Closing the `팀북투` detail panel preserves the current search marker and label.
+- The `사하라 횡단 금·소금 교역` context filter returns 4 entries: `팀북투`, `가오`, `쿰비 살레`, and `아우다곳`.
+- Switching back from the West Africa dataset to Atlantic revolutions clears stale West Africa list items, markers, labels, and map zoom state.
+- On mobile, the West Africa entry list scrolls independently, `젠네-제노` detail scrolls into view, `지도에서 보기` returns to the map, and `닫기` hides the detail panel.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twelve-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twelve-datasets-mobile.png`.

@@ -76,6 +76,11 @@ const datasets = [
     path: 'data/stage2/mesoamerica-core-preview.json',
     count: 8,
     firstEntryId: 'san-lorenzo-tenochtitlan'
+  },
+  {
+    path: 'data/stage2/west-africa-early-states-preview.json',
+    count: 8,
+    firstEntryId: 'jenne-jeno'
   }
 ];
 
@@ -173,8 +178,8 @@ function assertCheck(condition, message, details = undefined) {
 async function main() {
   await mkdir(outputDir, { recursive: true });
   const userDataDir = await mkdtemp(path.join(os.tmpdir(), 'wgis-stage2-public-'));
-  const desktopShot = path.join(outputDir, 'wgis-stage2-eleven-datasets-desktop.png');
-  const mobileShot = path.join(outputDir, 'wgis-stage2-eleven-datasets-mobile.png');
+  const desktopShot = path.join(outputDir, 'wgis-stage2-twelve-datasets-desktop.png');
+  const mobileShot = path.join(outputDir, 'wgis-stage2-twelve-datasets-mobile.png');
 
   const chrome = spawn(chromePath, [
     '--headless=new',
@@ -424,6 +429,7 @@ async function main() {
     const roman = datasets.find(dataset => dataset.path.endsWith('roman-empire-core-preview.json'));
     const magadha = datasets.find(dataset => dataset.path.endsWith('magadha-maurya-core-preview.json'));
     const mesoamerica = datasets.find(dataset => dataset.path.endsWith('mesoamerica-core-preview.json'));
+    const westAfrica = datasets.find(dataset => dataset.path.endsWith('west-africa-early-states-preview.json'));
     await selectDataset(greece);
     await setSearch('델포이', 1);
     state = await captureState('desktop-greece-search-delphi');
@@ -629,6 +635,47 @@ async function main() {
       state
     );
 
+    await selectDataset(westAfrica);
+    await setSearch('팀북투', 1);
+    state = await captureState('desktop-west-africa-search-timbuktu');
+    assertCheck(state.entryIds.includes('timbuktu'), 'West Africa search should find Timbuktu', state);
+
+    await clickEntry('timbuktu', '팀북투');
+    state = await captureState('desktop-west-africa-detail-timbuktu');
+    assertCheck(state.detailTitle === '팀북투' && state.detailHasConfidence && state.detailActions === 2, 'West Africa detail should show Timbuktu and detail actions', state);
+
+    await clickDetailAction('close');
+    await waitForExpression("document.querySelector('#detailPanel')?.classList.contains('is-empty') && !document.querySelector('.entry-card.active')", 'desktop West Africa detail closes');
+    state = await captureState('desktop-west-africa-detail-closed');
+    assertCheck(state.detailHidden && state.markers === 1 && state.labels === 1, 'Closing West Africa detail should preserve current search markers', state);
+
+    await setSearch('', 8);
+    await clickContextId('trans-saharan-gold-salt-trade', 4);
+    state = await captureState('desktop-west-africa-trans-saharan-context');
+    assertCheck(
+      state.entryIds.includes('timbuktu') &&
+        state.entryIds.includes('gao') &&
+        state.entryIds.includes('koumbi-saleh') &&
+        state.entryIds.includes('aoudaghost') &&
+        state.contextFilterButtons <= 4,
+      'Trans-Saharan context should return Timbuktu, Gao, Koumbi Saleh, and Aoudaghost while filters collapse again',
+      state
+    );
+
+    await selectDataset(datasets[0]);
+    await waitForExpression("typeof stage2Map !== 'undefined' && stage2Map.getZoom() <= 4", 'Atlantic map refits after West Africa dataset');
+    state = await captureState('desktop-return-atlantic-after-west-africa');
+    assertCheck(
+      state.entryCountNumber === 8 &&
+        state.markers === 8 &&
+        state.labels === 8 &&
+        state.mapZoom <= 4 &&
+        !state.entryIds.includes('timbuktu') &&
+        !state.entryIds.includes('aoudaghost'),
+      'Switching away from West Africa dataset should clear stale list, markers, labels, and map view',
+      state
+    );
+
     const desktopPng = await client.send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: false }, sessionId);
     await writeFile(desktopShot, Buffer.from(desktopPng.data, 'base64'));
 
@@ -642,28 +689,28 @@ async function main() {
       screenOrientation: { type: 'portraitPrimary', angle: 0 }
     });
 
-    await selectDataset(mesoamerica);
+    await selectDataset(westAfrica);
     await evaluate(`(() => {
       const list = document.querySelector('.entry-list');
       list.scrollTop = 360;
     })()`);
     await waitForExpression("document.querySelector('.entry-list')?.scrollTop > 0", 'mobile entry list scrolls');
-    state = await captureState('mobile-mesoamerica-list-scroll');
+    state = await captureState('mobile-west-africa-list-scroll');
     assertCheck(state.entryListCanScroll && state.entryListScrollTop > 0 && state.contextFilterButtons <= 4, 'Mobile Stage 2 entry list should scroll independently with compact filters', state);
 
-    await clickEntry('san-lorenzo-tenochtitlan', '산로렌소 테노치티틀란');
+    await clickEntry('jenne-jeno', '젠네-제노');
     await waitForExpression("document.querySelector('#detailPanel')?.getBoundingClientRect().top < 80", 'mobile detail scrolls into view');
-    state = await captureState('mobile-mesoamerica-detail-san-lorenzo');
-    assertCheck(state.detailTitle === '산로렌소 테노치티틀란' && state.detailPosition === 'static' && state.detailTop < 80 && state.documentHeight > state.viewportHeight, 'Mobile detail should sit in normal page flow and scroll into view after selection', state);
+    state = await captureState('mobile-west-africa-detail-jenne-jeno');
+    assertCheck(state.detailTitle === '젠네-제노' && state.detailPosition === 'static' && state.detailTop < 80 && state.documentHeight > state.viewportHeight, 'Mobile detail should sit in normal page flow and scroll into view after selection', state);
 
     await clickDetailAction('focus-map');
     await waitForExpression("(() => { const top = document.querySelector('#stage2Map')?.getBoundingClientRect().top || 0; return typeof stage2Map !== 'undefined' && stage2Map.getZoom() >= 8 && top > -80 && top < window.innerHeight - 80; })()", 'mobile detail map focus returns to map');
-    state = await captureState('mobile-mesoamerica-focus-map');
-    assertCheck(state.detailTitle === '산로렌소 테노치티틀란' && state.mapTop > -80 && state.mapTop < state.viewportHeight - 80 && state.mapZoom >= 8, 'Mobile map focus should return to the selected map location', state);
+    state = await captureState('mobile-west-africa-focus-map');
+    assertCheck(state.detailTitle === '젠네-제노' && state.mapTop > -80 && state.mapTop < state.viewportHeight - 80 && state.mapZoom >= 8, 'Mobile map focus should return to the selected map location', state);
 
     await clickDetailAction('close');
     await waitForExpression("document.querySelector('#detailPanel')?.classList.contains('is-empty') && !document.querySelector('.entry-card.active')", 'mobile detail closes');
-    state = await captureState('mobile-mesoamerica-detail-closed');
+    state = await captureState('mobile-west-africa-detail-closed');
     assertCheck(state.detailHidden && state.activeEntryCards === 0 && state.mapTop > -80 && state.mapTop < state.viewportHeight - 80, 'Mobile close should hide detail and return to the map area', state);
 
     const mobilePng = await client.send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: false }, sessionId);
