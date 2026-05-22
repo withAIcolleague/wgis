@@ -153,12 +153,17 @@ const datasets = [
     path: 'data/stage2/east-asia-medieval-capitals-knowledge-cities-preview.json',
     count: 8,
     firstEntryId: 'changan-xian'
+  },
+  {
+    path: 'data/stage2/europe-renaissance-science-cities-preview.json',
+    count: 8,
+    firstEntryId: 'florence'
   }
 ];
 
 const latestDataset = datasets[datasets.length - 1];
-const desktopShot = path.join(outputDir, 'wgis-stage2-twenty-seven-datasets-desktop.png');
-const mobileShot = path.join(outputDir, 'wgis-stage2-twenty-seven-datasets-mobile.png');
+const desktopShot = path.join(outputDir, 'wgis-stage2-twenty-eight-datasets-desktop.png');
+const mobileShot = path.join(outputDir, 'wgis-stage2-twenty-eight-datasets-mobile.png');
 
 function assertCheck(condition, message, details = undefined) {
   if (!condition) {
@@ -327,59 +332,60 @@ async function main() {
       assertCheck(state.contextFilterButtons <= 4 && state.contextFilterToggle, 'Initial context filters should start compact', state);
 
       dom = await dumpDom(buildUrl({ dataset: latestDataset.path }), userDataDir);
-      state = extractState('desktop-east-asia-medieval-capitals-default', dom);
+      state = extractState('desktop-renaissance-science-default', dom);
       states.push(state);
-      assertCheck(state.entryCards === latestDataset.count && state.entryIds.includes('changan-xian'), 'Latest dataset should render Changan and all entries', state);
+      assertCheck(state.entryCards === latestDataset.count && state.entryIds.includes('florence'), 'Latest dataset should render Florence and all entries', state);
 
-      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, q: '개경' }), userDataDir);
-      state = extractState('desktop-east-asia-medieval-capitals-search-gaegyeong', dom);
+      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, q: '레이던' }), userDataDir);
+      state = extractState('desktop-renaissance-science-search-leiden', dom);
       states.push(state);
-      assertCheck(state.entryCountText === '1개' && state.entryIds.includes('goryeo-gaegyeong'), 'Latest dataset search should find Gaegyeong', state);
+      assertCheck(state.entryCountText === '1개' && state.entryIds.includes('leiden'), 'Latest dataset search should find Leiden', state);
 
-      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, entry: 'changan-xian' }), userDataDir);
-      state = extractState('desktop-east-asia-medieval-capitals-detail-changan', dom);
+      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, entry: 'florence' }), userDataDir);
+      state = extractState('desktop-renaissance-science-detail-florence', dom);
       states.push(state);
       assertCheck(
-        state.detailTitle === '장안' && state.detailActions === 2 && state.hasSourceConfidence,
-        'Latest dataset detail should show Changan, source confidence, and detail actions',
+        state.detailTitle === '피렌체' && state.detailActions === 2 && state.hasSourceConfidence,
+        'Latest dataset detail should show Florence, source confidence, and detail actions',
         state
       );
 
       dom = await dumpDom(buildUrl({
         dataset: latestDataset.path,
-        context: 'korean-medieval-royal-capital-network'
+        context: 'northern-european-observatory-academy-state-science'
       }), userDataDir);
-      state = extractState('desktop-east-asia-medieval-capitals-korea-context', dom);
+      state = extractState('desktop-renaissance-science-northern-context', dom);
       states.push(state);
       assertCheck(
-        state.entryCountText === '2개' &&
-          state.entryIds.includes('silla-seorabeol') &&
-          state.entryIds.includes('goryeo-gaegyeong') &&
-          !state.entryIds.includes('changan-xian'),
-        'Korean medieval capital context should return Seorabeol and Gaegyeong without stale Changan data',
+        state.entryCountText === '3개' &&
+          state.entryIds.includes('leiden') &&
+          state.entryIds.includes('paris-science') &&
+          state.entryIds.includes('london-royal-society') &&
+          !state.entryIds.includes('florence'),
+        'Northern science context should return Leiden, Paris, and London without stale Florence data',
         state
       );
 
       dom = await dumpDom(buildUrl({
         dataset: latestDataset.path,
-        entry: 'nara'
+        entry: 'paris-science'
       }), userDataDir, { width: 390, height: 844 });
-      state = extractState('mobile-east-asia-medieval-capitals-detail-nara', dom);
+      state = extractState('mobile-renaissance-science-detail-paris', dom);
       states.push(state);
       assertCheck(
-        state.ready && state.detailTitle === '나라' && state.detailActions === 2,
-        'Mobile-sized latest dataset render should keep the Nara detail panel available',
+        state.ready && state.detailTitle === '파리 천문대와 과학아카데미' && state.detailActions === 2,
+        'Mobile-sized latest dataset render should keep the Paris science detail panel available',
         state
       );
 
       await captureScreenshot(
-        buildUrl({ dataset: latestDataset.path, entry: 'changan-xian' }),
+        buildUrl({ dataset: latestDataset.path, entry: 'florence' }),
         userDataDir,
         desktopShot,
         { width: 1440, height: 920 }
       );
       await captureScreenshot(
-        buildUrl({ dataset: latestDataset.path, entry: 'nara' }),
+        buildUrl({ dataset: latestDataset.path, entry: 'paris-science' }),
         userDataDir,
         mobileShot,
         { width: 390, height: 844 }

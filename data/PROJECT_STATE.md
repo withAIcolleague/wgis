@@ -14,7 +14,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Current entry count: 250
 - Completed curation batches: 31
 - Latest completed batch: `africa-egypt-late-temple-centers-v1`
-- Latest completed infrastructure milestone: stage-2 twenty-seven-dataset public usability pass
+- Latest completed infrastructure milestone: stage-2 twenty-eight-dataset public usability pass
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
@@ -414,6 +414,19 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - Scope: keep the Stage 2 preview endpoint and browser-state check repeatable after adding the twenty-seventh dataset
   - Checked: 27 indexed dataset endpoints and expected entry counts across 226 Stage 2 preview entries, compact context filters, East Asian medieval capital search/detail/context behavior, stale-data cleanup, and mobile-sized rendering
   - Result: public endpoint and headless browser verification completed for 27 datasets and 226 Stage 2 preview entries; screenshots saved under `C:\Users\Public\Documents\ESTsoft\CreatorTemp\` when the local headless browser runtime is available
+
+- Stage-2 European Renaissance and early modern science cities pilot dataset
+  - Files: `data/stage2/index.json`, `data/stage2/europe-renaissance-science-cities-preview.json`, `scripts/smoke-check.js`, `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`
+  - URL path: `/stage2-preview.html`
+  - Scope: add a twenty-eighth Stage 2 preview dataset using the existing European Renaissance and early modern science cities batch
+  - Model stress test: Florence Medici patronage and Accademia del Cimento, Padua university botanical medicine and Galileo, Bologna university law/medicine/anatomy, Pisa Galileo/botanical/mathematics, Rome Lincean Academy and natural history, Leiden university observatory and print network, Paris royal academy/state observatory science, London Royal Society/Gresham/Greenwich experimental philosophy, and preserved world-heritage science landscapes
+
+- Stage-2 twenty-eight-dataset public usability pass
+  - Files: `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`
+  - URL path: `https://wgis.vercel.app/stage2-preview.html`
+  - Scope: keep the Stage 2 preview endpoint and browser-state check repeatable after adding the twenty-eighth dataset
+  - Checked: 28 indexed dataset endpoints and expected entry counts across 234 Stage 2 preview entries, compact context filters, Renaissance science city search/detail/context behavior, stale-data cleanup, and mobile-sized rendering
+  - Result: public endpoint and headless browser verification completed for 28 datasets and 234 Stage 2 preview entries; screenshots saved under `C:\Users\Public\Documents\ESTsoft\CreatorTemp\` when the local headless browser runtime is available
 
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`
@@ -880,8 +893,8 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 
 ## Next Batch Candidates
 
-1. Stage-2 twenty-eighth pilot dataset
-   - Scope: create another Stage 2 file from European Renaissance and early modern science cities to compare Florence, Padua, Bologna, Pisa, Rome, Leiden, Paris, London, Renaissance patronage, universities, botanical gardens, observatories, academies, printing, and state-sponsored science networks
+1. Stage-2 twenty-ninth pilot dataset
+   - Scope: create another Stage 2 file from modern imperial chokepoints and canal-port cities to compare Suez Canal, Port Said, Singapore Port, Hong Kong Victoria Harbour, Colombo Port, Cape Town Table Bay, Panama Canal, Gibraltar, steamship-era maritime corridors, coaling stations, colonial port logistics, and canal geopolitics
 
 2. First-stage DB next expansion batch
    - Scope: resume focused first-stage source-record growth if the priority shifts back from Stage 2 modeling to raw coverage

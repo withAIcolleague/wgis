@@ -164,6 +164,12 @@
       "titleKo": "동아시아 중세 수도와 지식도시",
       "path": "data/stage2/east-asia-medieval-capitals-knowledge-cities-preview.json",
       "status": "preview-only"
+    },
+    {
+      "id": "stage2-europe-renaissance-science-cities-preview",
+      "titleKo": "유럽 르네상스와 근세 과학도시",
+      "path": "data/stage2/europe-renaissance-science-cities-preview.json",
+      "status": "preview-only"
     }
   ]
 }

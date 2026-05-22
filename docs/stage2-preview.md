@@ -327,6 +327,17 @@ The twenty-seventh pilot dataset tests East Asian medieval capitals, palace-city
 - `silla-seorabeol`
 - `goryeo-gaegyeong`
 
+The twenty-eighth pilot dataset tests European Renaissance and early modern science cities, patronage networks, universities, botanical gardens, observatories, academies, print culture, and state-sponsored science:
+
+- `florence`
+- `padua`
+- `bologna`
+- `pisa`
+- `rome-renaissance`
+- `leiden`
+- `paris-science`
+- `london-royal-society`
+
 The dataset list is managed in:
 
 ```text
@@ -718,3 +729,17 @@ The 2026-05-22 twenty-seven-dataset public browser pass checks `https://wgis.ver
 - The `한반도 중세 왕경과 불교·관학 네트워크` context filter returns `서라벌` and `개경` with 2 markers and 2 labels and no stale Changan data.
 - On mobile, `나라` detail renders with source-confidence information and both detail actions.
 - Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-seven-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-seven-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.
+
+## Twenty-Eight-Dataset Public Usability Pass
+
+The 2026-05-22 twenty-eight-dataset public browser pass checks `https://wgis.vercel.app/stage2-preview.html` after adding the European Renaissance and early modern science cities pilot dataset:
+
+- Dataset selector exposes 28 datasets.
+- All 28 indexed datasets render their expected entry, marker, and permanent-label counts across 234 Stage 2 preview entries.
+- The new Renaissance science dataset exposes 8 entries: `피렌체`, `파도바`, `볼로냐`, `피사`, `로마 린체이 아카데미`, `레이던`, `파리 천문대와 과학아카데미`, and `런던 왕립학회`.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control.
+- Searching `레이던` in the Renaissance science dataset narrows the list and map to `레이던` with 1 marker and 1 label.
+- Selecting `피렌체` opens the detail panel with source-confidence information and detail actions.
+- The `북서유럽 천문대·아카데미·국가 후원 과학` context filter returns `레이던`, `파리 천문대와 과학아카데미`, and `런던 왕립학회` with 3 markers and 3 labels and no stale Florence data.
+- On mobile, `파리 천문대와 과학아카데미` detail renders with source-confidence information and both detail actions.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-eight-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-twenty-eight-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.
