@@ -981,3 +981,30 @@ The 2026-05-22 thirty-seven-dataset public browser pass checks `https://wgis.ver
 - The `몰타 거석 사원과 지하 장송 경관` context filter returns `하자르 킴·므나이드라` and `할 사플리에니 지하묘역` with 2 markers and 2 labels and no stale Stonehenge data.
 - On mobile, `안테케라 돌멘 유적` detail renders with source-confidence information and both detail actions.
 - Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-seven-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-seven-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.
+
+## Thirty-Eighth Pilot Dataset
+
+The Caucasus medieval Christian royal and monastic landscapes pilot dataset adds 8 entries:
+
+- `므츠헤타 역사 기념물`
+- `겔라티 수도원`
+- `하그파트 수도원`
+- `사나힌 수도원`
+- `게가르드 수도원`
+- `에치미아진 대성당`
+- `즈바르트노츠 대성당 유적`
+- `아니 고고 유적`
+
+## Thirty-Eight-Dataset Public Usability Pass
+
+The 2026-06-02 thirty-eight-dataset public browser pass checks `https://wgis.vercel.app/stage2-preview.html` after adding the Caucasus medieval Christian landscapes pilot dataset:
+
+- Dataset selector exposes 38 datasets.
+- All 38 indexed datasets render their expected entry, marker, and permanent-label counts across 315 Stage 2 preview entries.
+- The new Caucasus medieval Christian dataset exposes 8 entries: `므츠헤타 역사 기념물`, `겔라티 수도원`, `하그파트 수도원`, `사나힌 수도원`, `게가르드 수도원`, `에치미아진 대성당`, `즈바르트노츠 대성당 유적`, and `아니 고고 유적`.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control.
+- Searching `게가르드` in the Caucasus dataset narrows the list and map to `게가르드 수도원` with 1 marker and 1 label.
+- Selecting `아니 고고 유적` opens the detail panel with source-confidence information and detail actions.
+- The `아르메니아 수도원 학술·필사 경관` context filter returns `하그파트 수도원`, `사나힌 수도원`, and `게가르드 수도원` with 3 markers and 3 labels and no stale Georgian data.
+- On mobile, `즈바르트노츠 대성당 유적` detail renders with source-confidence information and both detail actions.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-eight-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-eight-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.

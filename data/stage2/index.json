@@ -224,6 +224,12 @@
       "titleKo": "유럽 거석 의례 경관",
       "path": "data/stage2/europe-megalithic-ritual-landscapes-preview.json",
       "status": "preview-only"
+    },
+    {
+      "id": "stage2-caucasus-medieval-christian-landscapes-preview",
+      "titleKo": "중세 캅카스 기독교 경관",
+      "path": "data/stage2/caucasus-medieval-christian-landscapes-preview.json",
+      "status": "preview-only"
     }
   ]
 }

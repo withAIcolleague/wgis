@@ -1096,6 +1096,34 @@
         "English Heritage, National Trust, Heritage Ireland, World Heritage Ireland, Historic Environment Scotland, Heritage Malta, Carnac Alignments, Megalithic Landscapes of Morbihan, and Andalusia Tourism references for site-level management and visitor context",
         "Representative coordinates selected for the visible core monument or central component within each wider prehistoric landscape"
       ]
+    },
+    {
+      "id": "europe-medieval-caucasus-christian-monastic-royal-landscapes-v1",
+      "status": "completed",
+      "completedAt": "2026-06-02",
+      "continentId": "europe",
+      "countryIso2": "GE-AM-TR",
+      "countryKo": "조지아·아르메니아·튀르키예",
+      "worldRegion": "캅카스 중세 기독교·왕권 경관",
+      "focusKo": "중세 캅카스 기독교 수도원·왕권 경관 핵심 지점",
+      "scopeKo": "므츠헤타, 겔라티, 하그파트, 사나힌, 게가르드, 에치미아진, 즈바르트노츠, 아니를 통해 조지아·아르메니아·아니 일대의 왕도 성지, 수도원 학술, 암굴 건축, 중앙돔 교회, 실크로드 도시 경관을 연결하는 핵심 지점",
+      "sourceFile": "data/records/europe/medieval/caucasus-medieval-christian-monastic-royal-landscapes.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "mtskheta-historic-monuments",
+        "gelati-monastery",
+        "haghpat-monastery",
+        "sanahin-monastery",
+        "geghard-monastery",
+        "echmiatsin-cathedral",
+        "zvartnots-cathedral",
+        "ani-archaeological-site"
+      ],
+      "sourceBasis": [
+        "UNESCO World Heritage pages for Historical Monuments of Mtskheta, Gelati Monastery, Monasteries of Haghpat and Sanahin, Monastery of Geghard, Cathedral and Churches of Echmiatsin and Zvartnots, and Archaeological Site of Ani",
+        "Georgia Travel, Mtskheta Municipality, Armenia Travel, Mother See of Holy Etchmiadzin, Turkey Culture Portal, and Turkish Museums references for site-level management and visitor context",
+        "Representative coordinates selected for the visible core monument or central component within each wider medieval Christian landscape"
+      ]
     }
   ]
 }

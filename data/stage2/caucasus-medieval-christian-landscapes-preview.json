@@ -1,0 +1,500 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-caucasus-medieval-christian-landscapes-preview",
+  "titleKo": "2단계 미리보기: 중세 캅카스 기독교 경관",
+  "descriptionKo": "므츠헤타, 겔라티, 하그파트, 사나힌, 게가르드, 에치미아진, 즈바르트노츠, 아니를 통해 조지아·아르메니아·아니 일대의 중세 기독교 왕권, 수도원 학술, 중앙돔 교회, 실크로드 도시 경관을 비교하는 2단계 미리보기 데이터셋입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "고대 말기·초기 기독교",
+        "10-13세기 조지아",
+        "10-13세기 아르메니아",
+        "13세기 암굴 수도원",
+        "7세기 아르메니아",
+        "10-11세기 아니"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "므츠헤타",
+        "이메레티",
+        "로리",
+        "코타이크",
+        "아르마비르",
+        "카르스"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "왕도 성지",
+        "수도원 학술",
+        "필사·서예",
+        "암굴 건축",
+        "중앙돔 교회",
+        "실크로드 도시",
+        "세계유산"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지점 유형",
+      "options": [
+        "유적"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "caucasus-medieval-christian-royal-monastic-landscapes",
+      "labelKo": "중세 캅카스 기독교 왕권·수도원 경관",
+      "parentId": null,
+      "periodKo": "4-13세기",
+      "summaryKo": "조지아와 아르메니아, 아니 일대의 성지, 왕실 수도원, 학술 수도원, 암굴 교회, 중앙돔 대성당, 실크로드 도시를 연결해 캅카스 기독교 경관이 왕권·학문·건축 혁신과 결합한 방식을 봅니다."
+    },
+    {
+      "id": "georgian-royal-church-landscapes",
+      "labelKo": "조지아 왕권과 교회 경관",
+      "parentId": "caucasus-medieval-christian-royal-monastic-landscapes",
+      "periodKo": "4-13세기",
+      "summaryKo": "므츠헤타와 겔라티를 통해 조지아 왕도 성지와 왕실 수도원·아카데미가 기독교 왕권의 기억을 공간화한 방식을 봅니다."
+    },
+    {
+      "id": "mtskheta-kartli-christian-capital",
+      "labelKo": "므츠헤타 카르틀리 왕도 성지",
+      "parentId": "georgian-royal-church-landscapes",
+      "periodKo": "4-11세기",
+      "summaryKo": "므츠헤타를 통해 강 합류부, 스베티츠호벨리, 즈바리, 삼타브로가 조지아 초기 기독교 왕도 기억을 구성한 방식을 봅니다."
+    },
+    {
+      "id": "gelati-georgian-golden-age-academy",
+      "labelKo": "겔라티 조지아 황금기 수도원 아카데미",
+      "parentId": "georgian-royal-church-landscapes",
+      "periodKo": "1106년 이후",
+      "summaryKo": "겔라티를 통해 다비트 4세의 왕실 후원, 수도원 아카데미, 모자이크와 벽화가 조지아 중세 황금기 경관으로 결합한 방식을 봅니다."
+    },
+    {
+      "id": "armenian-monastic-learning-landscapes",
+      "labelKo": "아르메니아 수도원 학술·필사 경관",
+      "parentId": "caucasus-medieval-christian-royal-monastic-landscapes",
+      "periodKo": "10-13세기",
+      "summaryKo": "하그파트, 사나힌, 게가르드를 통해 로리와 아자트 계곡의 수도원들이 학술, 필사, 암굴 건축, 성물 전승을 어떻게 결합했는지 봅니다."
+    },
+    {
+      "id": "haghpat-lori-monastic-school",
+      "labelKo": "하그파트 로리 수도원 학술 중심",
+      "parentId": "armenian-monastic-learning-landscapes",
+      "periodKo": "10-13세기",
+      "summaryKo": "하그파트를 통해 데베드 협곡 위 수도원 복합체가 아르메니아 중세 건축과 학술 네트워크를 형성한 방식을 봅니다."
+    },
+    {
+      "id": "sanahin-lori-scriptorium-academy",
+      "labelKo": "사나힌 필사·서예 학교",
+      "parentId": "armenian-monastic-learning-landscapes",
+      "periodKo": "10-13세기",
+      "summaryKo": "사나힌을 통해 서고, 필사, 서예 교육과 수도원 건축이 로리의 학술 경관으로 묶이는 방식을 봅니다."
+    },
+    {
+      "id": "geghard-rock-cut-monastic-valley",
+      "labelKo": "게가르드 암굴 수도원 계곡",
+      "parentId": "armenian-monastic-learning-landscapes",
+      "periodKo": "13세기",
+      "summaryKo": "게가르드를 통해 상부 아자트 계곡의 절벽, 암굴 교회, 무덤, 성물 전승이 하나의 수도원 경관을 만든 방식을 봅니다."
+    },
+    {
+      "id": "vagharshapat-early-armenian-christian-architecture",
+      "labelKo": "바가르샤파트 초기 아르메니아 기독교 건축",
+      "parentId": "caucasus-medieval-christian-royal-monastic-landscapes",
+      "periodKo": "4-7세기",
+      "summaryKo": "에치미아진과 즈바르트노츠를 통해 아르메니아 기독교의 모좌 성당과 중앙돔 교회 건축 실험을 연결해 봅니다."
+    },
+    {
+      "id": "echmiatsin-mother-cathedral-seat",
+      "labelKo": "에치미아진 아르메니아 모좌 성당",
+      "parentId": "vagharshapat-early-armenian-christian-architecture",
+      "periodKo": "301년 이후",
+      "summaryKo": "에치미아진을 통해 기독교 수용 기억, 주교좌 권위, 바가르샤파트 성지권이 장기간 축적된 방식을 봅니다."
+    },
+    {
+      "id": "zvartnots-central-domed-cathedral",
+      "labelKo": "즈바르트노츠 중앙돔 대성당",
+      "parentId": "vagharshapat-early-armenian-christian-architecture",
+      "periodKo": "643-652년경",
+      "summaryKo": "즈바르트노츠를 통해 7세기 아르메니아 중앙돔 교회 건축이 지역 건축 혁신으로 전개된 방식을 봅니다."
+    },
+    {
+      "id": "ani-bagratid-silk-road-capital",
+      "labelKo": "아니 바그라티드 실크로드 수도",
+      "parentId": "caucasus-medieval-christian-royal-monastic-landscapes",
+      "periodKo": "10-11세기",
+      "summaryKo": "아니를 통해 바그라티드 왕국 수도, 성벽 도시, 교회군, 실크로드 교역이 캅카스 경계 지대에서 결합한 방식을 봅니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "mtskheta-historic-monuments",
+      "titleKo": "므츠헤타 역사 기념물",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "조지아",
+      "coordinates": { "lat": 41.8425, "lng": 44.7214 },
+      "yearLabelKo": "4-11세기 조지아 기독교 왕도와 성지 경관",
+      "summaryKo": "므츠헤타는 아라그비강과 므트크바리강이 만나는 지점의 고대 카르틀리 왕도이자 조지아 기독교 기억의 중심지다. 스베티츠호벨리 대성당, 즈바리 수도원, 삼타브로 일대는 왕권, 성인 전승, 강 합류부 지형이 결합해 캅카스 기독교 왕도 경관을 형성한 방식을 보여준다.",
+      "stage2": {
+        "primaryContextId": "mtskheta-kartli-christian-capital",
+        "contextIds": [
+          "caucasus-medieval-christian-royal-monastic-landscapes",
+          "georgian-royal-church-landscapes",
+          "mtskheta-kartli-christian-capital"
+        ],
+        "periodPathKo": [
+          "중세",
+          "조지아 왕도 성지",
+          "므츠헤타 카르틀리 기독교 중심"
+        ],
+        "topicTagsKo": [
+          "므츠헤타",
+          "스베티츠호벨리",
+          "즈바리",
+          "카르틀리",
+          "왕도 성지"
+        ],
+        "uiFilters": {
+          "era": "고대 말기·초기 기독교",
+          "region": "므츠헤타",
+          "theme": [
+            "왕도 성지",
+            "중앙돔 교회",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO, Georgia Travel, 므츠헤타 지방정부 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "gelati-monastery",
+      "titleKo": "겔라티 수도원",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "조지아",
+      "coordinates": { "lat": 42.2944, "lng": 42.7683 },
+      "yearLabelKo": "1106년 창건, 12-13세기 조지아 수도원·학술 중심",
+      "summaryKo": "겔라티 수도원은 다비트 4세가 세운 조지아 중세 황금기의 왕실 수도원·학술 중심지다. 성당, 모자이크, 벽화, 아카데미 공간은 조지아 왕권이 비잔틴 학문과 정교회 예술을 받아들여 지역적 르네상스를 조직한 방식을 보여준다.",
+      "stage2": {
+        "primaryContextId": "gelati-georgian-golden-age-academy",
+        "contextIds": [
+          "caucasus-medieval-christian-royal-monastic-landscapes",
+          "georgian-royal-church-landscapes",
+          "gelati-georgian-golden-age-academy"
+        ],
+        "periodPathKo": [
+          "중세",
+          "조지아 황금기",
+          "수도원 아카데미"
+        ],
+        "topicTagsKo": [
+          "겔라티",
+          "다비트 4세",
+          "수도원 아카데미",
+          "쿠타이시",
+          "조지아 황금기"
+        ],
+        "uiFilters": {
+          "era": "10-13세기 조지아",
+          "region": "이메레티",
+          "theme": [
+            "수도원 학술",
+            "왕도 성지",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO와 Georgia Travel, UNESCO 문서 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "haghpat-monastery",
+      "titleKo": "하그파트 수도원",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "아르메니아",
+      "coordinates": { "lat": 41.0939, "lng": 44.7119 },
+      "yearLabelKo": "10-13세기 로리 수도원·학술 중심",
+      "summaryKo": "하그파트 수도원은 로리의 데베드 협곡 위에 자리한 아르메니아 중세 수도원 복합체다. 예배당, 가비트, 서고와 학술 공간은 비잔틴 교회 건축 요소와 캅카스 지역 건축 전통이 결합해 아르메니아 수도원 학술권을 만든 과정을 보여준다.",
+      "stage2": {
+        "primaryContextId": "haghpat-lori-monastic-school",
+        "contextIds": [
+          "caucasus-medieval-christian-royal-monastic-landscapes",
+          "armenian-monastic-learning-landscapes",
+          "haghpat-lori-monastic-school"
+        ],
+        "periodPathKo": [
+          "중세",
+          "아르메니아 로리",
+          "수도원 학술 중심"
+        ],
+        "topicTagsKo": [
+          "하그파트",
+          "로리",
+          "데베드 협곡",
+          "키우리키안",
+          "수도원 학술"
+        ],
+        "uiFilters": {
+          "era": "10-13세기 아르메니아",
+          "region": "로리",
+          "theme": [
+            "수도원 학술",
+            "필사·서예",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO와 Armenia Travel, UNESCO 문서 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "sanahin-monastery",
+      "titleKo": "사나힌 수도원",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "아르메니아",
+      "coordinates": { "lat": 41.0872, "lng": 44.6664 },
+      "yearLabelKo": "10-13세기 사본·서예 학교와 수도원 복합체",
+      "summaryKo": "사나힌 수도원은 하그파트와 함께 로리의 중세 아르메니아 수도원 학술권을 대표한다. 교회군, 가비트, 서고, 학술 전통은 필사와 서예, 수도원 교육이 산악 협곡의 종교 경관 속에서 어떻게 조직되었는지를 보여준다.",
+      "stage2": {
+        "primaryContextId": "sanahin-lori-scriptorium-academy",
+        "contextIds": [
+          "caucasus-medieval-christian-royal-monastic-landscapes",
+          "armenian-monastic-learning-landscapes",
+          "sanahin-lori-scriptorium-academy"
+        ],
+        "periodPathKo": [
+          "중세",
+          "아르메니아 로리",
+          "필사·서예 학교"
+        ],
+        "topicTagsKo": [
+          "사나힌",
+          "로리",
+          "필사",
+          "서예",
+          "아르메니아 수도원"
+        ],
+        "uiFilters": {
+          "era": "10-13세기 아르메니아",
+          "region": "로리",
+          "theme": [
+            "수도원 학술",
+            "필사·서예",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO와 Armenia Travel, UNESCO 문서 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "geghard-monastery",
+      "titleKo": "게가르드 수도원",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "아르메니아",
+      "coordinates": { "lat": 40.1405, "lng": 44.8186 },
+      "yearLabelKo": "4세기 기원, 13세기 암굴 수도원 복합체",
+      "summaryKo": "게가르드 수도원은 상부 아자트 계곡의 절벽과 암반을 파고든 교회·무덤·수도 공간으로 구성된다. 암굴 예배당, 가비트, 성물 전승은 아르메니아 중세 건축이 자연 절벽과 성지 기억을 하나의 수도원 경관으로 조직한 방식을 보여준다.",
+      "stage2": {
+        "primaryContextId": "geghard-rock-cut-monastic-valley",
+        "contextIds": [
+          "caucasus-medieval-christian-royal-monastic-landscapes",
+          "armenian-monastic-learning-landscapes",
+          "geghard-rock-cut-monastic-valley"
+        ],
+        "periodPathKo": [
+          "중세",
+          "아르메니아 코타이크",
+          "암굴 수도원 계곡"
+        ],
+        "topicTagsKo": [
+          "게가르드",
+          "아이리방크",
+          "아자트 계곡",
+          "암굴 교회",
+          "성창 전승"
+        ],
+        "uiFilters": {
+          "era": "13세기 암굴 수도원",
+          "region": "코타이크",
+          "theme": [
+            "수도원 학술",
+            "암굴 건축",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO와 Armenia Travel, UNESCO 문서 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "echmiatsin-cathedral",
+      "titleKo": "에치미아진 대성당",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "아르메니아",
+      "coordinates": { "lat": 40.1618, "lng": 44.2911 },
+      "yearLabelKo": "301-303년 전승의 모좌 성당, 중세 아르메니아 교회 중심",
+      "summaryKo": "에치미아진 대성당은 아르메니아 사도교회의 모좌 성당으로, 아르메니아가 기독교를 국가 종교로 받아들인 기억과 결합한다. 바가르샤파트의 성당·교회군은 초기 기독교 성지, 주교좌 권위, 중앙돔 교회 형식이 장기간에 걸쳐 축적된 경관이다.",
+      "stage2": {
+        "primaryContextId": "echmiatsin-mother-cathedral-seat",
+        "contextIds": [
+          "caucasus-medieval-christian-royal-monastic-landscapes",
+          "vagharshapat-early-armenian-christian-architecture",
+          "echmiatsin-mother-cathedral-seat"
+        ],
+        "periodPathKo": [
+          "고대 말기·중세",
+          "바가르샤파트",
+          "아르메니아 모좌 성당"
+        ],
+        "topicTagsKo": [
+          "에치미아진",
+          "바가르샤파트",
+          "아르메니아 사도교회",
+          "모좌 성당",
+          "초기 기독교"
+        ],
+        "uiFilters": {
+          "era": "고대 말기·초기 기독교",
+          "region": "아르마비르",
+          "theme": [
+            "왕도 성지",
+            "중앙돔 교회",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO, Armenia Travel, 아르메니아 사도교회 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "zvartnots-cathedral",
+      "titleKo": "즈바르트노츠 대성당 유적",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "아르메니아",
+      "coordinates": { "lat": 40.1608, "lng": 44.3361 },
+      "yearLabelKo": "643-652년경 중앙돔 대성당",
+      "summaryKo": "즈바르트노츠 대성당 유적은 7세기 아르메니아 중앙돔 교회 건축의 실험성을 보여주는 원형적 유적이다. 에치미아진 성지권과 가까운 이 유적은 초기 중세 아르메니아 건축이 중앙 집중식 공간, 주교좌 권위, 지역적 건축 혁신을 결합한 사례다.",
+      "stage2": {
+        "primaryContextId": "zvartnots-central-domed-cathedral",
+        "contextIds": [
+          "caucasus-medieval-christian-royal-monastic-landscapes",
+          "vagharshapat-early-armenian-christian-architecture",
+          "zvartnots-central-domed-cathedral"
+        ],
+        "periodPathKo": [
+          "중세",
+          "바가르샤파트",
+          "중앙돔 대성당"
+        ],
+        "topicTagsKo": [
+          "즈바르트노츠",
+          "바가르샤파트",
+          "중앙돔",
+          "7세기 아르메니아",
+          "교회 건축"
+        ],
+        "uiFilters": {
+          "era": "7세기 아르메니아",
+          "region": "아르마비르",
+          "theme": [
+            "중앙돔 교회",
+            "왕도 성지",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO와 Armenia Travel, UNESCO 문서 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "ani-archaeological-site",
+      "titleKo": "아니 고고 유적",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "튀르키예",
+      "coordinates": { "lat": 40.5076, "lng": 43.5728 },
+      "yearLabelKo": "10-11세기 바그라티드 왕국 수도와 실크로드 도시",
+      "summaryKo": "아니 고고 유적은 아르메니아 바그라티드 왕국의 수도로 번영한 중세 성곽 도시다. 교회, 성벽, 궁전, 상업 시설과 협곡 지형은 실크로드 교역, 왕권, 다종교 도시 경관이 캅카스 경계 지대에서 결합한 방식을 보여준다.",
+      "stage2": {
+        "primaryContextId": "ani-bagratid-silk-road-capital",
+        "contextIds": [
+          "caucasus-medieval-christian-royal-monastic-landscapes",
+          "ani-bagratid-silk-road-capital"
+        ],
+        "periodPathKo": [
+          "중세",
+          "바그라티드 아니",
+          "실크로드 성곽 수도"
+        ],
+        "topicTagsKo": [
+          "아니",
+          "바그라티드",
+          "카르스",
+          "실크로드",
+          "성곽 도시"
+        ],
+        "uiFilters": {
+          "era": "10-11세기 아니",
+          "region": "카르스",
+          "theme": [
+            "실크로드 도시",
+            "왕도 성지",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO와 튀르키예 문화관광부 자료를 사용했습니다."
+        }
+      }
+    }
+  ]
+}

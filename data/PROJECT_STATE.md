@@ -1,6 +1,6 @@
 # WGIS Data Project State
 
-Last updated: 2026-05-22
+Last updated: 2026-06-02
 
 ## Current Goal
 
@@ -11,10 +11,10 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 307
-- Completed curation batches: 38
-- Latest completed batch: `europe-prehistory-atlantic-mediterranean-megalithic-ritual-landscapes-v1`
-- Latest completed infrastructure milestone: stage-2 thirty-seven-dataset public usability pass
+- Current entry count: 315
+- Completed curation batches: 39
+- Latest completed batch: `europe-medieval-caucasus-christian-monastic-royal-landscapes-v1`
+- Latest completed infrastructure milestone: stage-2 thirty-eight-dataset public usability pass
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
@@ -644,6 +644,33 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - Checked: 37 indexed dataset endpoints and expected entry counts across 307 Stage 2 preview entries, compact context filters, European megalithic search/detail/context behavior, stale-data cleanup, and mobile-sized rendering
   - Result: public endpoint and headless browser verification completed for 37 datasets and 307 Stage 2 preview entries; screenshots saved under `C:\Users\Public\Documents\ESTsoft\CreatorTemp\` when the local headless browser runtime is available
 
+- Caucasus medieval Christian royal and monastic landscapes batch
+  - Batch ID: `europe-medieval-caucasus-christian-monastic-royal-landscapes-v1`
+  - Source file: `data/records/europe/medieval/caucasus-medieval-christian-monastic-royal-landscapes.json`
+  - Entries added: 8
+  - Entry IDs:
+    - `mtskheta-historic-monuments`
+    - `gelati-monastery`
+    - `haghpat-monastery`
+    - `sanahin-monastery`
+    - `geghard-monastery`
+    - `echmiatsin-cathedral`
+    - `zvartnots-cathedral`
+    - `ani-archaeological-site`
+
+- Stage-2 Caucasus medieval Christian landscapes pilot dataset
+  - Files: `data/stage2/index.json`, `data/stage2/caucasus-medieval-christian-landscapes-preview.json`, `scripts/smoke-check.js`, `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`
+  - URL path: `/stage2-preview.html`
+  - Scope: add a thirty-eighth Stage 2 preview dataset using the new Caucasus medieval Christian royal and monastic landscapes source batch
+  - Model stress test: Mtskheta royal sacred landscape, Gelati monastic academy, Haghpat/Sanahin Armenian monastic learning and manuscript culture, Geghard rock-cut monastery, Echmiatsin/Zvartnots early Armenian Christian central-domed architecture, and Ani Bagratid Silk Road capital
+
+- Stage-2 thirty-eight-dataset public usability pass
+  - Files: `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`
+  - URL path: `https://wgis.vercel.app/stage2-preview.html`
+  - Scope: keep the Stage 2 preview endpoint and browser-state check repeatable after adding the thirty-eighth dataset
+  - Checked: 38 indexed dataset endpoints and expected entry counts across 315 Stage 2 preview entries, compact context filters, Caucasus medieval Christian search/detail/context behavior, stale-data cleanup, and mobile-sized rendering
+  - Result: public endpoint and headless browser verification completed for 38 datasets and 315 Stage 2 preview entries; screenshots saved under `C:\Users\Public\Documents\ESTsoft\CreatorTemp\` when the local headless browser runtime is available
+
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`
   - Source file: `data/records/global/legacy/core-seed-entries.json`
@@ -1112,7 +1139,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 1. First-stage DB next expansion batch
    - Scope: continue focused source-record growth with another bounded culture/region/time slice and keep the batch small enough to verify end to end
 
-2. Stage-2 thirty-eighth pilot dataset
+2. Stage-2 thirty-ninth pilot dataset
    - Scope: continue modeling the next focused source-record batch as a Stage 2 preview dataset, or optionally model the legacy core seed entries as a cross-regional demonstration set if we want every existing source file to have a Stage 2 preview
 
 ## Resume Checklist
