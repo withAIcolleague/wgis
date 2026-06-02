@@ -11,10 +11,10 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 331
-- Completed curation batches: 41
-- Latest completed batch: `africa-prehistory-rock-art-ritual-landscapes-v1`
-- Latest completed infrastructure milestone: stage-2 forty-dataset public usability pass
+- Current entry count: 339
+- Completed curation batches: 42
+- Latest completed batch: `oceania-australia-aboriginal-rock-art-deep-time-landscapes-v1`
+- Latest completed infrastructure milestone: stage-2 forty-one-dataset public usability pass
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
@@ -725,6 +725,33 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - Checked: 40 indexed dataset endpoints and expected entry counts across 331 Stage 2 preview entries, compact context filters, African rock art search/detail/context behavior, stale-data cleanup, and mobile-sized rendering
   - Result: public endpoint and headless browser verification completed for 40 datasets and 331 Stage 2 preview entries; screenshots saved under `C:\Users\Public\Documents\ESTsoft\CreatorTemp\` when the local headless browser runtime is available
 
+- Australian Aboriginal rock art and deep-time cultural landscapes batch
+  - Batch ID: `oceania-australia-aboriginal-rock-art-deep-time-landscapes-v1`
+  - Source file: `data/records/oceania/australia/australian-aboriginal-rock-art-deep-time-landscapes.json`
+  - Entries added: 8
+  - Entry IDs:
+    - `kakadu-national-park`
+    - `ubirr-rock-art`
+    - `burrungkuy-nourlangie-rock-art`
+    - `murujuga-cultural-landscape`
+    - `quinkan-country`
+    - `gariwerd-grampians-rock-art`
+    - `uluru-kata-tjuta-national-park`
+    - `budj-bim-cultural-landscape`
+
+- Stage-2 Australian Aboriginal rock art and deep-time cultural landscapes pilot dataset
+  - Files: `data/stage2/index.json`, `data/stage2/australian-aboriginal-rock-art-deep-time-landscapes-preview.json`, `scripts/smoke-check.js`, `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`
+  - URL path: `/stage2-preview.html`
+  - Scope: add a forty-first Stage 2 preview dataset using the new Australian Aboriginal rock art and deep-time cultural landscapes source batch
+  - Model stress test: Kakadu broad World Heritage reserve, Ubirr floodplain rock-art gallery, Burrungkuy / Nourlangie Anbangbang shelter, Murujuga Ngurra rock-art landscape, Quinkan Cape York spirit beings, Gariwerd southeast rock shelters, Uluru Anangu Tjukurpa living law, and Budj Bim Gunditjmara aquaculture engineering
+
+- Stage-2 forty-one-dataset public usability pass
+  - Files: `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`
+  - URL path: `https://wgis.vercel.app/stage2-preview.html`
+  - Scope: keep the Stage 2 preview endpoint and browser-state check repeatable after adding the forty-first dataset
+  - Checked: 41 indexed dataset endpoints and expected entry counts across 339 Stage 2 preview entries, compact context filters, Australian Aboriginal rock art search/detail/context behavior, stale-data cleanup, and mobile-sized rendering
+  - Result: public endpoint and headless browser verification completed for 41 datasets and 339 Stage 2 preview entries; screenshots saved under `C:\Users\Public\Documents\ESTsoft\CreatorTemp\` when the local headless browser runtime is available
+
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`
   - Source file: `data/records/global/legacy/core-seed-entries.json`
@@ -1193,7 +1220,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 1. First-stage DB next expansion batch
    - Scope: continue focused source-record growth with another bounded culture/region/time slice and keep the batch small enough to verify end to end
 
-2. Stage-2 forty-first pilot dataset
+2. Stage-2 forty-second pilot dataset
    - Scope: continue modeling the next focused source-record batch as a Stage 2 preview dataset, or optionally model the legacy core seed entries as a cross-regional demonstration set if we want every existing source file to have a Stage 2 preview
 
 ## Resume Checklist

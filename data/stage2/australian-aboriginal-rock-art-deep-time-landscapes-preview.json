@@ -1,0 +1,502 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-australian-aboriginal-rock-art-deep-time-landscapes-preview",
+  "titleKo": "2단계 미리보기: 오스트레일리아 원주민 암각화·딥타임 경관",
+  "descriptionKo": "카카두, 우비르, 부룽쿠이·누를랑이, 무루주가, 퀸칸 컨트리, 가리워드·그램피언스, 울루루-카타 추타, 부지 빔을 통해 오스트레일리아 원주민 암각화, x-ray 양식, 접촉기 그림, 성지와 법, 수로·양식 공학을 비교하는 2단계 미리보기 데이터셋입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "딥타임 암각화",
+        "x-ray·접촉기 그림",
+        "정령·법 경관",
+        "살아 있는 성지",
+        "원주민 공학 경관"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "카카두",
+        "필바라",
+        "케이프요크",
+        "가리워드",
+        "중앙 사막",
+        "건디치마라 컨트리"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "암각화",
+        "x-ray 양식",
+        "접촉기 그림",
+        "정령 존재",
+        "노래길·법",
+        "딥타임 거주",
+        "수로·양식 공학",
+        "세계유산"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지점 유형",
+      "options": [
+        "유적"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "australian-aboriginal-rock-art-deep-time-landscapes",
+      "labelKo": "오스트레일리아 원주민 암각화·딥타임 경관",
+      "parentId": null,
+      "periodKo": "4만 년 전 이후-현재 전승",
+      "summaryKo": "오스트레일리아 전역의 암각화, 암벽화, 성지 경관, 수로·양식 공학을 연결해 원주민 지식이 암반 표면과 물길, 노래길, 살아 있는 법으로 이어지는 방식을 봅니다."
+    },
+    {
+      "id": "kakadu-rock-art-living-cultural-landscape",
+      "labelKo": "카카두 암각화와 살아 있는 문화 경관",
+      "parentId": "australian-aboriginal-rock-art-deep-time-landscapes",
+      "periodKo": "4만 년 전 이후-현재 전승",
+      "summaryKo": "카카두 전체와 우비르, 부룽쿠이·누를랑이를 통해 광역 세계유산 경관과 핵심 암각화 갤러리가 어떻게 생태, 계절, 법, 접촉기 기억을 연결하는지 비교합니다."
+    },
+    {
+      "id": "kakadu-arnhem-land-escarpment-reserve",
+      "labelKo": "카카두 아넘랜드 절벽·습지 세계유산",
+      "parentId": "kakadu-rock-art-living-cultural-landscape",
+      "periodKo": "4만 년 이상 거주",
+      "summaryKo": "카카두 국립공원은 아넘랜드 절벽, 습지, 암각화, 살아 있는 문화가 함께 보존되는 북부 오스트레일리아의 광역 기준점입니다."
+    },
+    {
+      "id": "ubirr-floodplain-rock-art-gallery",
+      "labelKo": "우비르 범람원 암각화 갤러리",
+      "parentId": "kakadu-rock-art-living-cultural-landscape",
+      "periodKo": "수천 세대의 그림 전통",
+      "summaryKo": "우비르는 x-ray 양식, 식량 동물, 접촉기 그림, 법과 행동 이야기가 나답 범람원 전망과 결합된 카카두 북부 암각화 지점입니다."
+    },
+    {
+      "id": "burrungkuy-anbangbang-rock-art-shelter",
+      "labelKo": "부룽쿠이 Anbangbang 암반 은신처",
+      "parentId": "kakadu-rock-art-living-cultural-landscape",
+      "periodKo": "2만 년 전까지 이어지는 그림 전통",
+      "summaryKo": "부룽쿠이는 Anbangbang 갤러리와 절벽 은신처를 통해 창조 존재, 생활 장면, 접촉기 이미지가 겹치는 카카두 핵심 암벽화 지점입니다."
+    },
+    {
+      "id": "pilbara-cape-york-rock-art-landscapes",
+      "labelKo": "필바라·케이프요크 암각화 경관",
+      "parentId": "australian-aboriginal-rock-art-deep-time-landscapes",
+      "periodKo": "딥타임-현재 전승",
+      "summaryKo": "무루주가와 퀸칸 컨트리를 통해 북서부 필바라의 육해 컨트리 암각화와 북동부 케이프요크의 정령 형상 암각화가 각기 다른 방식으로 전통법과 지형 기억을 만든다는 점을 봅니다."
+    },
+    {
+      "id": "murujuga-ngurra-rock-art-landscape",
+      "labelKo": "무루주가 Ngurra 암각화 경관",
+      "parentId": "pilbara-cape-york-rock-art-landscapes",
+      "periodKo": "딥타임-현재 전승",
+      "summaryKo": "무루주가는 필바라 육해 컨트리의 대규모 암각화와 전통법, 조상 이야기, 기후·해수면 변화 기억을 연결하는 세계유산 경관입니다."
+    },
+    {
+      "id": "quinkan-cape-york-spirit-rock-art",
+      "labelKo": "퀸칸 케이프요크 정령 암각화",
+      "parentId": "pilbara-cape-york-rock-art-landscapes",
+      "periodKo": "1만7천 년 전 이후",
+      "summaryKo": "퀸칸 컨트리는 케이프요크 사암 절벽과 은신처에 정령 존재, 인간과 동물, 의례 이미지를 남긴 북동부 오스트레일리아 암각화 경관입니다."
+    },
+    {
+      "id": "central-southeast-deep-time-cultural-landscapes",
+      "labelKo": "중앙·남동부 딥타임 문화 경관",
+      "parentId": "australian-aboriginal-rock-art-deep-time-landscapes",
+      "periodKo": "선사-현재 전승",
+      "summaryKo": "가리워드, 울루루-카타 추타, 부지 빔을 통해 암각화 은신처, 살아 있는 성지·노래길, 수로·양식 공학이 딥타임 지식을 서로 다른 지형에 구현하는 방식을 봅니다."
+    },
+    {
+      "id": "gariwerd-southeast-rock-shelters",
+      "labelKo": "가리워드 남동부 암각화 은신처",
+      "parentId": "central-southeast-deep-time-cultural-landscapes",
+      "periodKo": "선사-근현대 전승",
+      "summaryKo": "가리워드·그램피언스는 빅토리아에서 가장 밀도 높은 원주민 암각화 은신처가 분포하는 남동부 오스트레일리아 산악 경관입니다."
+    },
+    {
+      "id": "uluru-anangu-tjukurpa-living-law",
+      "labelKo": "울루루 Anangu Tjukurpa 살아 있는 법",
+      "parentId": "central-southeast-deep-time-cultural-landscapes",
+      "periodKo": "선사-현재 전승",
+      "summaryKo": "울루루-카타 추타는 지형, 물웅덩이, 길, 이야기, 의례가 Anangu Tjukurpa 안에서 결합되는 중앙 사막의 살아 있는 문화 경관입니다."
+    },
+    {
+      "id": "budj-bim-gunditjmara-aquaculture-landscape",
+      "labelKo": "부지 빔 건디치마라 양식 공학 경관",
+      "parentId": "central-southeast-deep-time-cultural-landscapes",
+      "periodKo": "6천6백년 이상",
+      "summaryKo": "부지 빔은 건디치마라 사람들이 용암류와 습지를 이용해 수로와 둑, 보, 연못을 만들고 kooyang을 관리한 원주민 공학 세계유산입니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "kakadu-national-park",
+      "titleKo": "카카두 국립공원",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "오스트레일리아",
+      "coordinates": { "lat": -12.8333, "lng": 132.8333 },
+      "yearLabelKo": "4만 년 이상 이어진 거주와 암각화·암벽화 경관",
+      "summaryKo": "카카두 국립공원은 아넘랜드 절벽, 습지, 고원 생태계와 함께 수만 년의 원주민 거주와 암각화·암벽화 기록을 보존한 복합 세계유산이다. WGIS에서는 생태 경관, 암반 은신처, 사냥·채집·접촉기 이미지가 살아 있는 문화와 함께 지속되는 광역 기준점으로 둔다.",
+      "stage2": {
+        "primaryContextId": "kakadu-arnhem-land-escarpment-reserve",
+        "contextIds": [
+          "australian-aboriginal-rock-art-deep-time-landscapes",
+          "kakadu-rock-art-living-cultural-landscape",
+          "kakadu-arnhem-land-escarpment-reserve"
+        ],
+        "periodPathKo": [
+          "선사",
+          "북부 오스트레일리아 딥타임",
+          "카카두 광역 암각화 경관"
+        ],
+        "topicTagsKo": [
+          "카카두",
+          "아넘랜드 절벽",
+          "암각화",
+          "습지",
+          "세계유산"
+        ],
+        "uiFilters": {
+          "era": "딥타임 암각화",
+          "region": "카카두",
+          "theme": [
+            "암각화",
+            "딥타임 거주",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 2,
+          "referenceSources": 0,
+          "noteKo": "UNESCO와 DCCEEW 세계유산 자료를 사용했습니다. 좌표는 넓은 국립공원의 대표 중심점입니다."
+        }
+      }
+    },
+    {
+      "entryId": "ubirr-rock-art",
+      "titleKo": "우비르 암각화 지대",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "오스트레일리아",
+      "coordinates": { "lat": -12.4086, "lng": 132.9547 },
+      "yearLabelKo": "수천 세대에 걸친 암각화와 x-ray·접촉기 이미지",
+      "summaryKo": "우비르는 카카두 북동부의 암반 은신처와 전망 지점으로, 물고기·거북·고아나 같은 식량 동물, x-ray 양식, 접촉기 이미지, 행동과 법에 관한 이야기가 겹쳐 있다. WGIS에서는 암각화 갤러리와 범람원 전망이 원주민 지식, 음식, 법, 계절 이동을 연결하는 지점으로 배치한다.",
+      "stage2": {
+        "primaryContextId": "ubirr-floodplain-rock-art-gallery",
+        "contextIds": [
+          "australian-aboriginal-rock-art-deep-time-landscapes",
+          "kakadu-rock-art-living-cultural-landscape",
+          "ubirr-floodplain-rock-art-gallery"
+        ],
+        "periodPathKo": [
+          "선사",
+          "카카두 암각화",
+          "우비르 x-ray·접촉기 그림"
+        ],
+        "topicTagsKo": [
+          "우비르",
+          "x-ray 양식",
+          "나답 범람원",
+          "접촉기 그림",
+          "법 이야기"
+        ],
+        "uiFilters": {
+          "era": "x-ray·접촉기 그림",
+          "region": "카카두",
+          "theme": [
+            "암각화",
+            "x-ray 양식",
+            "접촉기 그림"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 0,
+          "noteKo": "Parks Australia와 UNESCO 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "burrungkuy-nourlangie-rock-art",
+      "titleKo": "부룽쿠이·누를랑이 암각화 지대",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "오스트레일리아",
+      "coordinates": { "lat": -12.8620, "lng": 132.8040 },
+      "yearLabelKo": "2만 년 전까지 이어지는 암벽화·은신처 경관",
+      "summaryKo": "부룽쿠이(누를랑이)는 카카두의 대표적인 암벽화와 암반 은신처 지대로, Anbangbang 갤러리와 절벽 전망이 전통 생활, 창조 존재, x-ray 동물 그림, 유럽 접촉기 이미지를 함께 보여준다. WGIS에서는 광역 카카두 안의 집중 암각화 갤러리와 은신처 생활권을 따로 읽는 기준점으로 둔다.",
+      "stage2": {
+        "primaryContextId": "burrungkuy-anbangbang-rock-art-shelter",
+        "contextIds": [
+          "australian-aboriginal-rock-art-deep-time-landscapes",
+          "kakadu-rock-art-living-cultural-landscape",
+          "burrungkuy-anbangbang-rock-art-shelter"
+        ],
+        "periodPathKo": [
+          "선사",
+          "카카두 암벽화",
+          "Anbangbang 암반 은신처"
+        ],
+        "topicTagsKo": [
+          "부룽쿠이",
+          "누를랑이",
+          "Anbangbang",
+          "창조 존재",
+          "접촉기 그림"
+        ],
+        "uiFilters": {
+          "era": "x-ray·접촉기 그림",
+          "region": "카카두",
+          "theme": [
+            "암각화",
+            "x-ray 양식",
+            "접촉기 그림",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 0,
+          "noteKo": "Parks Australia와 UNESCO 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "murujuga-cultural-landscape",
+      "titleKo": "무루주가 문화 경관",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "오스트레일리아",
+      "coordinates": { "lat": -20.5850, "lng": 116.8540 },
+      "yearLabelKo": "딥타임부터 이어진 필바라 암각화와 육해 컨트리 경관",
+      "summaryKo": "무루주가 문화 경관은 필바라의 육지와 바다 컨트리에 분포한 대규모 암각화 경관으로, 독특한 모티프와 전통법, 조상 이야기, 기후·해수면 변화의 기억을 담는다. WGIS에서는 세계유산에 등재된 딥타임 암각화와 살아 있는 Ngurra 관계를 연결하는 서호주 기준점으로 둔다.",
+      "stage2": {
+        "primaryContextId": "murujuga-ngurra-rock-art-landscape",
+        "contextIds": [
+          "australian-aboriginal-rock-art-deep-time-landscapes",
+          "pilbara-cape-york-rock-art-landscapes",
+          "murujuga-ngurra-rock-art-landscape"
+        ],
+        "periodPathKo": [
+          "선사",
+          "필바라 육해 컨트리",
+          "무루주가 Ngurra 암각화"
+        ],
+        "topicTagsKo": [
+          "무루주가",
+          "필바라",
+          "암각화",
+          "Ngurra",
+          "세계유산"
+        ],
+        "uiFilters": {
+          "era": "딥타임 암각화",
+          "region": "필바라",
+          "theme": [
+            "암각화",
+            "딥타임 거주",
+            "노래길·법",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO, DCCEEW, 서호주 정부 자료를 사용했습니다. 좌표는 넓은 육해 문화 경관의 대표점입니다."
+        }
+      }
+    },
+    {
+      "entryId": "quinkan-country",
+      "titleKo": "퀸칸 컨트리",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "오스트레일리아",
+      "coordinates": { "lat": -15.5530, "lng": 144.4500 },
+      "yearLabelKo": "1만7천 년 전까지 거슬러 올라가는 케이프요크 암각화 경관",
+      "summaryKo": "퀸칸 컨트리는 케이프요크 로라 주변의 사암 절벽과 은신처에 정령 존재, 인간과 동물, 의례 이미지를 풍부하게 남긴 암각화 경관이다. WGIS에서는 독특한 퀸칸 형상과 전통 소유자·연구자 협력이 오스트레일리아 북동부 암각화 이해를 확장하는 지점으로 둔다.",
+      "stage2": {
+        "primaryContextId": "quinkan-cape-york-spirit-rock-art",
+        "contextIds": [
+          "australian-aboriginal-rock-art-deep-time-landscapes",
+          "pilbara-cape-york-rock-art-landscapes",
+          "quinkan-cape-york-spirit-rock-art"
+        ],
+        "periodPathKo": [
+          "선사",
+          "케이프요크 사암 절벽",
+          "퀸칸 정령 암각화"
+        ],
+        "topicTagsKo": [
+          "퀸칸",
+          "케이프요크",
+          "로라",
+          "정령 존재",
+          "암각화"
+        ],
+        "uiFilters": {
+          "era": "정령·법 경관",
+          "region": "케이프요크",
+          "theme": [
+            "암각화",
+            "정령 존재",
+            "딥타임 거주"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 2,
+          "referenceSources": 0,
+          "noteKo": "DCCEEW 국가유산 및 케이프요크 세계유산 잠정목록 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "gariwerd-grampians-rock-art",
+      "titleKo": "가리워드·그램피언스 암각화 경관",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "오스트레일리아",
+      "coordinates": { "lat": -37.2500, "lng": 142.5000 },
+      "yearLabelKo": "남동부 오스트레일리아의 고밀도 암각화 은신처 경관",
+      "summaryKo": "가리워드·그램피언스 국립공원은 빅토리아에서 가장 밀도 높은 원주민 암각화 은신처가 분포하는 남동부 오스트레일리아의 문화 경관이다. WGIS에서는 산악 경관, 암반 은신처, 전통 소유자 관리가 남부 지역 암각화 보존과 접근 문제를 어떻게 연결하는지 보여주는 지점으로 둔다.",
+      "stage2": {
+        "primaryContextId": "gariwerd-southeast-rock-shelters",
+        "contextIds": [
+          "australian-aboriginal-rock-art-deep-time-landscapes",
+          "central-southeast-deep-time-cultural-landscapes",
+          "gariwerd-southeast-rock-shelters"
+        ],
+        "periodPathKo": [
+          "선사",
+          "남동부 오스트레일리아",
+          "가리워드 암각화 은신처"
+        ],
+        "topicTagsKo": [
+          "가리워드",
+          "그램피언스",
+          "암각화 은신처",
+          "빅토리아",
+          "전통 소유자"
+        ],
+        "uiFilters": {
+          "era": "딥타임 암각화",
+          "region": "가리워드",
+          "theme": [
+            "암각화",
+            "딥타임 거주"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 2,
+          "referenceSources": 0,
+          "noteKo": "빅토리아 First Peoples - State Relations와 Parks Victoria 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "uluru-kata-tjuta-national-park",
+      "titleKo": "울루루-카타 추타 국립공원",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "오스트레일리아",
+      "coordinates": { "lat": -25.3444, "lng": 131.0369 },
+      "yearLabelKo": "Anangu Tjukurpa가 유지하는 중앙 사막 성지·노래길 경관",
+      "summaryKo": "울루루-카타 추타 국립공원은 Anangu의 Tjukurpa가 지형, 물웅덩이, 길, 이야기, 의례를 결합하는 살아 있는 문화 경관이다. WGIS에서는 암각화만이 아니라 법, 노래길, 성지 관리가 거대한 지형과 결합해 지속되는 중앙 사막의 기준점으로 둔다.",
+      "stage2": {
+        "primaryContextId": "uluru-anangu-tjukurpa-living-law",
+        "contextIds": [
+          "australian-aboriginal-rock-art-deep-time-landscapes",
+          "central-southeast-deep-time-cultural-landscapes",
+          "uluru-anangu-tjukurpa-living-law"
+        ],
+        "periodPathKo": [
+          "선사",
+          "중앙 사막",
+          "Anangu Tjukurpa 살아 있는 법"
+        ],
+        "topicTagsKo": [
+          "울루루",
+          "카타 추타",
+          "Anangu",
+          "Tjukurpa",
+          "성지 경관"
+        ],
+        "uiFilters": {
+          "era": "살아 있는 성지",
+          "region": "중앙 사막",
+          "theme": [
+            "노래길·법",
+            "정령 존재",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 0,
+          "noteKo": "UNESCO와 DCCEEW 세계유산 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "budj-bim-cultural-landscape",
+      "titleKo": "부지 빔 문화 경관",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "오스트레일리아",
+      "coordinates": { "lat": -38.0610, "lng": 141.9219 },
+      "yearLabelKo": "6천6백년 이상 이어진 kooyang 양식과 화산 경관",
+      "summaryKo": "부지 빔 문화 경관은 건디치마라 사람들이 용암류와 습지를 이용해 수로, 둑, 보, 연못을 만들고 kooyang을 관리한 세계유산이다. WGIS에서는 암각화 경관과 함께 오스트레일리아 원주민 딥타임 지식이 물 관리와 사회 기반으로 구현된 공학적 문화 경관으로 연결한다.",
+      "stage2": {
+        "primaryContextId": "budj-bim-gunditjmara-aquaculture-landscape",
+        "contextIds": [
+          "australian-aboriginal-rock-art-deep-time-landscapes",
+          "central-southeast-deep-time-cultural-landscapes",
+          "budj-bim-gunditjmara-aquaculture-landscape"
+        ],
+        "periodPathKo": [
+          "선사",
+          "건디치마라 컨트리",
+          "수로·양식 공학 경관"
+        ],
+        "topicTagsKo": [
+          "부지 빔",
+          "건디치마라",
+          "kooyang",
+          "수로",
+          "양식 공학"
+        ],
+        "uiFilters": {
+          "era": "원주민 공학 경관",
+          "region": "건디치마라 컨트리",
+          "theme": [
+            "수로·양식 공학",
+            "딥타임 거주",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO, DCCEEW, Parks Victoria 자료를 사용했습니다."
+        }
+      }
+    }
+  ]
+}

@@ -7456,5 +7456,183 @@
       { "title": "UNESCO: Chongoni Rock-Art Area", "url": "https://whc.unesco.org/en/list/476/" },
       { "title": "UNESCO World Heritage Centre: Chongoni documents", "url": "https://whc.unesco.org/en/list/476/documents/" }
     ]
+  },
+  {
+    "id": "kakadu-national-park",
+    "title": "카카두 국립공원",
+    "type": "site",
+    "historicalName": "카카두 원주민 암각화·문화 경관",
+    "modernName": "카카두 국립공원",
+    "modernAdmin": "오스트레일리아 노던 준주 카카두 국립공원",
+    "country": "오스트레일리아",
+    "worldRegion": "오스트레일리아 북부 원주민 암각화 경관",
+    "period": "오스트레일리아 원주민 딥타임 암각화 전통",
+    "yearLabel": "4만 년 이상 이어진 거주와 암각화·암벽화 경관",
+    "coordinates": { "lat": -12.8333, "lng": 132.8333 },
+    "aliases": ["Kakadu", "Kakadu National Park", "Kakadu rock art", "Arnhem Land escarpment", "Aboriginal rock art"],
+    "summary": "카카두 국립공원은 아넘랜드 절벽, 습지, 고원 생태계와 함께 수만 년의 원주민 거주와 암각화·암벽화 기록을 보존한 복합 세계유산이다. WGIS에서는 생태 경관, 암반 은신처, 사냥·채집·접촉기 이미지가 살아 있는 문화와 함께 지속되는 광역 기준점으로 둔다.",
+    "confidence": "medium",
+    "sourceNote": "광대한 국립공원 전체를 대표하는 중심 좌표를 사용했다.",
+    "curationBatch": "oceania-australia-aboriginal-rock-art-deep-time-landscapes-v1",
+    "sources": [
+      { "title": "UNESCO: Kakadu National Park", "url": "https://whc.unesco.org/en/list/147/" },
+      { "title": "DCCEEW: World Heritage Places - Kakadu National Park", "url": "https://www.dcceew.gov.au/parks-heritage/heritage/places/world/kakadu" }
+    ]
+  },
+  {
+    "id": "ubirr-rock-art",
+    "title": "우비르 암각화 지대",
+    "type": "site",
+    "historicalName": "우비르 암각화 갤러리",
+    "modernName": "우비르 산책로와 암각화 지대",
+    "modernAdmin": "오스트레일리아 노던 준주 카카두 국립공원 이스트 앨리게이터 지역",
+    "country": "오스트레일리아",
+    "worldRegion": "카카두 북부 암각화 경관",
+    "period": "오스트레일리아 원주민 x-ray 암벽화와 접촉기 그림 전통",
+    "yearLabel": "수천 세대에 걸친 암각화와 x-ray·접촉기 이미지",
+    "coordinates": { "lat": -12.4086, "lng": 132.9547 },
+    "aliases": ["Ubirr", "Ubirr walk", "Ubirr rock art", "East Alligator", "Nadab floodplain"],
+    "summary": "우비르는 카카두 북동부의 암반 은신처와 전망 지점으로, 물고기·거북·고아나 같은 식량 동물, x-ray 양식, 접촉기 이미지, 행동과 법에 관한 이야기가 겹쳐 있다. WGIS에서는 암각화 갤러리와 범람원 전망이 원주민 지식, 음식, 법, 계절 이동을 연결하는 지점으로 배치한다.",
+    "confidence": "high",
+    "sourceNote": "우비르 산책로와 주요 암각화 갤러리의 대표 좌표를 사용했다.",
+    "curationBatch": "oceania-australia-aboriginal-rock-art-deep-time-landscapes-v1",
+    "sources": [
+      { "title": "Parks Australia: Ubirr walk", "url": "https://kakadu.gov.au/things-do/activities/walks/ubirr-walk" },
+      { "title": "UNESCO: Kakadu National Park", "url": "https://whc.unesco.org/en/list/147/" }
+    ]
+  },
+  {
+    "id": "burrungkuy-nourlangie-rock-art",
+    "title": "부룽쿠이·누를랑이 암각화 지대",
+    "type": "site",
+    "historicalName": "부룽쿠이 / 누를랑이 암벽화 경관",
+    "modernName": "부룽쿠이(누를랑이) 암각화 산책로",
+    "modernAdmin": "오스트레일리아 노던 준주 카카두 국립공원 부룽쿠이 지역",
+    "country": "오스트레일리아",
+    "worldRegion": "카카두 절벽 암각화 경관",
+    "period": "오스트레일리아 원주민 암벽화와 접촉기 그림 전통",
+    "yearLabel": "2만 년 전까지 이어지는 암벽화·은신처 경관",
+    "coordinates": { "lat": -12.8620, "lng": 132.8040 },
+    "aliases": ["Burrungkuy", "Nourlangie", "Nourlangie Rock", "Anbangbang gallery", "Kakadu rock paintings"],
+    "summary": "부룽쿠이(누를랑이)는 카카두의 대표적인 암벽화와 암반 은신처 지대로, Anbangbang 갤러리와 절벽 전망이 전통 생활, 창조 존재, x-ray 동물 그림, 유럽 접촉기 이미지를 함께 보여준다. WGIS에서는 광역 카카두 안의 집중 암각화 갤러리와 은신처 생활권을 따로 읽는 기준점으로 둔다.",
+    "confidence": "high",
+    "sourceNote": "부룽쿠이 산책로와 Anbangbang 갤러리 일대의 대표 좌표를 사용했다.",
+    "curationBatch": "oceania-australia-aboriginal-rock-art-deep-time-landscapes-v1",
+    "sources": [
+      { "title": "Parks Australia: Burrungkuy (Nourlangie) walk", "url": "https://kakadu.gov.au/do/walks/nourlangie-rock-walk/" },
+      { "title": "UNESCO: Kakadu National Park", "url": "https://whc.unesco.org/en/list/147/" }
+    ]
+  },
+  {
+    "id": "murujuga-cultural-landscape",
+    "title": "무루주가 문화 경관",
+    "type": "site",
+    "historicalName": "무루주가 / 버럽 반도·댐피어 제도 암각화 경관",
+    "modernName": "무루주가 문화 경관",
+    "modernAdmin": "오스트레일리아 서호주 필바라 버럽 반도와 댐피어 제도",
+    "country": "오스트레일리아",
+    "worldRegion": "필바라 암각화·해양 컨트리 경관",
+    "period": "오스트레일리아 원주민 딥타임 암각화와 Ngurra 전통",
+    "yearLabel": "딥타임부터 이어진 필바라 암각화와 육해 컨트리 경관",
+    "coordinates": { "lat": -20.5850, "lng": 116.8540 },
+    "aliases": ["Murujuga", "Murujuga Cultural Landscape", "Burrup Peninsula", "Dampier Archipelago", "Pilbara rock art"],
+    "summary": "무루주가 문화 경관은 필바라의 육지와 바다 컨트리에 분포한 대규모 암각화 경관으로, 독특한 모티프와 전통법, 조상 이야기, 기후·해수면 변화의 기억을 담는다. WGIS에서는 세계유산에 등재된 딥타임 암각화와 살아 있는 Ngurra 관계를 연결하는 서호주 기준점으로 둔다.",
+    "confidence": "medium",
+    "sourceNote": "버럽 반도와 댐피어 제도 일대의 넓은 문화 경관을 대표하는 좌표를 사용했다.",
+    "curationBatch": "oceania-australia-aboriginal-rock-art-deep-time-landscapes-v1",
+    "sources": [
+      { "title": "UNESCO: Murujuga Cultural Landscape", "url": "https://whc.unesco.org/en/list/1709/" },
+      { "title": "DCCEEW: World Heritage Places - Murujuga Cultural Landscape", "url": "https://www.dcceew.gov.au/parks-heritage/heritage/places/world/murujuga-cultural-landscape" },
+      { "title": "Western Australian Government: Murujuga Rock Art", "url": "https://www.wa.gov.au/service/aboriginal-affairs/aboriginal-heritage-conservation/program-murujuga-rock-art" }
+    ]
+  },
+  {
+    "id": "quinkan-country",
+    "title": "퀸칸 컨트리",
+    "type": "site",
+    "historicalName": "로라·퀸칸 컨트리 암각화 경관",
+    "modernName": "퀸칸 컨트리",
+    "modernAdmin": "오스트레일리아 퀸즐랜드주 케이프요크 로라 인근",
+    "country": "오스트레일리아",
+    "worldRegion": "케이프요크 암각화·정령 경관",
+    "period": "오스트레일리아 원주민 암각화와 Quinkan 정령 전통",
+    "yearLabel": "1만7천 년 전까지 거슬러 올라가는 케이프요크 암각화 경관",
+    "coordinates": { "lat": -15.5530, "lng": 144.4500 },
+    "aliases": ["Quinkan Country", "Quinkan rock art", "Laura rock art", "Cape York rock art", "Quinkan spirits"],
+    "summary": "퀸칸 컨트리는 케이프요크 로라 주변의 사암 절벽과 은신처에 정령 존재, 인간과 동물, 의례 이미지를 풍부하게 남긴 암각화 경관이다. WGIS에서는 독특한 퀸칸 형상과 전통 소유자·연구자 협력이 오스트레일리아 북동부 암각화 이해를 확장하는 지점으로 둔다.",
+    "confidence": "medium",
+    "sourceNote": "로라 주변 퀸칸 컨트리의 대표 좌표를 사용했다. 개별 암각화 은신처는 넓은 경관 안에 분산되어 있다.",
+    "curationBatch": "oceania-australia-aboriginal-rock-art-deep-time-landscapes-v1",
+    "sources": [
+      { "title": "DCCEEW: Quinkan Country", "url": "https://www.dcceew.gov.au/parks-heritage/heritage/places/national/quinkan-country" },
+      { "title": "DCCEEW: Cultural Landscapes of Cape York Peninsula added to Australia's UNESCO World Heritage Tentative List", "url": "https://www.dcceew.gov.au/about/news/cultural-landscapes-cape-york-peninsula-australias-unesco-world-heritage-tentative-list" }
+    ]
+  },
+  {
+    "id": "gariwerd-grampians-rock-art",
+    "title": "가리워드·그램피언스 암각화 경관",
+    "type": "site",
+    "historicalName": "가리워드 암각화 은신처 경관",
+    "modernName": "그램피언스(가리워드) 국립공원",
+    "modernAdmin": "오스트레일리아 빅토리아주 그램피언스(가리워드) 국립공원",
+    "country": "오스트레일리아",
+    "worldRegion": "오스트레일리아 남동부 암각화 경관",
+    "period": "오스트레일리아 원주민 남동부 암각화 전통",
+    "yearLabel": "남동부 오스트레일리아의 고밀도 암각화 은신처 경관",
+    "coordinates": { "lat": -37.2500, "lng": 142.5000 },
+    "aliases": ["Gariwerd", "Grampians National Park", "Grampians rock art", "Gariwerd rock shelters", "Victoria Aboriginal rock art"],
+    "summary": "가리워드·그램피언스 국립공원은 빅토리아에서 가장 밀도 높은 원주민 암각화 은신처가 분포하는 남동부 오스트레일리아의 문화 경관이다. WGIS에서는 산악 경관, 암반 은신처, 전통 소유자 관리가 남부 지역 암각화 보존과 접근 문제를 어떻게 연결하는지 보여주는 지점으로 둔다.",
+    "confidence": "medium",
+    "sourceNote": "가리워드 국립공원 전체를 대표하는 중심권 좌표를 사용했다.",
+    "curationBatch": "oceania-australia-aboriginal-rock-art-deep-time-landscapes-v1",
+    "sources": [
+      { "title": "First Peoples - State Relations: Gariwerd (Grampians National Park)", "url": "https://www.firstpeoplesrelations.vic.gov.au/introduction-aboriginal-cultural-heritage-victoria/gariwerd-grampians-national-park" },
+      { "title": "Parks Victoria: Grampians (Gariwerd) National Park", "url": "https://www.parks.vic.gov.au/places-to-see/parks/grampians-%28gariwerd%29-national-park" }
+    ]
+  },
+  {
+    "id": "uluru-kata-tjuta-national-park",
+    "title": "울루루-카타 추타 국립공원",
+    "type": "site",
+    "historicalName": "울루루·카타 추타 Anangu Tjukurpa 문화 경관",
+    "modernName": "울루루-카타 추타 국립공원",
+    "modernAdmin": "오스트레일리아 노던 준주 중앙 사막 울루루-카타 추타 국립공원",
+    "country": "오스트레일리아",
+    "worldRegion": "중앙 오스트레일리아 살아 있는 성지 경관",
+    "period": "Anangu Tjukurpa 살아 있는 법과 성지 전통",
+    "yearLabel": "Anangu Tjukurpa가 유지하는 중앙 사막 성지·노래길 경관",
+    "coordinates": { "lat": -25.3444, "lng": 131.0369 },
+    "aliases": ["Uluru", "Ayers Rock", "Kata Tjuta", "Uluru-Kata Tjuta National Park", "Tjukurpa"],
+    "summary": "울루루-카타 추타 국립공원은 Anangu의 Tjukurpa가 지형, 물웅덩이, 길, 이야기, 의례를 결합하는 살아 있는 문화 경관이다. WGIS에서는 암각화만이 아니라 법, 노래길, 성지 관리가 거대한 지형과 결합해 지속되는 중앙 사막의 기준점으로 둔다.",
+    "confidence": "high",
+    "sourceNote": "울루루 중심 좌표를 사용했다. 카타 추타를 포함한 공원 전체 경관은 넓게 분포한다.",
+    "curationBatch": "oceania-australia-aboriginal-rock-art-deep-time-landscapes-v1",
+    "sources": [
+      { "title": "UNESCO: Uluru-Kata Tjuta National Park", "url": "https://whc.unesco.org/en/list/447/" },
+      { "title": "DCCEEW: World Heritage Places - Uluru-Kata Tjuta National Park", "url": "https://www.dcceew.gov.au/parks-heritage/heritage/places/world/uluru" }
+    ]
+  },
+  {
+    "id": "budj-bim-cultural-landscape",
+    "title": "부지 빔 문화 경관",
+    "type": "site",
+    "historicalName": "건디치마라 부지 빔 양식·수로 경관",
+    "modernName": "부지 빔 문화 경관",
+    "modernAdmin": "오스트레일리아 빅토리아주 남서부 건디치마라 컨트리",
+    "country": "오스트레일리아",
+    "worldRegion": "남서 빅토리아 원주민 공학·딥타임 경관",
+    "period": "건디치마라 딥타임 이야기와 6천년 이상 양식 전통",
+    "yearLabel": "6천6백년 이상 이어진 kooyang 양식과 화산 경관",
+    "coordinates": { "lat": -38.0610, "lng": 141.9219 },
+    "aliases": ["Budj Bim", "Budj Bim Cultural Landscape", "Gunditjmara", "Lake Condah", "kooyang aquaculture"],
+    "summary": "부지 빔 문화 경관은 건디치마라 사람들이 용암류와 습지를 이용해 수로, 둑, 보, 연못을 만들고 kooyang을 관리한 세계유산이다. WGIS에서는 암각화 경관과 함께 오스트레일리아 원주민 딥타임 지식이 물 관리와 사회 기반으로 구현된 공학적 문화 경관으로 연결한다.",
+    "confidence": "high",
+    "sourceNote": "부지 빔 화산과 주요 구성 경관을 대표하는 좌표를 사용했다.",
+    "curationBatch": "oceania-australia-aboriginal-rock-art-deep-time-landscapes-v1",
+    "sources": [
+      { "title": "UNESCO: Budj Bim Cultural Landscape", "url": "https://whc.unesco.org/en/list/1577/" },
+      { "title": "DCCEEW: Indigenous Peoples and World Heritage", "url": "https://www.dcceew.gov.au/parks-heritage/heritage/about/world/management-australias-world-heritage-listed/managing-world-heritage-australia/indigenous-world-heritage" },
+      { "title": "Parks Victoria: Budj Bim National Park", "url": "https://www.parks.vic.gov.au/places-to-see/parks/budj-bim-national-park" }
+    ]
   }
 ]

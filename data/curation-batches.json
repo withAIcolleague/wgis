@@ -1180,6 +1180,34 @@
         "UNESCO document pages and Botswana Tourism reference for site-level management and visitor context",
         "Representative coordinates selected for the protected core, visitor/protection area, or central component within each wider rock-art or sacred landscape"
       ]
+    },
+    {
+      "id": "oceania-australia-aboriginal-rock-art-deep-time-landscapes-v1",
+      "status": "completed",
+      "completedAt": "2026-06-02",
+      "continentId": "oceania",
+      "countryIso2": "AU",
+      "countryKo": "오스트레일리아",
+      "worldRegion": "오스트레일리아 원주민 암각화·딥타임 문화 경관",
+      "focusKo": "오스트레일리아 원주민 암각화·딥타임 문화 경관 핵심 지점",
+      "scopeKo": "카카두, 우비르, 부룽쿠이·누를랑이, 무루주가, 퀸칸 컨트리, 가리워드·그램피언스, 울루루-카타 추타, 부지 빔을 통해 암각화, x-ray 양식, 접촉기 그림, 딥타임 성지, 살아 있는 법과 노래길, 원주민 공학 경관을 연결하는 핵심 지점",
+      "sourceFile": "data/records/oceania/australia/australian-aboriginal-rock-art-deep-time-landscapes.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "kakadu-national-park",
+        "ubirr-rock-art",
+        "burrungkuy-nourlangie-rock-art",
+        "murujuga-cultural-landscape",
+        "quinkan-country",
+        "gariwerd-grampians-rock-art",
+        "uluru-kata-tjuta-national-park",
+        "budj-bim-cultural-landscape"
+      ],
+      "sourceBasis": [
+        "UNESCO World Heritage pages for Kakadu National Park, Murujuga Cultural Landscape, Uluru-Kata Tjuta National Park, and Budj Bim Cultural Landscape",
+        "Australian Government DCCEEW heritage pages for Kakadu, Murujuga, Quinkan Country, Uluru, and Indigenous World Heritage management",
+        "Parks Australia, Parks Victoria, First Peoples - State Relations Victoria, and Western Australian Government references for site-level management, visitor context, and rock art access"
+      ]
     }
   ]
 }

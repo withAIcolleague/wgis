@@ -242,6 +242,12 @@
       "titleKo": "아프리카 암각화·의례 경관",
       "path": "data/stage2/african-rock-art-ritual-landscapes-preview.json",
       "status": "preview-only"
+    },
+    {
+      "id": "stage2-australian-aboriginal-rock-art-deep-time-landscapes-preview",
+      "titleKo": "오스트레일리아 원주민 암각화·딥타임 경관",
+      "path": "data/stage2/australian-aboriginal-rock-art-deep-time-landscapes-preview.json",
+      "status": "preview-only"
     }
   ]
 }

@@ -1062,3 +1062,30 @@ The 2026-06-02 forty-dataset public browser pass checks `https://wgis.vercel.app
 - The `사하라 목축 전환 암각화 경관` context filter returns `타실리 나제르`, `타드라르트 아카쿠스`, and `엔네디 고원` with 3 markers and 3 labels and no stale southern African data.
 - On mobile, `총고니 암각화 지대` detail renders with source-confidence information and both detail actions.
 - Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-forty-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-forty-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.
+
+## Forty-First Pilot Dataset
+
+The Australian Aboriginal rock art and deep-time cultural landscapes pilot dataset adds 8 entries:
+
+- `카카두 국립공원`
+- `우비르 암각화 지대`
+- `부룽쿠이·누를랑이 암각화 지대`
+- `무루주가 문화 경관`
+- `퀸칸 컨트리`
+- `가리워드·그램피언스 암각화 경관`
+- `울루루-카타 추타 국립공원`
+- `부지 빔 문화 경관`
+
+## Forty-One-Dataset Public Usability Pass
+
+The 2026-06-02 forty-one-dataset public browser pass checks `https://wgis.vercel.app/stage2-preview.html` after adding the Australian Aboriginal rock art and deep-time cultural landscapes pilot dataset:
+
+- Dataset selector exposes 41 datasets.
+- All 41 indexed datasets render their expected entry, marker, and permanent-label counts across 339 Stage 2 preview entries.
+- The new Australian Aboriginal dataset exposes 8 entries: `카카두 국립공원`, `우비르 암각화 지대`, `부룽쿠이·누를랑이 암각화 지대`, `무루주가 문화 경관`, `퀸칸 컨트리`, `가리워드·그램피언스 암각화 경관`, `울루루-카타 추타 국립공원`, and `부지 빔 문화 경관`.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control.
+- Searching `무루주가` in the Australian Aboriginal dataset narrows the list and map to `무루주가 문화 경관` with 1 marker and 1 label.
+- Selecting `우비르 암각화 지대` opens the detail panel with source-confidence information and detail actions.
+- The `카카두 암각화와 살아 있는 문화 경관` context filter returns `카카두 국립공원`, `우비르 암각화 지대`, and `부룽쿠이·누를랑이 암각화 지대` with 3 markers and 3 labels and no stale Pilbara data.
+- On mobile, `부지 빔 문화 경관` detail renders with source-confidence information and both detail actions.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-forty-one-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-forty-one-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.
