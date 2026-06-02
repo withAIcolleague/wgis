@@ -248,6 +248,12 @@
       "titleKo": "오스트레일리아 원주민 암각화·딥타임 경관",
       "path": "data/stage2/australian-aboriginal-rock-art-deep-time-landscapes-preview.json",
       "status": "preview-only"
+    },
+    {
+      "id": "stage2-north-america-indigenous-rock-art-sacred-landscapes-preview",
+      "titleKo": "북아메리카 원주민 암각화·성지 경관",
+      "path": "data/stage2/north-america-indigenous-rock-art-sacred-landscapes-preview.json",
+      "status": "preview-only"
     }
   ]
 }

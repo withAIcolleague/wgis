@@ -11,10 +11,10 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 339
-- Completed curation batches: 42
-- Latest completed batch: `oceania-australia-aboriginal-rock-art-deep-time-landscapes-v1`
-- Latest completed infrastructure milestone: stage-2 forty-one-dataset public usability pass
+- Current entry count: 347
+- Completed curation batches: 43
+- Latest completed batch: `americas-north-america-indigenous-rock-art-sacred-landscapes-v1`
+- Latest completed infrastructure milestone: stage-2 forty-two-dataset public usability pass
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
@@ -752,6 +752,33 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - Checked: 41 indexed dataset endpoints and expected entry counts across 339 Stage 2 preview entries, compact context filters, Australian Aboriginal rock art search/detail/context behavior, stale-data cleanup, and mobile-sized rendering
   - Result: public endpoint and headless browser verification completed for 41 datasets and 339 Stage 2 preview entries; screenshots saved under `C:\Users\Public\Documents\ESTsoft\CreatorTemp\` when the local headless browser runtime is available
 
+- North American Indigenous rock art and sacred landscapes batch
+  - Batch ID: `americas-north-america-indigenous-rock-art-sacred-landscapes-v1`
+  - Source file: `data/records/americas/north-america/indigenous-rock-art-sacred-landscapes.json`
+  - Entries added: 8
+  - Entry IDs:
+    - `petroglyph-national-monument`
+    - `canyon-de-chelly-national-monument`
+    - `horseshoe-canyon-great-gallery`
+    - `writing-on-stone-aisinai-pi`
+    - `petroglyphs-provincial-park`
+    - `head-smashed-in-buffalo-jump`
+    - `pipestone-national-monument`
+    - `effigy-mounds-national-monument`
+
+- Stage-2 North American Indigenous rock art and sacred landscapes pilot dataset
+  - Files: `data/stage2/index.json`, `data/stage2/north-america-indigenous-rock-art-sacred-landscapes-preview.json`, `scripts/smoke-check.js`, `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`
+  - URL path: `/stage2-preview.html`
+  - Scope: add a forty-second Stage 2 preview dataset using the new North American Indigenous rock art and sacred landscapes source batch
+  - Model stress test: Rio Grande volcanic escarpment petroglyphs, Canyon de Chelly lived canyon landscape, Horseshoe Canyon Barrier Canyon Style gallery, Writing-on-Stone / Aisinai'pi Blackfoot sacred cliffs, Ontario Petroglyphs Teaching Rocks, Head-Smashed-In Buffalo Jump, Pipestone sacred quarry, and Effigy Mounds Upper Mississippi ceremonial landscape
+
+- Stage-2 forty-two-dataset public usability pass
+  - Files: `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`
+  - URL path: `https://wgis.vercel.app/stage2-preview.html`
+  - Scope: keep the Stage 2 preview endpoint and browser-state check repeatable after adding the forty-second dataset
+  - Checked: 42 indexed dataset endpoints and expected entry counts across 347 Stage 2 preview entries, compact context filters, North American Indigenous rock art search/detail/context behavior, stale-data cleanup, and mobile-sized rendering
+  - Result: public endpoint and headless browser verification completed for 42 datasets and 347 Stage 2 preview entries; screenshots saved under `C:\Users\Public\Documents\ESTsoft\CreatorTemp\` when the local headless browser runtime is available
+
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`
   - Source file: `data/records/global/legacy/core-seed-entries.json`
@@ -1220,7 +1247,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 1. First-stage DB next expansion batch
    - Scope: continue focused source-record growth with another bounded culture/region/time slice and keep the batch small enough to verify end to end
 
-2. Stage-2 forty-second pilot dataset
+2. Stage-2 forty-third pilot dataset
    - Scope: continue modeling the next focused source-record batch as a Stage 2 preview dataset, or optionally model the legacy core seed entries as a cross-regional demonstration set if we want every existing source file to have a Stage 2 preview
 
 ## Resume Checklist

@@ -1089,3 +1089,30 @@ The 2026-06-02 forty-one-dataset public browser pass checks `https://wgis.vercel
 - The `카카두 암각화와 살아 있는 문화 경관` context filter returns `카카두 국립공원`, `우비르 암각화 지대`, and `부룽쿠이·누를랑이 암각화 지대` with 3 markers and 3 labels and no stale Pilbara data.
 - On mobile, `부지 빔 문화 경관` detail renders with source-confidence information and both detail actions.
 - Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-forty-one-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-forty-one-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.
+
+## Forty-Second Pilot Dataset
+
+The North American Indigenous rock art and sacred landscapes pilot dataset adds 8 entries:
+
+- `페트로글리프 국립기념물`
+- `캐니언 드 셰이 국립기념물`
+- `호스슈 캐니언 그레이트 갤러리`
+- `라이팅온스톤·아이시나이피`
+- `페트로글리프스 주립공원`
+- `헤드스매시드인 버펄로 점프`
+- `파이프스톤 국립기념물`
+- `에피지 마운즈 국립기념물`
+
+## Forty-Two-Dataset Public Usability Pass
+
+The 2026-06-02 forty-two-dataset public browser pass checks `https://wgis.vercel.app/stage2-preview.html` after adding the North American Indigenous rock art and sacred landscapes pilot dataset:
+
+- Dataset selector exposes 42 datasets.
+- All 42 indexed datasets render their expected entry, marker, and permanent-label counts across 347 Stage 2 preview entries.
+- The new North American Indigenous dataset exposes 8 entries: `페트로글리프 국립기념물`, `캐니언 드 셰이 국립기념물`, `호스슈 캐니언 그레이트 갤러리`, `라이팅온스톤·아이시나이피`, `페트로글리프스 주립공원`, `헤드스매시드인 버펄로 점프`, `파이프스톤 국립기념물`, and `에피지 마운즈 국립기념물`.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control.
+- Searching `아이시나이피` in the North American Indigenous dataset narrows the list and map to `라이팅온스톤·아이시나이피` with 1 marker and 1 label.
+- Selecting `호스슈 캐니언 그레이트 갤러리` opens the detail panel with source-confidence information and detail actions.
+- The `미국 남서부 암각화·협곡 경관` context filter returns `페트로글리프 국립기념물`, `캐니언 드 셰이 국립기념물`, and `호스슈 캐니언 그레이트 갤러리` with 3 markers and 3 labels and no stale Canadian data.
+- On mobile, `파이프스톤 국립기념물` detail renders with source-confidence information and both detail actions.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-forty-two-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-forty-two-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.

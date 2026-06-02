@@ -223,12 +223,17 @@ const datasets = [
     path: 'data/stage2/australian-aboriginal-rock-art-deep-time-landscapes-preview.json',
     count: 8,
     firstEntryId: 'kakadu-national-park'
+  },
+  {
+    path: 'data/stage2/north-america-indigenous-rock-art-sacred-landscapes-preview.json',
+    count: 8,
+    firstEntryId: 'petroglyph-national-monument'
   }
 ];
 
 const latestDataset = datasets[datasets.length - 1];
-const desktopShot = path.join(outputDir, 'wgis-stage2-forty-one-datasets-desktop.png');
-const mobileShot = path.join(outputDir, 'wgis-stage2-forty-one-datasets-mobile.png');
+const desktopShot = path.join(outputDir, 'wgis-stage2-forty-two-datasets-desktop.png');
+const mobileShot = path.join(outputDir, 'wgis-stage2-forty-two-datasets-mobile.png');
 
 function assertCheck(condition, message, details = undefined) {
   if (!condition) {
@@ -397,60 +402,60 @@ async function main() {
       assertCheck(state.contextFilterButtons <= 4 && state.contextFilterToggle, 'Initial context filters should start compact', state);
 
       dom = await dumpDom(buildUrl({ dataset: latestDataset.path }), userDataDir);
-      state = extractState('desktop-australian-aboriginal-default', dom);
+      state = extractState('desktop-north-america-indigenous-rock-art-default', dom);
       states.push(state);
-      assertCheck(state.entryCards === latestDataset.count && state.entryIds.includes('kakadu-national-park'), 'Latest dataset should render Kakadu and all entries', state);
+      assertCheck(state.entryCards === latestDataset.count && state.entryIds.includes('petroglyph-national-monument'), 'Latest dataset should render Petroglyph National Monument and all entries', state);
 
-      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, q: '무루주가' }), userDataDir);
-      state = extractState('desktop-australian-aboriginal-search-murujuga', dom);
+      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, q: '아이시나이피' }), userDataDir);
+      state = extractState('desktop-north-america-search-aisinai-pi', dom);
       states.push(state);
-      assertCheck(state.entryCountText === '1개' && state.entryIds.includes('murujuga-cultural-landscape'), 'Latest dataset search should find Murujuga', state);
+      assertCheck(state.entryCountText === '1개' && state.entryIds.includes('writing-on-stone-aisinai-pi'), 'Latest dataset search should find Writing-on-Stone / Aisinai pi', state);
 
-      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, entry: 'ubirr-rock-art' }), userDataDir);
-      state = extractState('desktop-australian-aboriginal-detail-ubirr', dom);
+      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, entry: 'horseshoe-canyon-great-gallery' }), userDataDir);
+      state = extractState('desktop-north-america-detail-horseshoe-canyon', dom);
       states.push(state);
       assertCheck(
-        state.detailTitle === '우비르 암각화 지대' && state.detailActions === 2 && state.hasSourceConfidence,
-        'Latest dataset detail should show Ubirr, source confidence, and detail actions',
+        state.detailTitle === '호스슈 캐니언 그레이트 갤러리' && state.detailActions === 2 && state.hasSourceConfidence,
+        'Latest dataset detail should show Horseshoe Canyon, source confidence, and detail actions',
         state
       );
 
       dom = await dumpDom(buildUrl({
         dataset: latestDataset.path,
-        context: 'kakadu-rock-art-living-cultural-landscape'
+        context: 'southwest-canyon-rock-art-landscapes'
       }), userDataDir);
-      state = extractState('desktop-australian-aboriginal-kakadu-context', dom);
+      state = extractState('desktop-north-america-southwest-context', dom);
       states.push(state);
       assertCheck(
         state.entryCountText === '3개' &&
-          state.entryIds.includes('kakadu-national-park') &&
-          state.entryIds.includes('ubirr-rock-art') &&
-          state.entryIds.includes('burrungkuy-nourlangie-rock-art') &&
-          !state.entryIds.includes('murujuga-cultural-landscape'),
-        'Kakadu context should return Kakadu, Ubirr, and Burrungkuy without stale Pilbara data',
+          state.entryIds.includes('petroglyph-national-monument') &&
+          state.entryIds.includes('canyon-de-chelly-national-monument') &&
+          state.entryIds.includes('horseshoe-canyon-great-gallery') &&
+          !state.entryIds.includes('writing-on-stone-aisinai-pi'),
+        'Southwest context should return Petroglyph, Canyon de Chelly, and Horseshoe Canyon without stale Canadian data',
         state
       );
 
       dom = await dumpDom(buildUrl({
         dataset: latestDataset.path,
-        entry: 'budj-bim-cultural-landscape'
+        entry: 'pipestone-national-monument'
       }), userDataDir, { width: 390, height: 844 });
-      state = extractState('mobile-australian-aboriginal-detail-budj-bim', dom);
+      state = extractState('mobile-north-america-detail-pipestone', dom);
       states.push(state);
       assertCheck(
-        state.ready && state.detailTitle === '부지 빔 문화 경관' && state.detailActions === 2,
-        'Mobile-sized latest dataset render should keep the Budj Bim detail panel available',
+        state.ready && state.detailTitle === '파이프스톤 국립기념물' && state.detailActions === 2,
+        'Mobile-sized latest dataset render should keep the Pipestone detail panel available',
         state
       );
 
       await captureScreenshot(
-        buildUrl({ dataset: latestDataset.path, entry: 'ubirr-rock-art' }),
+        buildUrl({ dataset: latestDataset.path, entry: 'horseshoe-canyon-great-gallery' }),
         userDataDir,
         desktopShot,
         { width: 1440, height: 920 }
       );
       await captureScreenshot(
-        buildUrl({ dataset: latestDataset.path, entry: 'budj-bim-cultural-landscape' }),
+        buildUrl({ dataset: latestDataset.path, entry: 'pipestone-national-monument' }),
         userDataDir,
         mobileShot,
         { width: 390, height: 844 }

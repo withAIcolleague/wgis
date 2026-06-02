@@ -1208,6 +1208,34 @@
         "Australian Government DCCEEW heritage pages for Kakadu, Murujuga, Quinkan Country, Uluru, and Indigenous World Heritage management",
         "Parks Australia, Parks Victoria, First Peoples - State Relations Victoria, and Western Australian Government references for site-level management, visitor context, and rock art access"
       ]
+    },
+    {
+      "id": "americas-north-america-indigenous-rock-art-sacred-landscapes-v1",
+      "status": "completed",
+      "completedAt": "2026-06-02",
+      "continentId": "americas",
+      "countryIso2": "US-CA",
+      "countryKo": "미국·캐나다",
+      "worldRegion": "북아메리카 원주민 암각화·성지·의례 경관",
+      "focusKo": "북아메리카 원주민 암각화·성지·의례 경관 핵심 지점",
+      "scopeKo": "페트로글리프 국립기념물, 캐니언 드 셰이, 호스슈 캐니언 그레이트 갤러리, 라이팅온스톤·아이시나이피, 페트로글리프스 주립공원, 헤드스매시드인 버펄로 점프, 파이프스톤, 에피지 마운즈를 통해 암각화, 협곡 성지, 물소 사냥 의례, 성스러운 채석장, 의례 둔덕을 연결하는 핵심 지점",
+      "sourceFile": "data/records/americas/north-america/indigenous-rock-art-sacred-landscapes.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "petroglyph-national-monument",
+        "canyon-de-chelly-national-monument",
+        "horseshoe-canyon-great-gallery",
+        "writing-on-stone-aisinai-pi",
+        "petroglyphs-provincial-park",
+        "head-smashed-in-buffalo-jump",
+        "pipestone-national-monument",
+        "effigy-mounds-national-monument"
+      ],
+      "sourceBasis": [
+        "National Park Service pages for Petroglyph National Monument, Canyon de Chelly National Monument, Horseshoe Canyon, Pipestone National Monument, and Effigy Mounds National Monument",
+        "UNESCO World Heritage pages for Writing-on-Stone / Aisinai'pi and Head-Smashed-In Buffalo Jump",
+        "Alberta Parks, Ontario Parks, and Head-Smashed-In Buffalo Jump references for site-level management and visitor context"
+      ]
     }
   ]
 }

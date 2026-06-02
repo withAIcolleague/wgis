@@ -1,0 +1,277 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-north-america-indigenous-rock-art-sacred-landscapes-preview",
+  "titleKo": "2단계 미리보기: 북아메리카 원주민 암각화·성지 경관",
+  "descriptionKo": "페트로글리프 국립기념물, 캐니언 드 셰이, 호스슈 캐니언, 라이팅온스톤·아이시나이피, 페트로글리프스 주립공원, 헤드스매시드인 버펄로 점프, 파이프스톤, 에피지 마운즈를 통해 북아메리카 원주민 암각화, 협곡 성지, 물소 사냥 의례, 성스러운 채석장, 동물형 둔덕을 비교하는 2단계 미리보기 데이터셋입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "선사 암각화",
+        "우드랜드기 둔덕",
+        "접촉기 이미지",
+        "살아 있는 성지",
+        "의례 채석장"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "미국 남서부",
+        "콜로라도고원",
+        "북부 대평원",
+        "오대호 북동부",
+        "상미시시피",
+        "대평원 채석장"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "암각화",
+        "협곡 성지",
+        "암벽화",
+        "물소 사냥 의례",
+        "성스러운 채석장",
+        "동물형 둔덕",
+        "살아 있는 전승",
+        "세계유산"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지점 유형",
+      "options": [
+        "유적"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "north-america-indigenous-rock-art-sacred-landscapes",
+      "labelKo": "북아메리카 원주민 암각화·성지 경관",
+      "parentId": null,
+      "periodKo": "기원전 4000년경-현재 전승",
+      "summaryKo": "암각화, 협곡, 대평원 사냥 의례, 성스러운 채석장, 동물형 둔덕을 연결해 북아메리카 원주민 경관이 이미지와 지형, 물질, 의례 기억을 어떻게 결합하는지 봅니다."
+    },
+    {
+      "id": "southwest-canyon-rock-art-landscapes",
+      "labelKo": "미국 남서부 암각화·협곡 경관",
+      "parentId": "north-america-indigenous-rock-art-sacred-landscapes",
+      "periodKo": "기원전 2500년경-1700년경",
+      "summaryKo": "페트로글리프 국립기념물, 캐니언 드 셰이, 호스슈 캐니언을 통해 현무암 절벽, 협곡 벽, 암벽화 갤러리가 남서부의 거주와 의례 기억을 구성하는 방식을 비교합니다."
+    },
+    {
+      "id": "petroglyph-rio-grande-volcanic-escarpment",
+      "labelKo": "리오그란데 현무암 절벽 암각화",
+      "parentId": "southwest-canyon-rock-art-landscapes",
+      "periodKo": "1300-1700년경",
+      "summaryKo": "페트로글리프 국립기념물은 도시 서부 현무암 절벽에 푸에블로계와 접촉기 이미지가 겹쳐 남은 암각화 경관입니다."
+    },
+    {
+      "id": "canyon-de-chelly-lived-canyon-landscape",
+      "labelKo": "캐니언 드 셰이 살아 있는 협곡 경관",
+      "parentId": "southwest-canyon-rock-art-landscapes",
+      "periodKo": "수천 년간 이어진 거주",
+      "summaryKo": "캐니언 드 셰이는 절벽 거주지, 암벽 이미지, 나바호 공동체의 현재 거주가 같은 협곡 안에서 이어지는 살아 있는 경관입니다."
+    },
+    {
+      "id": "horseshoe-canyon-barrier-style-gallery",
+      "labelKo": "호스슈 캐니언 배리어 양식 갤러리",
+      "parentId": "southwest-canyon-rock-art-landscapes",
+      "periodKo": "기원전 2000년경 이후",
+      "summaryKo": "호스슈 캐니언 그레이트 갤러리는 협곡 벽의 인물 형상과 추상 이미지가 선사 시각 전통과 의례 공간을 함께 보여주는 지점입니다."
+    },
+    {
+      "id": "northern-plains-great-lakes-sacred-rock-art",
+      "labelKo": "북부 대평원·오대호 암각화 성지",
+      "parentId": "north-america-indigenous-rock-art-sacred-landscapes",
+      "periodKo": "기원전 1000년경-현재 전승",
+      "summaryKo": "라이팅온스톤과 페트로글리프스 주립공원을 통해 대평원 후두 절벽과 오대호 암반 표면이 살아 있는 전승과 성지 관리 안에서 보존되는 방식을 봅니다."
+    },
+    {
+      "id": "writing-on-stone-blackfoot-sacred-cliffs",
+      "labelKo": "라이팅온스톤 블랙풋 성지 절벽",
+      "parentId": "northern-plains-great-lakes-sacred-rock-art",
+      "periodKo": "수천 년간 이어진 그림 전통",
+      "summaryKo": "라이팅온스톤·아이시나이피는 밀크강 계곡의 후두와 절벽에 그림과 새김이 집중된 블랙풋계 성지 경관입니다."
+    },
+    {
+      "id": "petroglyphs-ontario-teaching-rocks",
+      "labelKo": "온타리오 Teaching Rocks 암반 성지",
+      "parentId": "northern-plains-great-lakes-sacred-rock-art",
+      "periodKo": "900-1100년경",
+      "summaryKo": "페트로글리프스 주립공원은 보호된 암반 표면의 인간, 동물, 영적 형상이 오대호 북동부 성지 기억을 담는 지점입니다."
+    },
+    {
+      "id": "plains-quarry-mound-ceremonial-landscapes",
+      "labelKo": "대평원·상미시시피 의례 경관",
+      "parentId": "north-america-indigenous-rock-art-sacred-landscapes",
+      "periodKo": "기원전 4000년경-현재 전승",
+      "summaryKo": "헤드스매시드인, 파이프스톤, 에피지 마운즈를 통해 사냥 조직, 성스러운 석재, 동물형 둔덕이 원주민 의례 경관을 서로 다른 방식으로 만드는 점을 봅니다."
+    },
+    {
+      "id": "head-smashed-in-buffalo-jump-plains",
+      "labelKo": "헤드스매시드인 물소 사냥 절벽",
+      "parentId": "plains-quarry-mound-ceremonial-landscapes",
+      "periodKo": "기원전 4000년경 이후",
+      "summaryKo": "헤드스매시드인 버펄로 점프는 절벽, 몰이길, 캠프, 가공 장소가 결합된 북부 대평원 공동 사냥·의례 경관입니다."
+    },
+    {
+      "id": "pipestone-sacred-quarry-ceremonial-exchange",
+      "labelKo": "파이프스톤 성스러운 채석장",
+      "parentId": "plains-quarry-mound-ceremonial-landscapes",
+      "periodKo": "수천 년간 이어진 채석 전통",
+      "summaryKo": "파이프스톤 국립기념물은 의례용 파이프 제작에 쓰이는 붉은 석재와 채석권, 교류 기억이 결합된 성스러운 물질 경관입니다."
+    },
+    {
+      "id": "effigy-mounds-upper-mississippi-ceremonial",
+      "labelKo": "상미시시피 동물형 둔덕 의례 경관",
+      "parentId": "plains-quarry-mound-ceremonial-landscapes",
+      "periodKo": "500-1200년경",
+      "summaryKo": "에피지 마운즈는 동물 형상의 둔덕, 미시시피강 조망, 매장·의례 기억이 결합된 우드랜드기 경관입니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "petroglyph-national-monument",
+      "titleKo": "페트로글리프 국립기념물",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "미국",
+      "coordinates": { "lat": 35.1392, "lng": -106.7111 },
+      "yearLabelKo": "1300-1700년경 현무암 절벽 암각화 경관",
+      "summaryKo": "페트로글리프 국립기념물은 앨버커키 서부 현무암 절벽에 수천 점의 원주민과 접촉기 암각화가 새겨진 경관이다. WGIS에서는 도시 외곽의 화산 절벽, 푸에블로계 상징, 스페인 접촉기 흔적이 한 표면에 겹치는 북미 남서부 암각화 기준점으로 둔다.",
+      "stage2": {
+        "primaryContextId": "petroglyph-rio-grande-volcanic-escarpment",
+        "contextIds": ["north-america-indigenous-rock-art-sacred-landscapes", "southwest-canyon-rock-art-landscapes", "petroglyph-rio-grande-volcanic-escarpment"],
+        "periodPathKo": ["선사·접촉기", "미국 남서부", "현무암 절벽 암각화"],
+        "topicTagsKo": ["페트로글리프", "앨버커키", "현무암 절벽", "푸에블로", "접촉기 이미지"],
+        "uiFilters": { "era": "접촉기 이미지", "region": "미국 남서부", "theme": ["암각화", "살아 있는 전승"], "displayType": "유적" },
+        "sourceConfidence": { "tier": "high", "officialSources": 1, "referenceSources": 0, "noteKo": "NPS 공식 자료를 사용했습니다." }
+      }
+    },
+    {
+      "entryId": "canyon-de-chelly-national-monument",
+      "titleKo": "캐니언 드 셰이 국립기념물",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "미국",
+      "coordinates": { "lat": 36.1553, "lng": -109.5326 },
+      "yearLabelKo": "수천 년간 이어진 협곡 거주와 암벽 이미지 경관",
+      "summaryKo": "캐니언 드 셰이는 협곡 벽, 절벽 거주지, 암벽 이미지, 나바호 공동체의 살아 있는 거주가 함께 남은 원주민 협곡 경관이다. WGIS에서는 고고학 유적과 현재 공동체의 성지·생활 공간이 같은 협곡 지형 안에서 이어지는 사례로 배치한다.",
+      "stage2": {
+        "primaryContextId": "canyon-de-chelly-lived-canyon-landscape",
+        "contextIds": ["north-america-indigenous-rock-art-sacred-landscapes", "southwest-canyon-rock-art-landscapes", "canyon-de-chelly-lived-canyon-landscape"],
+        "periodPathKo": ["선사-현재", "미국 남서부", "살아 있는 협곡 성지"],
+        "topicTagsKo": ["캐니언 드 셰이", "나바호", "협곡", "절벽 거주", "암벽 이미지"],
+        "uiFilters": { "era": "살아 있는 성지", "region": "미국 남서부", "theme": ["협곡 성지", "암각화", "살아 있는 전승"], "displayType": "유적" },
+        "sourceConfidence": { "tier": "medium", "officialSources": 1, "referenceSources": 0, "noteKo": "NPS 공식 자료를 사용했습니다. 좌표는 넓은 협곡 경관의 대표점입니다." }
+      }
+    },
+    {
+      "entryId": "horseshoe-canyon-great-gallery",
+      "titleKo": "호스슈 캐니언 그레이트 갤러리",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "미국",
+      "coordinates": { "lat": 38.4719, "lng": -110.2000 },
+      "yearLabelKo": "기원전 2000년경 이후 배리어 캐니언 양식 암벽화",
+      "summaryKo": "호스슈 캐니언의 그레이트 갤러리는 실물 크기에 가까운 인물 형상과 추상 이미지로 알려진 배리어 캐니언 양식 암벽화의 대표 지점이다. WGIS에서는 협곡 접근로, 암벽 표면, 의례적 인물 이미지가 콜로라도고원 선사 시각 전통을 구성하는 방식을 보여준다.",
+      "stage2": {
+        "primaryContextId": "horseshoe-canyon-barrier-style-gallery",
+        "contextIds": ["north-america-indigenous-rock-art-sacred-landscapes", "southwest-canyon-rock-art-landscapes", "horseshoe-canyon-barrier-style-gallery"],
+        "periodPathKo": ["선사", "콜로라도고원", "배리어 캐니언 양식"],
+        "topicTagsKo": ["호스슈 캐니언", "그레이트 갤러리", "배리어 캐니언 양식", "암벽화", "협곡"],
+        "uiFilters": { "era": "선사 암각화", "region": "콜로라도고원", "theme": ["암벽화", "협곡 성지"], "displayType": "유적" },
+        "sourceConfidence": { "tier": "medium", "officialSources": 2, "referenceSources": 0, "noteKo": "NPS 공식 자료를 사용했습니다. 좌표는 그레이트 갤러리 일대의 대표점입니다." }
+      }
+    },
+    {
+      "entryId": "writing-on-stone-aisinai-pi",
+      "titleKo": "라이팅온스톤·아이시나이피",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "캐나다",
+      "coordinates": { "lat": 49.0833, "lng": -111.6170 },
+      "yearLabelKo": "수천 년간 이어진 대평원 암각화·암벽화 성지",
+      "summaryKo": "라이팅온스톤·아이시나이피는 밀크강 계곡의 후두와 절벽에 암각화와 암벽화가 집중된 블랙풋계 성지 경관이다. WGIS에서는 그림과 새김, 강 계곡 지형, 살아 있는 전통 지식이 북부 대평원의 의례 경관을 구성하는 방식을 다룬다.",
+      "stage2": {
+        "primaryContextId": "writing-on-stone-blackfoot-sacred-cliffs",
+        "contextIds": ["north-america-indigenous-rock-art-sacred-landscapes", "northern-plains-great-lakes-sacred-rock-art", "writing-on-stone-blackfoot-sacred-cliffs"],
+        "periodPathKo": ["선사-현재", "북부 대평원", "블랙풋 성지 절벽"],
+        "topicTagsKo": ["라이팅온스톤", "아이시나이피", "블랙풋", "후두", "세계유산"],
+        "uiFilters": { "era": "살아 있는 성지", "region": "북부 대평원", "theme": ["암각화", "암벽화", "세계유산", "살아 있는 전승"], "displayType": "유적" },
+        "sourceConfidence": { "tier": "high", "officialSources": 2, "referenceSources": 0, "noteKo": "UNESCO와 Alberta Parks 자료를 사용했습니다." }
+      }
+    },
+    {
+      "entryId": "petroglyphs-provincial-park",
+      "titleKo": "페트로글리프스 주립공원",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "캐나다",
+      "coordinates": { "lat": 44.6130, "lng": -78.0460 },
+      "yearLabelKo": "900-1100년경으로 보는 오대호 암반 새김그림 경관",
+      "summaryKo": "페트로글리프스 주립공원은 온타리오의 노출 암반에 새겨진 수백 점의 인간, 동물, 영적 형상으로 알려진 성지다. WGIS에서는 보호 건물 안의 암반 표면, 아니시나베 전승, 해석과 접근 제한이 북동부 오대호 암각화 보존을 어떻게 형성하는지 보여준다.",
+      "stage2": {
+        "primaryContextId": "petroglyphs-ontario-teaching-rocks",
+        "contextIds": ["north-america-indigenous-rock-art-sacred-landscapes", "northern-plains-great-lakes-sacred-rock-art", "petroglyphs-ontario-teaching-rocks"],
+        "periodPathKo": ["중세", "오대호 북동부", "Teaching Rocks 암반 성지"],
+        "topicTagsKo": ["페트로글리프스", "키노마게와프콩", "Teaching Rocks", "온타리오", "암각화"],
+        "uiFilters": { "era": "선사 암각화", "region": "오대호 북동부", "theme": ["암각화", "살아 있는 전승"], "displayType": "유적" },
+        "sourceConfidence": { "tier": "high", "officialSources": 1, "referenceSources": 0, "noteKo": "Ontario Parks 공식 자료를 사용했습니다." }
+      }
+    },
+    {
+      "entryId": "head-smashed-in-buffalo-jump",
+      "titleKo": "헤드스매시드인 버펄로 점프",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "캐나다",
+      "coordinates": { "lat": 49.7069, "lng": -113.6536 },
+      "yearLabelKo": "기원전 4000년경 이후 물소 몰이 사냥 경관",
+      "summaryKo": "헤드스매시드인 버펄로 점프는 절벽, 몰이길, 캠프, 가공 장소가 결합된 북부 대평원의 대표적인 물소 공동 사냥 경관이다. WGIS에서는 암각화 지점과 함께 의례, 생계, 집단 조직, 지형 활용이 하나의 성지·작업 경관을 만드는 사례로 둔다.",
+      "stage2": {
+        "primaryContextId": "head-smashed-in-buffalo-jump-plains",
+        "contextIds": ["north-america-indigenous-rock-art-sacred-landscapes", "plains-quarry-mound-ceremonial-landscapes", "head-smashed-in-buffalo-jump-plains"],
+        "periodPathKo": ["선사", "북부 대평원", "물소 사냥 절벽"],
+        "topicTagsKo": ["헤드스매시드인", "버펄로 점프", "물소 사냥", "대평원", "세계유산"],
+        "uiFilters": { "era": "살아 있는 성지", "region": "북부 대평원", "theme": ["물소 사냥 의례", "세계유산"], "displayType": "유적" },
+        "sourceConfidence": { "tier": "high", "officialSources": 2, "referenceSources": 0, "noteKo": "UNESCO와 Head-Smashed-In 공식 자료를 사용했습니다." }
+      }
+    },
+    {
+      "entryId": "pipestone-national-monument",
+      "titleKo": "파이프스톤 국립기념물",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "미국",
+      "coordinates": { "lat": 44.0133, "lng": -96.3256 },
+      "yearLabelKo": "수천 년간 이어진 성스러운 파이프스톤 채석장",
+      "summaryKo": "파이프스톤 국립기념물은 여러 원주민 공동체가 의례용 파이프 제작에 쓰는 붉은 석재를 채석해 온 성스러운 채석장 경관이다. WGIS에서는 암각화와 협곡 성지뿐 아니라 물질, 채석권, 의례 교류가 북미 대평원 문화권을 연결하는 기준점으로 다룬다.",
+      "stage2": {
+        "primaryContextId": "pipestone-sacred-quarry-ceremonial-exchange",
+        "contextIds": ["north-america-indigenous-rock-art-sacred-landscapes", "plains-quarry-mound-ceremonial-landscapes", "pipestone-sacred-quarry-ceremonial-exchange"],
+        "periodPathKo": ["선사-현재", "대평원 채석장", "성스러운 파이프스톤"],
+        "topicTagsKo": ["파이프스톤", "catlinite", "채석장", "의례 파이프", "대평원"],
+        "uiFilters": { "era": "의례 채석장", "region": "대평원 채석장", "theme": ["성스러운 채석장", "살아 있는 전승"], "displayType": "유적" },
+        "sourceConfidence": { "tier": "high", "officialSources": 1, "referenceSources": 0, "noteKo": "NPS 공식 자료를 사용했습니다." }
+      }
+    },
+    {
+      "entryId": "effigy-mounds-national-monument",
+      "titleKo": "에피지 마운즈 국립기념물",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "미국",
+      "coordinates": { "lat": 43.0871, "lng": -91.1850 },
+      "yearLabelKo": "500-1200년경 우드랜드기 동물형 둔덕 경관",
+      "summaryKo": "에피지 마운즈 국립기념물은 곰과 새 같은 동물 형상의 둔덕이 미시시피강 절벽과 숲 경관 위에 배치된 우드랜드기 의례 경관이다. WGIS에서는 이미 수록된 대형 도시·토공 중심지와 달리 동물형 둔덕, 조망, 매장·의례 기억이 결합된 상미시시피 사례로 둔다.",
+      "stage2": {
+        "primaryContextId": "effigy-mounds-upper-mississippi-ceremonial",
+        "contextIds": ["north-america-indigenous-rock-art-sacred-landscapes", "plains-quarry-mound-ceremonial-landscapes", "effigy-mounds-upper-mississippi-ceremonial"],
+        "periodPathKo": ["중세", "상미시시피", "우드랜드기 동물형 둔덕"],
+        "topicTagsKo": ["에피지 마운즈", "동물형 둔덕", "우드랜드기", "미시시피강", "의례 경관"],
+        "uiFilters": { "era": "우드랜드기 둔덕", "region": "상미시시피", "theme": ["동물형 둔덕", "살아 있는 전승"], "displayType": "유적" },
+        "sourceConfidence": { "tier": "high", "officialSources": 1, "referenceSources": 0, "noteKo": "NPS 공식 자료를 사용했습니다." }
+      }
+    }
+  ]
+}
