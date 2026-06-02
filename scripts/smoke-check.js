@@ -170,6 +170,8 @@ function main() {
 
   for (const { metadata, data } of stage2Datasets) {
     const datasetLabel = metadata.id || metadata.path;
+    check(`stage 2 dataset status is active in index (${datasetLabel})`, metadata.status === 'active', metadata.status);
+    check(`stage 2 dataset status is active in data (${datasetLabel})`, data.status === 'active', data.status);
     check(`stage 2 dataset status matches index (${datasetLabel})`, data.status === metadata.status);
     check(`stage 2 dataset has contexts (${datasetLabel})`, Array.isArray(data.contexts) && data.contexts.length >= 5);
     check(`stage 2 dataset has sample entries (${datasetLabel})`, Array.isArray(data.entries) && data.entries.length >= 8);

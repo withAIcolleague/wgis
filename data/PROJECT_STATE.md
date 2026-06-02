@@ -14,10 +14,11 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Current entry count: 355
 - Completed curation batches: 44
 - Latest completed batch: `americas-south-america-rock-art-geoglyph-deep-time-landscapes-v1`
-- Latest completed infrastructure milestone: stage-2 main route verification hardening
+- Latest completed infrastructure milestone: stage-2 active dataset status promotion
 - Primary app route: `/` uses the Stage 2 context map
 - First-stage support route: `/stage1.html`
 - Stage-2 QA compatibility route: `/stage2-preview.html`
+- Stage-2 active datasets: 43
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
@@ -26,6 +27,13 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Data quality floor: every app entry must have `curationBatch` and at least one valid `sources` URL
 
 ## Completed
+
+- Stage-2 active dataset status promotion
+  - Files: `data/stage2/index.json`, `data/stage2/*.json`, `scripts/smoke-check.js`, `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`, `docs/stage2-schema.md`, `data/PROJECT_STATE.md`
+  - URL path: `/`
+  - Scope: promote the 43 route-ready Stage 2 datasets from `preview-only` to `active` now that Stage 2 is the primary WGIS route
+  - Checked: `npm.cmd run check`, `node --check scripts\stage2-public-usability-check.mjs`, Stage 2 index status count
+  - Result: 43 indexed datasets report `active`; local data validation, Stage 2 validation, and smoke checks pass for 355 Stage 2 entries
 
 - 5-continent country classification database
   - File: `data/continents-countries.json`

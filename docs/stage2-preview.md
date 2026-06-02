@@ -1,4 +1,4 @@
-# WGIS Stage 2 Preview
+# WGIS Stage 2 Main
 
 Last updated: 2026-06-02
 
@@ -22,11 +22,17 @@ The Stage 2 QA and compatibility route remains available at:
 /stage2-preview.html
 ```
 
-Stage 2 does not remove the main `data/entries.json` app index. The Stage 2 datasets sit beside the current map data and link preview entries back to the first-stage entry IDs.
+Stage 2 does not remove the main `data/entries.json` app index. The Stage 2 datasets sit beside the current map data and link Stage 2 entries back to the first-stage entry IDs.
 
-## Preview Data
+## Stage 2 Data
 
-Preview data lives at:
+Active Stage 2 datasets are listed in:
+
+```text
+data/stage2/index.json
+```
+
+As of 2026-06-02, all 43 indexed Stage 2 datasets use `status: "active"`. The first active dataset lives at:
 
 ```text
 data/stage2/atlantic-revolutions-preview.json
@@ -43,7 +49,7 @@ The sample uses the existing Atlantic revolutions entries:
 - `buenos-aires-cabildo`
 - `mexico-city-national-palace-independence`
 
-The preview now also includes an Ethiopia human-origins pilot dataset:
+The Stage 2 set also includes an Ethiopia human-origins pilot dataset:
 
 - `ardi-aramis`
 - `lucy-hadar`
@@ -404,7 +410,7 @@ Stage 2 adds separate layers:
 
 ## Validation
 
-The preview is included in:
+Stage 2 is included in:
 
 ```bash
 npm run validate:stage2
@@ -412,7 +418,7 @@ npm run smoke
 npm run check
 ```
 
-The Stage 2 validator checks the preview data against `data/stage2/schema.json`. The smoke check confirms that the preview page, assets, critical UI wiring, and every indexed Stage 2 dataset are present.
+The Stage 2 validator checks the active data against `data/stage2/schema.json`. The smoke check confirms that the Stage 2 main route, QA compatibility route, assets, critical UI wiring, every indexed dataset, and active dataset statuses are present.
 
 The public usability pass can be run with:
 

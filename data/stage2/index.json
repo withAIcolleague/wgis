@@ -7,259 +7,259 @@
       "id": "stage2-atlantic-revolutions-preview",
       "titleKo": "대서양 혁명과 독립운동",
       "path": "data/stage2/atlantic-revolutions-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-ethiopia-human-origins-preview",
       "titleKo": "에티오피아 인류 기원",
       "path": "data/stage2/ethiopia-human-origins-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-mesopotamia-early-cities-preview",
       "titleKo": "메소포타미아 초기 도시",
       "path": "data/stage2/mesopotamia-early-cities-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-egypt-ancient-core-preview",
       "titleKo": "고대 이집트 핵심 유적",
       "path": "data/stage2/egypt-ancient-core-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-indus-civilization-preview",
       "titleKo": "인더스 문명 도시망",
       "path": "data/stage2/indus-civilization-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-early-china-core-preview",
       "titleKo": "초기 중국 문명 형성",
       "path": "data/stage2/early-china-core-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-ancient-greece-core-preview",
       "titleKo": "고대 그리스 핵심 유적",
       "path": "data/stage2/ancient-greece-core-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-achaemenid-persia-core-preview",
       "titleKo": "아케메네스 페르시아 핵심 유적",
       "path": "data/stage2/achaemenid-persia-core-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-roman-empire-core-preview",
       "titleKo": "로마 공화정·제국 핵심 유적",
       "path": "data/stage2/roman-empire-core-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-magadha-maurya-core-preview",
       "titleKo": "마가다·마우리아 핵심 유적",
       "path": "data/stage2/magadha-maurya-core-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-mesoamerica-core-preview",
       "titleKo": "메소아메리카 핵심 유적",
       "path": "data/stage2/mesoamerica-core-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-west-africa-early-states-preview",
       "titleKo": "서아프리카 초기 국가와 교역망",
       "path": "data/stage2/west-africa-early-states-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-andean-core-sites-preview",
       "titleKo": "안데스 초기 국가와 잉카 핵심 유적",
       "path": "data/stage2/andean-core-sites-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-southeast-asia-early-states-preview",
       "titleKo": "동남아 초기 국가와 사원 네트워크",
       "path": "data/stage2/southeast-asia-early-states-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-maya-lowland-postclassic-preview",
       "titleKo": "마야 저지대와 포스트클래식 네트워크",
       "path": "data/stage2/maya-lowland-postclassic-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-swahili-coast-trade-cities-preview",
       "titleKo": "스와힐리 해안 교역 도시",
       "path": "data/stage2/swahili-coast-trade-cities-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-lapita-pacific-settlement-preview",
       "titleKo": "라피타와 태평양 정착 경관",
       "path": "data/stage2/lapita-pacific-settlement-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-north-america-indigenous-mound-urban-centers-preview",
       "titleKo": "북미 원주민 봉분·도시 중심지",
       "path": "data/stage2/north-america-indigenous-mound-urban-centers-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-indian-ocean-trade-ports-entrepots-preview",
       "titleKo": "인도양 교역항과 중계항",
       "path": "data/stage2/indian-ocean-trade-ports-entrepots-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-early-modern-exploration-colonial-port-cities-preview",
       "titleKo": "근세 탐험과 식민 항구 도시",
       "path": "data/stage2/early-modern-exploration-colonial-port-cities-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-early-modern-southeast-asia-maritime-sultanates-port-cities-preview",
       "titleKo": "동남아 근세 해상 술탄국과 식민 항구도시",
       "path": "data/stage2/early-modern-southeast-asia-maritime-sultanates-port-cities-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-early-modern-east-asia-ports-treaty-cities-preview",
       "titleKo": "동아시아 근세 교역항과 조약항 도시",
       "path": "data/stage2/early-modern-east-asia-ports-treaty-cities-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-early-modern-gunpowder-empire-capitals-preview",
       "titleKo": "근세 화약제국 수도와 궁성 복합체",
       "path": "data/stage2/early-modern-gunpowder-empire-capitals-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-central-asia-silk-road-oasis-cities-preview",
       "titleKo": "중앙아시아 실크로드 오아시스 도시",
       "path": "data/stage2/central-asia-silk-road-oasis-cities-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-islamic-caliphate-knowledge-cities-preview",
       "titleKo": "이슬람 칼리프국과 지식도시",
       "path": "data/stage2/islamic-caliphate-knowledge-cities-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-europe-medieval-trade-urban-networks-preview",
       "titleKo": "유럽 중세 교역·도시 네트워크",
       "path": "data/stage2/europe-medieval-trade-urban-networks-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-east-asia-medieval-capitals-knowledge-cities-preview",
       "titleKo": "동아시아 중세 수도와 지식도시",
       "path": "data/stage2/east-asia-medieval-capitals-knowledge-cities-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-europe-renaissance-science-cities-preview",
       "titleKo": "유럽 르네상스와 근세 과학도시",
       "path": "data/stage2/europe-renaissance-science-cities-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-modern-imperial-chokepoints-canal-port-cities-preview",
       "titleKo": "근대 제국주의 해상 관문·운하·항구도시",
       "path": "data/stage2/modern-imperial-chokepoints-canal-port-cities-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-egypt-late-temple-centers-preview",
       "titleKo": "이집트 후기 신전 중심지",
       "path": "data/stage2/egypt-late-temple-centers-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-korea-three-kingdoms-silla-heritage-sites-preview",
       "titleKo": "한국 고대 삼국·통일신라 유산",
       "path": "data/stage2/korea-three-kingdoms-silla-heritage-sites-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-korea-goryeo-joseon-heritage-sites-preview",
       "titleKo": "한국 고려·조선 왕조 유산",
       "path": "data/stage2/korea-goryeo-joseon-heritage-sites-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-japan-ancient-medieval-heritage-sites-preview",
       "titleKo": "일본 고대·중세·근세 유산",
       "path": "data/stage2/japan-ancient-medieval-heritage-sites-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-china-imperial-buddhist-heritage-sites-preview",
       "titleKo": "중국 제국 의례·방어·불교 유산",
       "path": "data/stage2/china-imperial-buddhist-heritage-sites-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-india-temple-cave-heritage-sites-preview",
       "titleKo": "인도 사원·석굴 유산",
       "path": "data/stage2/india-temple-cave-heritage-sites-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-north-africa-punic-roman-urban-heritage-preview",
       "titleKo": "북아프리카 포에니·로마 도시 유산",
       "path": "data/stage2/north-africa-punic-roman-urban-heritage-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-europe-megalithic-ritual-landscapes-preview",
       "titleKo": "유럽 거석 의례 경관",
       "path": "data/stage2/europe-megalithic-ritual-landscapes-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-caucasus-medieval-christian-landscapes-preview",
       "titleKo": "중세 캅카스 기독교 경관",
       "path": "data/stage2/caucasus-medieval-christian-landscapes-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-europe-paleolithic-cave-rock-art-preview",
       "titleKo": "유럽 구석기 동굴벽화·암각화",
       "path": "data/stage2/europe-paleolithic-cave-rock-art-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-african-rock-art-ritual-landscapes-preview",
       "titleKo": "아프리카 암각화·의례 경관",
       "path": "data/stage2/african-rock-art-ritual-landscapes-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-australian-aboriginal-rock-art-deep-time-landscapes-preview",
       "titleKo": "오스트레일리아 원주민 암각화·딥타임 경관",
       "path": "data/stage2/australian-aboriginal-rock-art-deep-time-landscapes-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-north-america-indigenous-rock-art-sacred-landscapes-preview",
       "titleKo": "북아메리카 원주민 암각화·성지 경관",
       "path": "data/stage2/north-america-indigenous-rock-art-sacred-landscapes-preview.json",
-      "status": "preview-only"
+      "status": "active"
     },
     {
       "id": "stage2-south-america-rock-art-geoglyph-deep-time-landscapes-preview",
       "titleKo": "남아메리카 암각화·지상그림 경관",
       "path": "data/stage2/south-america-rock-art-geoglyph-deep-time-landscapes-preview.json",
-      "status": "preview-only"
+      "status": "active"
     }
   ]
 }

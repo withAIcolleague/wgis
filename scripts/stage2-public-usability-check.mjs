@@ -449,7 +449,18 @@ async function main() {
     for (const expected of datasets) {
       const metadata = index.datasets.find(dataset => dataset.path === expected.path);
       assertCheck(Boolean(metadata), `Stage 2 index should include ${expected.path}`);
+      assertCheck(metadata.status === 'active', `Stage 2 index metadata for ${expected.path} should be active`, {
+        actual: metadata.status
+      });
       const dataset = await fetchJson(new URL(expected.path, targetUrl).href);
+      assertCheck(dataset.status === 'active', `Dataset ${expected.path} should be active`, {
+        actual: dataset.status
+      });
+      assertCheck(dataset.status === metadata.status, `Dataset ${expected.path} status should match the index`, {
+        metadata: metadata.status,
+        data: dataset.status
+      });
+      assertCheck(Array.isArray(dataset.entries), `Dataset ${expected.path} should expose entries`);
       assertCheck(dataset.entries.length === expected.count, `Dataset ${expected.path} should expose expected entries`, {
         expected: expected.count,
         actual: dataset.entries.length

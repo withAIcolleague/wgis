@@ -1,6 +1,6 @@
 # WGIS Stage 2 Schema
 
-Last updated: 2026-05-20
+Last updated: 2026-06-02
 
 ## Purpose
 
@@ -35,15 +35,21 @@ Each Stage 2 file under `data/stage2/*.json` should include:
 - `contexts`: historical contexts
 - `entries`: links from existing map entries into Stage 2 contexts
 
+Status values have the following current meaning:
+
+- `active`: verified Stage 2 dataset served by the primary WGIS route
+- `preview-only`: future or experimental dataset that is not yet promoted to the primary route
+- `draft`: incomplete dataset that should not be treated as route-ready
+
 `data/stage2/schema.json` is the schema reference and is not treated as a Stage 2 data batch.
 
-The visible preview page reads dataset options from:
+The Stage 2 main route and QA compatibility route read dataset options from:
 
 ```text
 data/stage2/index.json
 ```
 
-Every Stage 2 data file should be listed in that index so the preview page and validator stay aligned.
+Every route-ready Stage 2 data file should be listed in that index so the app routes and validator stay aligned.
 
 ## Contexts
 
