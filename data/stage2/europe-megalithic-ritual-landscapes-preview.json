@@ -1,0 +1,524 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-europe-megalithic-ritual-landscapes-preview",
+  "titleKo": "2단계 미리보기: 유럽 거석 의례 경관",
+  "descriptionKo": "스톤헨지, 에이브버리, 뉴그레인지, 스카라 브레이, 카르나크, 하자르 킴·므나이드라, 할 사플리에니, 안테케라를 비교해 유럽 신석기·청동기 초기 거석 의례와 장송 경관을 보는 2단계 미리보기 데이터셋입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "신석기",
+        "신석기 말기",
+        "신석기 말기·청동기 초기",
+        "신석기 말기·동기시대",
+        "몰타 신석기 사원기"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "윌트셔",
+        "보인 계곡",
+        "오크니",
+        "브르타뉴 모르비앙",
+        "몰타",
+        "안달루시아"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "환상열석",
+        "헨지",
+        "통로분묘",
+        "선사 취락",
+        "거석 열석",
+        "거석 사원",
+        "지하 장송",
+        "돌멘·톨로스",
+        "천문 축선",
+        "세계유산"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지점 유형",
+      "options": [
+        "유적"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "europe-megalithic-ritual-landscapes",
+      "labelKo": "유럽 대서양·지중해 거석 의례 경관",
+      "parentId": null,
+      "periodKo": "기원전 5000-1600년경",
+      "summaryKo": "브리튼, 아일랜드, 오크니, 브르타뉴, 몰타, 이베리아의 거석 구조물과 장송·의례 경관을 비교해 신석기 공동체가 지형, 하늘, 조상 기억을 공간으로 조직한 방식을 봅니다."
+    },
+    {
+      "id": "britain-neolithic-henge-landscapes",
+      "labelKo": "브리튼 신석기 헨지와 환상열석",
+      "parentId": "europe-megalithic-ritual-landscapes",
+      "periodKo": "기원전 3000-2200년경",
+      "summaryKo": "스톤헨지와 에이브버리를 통해 솔즈베리 평원과 윌트셔 다운스의 헨지, 환상열석, 돌길, 묘역이 의례 경관으로 연결된 방식을 봅니다."
+    },
+    {
+      "id": "stonehenge-salisbury-plain-solstice",
+      "labelKo": "스톤헨지와 솔즈베리 평원 천문 축선",
+      "parentId": "britain-neolithic-henge-landscapes",
+      "periodKo": "기원전 3000-1600년경",
+      "summaryKo": "스톤헨지를 통해 거석 환상열석, 하지·동지 축선, 주변 묘역과 도로가 하나의 의례적 풍경으로 조직된 방식을 봅니다."
+    },
+    {
+      "id": "avebury-wiltshire-downs-henge",
+      "labelKo": "에이브버리와 윌트셔 다운스 헨지 경관",
+      "parentId": "britain-neolithic-henge-landscapes",
+      "periodKo": "기원전 2850-2200년경",
+      "summaryKo": "에이브버리를 통해 대형 흙 제방과 도랑, 환상열석, 돌길, 인근 실버리 힐과 분묘가 복합 의례 경관을 이룬 방식을 봅니다."
+    },
+    {
+      "id": "irish-passage-tomb-landscape",
+      "labelKo": "아일랜드 보인 계곡 통로분묘 경관",
+      "parentId": "europe-megalithic-ritual-landscapes",
+      "periodKo": "기원전 3300-2900년경",
+      "summaryKo": "브루 나 보너를 통해 보인 강 굽이에 집중된 통로분묘, 조각석, 동지 일출 축선, 장송 의례와 장소 기억의 관계를 봅니다."
+    },
+    {
+      "id": "newgrange-bru-na-boinne-solstice-tomb",
+      "labelKo": "뉴그레인지와 동지 일출 통로분묘",
+      "parentId": "irish-passage-tomb-landscape",
+      "periodKo": "기원전 3300-2900년경",
+      "summaryKo": "뉴그레인지를 통해 내부 통로, 봉분, 거석 예술, 동지 일출 빛의 연출이 신석기 장송 의례와 천문 인식에 연결된 방식을 봅니다."
+    },
+    {
+      "id": "orkney-neolithic-settlement-ritual",
+      "labelKo": "오크니 신석기 취락과 의례 네트워크",
+      "parentId": "europe-megalithic-ritual-landscapes",
+      "periodKo": "기원전 3180-2500년경",
+      "summaryKo": "스카라 브레이를 중심으로 오크니의 석조 취락, 마에스하우, 스텐니스, 브로드가르가 거주와 의례를 함께 구성한 방식을 봅니다."
+    },
+    {
+      "id": "skara-brae-orkney-stone-village",
+      "labelKo": "스카라 브레이 석조 취락",
+      "parentId": "orkney-neolithic-settlement-ritual",
+      "periodKo": "기원전 3180-2500년경",
+      "summaryKo": "스카라 브레이를 통해 가옥 내부 구조와 석조 가구가 보존된 취락이 주변 의례 기념물과 어떻게 하나의 신석기 생활권을 이뤘는지 봅니다."
+    },
+    {
+      "id": "atlantic-france-megalithic-alignments",
+      "labelKo": "브르타뉴 모르비앙 거석 열석 경관",
+      "parentId": "europe-megalithic-ritual-landscapes",
+      "periodKo": "기원전 5000-2300년경",
+      "summaryKo": "카르나크와 모르비앙 해안을 통해 선돌 열석, 돌멘, 고분, 해안·수로 지형이 광역 의례 경관으로 배열된 방식을 봅니다."
+    },
+    {
+      "id": "carnac-morbihan-alignments",
+      "labelKo": "카르나크 메넥·케르마리오 열석",
+      "parentId": "atlantic-france-megalithic-alignments",
+      "periodKo": "기원전 5000-2300년경",
+      "summaryKo": "카르나크를 통해 수천 개 선돌과 해안 지형, 돌멘·고분이 서유럽 대서양 거석 문화의 광역 의례 공간으로 구성된 방식을 봅니다."
+    },
+    {
+      "id": "maltese-temple-hypogeum-landscape",
+      "labelKo": "몰타 거석 사원과 지하 장송 경관",
+      "parentId": "europe-megalithic-ritual-landscapes",
+      "periodKo": "기원전 4000-2500년경",
+      "summaryKo": "하자르 킴·므나이드라와 할 사플리에니를 통해 몰타 사원기 공동체가 지상 사원, 태양 방향, 지하 장송 공간을 함께 발전시킨 방식을 봅니다."
+    },
+    {
+      "id": "hagar-qim-mnajdra-temple-complex",
+      "labelKo": "하자르 킴·므나이드라 해안 사원 복합체",
+      "parentId": "maltese-temple-hypogeum-landscape",
+      "periodKo": "기원전 3600-2500년경",
+      "summaryKo": "하자르 킴·므나이드라를 통해 몰타 남부 해안의 거석 사원, 방사형 공간, 태양 방향과 섬 환경의 관계를 봅니다."
+    },
+    {
+      "id": "hal-saflieni-underground-ritual",
+      "labelKo": "할 사플리에니 지하 장송 의례",
+      "parentId": "maltese-temple-hypogeum-landscape",
+      "periodKo": "기원전 4000-2500년경",
+      "summaryKo": "할 사플리에니를 통해 지하 암반 공간, 붉은 안료 장식, 지상 사원 모방, 장송 의례와 소리 경험이 결합한 방식을 봅니다."
+    },
+    {
+      "id": "iberian-megalithic-funerary-landscape",
+      "labelKo": "이베리아 남부 거석 장송 경관",
+      "parentId": "europe-megalithic-ritual-landscapes",
+      "periodKo": "기원전 3800-2200년경",
+      "summaryKo": "안테케라 돌멘을 통해 돌멘·톨로스 무덤과 주변 산·카르스트 지형이 장송 의례의 방향성과 기억을 구성한 방식을 봅니다."
+    },
+    {
+      "id": "antequera-dolmens-natural-axis",
+      "labelKo": "안테케라 돌멘과 자연 지형 축선",
+      "parentId": "iberian-megalithic-funerary-landscape",
+      "periodKo": "기원전 3800-2200년경",
+      "summaryKo": "안테케라를 통해 멘가·비에라 돌멘과 엘 로메랄 톨로스가 페냐 데 로스 에나모라도스와 엘 토르칼 지형을 향해 배치된 방식을 봅니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "stonehenge",
+      "titleKo": "스톤헨지",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "영국",
+      "coordinates": { "lat": 51.1789, "lng": -1.8262 },
+      "yearLabelKo": "기원전 3000-1600년경 거석 환상열석",
+      "summaryKo": "스톤헨지는 솔즈베리 평원의 거석 환상열석과 주변 토루·매장 경관으로 이루어진 선사 의례 중심지다. 먼 거리의 석재 이동, 동지·하지 축선, 주변 묘역과 도로는 신석기 말기 공동체가 하늘, 지형, 조상 기억을 거대한 축조물로 조직한 방식을 보여준다.",
+      "stage2": {
+        "primaryContextId": "stonehenge-salisbury-plain-solstice",
+        "contextIds": [
+          "europe-megalithic-ritual-landscapes",
+          "britain-neolithic-henge-landscapes",
+          "stonehenge-salisbury-plain-solstice"
+        ],
+        "periodPathKo": [
+          "선사",
+          "신석기 말기·청동기 초기",
+          "천문 축선 환상열석"
+        ],
+        "topicTagsKo": [
+          "스톤헨지",
+          "솔즈베리 평원",
+          "환상열석",
+          "동지·하지",
+          "거석 이동"
+        ],
+        "uiFilters": {
+          "era": "신석기 말기·청동기 초기",
+          "region": "윌트셔",
+          "theme": [
+            "환상열석",
+            "헨지",
+            "천문 축선",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO, English Heritage, National Trust 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "avebury-henge",
+      "titleKo": "에이브버리 환상열석",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "영국",
+      "coordinates": { "lat": 51.4286, "lng": -1.8542 },
+      "yearLabelKo": "기원전 2850-2200년경 대형 헨지와 환상열석",
+      "summaryKo": "에이브버리는 거대한 흙 제방과 도랑, 환상열석, 돌길, 인근 실버리 힐과 분묘가 결합한 신석기 의례 경관이다. 마을과 유적이 겹쳐 있는 현재의 모습은 선사시대 기념물과 장기적인 거주·기억의 관계를 지도 위에서 살펴보게 한다.",
+      "stage2": {
+        "primaryContextId": "avebury-wiltshire-downs-henge",
+        "contextIds": [
+          "europe-megalithic-ritual-landscapes",
+          "britain-neolithic-henge-landscapes",
+          "avebury-wiltshire-downs-henge"
+        ],
+        "periodPathKo": [
+          "선사",
+          "신석기 말기",
+          "대형 헨지 경관"
+        ],
+        "topicTagsKo": [
+          "에이브버리",
+          "헨지",
+          "실버리 힐",
+          "웨스트 케넷 애비뉴",
+          "환상열석"
+        ],
+        "uiFilters": {
+          "era": "신석기 말기",
+          "region": "윌트셔",
+          "theme": [
+            "환상열석",
+            "헨지",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO, English Heritage, National Trust 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "newgrange-bru-na-boinne",
+      "titleKo": "뉴그레인지와 브루 나 보너",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "아일랜드",
+      "coordinates": { "lat": 53.6947, "lng": -6.4755 },
+      "yearLabelKo": "기원전 3300-2900년경 통로분묘와 거석 예술",
+      "summaryKo": "뉴그레인지와 브루 나 보너는 보인 강 굽이에 집중된 통로분묘와 거석 예술의 대표 경관이다. 뉴그레인지, 노스, 다우스의 봉분과 조각석, 동지 일출과 연결되는 내부 통로는 장송 의례와 천문 관찰, 장소 기억이 결합한 신석기 세계를 보여준다.",
+      "stage2": {
+        "primaryContextId": "newgrange-bru-na-boinne-solstice-tomb",
+        "contextIds": [
+          "europe-megalithic-ritual-landscapes",
+          "irish-passage-tomb-landscape",
+          "newgrange-bru-na-boinne-solstice-tomb"
+        ],
+        "periodPathKo": [
+          "선사",
+          "신석기",
+          "통로분묘와 거석 예술"
+        ],
+        "topicTagsKo": [
+          "뉴그레인지",
+          "브루 나 보너",
+          "보인 계곡",
+          "통로분묘",
+          "동지 일출"
+        ],
+        "uiFilters": {
+          "era": "신석기",
+          "region": "보인 계곡",
+          "theme": [
+            "통로분묘",
+            "천문 축선",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO, Heritage Ireland, World Heritage Ireland 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "skara-brae",
+      "titleKo": "스카라 브레이",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "영국",
+      "coordinates": { "lat": 59.0487, "lng": -3.3430 },
+      "yearLabelKo": "기원전 3180-2500년경 석조 취락",
+      "summaryKo": "스카라 브레이는 오크니 해안에 남은 신석기 석조 취락으로, 가옥 내부 구조와 가구 배치까지 비교적 잘 보존된 드문 사례다. 마에스하우, 스텐니스, 브로드가르와 함께 북서유럽 신석기 사람들이 거주지와 의례 경관을 분리하지 않고 조직한 모습을 보여준다.",
+      "stage2": {
+        "primaryContextId": "skara-brae-orkney-stone-village",
+        "contextIds": [
+          "europe-megalithic-ritual-landscapes",
+          "orkney-neolithic-settlement-ritual",
+          "skara-brae-orkney-stone-village"
+        ],
+        "periodPathKo": [
+          "선사",
+          "신석기",
+          "석조 취락"
+        ],
+        "topicTagsKo": [
+          "스카라 브레이",
+          "오크니",
+          "석조 취락",
+          "신석기 생활",
+          "의례 네트워크"
+        ],
+        "uiFilters": {
+          "era": "신석기",
+          "region": "오크니",
+          "theme": [
+            "선사 취락",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO와 Historic Environment Scotland 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "carnac-megaliths",
+      "titleKo": "카르나크 거석군",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "프랑스",
+      "coordinates": { "lat": 47.5929, "lng": -3.0830 },
+      "yearLabelKo": "기원전 5000-2300년경 거석 열석·돌멘·분묘 경관",
+      "summaryKo": "카르나크 거석군은 브르타뉴 모르비앙 해안에 집중된 거석 열석, 돌멘, 고분, 조각석 경관이다. 수천 개의 선돌과 해안·구릉·수로의 관계는 서유럽 신석기 공동체가 지형과 시각 축을 이용해 광역 의례 공간을 구성한 방식을 보여준다.",
+      "stage2": {
+        "primaryContextId": "carnac-morbihan-alignments",
+        "contextIds": [
+          "europe-megalithic-ritual-landscapes",
+          "atlantic-france-megalithic-alignments",
+          "carnac-morbihan-alignments"
+        ],
+        "periodPathKo": [
+          "선사",
+          "신석기",
+          "대서양 거석 열석"
+        ],
+        "topicTagsKo": [
+          "카르나크",
+          "모르비앙",
+          "메넥 열석",
+          "케르마리오",
+          "돌멘"
+        ],
+        "uiFilters": {
+          "era": "신석기",
+          "region": "브르타뉴 모르비앙",
+          "theme": [
+            "거석 열석",
+            "돌멘·톨로스",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO와 카르나크·모르비앙 관리 자료를 사용했지만 대표 좌표는 넓은 연속 경관 중 카르나크 열석 권역을 표시합니다."
+        }
+      }
+    },
+    {
+      "entryId": "hagar-qim-mnajdra",
+      "titleKo": "하자르 킴·므나이드라",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "몰타",
+      "coordinates": { "lat": 35.8267, "lng": 14.4395 },
+      "yearLabelKo": "기원전 3600-2500년경 거석 사원",
+      "summaryKo": "하자르 킴·므나이드라는 몰타 남부 해안의 석회암 지대에 세워진 신석기 거석 사원 복합체다. 방사형 공간 구성, 대형 석재, 태양 방향과 관련된 배치는 몰타 사원기 공동체가 섬 환경 속에서 의례와 건축 기술을 고도로 발전시킨 사례다.",
+      "stage2": {
+        "primaryContextId": "hagar-qim-mnajdra-temple-complex",
+        "contextIds": [
+          "europe-megalithic-ritual-landscapes",
+          "maltese-temple-hypogeum-landscape",
+          "hagar-qim-mnajdra-temple-complex"
+        ],
+        "periodPathKo": [
+          "선사",
+          "몰타 신석기 사원기",
+          "거석 사원"
+        ],
+        "topicTagsKo": [
+          "하자르 킴",
+          "므나이드라",
+          "몰타 사원기",
+          "태양 방향",
+          "거석 사원"
+        ],
+        "uiFilters": {
+          "era": "몰타 신석기 사원기",
+          "region": "몰타",
+          "theme": [
+            "거석 사원",
+            "천문 축선",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO와 Heritage Malta 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "hal-saflieni-hypogeum",
+      "titleKo": "할 사플리에니 지하묘역",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "몰타",
+      "coordinates": { "lat": 35.8694, "lng": 14.5069 },
+      "yearLabelKo": "기원전 4000-2500년경 지하 장송 복합체",
+      "summaryKo": "할 사플리에니 지하묘역은 몰타 파올라의 암반을 파서 만든 지하 장송·의례 복합체다. 층층이 이어지는 방, 붉은 안료 장식, 지상 사원을 모방한 공간은 신석기 몰타의 죽음, 공동체 기억, 소리와 공간 경험을 보여주는 독특한 유산이다.",
+      "stage2": {
+        "primaryContextId": "hal-saflieni-underground-ritual",
+        "contextIds": [
+          "europe-megalithic-ritual-landscapes",
+          "maltese-temple-hypogeum-landscape",
+          "hal-saflieni-underground-ritual"
+        ],
+        "periodPathKo": [
+          "선사",
+          "몰타 신석기 사원기",
+          "지하 장송 의례"
+        ],
+        "topicTagsKo": [
+          "할 사플리에니",
+          "지하묘역",
+          "암반 공간",
+          "붉은 안료",
+          "장송 의례"
+        ],
+        "uiFilters": {
+          "era": "몰타 신석기 사원기",
+          "region": "몰타",
+          "theme": [
+            "지하 장송",
+            "거석 사원",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO와 Heritage Malta 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "antequera-dolmens",
+      "titleKo": "안테케라 돌멘 유적",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "스페인",
+      "coordinates": { "lat": 37.0256, "lng": -4.5460 },
+      "yearLabelKo": "기원전 3800-2200년경 돌멘·톨로스 장송 경관",
+      "summaryKo": "안테케라 돌멘 유적은 멘가와 비에라 돌멘, 엘 로메랄 톨로스와 주변 자연 지형이 결합한 이베리아 남부의 거석 장송 경관이다. 특히 산과 암반 지형을 향한 축선은 무덤이 단순한 매장 시설을 넘어 자연 표지와 의례적으로 연결되었음을 보여준다.",
+      "stage2": {
+        "primaryContextId": "antequera-dolmens-natural-axis",
+        "contextIds": [
+          "europe-megalithic-ritual-landscapes",
+          "iberian-megalithic-funerary-landscape",
+          "antequera-dolmens-natural-axis"
+        ],
+        "periodPathKo": [
+          "선사",
+          "신석기 말기·동기시대",
+          "돌멘·톨로스 장송 경관"
+        ],
+        "topicTagsKo": [
+          "안테케라",
+          "멘가 돌멘",
+          "비에라 돌멘",
+          "엘 로메랄",
+          "자연 지형 축선"
+        ],
+        "uiFilters": {
+          "era": "신석기 말기·동기시대",
+          "region": "안달루시아",
+          "theme": [
+            "돌멘·톨로스",
+            "천문 축선",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO와 Andalusia Tourism 자료를 사용했습니다."
+        }
+      }
+    }
+  ]
+}

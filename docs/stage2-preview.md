@@ -954,3 +954,30 @@ The 2026-05-22 thirty-six-dataset public browser pass checks `https://wgis.verce
 - The `트리폴리타니아 포에니·로마 항구도시` context filter returns `렙티스 마그나` and `사브라타` with 2 markers and 2 labels and no stale Cyrene data.
 - On mobile, `엘젬 원형경기장` detail renders with source-confidence information and both detail actions.
 - Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-six-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-six-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.
+
+## Thirty-Seventh Pilot Dataset
+
+The European Atlantic and Mediterranean megalithic ritual landscapes pilot dataset adds 8 entries:
+
+- `스톤헨지`
+- `에이브버리 환상열석`
+- `뉴그레인지와 브루 나 보너`
+- `스카라 브레이`
+- `카르나크 거석군`
+- `하자르 킴·므나이드라`
+- `할 사플리에니 지하묘역`
+- `안테케라 돌멘 유적`
+
+## Thirty-Seven-Dataset Public Usability Pass
+
+The 2026-05-22 thirty-seven-dataset public browser pass checks `https://wgis.vercel.app/stage2-preview.html` after adding the European megalithic ritual landscapes pilot dataset:
+
+- Dataset selector exposes 37 datasets.
+- All 37 indexed datasets render their expected entry, marker, and permanent-label counts across 307 Stage 2 preview entries.
+- The new European megalithic dataset exposes 8 entries: `스톤헨지`, `에이브버리 환상열석`, `뉴그레인지와 브루 나 보너`, `스카라 브레이`, `카르나크 거석군`, `하자르 킴·므나이드라`, `할 사플리에니 지하묘역`, and `안테케라 돌멘 유적`.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control.
+- Searching `카르나크` in the European megalithic dataset narrows the list and map to `카르나크 거석군` with 1 marker and 1 label.
+- Selecting `뉴그레인지와 브루 나 보너` opens the detail panel with source-confidence information and detail actions.
+- The `몰타 거석 사원과 지하 장송 경관` context filter returns `하자르 킴·므나이드라` and `할 사플리에니 지하묘역` with 2 markers and 2 labels and no stale Stonehenge data.
+- On mobile, `안테케라 돌멘 유적` detail renders with source-confidence information and both detail actions.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-seven-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-seven-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.

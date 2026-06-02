@@ -198,12 +198,17 @@ const datasets = [
     path: 'data/stage2/north-africa-punic-roman-urban-heritage-preview.json',
     count: 8,
     firstEntryId: 'dougga-thugga'
+  },
+  {
+    path: 'data/stage2/europe-megalithic-ritual-landscapes-preview.json',
+    count: 8,
+    firstEntryId: 'stonehenge'
   }
 ];
 
 const latestDataset = datasets[datasets.length - 1];
-const desktopShot = path.join(outputDir, 'wgis-stage2-thirty-six-datasets-desktop.png');
-const mobileShot = path.join(outputDir, 'wgis-stage2-thirty-six-datasets-mobile.png');
+const desktopShot = path.join(outputDir, 'wgis-stage2-thirty-seven-datasets-desktop.png');
+const mobileShot = path.join(outputDir, 'wgis-stage2-thirty-seven-datasets-mobile.png');
 
 function assertCheck(condition, message, details = undefined) {
   if (!condition) {
@@ -372,59 +377,59 @@ async function main() {
       assertCheck(state.contextFilterButtons <= 4 && state.contextFilterToggle, 'Initial context filters should start compact', state);
 
       dom = await dumpDom(buildUrl({ dataset: latestDataset.path }), userDataDir);
-      state = extractState('desktop-north-africa-punic-roman-default', dom);
+      state = extractState('desktop-europe-megalithic-default', dom);
       states.push(state);
-      assertCheck(state.entryCards === latestDataset.count && state.entryIds.includes('dougga-thugga'), 'Latest dataset should render Dougga and all entries', state);
+      assertCheck(state.entryCards === latestDataset.count && state.entryIds.includes('stonehenge'), 'Latest dataset should render Stonehenge and all entries', state);
 
-      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, q: '팀가드' }), userDataDir);
-      state = extractState('desktop-north-africa-punic-roman-search-timgad', dom);
+      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, q: '카르나크' }), userDataDir);
+      state = extractState('desktop-europe-megalithic-search-carnac', dom);
       states.push(state);
-      assertCheck(state.entryCountText === '1개' && state.entryIds.includes('timgad-thamugadi'), 'Latest dataset search should find Timgad', state);
+      assertCheck(state.entryCountText === '1개' && state.entryIds.includes('carnac-megaliths'), 'Latest dataset search should find Carnac', state);
 
-      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, entry: 'leptis-magna' }), userDataDir);
-      state = extractState('desktop-north-africa-punic-roman-detail-leptis', dom);
+      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, entry: 'newgrange-bru-na-boinne' }), userDataDir);
+      state = extractState('desktop-europe-megalithic-detail-newgrange', dom);
       states.push(state);
       assertCheck(
-        state.detailTitle === '렙티스 마그나' && state.detailActions === 2 && state.hasSourceConfidence,
-        'Latest dataset detail should show Leptis Magna, source confidence, and detail actions',
+        state.detailTitle === '뉴그레인지와 브루 나 보너' && state.detailActions === 2 && state.hasSourceConfidence,
+        'Latest dataset detail should show Newgrange, source confidence, and detail actions',
         state
       );
 
       dom = await dumpDom(buildUrl({
         dataset: latestDataset.path,
-        context: 'tripolitanian-punic-roman-ports'
+        context: 'maltese-temple-hypogeum-landscape'
       }), userDataDir);
-      state = extractState('desktop-north-africa-punic-roman-tripolitania-context', dom);
+      state = extractState('desktop-europe-megalithic-malta-context', dom);
       states.push(state);
       assertCheck(
         state.entryCountText === '2개' &&
-          state.entryIds.includes('leptis-magna') &&
-          state.entryIds.includes('sabratha') &&
-          !state.entryIds.includes('cyrene'),
-        'Tripolitania context should return Leptis Magna and Sabratha without stale Cyrenaica data',
+          state.entryIds.includes('hagar-qim-mnajdra') &&
+          state.entryIds.includes('hal-saflieni-hypogeum') &&
+          !state.entryIds.includes('stonehenge'),
+        'Maltese temple and hypogeum context should return the two Malta entries without stale Britain data',
         state
       );
 
       dom = await dumpDom(buildUrl({
         dataset: latestDataset.path,
-        entry: 'el-jem-amphitheatre'
+        entry: 'antequera-dolmens'
       }), userDataDir, { width: 390, height: 844 });
-      state = extractState('mobile-north-africa-punic-roman-detail-el-jem', dom);
+      state = extractState('mobile-europe-megalithic-detail-antequera', dom);
       states.push(state);
       assertCheck(
-        state.ready && state.detailTitle === '엘젬 원형경기장' && state.detailActions === 2,
-        'Mobile-sized latest dataset render should keep the El Jem detail panel available',
+        state.ready && state.detailTitle === '안테케라 돌멘 유적' && state.detailActions === 2,
+        'Mobile-sized latest dataset render should keep the Antequera detail panel available',
         state
       );
 
       await captureScreenshot(
-        buildUrl({ dataset: latestDataset.path, entry: 'leptis-magna' }),
+        buildUrl({ dataset: latestDataset.path, entry: 'newgrange-bru-na-boinne' }),
         userDataDir,
         desktopShot,
         { width: 1440, height: 920 }
       );
       await captureScreenshot(
-        buildUrl({ dataset: latestDataset.path, entry: 'el-jem-amphitheatre' }),
+        buildUrl({ dataset: latestDataset.path, entry: 'antequera-dolmens' }),
         userDataDir,
         mobileShot,
         { width: 390, height: 844 }

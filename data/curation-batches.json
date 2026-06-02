@@ -1068,6 +1068,34 @@
         "Britannica and Livius references for ancient North African city context",
         "African World Heritage Sites references for Roman North Africa comparative framing"
       ]
+    },
+    {
+      "id": "europe-prehistory-atlantic-mediterranean-megalithic-ritual-landscapes-v1",
+      "status": "completed",
+      "completedAt": "2026-05-22",
+      "continentId": "europe",
+      "countryIso2": "GB-IE-FR-MT-ES",
+      "countryKo": "영국·아일랜드·프랑스·몰타·스페인",
+      "worldRegion": "유럽 선사·거석 의례 경관",
+      "focusKo": "유럽 대서양·지중해 거석 의례 경관 핵심 지점",
+      "scopeKo": "스톤헨지, 에이브버리, 브루 나 보너, 스카라 브레이, 카르나크, 하자르 킴·므나이드라, 할 사플리에니, 안테케라를 통해 신석기·청동기 초기 유럽 거석 의례와 장송 경관을 연결하는 핵심 지점",
+      "sourceFile": "data/records/europe/prehistory/atlantic-mediterranean-megalithic-ritual-landscapes.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "stonehenge",
+        "avebury-henge",
+        "newgrange-bru-na-boinne",
+        "skara-brae",
+        "carnac-megaliths",
+        "hagar-qim-mnajdra",
+        "hal-saflieni-hypogeum",
+        "antequera-dolmens"
+      ],
+      "sourceBasis": [
+        "UNESCO World Heritage pages for Stonehenge and Avebury, Brú na Bóinne, Heart of Neolithic Orkney, Carnac and Morbihan, Megalithic Temples of Malta, Ħal Saflieni Hypogeum, and Antequera Dolmens",
+        "English Heritage, National Trust, Heritage Ireland, World Heritage Ireland, Historic Environment Scotland, Heritage Malta, Carnac Alignments, Megalithic Landscapes of Morbihan, and Andalusia Tourism references for site-level management and visitor context",
+        "Representative coordinates selected for the visible core monument or central component within each wider prehistoric landscape"
+      ]
     }
   ]
 }

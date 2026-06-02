@@ -218,6 +218,12 @@
       "titleKo": "북아프리카 포에니·로마 도시 유산",
       "path": "data/stage2/north-africa-punic-roman-urban-heritage-preview.json",
       "status": "preview-only"
+    },
+    {
+      "id": "stage2-europe-megalithic-ritual-landscapes-preview",
+      "titleKo": "유럽 거석 의례 경관",
+      "path": "data/stage2/europe-megalithic-ritual-landscapes-preview.json",
+      "status": "preview-only"
     }
   ]
 }
