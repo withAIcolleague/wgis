@@ -1131,9 +1131,9 @@ The South American rock art, geoglyph, and deep-time landscapes pilot dataset ad
 - `토로 무에르토 암각화`
 - `몬테 베르데 고고학 유적`
 
-## Forty-Three-Dataset Local Readiness Pass
+## Forty-Three-Dataset Public Usability Pass
 
-The 2026-06-02 forty-three-dataset local readiness pass prepares `https://wgis.vercel.app/stage2-preview.html` verification after adding the South American rock art, geoglyph, and deep-time landscapes pilot dataset:
+The 2026-06-02 forty-three-dataset public browser pass checks `https://wgis.vercel.app/stage2-preview.html` after adding the South American rock art, geoglyph, and deep-time landscapes pilot dataset:
 
 - Dataset selector exposes 43 datasets.
 - All 43 indexed datasets render their expected entry, marker, and permanent-label counts across 355 Stage 2 preview entries.
@@ -1143,5 +1143,5 @@ The 2026-06-02 forty-three-dataset local readiness pass prepares `https://wgis.v
 - Selecting `나스카·팔파 선과 지상그림` opens the detail panel with source-confidence information and detail actions.
 - The `안데스 사막 지상그림·의례 경관` context filter returns `나스카·팔파 선과 지상그림`, `푸에르테 데 사마이파타`, `핀타도스 지상그림`, and `토로 무에르토 암각화` with 4 markers and 4 labels and no stale Patagonia data.
 - On mobile, `몬테 베르데 고고학 유적` detail renders with source-confidence information and both detail actions.
-- Browser screenshots are configured to save to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-forty-three-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-forty-three-datasets-mobile.png` when the deployed endpoint exposes the forty-third dataset.
-- Public endpoint verification should be attempted at most once after push in this batch; if the deployed Stage 2 index still exposes an older dataset count, drop further retries per the three-call cap.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-forty-three-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-forty-three-datasets-mobile.png` when the local headless browser runtime is available.
+- Public endpoint and headless browser verification completed on the first post-push attempt, within the three-call cap.
