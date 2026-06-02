@@ -14,7 +14,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Current entry count: 355
 - Completed curation batches: 44
 - Latest completed batch: `americas-south-america-rock-art-geoglyph-deep-time-landscapes-v1`
-- Latest completed infrastructure milestone: stage-2 main layout promotion
+- Latest completed infrastructure milestone: stage-2 main route verification hardening
 - Primary app route: `/` uses the Stage 2 context map
 - First-stage support route: `/stage1.html`
 - Stage-2 QA compatibility route: `/stage2-preview.html`
@@ -814,6 +814,12 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - URL paths: `/`, `/stage1.html`, `/stage2-preview.html`
   - Scope: promote the Stage 2 context-map layout to the default WGIS route while keeping the previous first-stage basic map as a supporting page
   - Result: `/` is now the Stage 2 main experience, `/stage1.html` preserves the first-stage search/map workflow, and `/stage2-preview.html` remains available for QA and compatibility checks
+
+- Stage-2 main route verification hardening
+  - Files: `index.html`, `stage2-preview.js`, `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`, `data/PROJECT_STATE.md`
+  - URL paths: `/`, `/stage1.html`, `/stage2-preview.html`
+  - Scope: make the public usability script verify all three user-facing routes and remove preview/sample wording from the primary Stage 2 route
+  - Result: `/` defaults to the latest Stage 2 dataset, `/stage1.html` remains the first-stage support route, and `/stage2-preview.html` remains the QA compatibility route
 
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`

@@ -4,7 +4,7 @@ import { existsSync } from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 
-const targetUrl = process.argv[2] || 'https://wgis.vercel.app/stage2-preview.html';
+const targetUrl = process.argv[2] || 'https://wgis.vercel.app/';
 const outputDir = process.argv[4] || 'C:/Users/Public/Documents/ESTsoft/CreatorTemp';
 
 const chromeCandidates = [
@@ -239,6 +239,9 @@ const datasets = [
 const latestDataset = datasets[datasets.length - 1];
 const desktopShot = path.join(outputDir, 'wgis-stage2-forty-three-datasets-desktop.png');
 const mobileShot = path.join(outputDir, 'wgis-stage2-forty-three-datasets-mobile.png');
+const appRootUrl = new URL('/', targetUrl).href;
+const stage1Url = new URL('/stage1.html', targetUrl).href;
+const stage2PreviewUrl = new URL('/stage2-preview.html', targetUrl).href;
 
 function assertCheck(condition, message, details = undefined) {
   if (!condition) {
@@ -254,6 +257,10 @@ function countOccurrences(text, pattern) {
 
 function stripTags(value) {
   return String(value || '').replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
+}
+
+function includesAll(text, values) {
+  return values.every(value => text.includes(value));
 }
 
 function extractTextById(dom, id) {
@@ -299,6 +306,59 @@ async function fetchJson(url, timeoutMs = 15000) {
   } finally {
     clearTimeout(timeout);
   }
+}
+
+async function fetchText(url, timeoutMs = 15000) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const response = await fetch(url, { signal: controller.signal });
+    if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+    return response.text();
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
+async function validateRoutes() {
+  const rootHtml = await fetchText(appRootUrl);
+  const stage1Html = await fetchText(stage1Url);
+  const stage2PreviewHtml = await fetchText(stage2PreviewUrl);
+
+  const states = [
+    {
+      label: 'root-stage-2-main',
+      url: appRootUrl,
+      stage2Assets: includesAll(rootHtml, ['stage2-preview.css', 'stage2-preview.js', 'datasetSelect', 'stage2Map']),
+      stage1Link: rootHtml.includes('href="stage1.html"'),
+      stage1AssetsAbsent: !rootHtml.includes('app.js')
+    },
+    {
+      label: 'stage-1-support',
+      url: stage1Url,
+      stage1Assets: includesAll(stage1Html, ['styles.css', 'app.js', 'searchInput', 'map']),
+      mainLink: stage1Html.includes('href="/"'),
+      stage2AssetsAbsent: !stage1Html.includes('stage2-preview.js')
+    },
+    {
+      label: 'stage-2-qa-compatibility',
+      url: stage2PreviewUrl,
+      stage2Assets: includesAll(stage2PreviewHtml, ['stage2-preview.css', 'stage2-preview.js', 'datasetSelect', 'stage2Map']),
+      mainLink: stage2PreviewHtml.includes('href="/"')
+    }
+  ];
+
+  for (const state of states) {
+    assertCheck(
+      Object.entries(state)
+        .filter(([key]) => !['label', 'url'].includes(key))
+        .every(([, value]) => value === true),
+      `Route ${state.label} should expose the expected WGIS layout`,
+      state
+    );
+  }
+
+  return states;
 }
 
 function buildUrl(params = {}) {
@@ -378,6 +438,7 @@ async function main() {
   const states = [];
 
   try {
+    const routeStates = await validateRoutes();
     const index = await fetchJson(new URL('data/stage2/index.json', targetUrl).href);
     assertCheck(Array.isArray(index.datasets), 'Stage 2 index should expose datasets');
     assertCheck(index.datasets.length === datasets.length, 'Stage 2 index should expose the expected dataset count', {
@@ -478,6 +539,7 @@ async function main() {
     console.log(JSON.stringify({
       ok: true,
       url: targetUrl,
+      routes: routeStates,
       checkedDatasets: datasets.length,
       checkedEntries: datasets.reduce((total, dataset) => total + dataset.count, 0),
       browserProbe,

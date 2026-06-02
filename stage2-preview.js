@@ -230,7 +230,7 @@ function renderEntries() {
   document.getElementById('entryCount').textContent = `${entries.length}개`;
 
   if (!entries.length) {
-    list.innerHTML = '<div class="empty-state">조건에 맞는 2단계 샘플 항목이 없습니다.</div>';
+    list.innerHTML = '<div class="empty-state">조건에 맞는 2단계 항목이 없습니다.</div>';
     return;
   }
 
@@ -426,10 +426,11 @@ async function init() {
   stage2Index = await indexResponse.json();
 
   const requestedDatasetPath = initialParams.get('dataset');
+  const latestDatasetPath = stage2Index.datasets.at(-1)?.path || null;
   activeDatasetPath = stage2Index.datasets.some(dataset => dataset.path === requestedDatasetPath)
     ? requestedDatasetPath
-    : stage2Index.datasets[0]?.path || null;
-  if (!activeDatasetPath) throw new Error('2단계 미리보기 데이터셋이 없습니다.');
+    : latestDatasetPath;
+  if (!activeDatasetPath) throw new Error('2단계 데이터셋이 없습니다.');
 
   renderDatasetSelect();
 
@@ -457,7 +458,7 @@ async function init() {
 
 async function loadDataset(path, options = {}) {
   const response = await fetch(path);
-  if (!response.ok) throw new Error(`2단계 미리보기 데이터를 불러오지 못했습니다: ${response.status}`);
+  if (!response.ok) throw new Error(`2단계 데이터를 불러오지 못했습니다: ${response.status}`);
 
   stage2Data = await response.json();
   activeDatasetPath = path;

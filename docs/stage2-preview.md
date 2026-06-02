@@ -417,10 +417,10 @@ The Stage 2 validator checks the preview data against `data/stage2/schema.json`.
 The public usability pass can be run with:
 
 ```bash
-npm run check:stage2-public -- https://wgis.vercel.app/stage2-preview.html
+npm run check:stage2-public -- https://wgis.vercel.app/
 ```
 
-It verifies the deployed Stage 2 index and every dataset endpoint. When headless Chrome is available, it also probes rendered URL states for compact context filters, search, detail rendering, stale-data cleanup, and mobile-sized rendering, then saves desktop and mobile screenshots outside the repository. If the local Chrome/Edge runtime cannot run headless rendering, the script reports `browserProbe: "skipped"` with the browser error while keeping the data endpoint verification explicit.
+It verifies the deployed root route, the first-stage support route, the Stage 2 QA compatibility route, the Stage 2 index, and every dataset endpoint. When headless Chrome is available, it also probes rendered URL states for compact context filters, search, detail rendering, stale-data cleanup, and mobile-sized rendering, then saves desktop and mobile screenshots outside the repository. If the local Chrome/Edge runtime cannot run headless rendering, the script reports `browserProbe: "skipped"` with the browser error while keeping the route and data endpoint verification explicit.
 
 ## Browser Usability Pass
 

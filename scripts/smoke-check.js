@@ -99,6 +99,7 @@ function main() {
     'entryList',
     'detailPanel'
   ]));
+  check('stage 2 main avoids preview-only wording', !html.includes('미리보기') && !html.includes('샘플'));
 
   check('entries are fetched from app data', app.includes("fetch('data/entries.json')"));
   check('search button executes map search', app.includes("searchButton.addEventListener('click', executeSearch)"));
@@ -156,6 +157,7 @@ function main() {
     'detailPanel'
   ]));
   check('stage 2 preview fetches dataset index', stage2App.includes("fetch('data/stage2/index.json')"));
+  check('stage 2 app defaults to latest dataset', stage2App.includes('stage2Index.datasets.at(-1)?.path'));
   check('stage 2 preview can load selected dataset path', stage2App.includes('loadDataset(event.target.value)'));
   check('stage 2 preview renders Leaflet markers', includesAll(stage2App, ['L.map', 'L.marker', 'bindTooltip']));
   check('stage 2 preview clears stale marker labels', includesAll(stage2App, ['function clearMarkers()', 'unbindTooltip()', '.leaflet-tooltip.stage2-label']));
