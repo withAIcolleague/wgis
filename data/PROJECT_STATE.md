@@ -819,7 +819,8 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - Files: `index.html`, `stage2-preview.js`, `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`, `data/PROJECT_STATE.md`
   - URL paths: `/`, `/stage1.html`, `/stage2-preview.html`
   - Scope: make the public usability script verify all three user-facing routes and remove preview/sample wording from the primary Stage 2 route
-  - Result: `/` defaults to the latest Stage 2 dataset, `/stage1.html` remains the first-stage support route, and `/stage2-preview.html` remains the QA compatibility route
+  - Checked: local data validation, Stage 2 schema validation, smoke checks, local route/data endpoint verification, and one public route/data/browser verification pass for `/`, `/stage1.html`, `/stage2-preview.html`, 43 datasets, and 355 Stage 2 entries
+  - Result: `/` defaults to the latest Stage 2 dataset, `/stage1.html` remains the first-stage support route, `/stage2-preview.html` remains the QA compatibility route, and public verification completed on the first post-push attempt
 
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`
