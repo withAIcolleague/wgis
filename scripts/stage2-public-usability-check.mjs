@@ -228,12 +228,17 @@ const datasets = [
     path: 'data/stage2/north-america-indigenous-rock-art-sacred-landscapes-preview.json',
     count: 8,
     firstEntryId: 'petroglyph-national-monument'
+  },
+  {
+    path: 'data/stage2/south-america-rock-art-geoglyph-deep-time-landscapes-preview.json',
+    count: 8,
+    firstEntryId: 'cueva-de-las-manos'
   }
 ];
 
 const latestDataset = datasets[datasets.length - 1];
-const desktopShot = path.join(outputDir, 'wgis-stage2-forty-two-datasets-desktop.png');
-const mobileShot = path.join(outputDir, 'wgis-stage2-forty-two-datasets-mobile.png');
+const desktopShot = path.join(outputDir, 'wgis-stage2-forty-three-datasets-desktop.png');
+const mobileShot = path.join(outputDir, 'wgis-stage2-forty-three-datasets-mobile.png');
 
 function assertCheck(condition, message, details = undefined) {
   if (!condition) {
@@ -402,60 +407,61 @@ async function main() {
       assertCheck(state.contextFilterButtons <= 4 && state.contextFilterToggle, 'Initial context filters should start compact', state);
 
       dom = await dumpDom(buildUrl({ dataset: latestDataset.path }), userDataDir);
-      state = extractState('desktop-north-america-indigenous-rock-art-default', dom);
+      state = extractState('desktop-south-america-rock-art-default', dom);
       states.push(state);
-      assertCheck(state.entryCards === latestDataset.count && state.entryIds.includes('petroglyph-national-monument'), 'Latest dataset should render Petroglyph National Monument and all entries', state);
+      assertCheck(state.entryCards === latestDataset.count && state.entryIds.includes('cueva-de-las-manos'), 'Latest dataset should render Cueva de las Manos and all entries', state);
 
-      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, q: '아이시나이피' }), userDataDir);
-      state = extractState('desktop-north-america-search-aisinai-pi', dom);
+      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, q: '치리비케테' }), userDataDir);
+      state = extractState('desktop-south-america-search-chiribiquete', dom);
       states.push(state);
-      assertCheck(state.entryCountText === '1개' && state.entryIds.includes('writing-on-stone-aisinai-pi'), 'Latest dataset search should find Writing-on-Stone / Aisinai pi', state);
+      assertCheck(state.entryCountText === '1개' && state.entryIds.includes('chiribiquete-national-park'), 'Latest dataset search should find Chiribiquete', state);
 
-      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, entry: 'horseshoe-canyon-great-gallery' }), userDataDir);
-      state = extractState('desktop-north-america-detail-horseshoe-canyon', dom);
+      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, entry: 'nasca-palpa-lines-geoglyphs' }), userDataDir);
+      state = extractState('desktop-south-america-detail-nasca-palpa', dom);
       states.push(state);
       assertCheck(
-        state.detailTitle === '호스슈 캐니언 그레이트 갤러리' && state.detailActions === 2 && state.hasSourceConfidence,
-        'Latest dataset detail should show Horseshoe Canyon, source confidence, and detail actions',
+        state.detailTitle === '나스카·팔파 선과 지상그림' && state.detailActions === 2 && state.hasSourceConfidence,
+        'Latest dataset detail should show Nasca and Palpa, source confidence, and detail actions',
         state
       );
 
       dom = await dumpDom(buildUrl({
         dataset: latestDataset.path,
-        context: 'southwest-canyon-rock-art-landscapes'
+        context: 'andean-desert-geoglyph-ceremonial-landscapes'
       }), userDataDir);
-      state = extractState('desktop-north-america-southwest-context', dom);
+      state = extractState('desktop-south-america-andean-desert-context', dom);
       states.push(state);
       assertCheck(
-        state.entryCountText === '3개' &&
-          state.entryIds.includes('petroglyph-national-monument') &&
-          state.entryIds.includes('canyon-de-chelly-national-monument') &&
-          state.entryIds.includes('horseshoe-canyon-great-gallery') &&
-          !state.entryIds.includes('writing-on-stone-aisinai-pi'),
-        'Southwest context should return Petroglyph, Canyon de Chelly, and Horseshoe Canyon without stale Canadian data',
+        state.entryCountText === '4개' &&
+          state.entryIds.includes('nasca-palpa-lines-geoglyphs') &&
+          state.entryIds.includes('fuerte-de-samaipata') &&
+          state.entryIds.includes('geoglifos-de-pintados') &&
+          state.entryIds.includes('toro-muerto-petroglyphs') &&
+          !state.entryIds.includes('cueva-de-las-manos'),
+        'Andean desert context should return Nasca, Samaipata, Pintados, and Toro Muerto without stale Patagonia data',
         state
       );
 
       dom = await dumpDom(buildUrl({
         dataset: latestDataset.path,
-        entry: 'pipestone-national-monument'
+        entry: 'monte-verde-archaeological-site'
       }), userDataDir, { width: 390, height: 844 });
-      state = extractState('mobile-north-america-detail-pipestone', dom);
+      state = extractState('mobile-south-america-detail-monte-verde', dom);
       states.push(state);
       assertCheck(
-        state.ready && state.detailTitle === '파이프스톤 국립기념물' && state.detailActions === 2,
-        'Mobile-sized latest dataset render should keep the Pipestone detail panel available',
+        state.ready && state.detailTitle === '몬테 베르데 고고학 유적' && state.detailActions === 2,
+        'Mobile-sized latest dataset render should keep the Monte Verde detail panel available',
         state
       );
 
       await captureScreenshot(
-        buildUrl({ dataset: latestDataset.path, entry: 'horseshoe-canyon-great-gallery' }),
+        buildUrl({ dataset: latestDataset.path, entry: 'nasca-palpa-lines-geoglyphs' }),
         userDataDir,
         desktopShot,
         { width: 1440, height: 920 }
       );
       await captureScreenshot(
-        buildUrl({ dataset: latestDataset.path, entry: 'pipestone-national-monument' }),
+        buildUrl({ dataset: latestDataset.path, entry: 'monte-verde-archaeological-site' }),
         userDataDir,
         mobileShot,
         { width: 390, height: 844 }

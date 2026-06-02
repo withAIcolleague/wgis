@@ -254,6 +254,12 @@
       "titleKo": "북아메리카 원주민 암각화·성지 경관",
       "path": "data/stage2/north-america-indigenous-rock-art-sacred-landscapes-preview.json",
       "status": "preview-only"
+    },
+    {
+      "id": "stage2-south-america-rock-art-geoglyph-deep-time-landscapes-preview",
+      "titleKo": "남아메리카 암각화·지상그림 경관",
+      "path": "data/stage2/south-america-rock-art-geoglyph-deep-time-landscapes-preview.json",
+      "status": "preview-only"
     }
   ]
 }

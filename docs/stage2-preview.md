@@ -1117,3 +1117,31 @@ The 2026-06-02 forty-two-dataset local readiness pass prepares `https://wgis.ver
 - On mobile, `파이프스톤 국립기념물` detail renders with source-confidence information and both detail actions.
 - Browser screenshots are configured to save to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-forty-two-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-forty-two-datasets-mobile.png` when the deployed endpoint exposes the forty-second dataset.
 - Public endpoint verification was attempted once after push and dropped per the three-call cap because the deployed Stage 2 index still exposed 41 datasets during that attempt.
+
+## Forty-Third Pilot Dataset
+
+The South American rock art, geoglyph, and deep-time landscapes pilot dataset adds 8 entries:
+
+- `쿠에바 데 라스 마노스`
+- `세하 다 카피바라 국립공원`
+- `치리비케테 국립공원`
+- `나스카·팔파 선과 지상그림`
+- `푸에르테 데 사마이파타`
+- `핀타도스 지상그림`
+- `토로 무에르토 암각화`
+- `몬테 베르데 고고학 유적`
+
+## Forty-Three-Dataset Local Readiness Pass
+
+The 2026-06-02 forty-three-dataset local readiness pass prepares `https://wgis.vercel.app/stage2-preview.html` verification after adding the South American rock art, geoglyph, and deep-time landscapes pilot dataset:
+
+- Dataset selector exposes 43 datasets.
+- All 43 indexed datasets render their expected entry, marker, and permanent-label counts across 355 Stage 2 preview entries.
+- The new South American dataset exposes 8 entries: `쿠에바 데 라스 마노스`, `세하 다 카피바라 국립공원`, `치리비케테 국립공원`, `나스카·팔파 선과 지상그림`, `푸에르테 데 사마이파타`, `핀타도스 지상그림`, `토로 무에르토 암각화`, and `몬테 베르데 고고학 유적`.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control.
+- Searching `치리비케테` in the South American dataset narrows the list and map to `치리비케테 국립공원` with 1 marker and 1 label.
+- Selecting `나스카·팔파 선과 지상그림` opens the detail panel with source-confidence information and detail actions.
+- The `안데스 사막 지상그림·의례 경관` context filter returns `나스카·팔파 선과 지상그림`, `푸에르테 데 사마이파타`, `핀타도스 지상그림`, and `토로 무에르토 암각화` with 4 markers and 4 labels and no stale Patagonia data.
+- On mobile, `몬테 베르데 고고학 유적` detail renders with source-confidence information and both detail actions.
+- Browser screenshots are configured to save to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-forty-three-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-forty-three-datasets-mobile.png` when the deployed endpoint exposes the forty-third dataset.
+- Public endpoint verification should be attempted at most once after push in this batch; if the deployed Stage 2 index still exposes an older dataset count, drop further retries per the three-call cap.

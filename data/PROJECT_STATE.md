@@ -11,10 +11,10 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 347
-- Completed curation batches: 43
-- Latest completed batch: `americas-north-america-indigenous-rock-art-sacred-landscapes-v1`
-- Latest completed infrastructure milestone: stage-2 forty-two-dataset local readiness pass
+- Current entry count: 355
+- Completed curation batches: 44
+- Latest completed batch: `americas-south-america-rock-art-geoglyph-deep-time-landscapes-v1`
+- Latest completed infrastructure milestone: stage-2 forty-three-dataset local readiness pass
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
@@ -779,6 +779,33 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - Checked: local data validation, Stage 2 schema validation, smoke checks, 42 indexed dataset expectations across 347 Stage 2 preview entries, compact context filters, North American Indigenous rock art search/detail/context behavior, stale-data cleanup, and mobile-sized rendering probes in the public-check script
   - Result: local validation and push completed; public endpoint verification was attempted once after push and dropped per the three-call cap because the deployed Stage 2 index still exposed 41 datasets during that attempt
 
+- South American rock art, geoglyph, and deep-time landscapes batch
+  - Batch ID: `americas-south-america-rock-art-geoglyph-deep-time-landscapes-v1`
+  - Source file: `data/records/americas/south-america/rock-art-geoglyph-deep-time-landscapes.json`
+  - Entries added: 8
+  - Entry IDs:
+    - `cueva-de-las-manos`
+    - `serra-da-capivara-national-park`
+    - `chiribiquete-national-park`
+    - `nasca-palpa-lines-geoglyphs`
+    - `fuerte-de-samaipata`
+    - `geoglifos-de-pintados`
+    - `toro-muerto-petroglyphs`
+    - `monte-verde-archaeological-site`
+
+- Stage-2 South American rock art, geoglyph, and deep-time landscapes pilot dataset
+  - Files: `data/stage2/index.json`, `data/stage2/south-america-rock-art-geoglyph-deep-time-landscapes-preview.json`, `scripts/smoke-check.js`, `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`
+  - URL path: `/stage2-preview.html`
+  - Scope: add a forty-third Stage 2 preview dataset using the new South American rock art, geoglyph, and deep-time landscapes source batch
+  - Model stress test: Patagonia hand-stencil cave art, Brazilian northeast rock-art density, Chiribiquete Amazon tepui rock art, Nasca and Palpa desert geoglyphs, Samaipata carved ceremonial rock, Pintados Atacama caravan geoglyphs, Toro Muerto Majes Valley petroglyphs, and Monte Verde early occupation wetland context
+
+- Stage-2 forty-three-dataset local readiness pass
+  - Files: `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`
+  - URL path: `https://wgis.vercel.app/stage2-preview.html`
+  - Scope: keep the Stage 2 preview endpoint and browser-state check ready after adding the forty-third dataset
+  - Checked: local data validation, Stage 2 schema validation, smoke checks, 43 indexed dataset expectations across 355 Stage 2 preview entries, compact context filters, South American rock art search/detail/context behavior, stale-data cleanup, and mobile-sized rendering probes in the public-check script
+  - Result: local validation prepared; public endpoint verification is capped at one post-push attempt for this batch and should be dropped if the deployed index still exposes an older dataset count
+
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`
   - Source file: `data/records/global/legacy/core-seed-entries.json`
@@ -1247,7 +1274,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 1. First-stage DB next expansion batch
    - Scope: continue focused source-record growth with another bounded culture/region/time slice and keep the batch small enough to verify end to end
 
-2. Stage-2 forty-third pilot dataset
+2. Stage-2 forty-fourth pilot dataset
    - Scope: continue modeling the next focused source-record batch as a Stage 2 preview dataset, or optionally model the legacy core seed entries as a cross-regional demonstration set if we want every existing source file to have a Stage 2 preview
 
 ## Resume Checklist

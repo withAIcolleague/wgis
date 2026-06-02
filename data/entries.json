@@ -7805,5 +7805,281 @@
     "sources": [
       { "title": "National Park Service: Effigy Mounds National Monument", "url": "https://www.nps.gov/efmo/index.htm" }
     ]
+  },
+  {
+    "id": "cueva-de-las-manos",
+    "title": "쿠에바 데 라스 마노스",
+    "type": "site",
+    "historicalName": "쿠에바 데 라스 마노스 / 리오 핀투라스 동굴벽화",
+    "modernName": "쿠에바 데 라스 마노스, 리오 핀투라스",
+    "modernAdmin": "아르헨티나 산타크루스주 리오 핀투라스 협곡",
+    "country": "아르헨티나",
+    "worldRegion": "파타고니아 선사 동굴벽화 경관",
+    "period": "파타고니아 수렵채집 동굴벽화 전통",
+    "yearLabel": "기원전 11000-7500년경 손 스텐실과 수렵 장면",
+    "coordinates": {
+      "lat": -47.1561,
+      "lng": -70.6558
+    },
+    "aliases": [
+      "Cueva de las Manos",
+      "Rio Pinturas",
+      "Cave of the Hands",
+      "Patagonia rock art",
+      "Argentina cave art"
+    ],
+    "summary": "쿠에바 데 라스 마노스는 리오 핀투라스 협곡의 암벽과 동굴에 손 스텐실, 과나코 사냥 장면, 기하 이미지를 남긴 파타고니아의 대표 선사 동굴벽화 지점이다. WGIS에서는 남아메리카 남단 수렵채집 집단의 이동, 사냥, 공동체 표식이 협곡 표면에 축적되는 기준점으로 둔다.",
+    "confidence": "high",
+    "sourceNote": "세계유산 핵심 동굴과 리오 핀투라스 협곡의 대표 좌표를 사용했다.",
+    "curationBatch": "americas-south-america-rock-art-geoglyph-deep-time-landscapes-v1",
+    "sources": [
+      {
+        "title": "UNESCO: Cueva de las Manos, Rio Pinturas",
+        "url": "https://whc.unesco.org/en/list/936/"
+      }
+    ]
+  },
+  {
+    "id": "serra-da-capivara-national-park",
+    "title": "세하 다 카피바라 국립공원",
+    "type": "site",
+    "historicalName": "세하 다 카피바라 선사 암각화·동굴벽화 경관",
+    "modernName": "세하 다 카피바라 국립공원",
+    "modernAdmin": "브라질 피아우이주 상하이문두노나투 일대",
+    "country": "브라질",
+    "worldRegion": "브라질 북동부 선사 암각화 경관",
+    "period": "브라질 북동부 선사 동굴벽화·암각화 전통",
+    "yearLabel": "수만 년 규모의 선사 거주와 암반 이미지 경관",
+    "coordinates": {
+      "lat": -8.8333,
+      "lng": -42.55
+    },
+    "aliases": [
+      "Serra da Capivara",
+      "Serra da Capivara National Park",
+      "Piaui rock art",
+      "Brazil rock art",
+      "Sao Raimundo Nonato"
+    ],
+    "summary": "세하 다 카피바라 국립공원은 피아우이의 사암 절벽과 은신처에 수많은 선사 그림과 고고학 지점을 보존한 남미 최대급 암각화 경관이다. WGIS에서는 브라질 북동부의 장기 거주, 수렵·의례 이미지, 사암 지형이 딥타임 문화 기억을 만드는 방식을 보여준다.",
+    "confidence": "medium",
+    "sourceNote": "광대한 국립공원과 주요 암반 은신처 권역을 대표하는 중심 좌표를 사용했다.",
+    "curationBatch": "americas-south-america-rock-art-geoglyph-deep-time-landscapes-v1",
+    "sources": [
+      {
+        "title": "UNESCO: Serra da Capivara National Park",
+        "url": "https://whc.unesco.org/en/list/606/"
+      }
+    ]
+  },
+  {
+    "id": "chiribiquete-national-park",
+    "title": "치리비케테 국립공원",
+    "type": "site",
+    "historicalName": "치리비케테 / 재규어의 말로카 암벽화 경관",
+    "modernName": "치리비케테 국립공원 - 재규어의 말로카",
+    "modernAdmin": "콜롬비아 카케타·과비아레주 아마존 고지",
+    "country": "콜롬비아",
+    "worldRegion": "아마존 테푸이 암벽화·성지 경관",
+    "period": "아마존 선사·현전 원주민 암벽화와 성지 전통",
+    "yearLabel": "수천 년간 이어진 테푸이 암벽화와 재규어 성지 경관",
+    "coordinates": {
+      "lat": 0.5333,
+      "lng": -72.8
+    },
+    "aliases": [
+      "Chiribiquete National Park",
+      "The Maloca of the Jaguar",
+      "Serrania de Chiribiquete",
+      "Amazon rock art",
+      "Colombia tepui"
+    ],
+    "summary": "치리비케테 국립공원은 아마존과 기아나 고지의 테푸이 지형, 생물다양성, 대규모 암벽화, 재규어와 말로카 상징이 결합된 세계유산이다. WGIS에서는 접근이 제한된 성지 경관과 암벽화가 살아 있는 원주민 우주관과 자연 보존을 함께 지탱하는 사례로 배치한다.",
+    "confidence": "medium",
+    "sourceNote": "광대한 국립공원 안의 테푸이 경관을 대표하는 중심 좌표를 사용했다.",
+    "curationBatch": "americas-south-america-rock-art-geoglyph-deep-time-landscapes-v1",
+    "sources": [
+      {
+        "title": "UNESCO: Chiribiquete National Park - The Maloca of the Jaguar",
+        "url": "https://whc.unesco.org/en/list/1174/"
+      }
+    ]
+  },
+  {
+    "id": "nasca-palpa-lines-geoglyphs",
+    "title": "나스카·팔파 선과 지상그림",
+    "type": "site",
+    "historicalName": "나스카와 팔파의 선과 지상그림",
+    "modernName": "나스카와 팔파의 선과 지상그림",
+    "modernAdmin": "페루 이카주 나스카·팔파 사막 평원",
+    "country": "페루",
+    "worldRegion": "페루 남부 해안 사막 지상그림 경관",
+    "period": "파라카스·나스카 지상그림과 의례 이동 전통",
+    "yearLabel": "기원전 500-기원후 500년경 사막 선·지상그림",
+    "coordinates": {
+      "lat": -14.739,
+      "lng": -75.13
+    },
+    "aliases": [
+      "Nasca Lines",
+      "Nazca Lines",
+      "Lines and Geoglyphs of Nasca and Palpa",
+      "Palpa geoglyphs",
+      "Peru geoglyphs"
+    ],
+    "summary": "나스카·팔파 선과 지상그림은 페루 남부 해안 사막에 긴 직선, 동물·식물·기하 도상이 새겨진 대규모 지상그림 경관이다. WGIS에서는 사막 표면, 이동 경로, 물과 천문·의례 해석이 결합된 고대 안데스 시각 경관의 핵심 지점으로 둔다.",
+    "confidence": "medium",
+    "sourceNote": "나스카 평원과 팔파 지상그림 구역 전체를 대표하는 좌표를 사용했다.",
+    "curationBatch": "americas-south-america-rock-art-geoglyph-deep-time-landscapes-v1",
+    "sources": [
+      {
+        "title": "UNESCO: Lines and Geoglyphs of Nasca and Palpa",
+        "url": "https://whc.unesco.org/en/list/700/"
+      }
+    ]
+  },
+  {
+    "id": "fuerte-de-samaipata",
+    "title": "푸에르테 데 사마이파타",
+    "type": "site",
+    "historicalName": "엘 푸에르테 데 사마이파타 의례 암반",
+    "modernName": "푸에르테 데 사마이파타",
+    "modernAdmin": "볼리비아 산타크루스주 플로리다주 사마이파타",
+    "country": "볼리비아",
+    "worldRegion": "동부 안데스 의례 암반 조각 경관",
+    "period": "전잉카·잉카기 의례 암반 조각과 행정 경관",
+    "yearLabel": "전잉카-잉카기 거대 암반 조각 의례 중심지",
+    "coordinates": {
+      "lat": -18.179,
+      "lng": -63.819
+    },
+    "aliases": [
+      "Fuerte de Samaipata",
+      "El Fuerte",
+      "Samaipata",
+      "Bolivia carved rock",
+      "Andean ceremonial rock"
+    ],
+    "summary": "푸에르테 데 사마이파타는 거대한 사암 암반에 통로, 동물, 의례 구조가 조각된 산지 의례 중심지와 남쪽 행정·거주 구역이 결합된 세계유산이다. WGIS에서는 암각화와 달리 거대 암반 자체가 의례·정치 공간으로 조각되는 동부 안데스 사례로 둔다.",
+    "confidence": "high",
+    "sourceNote": "세계유산 암반 조각 중심 지점의 좌표를 사용했다.",
+    "curationBatch": "americas-south-america-rock-art-geoglyph-deep-time-landscapes-v1",
+    "sources": [
+      {
+        "title": "UNESCO: Fuerte de Samaipata",
+        "url": "https://whc.unesco.org/en/list/883/"
+      }
+    ]
+  },
+  {
+    "id": "geoglifos-de-pintados",
+    "title": "핀타도스 지상그림",
+    "type": "site",
+    "historicalName": "게오글리포스 데 핀타도스",
+    "modernName": "핀타도스 지상그림",
+    "modernAdmin": "칠레 타라파카주 포소알몬테 팜파 델 타마루갈 국립보호구역",
+    "country": "칠레",
+    "worldRegion": "아타카마 사막 지상그림·카라반 경관",
+    "period": "아타카마 사막 교역로 지상그림 전통",
+    "yearLabel": "500-1450년경 아타카마 사막 지상그림",
+    "coordinates": {
+      "lat": -20.628,
+      "lng": -69.633
+    },
+    "aliases": [
+      "Geoglifos de Pintados",
+      "Pintados Geoglyphs",
+      "Cerros Pintados",
+      "Pampa del Tamarugal",
+      "Atacama geoglyphs"
+    ],
+    "summary": "핀타도스 지상그림은 팜파 델 타마루갈 사막 경사면에 인간·동물·기하 도상이 집단적으로 배치된 칠레 북부의 대표 지상그림 경관이다. WGIS에서는 아타카마 사막의 카라반 이동, 교역로, 시각 표식, 국가 보호 체계가 만나는 지점으로 둔다.",
+    "confidence": "medium",
+    "sourceNote": "핀타도스 지상그림군과 방문·보호 중심권의 대표 좌표를 사용했다.",
+    "curationBatch": "americas-south-america-rock-art-geoglyph-deep-time-landscapes-v1",
+    "sources": [
+      {
+        "title": "Consejo de Monumentos Nacionales de Chile: Geoglifos Pintados",
+        "url": "https://www.monumentos.gob.cl/monumentos/monumentos-historicos/geoglifos-pintados"
+      },
+      {
+        "title": "UNESCO Tentative List: Pintados Geoglyphs Archaeological Complex",
+        "url": "https://whc.unesco.org/en/tentativelists/6885/"
+      }
+    ]
+  },
+  {
+    "id": "toro-muerto-petroglyphs",
+    "title": "토로 무에르토 암각화",
+    "type": "site",
+    "historicalName": "토로 무에르토 암각화 복합체",
+    "modernName": "토로 무에르토 고고학 복합체",
+    "modernAdmin": "페루 아레키파주 카스티야주 우라카·아플라오 지구",
+    "country": "페루",
+    "worldRegion": "페루 남부 해안 계곡 암각화 경관",
+    "period": "남부 페루 계곡 암각화와 의례 경관",
+    "yearLabel": "기원후 1천년기-잉카기 전후 화산암 암각화",
+    "coordinates": {
+      "lat": -16.205,
+      "lng": -72.493
+    },
+    "aliases": [
+      "Toro Muerto",
+      "Petroglyphs of Toro Muerto",
+      "Archaeological Complex of Toro Muerto",
+      "Majes Valley petroglyphs",
+      "Arequipa rock art"
+    ],
+    "summary": "토로 무에르토는 아레키파 마헤스강 계곡의 화산암 블록 수천 개에 암각화가 새겨진 남부 페루의 대규모 암각화 복합체다. WGIS에서는 사막 계곡 이동, 의례 장소, 화산암 표면의 반복 이미지가 페루 남부 시각 경관을 구성하는 방식을 보여준다.",
+    "confidence": "medium",
+    "sourceNote": "토로 무에르토 암각화 복합체의 중심권 좌표를 사용했다.",
+    "curationBatch": "americas-south-america-rock-art-geoglyph-deep-time-landscapes-v1",
+    "sources": [
+      {
+        "title": "UNESCO Tentative List: Archaeological Complex of Toro Muerto",
+        "url": "https://whc.unesco.org/en/tentativelists/6408/"
+      },
+      {
+        "title": "Peru Ministry of Culture: Toro Muerto cadastral update",
+        "url": "https://www.gob.pe/institucion/cultura/informes-publicaciones/7350339-saneamiento-fisico-legal-bien-inmueble-prehispanico-toro-muerto"
+      }
+    ]
+  },
+  {
+    "id": "monte-verde-archaeological-site",
+    "title": "몬테 베르데 고고학 유적",
+    "type": "site",
+    "historicalName": "몬테 베르데 초기 거주 유적",
+    "modernName": "몬테 베르데 고고학 유적",
+    "modernAdmin": "칠레 로스라고스주 푸에르토몬트 인근 마울린강 유역",
+    "country": "칠레",
+    "worldRegion": "남부 칠레 초기 거주·습지 보존 경관",
+    "period": "남아메리카 초기 거주와 습지 보존 고고학",
+    "yearLabel": "후기 플라이스토세-초기 홀로세 거주 논쟁을 포함한 습지 유적",
+    "coordinates": {
+      "lat": -41.505,
+      "lng": -73.21
+    },
+    "aliases": [
+      "Monte Verde",
+      "Monte Verde archaeological site",
+      "Monte Verde II",
+      "Chile pre-Clovis site",
+      "Maullin River"
+    ],
+    "summary": "몬테 베르데는 남부 칠레의 습지 환경에 보존된 초기 거주 유적으로, 도구, 식물·동물 자료, 목재와 생활 흔적이 남아 아메리카 초기 이주 논의의 핵심 사례가 되었다. WGIS에서는 암각화·지상그림 경관과 함께 남미 딥타임 거주 논의의 별도 맥락 지점으로 두되, 최근 연대 논쟁을 반영해 disputed로 표시한다.",
+    "confidence": "medium",
+    "sourceNote": "칠레 세계유산 잠정목록과 국가문화유산 자료를 기준으로 대표 좌표를 사용했다. 연대 해석에는 최근 논쟁이 있어 disputed로 표기했다.",
+    "curationBatch": "americas-south-america-rock-art-geoglyph-deep-time-landscapes-v1",
+    "sources": [
+      {
+        "title": "Consejo de Monumentos Nacionales de Chile: Sitio Arqueologico Monte Verde",
+        "url": "https://www.monumentos.gob.cl/patrimonio-mundial/tentativa/sitio-arqueologico-monte-verde"
+      },
+      {
+        "title": "UNESCO Tentative List: Monte Verde Archaeological Site",
+        "url": "https://whc.unesco.org/en/tentativelists/1873/"
+      }
+    ]
   }
 ]

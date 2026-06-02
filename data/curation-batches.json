@@ -1236,6 +1236,35 @@
         "UNESCO World Heritage pages for Writing-on-Stone / Aisinai'pi and Head-Smashed-In Buffalo Jump",
         "Alberta Parks, Ontario Parks, and Head-Smashed-In Buffalo Jump references for site-level management and visitor context"
       ]
+    },
+    {
+      "id": "americas-south-america-rock-art-geoglyph-deep-time-landscapes-v1",
+      "status": "completed",
+      "completedAt": "2026-06-02",
+      "continentId": "americas",
+      "countryIso2": "AR-BR-CO-PE-BO-CL",
+      "countryKo": "아르헨티나·브라질·콜롬비아·페루·볼리비아·칠레",
+      "worldRegion": "남아메리카 암각화·지상그림·딥타임 경관",
+      "focusKo": "남아메리카 암각화·지상그림·딥타임 경관 핵심 지점",
+      "scopeKo": "파타고니아, 브라질 북동부, 콜롬비아 아마존, 페루·볼리비아·칠레 안데스와 사막 지대를 잇는 암각화, 지상그림, 거대 암반 조각, 초기 거주 경관의 대표 지점",
+      "sourceFile": "data/records/americas/south-america/rock-art-geoglyph-deep-time-landscapes.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "cueva-de-las-manos",
+        "serra-da-capivara-national-park",
+        "chiribiquete-national-park",
+        "nasca-palpa-lines-geoglyphs",
+        "fuerte-de-samaipata",
+        "geoglifos-de-pintados",
+        "toro-muerto-petroglyphs",
+        "monte-verde-archaeological-site"
+      ],
+      "sourceBasis": [
+        "UNESCO World Heritage pages for Cueva de las Manos, Serra da Capivara, Chiribiquete, Nasca and Palpa, and Fuerte de Samaipata",
+        "UNESCO Tentative List pages for Pintados Geoglyphs, Toro Muerto, and Monte Verde",
+        "Chile Consejo de Monumentos Nacionales and Peru Ministry of Culture references for official protection, cadastral, and tentative-list context",
+        "Representative coordinates selected for the visible core site, protected landscape center, or principal archaeological zone within each wider rock-art, geoglyph, or deep-time landscape"
+      ]
     }
   ]
 }

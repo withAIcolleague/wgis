@@ -1,0 +1,522 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-south-america-rock-art-geoglyph-deep-time-landscapes-preview",
+  "titleKo": "2단계 미리보기: 남아메리카 암각화·지상그림 경관",
+  "descriptionKo": "쿠에바 데 라스 마노스, 세하 다 카피바라, 치리비케테, 나스카·팔파, 사마이파타, 핀타도스, 토로 무에르토, 몬테 베르데를 통해 남아메리카의 암각화, 지상그림, 거대 암반 조각, 초기 거주 경관을 비교하는 2단계 미리보기 데이터셋입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "딥타임 암각화",
+        "초기 거주",
+        "고대 지상그림",
+        "중세 의례 경관"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "파타고니아",
+        "브라질 북동부",
+        "아마존 고지",
+        "안데스 사막",
+        "남부 칠레"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "암각화",
+        "지상그림",
+        "거대 암반 조각",
+        "사냥·이동",
+        "의례 경관",
+        "초기 거주",
+        "세계유산",
+        "잠정목록"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지도 유형",
+      "options": [
+        "유적"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "south-america-rock-art-geoglyph-deep-time-landscapes",
+      "labelKo": "남아메리카 암각화·지상그림·딥타임 경관",
+      "parentId": null,
+      "periodKo": "기원전 14500년경-1500년경",
+      "summaryKo": "남아메리카의 암각화, 지상그림, 거대 암반 조각, 초기 거주 증거를 함께 보며 사막, 고원, 열대림, 습지 환경이 장기 기억과 이동 경로를 어떻게 만들었는지 비교합니다."
+    },
+    {
+      "id": "patagonia-brazil-amazon-deep-time-rock-art",
+      "labelKo": "파타고니아·브라질·아마존 딥타임 암각화",
+      "parentId": "south-america-rock-art-geoglyph-deep-time-landscapes",
+      "periodKo": "기원전 11000년경-현대 전승",
+      "summaryKo": "파타고니아 손 스텐실, 브라질 북동부 암각화, 콜롬비아 아마존 테푸이 암벽화를 통해 수렵채집과 열대림 세계관이 긴 시간대에 걸쳐 시각 경관으로 남는 방식을 봅니다."
+    },
+    {
+      "id": "andean-desert-geoglyph-ceremonial-landscapes",
+      "labelKo": "안데스 사막 지상그림·의례 경관",
+      "parentId": "south-america-rock-art-geoglyph-deep-time-landscapes",
+      "periodKo": "기원전 500년경-1500년경",
+      "summaryKo": "나스카·팔파, 사마이파타, 핀타도스, 토로 무에르토를 묶어 사막 표면, 암반 조각, 계곡 이동로가 의례와 교역의 시각 경관으로 작동하는 방식을 비교합니다."
+    },
+    {
+      "id": "southern-chile-deep-time-context",
+      "labelKo": "남부 칠레 초기 거주·습지 보존 경관",
+      "parentId": "south-america-rock-art-geoglyph-deep-time-landscapes",
+      "periodKo": "기원전 14500년경 이후",
+      "summaryKo": "몬테 베르데를 별도 맥락으로 두어 암각화·지상그림 경관과 함께 남아메리카 초기 거주 논쟁, 습지 보존, 생활 흔적의 장기 연표를 연결합니다."
+    },
+    {
+      "id": "cueva-de-las-manos-patagonia-hands",
+      "labelKo": "파타고니아 손 스텐실 암벽",
+      "parentId": "patagonia-brazil-amazon-deep-time-rock-art",
+      "periodKo": "기원전 11000-7500년경",
+      "summaryKo": "쿠에바 데 라스 마노스는 리오 핀투라스 협곡의 손 스텐실과 사냥 장면을 통해 파타고니아 수렵채집 집단의 이동과 공동체 표식을 보여줍니다."
+    },
+    {
+      "id": "serra-da-capivara-brazil-rock-art",
+      "labelKo": "세하 다 카피바라 암각화 밀집 경관",
+      "parentId": "patagonia-brazil-amazon-deep-time-rock-art",
+      "periodKo": "선사-역사시대",
+      "summaryKo": "세하 다 카피바라는 브라질 북동부 절벽과 암반에 보존된 대규모 암각화와 거주 흔적으로 장기 점유와 시각 기억을 비교하게 합니다."
+    },
+    {
+      "id": "chiribiquete-jaguar-maloca-rock-art",
+      "labelKo": "치리비케테 재규어 말로카 암벽화",
+      "parentId": "patagonia-brazil-amazon-deep-time-rock-art",
+      "periodKo": "기원전 10000년경-현대 전승",
+      "summaryKo": "치리비케테는 테푸이 암벽화, 재규어 상징, 접근 제한 보존 경관이 아마존 원주민 우주관과 결합된 사례입니다."
+    },
+    {
+      "id": "nasca-palpa-desert-geoglyphs",
+      "labelKo": "나스카·팔파 사막 지상그림",
+      "parentId": "andean-desert-geoglyph-ceremonial-landscapes",
+      "periodKo": "기원전 500-기원후 500년경",
+      "summaryKo": "나스카·팔파 선과 지상그림은 사막 표면의 대형 선, 동물·식물 도상, 이동과 의례 해석을 한 권역에서 비교하게 합니다."
+    },
+    {
+      "id": "samaipata-carved-ceremonial-rock",
+      "labelKo": "사마이파타 거대 암반 의례 조각",
+      "parentId": "andean-desert-geoglyph-ceremonial-landscapes",
+      "periodKo": "900-1500년경",
+      "summaryKo": "푸에르테 데 사마이파타는 거대한 암반 자체가 의례와 권력 공간으로 조각된 동부 안데스의 독특한 사례입니다."
+    },
+    {
+      "id": "pintados-atacama-caravan-geoglyphs",
+      "labelKo": "핀타도스 아타카마 카라반 지상그림",
+      "parentId": "andean-desert-geoglyph-ceremonial-landscapes",
+      "periodKo": "500-1450년경",
+      "summaryKo": "핀타도스 지상그림은 아타카마 사막 경사면에 배치된 인간·동물·기하 도상을 통해 교역로와 시각 표식의 관계를 보여줍니다."
+    },
+    {
+      "id": "toro-muerto-majes-valley-petroglyphs",
+      "labelKo": "토로 무에르토 마헤스 계곡 암각화",
+      "parentId": "andean-desert-geoglyph-ceremonial-landscapes",
+      "periodKo": "기원후 1-1500년경",
+      "summaryKo": "토로 무에르토는 화산암 블록에 새겨진 대규모 암각화 군집으로 페루 남부 계곡의 반복 이미지와 의례 경관을 비교하게 합니다."
+    },
+    {
+      "id": "monte-verde-early-occupation-wetland",
+      "labelKo": "몬테 베르데 초기 거주 습지 유적",
+      "parentId": "southern-chile-deep-time-context",
+      "periodKo": "기원전 14500년경 이후",
+      "summaryKo": "몬테 베르데는 습지 환경에 보존된 생활 흔적을 통해 남아메리카 초기 거주 연표와 해석 논쟁을 별도 기준점으로 제공합니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "cueva-de-las-manos",
+      "titleKo": "쿠에바 데 라스 마노스",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "아르헨티나",
+      "coordinates": {
+        "lat": -47.1561,
+        "lng": -70.6558
+      },
+      "yearLabelKo": "기원전 11000-7500년경 손 스텐실과 수렵 장면",
+      "summaryKo": "쿠에바 데 라스 마노스는 리오 핀투라스 협곡의 암벽과 동굴에 손 스텐실, 과나코 사냥 장면, 기하 이미지를 남긴 파타고니아의 대표 선사 동굴벽화 지점이다. WGIS에서는 남아메리카 남단 수렵채집 집단의 이동, 사냥, 공동체 표식이 협곡 표면에 축적되는 기준점으로 둔다.",
+      "stage2": {
+        "primaryContextId": "cueva-de-las-manos-patagonia-hands",
+        "contextIds": [
+          "south-america-rock-art-geoglyph-deep-time-landscapes",
+          "patagonia-brazil-amazon-deep-time-rock-art",
+          "cueva-de-las-manos-patagonia-hands"
+        ],
+        "periodPathKo": [
+          "선사",
+          "파타고니아",
+          "손 스텐실 암각화"
+        ],
+        "topicTagsKo": [
+          "쿠에바 데 라스 마노스",
+          "손 스텐실",
+          "리오 핀투라스",
+          "파타고니아",
+          "수렵채집"
+        ],
+        "uiFilters": {
+          "era": "딥타임 암각화",
+          "region": "파타고니아",
+          "theme": [
+            "암각화",
+            "사냥·이동",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 0,
+          "noteKo": "UNESCO 세계유산 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "serra-da-capivara-national-park",
+      "titleKo": "세하 다 카피바라 국립공원",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "브라질",
+      "coordinates": {
+        "lat": -8.8333,
+        "lng": -42.55
+      },
+      "yearLabelKo": "수만 년 규모의 선사 거주와 암반 이미지 경관",
+      "summaryKo": "세하 다 카피바라 국립공원은 피아우이의 사암 절벽과 은신처에 수많은 선사 그림과 고고학 지점을 보존한 남미 최대급 암각화 경관이다. WGIS에서는 브라질 북동부의 장기 거주, 수렵·의례 이미지, 사암 지형이 딥타임 문화 기억을 만드는 방식을 보여준다.",
+      "stage2": {
+        "primaryContextId": "serra-da-capivara-brazil-rock-art",
+        "contextIds": [
+          "south-america-rock-art-geoglyph-deep-time-landscapes",
+          "patagonia-brazil-amazon-deep-time-rock-art",
+          "serra-da-capivara-brazil-rock-art"
+        ],
+        "periodPathKo": [
+          "선사",
+          "브라질 북동부",
+          "암각화 밀집 경관"
+        ],
+        "topicTagsKo": [
+          "세하 다 카피바라",
+          "피아우이",
+          "브라질 암각화",
+          "장기 거주",
+          "절벽 경관"
+        ],
+        "uiFilters": {
+          "era": "딥타임 암각화",
+          "region": "브라질 북동부",
+          "theme": [
+            "암각화",
+            "초기 거주",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 1,
+          "referenceSources": 0,
+          "noteKo": "UNESCO 세계유산 자료를 사용했습니다. 좌표는 넓은 공원 경관의 중심 권역 기준입니다."
+        }
+      }
+    },
+    {
+      "entryId": "chiribiquete-national-park",
+      "titleKo": "치리비케테 국립공원",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "콜롬비아",
+      "coordinates": {
+        "lat": 0.5333,
+        "lng": -72.8
+      },
+      "yearLabelKo": "수천 년간 이어진 테푸이 암벽화와 재규어 성지 경관",
+      "summaryKo": "치리비케테 국립공원은 아마존과 기아나 고지의 테푸이 지형, 생물다양성, 대규모 암벽화, 재규어와 말로카 상징이 결합된 세계유산이다. WGIS에서는 접근이 제한된 성지 경관과 암벽화가 살아 있는 원주민 우주관과 자연 보존을 함께 지탱하는 사례로 배치한다.",
+      "stage2": {
+        "primaryContextId": "chiribiquete-jaguar-maloca-rock-art",
+        "contextIds": [
+          "south-america-rock-art-geoglyph-deep-time-landscapes",
+          "patagonia-brazil-amazon-deep-time-rock-art",
+          "chiribiquete-jaguar-maloca-rock-art"
+        ],
+        "periodPathKo": [
+          "선사-현대 전승",
+          "아마존 고지",
+          "테푸이 암벽화"
+        ],
+        "topicTagsKo": [
+          "치리비케테",
+          "재규어 말로카",
+          "아마존 암벽화",
+          "테푸이",
+          "원주민 우주관"
+        ],
+        "uiFilters": {
+          "era": "딥타임 암각화",
+          "region": "아마존 고지",
+          "theme": [
+            "암각화",
+            "의례 경관",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 1,
+          "referenceSources": 0,
+          "noteKo": "UNESCO 세계유산 자료를 사용했습니다. 좌표는 접근 제한이 큰 국립공원 경관 중심 기준입니다."
+        }
+      }
+    },
+    {
+      "entryId": "nasca-palpa-lines-geoglyphs",
+      "titleKo": "나스카·팔파 선과 지상그림",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "페루",
+      "coordinates": {
+        "lat": -14.739,
+        "lng": -75.13
+      },
+      "yearLabelKo": "기원전 500-기원후 500년경 사막 선·지상그림",
+      "summaryKo": "나스카·팔파 선과 지상그림은 페루 남부 해안 사막에 긴 직선, 동물·식물·기하 도상이 새겨진 대규모 지상그림 경관이다. WGIS에서는 사막 표면, 이동 경로, 물과 천문·의례 해석이 결합된 고대 안데스 시각 경관의 핵심 지점으로 둔다.",
+      "stage2": {
+        "primaryContextId": "nasca-palpa-desert-geoglyphs",
+        "contextIds": [
+          "south-america-rock-art-geoglyph-deep-time-landscapes",
+          "andean-desert-geoglyph-ceremonial-landscapes",
+          "nasca-palpa-desert-geoglyphs"
+        ],
+        "periodPathKo": [
+          "고대",
+          "페루 남부 사막",
+          "지상그림"
+        ],
+        "topicTagsKo": [
+          "나스카 선",
+          "팔파",
+          "사막 지상그림",
+          "물과 의례",
+          "안데스"
+        ],
+        "uiFilters": {
+          "era": "고대 지상그림",
+          "region": "안데스 사막",
+          "theme": [
+            "지상그림",
+            "의례 경관",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 1,
+          "referenceSources": 0,
+          "noteKo": "UNESCO 세계유산 자료를 사용했습니다. 좌표는 나스카·팔파 넓은 지상그림 권역의 대표 지점입니다."
+        }
+      }
+    },
+    {
+      "entryId": "fuerte-de-samaipata",
+      "titleKo": "푸에르테 데 사마이파타",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "볼리비아",
+      "coordinates": {
+        "lat": -18.179,
+        "lng": -63.819
+      },
+      "yearLabelKo": "전잉카-잉카기 거대 암반 조각 의례 중심지",
+      "summaryKo": "푸에르테 데 사마이파타는 거대한 사암 암반에 통로, 동물, 의례 구조가 조각된 산지 의례 중심지와 남쪽 행정·거주 구역이 결합된 세계유산이다. WGIS에서는 암각화와 달리 거대 암반 자체가 의례·정치 공간으로 조각되는 동부 안데스 사례로 둔다.",
+      "stage2": {
+        "primaryContextId": "samaipata-carved-ceremonial-rock",
+        "contextIds": [
+          "south-america-rock-art-geoglyph-deep-time-landscapes",
+          "andean-desert-geoglyph-ceremonial-landscapes",
+          "samaipata-carved-ceremonial-rock"
+        ],
+        "periodPathKo": [
+          "중세",
+          "동부 안데스",
+          "거대 암반 의례 조각"
+        ],
+        "topicTagsKo": [
+          "사마이파타",
+          "El Fuerte",
+          "볼리비아",
+          "암반 조각",
+          "잉카기"
+        ],
+        "uiFilters": {
+          "era": "중세 의례 경관",
+          "region": "안데스 사막",
+          "theme": [
+            "거대 암반 조각",
+            "의례 경관",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 0,
+          "noteKo": "UNESCO 세계유산 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "geoglifos-de-pintados",
+      "titleKo": "핀타도스 지상그림",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "칠레",
+      "coordinates": {
+        "lat": -20.628,
+        "lng": -69.633
+      },
+      "yearLabelKo": "500-1450년경 아타카마 사막 지상그림",
+      "summaryKo": "핀타도스 지상그림은 팜파 델 타마루갈 사막 경사면에 인간·동물·기하 도상이 집단적으로 배치된 칠레 북부의 대표 지상그림 경관이다. WGIS에서는 아타카마 사막의 카라반 이동, 교역로, 시각 표식, 국가 보호 체계가 만나는 지점으로 둔다.",
+      "stage2": {
+        "primaryContextId": "pintados-atacama-caravan-geoglyphs",
+        "contextIds": [
+          "south-america-rock-art-geoglyph-deep-time-landscapes",
+          "andean-desert-geoglyph-ceremonial-landscapes",
+          "pintados-atacama-caravan-geoglyphs"
+        ],
+        "periodPathKo": [
+          "중세",
+          "아타카마 사막",
+          "카라반 지상그림"
+        ],
+        "topicTagsKo": [
+          "핀타도스",
+          "아타카마",
+          "카라반",
+          "세로스 핀타도스",
+          "칠레 지상그림"
+        ],
+        "uiFilters": {
+          "era": "중세 의례 경관",
+          "region": "안데스 사막",
+          "theme": [
+            "지상그림",
+            "사냥·이동",
+            "잠정목록"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 2,
+          "referenceSources": 0,
+          "noteKo": "칠레 국가기념물위원회와 UNESCO 잠정목록 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "toro-muerto-petroglyphs",
+      "titleKo": "토로 무에르토 암각화",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "페루",
+      "coordinates": {
+        "lat": -16.205,
+        "lng": -72.493
+      },
+      "yearLabelKo": "기원후 1천년기-잉카기 전후 화산암 암각화",
+      "summaryKo": "토로 무에르토는 아레키파 마헤스강 계곡의 화산암 블록 수천 개에 암각화가 새겨진 남부 페루의 대규모 암각화 복합체다. WGIS에서는 사막 계곡 이동, 의례 장소, 화산암 표면의 반복 이미지가 페루 남부 시각 경관을 구성하는 방식을 보여준다.",
+      "stage2": {
+        "primaryContextId": "toro-muerto-majes-valley-petroglyphs",
+        "contextIds": [
+          "south-america-rock-art-geoglyph-deep-time-landscapes",
+          "andean-desert-geoglyph-ceremonial-landscapes",
+          "toro-muerto-majes-valley-petroglyphs"
+        ],
+        "periodPathKo": [
+          "고대-중세",
+          "페루 남부 계곡",
+          "화산암 암각화"
+        ],
+        "topicTagsKo": [
+          "토로 무에르토",
+          "마헤스 계곡",
+          "페루 암각화",
+          "화산암",
+          "의례 경관"
+        ],
+        "uiFilters": {
+          "era": "고대 지상그림",
+          "region": "안데스 사막",
+          "theme": [
+            "암각화",
+            "의례 경관",
+            "잠정목록"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 2,
+          "referenceSources": 0,
+          "noteKo": "UNESCO 잠정목록과 페루 문화부 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "monte-verde-archaeological-site",
+      "titleKo": "몬테 베르데 고고학 유적",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "칠레",
+      "coordinates": {
+        "lat": -41.505,
+        "lng": -73.21
+      },
+      "yearLabelKo": "후기 플라이스토세-초기 홀로세 거주 논쟁을 포함한 습지 유적",
+      "summaryKo": "몬테 베르데는 남부 칠레의 습지 환경에 보존된 초기 거주 유적으로, 도구, 식물·동물 자료, 목재와 생활 흔적이 남아 아메리카 초기 이주 논의의 핵심 사례가 되었다. WGIS에서는 암각화·지상그림 경관과 함께 남미 딥타임 거주 논의의 별도 맥락 지점으로 두되, 최근 연대 논쟁을 반영해 disputed로 표시한다.",
+      "stage2": {
+        "primaryContextId": "monte-verde-early-occupation-wetland",
+        "contextIds": [
+          "south-america-rock-art-geoglyph-deep-time-landscapes",
+          "southern-chile-deep-time-context",
+          "monte-verde-early-occupation-wetland"
+        ],
+        "periodPathKo": [
+          "선사",
+          "남부 칠레",
+          "초기 거주 습지 유적"
+        ],
+        "topicTagsKo": [
+          "몬테 베르데",
+          "초기 거주",
+          "습지 보존",
+          "칠레",
+          "연대 논쟁"
+        ],
+        "uiFilters": {
+          "era": "초기 거주",
+          "region": "남부 칠레",
+          "theme": [
+            "초기 거주",
+            "잠정목록"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 2,
+          "referenceSources": 0,
+          "noteKo": "칠레 국가기념물위원회와 UNESCO 잠정목록 자료를 사용했습니다. 연대 해석에 논쟁이 있어 별도 맥락으로 표시했습니다."
+        }
+      }
+    }
+  ]
+}
