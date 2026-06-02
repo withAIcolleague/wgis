@@ -329,7 +329,7 @@ async function validateRoutes() {
     {
       label: 'root-stage-2-main',
       url: appRootUrl,
-      stage2Assets: includesAll(rootHtml, ['stage2-preview.css', 'stage2-preview.js', 'datasetSelect', 'stage2Map']),
+      stage2Assets: includesAll(rootHtml, ['stage2.css', 'stage2.js', 'datasetSelect', 'stage2Map']),
       stage1Link: rootHtml.includes('href="stage1.html"'),
       stage1AssetsAbsent: !rootHtml.includes('app.js')
     },
@@ -338,12 +338,12 @@ async function validateRoutes() {
       url: stage1Url,
       stage1Assets: includesAll(stage1Html, ['styles.css', 'app.js', 'searchInput', 'map']),
       mainLink: stage1Html.includes('href="/"'),
-      stage2AssetsAbsent: !stage1Html.includes('stage2-preview.js')
+      stage2AssetsAbsent: !stage1Html.includes('stage2.js')
     },
     {
       label: 'stage-2-qa-compatibility',
       url: stage2PreviewUrl,
-      stage2Assets: includesAll(stage2PreviewHtml, ['stage2-preview.css', 'stage2-preview.js', 'datasetSelect', 'stage2Map']),
+      stage2Assets: includesAll(stage2PreviewHtml, ['stage2.css', 'stage2.js', 'datasetSelect', 'stage2Map']),
       mainLink: stage2PreviewHtml.includes('href="/"')
     }
   ];
@@ -473,7 +473,7 @@ async function main() {
       let dom = await dumpDom(buildUrl(), userDataDir);
       let state = extractState('desktop-initial', dom);
       states.push(state);
-      assertCheck(state.ready, 'Initial preview page should finish Stage 2 rendering', state);
+      assertCheck(state.ready, 'Initial Stage 2 page should finish rendering', state);
       assertCheck(state.datasetOptions === datasets.length, 'Initial page should render the expected dataset option count', state);
       assertCheck(state.entryCards === 8 && state.markers >= 8 && state.labels >= 8, 'Initial page should render first dataset cards, markers, and labels', state);
       assertCheck(state.contextFilterButtons <= 4 && state.contextFilterToggle, 'Initial context filters should start compact', state);

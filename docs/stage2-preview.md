@@ -22,6 +22,15 @@ The Stage 2 QA and compatibility route remains available at:
 /stage2-preview.html
 ```
 
+The canonical Stage 2 app assets are:
+
+```text
+stage2.css
+stage2.js
+```
+
+The legacy `stage2-preview.css` and `stage2-preview.js` asset paths remain as compatibility aliases.
+
 Stage 2 does not remove the main `data/entries.json` app index. The Stage 2 datasets sit beside the current map data and link Stage 2 entries back to the first-stage entry IDs.
 
 ## Stage 2 Data
@@ -32,13 +41,13 @@ Active Stage 2 datasets are listed in:
 data/stage2/index.json
 ```
 
-As of 2026-06-02, all 43 indexed Stage 2 datasets use `status: "active"`. The first active dataset lives at:
+As of 2026-06-02, all 43 indexed Stage 2 datasets use `status: "active"`. Some dataset filenames retain the historical `-preview` suffix, but their route status is active. The first active dataset lives at:
 
 ```text
 data/stage2/atlantic-revolutions-preview.json
 ```
 
-The sample uses the existing Atlantic revolutions entries:
+The first dataset uses the existing Atlantic revolutions entries:
 
 - `philadelphia-independence-hall`
 - `yorktown-battlefield`
@@ -418,7 +427,7 @@ npm run smoke
 npm run check
 ```
 
-The Stage 2 validator checks the active data against `data/stage2/schema.json`. The smoke check confirms that the Stage 2 main route, QA compatibility route, assets, critical UI wiring, every indexed dataset, and active dataset statuses are present.
+The Stage 2 validator checks the active data against `data/stage2/schema.json`. The smoke check confirms that the Stage 2 main route, QA compatibility route, canonical assets, legacy asset aliases, critical UI wiring, every indexed dataset, and active dataset statuses are present.
 
 The public usability pass can be run with:
 

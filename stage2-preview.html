@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WGIS 2단계 미리보기</title>
+  <title>WGIS 2단계 QA 호환성</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <link rel="stylesheet" href="stage2-preview.css" />
+  <link rel="stylesheet" href="stage2.css" />
 </head>
 <body>
   <div class="preview-shell">
     <aside class="preview-sidebar">
       <header class="preview-header">
         <a class="back-link" href="/">2단계 메인으로 돌아가기</a>
-        <div class="eyebrow">Stage 2 Preview</div>
-        <h1>2단계 데이터 모델 미리보기</h1>
-        <p>샘플 배치를 바꿔가며 같은 항목이 여러 역사 맥락과 사용자용 필터에 연결되는 모습을 확인합니다.</p>
+        <div class="eyebrow">Stage 2 QA</div>
+        <h1>2단계 QA 호환성 보기</h1>
+        <p>메인과 같은 정식 2단계 자산을 사용해 데이터셋, 맥락 필터, 출처 신뢰도 흐름을 확인합니다.</p>
       </header>
 
       <section class="compare-panel" aria-label="1단계와 2단계 비교">
@@ -28,9 +28,9 @@
         </div>
       </section>
 
-      <section class="control-panel" aria-label="2단계 미리보기 검색과 필터">
+      <section class="control-panel" aria-label="2단계 검색과 필터">
         <label class="search-label" for="datasetSelect">
-          <span>2단계 샘플</span>
+          <span>데이터셋</span>
           <select id="datasetSelect"></select>
         </label>
         <label class="search-label" for="stage2Search">
@@ -45,7 +45,7 @@
 
       <section class="entry-panel" aria-label="항목 목록">
         <div class="entry-panel-header">
-          <strong>샘플 항목</strong>
+          <strong>지도 항목</strong>
           <span id="entryCount">0개</span>
         </div>
         <div id="entryList" class="entry-list"></div>
@@ -53,12 +53,12 @@
     </aside>
 
     <main class="preview-main">
-      <div id="stage2Map" class="stage2-map" aria-label="2단계 미리보기 지도"></div>
+      <div id="stage2Map" class="stage2-map" aria-label="2단계 맥락 지도"></div>
       <section id="detailPanel" class="detail-panel" aria-live="polite"></section>
     </main>
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="stage2-preview.js"></script>
+  <script src="stage2.js"></script>
 </body>
 </html>

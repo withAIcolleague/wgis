@@ -26,7 +26,7 @@ Checked areas:
 - Curation batches: 31
 - First-stage progress: 100% of the 250-entry working target
 - Data validation: pass
-- Stage 2 preview validation: pass
+- Stage 2 validation: pass
 - Static UI smoke check: pass
 - Local browser functional check: pass
 - Public app response: `HTTP 200`
@@ -50,7 +50,7 @@ npm run validate:stage2
 npm run smoke
 ```
 
-`npm run validate` verifies data integrity. `npm run validate:stage2` verifies the stage 2 preview datasets. `npm run smoke` verifies that critical UI wiring and responsive layout contracts are still present.
+`npm run validate` verifies data integrity. `npm run validate:stage2` verifies the Stage 2 datasets. `npm run smoke` verifies that critical UI wiring and responsive layout contracts are still present.
 
 ## Browser Verification
 

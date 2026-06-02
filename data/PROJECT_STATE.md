@@ -14,10 +14,12 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Current entry count: 355
 - Completed curation batches: 44
 - Latest completed batch: `americas-south-america-rock-art-geoglyph-deep-time-landscapes-v1`
-- Latest completed infrastructure milestone: stage-2 active dataset status promotion
+- Latest completed infrastructure milestone: stage-2 canonical asset naming
 - Primary app route: `/` uses the Stage 2 context map
 - First-stage support route: `/stage1.html`
 - Stage-2 QA compatibility route: `/stage2-preview.html`
+- Stage-2 canonical app assets: `stage2.css`, `stage2.js`
+- Stage-2 legacy asset aliases: `stage2-preview.css`, `stage2-preview.js`
 - Stage-2 active datasets: 43
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
@@ -27,6 +29,13 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Data quality floor: every app entry must have `curationBatch` and at least one valid `sources` URL
 
 ## Completed
+
+- Stage-2 canonical asset naming
+  - Files: `index.html`, `stage2-preview.html`, `stage2.css`, `stage2.js`, `stage2-preview.css`, `stage2-preview.js`, `scripts/smoke-check.js`, `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`, `docs/first-stage-functional-review.md`, `data/PROJECT_STATE.md`
+  - URL paths: `/`, `/stage2-preview.html`
+  - Scope: move the primary Stage 2 route and QA compatibility route to canonical `stage2.css` and `stage2.js` assets while preserving legacy preview asset aliases
+  - Checked: `npm.cmd run check`, `node --check scripts\stage2-public-usability-check.mjs`, `git diff --check`
+  - Result: local data validation, Stage 2 validation, smoke checks, public-script syntax check, and patch whitespace checks pass
 
 - Stage-2 active dataset status promotion
   - Files: `data/stage2/index.json`, `data/stage2/*.json`, `scripts/smoke-check.js`, `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`, `docs/stage2-schema.md`, `data/PROJECT_STATE.md`

@@ -30,8 +30,10 @@ function main() {
   const html = readText('index.html');
   const stage1Html = readText('stage1.html');
   const stage2Html = readText('stage2-preview.html');
-  const stage2App = readText('stage2-preview.js');
-  const stage2Css = readText('stage2-preview.css');
+  const stage2App = readText('stage2.js');
+  const stage2Css = readText('stage2.css');
+  const legacyStage2App = readText('stage2-preview.js');
+  const legacyStage2Css = readText('stage2-preview.css');
   const app = readText('app.js');
   const css = readText('styles.css');
   const entries = readJson('data/entries.json');
@@ -91,8 +93,8 @@ function main() {
   check('stage 1 links back to stage 2 main', stage1Html.includes('href="/"'));
   check('stage 2 main links to stage 1', html.includes('href="stage1.html"'));
   check('stage 2 main references assets', includesAll(html, [
-    'stage2-preview.css',
-    'stage2-preview.js',
+    'stage2.css',
+    'stage2.js',
     'stage2Map',
     'datasetSelect',
     'contextFilters',
@@ -147,25 +149,27 @@ function main() {
     'position: fixed'
   ]));
 
-  check('stage 2 preview page references assets', includesAll(stage2Html, [
-    'stage2-preview.css',
-    'stage2-preview.js',
+  check('stage 2 QA compatibility route references canonical assets', includesAll(stage2Html, [
+    'stage2.css',
+    'stage2.js',
     'stage2Map',
     'datasetSelect',
     'contextFilters',
     'entryList',
     'detailPanel'
   ]));
-  check('stage 2 preview fetches dataset index', stage2App.includes("fetch('data/stage2/index.json')"));
+  check('legacy stage 2 CSS asset aliases canonical CSS', legacyStage2Css.includes('@import url("stage2.css")'));
+  check('legacy stage 2 JS asset aliases canonical JS', legacyStage2App.includes("script.src = 'stage2.js'"));
+  check('stage 2 app fetches dataset index', stage2App.includes("fetch('data/stage2/index.json')"));
   check('stage 2 app defaults to latest dataset', stage2App.includes('stage2Index.datasets.at(-1)?.path'));
-  check('stage 2 preview can load selected dataset path', stage2App.includes('loadDataset(event.target.value)'));
-  check('stage 2 preview renders Leaflet markers', includesAll(stage2App, ['L.map', 'L.marker', 'bindTooltip']));
-  check('stage 2 preview clears stale marker labels', includesAll(stage2App, ['function clearMarkers()', 'unbindTooltip()', '.leaflet-tooltip.stage2-label']));
-  check('stage 2 preview compacts context filters', includesAll(stage2App, ['CONTEXT_COLLAPSED_LIMIT', 'contextFiltersExpanded', 'context-filter-toggle']));
-  check('stage 2 preview search stays scoped to entry fields', !stage2App.includes('entry.stage2.contextIds.map(id => getContext(id)?.labelKo)'));
-  check('stage 2 preview detail actions are wired', includesAll(stage2App, ['function focusMapOnEntry(entry)', 'function closeDetail()', 'data-detail-action="focus-map"', 'data-detail-action="close"', "event.key === 'Escape'"]));
-  check('stage 2 preview hides empty detail panel', includesAll(stage2App, ["panel.classList.add('is-empty')", "panel.classList.remove('is-empty')"]) && includesAll(stage2Css, ['.detail-panel.is-empty', 'display: none']));
-  check('stage 2 preview has responsive mobile rules', includesAll(stage2Css, ['@media (max-width: 820px)', '.entry-list']));
+  check('stage 2 app can load selected dataset path', stage2App.includes('loadDataset(event.target.value)'));
+  check('stage 2 app renders Leaflet markers', includesAll(stage2App, ['L.map', 'L.marker', 'bindTooltip']));
+  check('stage 2 app clears stale marker labels', includesAll(stage2App, ['function clearMarkers()', 'unbindTooltip()', '.leaflet-tooltip.stage2-label']));
+  check('stage 2 app compacts context filters', includesAll(stage2App, ['CONTEXT_COLLAPSED_LIMIT', 'contextFiltersExpanded', 'context-filter-toggle']));
+  check('stage 2 app search stays scoped to entry fields', !stage2App.includes('entry.stage2.contextIds.map(id => getContext(id)?.labelKo)'));
+  check('stage 2 app detail actions are wired', includesAll(stage2App, ['function focusMapOnEntry(entry)', 'function closeDetail()', 'data-detail-action="focus-map"', 'data-detail-action="close"', "event.key === 'Escape'"]));
+  check('stage 2 app hides empty detail panel', includesAll(stage2App, ["panel.classList.add('is-empty')", "panel.classList.remove('is-empty')"]) && includesAll(stage2Css, ['.detail-panel.is-empty', 'display: none']));
+  check('stage 2 app has responsive mobile rules', includesAll(stage2Css, ['@media (max-width: 820px)', '.entry-list']));
   check('stage 2 index has multiple datasets', stage2Datasets.length >= 43);
 
   for (const { metadata, data } of stage2Datasets) {
