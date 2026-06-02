@@ -230,6 +230,12 @@
       "titleKo": "중세 캅카스 기독교 경관",
       "path": "data/stage2/caucasus-medieval-christian-landscapes-preview.json",
       "status": "preview-only"
+    },
+    {
+      "id": "stage2-europe-paleolithic-cave-rock-art-preview",
+      "titleKo": "유럽 구석기 동굴벽화·암각화",
+      "path": "data/stage2/europe-paleolithic-cave-rock-art-preview.json",
+      "status": "preview-only"
     }
   ]
 }

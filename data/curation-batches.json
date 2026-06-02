@@ -1124,6 +1124,34 @@
         "Georgia Travel, Mtskheta Municipality, Armenia Travel, Mother See of Holy Etchmiadzin, Turkey Culture Portal, and Turkish Museums references for site-level management and visitor context",
         "Representative coordinates selected for the visible core monument or central component within each wider medieval Christian landscape"
       ]
+    },
+    {
+      "id": "europe-prehistory-paleolithic-cave-rock-art-landscapes-v1",
+      "status": "completed",
+      "completedAt": "2026-06-02",
+      "continentId": "europe",
+      "countryIso2": "FR-ES-PT",
+      "countryKo": "프랑스·스페인·포르투갈",
+      "worldRegion": "유럽 구석기 동굴벽화·암각화 경관",
+      "focusKo": "유럽 구석기 동굴벽화·암각화 경관 핵심 지점",
+      "scopeKo": "쇼베-퐁다르크, 라스코, 알타미라, 티토 부스티요, 에카인, 엘 카스티요, 코아 계곡, 시에가 베르데를 통해 프랑스·스페인·포르투갈의 구석기 후기 동굴벽화와 야외 암각화 경관을 연결하는 핵심 지점",
+      "sourceFile": "data/records/europe/prehistory/paleolithic-cave-rock-art-landscapes.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "chauvet-pont-darc-cave",
+        "lascaux-cave",
+        "altamira-cave",
+        "tito-bustillo-cave",
+        "ekain-cave",
+        "el-castillo-cave",
+        "coa-valley-rock-art",
+        "siega-verde-rock-art"
+      ],
+      "sourceBasis": [
+        "UNESCO World Heritage pages for Decorated Cave of Pont d'Arc, Prehistoric Sites and Decorated Caves of the Vezere Valley, Cave of Altamira and Paleolithic Cave Art of Northern Spain, and Prehistoric Rock Art Sites in the Coa Valley and Siega Verde",
+        "French Ministry of Culture, Chauvet 2 Ardeche, Lascaux IV, Spanish Ministry of Culture Altamira Museum, Asturias archaeological sites, Basque Government, Ekainberri, Arte Rupestre Cantabrico, Cuevas de Cantabria, Coa Parque, Castile and Leon Tourism, and Spain.info references for site-level management and visitor context",
+        "Representative coordinates selected for the visible cave, visitor/protection area, or central component within each wider Paleolithic cave-art or rock-art landscape"
+      ]
     }
   ]
 }

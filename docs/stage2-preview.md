@@ -1008,3 +1008,30 @@ The 2026-06-02 thirty-eight-dataset public browser pass checks `https://wgis.ver
 - The `아르메니아 수도원 학술·필사 경관` context filter returns `하그파트 수도원`, `사나힌 수도원`, and `게가르드 수도원` with 3 markers and 3 labels and no stale Georgian data.
 - On mobile, `즈바르트노츠 대성당 유적` detail renders with source-confidence information and both detail actions.
 - Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-eight-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-eight-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.
+
+## Thirty-Ninth Pilot Dataset
+
+The European Paleolithic cave and rock art landscapes pilot dataset adds 8 entries:
+
+- `쇼베-퐁다르크 동굴`
+- `라스코 동굴`
+- `알타미라 동굴`
+- `티토 부스티요 동굴`
+- `에카인 동굴`
+- `엘 카스티요 동굴`
+- `코아 계곡 암각화 지대`
+- `시에가 베르데 암각화 지대`
+
+## Thirty-Nine-Dataset Public Usability Pass
+
+The 2026-06-02 thirty-nine-dataset public browser pass checks `https://wgis.vercel.app/stage2-preview.html` after adding the European Paleolithic cave and rock art landscapes pilot dataset:
+
+- Dataset selector exposes 39 datasets.
+- All 39 indexed datasets render their expected entry, marker, and permanent-label counts across 323 Stage 2 preview entries.
+- The new European Paleolithic cave and rock art dataset exposes 8 entries: `쇼베-퐁다르크 동굴`, `라스코 동굴`, `알타미라 동굴`, `티토 부스티요 동굴`, `에카인 동굴`, `엘 카스티요 동굴`, `코아 계곡 암각화 지대`, and `시에가 베르데 암각화 지대`.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control.
+- Searching `알타미라` in the European Paleolithic dataset narrows the list and map to `알타미라 동굴` with 1 marker and 1 label.
+- Selecting `라스코 동굴` opens the detail panel with source-confidence information and detail actions.
+- The `칸타브리아 해안 구석기 동굴벽화권` context filter returns `알타미라 동굴`, `티토 부스티요 동굴`, `에카인 동굴`, and `엘 카스티요 동굴` with 4 markers and 4 labels and no stale French data.
+- On mobile, `시에가 베르데 암각화 지대` detail renders with source-confidence information and both detail actions.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-nine-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-nine-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.

@@ -11,10 +11,10 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 315
-- Completed curation batches: 39
-- Latest completed batch: `europe-medieval-caucasus-christian-monastic-royal-landscapes-v1`
-- Latest completed infrastructure milestone: stage-2 thirty-eight-dataset public usability pass
+- Current entry count: 323
+- Completed curation batches: 40
+- Latest completed batch: `europe-prehistory-paleolithic-cave-rock-art-landscapes-v1`
+- Latest completed infrastructure milestone: stage-2 thirty-nine-dataset public usability pass
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
@@ -671,6 +671,33 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - Checked: 38 indexed dataset endpoints and expected entry counts across 315 Stage 2 preview entries, compact context filters, Caucasus medieval Christian search/detail/context behavior, stale-data cleanup, and mobile-sized rendering
   - Result: public endpoint and headless browser verification completed for 38 datasets and 315 Stage 2 preview entries; screenshots saved under `C:\Users\Public\Documents\ESTsoft\CreatorTemp\` when the local headless browser runtime is available
 
+- European Paleolithic cave and rock art landscapes batch
+  - Batch ID: `europe-prehistory-paleolithic-cave-rock-art-landscapes-v1`
+  - Source file: `data/records/europe/prehistory/paleolithic-cave-rock-art-landscapes.json`
+  - Entries added: 8
+  - Entry IDs:
+    - `chauvet-pont-darc-cave`
+    - `lascaux-cave`
+    - `altamira-cave`
+    - `tito-bustillo-cave`
+    - `ekain-cave`
+    - `el-castillo-cave`
+    - `coa-valley-rock-art`
+    - `siega-verde-rock-art`
+
+- Stage-2 European Paleolithic cave and rock art landscapes pilot dataset
+  - Files: `data/stage2/index.json`, `data/stage2/europe-paleolithic-cave-rock-art-preview.json`, `scripts/smoke-check.js`, `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`
+  - URL path: `/stage2-preview.html`
+  - Scope: add a thirty-ninth Stage 2 preview dataset using the new European Paleolithic cave and rock art landscapes source batch
+  - Model stress test: Chauvet early Aurignacian cave art, Lascaux and Vezere Valley animal painting, Altamira polychrome bison, Tito Bustillo Asturian cave art, Ekain Magdalenian horse paintings, El Castillo long-sequence hand stencils and signs, and Coa Valley / Siega Verde open-air rock engraving landscapes
+
+- Stage-2 thirty-nine-dataset public usability pass
+  - Files: `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`
+  - URL path: `https://wgis.vercel.app/stage2-preview.html`
+  - Scope: keep the Stage 2 preview endpoint and browser-state check repeatable after adding the thirty-ninth dataset
+  - Checked: 39 indexed dataset endpoints and expected entry counts across 323 Stage 2 preview entries, compact context filters, European Paleolithic cave and rock art search/detail/context behavior, stale-data cleanup, and mobile-sized rendering
+  - Result: public endpoint and headless browser verification completed for 39 datasets and 323 Stage 2 preview entries; screenshots saved under `C:\Users\Public\Documents\ESTsoft\CreatorTemp\` when the local headless browser runtime is available
+
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`
   - Source file: `data/records/global/legacy/core-seed-entries.json`
@@ -1139,7 +1166,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 1. First-stage DB next expansion batch
    - Scope: continue focused source-record growth with another bounded culture/region/time slice and keep the batch small enough to verify end to end
 
-2. Stage-2 thirty-ninth pilot dataset
+2. Stage-2 fortieth pilot dataset
    - Scope: continue modeling the next focused source-record batch as a Stage 2 preview dataset, or optionally model the legacy core seed entries as a cross-regional demonstration set if we want every existing source file to have a Stage 2 preview
 
 ## Resume Checklist

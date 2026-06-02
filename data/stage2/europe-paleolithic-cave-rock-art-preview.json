@@ -1,0 +1,501 @@
+{
+  "schemaVersion": 2,
+  "status": "preview-only",
+  "id": "stage2-europe-paleolithic-cave-rock-art-preview",
+  "titleKo": "2단계 미리보기: 유럽 구석기 동굴벽화·암각화",
+  "descriptionKo": "쇼베-퐁다르크, 라스코, 알타미라, 티토 부스티요, 에카인, 엘 카스티요, 코아 계곡, 시에가 베르데를 통해 프랑스·스페인·포르투갈의 구석기 후기 동굴벽화와 야외 암각화 경관을 비교하는 2단계 미리보기 데이터셋입니다.",
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "오리냐크기",
+        "솔뤼트레앙·마들렌기",
+        "마들렌기",
+        "구석기 후기",
+        "구석기 후기 야외 암각화"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "아르데슈",
+        "베제르 계곡",
+        "칸타브리아",
+        "아스투리아스",
+        "바스크",
+        "코아 계곡",
+        "시에가 베르데"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "동굴벽화",
+        "다색 동물화",
+        "손자국·기호",
+        "말 그림",
+        "야외 암각화",
+        "강 계곡 경관",
+        "세계유산"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지점 유형",
+      "options": [
+        "유적"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "europe-paleolithic-cave-rock-art-landscapes",
+      "labelKo": "유럽 구석기 동굴벽화·암각화 경관",
+      "parentId": null,
+      "periodKo": "기원전 40000-8000년경",
+      "summaryKo": "프랑스 남부와 베제르 계곡, 칸타브리아 해안, 바스크 계곡, 이베리아 서부 강 계곡의 동굴벽화와 야외 암각화를 연결해 구석기 후기 유럽 시각문화가 지하 공간과 열린 강변 경관을 어떻게 이용했는지 봅니다."
+    },
+    {
+      "id": "french-decorated-cave-traditions",
+      "labelKo": "프랑스 장식 동굴 전통",
+      "parentId": "europe-paleolithic-cave-rock-art-landscapes",
+      "periodKo": "기원전 36000-15000년경",
+      "summaryKo": "쇼베-퐁다르크와 라스코를 통해 프랑스의 초기 오리냐크기 동굴벽화와 베제르 계곡의 후기 동물화 전통을 비교합니다."
+    },
+    {
+      "id": "chauvet-aurignacian-sanctuary",
+      "labelKo": "쇼베 오리냐크기 동굴 성소",
+      "parentId": "french-decorated-cave-traditions",
+      "periodKo": "기원전 36000-30000년경",
+      "summaryKo": "쇼베-퐁다르크를 통해 사자, 코뿔소, 말, 들소 이미지가 깊은 동굴 공간 안에서 초기 시각문화의 성소를 구성한 방식을 봅니다."
+    },
+    {
+      "id": "lascaux-vezere-magdalenian-paintings",
+      "labelKo": "라스코와 베제르 계곡 동물벽화",
+      "parentId": "french-decorated-cave-traditions",
+      "periodKo": "기원전 17000년경",
+      "summaryKo": "라스코를 통해 황소의 방, 축 방향 동선, 색채와 선묘가 베제르 계곡 동굴벽화 경관의 핵심 시각 서사를 만든 방식을 봅니다."
+    },
+    {
+      "id": "cantabrian-paleolithic-cave-art",
+      "labelKo": "칸타브리아 해안 구석기 동굴벽화권",
+      "parentId": "europe-paleolithic-cave-rock-art-landscapes",
+      "periodKo": "기원전 40000-10000년경",
+      "summaryKo": "알타미라, 티토 부스티요, 에카인, 엘 카스티요를 통해 북부 스페인 동굴들이 다색 동물화, 말 그림, 손자국, 장기 점유 층위를 어떻게 보존하는지 봅니다."
+    },
+    {
+      "id": "altamira-polychrome-bison-cave",
+      "labelKo": "알타미라 다색 들소 동굴",
+      "parentId": "cantabrian-paleolithic-cave-art",
+      "periodKo": "기원전 21000-13000년경",
+      "summaryKo": "알타미라를 통해 암반 천장, 다색 안료, 들소 형상이 결합해 입체적 동굴 표면을 구석기 이미지 공간으로 전환한 방식을 봅니다."
+    },
+    {
+      "id": "tito-bustillo-asturian-cave-art",
+      "labelKo": "티토 부스티요 아스투리아스 동굴벽화",
+      "parentId": "cantabrian-paleolithic-cave-art",
+      "periodKo": "기원전 22000-10000년경",
+      "summaryKo": "티토 부스티요를 통해 말, 순록, 해양 동물과 기호가 동굴 내부 여러 구역에 축적된 아스투리아스 구석기 벽화 전통을 봅니다."
+    },
+    {
+      "id": "ekain-basque-magdalenian-horses",
+      "labelKo": "에카인 바스크 마들렌기 말 그림",
+      "parentId": "cantabrian-paleolithic-cave-art",
+      "periodKo": "기원전 15000-12000년경",
+      "summaryKo": "에카인을 통해 말 그림의 밀도와 보존 상태가 바스크 계곡의 마들렌기 동굴벽화 전통을 어떻게 대표하는지 봅니다."
+    },
+    {
+      "id": "el-castillo-monte-castillo-long-sequence",
+      "labelKo": "엘 카스티요 장기 점유와 손자국·기호",
+      "parentId": "cantabrian-paleolithic-cave-art",
+      "periodKo": "기원전 40000년 이후",
+      "summaryKo": "엘 카스티요를 통해 손자국, 점, 기호, 동물화가 장기간 축적된 몬테 카스티요 동굴군의 시각문화 층위를 봅니다."
+    },
+    {
+      "id": "iberian-open-air-rock-art",
+      "labelKo": "이베리아 야외 구석기 암각화 경관",
+      "parentId": "europe-paleolithic-cave-rock-art-landscapes",
+      "periodKo": "기원전 25000-8000년경",
+      "summaryKo": "코아 계곡과 시에가 베르데를 통해 동굴 내부가 아니라 강 계곡의 노출 암반이 구석기 후기 동물 이미지의 열린 무대가 된 방식을 봅니다."
+    },
+    {
+      "id": "coa-valley-open-air-engraving",
+      "labelKo": "코아 계곡 야외 암각화",
+      "parentId": "iberian-open-air-rock-art",
+      "periodKo": "기원전 25000년경 이후",
+      "summaryKo": "코아 계곡을 통해 말, 소, 산양 등 수천 점의 동물 새김그림이 코아강 하류의 넓은 경관을 따라 분포하는 방식을 봅니다."
+    },
+    {
+      "id": "siega-verde-agueda-rock-art",
+      "labelKo": "시에가 베르데 아게다강 암각화",
+      "parentId": "iberian-open-air-rock-art",
+      "periodKo": "기원전 20000-11000년경",
+      "summaryKo": "시에가 베르데를 통해 아게다강 편암 노두의 동물 암각화가 코아 계곡과 함께 이베리아 서부 야외 암각화권을 형성한 방식을 봅니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "chauvet-pont-darc-cave",
+      "titleKo": "쇼베-퐁다르크 동굴",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "프랑스",
+      "coordinates": { "lat": 44.3886, "lng": 4.4167 },
+      "yearLabelKo": "기원전 36000-30000년경 초기 동굴벽화",
+      "summaryKo": "쇼베-퐁다르크 동굴은 아르데슈강 협곡의 석회암 고원에 보존된 초기 구석기 동굴벽화 유적이다. 사자, 코뿔소, 말, 들소와 같은 동물 표현은 오리냐크기 호모 사피엔스가 깊은 동굴 공간을 시각적 의례와 기억의 장소로 구성한 방식을 보여준다.",
+      "stage2": {
+        "primaryContextId": "chauvet-aurignacian-sanctuary",
+        "contextIds": [
+          "europe-paleolithic-cave-rock-art-landscapes",
+          "french-decorated-cave-traditions",
+          "chauvet-aurignacian-sanctuary"
+        ],
+        "periodPathKo": [
+          "선사",
+          "오리냐크기",
+          "초기 동굴벽화 성소"
+        ],
+        "topicTagsKo": [
+          "쇼베",
+          "퐁다르크",
+          "아르데슈",
+          "오리냐크기",
+          "동굴벽화"
+        ],
+        "uiFilters": {
+          "era": "오리냐크기",
+          "region": "아르데슈",
+          "theme": [
+            "동굴벽화",
+            "다색 동물화",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO, 프랑스 문화부, Chauvet 2 Ardeche 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "lascaux-cave",
+      "titleKo": "라스코 동굴",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "프랑스",
+      "coordinates": { "lat": 45.0538, "lng": 1.1696 },
+      "yearLabelKo": "기원전 17000년경 베제르 계곡 동굴벽화",
+      "summaryKo": "라스코 동굴은 베제르 계곡의 구석기 동굴벽화 경관을 대표하는 유적이다. 황소의 방과 축 방향으로 전개되는 말, 사슴, 들소 이미지는 구석기 후기 사람들이 지하 공간의 동선과 동물 이미지를 결합해 복합적인 시각 서사를 만든 방식을 보여준다.",
+      "stage2": {
+        "primaryContextId": "lascaux-vezere-magdalenian-paintings",
+        "contextIds": [
+          "europe-paleolithic-cave-rock-art-landscapes",
+          "french-decorated-cave-traditions",
+          "lascaux-vezere-magdalenian-paintings"
+        ],
+        "periodPathKo": [
+          "선사",
+          "솔뤼트레앙·마들렌기",
+          "베제르 계곡 동물벽화"
+        ],
+        "topicTagsKo": [
+          "라스코",
+          "베제르 계곡",
+          "몽티냐크",
+          "황소의 방",
+          "동굴벽화"
+        ],
+        "uiFilters": {
+          "era": "솔뤼트레앙·마들렌기",
+          "region": "베제르 계곡",
+          "theme": [
+            "동굴벽화",
+            "다색 동물화",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO, 프랑스 문화부, Lascaux IV 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "altamira-cave",
+      "titleKo": "알타미라 동굴",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "스페인",
+      "coordinates": { "lat": 43.3775, "lng": -4.1221 },
+      "yearLabelKo": "기원전 21000-13000년경 다색 들소 동굴벽화",
+      "summaryKo": "알타미라 동굴은 북부 스페인 구석기 동굴벽화의 대표 유적이다. 천장의 다색 들소와 동물 형상은 암반의 굴곡, 안료, 선묘가 결합해 구석기 후기 시각문화가 입체적 동굴 표면을 어떻게 활용했는지 보여준다.",
+      "stage2": {
+        "primaryContextId": "altamira-polychrome-bison-cave",
+        "contextIds": [
+          "europe-paleolithic-cave-rock-art-landscapes",
+          "cantabrian-paleolithic-cave-art",
+          "altamira-polychrome-bison-cave"
+        ],
+        "periodPathKo": [
+          "선사",
+          "칸타브리아 구석기 후기",
+          "다색 들소 동굴"
+        ],
+        "topicTagsKo": [
+          "알타미라",
+          "산티야나델마르",
+          "다색 들소",
+          "칸타브리아",
+          "동굴벽화"
+        ],
+        "uiFilters": {
+          "era": "솔뤼트레앙·마들렌기",
+          "region": "칸타브리아",
+          "theme": [
+            "동굴벽화",
+            "다색 동물화",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO, 스페인 문화부 알타미라 박물관, Spain.info 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "tito-bustillo-cave",
+      "titleKo": "티토 부스티요 동굴",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "스페인",
+      "coordinates": { "lat": 43.4619, "lng": -5.0606 },
+      "yearLabelKo": "기원전 22000-10000년경 아스투리아스 동굴벽화",
+      "summaryKo": "티토 부스티요 동굴은 리바데세야 일대의 넓은 카르스트 동굴 체계 안에 형성된 구석기 후기 벽화 유적이다. 말, 순록, 해양 동물과 여러 기호가 있는 회화군은 칸타브리아 해안 사람들이 동굴 내부 구역을 반복적으로 이용하며 이미지를 축적한 방식을 보여준다.",
+      "stage2": {
+        "primaryContextId": "tito-bustillo-asturian-cave-art",
+        "contextIds": [
+          "europe-paleolithic-cave-rock-art-landscapes",
+          "cantabrian-paleolithic-cave-art",
+          "tito-bustillo-asturian-cave-art"
+        ],
+        "periodPathKo": [
+          "선사",
+          "마들렌기",
+          "아스투리아스 동굴벽화"
+        ],
+        "topicTagsKo": [
+          "티토 부스티요",
+          "리바데세야",
+          "아스투리아스",
+          "해양 동물",
+          "칸타브리아 벽화"
+        ],
+        "uiFilters": {
+          "era": "마들렌기",
+          "region": "아스투리아스",
+          "theme": [
+            "동굴벽화",
+            "다색 동물화",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO, Asturias Archaeological Sites, Tito Bustillo Art Centre 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "ekain-cave",
+      "titleKo": "에카인 동굴",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "스페인",
+      "coordinates": { "lat": 43.2396, "lng": -2.2565 },
+      "yearLabelKo": "기원전 15000-12000년경 말 그림 중심 동굴벽화",
+      "summaryKo": "에카인 동굴은 바스크 지역의 마들렌기 동굴벽화를 대표하며, 특히 말 그림의 밀도와 보존 상태로 알려져 있다. 동물 형상, 암반 면의 선택, 계곡 환경은 구석기 후기 사냥·기억·이미지 체계가 지역 경관과 연결된 방식을 보여준다.",
+      "stage2": {
+        "primaryContextId": "ekain-basque-magdalenian-horses",
+        "contextIds": [
+          "europe-paleolithic-cave-rock-art-landscapes",
+          "cantabrian-paleolithic-cave-art",
+          "ekain-basque-magdalenian-horses"
+        ],
+        "periodPathKo": [
+          "선사",
+          "마들렌기",
+          "바스크 말 그림 동굴"
+        ],
+        "topicTagsKo": [
+          "에카인",
+          "에카인베리",
+          "바스크",
+          "말 그림",
+          "마들렌기"
+        ],
+        "uiFilters": {
+          "era": "마들렌기",
+          "region": "바스크",
+          "theme": [
+            "동굴벽화",
+            "말 그림",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO, 바스크 정부, Ekainberri 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "el-castillo-cave",
+      "titleKo": "엘 카스티요 동굴",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "스페인",
+      "coordinates": { "lat": 43.2930, "lng": -3.9687 },
+      "yearLabelKo": "기원전 40000년 이후 손자국·점·동물화가 축적된 동굴",
+      "summaryKo": "엘 카스티요 동굴은 몬테 카스티요 동굴군의 핵심 유적으로, 손자국, 점, 기호, 동물화가 장기간에 걸쳐 축적된 장소다. 긴 고고학적 층위와 벽화 전통은 칸타브리아 지역에서 구석기 사람들이 동일한 동굴을 반복적으로 의미화한 과정을 보여준다.",
+      "stage2": {
+        "primaryContextId": "el-castillo-monte-castillo-long-sequence",
+        "contextIds": [
+          "europe-paleolithic-cave-rock-art-landscapes",
+          "cantabrian-paleolithic-cave-art",
+          "el-castillo-monte-castillo-long-sequence"
+        ],
+        "periodPathKo": [
+          "선사",
+          "구석기 후기",
+          "손자국·기호 장기 축적"
+        ],
+        "topicTagsKo": [
+          "엘 카스티요",
+          "몬테 카스티요",
+          "손자국",
+          "기호",
+          "푸엔테비에스고"
+        ],
+        "uiFilters": {
+          "era": "구석기 후기",
+          "region": "칸타브리아",
+          "theme": [
+            "동굴벽화",
+            "손자국·기호",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO, Arte Rupestre Cantabrico, Cuevas de Cantabria 자료를 사용했습니다."
+        }
+      }
+    },
+    {
+      "entryId": "coa-valley-rock-art",
+      "titleKo": "코아 계곡 암각화 지대",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "포르투갈",
+      "coordinates": { "lat": 41.0792, "lng": -7.1184 },
+      "yearLabelKo": "기원전 25000년경부터 이어진 야외 동물 암각화",
+      "summaryKo": "코아 계곡 암각화 지대는 코아강과 두루강 주변의 야외 암반에 새겨진 구석기 후기 동물 형상으로 유명하다. 말, 소, 산양 등 수천 점의 새김그림은 동굴 내부가 아니라 강 계곡의 열린 경관이 장기간 시각문화의 무대가 되었음을 보여준다.",
+      "stage2": {
+        "primaryContextId": "coa-valley-open-air-engraving",
+        "contextIds": [
+          "europe-paleolithic-cave-rock-art-landscapes",
+          "iberian-open-air-rock-art",
+          "coa-valley-open-air-engraving"
+        ],
+        "periodPathKo": [
+          "선사",
+          "이베리아 야외 암각화",
+          "코아강 계곡 새김그림"
+        ],
+        "topicTagsKo": [
+          "코아 계곡",
+          "포스코아",
+          "야외 암각화",
+          "강 계곡",
+          "동물 새김그림"
+        ],
+        "uiFilters": {
+          "era": "구석기 후기 야외 암각화",
+          "region": "코아 계곡",
+          "theme": [
+            "야외 암각화",
+            "강 계곡 경관",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO, Coa Parque, Center of Portugal 자료를 사용했습니다. 좌표는 넓은 공원 경관의 대표 위치입니다."
+        }
+      }
+    },
+    {
+      "entryId": "siega-verde-rock-art",
+      "titleKo": "시에가 베르데 암각화 지대",
+      "displayTypeKo": "유적",
+      "modernCountryKo": "스페인",
+      "coordinates": { "lat": 40.6978, "lng": -6.6630 },
+      "yearLabelKo": "기원전 20000-11000년경 아게다강 야외 암각화",
+      "summaryKo": "시에가 베르데 암각화 지대는 아게다강가의 편암 노두에 새겨진 구석기 후기 야외 암각화 유적이다. 코아 계곡과 함께 말, 들소, 사슴 등 동물 형상이 강변 경관을 따라 분포하며, 이베리아 서부에서 야외 암각화가 넓은 지역 네트워크를 이룬 방식을 보여준다.",
+      "stage2": {
+        "primaryContextId": "siega-verde-agueda-rock-art",
+        "contextIds": [
+          "europe-paleolithic-cave-rock-art-landscapes",
+          "iberian-open-air-rock-art",
+          "siega-verde-agueda-rock-art"
+        ],
+        "periodPathKo": [
+          "선사",
+          "이베리아 야외 암각화",
+          "아게다강 편암 노두"
+        ],
+        "topicTagsKo": [
+          "시에가 베르데",
+          "아게다강",
+          "살라망카",
+          "야외 암각화",
+          "동물 새김그림"
+        ],
+        "uiFilters": {
+          "era": "구석기 후기 야외 암각화",
+          "region": "시에가 베르데",
+          "theme": [
+            "야외 암각화",
+            "강 계곡 경관",
+            "세계유산"
+          ],
+          "displayType": "유적"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 3,
+          "referenceSources": 0,
+          "noteKo": "UNESCO, Castile and Leon Tourism, Spain.info 자료를 사용했습니다."
+        }
+      }
+    }
+  ]
+}
