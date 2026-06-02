@@ -32,8 +32,8 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - Files: `data/stage2/index.json`, `data/stage2/*.json`, `scripts/smoke-check.js`, `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`, `docs/stage2-schema.md`, `data/PROJECT_STATE.md`
   - URL path: `/`
   - Scope: promote the 43 route-ready Stage 2 datasets from `preview-only` to `active` now that Stage 2 is the primary WGIS route
-  - Checked: `npm.cmd run check`, `node --check scripts\stage2-public-usability-check.mjs`, Stage 2 index status count
-  - Result: 43 indexed datasets report `active`; local data validation, Stage 2 validation, and smoke checks pass for 355 Stage 2 entries
+  - Checked: `npm.cmd run check`, `node --check scripts\stage2-public-usability-check.mjs`, `node scripts\stage2-public-usability-check.mjs https://wgis.vercel.app/`, Stage 2 index status count
+  - Result: 43 indexed datasets report `active`; local data validation, Stage 2 validation, smoke checks, public route checks, and headless browser probe pass for 355 Stage 2 entries
 
 - 5-continent country classification database
   - File: `data/continents-countries.json`
