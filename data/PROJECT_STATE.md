@@ -11,10 +11,10 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 ## Current Status
 
 - App display index: `data/entries.json`
-- Current entry count: 323
-- Completed curation batches: 40
-- Latest completed batch: `europe-prehistory-paleolithic-cave-rock-art-landscapes-v1`
-- Latest completed infrastructure milestone: stage-2 thirty-nine-dataset public usability pass
+- Current entry count: 331
+- Completed curation batches: 41
+- Latest completed batch: `africa-prehistory-rock-art-ritual-landscapes-v1`
+- Latest completed infrastructure milestone: stage-2 forty-dataset public usability pass
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
@@ -698,6 +698,33 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - Checked: 39 indexed dataset endpoints and expected entry counts across 323 Stage 2 preview entries, compact context filters, European Paleolithic cave and rock art search/detail/context behavior, stale-data cleanup, and mobile-sized rendering
   - Result: public endpoint and headless browser verification completed for 39 datasets and 323 Stage 2 preview entries; screenshots saved under `C:\Users\Public\Documents\ESTsoft\CreatorTemp\` when the local headless browser runtime is available
 
+- African rock art and ritual landscapes batch
+  - Batch ID: `africa-prehistory-rock-art-ritual-landscapes-v1`
+  - Source file: `data/records/africa/prehistory/african-rock-art-ritual-landscapes.json`
+  - Entries added: 8
+  - Entry IDs:
+    - `tassili-najjer`
+    - `tadrart-acacus`
+    - `ennedi-massif`
+    - `tsodilo-hills`
+    - `twyfelfontein`
+    - `kondoa-rock-art-sites`
+    - `matobo-hills`
+    - `chongoni-rock-art-area`
+
+- Stage-2 African rock art and ritual landscapes pilot dataset
+  - Files: `data/stage2/index.json`, `data/stage2/african-rock-art-ritual-landscapes-preview.json`, `scripts/smoke-check.js`, `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`
+  - URL path: `/stage2-preview.html`
+  - Scope: add a fortieth Stage 2 preview dataset using the new African rock art and ritual landscapes source batch
+  - Model stress test: Tassili n'Ajjer and Tadrart Acacus Saharan climate memory, Ennedi sandstone canyon rock art, Tsodilo San sacred hills, Twyfelfontein hunter-gatherer engravings, Kondoa East African rock art traditions, Matobo granite hill sacred landscapes, and Chongoni Chewa ritual rock art
+
+- Stage-2 forty-dataset public usability pass
+  - Files: `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`
+  - URL path: `https://wgis.vercel.app/stage2-preview.html`
+  - Scope: keep the Stage 2 preview endpoint and browser-state check repeatable after adding the fortieth dataset
+  - Checked: 40 indexed dataset endpoints and expected entry counts across 331 Stage 2 preview entries, compact context filters, African rock art search/detail/context behavior, stale-data cleanup, and mobile-sized rendering
+  - Result: public endpoint and headless browser verification completed for 40 datasets and 331 Stage 2 preview entries; screenshots saved under `C:\Users\Public\Documents\ESTsoft\CreatorTemp\` when the local headless browser runtime is available
+
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`
   - Source file: `data/records/global/legacy/core-seed-entries.json`
@@ -1166,7 +1193,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 1. First-stage DB next expansion batch
    - Scope: continue focused source-record growth with another bounded culture/region/time slice and keep the batch small enough to verify end to end
 
-2. Stage-2 fortieth pilot dataset
+2. Stage-2 forty-first pilot dataset
    - Scope: continue modeling the next focused source-record batch as a Stage 2 preview dataset, or optionally model the legacy core seed entries as a cross-regional demonstration set if we want every existing source file to have a Stage 2 preview
 
 ## Resume Checklist

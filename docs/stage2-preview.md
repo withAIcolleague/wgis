@@ -1035,3 +1035,30 @@ The 2026-06-02 thirty-nine-dataset public browser pass checks `https://wgis.verc
 - The `칸타브리아 해안 구석기 동굴벽화권` context filter returns `알타미라 동굴`, `티토 부스티요 동굴`, `에카인 동굴`, and `엘 카스티요 동굴` with 4 markers and 4 labels and no stale French data.
 - On mobile, `시에가 베르데 암각화 지대` detail renders with source-confidence information and both detail actions.
 - Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-nine-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-thirty-nine-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.
+
+## Fortieth Pilot Dataset
+
+The African rock art and ritual landscapes pilot dataset adds 8 entries:
+
+- `타실리 나제르`
+- `타드라르트 아카쿠스`
+- `엔네디 고원`
+- `츠로딜로 언덕`
+- `트위펠폰테인 암각화`
+- `콘도아 암각화 지대`
+- `마토보 언덕`
+- `총고니 암각화 지대`
+
+## Forty-Dataset Public Usability Pass
+
+The 2026-06-02 forty-dataset public browser pass checks `https://wgis.vercel.app/stage2-preview.html` after adding the African rock art and ritual landscapes pilot dataset:
+
+- Dataset selector exposes 40 datasets.
+- All 40 indexed datasets render their expected entry, marker, and permanent-label counts across 331 Stage 2 preview entries.
+- The new African rock art dataset exposes 8 entries: `타실리 나제르`, `타드라르트 아카쿠스`, `엔네디 고원`, `츠로딜로 언덕`, `트위펠폰테인 암각화`, `콘도아 암각화 지대`, `마토보 언덕`, and `총고니 암각화 지대`.
+- Compact context filters stay limited to 4 visible context buttons plus an expansion control.
+- Searching `트위펠폰테인` in the African rock art dataset narrows the list and map to `트위펠폰테인 암각화` with 1 marker and 1 label.
+- Selecting `츠로딜로 언덕` opens the detail panel with source-confidence information and detail actions.
+- The `사하라 목축 전환 암각화 경관` context filter returns `타실리 나제르`, `타드라르트 아카쿠스`, and `엔네디 고원` with 3 markers and 3 labels and no stale southern African data.
+- On mobile, `총고니 암각화 지대` detail renders with source-confidence information and both detail actions.
+- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-forty-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-forty-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.

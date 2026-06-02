@@ -213,12 +213,17 @@ const datasets = [
     path: 'data/stage2/europe-paleolithic-cave-rock-art-preview.json',
     count: 8,
     firstEntryId: 'chauvet-pont-darc-cave'
+  },
+  {
+    path: 'data/stage2/african-rock-art-ritual-landscapes-preview.json',
+    count: 8,
+    firstEntryId: 'tassili-najjer'
   }
 ];
 
 const latestDataset = datasets[datasets.length - 1];
-const desktopShot = path.join(outputDir, 'wgis-stage2-thirty-nine-datasets-desktop.png');
-const mobileShot = path.join(outputDir, 'wgis-stage2-thirty-nine-datasets-mobile.png');
+const desktopShot = path.join(outputDir, 'wgis-stage2-forty-datasets-desktop.png');
+const mobileShot = path.join(outputDir, 'wgis-stage2-forty-datasets-mobile.png');
 
 function assertCheck(condition, message, details = undefined) {
   if (!condition) {
@@ -387,61 +392,60 @@ async function main() {
       assertCheck(state.contextFilterButtons <= 4 && state.contextFilterToggle, 'Initial context filters should start compact', state);
 
       dom = await dumpDom(buildUrl({ dataset: latestDataset.path }), userDataDir);
-      state = extractState('desktop-europe-paleolithic-default', dom);
+      state = extractState('desktop-african-rock-art-default', dom);
       states.push(state);
-      assertCheck(state.entryCards === latestDataset.count && state.entryIds.includes('chauvet-pont-darc-cave'), 'Latest dataset should render Chauvet and all entries', state);
+      assertCheck(state.entryCards === latestDataset.count && state.entryIds.includes('tassili-najjer'), 'Latest dataset should render Tassili nAjjer and all entries', state);
 
-      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, q: '알타미라' }), userDataDir);
-      state = extractState('desktop-europe-paleolithic-search-altamira', dom);
+      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, q: '트위펠폰테인' }), userDataDir);
+      state = extractState('desktop-african-rock-art-search-twyfelfontein', dom);
       states.push(state);
-      assertCheck(state.entryCountText === '1개' && state.entryIds.includes('altamira-cave'), 'Latest dataset search should find Altamira', state);
+      assertCheck(state.entryCountText === '1개' && state.entryIds.includes('twyfelfontein'), 'Latest dataset search should find Twyfelfontein', state);
 
-      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, entry: 'lascaux-cave' }), userDataDir);
-      state = extractState('desktop-europe-paleolithic-detail-lascaux', dom);
+      dom = await dumpDom(buildUrl({ dataset: latestDataset.path, entry: 'tsodilo-hills' }), userDataDir);
+      state = extractState('desktop-african-rock-art-detail-tsodilo', dom);
       states.push(state);
       assertCheck(
-        state.detailTitle === '라스코 동굴' && state.detailActions === 2 && state.hasSourceConfidence,
-        'Latest dataset detail should show Lascaux, source confidence, and detail actions',
+        state.detailTitle === '츠로딜로 언덕' && state.detailActions === 2 && state.hasSourceConfidence,
+        'Latest dataset detail should show Tsodilo, source confidence, and detail actions',
         state
       );
 
       dom = await dumpDom(buildUrl({
         dataset: latestDataset.path,
-        context: 'cantabrian-paleolithic-cave-art'
+        context: 'saharan-pastoral-rock-art-landscapes'
       }), userDataDir);
-      state = extractState('desktop-europe-paleolithic-cantabrian-context', dom);
+      state = extractState('desktop-african-rock-art-saharan-context', dom);
       states.push(state);
       assertCheck(
-        state.entryCountText === '4개' &&
-          state.entryIds.includes('altamira-cave') &&
-          state.entryIds.includes('tito-bustillo-cave') &&
-          state.entryIds.includes('ekain-cave') &&
-          state.entryIds.includes('el-castillo-cave') &&
-          !state.entryIds.includes('chauvet-pont-darc-cave'),
-        'Cantabrian context should return Altamira, Tito Bustillo, Ekain, and El Castillo without stale French data',
+        state.entryCountText === '3개' &&
+          state.entryIds.includes('tassili-najjer') &&
+          state.entryIds.includes('tadrart-acacus') &&
+          state.entryIds.includes('ennedi-massif') &&
+          !state.entryIds.includes('tsodilo-hills'),
+        'Saharan context should return Tassili, Tadrart Acacus, and Ennedi without stale southern African data',
         state
       );
 
       dom = await dumpDom(buildUrl({
         dataset: latestDataset.path,
-        entry: 'siega-verde-rock-art'
+        entry: 'chongoni-rock-art-area'
       }), userDataDir, { width: 390, height: 844 });
-      state = extractState('mobile-europe-paleolithic-detail-siega-verde', dom);
+      state = extractState('mobile-african-rock-art-detail-chongoni', dom);
       states.push(state);
       assertCheck(
-        state.ready && state.detailTitle === '시에가 베르데 암각화 지대' && state.detailActions === 2,
-        'Mobile-sized latest dataset render should keep the Siega Verde detail panel available',
+        state.ready && state.detailTitle === '총고니 암각화 지대' && state.detailActions === 2,
+        'Mobile-sized latest dataset render should keep the Chongoni detail panel available',
         state
       );
 
       await captureScreenshot(
-        buildUrl({ dataset: latestDataset.path, entry: 'lascaux-cave' }),
+        buildUrl({ dataset: latestDataset.path, entry: 'tsodilo-hills' }),
         userDataDir,
         desktopShot,
         { width: 1440, height: 920 }
       );
       await captureScreenshot(
-        buildUrl({ dataset: latestDataset.path, entry: 'siega-verde-rock-art' }),
+        buildUrl({ dataset: latestDataset.path, entry: 'chongoni-rock-art-area' }),
         userDataDir,
         mobileShot,
         { width: 390, height: 844 }

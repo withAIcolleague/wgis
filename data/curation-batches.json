@@ -1152,6 +1152,34 @@
         "French Ministry of Culture, Chauvet 2 Ardeche, Lascaux IV, Spanish Ministry of Culture Altamira Museum, Asturias archaeological sites, Basque Government, Ekainberri, Arte Rupestre Cantabrico, Cuevas de Cantabria, Coa Parque, Castile and Leon Tourism, and Spain.info references for site-level management and visitor context",
         "Representative coordinates selected for the visible cave, visitor/protection area, or central component within each wider Paleolithic cave-art or rock-art landscape"
       ]
+    },
+    {
+      "id": "africa-prehistory-rock-art-ritual-landscapes-v1",
+      "status": "completed",
+      "completedAt": "2026-06-02",
+      "continentId": "africa",
+      "countryIso2": "DZ-LY-TD-BW-NA-TZ-ZW-MW",
+      "countryKo": "알제리·리비아·차드·보츠와나·나미비아·탄자니아·짐바브웨·말라위",
+      "worldRegion": "아프리카 선사 암각화·의례 경관",
+      "focusKo": "사하라와 남부·동부·중앙 아프리카 암각화·의례 경관 핵심 지점",
+      "scopeKo": "타실리 나제르, 타드라르트 아카쿠스, 엔네디 고원, 츠로딜로, 트위펠폰테인, 콘도아, 마토보, 총고니를 통해 사하라 목축 전환, 수렵채집 의례, 사막·고원 암반 성소, 공동체 기억을 연결하는 핵심 지점",
+      "sourceFile": "data/records/africa/prehistory/african-rock-art-ritual-landscapes.json",
+      "appIndexFile": "data/entries.json",
+      "entryIds": [
+        "tassili-najjer",
+        "tadrart-acacus",
+        "ennedi-massif",
+        "tsodilo-hills",
+        "twyfelfontein",
+        "kondoa-rock-art-sites",
+        "matobo-hills",
+        "chongoni-rock-art-area"
+      ],
+      "sourceBasis": [
+        "UNESCO World Heritage pages for Tassili n'Ajjer, Rock-Art Sites of Tadrart Acacus, Ennedi Massif, Tsodilo, Twyfelfontein or /Ui-//aes, Kondoa Rock-Art Sites, Matobo Hills, and Chongoni Rock-Art Area",
+        "UNESCO document pages and Botswana Tourism reference for site-level management and visitor context",
+        "Representative coordinates selected for the protected core, visitor/protection area, or central component within each wider rock-art or sacred landscape"
+      ]
     }
   ]
 }

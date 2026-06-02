@@ -236,6 +236,12 @@
       "titleKo": "유럽 구석기 동굴벽화·암각화",
       "path": "data/stage2/europe-paleolithic-cave-rock-art-preview.json",
       "status": "preview-only"
+    },
+    {
+      "id": "stage2-african-rock-art-ritual-landscapes-preview",
+      "titleKo": "아프리카 암각화·의례 경관",
+      "path": "data/stage2/african-rock-art-ritual-landscapes-preview.json",
+      "status": "preview-only"
     }
   ]
 }

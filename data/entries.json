@@ -7280,5 +7280,181 @@
       { "title": "Castile and Leon Tourism: Siega Verde", "url": "https://www.turismocastillayleon.com/en/heritage-culture/siega-verde" },
       { "title": "Spain.info: Siega Verde Archaeological Site", "url": "https://www.spain.info/en/places-of-interest/siega-verde-rock-art/" }
     ]
+  },
+  {
+    "id": "tassili-najjer",
+    "title": "타실리 나제르",
+    "type": "site",
+    "historicalName": "타실리 나제르 암각화·동굴벽화 경관",
+    "modernName": "타실리 나제르 국립공원",
+    "modernAdmin": "알제리 일리지주 타실리 나제르 국립공원",
+    "country": "알제리",
+    "worldRegion": "사하라 중부 암각화 경관",
+    "period": "사하라 선사·목축 전환기",
+    "yearLabel": "기원전 10000년경 이후 사하라 암각화·동굴벽화 경관",
+    "coordinates": { "lat": 25.5000, "lng": 8.0000 },
+    "aliases": ["Tassili n'Ajjer", "Tassili N'Ajjer", "Tassili rock art", "Algerian Sahara rock art", "Saharan pastoral rock art"],
+    "summary": "타실리 나제르는 사하라가 더 습했던 시기의 동물상, 수렵, 목축, 의례 이미지를 사암 고원과 암반 은신처에 남긴 대규모 암각화·동굴벽화 경관이다. WGIS에서는 사하라 환경 변화와 목축 전환, 기억의 장소가 하나의 지형권 안에서 연결되는 대표 지점으로 둔다.",
+    "confidence": "medium",
+    "sourceNote": "광대한 국립공원과 고원 경관을 대표하는 중심부 좌표를 사용했다.",
+    "curationBatch": "africa-prehistory-rock-art-ritual-landscapes-v1",
+    "sources": [
+      { "title": "UNESCO: Tassili n'Ajjer", "url": "https://whc.unesco.org/en/list/179/" },
+      { "title": "UNESCO World Heritage Centre: Tassili n'Ajjer documents", "url": "https://whc.unesco.org/en/list/179/documents/" }
+    ]
+  },
+  {
+    "id": "tadrart-acacus",
+    "title": "타드라르트 아카쿠스",
+    "type": "site",
+    "historicalName": "타드라르트 아카쿠스 암각화 경관",
+    "modernName": "타드라르트 아카쿠스",
+    "modernAdmin": "리비아 가트 인근 타드라르트 아카쿠스 산지",
+    "country": "리비아",
+    "worldRegion": "사하라 중부 암각화 경관",
+    "period": "사하라 선사·목축 전환기",
+    "yearLabel": "기원전 12000년경 이후 사하라 암각화·동굴벽화 경관",
+    "coordinates": { "lat": 24.8333, "lng": 10.3333 },
+    "aliases": ["Tadrart Acacus", "Rock-Art Sites of Tadrart Acacus", "Acacus Mountains", "Libyan Sahara rock art", "Fezzan rock art"],
+    "summary": "타드라르트 아카쿠스는 리비아 남서부 사막 산지에 남은 암각화와 동굴벽화로, 사하라의 환경 변동, 동물상, 수렵과 목축 장면을 장기적으로 보여준다. WGIS에서는 타실리 나제르와 함께 중부 사하라 암각화권의 기후 기억과 이동 경관을 비교하는 축으로 배치한다.",
+    "confidence": "medium",
+    "sourceNote": "넓은 산지와 여러 암각화 지점을 대표하는 아카쿠스 중심권 좌표를 사용했다.",
+    "curationBatch": "africa-prehistory-rock-art-ritual-landscapes-v1",
+    "sources": [
+      { "title": "UNESCO: Rock-Art Sites of Tadrart Acacus", "url": "https://whc.unesco.org/en/list/287/" },
+      { "title": "UNESCO World Heritage Centre: Tadrart Acacus documents", "url": "https://whc.unesco.org/en/list/287/documents/" }
+    ]
+  },
+  {
+    "id": "ennedi-massif",
+    "title": "엔네디 고원",
+    "type": "site",
+    "historicalName": "엔네디 고원 암각화 경관",
+    "modernName": "엔네디 고원: 자연 및 문화 경관",
+    "modernAdmin": "차드 엔네디오에스트·엔네디에스트주 엔네디 고원",
+    "country": "차드",
+    "worldRegion": "사하라 사암 고원 암각화 경관",
+    "period": "사하라 선사 암각화 전통",
+    "yearLabel": "선사 암각화와 사하라 사암 협곡 경관",
+    "coordinates": { "lat": 17.0417, "lng": 21.8628 },
+    "aliases": ["Ennedi Massif", "Ennedi Plateau", "Ennedi Massif Natural and Cultural Landscape", "Chad rock art", "Saharan sandstone rock art"],
+    "summary": "엔네디 고원은 사암 협곡, 아치, 물웅덩이와 함께 암각화가 분포하는 차드 북동부의 자연·문화 경관이다. WGIS에서는 사하라 암각화가 건조 지형, 물길, 이동로와 결합해 장기 기억의 지형을 만드는 방식을 보여주는 지점으로 다룬다.",
+    "confidence": "medium",
+    "sourceNote": "광대한 자연·문화 경관 안의 대표 중심 좌표를 사용했다.",
+    "curationBatch": "africa-prehistory-rock-art-ritual-landscapes-v1",
+    "sources": [
+      { "title": "UNESCO: Ennedi Massif: Natural and Cultural Landscape", "url": "https://whc.unesco.org/en/list/1475/" },
+      { "title": "UNESCO World Heritage Centre: Ennedi Massif documents", "url": "https://whc.unesco.org/en/list/1475/documents/" }
+    ]
+  },
+  {
+    "id": "tsodilo-hills",
+    "title": "츠로딜로 언덕",
+    "type": "site",
+    "historicalName": "츠로딜로 암각화 성지",
+    "modernName": "츠로딜로 언덕",
+    "modernAdmin": "보츠와나 북서구 칼라하리 변연 츠로딜로",
+    "country": "보츠와나",
+    "worldRegion": "남부 아프리카 수렵채집 암각화 경관",
+    "period": "산족 수렵채집 암각화 전통",
+    "yearLabel": "수천 년에 걸친 산족 암각화와 성지 경관",
+    "coordinates": { "lat": -18.7500, "lng": 21.7333 },
+    "aliases": ["Tsodilo", "Tsodilo Hills", "Louvre of the Desert", "San rock art", "Botswana rock art"],
+    "summary": "츠로딜로 언덕은 칼라하리 변연의 암반 언덕군에 수천 점의 암각화와 성지 기억이 겹친 남부 아프리카의 핵심 지점이다. WGIS에서는 산족 수렵채집 이미지, 의례적 산지, 공동체 기억이 한 경관 안에서 지속되는 사례로 배치한다.",
+    "confidence": "high",
+    "sourceNote": "세계유산 설명과 보호구역 중심 좌표를 기준으로 했다.",
+    "curationBatch": "africa-prehistory-rock-art-ritual-landscapes-v1",
+    "sources": [
+      { "title": "UNESCO: Tsodilo", "url": "https://whc.unesco.org/en/list/1021/" },
+      { "title": "Botswana Tourism: Tsodilo Hills", "url": "https://www.botswanatourism.co.bw/explore/tsodilo-hills" }
+    ]
+  },
+  {
+    "id": "twyfelfontein",
+    "title": "트위펠폰테인 암각화",
+    "type": "site",
+    "historicalName": "트위펠폰테인 / 우이-아이즈 암각화",
+    "modernName": "트위펠폰테인 또는 /Ui-//aes",
+    "modernAdmin": "나미비아 쿠네네주 다마라랜드 트위펠폰테인",
+    "country": "나미비아",
+    "worldRegion": "남부 아프리카 사막 암각화 경관",
+    "period": "수렵채집 암각화·사막 의례 전통",
+    "yearLabel": "기원전 4000년경 이후 사막 암각화와 의례 지형",
+    "coordinates": { "lat": -20.5958, "lng": 14.3728 },
+    "aliases": ["Twyfelfontein", "/Ui-//aes", "Twyfelfontein rock engravings", "Damara rock art", "Namibia rock art"],
+    "summary": "트위펠폰테인은 나미비아 다마라랜드의 사암 표면에 동물상, 발자국, 기호가 새겨진 대규모 암각화 유적이다. WGIS에서는 수렵채집 의례, 물과 사막 이동, 암반 표면의 이미지가 결합된 남부 아프리카 사막 암각화의 대표 사례로 둔다.",
+    "confidence": "high",
+    "sourceNote": "보호구역과 방문 중심 지점의 좌표를 사용했다.",
+    "curationBatch": "africa-prehistory-rock-art-ritual-landscapes-v1",
+    "sources": [
+      { "title": "UNESCO: Twyfelfontein or /Ui-//aes", "url": "https://whc.unesco.org/en/list/1255/" },
+      { "title": "UNESCO World Heritage Centre: Twyfelfontein documents", "url": "https://whc.unesco.org/en/list/1255/documents/" }
+    ]
+  },
+  {
+    "id": "kondoa-rock-art-sites",
+    "title": "콘도아 암각화 지대",
+    "type": "site",
+    "historicalName": "콘도아 이랑기 암각화 지대",
+    "modernName": "콘도아 암각화 지대",
+    "modernAdmin": "탄자니아 도도마주 콘도아 지구",
+    "country": "탄자니아",
+    "worldRegion": "동아프리카 고원 암각화 경관",
+    "period": "수렵채집·목축 암각화 전통",
+    "yearLabel": "수렵채집·목축 전통이 겹친 동아프리카 암각화 지대",
+    "coordinates": { "lat": -4.7333, "lng": 35.8333 },
+    "aliases": ["Kondoa Rock-Art Sites", "Kondoa Irangi", "Kolo rock paintings", "Tanzania rock art", "East African rock art"],
+    "summary": "콘도아 암각화 지대는 탄자니아 중앙 고원의 바위 은신처에 수렵채집과 목축, 의례 이미지가 겹쳐 남은 동아프리카 암각화 경관이다. WGIS에서는 서로 다른 생계 전통과 공동체 의례가 같은 암반 공간에 누적되는 방식을 보여주는 지점으로 둔다.",
+    "confidence": "medium",
+    "sourceNote": "여러 암반 은신처가 흩어진 유산이므로 콘도아 암각화 지대의 대표 좌표를 사용했다.",
+    "curationBatch": "africa-prehistory-rock-art-ritual-landscapes-v1",
+    "sources": [
+      { "title": "UNESCO: Kondoa Rock-Art Sites", "url": "https://whc.unesco.org/en/list/1183/" },
+      { "title": "UNESCO World Heritage Centre: Kondoa documents", "url": "https://whc.unesco.org/en/list/1183/documents/" }
+    ]
+  },
+  {
+    "id": "matobo-hills",
+    "title": "마토보 언덕",
+    "type": "site",
+    "historicalName": "마토보 암각화·성지 경관",
+    "modernName": "마토보 언덕",
+    "modernAdmin": "짐바브웨 마타벨렐랜드사우스주 마토보 국립공원",
+    "country": "짐바브웨",
+    "worldRegion": "남부 아프리카 화강암 언덕 암각화 경관",
+    "period": "산족 수렵채집 암각화와 후대 성지 전통",
+    "yearLabel": "수천 년간 이어진 산족 암각화와 화강암 언덕 성지",
+    "coordinates": { "lat": -20.5000, "lng": 28.5000 },
+    "aliases": ["Matobo Hills", "Matopos", "Matobo rock art", "Zimbabwe rock art", "San rock paintings"],
+    "summary": "마토보 언덕은 화강암 돔과 바위 은신처, 암각화, 후대의 성지 전통이 결합된 짐바브웨 남서부의 문화 경관이다. WGIS에서는 수렵채집 이미지와 신성한 산지, 정치·공동체 기억이 장기간 같은 지형에 축적되는 사례로 연결한다.",
+    "confidence": "medium",
+    "sourceNote": "넓은 문화 경관과 국립공원을 대표하는 중심권 좌표를 사용했다.",
+    "curationBatch": "africa-prehistory-rock-art-ritual-landscapes-v1",
+    "sources": [
+      { "title": "UNESCO: Matobo Hills", "url": "https://whc.unesco.org/en/list/306/" },
+      { "title": "UNESCO World Heritage Centre: Matobo Hills documents", "url": "https://whc.unesco.org/en/list/306/documents/" }
+    ]
+  },
+  {
+    "id": "chongoni-rock-art-area",
+    "title": "총고니 암각화 지대",
+    "type": "site",
+    "historicalName": "총고니 암각화 지대",
+    "modernName": "총고니 암각화 지대",
+    "modernAdmin": "말라위 중부주 데자 지구 총고니 산지",
+    "country": "말라위",
+    "worldRegion": "중앙 아프리카 고원 암각화 경관",
+    "period": "석기시대·철기시대 암각화와 체와 의례 전통",
+    "yearLabel": "석기시대·철기시대 암각화와 체와 의례 경관",
+    "coordinates": { "lat": -14.2930, "lng": 34.2790 },
+    "aliases": ["Chongoni Rock-Art Area", "Chongoni", "Chewa rock art", "Malawi rock art", "Central African rock art"],
+    "summary": "총고니 암각화 지대는 말라위 중부 고원에 석기시대 수렵채집 그림과 철기시대 농경·체와 의례 전통의 그림이 함께 남은 암각화 경관이다. WGIS에서는 장기 선사 이미지와 살아 있는 의례 기억이 같은 산지와 은신처에서 이어지는 사례로 둔다.",
+    "confidence": "medium",
+    "sourceNote": "총고니 산지 안의 여러 암각화 지점을 대표하는 좌표를 사용했다.",
+    "curationBatch": "africa-prehistory-rock-art-ritual-landscapes-v1",
+    "sources": [
+      { "title": "UNESCO: Chongoni Rock-Art Area", "url": "https://whc.unesco.org/en/list/476/" },
+      { "title": "UNESCO World Heritage Centre: Chongoni documents", "url": "https://whc.unesco.org/en/list/476/documents/" }
+    ]
   }
 ]
