@@ -3,101 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WGIS - World Geometry Information System</title>
+  <title>WGIS - 2단계 맥락 지도</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="stage2-preview.css" />
 </head>
 <body>
-  <div class="app-shell">
-    <aside class="search-panel">
-      <button id="mobileSheetToggle" class="mobile-sheet-handle" type="button" aria-expanded="false" aria-controls="resultsList">
-        <span class="sheet-grip" aria-hidden="true"></span>
-        <span class="sheet-label">검색 및 결과</span>
-      </button>
-
-      <header class="app-header">
-        <div class="eyebrow">WGIS</div>
-        <h1>World Geometry Information System</h1>
-        <p>과거 지명, 사건, 유물과 유적을 검색하면 현재의 지역명과 위치를 확인합니다.</p>
-        <a class="stage2-preview-entry" href="stage2-preview.html">2단계 미리보기</a>
+  <div class="preview-shell">
+    <aside class="preview-sidebar">
+      <header class="preview-header">
+        <a class="back-link" href="stage1.html">1단계 기본 지도로 이동</a>
+        <div class="eyebrow">WGIS Main</div>
+        <h1>2단계 맥락 지도</h1>
+        <p>역사 맥락, 사용자용 필터, 출처 신뢰도를 함께 보며 세계사 지점을 다각도로 비교합니다.</p>
       </header>
 
-      <section class="search-section" aria-label="검색">
-        <div class="search-box">
-          <input id="searchInput" type="search" placeholder="예: 서라벌, 장안, 콘스탄티노폴리스, 임진왜란" autocomplete="off" />
-          <button id="searchButton" type="button">검색</button>
-          <button id="clearSearchBtn" type="button" title="검색어 지우기">×</button>
+      <section class="compare-panel" aria-label="1단계와 2단계 비교">
+        <div>
+          <strong>1단계</strong>
+          <span>기본 지도와 단순 검색 보조 화면</span>
         </div>
-        <div class="filter-toolbar">
-          <button id="filterPanelBtn" class="filter-panel-btn" type="button" aria-expanded="false" aria-controls="filterPanel">
-            필터
-          </button>
-          <span id="activeFilterSummary" class="active-filter-summary">전체 · 전 세계</span>
-        </div>
-
-        <div id="filterPanel" class="filter-panel" hidden>
-          <div class="filter-panel-header">
-            <strong>검색 필터</strong>
-            <button id="filterPanelCloseBtn" class="filter-panel-close" type="button" aria-label="필터 닫기">×</button>
-          </div>
-          <div class="filter-panel-group">
-            <span class="filter-panel-label">유형</span>
-            <div class="filter-row" id="typeFilters"></div>
-          </div>
-          <div class="filter-panel-group">
-            <span class="filter-panel-label">권역</span>
-            <div class="filter-row compact" id="regionFilters"></div>
-          </div>
+        <div>
+          <strong>2단계</strong>
+          <span>메인 화면: 맥락, 필터, 출처 신뢰도 중심</span>
         </div>
       </section>
 
-      <section class="summary-strip" aria-label="검색 요약">
-        <div>
-          <span class="metric" id="resultCount">0</span>
-          <span class="metric-label">검색 결과</span>
-        </div>
-        <div>
-          <span class="metric" id="visibleCountries">0</span>
-          <span class="metric-label">현재 국가</span>
-        </div>
-      </section>
-
-      <section class="mobile-detail-section" id="mobileDetail" aria-live="polite" hidden></section>
-
-      <section class="pagination-bar" aria-label="목록 페이지">
-        <label class="page-size-control" for="pageSizeSelect">
-          목록
-          <select id="pageSizeSelect">
-            <option value="10">10개</option>
-            <option value="20">20개</option>
-            <option value="30">30개</option>
-            <option value="50">50개</option>
-          </select>
+      <section class="control-panel" aria-label="2단계 미리보기 검색과 필터">
+        <label class="search-label" for="datasetSelect">
+          <span>데이터셋</span>
+          <select id="datasetSelect"></select>
         </label>
-        <span class="page-status" id="pageStatus">0 / 0</span>
-        <div class="page-actions">
-          <button id="prevPageBtn" type="button" aria-label="이전 페이지">‹</button>
-          <button id="nextPageBtn" type="button" aria-label="다음 페이지">›</button>
+        <label class="search-label" for="stage2Search">
+          <span>검색</span>
+          <input id="stage2Search" type="search" placeholder="예: 루시, 바스티유, 직립보행, 공화국" autocomplete="off" />
+        </label>
+        <div class="filter-block">
+          <span class="filter-label">역사 맥락</span>
+          <div id="contextFilters" class="chip-row"></div>
         </div>
       </section>
 
-      <section class="results-section" aria-label="검색 결과">
-        <div id="resultsList" class="results-list"></div>
+      <section class="entry-panel" aria-label="항목 목록">
+        <div class="entry-panel-header">
+          <strong>샘플 항목</strong>
+          <span id="entryCount">0개</span>
+        </div>
+        <div id="entryList" class="entry-list"></div>
       </section>
     </aside>
 
-    <main class="map-panel">
-      <div id="map"></div>
-      <section class="detail-drawer" id="detailDrawer" aria-live="polite">
-        <div class="empty-detail">
-          <span class="empty-title">검색하거나 결과를 선택하세요</span>
-          <span class="empty-copy">현재 지명, 좌표, 과거 명칭과 맥락이 여기에 표시됩니다.</span>
-        </div>
-      </section>
+    <main class="preview-main">
+      <div id="stage2Map" class="stage2-map" aria-label="2단계 미리보기 지도"></div>
+      <section id="detailPanel" class="detail-panel" aria-live="polite"></section>
     </main>
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js"></script>
+  <script src="stage2-preview.js"></script>
 </body>
 </html>

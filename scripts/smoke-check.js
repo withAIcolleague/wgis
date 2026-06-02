@@ -28,6 +28,7 @@ function countOccurrences(text, pattern) {
 
 function main() {
   const html = readText('index.html');
+  const stage1Html = readText('stage1.html');
   const stage2Html = readText('stage2-preview.html');
   const stage2App = readText('stage2-preview.js');
   const stage2Css = readText('stage2-preview.css');
@@ -77,17 +78,27 @@ function main() {
     'mobileSheetToggle',
     'mobileDetail'
   ].forEach(id => {
-    check(`required DOM id exists (${id})`, html.includes(`id="${id}"`));
+    check(`required stage 1 DOM id exists (${id})`, stage1Html.includes(`id="${id}"`));
   });
 
   ['10', '20', '30', '50'].forEach(size => {
-    check(`page size option exists (${size})`, html.includes(`value="${size}"`));
+    check(`stage 1 page size option exists (${size})`, stage1Html.includes(`value="${size}"`));
   });
 
-  check('Leaflet assets referenced', includesAll(html, ['leaflet.css', 'leaflet.js']));
-  check('local assets referenced', includesAll(html, ['styles.css', 'app.js']));
-  check('filter panel starts hidden', html.includes('id="filterPanel"') && html.includes('hidden'));
-  check('stage 2 preview is linked from main app', html.includes('stage2-preview.html'));
+  check('stage 1 Leaflet assets referenced', includesAll(stage1Html, ['leaflet.css', 'leaflet.js']));
+  check('stage 1 local assets referenced', includesAll(stage1Html, ['styles.css', 'app.js']));
+  check('stage 1 filter panel starts hidden', stage1Html.includes('id="filterPanel"') && stage1Html.includes('hidden'));
+  check('stage 1 links back to stage 2 main', stage1Html.includes('href="/"'));
+  check('stage 2 main links to stage 1', html.includes('href="stage1.html"'));
+  check('stage 2 main references assets', includesAll(html, [
+    'stage2-preview.css',
+    'stage2-preview.js',
+    'stage2Map',
+    'datasetSelect',
+    'contextFilters',
+    'entryList',
+    'detailPanel'
+  ]));
 
   check('entries are fetched from app data', app.includes("fetch('data/entries.json')"));
   check('search button executes map search', app.includes("searchButton.addEventListener('click', executeSearch)"));

@@ -14,7 +14,10 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Current entry count: 355
 - Completed curation batches: 44
 - Latest completed batch: `americas-south-america-rock-art-geoglyph-deep-time-landscapes-v1`
-- Latest completed infrastructure milestone: stage-2 forty-three-dataset public usability pass
+- Latest completed infrastructure milestone: stage-2 main layout promotion
+- Primary app route: `/` uses the Stage 2 context map
+- First-stage support route: `/stage1.html`
+- Stage-2 QA compatibility route: `/stage2-preview.html`
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
@@ -805,6 +808,12 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - Scope: keep the Stage 2 preview endpoint and browser-state check repeatable after adding the forty-third dataset
   - Checked: 43 indexed dataset endpoints and expected entry counts across 355 Stage 2 preview entries, compact context filters, South American rock art search/detail/context behavior, stale-data cleanup, and mobile-sized rendering
   - Result: public endpoint and headless browser verification completed for 43 datasets and 355 Stage 2 preview entries; screenshots saved under `C:\Users\Public\Documents\ESTsoft\CreatorTemp\`
+
+- Stage-2 main layout promotion
+  - Files: `index.html`, `stage1.html`, `stage2-preview.html`, `scripts/smoke-check.js`, `docs/stage2-preview.md`, `data/PROJECT_STATE.md`
+  - URL paths: `/`, `/stage1.html`, `/stage2-preview.html`
+  - Scope: promote the Stage 2 context-map layout to the default WGIS route while keeping the previous first-stage basic map as a supporting page
+  - Result: `/` is now the Stage 2 main experience, `/stage1.html` preserves the first-stage search/map workflow, and `/stage2-preview.html` remains available for QA and compatibility checks
 
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`

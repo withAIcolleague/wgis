@@ -1,16 +1,28 @@
 # WGIS Stage 2 Preview
 
-Last updated: 2026-05-22
+Last updated: 2026-06-02
 
 ## What This Adds
 
-The Stage 2 preview is a visible prototype at:
+The Stage 2 context map is now the primary WGIS route:
+
+```text
+/
+```
+
+The first-stage basic map remains available as a supporting view:
+
+```text
+/stage1.html
+```
+
+The Stage 2 QA and compatibility route remains available at:
 
 ```text
 /stage2-preview.html
 ```
 
-It does not replace the main `data/entries.json` app index. It shows how a future Stage 2 data model can sit beside the current map data.
+Stage 2 does not remove the main `data/entries.json` app index. The Stage 2 datasets sit beside the current map data and link preview entries back to the first-stage entry IDs.
 
 ## Preview Data
 
