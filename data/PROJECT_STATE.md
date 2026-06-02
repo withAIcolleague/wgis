@@ -14,7 +14,7 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Current entry count: 347
 - Completed curation batches: 43
 - Latest completed batch: `americas-north-america-indigenous-rock-art-sacred-landscapes-v1`
-- Latest completed infrastructure milestone: stage-2 forty-two-dataset public usability pass
+- Latest completed infrastructure milestone: stage-2 forty-two-dataset local readiness pass
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
@@ -772,12 +772,12 @@ The long-term target is 3,000+ entries, but the project should progress one focu
   - Scope: add a forty-second Stage 2 preview dataset using the new North American Indigenous rock art and sacred landscapes source batch
   - Model stress test: Rio Grande volcanic escarpment petroglyphs, Canyon de Chelly lived canyon landscape, Horseshoe Canyon Barrier Canyon Style gallery, Writing-on-Stone / Aisinai'pi Blackfoot sacred cliffs, Ontario Petroglyphs Teaching Rocks, Head-Smashed-In Buffalo Jump, Pipestone sacred quarry, and Effigy Mounds Upper Mississippi ceremonial landscape
 
-- Stage-2 forty-two-dataset public usability pass
+- Stage-2 forty-two-dataset local readiness pass
   - Files: `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`
   - URL path: `https://wgis.vercel.app/stage2-preview.html`
-  - Scope: keep the Stage 2 preview endpoint and browser-state check repeatable after adding the forty-second dataset
-  - Checked: 42 indexed dataset endpoints and expected entry counts across 347 Stage 2 preview entries, compact context filters, North American Indigenous rock art search/detail/context behavior, stale-data cleanup, and mobile-sized rendering
-  - Result: public endpoint and headless browser verification completed for 42 datasets and 347 Stage 2 preview entries; screenshots saved under `C:\Users\Public\Documents\ESTsoft\CreatorTemp\` when the local headless browser runtime is available
+  - Scope: keep the Stage 2 preview endpoint and browser-state check ready after adding the forty-second dataset
+  - Checked: local data validation, Stage 2 schema validation, smoke checks, 42 indexed dataset expectations across 347 Stage 2 preview entries, compact context filters, North American Indigenous rock art search/detail/context behavior, stale-data cleanup, and mobile-sized rendering probes in the public-check script
+  - Result: local validation and push completed; public endpoint verification was attempted once after push and dropped per the three-call cap because the deployed Stage 2 index still exposed 41 datasets during that attempt
 
 - Legacy core seed normalization batch
   - Batch ID: `legacy-core-seed-v1`

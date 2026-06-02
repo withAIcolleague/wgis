@@ -1103,9 +1103,9 @@ The North American Indigenous rock art and sacred landscapes pilot dataset adds 
 - `파이프스톤 국립기념물`
 - `에피지 마운즈 국립기념물`
 
-## Forty-Two-Dataset Public Usability Pass
+## Forty-Two-Dataset Local Readiness Pass
 
-The 2026-06-02 forty-two-dataset public browser pass checks `https://wgis.vercel.app/stage2-preview.html` after adding the North American Indigenous rock art and sacred landscapes pilot dataset:
+The 2026-06-02 forty-two-dataset local readiness pass prepares `https://wgis.vercel.app/stage2-preview.html` verification after adding the North American Indigenous rock art and sacred landscapes pilot dataset:
 
 - Dataset selector exposes 42 datasets.
 - All 42 indexed datasets render their expected entry, marker, and permanent-label counts across 347 Stage 2 preview entries.
@@ -1115,4 +1115,5 @@ The 2026-06-02 forty-two-dataset public browser pass checks `https://wgis.vercel
 - Selecting `호스슈 캐니언 그레이트 갤러리` opens the detail panel with source-confidence information and detail actions.
 - The `미국 남서부 암각화·협곡 경관` context filter returns `페트로글리프 국립기념물`, `캐니언 드 셰이 국립기념물`, and `호스슈 캐니언 그레이트 갤러리` with 3 markers and 3 labels and no stale Canadian data.
 - On mobile, `파이프스톤 국립기념물` detail renders with source-confidence information and both detail actions.
-- Browser screenshots are saved to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-forty-two-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-forty-two-datasets-mobile.png` when the local headless browser runtime is available; otherwise the script reports the skipped browser probe reason after completing dataset endpoint checks.
+- Browser screenshots are configured to save to `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-forty-two-datasets-desktop.png` and `C:\Users\Public\Documents\ESTsoft\CreatorTemp\wgis-stage2-forty-two-datasets-mobile.png` when the deployed endpoint exposes the forty-second dataset.
+- Public endpoint verification was attempted once after push and dropped per the three-call cap because the deployed Stage 2 index still exposed 41 datasets during that attempt.
