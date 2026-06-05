@@ -256,6 +256,12 @@
       "status": "active"
     },
     {
+      "id": "stage2-legacy-core-seed-cross-regional",
+      "titleKo": "초기 핵심 seed 교차권역 세트",
+      "path": "data/stage2/legacy-core-seed-cross-regional.json",
+      "status": "active"
+    },
+    {
       "id": "stage2-south-america-rock-art-geoglyph-deep-time-landscapes-preview",
       "titleKo": "남아메리카 암각화·지상그림 경관",
       "path": "data/stage2/south-america-rock-art-geoglyph-deep-time-landscapes-preview.json",

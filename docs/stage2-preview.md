@@ -41,7 +41,7 @@ Active Stage 2 datasets are listed in:
 data/stage2/index.json
 ```
 
-As of 2026-06-02, all 43 indexed Stage 2 datasets use `status: "active"`. Some dataset filenames retain the historical `-preview` suffix, but their route status is active. The first active dataset lives at:
+As of 2026-06-06, all 44 indexed Stage 2 datasets use `status: "active"`. Some dataset filenames retain the historical `-preview` suffix, but their route status is active. New Stage 2 data files should avoid the historical `-preview` suffix. The first active dataset lives at:
 
 ```text
 data/stage2/atlantic-revolutions-preview.json
@@ -68,6 +68,17 @@ The Stage 2 set also includes an Ethiopia human-origins pilot dataset:
 - `ledi-geraru-ld-350-1`
 - `herto-homo-sapiens-idaltu`
 - `omo-kibish-omo-i`
+
+The active set also includes the cross-regional legacy core seed dataset:
+
+- `baekje-hanseong`
+- `joseon-hanyang`
+- `imjin-war-busan`
+- `edo-tokyo`
+- `constantinople`
+- `waterloo`
+- `gettysburg`
+- `boston-tea-party`
 
 The third pilot dataset tests ancient city/site-heavy data through early Mesopotamian cities:
 

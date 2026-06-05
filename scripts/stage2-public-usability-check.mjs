@@ -230,6 +230,11 @@ const datasets = [
     firstEntryId: 'petroglyph-national-monument'
   },
   {
+    path: 'data/stage2/legacy-core-seed-cross-regional.json',
+    count: 8,
+    firstEntryId: 'baekje-hanseong'
+  },
+  {
     path: 'data/stage2/south-america-rock-art-geoglyph-deep-time-landscapes-preview.json',
     count: 8,
     firstEntryId: 'cueva-de-las-manos'
@@ -237,8 +242,8 @@ const datasets = [
 ];
 
 const latestDataset = datasets[datasets.length - 1];
-const desktopShot = path.join(outputDir, 'wgis-stage2-forty-three-datasets-desktop.png');
-const mobileShot = path.join(outputDir, 'wgis-stage2-forty-three-datasets-mobile.png');
+const desktopShot = path.join(outputDir, 'wgis-stage2-forty-four-datasets-desktop.png');
+const mobileShot = path.join(outputDir, 'wgis-stage2-forty-four-datasets-mobile.png');
 const appRootUrl = new URL('/', targetUrl).href;
 const stage1Url = new URL('/stage1.html', targetUrl).href;
 const stage2PreviewUrl = new URL('/stage2-preview.html', targetUrl).href;

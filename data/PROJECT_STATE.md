@@ -1,6 +1,6 @@
 # WGIS Data Project State
 
-Last updated: 2026-06-02
+Last updated: 2026-06-06
 
 ## Current Goal
 
@@ -14,13 +14,14 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Current entry count: 355
 - Completed curation batches: 44
 - Latest completed batch: `americas-south-america-rock-art-geoglyph-deep-time-landscapes-v1`
-- Latest completed infrastructure milestone: stage-2 canonical asset naming
+- Latest completed infrastructure milestone: stage-2 production checklist and legacy core seed active dataset
 - Primary app route: `/` uses the Stage 2 context map
 - First-stage support route: `/stage1.html`
 - Stage-2 QA compatibility route: `/stage2-preview.html`
 - Stage-2 canonical app assets: `stage2.css`, `stage2.js`
 - Stage-2 legacy asset aliases: `stage2-preview.css`, `stage2-preview.js`
-- Stage-2 active datasets: 43
+- Stage-2 active datasets: 44
+- Stage-2 production checklist: `docs/stage2-production-checklist.md`
 - Data authoring guide: `data/DATA_AUTHORING_GUIDE.md`
 - Agent instruction entrypoints: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules/wgis-data-authoring.mdc`, `.windsurf/rules/wgis-data-authoring.md`
 - Data validation script: `scripts/validate-data.js`
@@ -29,6 +30,13 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 - Data quality floor: every app entry must have `curationBatch` and at least one valid `sources` URL
 
 ## Completed
+
+- Stage-2 production checklist and legacy core seed active dataset
+  - Files: `docs/stage2-production-checklist.md`, `data/stage2/legacy-core-seed-cross-regional.json`, `data/stage2/index.json`, `scripts/smoke-check.js`, `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`, `data/PROJECT_STATE.md`
+  - URL paths: `/`, `/stage2-preview.html`
+  - Scope: document the production handoff checklist and add the remaining legacy core seed source record as a 44th active Stage 2 dataset without using a new `-preview` filename
+  - Checked: `npm.cmd run check`, `node --check scripts\stage2-public-usability-check.mjs`, `git diff --check`
+  - Result: local data validation, Stage 2 validation, smoke checks, public-script syntax check, and patch whitespace checks pass for 44 Stage 2 files and 363 Stage 2 entries
 
 - Stage-2 canonical asset naming
   - Files: `index.html`, `stage2-preview.html`, `stage2.css`, `stage2.js`, `stage2-preview.css`, `stage2-preview.js`, `scripts/smoke-check.js`, `scripts/stage2-public-usability-check.mjs`, `docs/stage2-preview.md`, `docs/first-stage-functional-review.md`, `data/PROJECT_STATE.md`
@@ -1307,8 +1315,8 @@ The long-term target is 3,000+ entries, but the project should progress one focu
 1. First-stage DB next expansion batch
    - Scope: continue focused source-record growth with another bounded culture/region/time slice and keep the batch small enough to verify end to end
 
-2. Stage-2 forty-fourth pilot dataset
-   - Scope: continue modeling the next focused source-record batch as a Stage 2 preview dataset, or optionally model the legacy core seed entries as a cross-regional demonstration set if we want every existing source file to have a Stage 2 preview
+2. Stage-2 next source-record mirror dataset
+   - Scope: after the next source-record batch is added, model the same focused batch as one active Stage 2 dataset using production naming without a `-preview` suffix
 
 ## Resume Checklist
 
@@ -1316,20 +1324,22 @@ At the start of a new session:
 
 1. Read `data/PROJECT_STATE.md`.
 2. Read `data/DATA_AUTHORING_GUIDE.md`.
-3. Check `git status -sb`.
-4. Parse and inspect:
+3. Read `docs/stage2-production-checklist.md`.
+4. Check `git status -sb`.
+5. Parse and inspect:
    - `data/entries.json`
    - `data/curation-batches.json`
    - `data/taxonomy.json`
-5. Pick exactly one next batch with the user or from `Next Batch Candidates`.
-6. Research candidates and sources for that batch.
-7. Create or update the source record file under `data/records/`.
-8. Add app-compatible entries to `data/entries.json`.
-9. Add or update the batch in `data/curation-batches.json`.
-10. Update this file.
-11. Run `node scripts/validate-data.js`.
-12. Run `npm run check`.
-13. Commit and push to `origin/main`.
+6. Pick exactly one next batch with the user or from `Next Batch Candidates`.
+7. Research candidates and sources for that batch.
+8. Create or update the source record file under `data/records/`.
+9. Add app-compatible entries to `data/entries.json`.
+10. Add or update the batch in `data/curation-batches.json`.
+11. Add or update one active Stage 2 dataset for the same batch.
+12. Update this file.
+13. Run `node scripts/validate-data.js`.
+14. Run `npm run check`.
+15. Commit and push to `origin/main`.
 
 ## Validation Commands
 

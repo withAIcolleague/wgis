@@ -1,0 +1,476 @@
+{
+  "schemaVersion": 2,
+  "status": "active",
+  "id": "stage2-legacy-core-seed-cross-regional",
+  "titleKo": "초기 핵심 seed 교차권역 세트",
+  "descriptionKo": "WGIS 초기 seed로 들어온 한국사, 일본사, 비잔티움/오스만사, 유럽 전쟁사, 미국 혁명·내전 항목을 2단계 맥락 모델로 정규화한 active 데이터셋입니다.",
+  "modelComparison": {
+    "currentKo": [
+      "초기 seed 항목은 서로 다른 권역과 시대를 빠르게 보여주기 위해 수록되었습니다.",
+      "각 항목은 지도 표시와 검색을 위한 기본 필드를 중심으로 관리됩니다.",
+      "수도, 전쟁, 혁명, 도시 변천 같은 비교 맥락은 항목 요약 안에 흩어져 있습니다."
+    ],
+    "stage2Ko": [
+      "서로 다른 권역의 seed 항목을 비교 가능한 역사 맥락으로 묶습니다.",
+      "수도 형성, 전쟁 기억, 제국 전환, 혁명적 항의 같은 주제를 UI 필터와 연구 태그로 분리합니다.",
+      "기존 source record와 app index를 유지하면서 2단계 탐색 기준을 추가합니다."
+    ]
+  },
+  "uiFilterGroups": [
+    {
+      "id": "era",
+      "labelKo": "시대",
+      "options": [
+        "고대",
+        "중세",
+        "근세",
+        "근대"
+      ]
+    },
+    {
+      "id": "region",
+      "labelKo": "권역",
+      "options": [
+        "한국사",
+        "일본사",
+        "지중해·비잔티움",
+        "서유럽",
+        "미국사"
+      ]
+    },
+    {
+      "id": "theme",
+      "labelKo": "주제",
+      "options": [
+        "수도",
+        "도시 변천",
+        "전쟁",
+        "혁명·항의",
+        "제국 전환",
+        "기억 정치"
+      ]
+    },
+    {
+      "id": "displayType",
+      "labelKo": "지도 유형",
+      "options": [
+        "장소",
+        "사건"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "id": "legacy-seed-cross-regional-comparison",
+      "labelKo": "초기 seed 교차권역 비교",
+      "parentId": null,
+      "periodKo": "기원전 1세기-19세기",
+      "summaryKo": "초기 WGIS seed 항목을 권역, 시대, 주제별로 비교할 수 있도록 묶은 상위 맥락입니다."
+    },
+    {
+      "id": "korean-capital-war-frontier-memory",
+      "labelKo": "한국사 수도·전쟁 기억",
+      "parentId": "legacy-seed-cross-regional-comparison",
+      "periodKo": "기원전 18년-1592년",
+      "summaryKo": "백제 한성, 조선 한양, 임진왜란 부산진을 통해 수도 형성, 한강 유역 정치 중심, 전쟁 발발 기억을 연결합니다."
+    },
+    {
+      "id": "edo-tokyo-urban-transformation",
+      "labelKo": "에도-도쿄 도시 변천",
+      "parentId": "legacy-seed-cross-regional-comparison",
+      "periodKo": "17-19세기",
+      "summaryKo": "에도 막부의 정치 중심지가 근대 도쿄로 이어지는 도시·수도 변천 맥락입니다."
+    },
+    {
+      "id": "constantinople-imperial-transition",
+      "labelKo": "콘스탄티노폴리스 제국 전환",
+      "parentId": "legacy-seed-cross-regional-comparison",
+      "periodKo": "330-1453년",
+      "summaryKo": "로마, 비잔티움, 오스만으로 이어지는 제국 수도와 종교·정치 전환을 추적합니다."
+    },
+    {
+      "id": "atlantic-revolutionary-protest",
+      "labelKo": "대서양 혁명 항의 행동",
+      "parentId": "legacy-seed-cross-regional-comparison",
+      "periodKo": "1773년",
+      "summaryKo": "보스턴 차 사건을 식민지 과세 저항과 대서양 혁명권의 대중 항의 맥락으로 연결합니다."
+    },
+    {
+      "id": "modern-battlefield-memory",
+      "labelKo": "근대 전장과 기억 정치",
+      "parentId": "legacy-seed-cross-regional-comparison",
+      "periodKo": "1815-1863년",
+      "summaryKo": "워털루와 게티즈버그를 전쟁의 전환점, 국가 질서 재편, 전장 보존과 기억 정치 맥락으로 비교합니다."
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "baekje-hanseong",
+      "titleKo": "백제 한성",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "대한민국",
+      "coordinates": {
+        "lat": 37.5155,
+        "lng": 127.1153
+      },
+      "yearLabelKo": "기원전 18년-475년",
+      "summaryKo": "백제 초기 중심지로 한강 유역 정치 거점과 풍납토성·몽촌토성 계열 유적을 함께 보아야 하는 항목입니다.",
+      "stage2": {
+        "primaryContextId": "korean-capital-war-frontier-memory",
+        "contextIds": [
+          "legacy-seed-cross-regional-comparison",
+          "korean-capital-war-frontier-memory"
+        ],
+        "periodPathKo": [
+          "고대",
+          "한국사",
+          "백제 초기 수도권"
+        ],
+        "topicTagsKo": [
+          "백제",
+          "한강 유역",
+          "고대 수도",
+          "풍납토성",
+          "몽촌토성"
+        ],
+        "uiFilters": {
+          "era": "고대",
+          "region": "한국사",
+          "theme": [
+            "수도",
+            "도시 변천"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "초기 백제 중심지의 좌표와 범위는 풍납토성·몽촌토성 등 관련 유적 기준으로 근사 처리합니다."
+        }
+      }
+    },
+    {
+      "entryId": "joseon-hanyang",
+      "titleKo": "한양",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "대한민국",
+      "coordinates": {
+        "lat": 37.5759,
+        "lng": 126.9768
+      },
+      "yearLabelKo": "1394년 천도 이후",
+      "summaryKo": "조선의 수도 한양은 궁궐, 성곽, 행정 중심이 결합된 수도 경관으로 2단계에서는 한국사 수도 맥락과 도시 변천 맥락에 함께 연결됩니다.",
+      "stage2": {
+        "primaryContextId": "korean-capital-war-frontier-memory",
+        "contextIds": [
+          "legacy-seed-cross-regional-comparison",
+          "korean-capital-war-frontier-memory"
+        ],
+        "periodPathKo": [
+          "근세",
+          "한국사",
+          "조선 수도 한양"
+        ],
+        "topicTagsKo": [
+          "조선",
+          "한양",
+          "궁궐",
+          "도성",
+          "수도 계획"
+        ],
+        "uiFilters": {
+          "era": "근세",
+          "region": "한국사",
+          "theme": [
+            "수도",
+            "도시 변천"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "서울 도심 궁궐·도성 자료와 일반 참고 출처가 함께 있어 위치 신뢰도가 높습니다."
+        }
+      }
+    },
+    {
+      "entryId": "imjin-war-busan",
+      "titleKo": "임진왜란 부산진 전투",
+      "displayTypeKo": "사건",
+      "modernCountryKo": "대한민국",
+      "coordinates": {
+        "lat": 35.1295,
+        "lng": 129.0472
+      },
+      "yearLabelKo": "1592년",
+      "summaryKo": "임진왜란의 초기 전투로 부산진성 일대 기억과 전쟁 발발 맥락을 함께 보여주는 사건 항목입니다.",
+      "stage2": {
+        "primaryContextId": "korean-capital-war-frontier-memory",
+        "contextIds": [
+          "legacy-seed-cross-regional-comparison",
+          "korean-capital-war-frontier-memory"
+        ],
+        "periodPathKo": [
+          "근세",
+          "한국사",
+          "임진왜란 초기 전장"
+        ],
+        "topicTagsKo": [
+          "임진왜란",
+          "부산진",
+          "전쟁 발발",
+          "성곽",
+          "전장 기억"
+        ],
+        "uiFilters": {
+          "era": "근세",
+          "region": "한국사",
+          "theme": [
+            "전쟁",
+            "기억 정치"
+          ],
+          "displayType": "사건"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "현대 부산 동구 일대의 부산진성 흔적과 전투 위치를 연결하는 중간 신뢰도 항목입니다."
+        }
+      }
+    },
+    {
+      "entryId": "edo-tokyo",
+      "titleKo": "에도",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "일본",
+      "coordinates": {
+        "lat": 35.6852,
+        "lng": 139.7528
+      },
+      "yearLabelKo": "도쿠가와 막부 중심지",
+      "summaryKo": "에도는 막부 정치 중심지에서 근대 도쿄로 이어지는 도시 변천을 보여주는 핵심 장소입니다.",
+      "stage2": {
+        "primaryContextId": "edo-tokyo-urban-transformation",
+        "contextIds": [
+          "legacy-seed-cross-regional-comparison",
+          "edo-tokyo-urban-transformation"
+        ],
+        "periodPathKo": [
+          "근세",
+          "일본사",
+          "에도 막부와 도쿄 전환"
+        ],
+        "topicTagsKo": [
+          "에도",
+          "도쿠가와 막부",
+          "도쿄",
+          "수도권",
+          "도시 변천"
+        ],
+        "uiFilters": {
+          "era": "근세",
+          "region": "일본사",
+          "theme": [
+            "수도",
+            "도시 변천"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "에도성·도쿄 중심부 기준 좌표와 기본 역사 출처가 안정적인 고신뢰 항목입니다."
+        }
+      }
+    },
+    {
+      "entryId": "constantinople",
+      "titleKo": "콘스탄티노폴리스",
+      "displayTypeKo": "장소",
+      "modernCountryKo": "튀르키예",
+      "coordinates": {
+        "lat": 41.0082,
+        "lng": 28.9784
+      },
+      "yearLabelKo": "330년-1453년",
+      "summaryKo": "콘스탄티노폴리스는 로마, 비잔티움, 오스만으로 이어지는 제국 수도 전환을 압축적으로 보여주는 장소입니다.",
+      "stage2": {
+        "primaryContextId": "constantinople-imperial-transition",
+        "contextIds": [
+          "legacy-seed-cross-regional-comparison",
+          "constantinople-imperial-transition"
+        ],
+        "periodPathKo": [
+          "중세",
+          "지중해·비잔티움",
+          "제국 수도 전환"
+        ],
+        "topicTagsKo": [
+          "비잔티움",
+          "콘스탄티노폴리스",
+          "이스탄불",
+          "제국 수도",
+          "오스만 정복"
+        ],
+        "uiFilters": {
+          "era": "중세",
+          "region": "지중해·비잔티움",
+          "theme": [
+            "수도",
+            "제국 전환"
+          ],
+          "displayType": "장소"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "이스탄불 역사 지구와 일반 역사 참고 출처를 통해 위치와 맥락을 안정적으로 확인할 수 있습니다."
+        }
+      }
+    },
+    {
+      "entryId": "waterloo",
+      "titleKo": "워털루 전투",
+      "displayTypeKo": "사건",
+      "modernCountryKo": "벨기에",
+      "coordinates": {
+        "lat": 50.6806,
+        "lng": 4.4127
+      },
+      "yearLabelKo": "1815년",
+      "summaryKo": "워털루 전투는 나폴레옹 전쟁의 종결과 유럽 질서 재편을 설명하는 대표 전장 기억 항목입니다.",
+      "stage2": {
+        "primaryContextId": "modern-battlefield-memory",
+        "contextIds": [
+          "legacy-seed-cross-regional-comparison",
+          "modern-battlefield-memory"
+        ],
+        "periodPathKo": [
+          "근대",
+          "서유럽",
+          "나폴레옹 전쟁과 전장 기억"
+        ],
+        "topicTagsKo": [
+          "워털루",
+          "나폴레옹 전쟁",
+          "전장",
+          "유럽 질서",
+          "기억 정치"
+        ],
+        "uiFilters": {
+          "era": "근대",
+          "region": "서유럽",
+          "theme": [
+            "전쟁",
+            "기억 정치"
+          ],
+          "displayType": "사건"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 1,
+          "referenceSources": 2,
+          "noteKo": "전장 보존지와 일반 참고 출처가 함께 있어 위치와 사건 맥락의 신뢰도가 높습니다."
+        }
+      }
+    },
+    {
+      "entryId": "gettysburg",
+      "titleKo": "게티즈버그 전투",
+      "displayTypeKo": "사건",
+      "modernCountryKo": "미국",
+      "coordinates": {
+        "lat": 39.8309,
+        "lng": -77.2311
+      },
+      "yearLabelKo": "1863년",
+      "summaryKo": "게티즈버그 전투는 미국 남북전쟁의 전환점이자 전장 보존과 링컨 연설 기억으로 이어지는 사건입니다.",
+      "stage2": {
+        "primaryContextId": "modern-battlefield-memory",
+        "contextIds": [
+          "legacy-seed-cross-regional-comparison",
+          "modern-battlefield-memory"
+        ],
+        "periodPathKo": [
+          "근대",
+          "미국사",
+          "남북전쟁 전장 기억"
+        ],
+        "topicTagsKo": [
+          "게티즈버그",
+          "미국 남북전쟁",
+          "링컨",
+          "전장 보존",
+          "전환점"
+        ],
+        "uiFilters": {
+          "era": "근대",
+          "region": "미국사",
+          "theme": [
+            "전쟁",
+            "기억 정치"
+          ],
+          "displayType": "사건"
+        },
+        "sourceConfidence": {
+          "tier": "high",
+          "officialSources": 2,
+          "referenceSources": 1,
+          "noteKo": "국립공원관리청 등 공식 전장 자료와 참고 출처가 함께 있는 고신뢰 항목입니다."
+        }
+      }
+    },
+    {
+      "entryId": "boston-tea-party",
+      "titleKo": "보스턴 차 사건",
+      "displayTypeKo": "사건",
+      "modernCountryKo": "미국",
+      "coordinates": {
+        "lat": 42.355,
+        "lng": -71.0506
+      },
+      "yearLabelKo": "1773년",
+      "summaryKo": "보스턴 차 사건은 과세 저항, 항구 도시, 대서양 혁명권의 대중 항의를 연결하는 사건 항목입니다.",
+      "stage2": {
+        "primaryContextId": "atlantic-revolutionary-protest",
+        "contextIds": [
+          "legacy-seed-cross-regional-comparison",
+          "atlantic-revolutionary-protest"
+        ],
+        "periodPathKo": [
+          "근대",
+          "미국사",
+          "대서양 혁명 항의 행동"
+        ],
+        "topicTagsKo": [
+          "보스턴 차 사건",
+          "과세 저항",
+          "식민지 항의",
+          "항구 도시",
+          "미국 독립혁명"
+        ],
+        "uiFilters": {
+          "era": "근대",
+          "region": "미국사",
+          "theme": [
+            "혁명·항의",
+            "기억 정치"
+          ],
+          "displayType": "사건"
+        },
+        "sourceConfidence": {
+          "tier": "medium",
+          "officialSources": 1,
+          "referenceSources": 1,
+          "noteKo": "현대 보스턴 항 일대 기준 좌표로 사건 위치를 근사하며, 공식·참고 출처를 함께 사용합니다."
+        }
+      }
+    }
+  ]
+}
